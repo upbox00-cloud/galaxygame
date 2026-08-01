@@ -273,13 +273,28 @@ document.querySelector(".hero-search")?.addEventListener("click", () => {
 (() => {
   const header = document.querySelector(".site-header");
   if (!header) return;
+  let lastScrollY = window.scrollY;
 
   const updateHeaderState = () => {
-    header.classList.toggle("is-scrolled", window.scrollY > 12);
+    const currentScrollY = window.scrollY;
+    header.classList.toggle("is-scrolled", currentScrollY > 12);
+
+    const strip = document.querySelector(".mobile-platform-strip");
+    if (strip && window.matchMedia("(max-width: 640px)").matches) {
+      const scrollingDown = currentScrollY > lastScrollY && currentScrollY > 120;
+      const scrollingUp = currentScrollY < lastScrollY || currentScrollY <= 20;
+      if (scrollingDown) document.body.classList.add("mobile-platform-hidden");
+      if (scrollingUp) document.body.classList.remove("mobile-platform-hidden");
+    } else {
+      document.body.classList.remove("mobile-platform-hidden");
+    }
+
+    lastScrollY = Math.max(currentScrollY, 0);
   };
 
   updateHeaderState();
   window.addEventListener("scroll", updateHeaderState, { passive: true });
+  window.addEventListener("resize", updateHeaderState, { passive: true });
 })();
 
 document.querySelectorAll(".site-header").forEach((header) => {
