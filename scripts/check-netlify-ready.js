@@ -82,5 +82,10 @@ if (!redirects.includes("/scripts/auth.js /scripts/auth.js 200")) {
   process.exit(1);
 }
 
+if (/^\/\.netlify\//m.test(redirects)) {
+  console.error("[Netlify] _redirects nao pode bloquear /.netlify/* porque esse caminho e reservado para Functions.");
+  process.exit(1);
+}
+
 const catalogLiteCount = readJson("data/catalog-lite.json").length;
 console.log(`[Netlify] OK: site pronto para deploy com ${catalogLiteCount} produtos no catalog-lite.json.`);

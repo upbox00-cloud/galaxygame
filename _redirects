@@ -5,7 +5,6 @@
 /tests/* /404.html 404
 /node_modules/* /404.html 404
 /.git/* /404.html 404
-/.netlify/* /404.html 404
 /.vscode/* /404.html 404
 /.agents/* /404.html 404
 /data/raw-fornecedor.json /404.html 404
