@@ -1,0 +1,1034 @@
+.product-page {
+  background: #272727;
+}
+
+.product-header {
+  min-height: 62px;
+  padding-inline: 6vw;
+}
+
+.product-header .brand {
+  font-size: 18px;
+}
+
+.product-header .brand-mark {
+  width: clamp(230px, 19vw, 310px);
+  height: clamp(66px, 5.7vw, 90px);
+}
+
+.product-header .main-nav {
+  gap: 28px;
+  font-size: 14px;
+}
+
+.product-hero {
+  position: relative;
+  min-height: 520px;
+  padding-top: 110px;
+  overflow: hidden;
+}
+
+.product-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(39, 39, 39, 0.4) 64%, #272727 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.04) 48%, rgba(0, 0, 0, 0.42)),
+    url("assets/gta-vi-landscape-hq.webp") center / cover;
+  filter: saturate(1.08) contrast(1.04);
+  transform: scale(1.01);
+}
+
+.product-top {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, 84vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(320px, 500px);
+  gap: 14px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.product-cover,
+.buy-panel,
+.product-copy,
+.product-specs,
+.edition-card,
+.video-frame,
+.screen,
+.features-row div,
+.bonus-box,
+.config-grid article,
+.news-list article,
+.product-grid article {
+  border-radius: var(--radius);
+}
+
+.product-cover {
+  display: flex;
+  width: var(--product-cover-width, 620px);
+  max-width: 100%;
+  justify-self: center;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.section-support {
+  max-width: 640px;
+  margin: -8px 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.news-section .section-support {
+  margin: 6px 0 0;
+}
+
+.product-page .news-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.product-page .news-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 16px;
+  padding: 20px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.product-page .news-card:hover {
+  transform: none;
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+.product-page .news-card-image {
+  border-radius: var(--radius);
+}
+
+.product-page .news-card-body {
+  padding: 8px 0;
+}
+
+.product-page .news-card-body h3 {
+  font-size: 17px;
+}
+
+.product-page .news-card-body a {
+  min-height: 32px;
+  padding: 0;
+  background: transparent;
+  color: var(--orange);
+}
+
+.cover-art {
+  display: block;
+  width: min(100%, var(--cover-ideal-width, 100%));
+  max-height: 520px;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--radius);
+  background: url("assets/gta-vi-landscape-hq.webp") center / contain no-repeat;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.34);
+  cursor: zoom-in;
+}
+
+.cover-art.supplier-cover-clean {
+  background-position: center 60%;
+  background-size: 118% auto;
+}
+
+.buy-panel {
+  height: 100%;
+  padding: 18px;
+  background: rgba(47, 47, 47, 0.88);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(10px);
+}
+
+.release-note,
+.stock-line,
+.info-alert,
+.old-price,
+.product-copy p,
+.product-specs span,
+.edition-card li,
+.description-section p,
+.config-grid p,
+.news-list p,
+.news-list small,
+.product-grid h3 {
+  color: var(--muted);
+}
+
+.release-note {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.buy-panel h1 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  line-height: 1.05;
+}
+
+.edition-pill,
+.stock-line,
+.info-alert {
+  border-radius: 999px;
+  padding: 9px 11px;
+  background: #242424;
+  font-size: 13px;
+}
+
+.stock-line {
+  margin: 9px 0;
+  color: #ffb069;
+  text-align: center;
+}
+
+.select-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.select-row button {
+  min-height: 36px;
+  border-radius: var(--radius);
+  color: white;
+  background: #3a3a3a;
+  text-align: left;
+  padding-inline: 12px;
+}
+
+.info-alert {
+  margin: 0;
+  color: #7bd1ff;
+}
+
+.price-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  margin: 18px 0 12px;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.price-line strong {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.buy-actions {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 8px;
+}
+
+.wish-button,
+.buy-button,
+.preorder-button,
+.edition-card button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border: 0;
+  border-radius: var(--radius);
+  color: white;
+  background: var(--orange);
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.22s ease, filter 0.22s ease, box-shadow 0.22s ease;
+}
+
+.wish-button {
+  background: #ff741f;
+}
+
+.wish-button svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.buy-button {
+  gap: 10px;
+  background: linear-gradient(90deg, #ff7a18, #ff4028);
+  box-shadow: 0 14px 30px rgba(255, 105, 24, 0.22);
+}
+
+.buy-button::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 6l.3 2h12.9l-1.6 5.3a1 1 0 0 1-1 .7H8.1L6.4 3.8A1 1 0 0 0 5.4 3H3a1 1 0 1 0 0 2h1.6l1.8 10.7A1.5 1.5 0 0 0 7.9 17H18a1 1 0 1 0 0-2H8.7l-.2-1h8.3a3 3 0 0 0 2.9-2.1l1.7-5.6A1.8 1.8 0 0 0 19.7 4H7.2l-.1-.5A1 1 0 0 0 6.1 3H5.4a3 3 0 0 1 .8 3Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM6.2 6l.3 2h12.9l-1.6 5.3a1 1 0 0 1-1 .7H8.1L6.4 3.8A1 1 0 0 0 5.4 3H3a1 1 0 1 0 0 2h1.6l1.8 10.7A1.5 1.5 0 0 0 7.9 17H18a1 1 0 1 0 0-2H8.7l-.2-1h8.3a3 3 0 0 0 2.9-2.1l1.7-5.6A1.8 1.8 0 0 0 19.7 4H7.2l-.1-.5A1 1 0 0 0 6.1 3H5.4a3 3 0 0 1 .8 3Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.wish-button:hover,
+.buy-button:hover,
+.preorder-button:hover,
+.edition-card button:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.product-layout,
+.product-section {
+  width: min(940px, 84vw);
+  margin: 0 auto;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.8fr);
+  gap: 46px;
+  padding: 54px 0 28px;
+}
+
+.product-copy h2,
+.product-section h2 {
+  margin: 0 0 18px;
+  font-size: 24px;
+}
+
+.product-copy p,
+.description-section p {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.tag-list span {
+  border: 1px solid #555;
+  border-radius: var(--radius);
+  padding: 5px 8px;
+  color: #bebebe;
+  font-size: 12px;
+}
+
+.product-specs {
+  display: grid;
+  gap: 8px;
+  padding-top: 46px;
+}
+
+.product-specs div {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.product-specs strong {
+  font-weight: 700;
+}
+
+.product-section {
+  padding: 28px 0;
+}
+
+.edition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 18px;
+  max-width: 540px;
+}
+
+.edition-card {
+  overflow: hidden;
+  background: #1f1f1f;
+  border: 1px solid transparent;
+}
+
+.edition-card.active {
+  border-color: var(--orange);
+}
+
+.edition-img {
+  min-height: 145px;
+  background: url("assets/gta-vi-landscape-hq.webp") center / cover;
+}
+
+.edition-img.supplier-cover-clean {
+  background-position: center 60%;
+  background-size: 118% auto;
+}
+
+.edition-img.deluxe {
+  background:
+    linear-gradient(135deg, rgba(255, 101, 196, 0.72), rgba(255, 122, 34, 0.48)),
+    url("assets/gta-vi-landscape-hq.webp") center / cover;
+}
+
+.edition-card h3,
+.edition-card ul,
+.edition-card .edition-price,
+.edition-card button {
+  margin-inline: 16px;
+}
+
+.edition-card h3 {
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.edition-card ul {
+  min-height: 76px;
+  padding-left: 16px;
+  margin-top: 0;
+  font-size: 13px;
+}
+
+.edition-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.edition-price span {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.edition-price strong {
+  font-size: 22px;
+}
+
+.edition-card button {
+  width: calc(100% - 32px);
+  margin-bottom: 16px;
+}
+
+.visual-section {
+  padding-top: 34px;
+}
+
+.trailer-block[hidden] {
+  display: none;
+}
+
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.64), transparent 42%),
+    radial-gradient(circle at 70% 30%, rgba(255, 102, 195, 0.45), transparent 30%),
+    url("assets/gta-vi-landscape-hq.webp") center / cover;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.screen {
+  min-height: 115px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #607d84, #1b1b1b) center / cover;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+  cursor: zoom-in;
+  transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+}
+
+.screen:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.32);
+}
+
+.screen:focus-visible {
+  outline: 2px solid #ff6a1a;
+  outline-offset: 4px;
+}
+
+.screen.large {
+  grid-row: span 2;
+  min-height: 244px;
+}
+
+.screen.beach-art { background-image: url("assets/gta-vi-visual-beach-5k.webp"); }
+.screen.city-sunset { background-image: url("assets/gta-vi-visual-city-sunset.jpg"); }
+.screen.skyline { background-image: url("assets/gta-vi-visual-skyline.jpg"); }
+.screen.cover-collage { background-image: url("assets/gta-vi-original.webp"); }
+.screen.night-hdr { background-image: url("assets/gta-vi-visual-night-hdr.webp"); }
+.screen.wide { background-position: center 42%; }
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  background: rgba(4, 5, 8, 0.88);
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(14px);
+  transition: opacity 180ms ease;
+}
+
+.image-lightbox.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-lightbox img {
+  max-width: min(1180px, 94vw);
+  max-height: 88vh;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.55);
+  transform: scale(0.96);
+  transition: transform 220ms ease;
+}
+
+.image-lightbox.open img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 22px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.features-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.features-row div {
+  width: 120px;
+  min-height: 76px;
+  display: grid;
+  place-items: center;
+  background: #333;
+  color: #d7d7d7;
+  text-align: center;
+  font-size: 12px;
+}
+
+.features-row span {
+  color: #9c9c9c;
+  font-size: 22px;
+}
+
+.bonus-box {
+  display: grid;
+  gap: 5px;
+  padding: 18px;
+  border: 1px solid #555;
+  margin-bottom: 24px;
+}
+
+.bonus-box strong {
+  color: #6ecbff;
+}
+
+.description-section h3 {
+  text-transform: uppercase;
+}
+
+.more-button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin: 28px auto 0;
+  border-radius: 50%;
+  color: #aaa;
+  background: #3b3b3b;
+  font-size: 24px;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.config-grid h3 {
+  margin-top: 0;
+}
+
+.config-grid span {
+  display: inline-block;
+  min-width: 96px;
+  color: white;
+}
+
+.news-list article {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-art {
+  min-height: 105px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #8fd1ff, #151515);
+}
+
+.news-art.remake { background: linear-gradient(135deg, #d6f0ff, #d84b38 45%, #151515); }
+.news-art.fight { background: linear-gradient(135deg, #353535, #a0663c 52%, #111); }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(188px, 188px));
+  gap: 30px 18px;
+  justify-items: start;
+  align-items: start;
+}
+
+.product-grid article {
+  width: 188px;
+  min-width: 0;
+  max-width: 188px;
+}
+
+.mini-cover {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #555, #171717);
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+
+.mini-cover img {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 260ms ease, filter 260ms ease;
+}
+
+.mini-cover.supplier-cover-clean img {
+  height: 118%;
+  transform: translateY(-9%);
+  object-position: center 60%;
+}
+
+.mini-cover .tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 5;
+  min-height: 24px;
+  border-radius: 5px;
+  padding: 4px 7px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.related-card-link {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  width: 100%;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.related-card-link:hover {
+  filter: brightness(1.08);
+  transform: translateY(-4px);
+}
+
+.related-card-link:hover .mini-cover img {
+  filter: brightness(1.08);
+  transform: scale(1.035);
+}
+
+.related-card-link:hover .mini-cover.supplier-cover-clean img {
+  transform: translateY(-9%) scale(1.035);
+}
+
+.related-card-link.video-playing .mini-cover img {
+  opacity: 0;
+}
+
+.product-grid h3 {
+  margin: 0 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.22;
+}
+
+.product-grid strong {
+  display: block;
+  font-size: 17px;
+  line-height: 1.1;
+}
+
+.mini-cover.creed { background: linear-gradient(135deg, #12272b, #0e0e0e); }
+.mini-cover.red { background: linear-gradient(135deg, #bd1d1d, #151515); }
+.mini-cover.mirage { background: linear-gradient(135deg, #d7d7d7, #8b5b32 50%, #151515); }
+.mini-cover.old { background: linear-gradient(135deg, #eeeeee, #b98b6d 55%, #222); }
+.mini-cover.viking { background: linear-gradient(135deg, #6e8792, #2b363a 48%, #111); }
+.mini-cover.fog { background: linear-gradient(135deg, #d9e5e9, #7e8f91 50%, #111); }
+.mini-cover.ghost { background: linear-gradient(135deg, #f3ead0, #222 48%, #111); }
+.mini-cover.indy { background: linear-gradient(135deg, #ffb338, #bd4a21 55%, #111); }
+.mini-cover.outlast { background: linear-gradient(135deg, #ffa14a, #394551 55%, #111); }
+.mini-cover.robot { background: linear-gradient(135deg, #345071, #a6a260 50%, #111); }
+.mini-cover.gold { background: linear-gradient(135deg, #ffb338, #8e4520 55%, #111); }
+.mini-cover.light { background: linear-gradient(135deg, #efe4ca, #9a6e45 54%, #111); }
+.mini-cover.dark { background: linear-gradient(135deg, #060606, #441313 55%, #111); }
+.mini-cover.farcry { background: linear-gradient(135deg, #25a863, #ffb861 50%, #1a1a1a); }
+.mini-cover.eater { background: linear-gradient(135deg, #a8eff5, #ed6f54 54%, #111); }
+.mini-cover.gta { background: url("assets/gta-vi-landscape-hq.webp") center / cover; }
+.mini-cover.neon { background: linear-gradient(135deg, #2b1440, #ff5fc8 45%, #00b7ff); }
+.mini-cover.city { background: linear-gradient(135deg, #ffb05e, #35c6ff 48%, #202020); }
+
+.product-footer {
+  margin-top: 42px;
+}
+
+.mobile-buy-bar {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .product-top,
+  .product-layout,
+  .config-grid,
+  .news-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .product-hero {
+    min-height: auto;
+    padding-bottom: 34px;
+  }
+
+  .product-top {
+    gap: 12px;
+  }
+
+  .buy-panel {
+    height: auto;
+  }
+
+  .product-cover {
+    justify-content: center;
+  }
+
+  .cover-art {
+    max-height: 440px;
+    min-height: 0;
+  }
+
+  .product-page .news-card {
+    grid-template-columns: 1fr;
+  }
+
+  .product-specs {
+    padding-top: 0;
+  }
+
+  .edition-grid,
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 170px));
+  }
+
+  .product-grid article {
+    width: 170px;
+    max-width: 170px;
+  }
+
+  .screenshot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .screen.large {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .product-page {
+    padding-bottom: 86px;
+  }
+
+  .product-header {
+    min-height: 66px;
+    padding-inline: 14px;
+  }
+
+  .product-header .brand-mark {
+    width: clamp(156px, 45vw, 214px);
+    height: clamp(52px, 14vw, 72px);
+  }
+
+  .product-hero {
+    padding-top: 82px;
+  }
+
+  .product-hero-bg {
+    background-position: center top;
+  }
+
+  .product-top,
+  .product-layout,
+  .product-section {
+    width: min(92vw, 680px);
+  }
+
+  .product-top {
+    grid-template-columns: 1fr;
+  }
+
+  .product-cover {
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .cover-art {
+    width: 100%;
+    height: clamp(180px, 40vh, 300px);
+    max-height: 42vh;
+    aspect-ratio: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.22);
+  }
+
+  .buy-panel {
+    padding: 14px;
+  }
+
+  .buy-panel h1 {
+    font-size: 24px;
+  }
+
+  .select-row {
+    grid-template-columns: 1fr;
+  }
+
+  .select-row button,
+  .wish-button,
+  .buy-button,
+  .preorder-button,
+  .edition-card button {
+    min-height: 48px;
+  }
+
+  .price-line {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .price-line strong {
+    font-size: 36px;
+  }
+
+  .buy-actions {
+    grid-template-columns: 52px 1fr;
+  }
+
+  .product-layout {
+    gap: 22px;
+    padding-top: 34px;
+  }
+
+  .product-specs div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .features-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-row div {
+    width: auto;
+  }
+
+  .edition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshot-grid,
+  .product-grid,
+  .product-page .news-grid {
+    display: flex;
+    grid-template-columns: none;
+    gap: 12px;
+    margin-inline: calc((92vw - 100vw) / 2);
+    padding: 0 calc((100vw - 92vw) / 2) 12px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .screenshot-grid::-webkit-scrollbar,
+  .product-grid::-webkit-scrollbar,
+  .product-page .news-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .screenshot-grid > *,
+  .product-grid > *,
+  .product-page .news-card {
+    flex: 0 0 min(58vw, 220px);
+    scroll-snap-align: start;
+  }
+
+  .product-grid article {
+    width: min(58vw, 220px);
+    max-width: min(58vw, 220px);
+  }
+
+  .screen,
+  .screen.large {
+    min-height: 180px;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .product-page .news-card {
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: #303030;
+    overflow: hidden;
+  }
+
+  .product-page .news-card-body {
+    padding: 12px;
+  }
+
+  .product-page .news-card-body a {
+    min-height: 44px;
+    padding: 0 12px;
+    border-radius: 6px;
+    background: var(--orange);
+    color: #fff;
+  }
+
+  .config-grid {
+    gap: 20px;
+  }
+
+  .mobile-buy-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1300;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(22, 22, 22, 0.94);
+    box-shadow: 0 -18px 42px rgba(0, 0, 0, 0.42);
+    backdrop-filter: blur(16px);
+  }
+
+  .mobile-buy-bar span {
+    display: block;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-buy-bar strong {
+    display: block;
+    margin-top: 1px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .mobile-buy-bar button {
+    min-width: 146px;
+    min-height: 50px;
+    border-radius: var(--radius);
+    color: #fff;
+    background: var(--orange);
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-header .brand-mark {
+    width: 146px;
+    height: 50px;
+  }
+
+  .cover-art {
+    height: clamp(170px, 38vh, 270px);
+    max-height: 40vh;
+  }
+}

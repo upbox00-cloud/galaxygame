@@ -1,0 +1,289 @@
+﻿<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GalaxyGame - Jogos digitais PlayStation 4, PlayStation 5, Xbox One e Xbox Series</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="assets/galaxygame-header-logo.webp" as="image" />
+    <link rel="preload" href="assets/gta-vi-landscape-hq.webp" as="image" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260726-11" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="GalaxyGame">
+        <span class="brand-mark">CK</span>
+        <span>GalaxyGame</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="#tendencias">Tendências</a>
+        <a href="catalogo.html?ofertas=baratas&amp;preco_max=15">Jogos desde 4,99 EUR</a>
+        <a href="catalogo.html?pre_venda=1">Pré-vendas</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="#reviews">Reviews</a>
+        <a href="catalogo.html">Categorias</a>
+      </nav>
+
+      <div class="header-actions">
+        <form class="header-search" action="catalogo.html" role="search">
+          <input type="search" name="busca" placeholder="Pesquisar jogos" aria-label="Pesquisar jogos" autocomplete="off" />
+          <button type="submit" aria-label="Pesquisar"></button>
+        </form>
+        <button class="cart-button" aria-label="Carrinho">0</button>
+        <div class="auth-controls">
+          <button class="auth-login-button" type="button" data-auth-login>Entrar / Criar conta</button>
+          <div class="auth-user" data-auth-user hidden>
+            <button class="auth-user-button" type="button" data-auth-menu aria-haspopup="true" aria-expanded="false"><span data-auth-name>Minha conta</span></button>
+            <div class="auth-dropdown" data-auth-dropdown hidden>
+              <a href="minha-conta.html">Minha Conta</a>
+              <button type="button" data-auth-logout>Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile-platform-strip" aria-label="Plataformas principais">
+      <a href="catalogo.html?plataforma=PlayStation%205">
+        <span class="mobile-platform-icon ps-icon">PS</span>
+        <strong>PlayStation</strong>
+      </a>
+      <a href="catalogo.html?plataforma=PlayStation%204">
+        <span class="mobile-platform-icon ps-icon">PS4</span>
+        <strong>PS4</strong>
+      </a>
+      <a href="catalogo.html?plataforma=Xbox%20One">
+        <span class="mobile-platform-icon xbox-icon">X</span>
+        <strong>Xbox One</strong>
+      </a>
+      <a href="catalogo.html?plataforma=Xbox%20Series%20X%7CS">
+        <span class="mobile-platform-icon xbox-icon">X</span>
+        <strong>Series X|S</strong>
+      </a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-platform-bar" aria-label="Escolher plataforma">
+          <button data-platform="PlayStation 4">
+            <span class="platform-icon ps-icon">PS</span>
+            PlayStation 4
+          </button>
+          <button class="active" data-platform="PlayStation 5">
+            <span class="platform-icon ps-icon">PS</span>
+            PlayStation 5
+          </button>
+          <button data-platform="Xbox One">
+            <span class="platform-icon xbox-icon">X</span>
+            Xbox One
+          </button>
+          <button data-platform="Xbox Series X|S">
+            <span class="platform-icon xbox-icon">X</span>
+            Xbox Series X|S
+          </button>
+          <button class="hero-search" type="button" aria-label="Pesquisar jogos"></button>
+        </div>
+        <div class="hero-content">
+          <p class="platform-kicker">PlayStation 5 · Mídia digital · Pré-lançamento</p>
+          <h1>Grand Theft Auto VI</h1>
+          <p class="hero-meta">Reserva antecipada · Código digital no lançamento · Preço em euro</p>
+          <div class="hero-buy">
+            <span class="discount">-20%</span>
+            <strong>57.99 €</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="tendencias" hidden>
+        <div class="section-heading">
+          <div>
+            <h2>Tend&ecirc;ncias</h2>
+            <p class="catalog-subtitle">Os jogos mais procurados do momento, selecionados por popularidade, avalia&ccedil;&atilde;o e desconto.</p>
+          </div>
+          <div class="platform-filter" aria-label="Plataformas">
+          <button data-trend-platform="all">Todos</button>
+          <button class="active" data-trend-platform="ps5">PlayStation 5</button>
+          <button data-trend-platform="ps4">PlayStation 4</button>
+          <button data-trend-platform="xbox-one">Xbox One</button>
+          <button data-trend-platform="xbox-series">Xbox Series X|S</button>
+          </div>
+        </div>
+        <div class="game-grid" data-game-grid="trending"></div>
+      </section>
+
+      <section class="mobile-confidence-strip" aria-label="Confian&ccedil;a e suporte">
+        <article>
+          <span class="confidence-icon chat-icon"></span>
+          <div>
+            <strong>Apoio ao cliente</strong>
+            <small>Ajuda em portugu&ecirc;s antes e depois da compra</small>
+          </div>
+        </article>
+        <article>
+          <span class="confidence-icon shield-icon"></span>
+          <div>
+            <strong>Compra segura</strong>
+            <small>Pre&ccedil;o final em euros, acesso na conta GalaxyGame e envio por email</small>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-section home-catalog-preview" id="catalogo-preview" hidden>
+        <div class="section-heading">
+          <div>
+            <h2>Cat&aacute;logo de jogos</h2>
+            <p class="catalog-subtitle">Uma sele&ccedil;&atilde;o dos jogos mais procurados para PlayStation e Xbox.</p>
+          </div>
+          <a class="section-link" href="catalogo.html">Ver todos</a>
+        </div>
+        <div class="game-grid catalog-preview-grid" data-game-grid="catalogPreview"></div>
+      </section>
+
+      <section class="content-section news-section dynamic-news" id="noticias" hidden>
+        <div class="section-heading">
+          <div><h2>Not&iacute;cias a N&atilde;o Perder</h2><p class="catalog-subtitle">Novidades, lan&ccedil;amentos e hist&oacute;rias que vale a pena acompanhar.</p></div>
+          <a href="https://www.eurogamer.pt/" target="_blank" rel="noopener">Eurogamer.pt</a>
+        </div>
+        <div class="news-grid" id="noticias-lista" aria-live="polite"></div>
+      </section>
+
+      <section class="trust-band">
+        <article>
+          <span>◆</span>
+          <strong>Conta GalaxyGame + email</strong>
+          <small>Depois da confirma&ccedil;&atilde;o do pagamento, o jogo fica em at&eacute; 10 minutos em Minha Conta &gt; Meus Pedidos e tamb&eacute;m segue por email.</small>
+        </article>
+        <article>
+          <span>●</span>
+          <strong>Pagamento protegido</strong>
+          <small>Pre&ccedil;os finais em euros e informa&ccedil;&atilde;o clara antes de confirmares</small>
+        </article>
+        <article>
+          <span>▲</span>
+          <strong>Apoio em portugu&ecirc;s</strong>
+          <small>Acompanhamos d&uacute;vidas de compatibilidade, acesso e instala&ccedil;&atilde;o</small>
+        </article>
+        <article class="rating">
+          <strong>Compra informada</strong>
+          <small>Plataforma, edi&ccedil;&atilde;o e condi&ccedil;&otilde;es vis&iacute;veis antes do pagamento</small>
+        </article>
+      </section>
+
+      <section class="content-section" id="pre-vendas" hidden>
+        <div class="section-heading">
+          <div><h2>Pr&eacute;-vendas em destaque</h2><p class="catalog-subtitle">Reserva os pr&oacute;ximos grandes lan&ccedil;amentos e recebe o acesso quando ficarem dispon&iacute;veis.</p></div>
+          <a href="catalogo.html">Ver cat&aacute;logo</a>
+        </div>
+        <div class="game-grid compact" data-game-grid="preorders"></div>
+      </section>
+
+      <section class="content-section narrow" id="escolha-recomendada" hidden>
+        <div class="section-heading">
+          <div><h2>Escolha recomendada</h2><p class="catalog-subtitle">Uma escolha forte pelo equil&iacute;brio entre popularidade, desconto e pre&ccedil;o.</p></div>
+        </div>
+        <a class="feature-strip home-recommendation" data-home-recommendation href="produto.html">
+          <div class="feature-box">
+            <p class="platform-kicker" data-recommendation-platform></p>
+            <h2 data-recommendation-title></h2>
+            <p data-recommendation-copy></p>
+            <div class="recommendation-price"><span data-recommendation-old-price></span><strong data-recommendation-price></strong></div>
+            <span class="recommendation-link">Ver produto</span>
+          </div>
+        </a>
+      </section>
+
+      <section class="testimonial-band">
+        <div class="portrait" role="img" aria-label="Jogador a desfrutar de um jogo de consola"></div>
+        <div>
+          <p class="stars">★★★★★</p>
+          <blockquote>
+            Fiz a reserva, o pedido ficou na minha conta GalaxyGame e também recebi as instruções por email. Consegui instalar sem complicações. O processo foi claro e o apoio respondeu rapidamente.
+          </blockquote>
+          <p class="testimonial-author"><strong>Miguel, Lisboa</strong><span>Compra verificada · PlayStation 5</span></p>
+          <button>1.841 avaliações de jogadores</button>
+        </div>
+      </section>
+
+      <section class="content-section" hidden>
+        <div class="section-heading">
+          <div><h2>Mais vendidos em Portugal</h2><p class="catalog-subtitle">Os jogos digitais que mais despertam o interesse dos jogadores em Portugal.</p></div>
+          <a href="catalogo.html">Ver cat&aacute;logo</a>
+        </div>
+        <div class="game-grid" data-game-grid="bestSellers"></div>
+      </section>
+
+      <section class="content-section" id="reviews">
+        <div class="section-heading">
+          <div><h2>Opini&otilde;es de jogadores</h2><p class="catalog-subtitle">Experi&ecirc;ncias de clientes que j&aacute; compraram e instalaram os seus jogos.</p></div>
+        </div>
+        <div class="review-grid">
+          <article><div class="review-cover players-coop"></div><span class="review-meta">★★★★★ · Compra verificada</span><h3>Perfeito para jogar a dois</h3><p>Instalação simples e uma noite inteira de diversão. As instruções chegaram organizadas e foram fáceis de seguir.</p><small>Inês e Tiago · Porto</small></article>
+          <article><div class="review-cover solo-player"></div><span class="review-meta">★★★★★ · Compra verificada</span><h3>Entrega clara e apoio rápido</h3><p>Tive uma dúvida ao adicionar a conta na consola e o suporte explicou tudo passo a passo.</p><small>Mariana · Braga</small></article>
+          <article><div class="review-cover gta-review"></div><span class="review-meta">★★★★★ · Pré-venda</span><h3>Reserva do GTA VI confirmada</h3><p>Preço em euros, plataforma bem identificada, pedido guardado na conta e confirmação enviada por email. Agora é esperar pelo lançamento.</p><small>Rui · Setúbal</small></article>
+          <article><div class="review-cover family-play"></div><span class="review-meta">★★★★☆ · Compra verificada</span><h3>Loja fácil de navegar</h3><p>Encontrei rapidamente a versão correta para Xbox Series X|S e toda a informação estava visível antes do pagamento.</p><small>Carolina · Coimbra</small></article>
+        </div>
+      </section>
+
+      <section class="content-section" id="lancamentos-recentes" hidden>
+        <div class="section-heading">
+          <div><h2>Lan&ccedil;amentos recentes</h2><p class="catalog-subtitle">Descobre os t&iacute;tulos lan&ccedil;ados mais recentemente para a tua consola.</p></div>
+        </div>
+        <div class="game-grid compact" data-game-grid="recentReleases"></div>
+      </section>
+
+      <section class="app-band">
+        <div>
+          <h2>Recebe as melhores ofertas para a tua consola</h2>
+          <p>Promoções para PlayStation 4, PlayStation 5, Xbox One e Xbox Series, códigos digitais europeus e alertas de preço pensados para jogadores em Portugal.</p>
+          <a class="app-cta" href="catalogo.html?ofertas=baratas&amp;preco_max=15">Ver jogos baratos</a>
+        </div>
+        <div class="app-preview" aria-label="Ligações rápidas para jogos">
+          <a href="catalogo.html?ofertas=baratas&amp;preco_max=15"><span>Desde 4,99 EUR</span><strong>Jogos baratos</strong></a>
+          <a href="catalogo.html?plataforma=PlayStation%205"><span>Para PS5</span><strong>PlayStation 5</strong></a>
+          <a href="catalogo.html?plataforma=PlayStation%204"><span>Para PS4</span><strong>PlayStation 4</strong></a>
+          <a href="catalogo.html?plataforma=Xbox%20One"><span>Consola Xbox</span><strong>Xbox One</strong></a>
+          <a href="catalogo.html?plataforma=Xbox%20Series%20X%7CS"><span>Nova geração</span><strong>Xbox Series X|S</strong></a>
+          <a href="catalogo.html?busca=gta"><span>Mais procurados</span><strong>GTA e mundo aberto</strong></a>
+        </div>
+      </section>
+
+      <section class="content-section faq-section">
+        <div class="section-heading">
+          <h2>FAQs</h2>
+        </div>
+        <details><summary>O que é a GalaxyGame?</summary><p>Uma loja de jogos digitais para consola, focada em códigos europeus para jogadores em Portugal.</p></details>
+        <details><summary>Que plataformas estão disponíveis?</summary><p>Apenas PlayStation 4, PlayStation 5, Xbox One e Xbox Series.</p></details>
+        <details><summary>Como recebo o meu jogo?</summary><p>Depois da confirma&ccedil;&atilde;o do pagamento, o jogo fica dispon&iacute;vel em at&eacute; 10 minutos na tua conta GalaxyGame, em Minha Conta &gt; Meus Pedidos, e tamb&eacute;m &eacute; enviado por email com as instru&ccedil;&otilde;es de ativa&ccedil;&atilde;o.</p></details>
+        <details><summary>Como sei se o jogo funciona em Portugal?</summary><p>Procura sempre jogos com região europeia e confirma a plataforma antes de finalizar a compra.</p></details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>GalaxyGame</strong>
+        <p>Jogos digitais para PlayStation 4, PlayStation 5, Xbox One e Xbox Series.</p>
+      </div>
+      <div class="footer-links">
+        <a href="como-funciona.html">Como funciona</a>
+        <a href="termos.html">Termos e Condições</a>
+        <a href="privacidade.html">Privacidade</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="reembolsos.html">Entregas e reembolsos</a>
+      </div>
+    </footer>
+
+    <script src="home.js?v=20260801-1" defer></script>
+    <script src="noticias.js" defer></script>
+    <script src="cart.js?v=20260726-3" defer></script>
+    <script src="header-search.js?v=20260726-4" defer></script>
+    <script src="footer.js?v=20260726-4" defer></script>
+    <script src="scripts/auth.js?v=20260726-1" defer></script>
+    <script src="chat.js?v=20260726-3" defer></script>
+  </body>
+</html>

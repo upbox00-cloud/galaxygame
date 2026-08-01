@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minha Conta | GalaxyGame</title>
+    <meta name="description" content="Consulta os dados da tua conta GalaxyGame." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="preload" href="assets/galaxygame-header-logo.webp" as="image" />
+    <link rel="stylesheet" href="styles.css?v=20260726-11" />
+  </head>
+  <body class="account-page">
+    <header class="site-header solid-header">
+      <a class="brand" href="index.html" aria-label="GalaxyGame"><span class="brand-mark">CK</span><span>GalaxyGame</span></a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html#tendencias">Tendências</a>
+        <a href="catalogo.html?ofertas=baratas&amp;preco_max=15">Jogos desde 4,99 EUR</a>
+        <a href="catalogo.html?pre_venda=1">Pré-vendas</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="como-funciona.html">Como funciona</a>
+      </nav>
+      <div class="header-actions">
+        <form class="header-search" action="catalogo.html" role="search">
+          <input type="search" name="busca" placeholder="Pesquisar jogos" aria-label="Pesquisar jogos" autocomplete="off" />
+          <button type="submit" aria-label="Pesquisar"></button>
+        </form>
+        <button class="cart-button" type="button" aria-label="Carrinho">0</button>
+        <div class="auth-controls">
+          <button class="auth-login-button" type="button" data-auth-login>Entrar / Criar conta</button>
+          <div class="auth-user" data-auth-user hidden>
+            <button class="auth-user-button" type="button" data-auth-menu aria-haspopup="true" aria-expanded="false"><span data-auth-name>Minha conta</span></button>
+            <div class="auth-dropdown" data-auth-dropdown hidden><a href="minha-conta.html">Minha Conta</a><button type="button" data-auth-logout>Sair</button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="account-main">
+      <section class="account-shell" data-account-content hidden>
+        <div class="account-heading">
+          <div><p class="account-kicker">Área de cliente</p><h1>Minha Conta</h1><p>Gere os teus dados e acompanha os teus pedidos.</p></div>
+          <button class="account-logout" type="button" data-auth-logout>Sair</button>
+        </div>
+
+        <div class="account-details" aria-label="Dados da conta">
+          <div><span>Nome</span><strong data-account-name></strong></div>
+          <div><span>Email</span><strong data-account-email></strong></div>
+          <div><span>Cliente desde</span><strong data-account-created></strong></div>
+        </div>
+
+        <section class="account-orders">
+          <div class="section-heading"><div><h2>Meus Pedidos</h2><p>As tuas compras digitais ficarao reunidas aqui.</p></div></div>
+          <div class="empty-orders"><strong>Nenhum pedido ainda</strong><p>Quando o histórico de compras estiver ligado, os teus pedidos aparecerão nesta área.</p><a href="catalogo.html">Explorar catálogo</a></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>GalaxyGame</strong><p>Jogos digitais para PlayStation e Xbox.</p></div>
+      <div class="footer-links"><a href="como-funciona.html">Como funciona</a><a href="termos.html">Termos e Condições</a><a href="privacidade.html">Privacidade</a></div>
+    </footer>
+    <script src="cart.js?v=20260726-3" defer></script>
+    <script src="header-search.js?v=20260726-4" defer></script>
+    <script src="footer.js?v=20260726-4" defer></script>
+    <script src="scripts/auth.js?v=20260726-1" defer></script>
+    <script src="chat.js?v=20260726-3" defer></script>
+  </body>
+</html>
+
+
+
+

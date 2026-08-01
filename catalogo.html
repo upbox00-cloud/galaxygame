@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo completo - GalaxyGame</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="assets/galaxygame-header-logo.webp" as="image" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260726-11" />
+  </head>
+  <body class="catalog-page">
+    <header class="site-header solid-header">
+      <a class="brand" href="index.html" aria-label="GalaxyGame">
+        <span class="brand-mark">CK</span><span>GalaxyGame</span>
+      </a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html#tendencias">Tendências</a>
+        <a href="catalogo.html?ofertas=baratas&amp;preco_max=15">Jogos desde 4,99 EUR</a>
+        <a href="catalogo.html?pre_venda=1">Pré-vendas</a>
+        <a href="catalogo.html" aria-current="page">Catálogo</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="catalogo.html">Categorias</a>
+      </nav>
+      <div class="header-actions">
+        <form class="header-search" action="catalogo.html" role="search">
+          <input type="search" name="busca" placeholder="Pesquisar jogos" aria-label="Pesquisar jogos" autocomplete="off" />
+          <button type="submit" aria-label="Pesquisar"></button>
+        </form>
+        <button class="cart-button" aria-label="Carrinho">0</button>
+        <div class="auth-controls">
+          <button class="auth-login-button" type="button" data-auth-login>Entrar / Criar conta</button>
+          <div class="auth-user" data-auth-user hidden>
+            <button class="auth-user-button" type="button" data-auth-menu aria-haspopup="true" aria-expanded="false"><span data-auth-name>Minha conta</span></button>
+            <div class="auth-dropdown" data-auth-dropdown hidden><a href="minha-conta.html">Minha Conta</a><button type="button" data-auth-logout>Sair</button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="catalog-page-main">
+      <section class="content-section catalog-section" id="catalogo">
+        <div class="section-heading catalog-heading">
+          <div>
+            <h1>Cat&aacute;logo completo</h1>
+            <p class="catalog-subtitle">Explora jogos digitais para PlayStation e Xbox. Pesquisa, filtra e confirma a plataforma certa antes de comprar.</p>
+          </div>
+          <div class="catalog-counter" id="catalogo-contador">A carregar produtos...</div>
+        </div>
+
+        <div class="catalog-toolbar" aria-label="Filtros do cat&aacute;logo">
+          <label class="catalog-search"><span>Pesquisar jogo</span><input id="catalogo-busca" type="search" placeholder="Ex: GTA, FIFA, Minecraft..." autocomplete="off" /></label>
+          <div class="catalog-tabs" id="catalogo-filtros" aria-label="Filtrar por plataforma">
+            <button class="active" type="button" data-catalog-platform="ps5">PS5</button>
+            <button type="button" data-catalog-platform="ps4">PS4</button>
+            <button type="button" data-catalog-platform="xbox-one">Xbox One</button>
+            <button type="button" data-catalog-platform="xbox-series">Xbox Series</button>
+          </div>
+        </div>
+
+        <button class="catalog-filter-toggle" id="catalogo-abrir-filtros" type="button" aria-controls="catalogo-sidebar" aria-expanded="false">Filtros</button>
+        <div class="catalog-layout">
+          <button class="catalog-filter-backdrop" id="catalogo-fechar-filtros" type="button" aria-label="Fechar filtros" tabindex="-1"></button>
+          <aside class="catalog-sidebar" id="catalogo-sidebar" aria-label="Filtros do catálogo">
+            <div class="catalog-sidebar-heading"><h3>Filtros</h3><button class="catalog-sidebar-close" type="button" aria-label="Fechar filtros">&times;</button></div>
+            <fieldset class="catalog-filter-group">
+              <legend>Plataforma</legend>
+              <label><input type="checkbox" value="ps4" data-filter-platform> PlayStation 4</label>
+              <label><input type="checkbox" value="ps5" data-filter-platform checked> PlayStation 5</label>
+              <label><input type="checkbox" value="xbox-one" data-filter-platform> Xbox One</label>
+              <label><input type="checkbox" value="xbox-series" data-filter-platform> Xbox Series X|S</label>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend>Faixa de pre&ccedil;o</legend>
+              <div class="catalog-price-range">
+                <label><span>De</span><input id="catalogo-preco-min" type="number" min="0" step="1" inputmode="decimal" placeholder="0 EUR"></label>
+                <label><span>At&eacute;</span><input id="catalogo-preco-max" type="number" min="0" step="1" inputmode="decimal" placeholder="Sem limite"></label>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend>Desconto m&iacute;nimo</legend>
+              <div class="catalog-discount-options">
+                <label><input type="checkbox" value="10" data-filter-discount> 10%+</label>
+                <label><input type="checkbox" value="30" data-filter-discount> 30%+</label>
+                <label><input type="checkbox" value="50" data-filter-discount> 50%+</label>
+                <label><input type="checkbox" value="70" data-filter-discount> 70%+</label>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter-group" id="catalogo-generos-grupo" hidden><legend>G&eacute;nero</legend><div class="catalog-genre-options" id="catalogo-generos"></div></fieldset>
+            <button class="catalog-clear-filters" id="catalogo-limpar-filtros" type="button">Limpar filtros</button>
+          </aside>
+          <div class="catalog-results">
+            <div class="catalog-results-bar">
+              <div class="catalog-status" id="catalogo-status" role="status">A carregar cat&aacute;logo...</div>
+              <label class="catalog-sort"><span>Ordenar por</span><select id="catalogo-ordenacao">
+                <option value="relevance">Relev&acirc;ncia</option><option value="price-asc">Menor pre&ccedil;o</option><option value="price-desc">Maior pre&ccedil;o</option><option value="discount-desc">Maior desconto</option><option value="name-asc">Nome (A-Z)</option><option value="released-desc">Lan&ccedil;amentos mais recentes</option>
+              </select></label>
+            </div>
+            <div class="game-grid catalog-grid" id="catalogo-produtos"></div>
+            <div class="catalog-actions"><button id="catalogo-carregar-mais" class="load-more-button" type="button">Carregar mais</button></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><strong>GalaxyGame</strong><p>Jogos digitais para PlayStation e Xbox.</p></div>
+      <div class="footer-links"><a href="como-funciona.html">Como funciona</a><a href="termos.html">Termos e Condições</a><a href="privacidade.html">Privacidade</a><a href="cookies.html">Cookies</a></div>
+    </footer>
+    <script src="home.js?v=20260801-1" defer></script>
+    <script src="cart.js?v=20260726-3" defer></script>
+    <script src="header-search.js?v=20260726-4" defer></script>
+    <script src="footer.js?v=20260726-4" defer></script>
+    <script src="scripts/auth.js?v=20260726-1" defer></script>
+    <script src="chat.js?v=20260726-3" defer></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "date": "2026-07-20T10:07:34.296Z",
+      "validatedTrailers": 716,
+      "validationCalls": 0,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 716
+    },
+    {
+      "date": "2026-07-20T10:08:06.421Z",
+      "validatedTrailers": 716,
+      "validationCalls": 15,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 0
+    },
+    {
+      "date": "2026-07-26T11:31:14.361Z",
+      "validatedTrailers": 916,
+      "validationCalls": 19,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 0
+    },
+    {
+      "date": "2026-07-27T19:40:52.461Z",
+      "validatedTrailers": 907,
+      "validationCalls": 19,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 0
+    },
+    {
+      "date": "2026-07-28T18:34:38.235Z",
+      "validatedTrailers": 1089,
+      "validationCalls": 22,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 0
+    },
+    {
+      "date": "2026-07-30T20:46:47.263Z",
+      "validatedTrailers": 1089,
+      "validationCalls": 22,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 0
+    },
+    {
+      "date": "2026-07-31T20:17:44.183Z",
+      "validatedTrailers": 1089,
+      "validationCalls": 22,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 0
+    },
+    {
+      "date": "2026-08-01T04:17:21.650Z",
+      "validatedTrailers": 1082,
+      "validationCalls": 22,
+      "broken": 0,
+      "corrected": 0,
+      "removed": 0,
+      "searchRequests": 0,
+      "errors": 0
+    }
+  ],
+  "updatedAt": "2026-08-01T04:17:21.650Z"
+}

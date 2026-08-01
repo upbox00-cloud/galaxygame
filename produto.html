@@ -1,0 +1,175 @@
+﻿<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Produto | GalaxyGame</title>
+    <meta name="description" content="Compra jogos digitais para PlayStation e Xbox. O acesso fica na tua conta GalaxyGame e também segue por email." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="assets/galaxygame-header-logo.webp" as="image" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260726-11" />
+    <link rel="stylesheet" href="produto.css?v=20260726-7" />
+  </head>
+  <body class="product-page">
+    <header class="site-header product-header">
+      <a class="brand" href="index.html" aria-label="Voltar a GalaxyGame">
+        <span class="brand-mark">CK</span>
+        <span>GalaxyGame</span>
+      </a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html#tendencias">Tendências</a>
+        <a href="catalogo.html?ofertas=baratas&amp;preco_max=15">Jogos desde 4,99 EUR</a>
+        <a href="catalogo.html?pre_venda=1">Pré-vendas</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="como-funciona.html">Como funciona</a>
+        <a href="#similares">Produtos similares</a>
+      </nav>
+      <div class="header-actions">
+        <form class="header-search" action="catalogo.html" role="search">
+          <input type="search" name="busca" placeholder="Pesquisar jogos" aria-label="Pesquisar jogos" autocomplete="off" />
+          <button type="submit" aria-label="Pesquisar"></button>
+        </form>
+        <button class="cart-button" type="button" aria-label="Carrinho">0</button>
+        <div class="auth-controls">
+          <button class="auth-login-button" type="button" data-auth-login>Entrar / Criar conta</button>
+          <div class="auth-user" data-auth-user hidden>
+            <button class="auth-user-button" type="button" data-auth-menu aria-haspopup="true" aria-expanded="false"><span data-auth-name>Minha conta</span></button>
+            <div class="auth-dropdown" data-auth-dropdown hidden><a href="minha-conta.html">Minha Conta</a><button type="button" data-auth-logout>Sair</button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="product-hero">
+        <div class="product-hero-bg" aria-hidden="true"></div>
+        <div class="product-top">
+          <div class="product-cover">
+            <button class="cover-art" type="button" aria-label="Ampliar capa do produto"></button>
+          </div>
+
+          <aside class="buy-panel">
+            <p class="release-note">Jogo digital para consola</p>
+            <h1>A carregar produto...</h1>
+            <div class="edition-pill">Edição digital · Conta GalaxyGame + email</div>
+            <div class="stock-line">Preço final em euros · Compra com informação clara</div>
+
+            <div class="select-row">
+              <button type="button" data-product-platform>Plataforma</button>
+              <button type="button" data-product-edition>Edição digital</button>
+            </div>
+
+            <p class="info-alert">Depois da confirma&ccedil;&atilde;o do pagamento, o jogo fica dispon&iacute;vel em at&eacute; 10 minutos na tua conta GalaxyGame, em Minha Conta &gt; Meus Pedidos, e tamb&eacute;m &eacute; enviado por email com as instru&ccedil;&otilde;es de ativa&ccedil;&atilde;o.</p>
+
+            <div class="price-line">
+              <span class="old-price">--</span>
+              <span class="discount">--</span>
+              <strong>--</strong>
+            </div>
+
+            <div class="buy-actions">
+              <button class="wish-button" type="button" aria-label="Adicionar aos favoritos">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </button>
+              <button class="buy-button" type="button">Comprar agora</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="product-layout">
+        <article class="product-copy">
+          <h2>Sobre o jogo</h2>
+          <div data-product-about></div>
+          <div class="tag-list" data-product-tags></div>
+        </article>
+
+        <aside class="product-specs" data-product-specs></aside>
+      </section>
+
+      <section class="product-section">
+        <h2>Edi&ccedil;&otilde;es</h2>
+        <p class="section-support">Confirma a plataforma e o conte&uacute;do inclu&iacute;do antes de comprar.</p>
+        <div class="edition-grid" data-product-editions></div>
+      </section>
+
+      <section class="product-section visual-section">
+        <h2>Visuais</h2>
+        <p class="section-support">V&ecirc; o trailer e imagens do jogo antes de decidires.</p>
+        <div class="trailer-block" data-product-trailer-section hidden>
+          <div class="video-frame" data-product-video></div>
+        </div>
+        <div class="screenshot-grid" data-product-screenshots></div>
+      </section>
+
+      <section class="product-section">
+        <h2>Caracter&iacute;sticas do jogo</h2>
+        <div class="features-row" data-product-features></div>
+      </section>
+
+      <section class="product-section description-section">
+        <h2>Descri&ccedil;&atilde;o</h2>
+        <div class="bonus-box">
+          <strong>Compra digital</strong>
+          <span>O acesso fica guardado em Minha Conta &gt; Meus Pedidos e também segue por email com instru&ccedil;&otilde;es de ativa&ccedil;&atilde;o.</span>
+        </div>
+        <h3 data-product-description-title>Detalhes do jogo</h3>
+        <p data-product-description></p>
+        <button class="more-button" type="button">+</button>
+      </section>
+
+      <section class="product-section config-section">
+        <h2>Compatibilidade e instala&ccedil;&atilde;o</h2>
+        <div class="config-grid" data-product-config></div>
+      </section>
+
+      <section class="product-section news-section dynamic-news" id="noticias" hidden>
+        <div class="section-heading">
+          <div><h2>Not&iacute;cias sobre o jogo</h2><p class="section-support">Atualiza&ccedil;&otilde;es, an&aacute;lises e novidades relacionadas com este t&iacute;tulo.</p></div>
+          <a href="https://news.google.com/" data-news-source target="_blank" rel="noopener">Mais not&iacute;cias</a>
+        </div>
+        <div class="news-grid" id="noticias-lista" aria-live="polite"></div>
+      </section>
+
+      <section class="product-section" id="franchise">
+        <h2>Mais jogos digitais</h2>
+        <p class="section-support">Jogos populares, muito procurados e com bom desempenho no nosso cat&aacute;logo.</p>
+        <div class="product-grid" data-product-related></div>
+      </section>
+
+      <section class="product-section" id="similares">
+        <h2>Jogos semelhantes</h2>
+        <p class="section-support">Sugest&otilde;es da mesma plataforma ou com g&eacute;neros em comum.</p>
+        <div class="product-grid" data-product-similar></div>
+      </section>
+    </main>
+
+    <footer class="site-footer product-footer">
+      <div>
+        <strong>GalaxyGame</strong>
+        <p>Jogos digitais para PlayStation 4, PlayStation 5, Xbox One e Xbox Series X|S.</p>
+      </div>
+      <div class="footer-links">
+        <a href="como-funciona.html">Como funciona</a>
+        <a href="termos.html">Termos e Condições</a>
+        <a href="privacidade.html">Privacidade</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="reembolsos.html">Entregas e reembolsos</a>
+      </div>
+    </footer>
+
+    <script src="cart.js?v=20260726-3" defer></script>
+    <script src="produto.js?v=20260726-9" defer></script>
+    <script src="noticias.js?v=20260714-8" defer></script>
+    <script src="header-search.js?v=20260726-4" defer></script>
+    <script src="footer.js?v=20260726-4" defer></script>
+    <script src="scripts/auth.js?v=20260726-1" defer></script>
+    <script src="chat.js?v=20260726-3" defer></script>
+  </body>
+</html>

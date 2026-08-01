@@ -1,0 +1,40 @@
+{
+  "name": "galaxygame-catalogo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pipeline para catalogo data-driven de jogos digitais PlayStation e Xbox.",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "netlify dev --offline --no-open --port 8890 --functions-port 3998 --staticServerPort 3997",
+    "test": "node --test --test-isolation=none tests/chat.test.js",
+    "check:links": "node scripts/check-local-links.js",
+    "scrape:fornecedor": "node scripts/scrape-fornecedor.js",
+    "enrich:rawg": "node scripts/enrich-rawg.js",
+    "enrich:steamgriddb": "node scripts/enrich-steamgriddb.js",
+    "trailers": "node scripts/enrich-youtube.js",
+    "revalidar-trailers": "node scripts/revalidar-trailers.js",
+    "youtube:diario": "powershell -ExecutionPolicy Bypass -File scripts/youtube-diario.ps1",
+    "youtube:diario:force": "powershell -ExecutionPolicy Bypass -File scripts/youtube-diario.ps1 -Force",
+    "curadoria": "node scripts/aplicar-curadoria.js",
+    "catalogo:lite": "node scripts/gerar-catalogo-lite.js",
+    "check:netlify": "node scripts/check-netlify-ready.js",
+    "prepare:netlify": "npm run catalogo:lite && npm run check:netlify",
+    "enrich:news": "node scripts/enrich-news.js",
+    "scrape:concorrente": "node scripts/scrape-concorrente.js",
+    "gerar:precos": "node scripts/gerar-precos.js",
+    "relatorio": "node scripts/relatorio-margem.js",
+    "atualizar:catalogo": "npm run scrape:all && npm run enrich:steamgriddb && npm run curadoria && npm run catalogo:lite && npm run youtube:diario",
+    "agendar:catalogo": "powershell -ExecutionPolicy Bypass -File scripts/agendar-atualizacao-catalogo.ps1",
+    "agendar:youtube": "powershell -ExecutionPolicy Bypass -File scripts/agendar-youtube-diario.ps1",
+    "scrape:all": "npm run scrape:fornecedor && npm run enrich:rawg && npm run scrape:concorrente && npm run gerar:precos"
+  },
+  "dependencies": {
+    "@google/genai": "^2.11.0",
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0",
+    "simple-icons": "^16.27.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^26.2.0"
+  }
+}

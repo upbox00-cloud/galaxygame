@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrinho | GalaxyGame</title>
+    <meta name="description" content="Revê os teus jogos digitais, confirma a plataforma e prepara a finalização da compra." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="preload" href="assets/galaxygame-header-logo.webp" as="image" />
+    <link rel="stylesheet" href="styles.css?v=20260726-11" />
+  </head>
+  <body class="cart-page" data-cart-page>
+    <header class="site-header solid-header">
+      <a class="brand" href="index.html" aria-label="GalaxyGame"><span class="brand-mark">CK</span><span>GalaxyGame</span></a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html#tendencias">Tendências</a><a href="catalogo.html?ofertas=baratas&amp;preco_max=15">Jogos desde 4,99 EUR</a><a href="catalogo.html?pre_venda=1">Pré-vendas</a><a href="catalogo.html">Catálogo</a><a href="como-funciona.html">Como funciona</a>
+      </nav>
+      <div class="header-actions">
+        <form class="header-search" action="catalogo.html" role="search"><input type="search" name="busca" placeholder="Pesquisar jogos" aria-label="Pesquisar jogos" /><button type="submit" aria-label="Pesquisar"></button></form>
+        <button class="cart-button" type="button" aria-label="Carrinho">0</button>
+        <div class="auth-controls"><button class="auth-login-button" type="button" data-auth-login>Entrar / Criar conta</button><div class="auth-user" data-auth-user hidden><button class="auth-user-button" type="button" data-auth-menu><span data-auth-name>Minha conta</span></button><div class="auth-dropdown" data-auth-dropdown hidden><a href="minha-conta.html">Minha Conta</a><button type="button" data-auth-logout>Sair</button></div></div></div>
+      </div>
+    </header>
+
+    <main class="cart-main">
+      <section class="cart-heading">
+        <div><p class="platform-kicker">Compra digital para consola</p><h1>O teu carrinho</h1><p>Confirma os jogos, a plataforma e o preço final antes de continuares.</p></div>
+        <a href="catalogo.html">Continuar a comprar</a>
+      </section>
+
+      <section class="cart-empty" data-cart-empty hidden>
+        <strong>Ainda não adicionaste nenhum jogo</strong><p>Descobre títulos para PlayStation e Xbox e regressa quando encontrares a escolha certa.</p><a href="catalogo.html">Explorar catálogo</a>
+      </section>
+
+      <div class="cart-layout" data-cart-content hidden>
+        <section class="cart-products" aria-labelledby="cart-products-title">
+          <div class="cart-products-heading"><div><h2 id="cart-products-title">Produtos</h2><span data-cart-count>0 produtos</span></div><button type="button" data-cart-clear>Limpar carrinho</button></div>
+          <div data-cart-list></div>
+        </section>
+
+        <aside class="cart-summary">
+          <h2>Resumo da compra</h2>
+          <div class="cart-summary-line"><span>Subtotal</span><strong data-cart-subtotal>0,00 €</strong></div>
+          <div class="cart-summary-line"><span>Entrega digital</span><strong>Grátis</strong></div>
+          <div class="cart-summary-total"><span>Total</span><strong data-cart-total>0,00 €</strong></div>
+          <p class="cart-tax-note">Preço final apresentado em euros. Confirma sempre a plataforma antes de finalizar.</p>
+          <form class="checkout-form" data-checkout-form>
+            <label><span>Email para receber a cópia da entrega</span><input type="email" required autocomplete="email" placeholder="nome@exemplo.pt"></label>
+            <label class="checkout-consent"><input type="checkbox" required><span>Li e aceito os <a href="termos.html">Termos e Condições</a> e confirmei a plataforma dos jogos.</span></label>
+            <button type="submit">Continuar para pagamento</button>
+          </form>
+          <div class="checkout-notice" data-checkout-notice hidden><strong>Carrinho preparado</strong><p>Depois da confirma&ccedil;&atilde;o do pagamento, os teus produtos ficam dispon&iacute;veis em at&eacute; 10 minutos em Minha Conta &gt; Meus Pedidos e tamb&eacute;m seguem por email com instru&ccedil;&otilde;es.</p></div>
+        </aside>
+      </div>
+
+      <section class="cart-confidence" aria-label="Informações de confiança">
+        <article><strong>Conta GalaxyGame + email</strong><span>Depois da confirma&ccedil;&atilde;o do pagamento, o pedido fica dispon&iacute;vel em at&eacute; 10 minutos em Minha Conta &gt; Meus Pedidos e tamb&eacute;m segue por email.</span></article>
+        <article><strong>Plataforma confirmada</strong><span>PS4, PS5, Xbox One ou Xbox Series sempre identificados.</span></article>
+        <article><strong>Apoio em português</strong><span>Ajuda antes e depois da compra para acesso e instalação.</span></article>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div><strong>GalaxyGame</strong><p>Jogos digitais para PlayStation e Xbox.</p></div><div class="footer-links"><a href="como-funciona.html">Como funciona</a><a href="termos.html">Termos e Condições</a><a href="privacidade.html">Privacidade</a><a href="reembolsos.html">Entregas e reembolsos</a></div></footer>
+    <script src="cart.js?v=20260726-3" defer></script><script src="header-search.js?v=20260726-4" defer></script><script src="footer.js?v=20260726-4" defer></script><script src="scripts/auth.js?v=20260726-1" defer></script><script src="chat.js?v=20260726-3" defer></script>
+  </body>
+</html>
