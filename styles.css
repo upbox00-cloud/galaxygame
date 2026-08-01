@@ -4317,19 +4317,22 @@ details p {
 @media (max-width: 620px) {
   .site-header {
     min-height: 74px;
-    padding-inline: 8px;
-    gap: 3px;
+    padding-left: 2px;
+    padding-right: 8px;
+    gap: 2px;
     overflow: visible;
   }
 
   .brand {
     flex: 1 1 auto;
-    max-width: calc(100vw - 184px);
+    max-width: calc(100vw - 176px);
+    margin-right: 0;
+    transform: translateX(-8px);
   }
 
   .brand-mark,
   .product-header .brand-mark {
-    width: clamp(194px, 52vw, 252px);
+    width: clamp(206px, 54vw, 260px);
     height: clamp(66px, 17vw, 86px);
     background-size: contain;
   }
@@ -4409,6 +4412,26 @@ details p {
     height: 48px;
     min-height: 48px;
     margin-left: 2px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .mobile-menu-button span {
+    width: 24px;
+    height: 2px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.18);
+  }
+
+  .mobile-menu-button:hover,
+  .mobile-menu-button:focus-visible {
+    border: 0;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 18px rgba(137, 91, 255, 0.18);
+    transform: none;
   }
 
   .cart-popover,
@@ -4516,13 +4539,14 @@ details p {
 
 @media (max-width: 380px) {
   .brand {
-    max-width: calc(100vw - 176px);
+    max-width: calc(100vw - 168px);
+    transform: translateX(-10px);
   }
 
   .brand-mark,
   .product-header .brand-mark {
-    width: clamp(178px, 48vw, 198px);
-    height: 62px;
+    width: clamp(196px, 52vw, 212px);
+    height: 66px;
   }
 
   .header-search,
@@ -4538,9 +4562,13 @@ details p {
   }
 
   .mobile-menu-button {
-    flex-basis: 42px;
-    width: 42px;
-    max-width: 42px;
+    flex-basis: 40px;
+    width: 40px;
+    max-width: 40px;
+  }
+
+  .mobile-menu-button span {
+    width: 22px;
   }
 }
 
