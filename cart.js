@@ -1,4 +1,7 @@
 (function () {
+  if (window.__GalaxyGameCartReady) return;
+  window.__GalaxyGameCartReady = true;
+
   const STORAGE_KEY = "galaxygame-cart-v1";
 
   function readCart() {
@@ -110,11 +113,26 @@
       button.parentNode.insertBefore(shell, button);
       shell.append(button, popover);
       button.type = "button";
-      button.addEventListener("click", () => {
-        window.location.href = "carrinho.html";
+      button.setAttribute("aria-haspopup", "true");
+      button.setAttribute("aria-expanded", "false");
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const willOpen = !shell.classList.contains("open");
+        closeHeaderCarts(shell);
+        shell.classList.toggle("open", willOpen);
+        button.setAttribute("aria-expanded", String(willOpen));
       });
     });
     renderHeaderCart();
+  }
+
+  function closeHeaderCarts(except = null) {
+    document.querySelectorAll(".cart-shell.open").forEach((shell) => {
+      if (shell === except) return;
+      shell.classList.remove("open");
+      shell.querySelector(".cart-button")?.setAttribute("aria-expanded", "false");
+    });
   }
 
   function renderCartPage() {
@@ -173,6 +191,12 @@
   window.addEventListener("storage", () => {
     renderHeaderCart();
     renderCartPage();
+  });
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".cart-shell")) closeHeaderCarts();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeHeaderCarts();
   });
   mountHeaderCart();
   bindCartPage();

@@ -19,6 +19,7 @@
     "catalogo:lite": "node scripts/gerar-catalogo-lite.js",
     "check:netlify": "node scripts/check-netlify-ready.js",
     "prepare:netlify": "npm run catalogo:lite && npm run check:netlify",
+    "testar:pedido": "node scripts/testar-pedido.js",
     "enrich:news": "node scripts/enrich-news.js",
     "scrape:concorrente": "node scripts/scrape-concorrente.js",
     "gerar:precos": "node scripts/gerar-precos.js",

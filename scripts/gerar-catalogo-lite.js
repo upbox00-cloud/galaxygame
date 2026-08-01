@@ -1,5 +1,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
+const { isExcludedProduct } = require("./product-exclusions");
 
 const FILES = {
   ps4: "ps4.json",
@@ -55,7 +56,9 @@ const output = [];
 for (const [platformKey, file] of Object.entries(FILES)) {
   const products = JSON.parse(fs.readFileSync(path.join(dataDir, file), "utf8"));
   if (!Array.isArray(products)) continue;
-  products.forEach((product) => output.push(pickProduct(product, platformKey)));
+  products
+    .filter((product) => !isExcludedProduct(product))
+    .forEach((product) => output.push(pickProduct(product, platformKey)));
 }
 
 fs.writeFileSync(path.join(dataDir, "catalog-lite.json"), `${JSON.stringify(output)}\n`);

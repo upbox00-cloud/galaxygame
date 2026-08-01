@@ -7,6 +7,7 @@ const {
   saveJson,
   roundUpTo99
 } = require("./common");
+const { isExcludedProduct } = require("./product-exclusions");
 
 const FALLBACK_BRL_TO_EUR = 0.155;
 const INTERNAL_DIR = path.join(__dirname, ".internal");
@@ -133,8 +134,14 @@ async function main() {
   let belowCompetitor = 0;
   let safetyLocked = 0;
 
-  products.forEach((product, index) => {
-    console.log(`[Precos] Processando ${index + 1}/${products.length}: ${product.nome}`);
+  const sellableProducts = products.filter((product) => !isExcludedProduct(product));
+  const removedProducts = products.length - sellableProducts.length;
+  if (removedProducts) {
+    console.log(`[Precos] ${removedProducts} produto(s) bloqueado(s) removido(s) antes da precificacao.`);
+  }
+
+  sellableProducts.forEach((product, index) => {
+    console.log(`[Precos] Processando ${index + 1}/${sellableProducts.length}: ${product.nome}`);
     const finalProduct = makeFinalProduct(product, competitorMap.get(product.id), rate, previousCatalogById.get(product.id));
     if (finalProduct.abaixoDoConcorrente) belowCompetitor += 1;
     if (finalProduct.travaMargemAcionada) safetyLocked += 1;
@@ -147,9 +154,10 @@ async function main() {
   });
   saveInternalPrices(grouped);
 
-  const enrichedCount = products.filter((item) => item.enriquecido).length;
+  const enrichedCount = sellableProducts.filter((item) => item.enriquecido).length;
   console.log("\n[Resumo]");
-  console.log(`Total de produtos processados: ${products.length}`);
+  console.log(`Total de produtos processados: ${sellableProducts.length}`);
+  console.log(`Produtos bloqueados removidos: ${removedProducts}`);
   console.log(`Enriquecidos com sucesso pela RAWG: ${enrichedCount}`);
   console.log(`Abaixo do concorrente para revisao manual: ${belowCompetitor}`);
   console.log(`Salvos pela trava de margem: ${safetyLocked}`);

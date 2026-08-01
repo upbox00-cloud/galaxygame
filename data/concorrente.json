@@ -8066,24 +8066,6 @@
     "candidatos": []
   },
   {
-    "id": "13-meses-game-pass-ultimate-xbox-one",
-    "nome": "13 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "7-meses-game-pass-ultimate-xbox-one",
-    "nome": "7 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "a-way-out-xbox-one",
     "nome": "A WAY OUT - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -9094,24 +9076,6 @@
   {
     "id": "007-first-light-xbox-series",
     "nome": "007 FIRST LIGHT - XBOX SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox Series X|S",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "13-meses-game-pass-ultimate-xbox-series",
-    "nome": "13 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox Series X|S",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "7-meses-game-pass-ultimate-xbox-series",
-    "nome": "7 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,

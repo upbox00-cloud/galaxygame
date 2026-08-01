@@ -11289,32 +11289,6 @@
   ],
   "xbox-one": [
     {
-      "id": "13-meses-game-pass-ultimate-xbox-one",
-      "nome": "13 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 499.9,
-      "precoOriginalBRL": 819.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/13-meses-game-pass-ultimate-xbox-one-series-s-x-midia-digital-e30dk/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/42538-e7803030607715e0cf17779429093900-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "342115826",
-      "varianteFornecedorId": 1518261230
-    },
-    {
-      "id": "7-meses-game-pass-ultimate-xbox-one",
-      "nome": "7 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 249.9,
-      "precoOriginalBRL": 299.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/7-meses-game-pass-ultimate-xbox-one-series-s-x-midia-digital-1iesq/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/42538-cd9358df531f62a28617779427011058-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "342115215",
-      "varianteFornecedorId": 1518260181
-    },
-    {
       "id": "a-way-out-xbox-one",
       "nome": "A WAY OUT - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 19.9,
@@ -12784,32 +12758,6 @@
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "344188117",
       "varianteFornecedorId": 1524695012
-    },
-    {
-      "id": "13-meses-game-pass-ultimate-xbox-series",
-      "nome": "13 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 499.9,
-      "precoOriginalBRL": 819.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/13-meses-game-pass-ultimate-xbox-one-series-s-x-midia-digital-e30dk/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/42538-e7803030607715e0cf17779429093900-1024-1024.webp",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "342115826",
-      "varianteFornecedorId": 1518261230
-    },
-    {
-      "id": "7-meses-game-pass-ultimate-xbox-series",
-      "nome": "7 MESES GAME PASS ULTIMATE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 249.9,
-      "precoOriginalBRL": 299.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/7-meses-game-pass-ultimate-xbox-one-series-s-x-midia-digital-1iesq/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/42538-cd9358df531f62a28617779427011058-1024-1024.webp",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "342115215",
-      "varianteFornecedorId": 1518260181
     },
     {
       "id": "a-plague-tale-requiem-xbox-series",

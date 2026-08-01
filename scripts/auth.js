@@ -1,4 +1,7 @@
 (function initializeGalaxyGameAuth() {
+  if (window.__GalaxyGameAuthReady) return;
+  window.__GalaxyGameAuthReady = true;
+
   const identity = window.netlifyIdentity;
   const accountPage = document.body.classList.contains("account-page");
   const params = new URLSearchParams(window.location.search);
@@ -129,27 +132,29 @@
     });
   });
 
-  document.querySelectorAll(".auth-controls, [data-auth-user]").forEach((shell) => {
-    shell.addEventListener("pointerenter", () => {
-      const loginButton = shell.querySelector("[data-auth-login]:not([hidden])");
-      const loginDropdown = shell.querySelector("[data-auth-login-dropdown]");
-      if (loginButton && loginDropdown) {
-        closeMenus(loginDropdown);
-        loginDropdown.hidden = false;
-        loginButton.setAttribute("aria-expanded", "true");
-        return;
-      }
-      const userButton = shell.querySelector("[data-auth-menu]");
-      const userDropdown = shell.querySelector("[data-auth-dropdown]");
-      if (userButton && userDropdown && !shell.hidden) {
-        closeMenus(userDropdown);
-        userDropdown.hidden = false;
-        userButton.setAttribute("aria-expanded", "true");
-      }
-    });
+  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    document.querySelectorAll(".auth-controls, [data-auth-user]").forEach((shell) => {
+      shell.addEventListener("pointerenter", () => {
+        const loginButton = shell.querySelector("[data-auth-login]:not([hidden])");
+        const loginDropdown = shell.querySelector("[data-auth-login-dropdown]");
+        if (loginButton && loginDropdown) {
+          closeMenus(loginDropdown);
+          loginDropdown.hidden = false;
+          loginButton.setAttribute("aria-expanded", "true");
+          return;
+        }
+        const userButton = shell.querySelector("[data-auth-menu]");
+        const userDropdown = shell.querySelector("[data-auth-dropdown]");
+        if (userButton && userDropdown && !shell.hidden) {
+          closeMenus(userDropdown);
+          userDropdown.hidden = false;
+          userButton.setAttribute("aria-expanded", "true");
+        }
+      });
 
-    shell.addEventListener("pointerleave", () => closeMenus());
-  });
+      shell.addEventListener("pointerleave", () => closeMenus());
+    });
+  }
 
   document.querySelectorAll("[data-auth-open-login]").forEach((button) => {
     button.addEventListener("click", (event) => {

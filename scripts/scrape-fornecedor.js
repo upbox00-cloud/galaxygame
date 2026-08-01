@@ -10,6 +10,7 @@ const {
   firstText,
   firstAttr
 } = require("./common");
+const { isExcludedProduct } = require("./product-exclusions");
 
 const TEST_BATMAN_MODE = process.argv.includes("--test-batman");
 const DETAIL_DELAY_MIN_MS = TEST_BATMAN_MODE ? 0 : 150;
@@ -215,7 +216,8 @@ async function scrapePlatform(platform) {
     if (page < maxPages) await sleep(randomDelay());
   }
 
-  const unique = Array.from(new Map(products.map((item) => [item.id, item])).values());
+  const unique = Array.from(new Map(products.map((item) => [item.id, item])).values())
+    .filter((item) => !isExcludedProduct(item));
   const filtered = TEST_BATMAN_MODE
     ? unique.filter((item) => /batman.*arkham.*knight/i.test(item.nome) && ["ps4", "ps5"].includes(item.plataformaKey))
     : unique;

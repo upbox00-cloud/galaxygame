@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Painel de Pedidos | GalaxyGame</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260801-3" />
+  </head>
+  <body class="admin-orders-page">
+    <header class="site-header solid-header">
+      <a class="brand" href="index.html" aria-label="GalaxyGame">
+        <img src="assets/galaxygame-header-logo.webp" alt="GalaxyGame" />
+      </a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="index.html#tendencias">Tend&ecirc;ncias</a>
+        <a href="catalogo.html?pre_venda=1">Pr&eacute;-vendas</a>
+        <a href="catalogo.html">Cat&aacute;logo</a>
+        <a href="minha-conta.html">Minha Conta</a>
+      </nav>
+      <div class="header-actions">
+        <div class="auth-controls">
+          <button class="auth-login-button" type="button" data-auth-login>Entrar / Criar conta</button>
+          <div class="auth-user" data-auth-user hidden>
+            <button class="auth-user-button" type="button" data-auth-menu aria-haspopup="true" aria-expanded="false"><span data-auth-name>Minha conta</span></button>
+            <div class="auth-dropdown" data-auth-dropdown hidden><a href="minha-conta.html">Minha Conta</a><button type="button" data-auth-logout>Sair</button></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="admin-orders-main">
+      <section class="admin-orders-shell" data-admin-shell hidden>
+        <div class="admin-orders-heading">
+          <div>
+            <p class="account-kicker">Admin GalaxyGame</p>
+            <h1>Gest&atilde;o de pedidos</h1>
+            <p>Pedidos pagos entram aqui. Compra o c&oacute;digo no fornecedor, cola o c&oacute;digo e envia ao cliente.</p>
+          </div>
+          <button class="account-logout" type="button" data-auth-logout>Sair</button>
+        </div>
+
+        <div class="admin-tabs" role="tablist" aria-label="Estado dos pedidos">
+          <button class="active" type="button" data-admin-tab="pending">Aguardando c&oacute;digo</button>
+          <button type="button" data-admin-tab="sent">Enviados</button>
+        </div>
+
+        <section class="admin-orders-panel" data-admin-panel="pending">
+          <div class="section-heading"><div><h2>Pedidos para enviar</h2><p>Mostra apenas pedidos com pagamento confirmado e c&oacute;digo pendente.</p></div></div>
+          <div class="admin-order-list" data-admin-pending-list>
+            <div class="admin-loading">A carregar pedidos...</div>
+          </div>
+        </section>
+
+        <section class="admin-orders-panel" data-admin-panel="sent" hidden>
+          <div class="section-heading"><div><h2>Hist&oacute;rico enviado</h2><p>Pedidos que j&aacute; receberam c&oacute;digo por email e na conta.</p></div></div>
+          <div class="admin-order-list" data-admin-sent-list>
+            <div class="admin-loading">A carregar histÃ³rico...</div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+    <script src="footer.js?v=20260726-4" defer></script>
+    <script src="scripts/auth.js?v=20260801-1" defer></script>
+    <script src="admin-pedidos.js?v=20260801-1" defer></script>
+    <script src="chat.js?v=20260726-3" defer></script>
+  </body>
+</html>
+
