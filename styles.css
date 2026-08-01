@@ -16,13 +16,38 @@
   box-sizing: border-box;
 }
 
+html {
+  background: var(--bg);
+}
+
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 16% 32%, rgba(255, 106, 19, 0.12), transparent 28%),
+    radial-gradient(circle at 86% 18%, rgba(142, 92, 255, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(37, 37, 37, 0.62) 0%, rgba(37, 37, 37, 0.76) 52%, rgba(37, 37, 37, 0.86) 100%),
+    url("assets/site-cosmic-gaming-bg.webp") center top / cover fixed no-repeat;
   color: var(--ink);
   scroll-behavior: smooth;
   font-size: 16px;
   font-weight: 400;
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  body {
+    position: relative;
+    isolation: isolate;
+    background:
+      radial-gradient(circle at 16% 32%, rgba(255, 106, 19, 0.12), transparent 28%),
+      radial-gradient(circle at 86% 18%, rgba(142, 92, 255, 0.16), transparent 34%),
+      linear-gradient(180deg, rgba(37, 37, 37, 0.62) 0%, rgba(37, 37, 37, 0.76) 52%, rgba(37, 37, 37, 0.86) 100%),
+      url("assets/site-cosmic-gaming-bg.webp") center top / cover fixed no-repeat;
+  }
+
+  body::before,
+  body::after {
+    display: none;
+  }
 }
 
 a {
