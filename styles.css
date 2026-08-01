@@ -4572,6 +4572,55 @@ details p {
   }
 }
 
+/* Hard mobile header alignment: keep the logo anchored to the left edge. */
+@media (max-width: 620px) {
+  .site-header {
+    position: fixed !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    padding-left: 0 !important;
+    padding-right: 6px !important;
+  }
+
+  .site-header .brand {
+    position: absolute !important;
+    left: -8px !important;
+    top: 50% !important;
+    z-index: 3 !important;
+    flex: 0 0 auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .site-header .brand-mark,
+  .site-header.product-header .brand-mark {
+    width: 196px !important;
+    height: 66px !important;
+  }
+
+  .site-header .header-actions {
+    margin-left: auto !important;
+    padding-left: 176px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header .brand {
+    left: -12px !important;
+  }
+
+  .site-header .brand-mark,
+  .site-header.product-header .brand-mark {
+    width: 188px !important;
+    height: 64px !important;
+  }
+
+  .site-header .header-actions {
+    padding-left: 162px !important;
+  }
+}
+
 .admin-orders-main,
 .account-main {
   min-height: 70vh;
