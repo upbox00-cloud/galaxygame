@@ -34,6 +34,7 @@ const requiredFiles = [
   "data/xbox-one.json",
   "data/xbox-series.json",
   "assets/galaxygame-header-logo.webp",
+  "assets/galaxygame-header-logo-cropped.webp",
   "assets/gta-vi-landscape-hq.webp",
   "assets/gta-vi-original.webp",
   "assets/gta-vi-visual-beach-5k.webp",

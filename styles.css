@@ -156,7 +156,7 @@ select,
   height: clamp(68px, 6vw, 96px);
   border-radius: 0;
   background:
-    url("assets/galaxygame-header-logo.webp") center / cover no-repeat;
+    url("assets/galaxygame-header-logo-cropped.webp") center / cover no-repeat;
   color: transparent;
   font-size: 0;
   box-shadow: none;
