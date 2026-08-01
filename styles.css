@@ -4316,26 +4316,26 @@ details p {
 /* Mobile header stability: predictable toggles, stronger logo, quieter utility icons. */
 @media (max-width: 620px) {
   .site-header {
-    min-height: 68px;
-    padding-inline: 7px;
-    gap: 1px;
+    min-height: 74px;
+    padding-inline: 8px;
+    gap: 3px;
     overflow: visible;
   }
 
   .brand {
     flex: 1 1 auto;
-    max-width: calc(100vw - 162px);
+    max-width: calc(100vw - 184px);
   }
 
   .brand-mark,
   .product-header .brand-mark {
-    width: clamp(186px, 52vw, 250px);
-    height: clamp(62px, 16vw, 84px);
+    width: clamp(194px, 52vw, 252px);
+    height: clamp(66px, 17vw, 86px);
     background-size: contain;
   }
 
   .header-actions {
-    gap: 0;
+    gap: 2px;
   }
 
   .header-search,
@@ -4345,17 +4345,17 @@ details p {
   .auth-login-button.account-icon-button,
   .auth-user-button.account-icon-button,
   .cart-button {
-    width: 34px;
-    max-width: 34px;
-    flex-basis: 34px;
+    width: 40px;
+    max-width: 40px;
+    flex-basis: 40px;
   }
 
   .header-search button,
   .auth-login-button.account-icon-button,
   .auth-user-button.account-icon-button,
   .cart-button {
-    height: 44px;
-    min-height: 44px;
+    height: 48px;
+    min-height: 48px;
     border-radius: 999px;
     background: transparent;
     border-color: transparent;
@@ -4375,21 +4375,21 @@ details p {
 
   .header-user-icon svg,
   .cart-icon svg {
-    width: 13px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
   }
 
   .header-search button::before {
-    left: 11px;
-    top: 15px;
-    width: 9px;
-    height: 9px;
+    left: 13px;
+    top: 16px;
+    width: 12px;
+    height: 12px;
   }
 
   .header-search button::after {
-    left: 20px;
-    top: 24px;
-    width: 6px;
+    left: 25px;
+    top: 28px;
+    width: 7px;
   }
 
   .cart-count-badge {
@@ -4403,12 +4403,12 @@ details p {
   }
 
   .mobile-menu-button {
-    flex: 0 0 38px;
-    width: 38px;
-    max-width: 38px;
-    height: 44px;
-    min-height: 44px;
-    margin-left: 1px;
+    flex: 0 0 44px;
+    width: 44px;
+    max-width: 44px;
+    height: 48px;
+    min-height: 48px;
+    margin-left: 2px;
   }
 
   .cart-popover,
@@ -4516,13 +4516,13 @@ details p {
 
 @media (max-width: 380px) {
   .brand {
-    max-width: calc(100vw - 154px);
+    max-width: calc(100vw - 176px);
   }
 
   .brand-mark,
   .product-header .brand-mark {
-    width: clamp(174px, 50vw, 194px);
-    height: 58px;
+    width: clamp(178px, 48vw, 198px);
+    height: 62px;
   }
 
   .header-search,
@@ -4532,15 +4532,15 @@ details p {
   .auth-login-button.account-icon-button,
   .auth-user-button.account-icon-button,
   .cart-button {
-    width: 32px;
-    max-width: 32px;
-    flex-basis: 32px;
+    width: 38px;
+    max-width: 38px;
+    flex-basis: 38px;
   }
 
   .mobile-menu-button {
-    flex-basis: 36px;
-    width: 36px;
-    max-width: 36px;
+    flex-basis: 42px;
+    width: 42px;
+    max-width: 42px;
   }
 }
 
