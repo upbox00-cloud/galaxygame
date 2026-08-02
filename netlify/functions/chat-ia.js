@@ -236,6 +236,48 @@ function incomingMessages(payload) {
   return [...history, { role: "user", content: message }];
 }
 
+function redactSecrets(value) {
+  let text;
+  if (typeof value === "string") {
+    text = value;
+  } else {
+    try {
+      text = JSON.stringify(value);
+    } catch {
+      text = String(value);
+    }
+  }
+
+  const configuredKey = String(process.env.GEMINI_API_KEY || "").trim();
+  if (configuredKey) text = text.split(configuredKey).join("[REDACTED_API_KEY]");
+  return text
+    .replace(/AQ\.[A-Za-z0-9_-]{16,}/g, "[REDACTED_AUTH_KEY]")
+    .replace(/AIza[A-Za-z0-9_-]{20,}/g, "[REDACTED_API_KEY]");
+}
+
+function geminiErrorDetails(error) {
+  const status = Number(error?.status || error?.statusCode || error?.response?.status || error?.code || 0) || null;
+  const responseBody = error?.response?.data
+    ?? error?.response?.body
+    ?? error?.body
+    ?? error?.error
+    ?? error?.message
+    ?? String(error);
+
+  return {
+    status,
+    body: redactSecrets(responseBody),
+    name: String(error?.name || "Error")
+  };
+}
+
+function logGeminiError(error) {
+  const details = geminiErrorDetails(error);
+  console.error("[chat-ia] Gemini API request failed. HTTP status:", details.status ?? "unknown");
+  console.error("[chat-ia] Gemini API response body:", details.body);
+  return details;
+}
+
 async function handler(event) {
   if (event.httpMethod === "OPTIONS") return { statusCode: 204, body: "" };
   if (event.httpMethod !== "POST") return json(405, { error: "Método não permitido." });
@@ -277,7 +319,7 @@ async function handler(event) {
     if (!reply) throw new Error("Empty model response");
     return json(200, { reply, products: products.slice(0, 3) });
   } catch (error) {
-    const status = Number(error?.status || error?.code || 0);
+    const { status } = logGeminiError(error);
     if (status === 401 || status === 403) return json(401, { error: "A assistente está temporariamente indisponível." });
     if (status === 429) return json(429, { error: "A assistente está com muita procura. Tenta novamente dentro de instantes." });
     return json(500, { error: "Não foi possível responder agora. Podes tentar novamente ou contactar gamegalaxy26@gmail.com." });
@@ -285,4 +327,4 @@ async function handler(event) {
 }
 
 exports.handler = handler;
-exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages };
+exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, redactSecrets, geminiErrorDetails, logGeminiError };

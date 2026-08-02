@@ -61,3 +61,27 @@ test("aplica o limite diário simples", () => {
   assert.equal(_test.consumeDailyQuota(start), false);
   assert.equal(_test.consumeDailyQuota(start + 24 * 60 * 60 * 1000), true);
 });
+
+test("regista o erro do Gemini sem expor a chave", () => {
+  const previousKey = process.env.GEMINI_API_KEY;
+  process.env.GEMINI_API_KEY = "AQ.test-secret-value-that-must-not-leak";
+  const lines = [];
+  const originalError = console.error;
+  console.error = (...args) => lines.push(args.join(" "));
+
+  try {
+    const details = _test.logGeminiError({
+      name: "ApiError",
+      status: 403,
+      message: `{"error":{"message":"invalid key AQ.test-secret-value-that-must-not-leak"}}`
+    });
+    assert.equal(details.status, 403);
+    assert.match(lines.join("\n"), /HTTP status: 403/);
+    assert.match(lines.join("\n"), /invalid key/);
+    assert.doesNotMatch(lines.join("\n"), /test-secret-value-that-must-not-leak/);
+  } finally {
+    console.error = originalError;
+    if (previousKey === undefined) delete process.env.GEMINI_API_KEY;
+    else process.env.GEMINI_API_KEY = previousKey;
+  }
+});
