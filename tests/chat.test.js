@@ -85,3 +85,14 @@ test("regista o erro do Gemini sem expor a chave", () => {
     else process.env.GEMINI_API_KEY = previousKey;
   }
 });
+
+test("normaliza a chave configurada sem alterar o segredo", () => {
+  const previousKey = process.env.GEMINI_API_KEY;
+  try {
+    process.env.GEMINI_API_KEY = '  "AQ.example-auth-key"  ';
+    assert.equal(_test.configuredGeminiKey(), "AQ.example-auth-key");
+  } finally {
+    if (previousKey === undefined) delete process.env.GEMINI_API_KEY;
+    else process.env.GEMINI_API_KEY = previousKey;
+  }
+});

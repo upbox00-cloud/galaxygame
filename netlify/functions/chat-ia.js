@@ -236,6 +236,14 @@ function incomingMessages(payload) {
   return [...history, { role: "user", content: message }];
 }
 
+function configuredGeminiKey() {
+  const value = String(process.env.GEMINI_API_KEY || "").trim();
+  if (value.length >= 2 && ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'")))) {
+    return value.slice(1, -1).trim();
+  }
+  return value;
+}
+
 function redactSecrets(value) {
   let text;
   if (typeof value === "string") {
@@ -248,7 +256,7 @@ function redactSecrets(value) {
     }
   }
 
-  const configuredKey = String(process.env.GEMINI_API_KEY || "").trim();
+  const configuredKey = configuredGeminiKey();
   if (configuredKey) text = text.split(configuredKey).join("[REDACTED_API_KEY]");
   return text
     .replace(/AQ\.[A-Za-z0-9_-]{16,}/g, "[REDACTED_AUTH_KEY]")
@@ -293,7 +301,9 @@ async function handler(event) {
   }
   const validation = validateMessages(incomingMessages(payload));
   if (validation.error) return json(400, { error: validation.error });
-  if (!process.env.GEMINI_API_KEY) {
+  const geminiApiKey = configuredGeminiKey();
+  if (!geminiApiKey) {
+    console.error("[chat-ia] GEMINI_API_KEY is missing in the Netlify Function runtime. Check the Functions scope and redeploy the site.");
     return json(500, { error: "A assistente está temporariamente indisponível. Tenta novamente mais tarde." });
   }
   if (!consumeDailyQuota()) {
@@ -304,7 +314,7 @@ async function handler(event) {
     const catalog = await loadCatalog();
     const latestQuestion = validation.messages.at(-1).content;
     const products = searchProducts(catalog, latestQuestion);
-    const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    const client = new GoogleGenAI({ apiKey: geminiApiKey });
     const response = await client.models.generateContent({
       model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
       contents: toGeminiContents(validation.messages),
@@ -327,4 +337,4 @@ async function handler(event) {
 }
 
 exports.handler = handler;
-exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, redactSecrets, geminiErrorDetails, logGeminiError };
+exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, configuredGeminiKey, redactSecrets, geminiErrorDetails, logGeminiError };
