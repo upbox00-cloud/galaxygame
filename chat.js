@@ -159,10 +159,11 @@
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 25000);
     try {
-      const response = await fetch("/.netlify/functions/chat", {
+      const history = messages.slice(0, -1).map(({ role, content }) => ({ role, content }));
+      const response = await fetch("/.netlify/functions/chat-ia", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ messages: messages.map(({ role, content }) => ({ role, content })) }),
+        body: JSON.stringify({ message: text, history }),
         signal: controller.signal
       });
       const data = await response.json().catch(() => ({}));
@@ -171,7 +172,7 @@
     } catch (error) {
       const content = error.name === "AbortError"
         ? "A resposta demorou mais do que o esperado. Tenta novamente dentro de instantes."
-        : (error.message || "Nao foi possivel responder agora. Podes tentar novamente ou escrever para gamegalaxy26@gmail.com.");
+        : (error.message || "Nao consegui responder agora. Tenta novamente ou contacta gamegalaxy26@gmail.com.");
       messages.push({ role: "assistant", content });
     } finally {
       clearTimeout(timeout);

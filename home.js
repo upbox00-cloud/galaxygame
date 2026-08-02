@@ -127,7 +127,12 @@ function compactCatalogText(value) {
 }
 
 function baseGameKey(value) {
-  return normalizeCatalogText(repairCatalogText(value))
+  const normalized = normalizeCatalogText(repairCatalogText(value));
+  if (/\b(grand\s+theft\s+auto\s+vi|gta\s*(vi|6))\b/.test(normalized)) return "grand theft auto vi";
+  if (/\b(grand\s+theft\s+auto\s+v|gta\s*(v|5))\b/.test(normalized)) return "grand theft auto v";
+  if (/\b(grand\s+theft\s+auto\s+the\s+trilogy|gta\s+the\s+trilogy)\b/.test(normalized)) return "grand theft auto trilogy";
+
+  return normalized
     .replace(/\bxbox\s*one\s*&\s*(xbox\s*)?series\s*(s\/x|x\/s|x\|s)\b/g, " ")
     .replace(/\b(playstation\s*4|playstation\s*5|ps4|ps5)\b/g, " ")
     .replace(/\b(xbox\s*one|xbox\s*series\s*(x\|s|s\/x|x\/s)?|series\s*(x\|s|s\/x|x\/s))\b/g, " ")
@@ -140,6 +145,18 @@ function baseGameKey(value) {
     .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function productImageKey(product) {
+  const source = catalogImageCandidates(product)[0] || "";
+  const cleanSource = normalizeCatalogText(source)
+    .replace(/^https?:\/\//, "")
+    .replace(/[?#].*$/, "")
+    .replace(/-\d+x\d+(?=\.[a-z0-9]+$)/g, "")
+    .trim();
+
+  if (!cleanSource || cleanSource.includes("gta-vi-landscape-hq")) return "";
+  return cleanSource;
 }
 
 function repairCatalogText(value) {
@@ -607,14 +624,26 @@ function uniqueGames(products, sectionSort, limit) {
     groups.set(key, group);
   });
 
-  return [...groups.values()]
+  const sorted = [...groups.values()]
     .map((group) => {
       const availablePlatforms = [...new Set(group.map(platformLabel).filter(Boolean))];
       const selected = [...group].sort((first, second) => variantScore(second) - variantScore(first))[0];
       return { ...selected, availablePlatforms };
     })
-    .sort(sectionSort)
-    .slice(0, limit);
+    .sort(sectionSort);
+
+  const selected = [];
+  const usedImages = new Set();
+
+  sorted.forEach((product) => {
+    if (selected.length >= limit) return;
+    const imageKey = productImageKey(product);
+    if (imageKey && usedImages.has(imageKey)) return;
+    if (imageKey) usedImages.add(imageKey);
+    selected.push(product);
+  });
+
+  return selected;
 }
 
 function curatedThenAutomatic(curatedPool, automaticPool, automaticSort, limit) {

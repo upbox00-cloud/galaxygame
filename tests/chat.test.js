@@ -1,7 +1,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { _test } = require("../netlify/functions/chat");
-const { handler } = require("../netlify/functions/chat");
+const { _test } = require("../netlify/functions/chat-ia");
+const { handler } = require("../netlify/functions/chat-ia");
 
 const catalog = [
   { id: "a-ps5", nome: "Jogo A - PS5 Mídia Digital", plataforma: "PlayStation 5", precoVendaEUR: 29.99, precoOriginalEUR: 59.99, genres: ["Action"], added: 900 },
@@ -43,4 +43,21 @@ test("converte o histórico para os papéis esperados pelo Gemini", () => {
     { role: "user", parts: [{ text: "Olá" }] },
     { role: "model", parts: [{ text: "Como posso ajudar?" }] }
   ]);
+});
+
+test("combina a mensagem atual com o histórico recebido", () => {
+  assert.deepEqual(_test.incomingMessages({
+    message: "E para Xbox?",
+    history: [{ role: "user", content: "Quero um jogo de corrida" }]
+  }), [
+    { role: "user", content: "Quero um jogo de corrida" },
+    { role: "user", content: "E para Xbox?" }
+  ]);
+});
+
+test("aplica o limite diário simples", () => {
+  const start = Date.UTC(2099, 0, 1);
+  for (let index = 0; index < 500; index += 1) assert.equal(_test.consumeDailyQuota(start), true);
+  assert.equal(_test.consumeDailyQuota(start), false);
+  assert.equal(_test.consumeDailyQuota(start + 24 * 60 * 60 * 1000), true);
 });

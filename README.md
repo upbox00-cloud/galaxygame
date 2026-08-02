@@ -29,7 +29,7 @@ O historico de pedidos ainda nao esta ligado ao Stripe. A pagina `minha-conta.ht
 
 ## Assistente virtual de vendas
 
-A assistente usa a API Google Gemini atraves de `netlify/functions/chat.js`. A chave nunca e enviada para o navegador: fica apenas nas variaveis de ambiente do Netlify. A funcao pesquisa primeiro os catalogos locais e envia ao modelo somente os produtos relevantes para a pergunta.
+A assistente usa a API Google Gemini atraves de `netlify/functions/chat-ia.js`. A chave nunca e enviada para o navegador: fica apenas nas variaveis de ambiente do Netlify. A funcao pesquisa primeiro os catalogos locais e envia ao modelo somente os produtos relevantes para a pergunta.
 
 ### Configuracao local
 
@@ -54,6 +54,7 @@ O modelo predefinido e `gemini-2.5-flash`, com historico e tamanho de resposta l
 
 - Cada mensagem aceita no maximo 1200 caracteres e o servidor usa apenas as 8 mensagens mais recentes.
 - Existe um limite basico de 12 pedidos por IP a cada 10 minutos. Como e um limite em memoria por instancia serverless, um site com trafego elevado deve substitui-lo por Netlify Blobs, Redis ou outro armazenamento partilhado.
+- Existe tambem um teto local de 500 chamadas validas por dia em cada instancia da Function. Este contador reinicia diariamente e sempre que a instancia e recriada ou o site recebe um novo deploy; nao representa um limite global rigoroso entre varias instancias.
 - A conversa fica apenas no `sessionStorage` do navegador e desaparece ao terminar a sessao. Nao se deve enviar palavras-passe, dados bancarios ou outros dados sensiveis.
 - O checkout atual ainda nao esta ligado a um processador de pagamento; a assistente foi instruida a comunicar isso sem inventar metodos disponiveis.
 

@@ -14,6 +14,32 @@
       "varianteFornecedorId": 1287849057
     },
     {
+      "id": "ace-combat-7-skies-unknown-ps4",
+      "nome": "ACE COMBAT 7 : SKIES UNKNOWN - PS4 - MÍDIA DIGITAL",
+      "precoAtualBRL": 29.9,
+      "precoOriginalBRL": 149.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/ace-combat-7-skies-unknown-ps4-midia-digital-6ffnm/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/96516-488fa89bc2c020731517855908063180-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358825818",
+      "varianteFornecedorId": 1569250418
+    },
+    {
+      "id": "ace-combat-7-skies-unknown-copia-ps4",
+      "nome": "ACE COMBAT 7 : SKIES UNKNOWN - PS5 - MÍDIA DIGITAL - (cópia)",
+      "precoAtualBRL": 29.9,
+      "precoOriginalBRL": 149.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/ace-combat-7-skies-unknown-ps5-midia-digital-copia-1kvnp/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/96514-8896ce41eee81a297617855908289624-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358825924",
+      "varianteFornecedorId": 1569250598
+    },
+    {
       "id": "ancestors-the-humankind-odyssey-ps4",
       "nome": "ANCESTORS: THE HUMANKIND ODYSSEY - PS4 - MÍDIA DIGITAL",
       "precoAtualBRL": 169.9,
@@ -2148,7 +2174,7 @@
     {
       "id": "lego-conjunto-de-jogos-ps4",
       "nome": "LEGO CONJUNTO DE JOGOS - PS4 - MÍDIA DIGITAL",
-      "precoAtualBRL": 19.9,
+      "precoAtualBRL": 219.9,
       "precoOriginalBRL": 399.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/lego-conjunto-de-jogos-ps4-midia-digital-k3j80/",
@@ -4629,6 +4655,19 @@
       "varianteFornecedorId": 1287831746
     },
     {
+      "id": "the-king-of-fighters-2000-ps4",
+      "nome": "THE KING OF FIGHTERS 2000 - PS4 - MÍDIA DIGITAL",
+      "precoAtualBRL": 34.9,
+      "precoOriginalBRL": 56.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-2000-ps4-midia-digital-4dbar/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359902-cc55d1ef6e47c49fad17856162118511-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358874026",
+      "varianteFornecedorId": 1569398890
+    },
+    {
       "id": "the-king-of-fighters-2002-unlimited-match-ps4",
       "nome": "THE KING OF FIGHTERS 2002 UNLIMITED MATCH - PS4 - MÍDIA DIGITAL",
       "precoAtualBRL": 49.9,
@@ -4668,6 +4707,32 @@
       "varianteFornecedorId": 1568921231
     },
     {
+      "id": "the-king-of-fighters-collection-the-orochi-saga-ps4",
+      "nome": "THE KING OF FIGHTERS COLLECTION: THE OROCHI SAGA - PS4 - MÍDIA DIGITAL",
+      "precoAtualBRL": 44.9,
+      "precoOriginalBRL": 85.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-collection-the-orochi-saga-ps4-midia-digital-fd5uc/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359898-412633870dd3df8e9117856160397400-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358873744",
+      "varianteFornecedorId": 1569397873
+    },
+    {
+      "id": "the-king-of-fighters-xiii-global-match-ps4",
+      "nome": "THE KING OF FIGHTERS XIII GLOBAL MATCH - PS4- MÍDIA DIGITAL",
+      "precoAtualBRL": 34.9,
+      "precoOriginalBRL": 114.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-xiii-global-match-ps4-midia-digital-1l5p9/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359896-ef2c1e4c2a3729728517856157159956-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358873202",
+      "varianteFornecedorId": 1569396242
+    },
+    {
       "id": "the-king-of-fighters-xiv-ps4",
       "nome": "THE KING OF FIGHTERS XIV - PS4 - MÍDIA DIGITAL",
       "precoAtualBRL": 109.9,
@@ -4692,6 +4757,19 @@
       "plataformaKey": "ps4",
       "fornecedorProductId": "331480051",
       "varianteFornecedorId": 1475020999
+    },
+    {
+      "id": "the-king-of-fighters-97-global-match-ps4",
+      "nome": "THE KING OF FIGHTERS' 97 GLOBAL MATCH - PS4- MÍDIA DIGITAL",
+      "precoAtualBRL": 49.9,
+      "precoOriginalBRL": 85.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-97-global-match-ps4-midia-digital-57zsd/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359890-52992ad48aacf95ecd17856153098612-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358872524",
+      "varianteFornecedorId": 1569394128
     },
     {
       "id": "the-last-of-us-part-ii-ps4",
@@ -4772,6 +4850,45 @@
       "varianteFornecedorId": 1352643699
     },
     {
+      "id": "tomb-raider-i-vi-remastered-bundle-ps4",
+      "nome": "TOMB RAIDER I-VI REMASTERED BUNDLE - PS4 - MÍDIA DIGITAL",
+      "precoAtualBRL": 189.9,
+      "precoOriginalBRL": 294.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-i-vi-remastered-bundle-ps4-midia-digital-19p48/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359916-7e41b4272d111aafd217856170993116-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358875885",
+      "varianteFornecedorId": 1569403822
+    },
+    {
+      "id": "tomb-raider-anniversary-ps4",
+      "nome": "TOMB RAIDER: ANNIVERSARY - PS4 - MÍDIA DIGITAL",
+      "precoAtualBRL": 74.9,
+      "precoOriginalBRL": 114.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-anniversary-ps4-midia-digital-1vx68/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359920-d6a987c858d8cab1dc17856359669221-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358903110",
+      "varianteFornecedorId": 1569504530
+    },
+    {
+      "id": "tomb-raider-definitive-edition-ps4",
+      "nome": "TOMB RAIDER: DEFINITIVE EDITION - PS4 - MÍDIA DIGITAL",
+      "precoAtualBRL": 74.9,
+      "precoOriginalBRL": 114.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-definitive-edition-ps4-midia-digital-mf8lj/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359914-f0df71787984b0610517856168819573-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358875314",
+      "varianteFornecedorId": 1569402351
+    },
+    {
       "id": "tomb-raider-definitive-survivor-trilogy-ps4",
       "nome": "TOMB RAIDER: DEFINITIVE SURVIVOR TRILOGY- PS4 - MÍDIA DIGITAL",
       "precoAtualBRL": 29.9,
@@ -4783,6 +4900,19 @@
       "plataformaKey": "ps4",
       "fornecedorProductId": "322192846",
       "varianteFornecedorId": 1428260789
+    },
+    {
+      "id": "tomb-raider-legend-ps4",
+      "nome": "TOMB RAIDER: LEGEND - PS4 - MÍDIA DIGITAL",
+      "precoAtualBRL": 29.9,
+      "precoOriginalBRL": 104.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-legend-ps4-midia-digital-8zjh1/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359908-8c3c4fff092d598f3b17856166254281-1024-1024.webp",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "358874894",
+      "varianteFornecedorId": 1569400961
     },
     {
       "id": "tony-hawk-s-pro-skater-1-2-ps4",
@@ -7857,7 +7987,7 @@
     {
       "id": "lego-conjunto-de-jogos-ps5",
       "nome": "LEGO CONJUNTO DE JOGOS - PS5 - MÍDIA DIGITAL",
-      "precoAtualBRL": 19.9,
+      "precoAtualBRL": 219.9,
       "precoOriginalBRL": 399.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/lego-conjunto-de-jogos-ps5-midia-digital-1ixa8/",
@@ -10949,6 +11079,19 @@
       "varianteFornecedorId": 1276086636
     },
     {
+      "id": "the-king-of-fighters-2000-ps5",
+      "nome": "THE KING OF FIGHTERS 2000 - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 34.9,
+      "precoOriginalBRL": 56.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-2000-ps5-midia-digital-19van/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359904-6414af7497edbaa2ea17856162794484-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358874201",
+      "varianteFornecedorId": 1569399312
+    },
+    {
       "id": "the-king-of-fighters-2002-unlimited-match-ps5",
       "nome": "THE KING OF FIGHTERS 2002 UNLIMITED MATCH - PS5 - MÍDIA DIGITAL",
       "precoAtualBRL": 49.9,
@@ -10988,6 +11131,32 @@
       "varianteFornecedorId": 1568922587
     },
     {
+      "id": "the-king-of-fighters-collection-the-orochi-saga-ps5",
+      "nome": "THE KING OF FIGHTERS COLLECTION: THE OROCHI SAGA - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 44.9,
+      "precoOriginalBRL": 85.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-collection-the-orochi-saga-ps5-midia-digital-u9kcj/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359900-ba510c545e7f69c03c17856160963950-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358873883",
+      "varianteFornecedorId": 1569398177
+    },
+    {
+      "id": "the-king-of-fighters-xiii-global-match-ps5",
+      "nome": "THE KING OF FIGHTERS XIII GLOBAL MATCH - PS5- MÍDIA DIGITAL",
+      "precoAtualBRL": 34.9,
+      "precoOriginalBRL": 114.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-xiii-global-match-ps5-midia-digital-10oy7/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359894-57abe48a2cf1afeff717856158527621-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358873383",
+      "varianteFornecedorId": 1569396896
+    },
+    {
       "id": "the-king-of-fighters-xiv-ps5",
       "nome": "THE KING OF FIGHTERS XIV - PS5 - MÍDIA DIGITAL",
       "precoAtualBRL": 109.9,
@@ -11012,6 +11181,32 @@
       "plataformaKey": "ps5",
       "fornecedorProductId": "331478922",
       "varianteFornecedorId": 1475016420
+    },
+    {
+      "id": "the-king-of-fighters-97-global-match-ps5",
+      "nome": "THE KING OF FIGHTERS' 97 GLOBAL MATCH - PS5- MÍDIA DIGITAL",
+      "precoAtualBRL": 49.9,
+      "precoOriginalBRL": 85.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-97-global-match-ps5-midia-digital-125sk/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359892-6bd1df6440a777be7017856153545700-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358872616",
+      "varianteFornecedorId": 1569394493
+    },
+    {
+      "id": "the-last-of-us-completo-ps5",
+      "nome": "THE LAST OF US COMPLETO - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 349.9,
+      "precoOriginalBRL": 569.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-last-of-us-completo-ps5-midia-digital-1tn8t/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359906-e3c715a378bae9e7e417856163941430-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358874425",
+      "varianteFornecedorId": 1569399816
     },
     {
       "id": "the-last-of-us-part-i-ps5",
@@ -11105,6 +11300,45 @@
       "varianteFornecedorId": 1352644935
     },
     {
+      "id": "tomb-raider-i-vi-remastered-bundle-ps5",
+      "nome": "TOMB RAIDER I-VI REMASTERED BUNDLE - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 189.9,
+      "precoOriginalBRL": 294.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-i-vi-remastered-bundle-ps5-midia-digital-1xrtz/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359918-20055c70247e03acd217856171614652-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358876033",
+      "varianteFornecedorId": 1569404203
+    },
+    {
+      "id": "tomb-raider-anniversary-ps5",
+      "nome": "TOMB RAIDER: ANNIVERSARY - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 74.9,
+      "precoOriginalBRL": 114.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-anniversary-ps5-midia-digital-nf77b/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359922-a553ce0ba0790aca7717856360175781-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358903144",
+      "varianteFornecedorId": 1569504668
+    },
+    {
+      "id": "tomb-raider-definitive-edition-ps5",
+      "nome": "TOMB RAIDER: DEFINITIVE EDITION - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 74.9,
+      "precoOriginalBRL": 114.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-definitive-edition-ps5-midia-digital-emsa5/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359912-dd6f0f4c8d770168ca17856169391701-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358875483",
+      "varianteFornecedorId": 1569402742
+    },
+    {
       "id": "tomb-raider-definitive-survivor-trilogy-ps5",
       "nome": "TOMB RAIDER: DEFINITIVE SURVIVOR TRILOGY- PS5 - MÍDIA DIGITAL",
       "precoAtualBRL": 29.9,
@@ -11129,6 +11363,19 @@
       "plataformaKey": "ps5",
       "fornecedorProductId": "350901919",
       "varianteFornecedorId": 1544420858
+    },
+    {
+      "id": "tomb-raider-legend-ps5",
+      "nome": "TOMB RAIDER: LEGEND - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 29.9,
+      "precoOriginalBRL": 104.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-legend-ps5-midia-digital-s4fvj/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359910-69ca24e8edb82f755017856167525890-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "358875121",
+      "varianteFornecedorId": 1569401856
     },
     {
       "id": "tony-hawk-s-pro-skater-1-2-ps5",
@@ -11246,45 +11493,6 @@
       "plataformaKey": "ps5",
       "fornecedorProductId": "342473459",
       "varianteFornecedorId": 1519437469
-    },
-    {
-      "id": "watch-dogs-bundle-1-2-ps5",
-      "nome": "WATCH DOGS BUNDLE 1+2 - PS5 - MIDIA DIGITAL",
-      "precoAtualBRL": 189.9,
-      "precoOriginalBRL": 339.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/watch-dogs-bundle-12-ps5-midia-digital-bt3ml/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000265949-f6ca317eb0c48b704717728306253116-1024-1024.webp",
-      "plataforma": "PlayStation 5",
-      "plataformaKey": "ps5",
-      "fornecedorProductId": "329923192",
-      "varianteFornecedorId": 1468131839
-    },
-    {
-      "id": "wuchang-fallen-feathers-ps5",
-      "nome": "WUCHANG: FALLEN FEATHERS - PS5 - MÍDIA DIGITAL",
-      "precoAtualBRL": 159.9,
-      "precoOriginalBRL": 284.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/wuchang-fallen-feathers-ps5-midia-digital-96be8/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_5732-98e6ece4ce29d6409c17595129428624-1024-1024.webp",
-      "plataforma": "PlayStation 5",
-      "plataformaKey": "ps5",
-      "fornecedorProductId": "296166576",
-      "varianteFornecedorId": 1322336792
-    },
-    {
-      "id": "wwe-2k26-ps5",
-      "nome": "WWE 2K26 - PS5 - MÍDIA DIGITAL",
-      "precoAtualBRL": 139.9,
-      "precoOriginalBRL": 379.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/wwe-2k26-ps5-midia-digital-tavxm/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000350863-795e7c15488e8894ae17818920369902-1024-1024.webp",
-      "plataforma": "PlayStation 5",
-      "plataformaKey": "ps5",
-      "fornecedorProductId": "351472676",
-      "varianteFornecedorId": 1546259440
     }
   ],
   "xbox-one": [
@@ -11928,8 +12136,8 @@
     {
       "id": "gta-v-xbox-one",
       "nome": "GTA V - XBOX ONE - MIDIA DIGITAL",
-      "precoAtualBRL": 59.9,
-      "precoOriginalBRL": 59.9,
+      "precoAtualBRL": 79.9,
+      "precoOriginalBRL": 79.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/gta-v-xbox-one-midia-digital-tfyaw/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/gta-v-premium-edition-xbox-cover-3b756ae1777e59d7c117598769113486-1024-1024.webp",
@@ -12652,6 +12860,19 @@
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "350258105",
       "varianteFornecedorId": 1542727972
+    },
+    {
+      "id": "truck-simulator-cargo-driver-2025-euro-xbox-one",
+      "nome": "TRUCK SIMULATOR CARGO DRIVER 2025 EURO XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 39.9,
+      "precoOriginalBRL": 64.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/truck-simulator-cargo-driver-2025-euro-xbox-one-xbox-series-s-x-midia-digital-azrnh/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/96531-1397c301c4f4283f6417855918919709-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "358827976",
+      "varianteFornecedorId": 1569255724
     },
     {
       "id": "ufc-3-xbox-one",
@@ -14682,6 +14903,19 @@
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "350258105",
       "varianteFornecedorId": 1542727972
+    },
+    {
+      "id": "truck-simulator-cargo-driver-2025-euro-xbox-series",
+      "nome": "TRUCK SIMULATOR CARGO DRIVER 2025 EURO XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 39.9,
+      "precoOriginalBRL": 64.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/truck-simulator-cargo-driver-2025-euro-xbox-one-xbox-series-s-x-midia-digital-azrnh/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/96531-1397c301c4f4283f6417855918919709-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "358827976",
+      "varianteFornecedorId": 1569255724
     },
     {
       "id": "ufc-3-xbox-series",

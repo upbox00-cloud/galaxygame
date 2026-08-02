@@ -20,6 +20,7 @@ const requiredFiles = [
   "header-search.js",
   "footer.js",
   "chat.js",
+  "netlify/functions/chat-ia.js",
   "scripts/auth.js",
   "netlify/functions/stripe-webhook.js",
   "netlify/functions/admin-pedidos.js",

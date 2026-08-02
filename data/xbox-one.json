@@ -1628,8 +1628,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1391197096,
-    "precoVendaEUR": 15.99,
-    "precoOriginalEUR": 15.99,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
     "trailer": "https://www.youtube.com/embed/QkkoHAzjnUs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/gta-v-premium-edition-xbox-cover-3b756ae1777e59d7c117598769113486-1024-1024.webp"
@@ -1906,8 +1906,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471685093,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 8.99,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
     "trailer": "https://www.youtube.com/embed/hyWbPHrsW_g",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d15/d1514cb04f29a70e4e0bfc19bb3f7221.jpg",
@@ -3532,6 +3532,35 @@
     "enriquecido": true,
     "steamGridGridScore": 0,
     "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "truck-simulator-cargo-driver-2025-euro-xbox-one",
+    "nome": "TRUCK SIMULATOR CARGO DRIVER 2025 EURO XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1569255724,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 11.99,
+    "trailer": "https://www.youtube.com/embed/KuDpSl-hlqg",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/96531-1397c301c4f4283f6417855918919709-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/96531-1397c301c4f4283f6417855918919709-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "TRUCK SIMULATOR US DRIVER",
+    "steamGridMatchScore": 0.535,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/truck-simulator-cargo-driver-2025-euro-xbox-one-xbox-series-s-x-midia-digital-azrnh/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
     "steamGridNeedsReview": false
   },
   {

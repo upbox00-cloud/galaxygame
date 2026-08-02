@@ -580,7 +580,12 @@ function normalizeRelatedText(value) {
 }
 
 function relatedGameKey(product) {
-  return normalizeRelatedText(cleanProductTitle(product?.nome))
+  const normalized = normalizeRelatedText(cleanProductTitle(product?.nome));
+  if (/\b(grand\s+theft\s+auto\s+vi|gta\s*(vi|6))\b/.test(normalized)) return "grand theft auto vi";
+  if (/\b(grand\s+theft\s+auto\s+v|gta\s*(v|5))\b/.test(normalized)) return "grand theft auto v";
+  if (/\b(grand\s+theft\s+auto\s+the\s+trilogy|gta\s+the\s+trilogy)\b/.test(normalized)) return "grand theft auto trilogy";
+
+  return normalized
     .replace(/\bxbox\s*one\s*&\s*(xbox\s*)?series\s*(s\/x|x\/s|x\|s)\b/g, " ")
     .replace(/\b(playstation\s*4|playstation\s*5|ps4|ps5)\b/g, " ")
     .replace(/\b(xbox\s*one|xbox\s*series\s*(x\|s|s\/x|x\/s)?|series\s*(x\|s|s\/x|x\/s))\b/g, " ")
@@ -593,6 +598,18 @@ function relatedGameKey(product) {
     .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function relatedImageKey(product) {
+  const source = productImage(product) || "";
+  const cleanSource = normalizeRelatedText(source)
+    .replace(/^https?:\/\//, "")
+    .replace(/[?#].*$/, "")
+    .replace(/-\d+x\d+(?=\.[a-z0-9]+$)/g, "")
+    .trim();
+
+  if (!cleanSource || cleanSource.includes("gta-vi-landscape-hq")) return "";
+  return cleanSource;
 }
 
 function discountValue(product) {
@@ -663,7 +680,20 @@ function uniqueRelatedGames(products) {
     groups.set(key, group);
   });
 
-  return [...groups.values()].map(chooseBestVariant).filter(Boolean);
+  const selected = [];
+  const usedImages = new Set();
+
+  [...groups.values()]
+    .map(chooseBestVariant)
+    .filter(Boolean)
+    .forEach((product) => {
+      const imageKey = relatedImageKey(product);
+      if (imageKey && usedImages.has(imageKey)) return;
+      if (imageKey) usedImages.add(imageKey);
+      selected.push(product);
+    });
+
+  return selected;
 }
 
 function similarityScore(product, current) {
