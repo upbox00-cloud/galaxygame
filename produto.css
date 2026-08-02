@@ -1,5 +1,9 @@
 .product-page {
-  background: #272727;
+  background:
+    radial-gradient(circle at 18% 30%, rgba(255, 106, 19, 0.16), transparent 32%),
+    radial-gradient(circle at 82% 12%, rgba(142, 92, 255, 0.22), transparent 38%),
+    linear-gradient(180deg, rgba(39, 39, 39, 0.42) 0%, rgba(39, 39, 39, 0.62) 54%, rgba(39, 39, 39, 0.78) 100%),
+    url("assets/site-cosmic-gaming-bg.webp") center top / cover fixed no-repeat;
 }
 
 .product-header {
@@ -32,8 +36,8 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(39, 39, 39, 0.4) 64%, #272727 100%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.04) 48%, rgba(0, 0, 0, 0.42)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(39, 39, 39, 0.24) 64%, rgba(39, 39, 39, 0.54) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.02) 48%, rgba(0, 0, 0, 0.32)),
     url("assets/gta-vi-landscape-hq.webp") center / cover;
   filter: saturate(1.08) contrast(1.04);
   transform: scale(1.01);
@@ -150,9 +154,10 @@
 .buy-panel {
   height: 100%;
   padding: 18px;
-  background: rgba(47, 47, 47, 0.88);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(74, 74, 74, 0.54);
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(16px) saturate(1.08);
 }
 
 .release-note,
@@ -306,6 +311,12 @@
   grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.8fr);
   gap: 46px;
   padding: 54px 0 28px;
+}
+
+.product-layout,
+.product-section {
+  position: relative;
+  z-index: 1;
 }
 
 .product-copy h2,
