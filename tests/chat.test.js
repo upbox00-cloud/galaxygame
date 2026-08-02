@@ -104,3 +104,32 @@ test("expõe apenas um diagnóstico seguro do provedor", () => {
   });
   assert.deepEqual(diagnostic, { providerStatus: 400, providerCode: "API_KEY_INVALID" });
 });
+
+test("usa modelos Gemini atuais com fallback", async () => {
+  const previousModel = process.env.GEMINI_MODEL;
+  delete process.env.GEMINI_MODEL;
+  const attempted = [];
+  const client = {
+    models: {
+      async generateContent(request) {
+        attempted.push(request);
+        if (request.model === "gemini-3.6-flash") throw { status: 404 };
+        return { text: "Resposta" };
+      }
+    }
+  };
+  const originalWarn = console.warn;
+  console.warn = () => {};
+
+  try {
+    const response = await _test.generateGeminiReply(client, [{ role: "user", parts: [{ text: "Olá" }] }], "Sistema");
+    assert.equal(response.text, "Resposta");
+    assert.deepEqual(attempted.map(({ model }) => model), ["gemini-3.6-flash", "gemini-3.5-flash-lite"]);
+    assert.equal("temperature" in attempted[0].config, false);
+    assert.equal("thinkingConfig" in attempted[0].config, false);
+  } finally {
+    console.warn = originalWarn;
+    if (previousModel === undefined) delete process.env.GEMINI_MODEL;
+    else process.env.GEMINI_MODEL = previousModel;
+  }
+});

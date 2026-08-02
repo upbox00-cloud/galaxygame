@@ -295,6 +295,39 @@ function providerDiagnostic(details) {
   };
 }
 
+function modelCandidates() {
+  return [...new Set([
+    String(process.env.GEMINI_MODEL || "").trim(),
+    "gemini-3.6-flash",
+    "gemini-3.5-flash-lite"
+  ].filter(Boolean))];
+}
+
+async function generateGeminiReply(client, contents, systemInstruction) {
+  const models = modelCandidates();
+  let lastError;
+
+  for (const [index, model] of models.entries()) {
+    try {
+      return await client.models.generateContent({
+        model,
+        contents,
+        config: {
+          systemInstruction,
+          maxOutputTokens: 420
+        }
+      });
+    } catch (error) {
+      lastError = error;
+      const status = Number(error?.status || error?.statusCode || error?.response?.status || 0);
+      if (status !== 404 || index === models.length - 1) throw error;
+      console.warn(`[chat-ia] Gemini model ${model} is unavailable; trying ${models[index + 1]}.`);
+    }
+  }
+
+  throw lastError || new Error("No Gemini model candidate available");
+}
+
 function logGeminiError(error) {
   const details = geminiErrorDetails(error);
   console.error("[chat-ia] Gemini API request failed. HTTP status:", details.status ?? "unknown");
@@ -331,16 +364,11 @@ async function handler(event) {
     const latestQuestion = validation.messages.at(-1).content;
     const products = searchProducts(catalog, latestQuestion);
     const client = new GoogleGenAI({ apiKey: geminiApiKey });
-    const response = await client.models.generateContent({
-      model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
-      contents: toGeminiContents(validation.messages),
-      config: {
-        systemInstruction: `${SYSTEM_PROMPT}\n\n${catalogContext(products)}`,
-        maxOutputTokens: 420,
-        temperature: 0.4,
-        thinkingConfig: { thinkingBudget: 0 }
-      }
-    });
+    const response = await generateGeminiReply(
+      client,
+      toGeminiContents(validation.messages),
+      `${SYSTEM_PROMPT}\n\n${catalogContext(products)}`
+    );
     const reply = String(response.text || "").trim();
     if (!reply) throw new Error("Empty model response");
     return json(200, { reply, products: products.slice(0, 3) });
@@ -354,4 +382,4 @@ async function handler(event) {
 }
 
 exports.handler = handler;
-exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, configuredGeminiKey, redactSecrets, geminiErrorDetails, providerErrorCode, providerDiagnostic, logGeminiError };
+exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, configuredGeminiKey, redactSecrets, geminiErrorDetails, providerErrorCode, providerDiagnostic, modelCandidates, generateGeminiReply, logGeminiError };
