@@ -113,7 +113,7 @@ test("usa modelos Gemini atuais com fallback", async () => {
     models: {
       async generateContent(request) {
         attempted.push(request);
-        if (request.model === "gemini-3.6-flash") throw { status: 404 };
+        if (request.model === "gemini-3.5-flash-lite") throw { status: 404 };
         return { text: "Resposta" };
       }
     }
@@ -124,7 +124,7 @@ test("usa modelos Gemini atuais com fallback", async () => {
   try {
     const response = await _test.generateGeminiReply(client, [{ role: "user", parts: [{ text: "Olá" }] }], "Sistema");
     assert.equal(response.text, "Resposta");
-    assert.deepEqual(attempted.map(({ model }) => model), ["gemini-3.6-flash", "gemini-3.5-flash-lite"]);
+    assert.deepEqual(attempted.map(({ model }) => model), ["gemini-3.5-flash-lite", "gemini-3.6-flash"]);
     assert.equal("temperature" in attempted[0].config, false);
     assert.equal("thinkingConfig" in attempted[0].config, false);
   } finally {

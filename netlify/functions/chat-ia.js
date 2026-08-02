@@ -298,8 +298,8 @@ function providerDiagnostic(details) {
 function modelCandidates() {
   return [...new Set([
     String(process.env.GEMINI_MODEL || "").trim(),
-    "gemini-3.6-flash",
-    "gemini-3.5-flash-lite"
+    "gemini-3.5-flash-lite",
+    "gemini-3.6-flash"
   ].filter(Boolean))];
 }
 
