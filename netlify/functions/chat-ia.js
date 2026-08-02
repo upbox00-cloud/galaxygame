@@ -314,7 +314,7 @@ async function generateGeminiReply(client, contents, systemInstruction) {
         contents,
         config: {
           systemInstruction,
-          maxOutputTokens: 420
+          maxOutputTokens: 1024
         }
       });
     } catch (error) {
