@@ -279,6 +279,22 @@ function geminiErrorDetails(error) {
   };
 }
 
+function providerErrorCode(body) {
+  try {
+    const parsed = typeof body === "string" ? JSON.parse(body) : body;
+    return String(parsed?.error?.status || parsed?.error?.code || "UNKNOWN_PROVIDER_ERROR");
+  } catch {
+    return "UNPARSEABLE_PROVIDER_ERROR";
+  }
+}
+
+function providerDiagnostic(details) {
+  return {
+    providerStatus: details.status,
+    providerCode: providerErrorCode(details.body)
+  };
+}
+
 function logGeminiError(error) {
   const details = geminiErrorDetails(error);
   console.error("[chat-ia] Gemini API request failed. HTTP status:", details.status ?? "unknown");
@@ -329,12 +345,13 @@ async function handler(event) {
     if (!reply) throw new Error("Empty model response");
     return json(200, { reply, products: products.slice(0, 3) });
   } catch (error) {
-    const { status } = logGeminiError(error);
-    if (status === 401 || status === 403) return json(401, { error: "A assistente está temporariamente indisponível." });
-    if (status === 429) return json(429, { error: "A assistente está com muita procura. Tenta novamente dentro de instantes." });
-    return json(500, { error: "Não foi possível responder agora. Podes tentar novamente ou contactar gamegalaxy26@gmail.com." });
+    const details = logGeminiError(error);
+    const diagnostic = providerDiagnostic(details);
+    if (details.status === 401 || details.status === 403) return json(401, { error: "A assistente está temporariamente indisponível.", ...diagnostic });
+    if (details.status === 429) return json(429, { error: "A assistente está com muita procura. Tenta novamente dentro de instantes.", ...diagnostic });
+    return json(500, { error: "Não foi possível responder agora. Podes tentar novamente ou contactar gamegalaxy26@gmail.com.", ...diagnostic });
   }
 }
 
 exports.handler = handler;
-exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, configuredGeminiKey, redactSecrets, geminiErrorDetails, logGeminiError };
+exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, configuredGeminiKey, redactSecrets, geminiErrorDetails, providerErrorCode, providerDiagnostic, logGeminiError };

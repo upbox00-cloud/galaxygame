@@ -96,3 +96,11 @@ test("normaliza a chave configurada sem alterar o segredo", () => {
     else process.env.GEMINI_API_KEY = previousKey;
   }
 });
+
+test("expõe apenas um diagnóstico seguro do provedor", () => {
+  const diagnostic = _test.providerDiagnostic({
+    status: 400,
+    body: '{"error":{"code":400,"status":"API_KEY_INVALID","message":"invalid"}}'
+  });
+  assert.deepEqual(diagnostic, { providerStatus: 400, providerCode: "API_KEY_INVALID" });
+});
