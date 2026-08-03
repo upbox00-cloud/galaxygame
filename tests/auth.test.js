@@ -26,6 +26,14 @@ test("account menu is controlled only by click and closes both dropdown types", 
   assert.doesNotMatch(authSource, /pointerenter|pointerleave/);
 });
 
+test("mobile return from Identity restores interactions and refreshes the user", () => {
+  assert.match(authSource, /identity\.on\("close", restorePageInteractions\)/);
+  assert.match(authSource, /window\.addEventListener\("pageshow"/);
+  assert.match(authSource, /identity\.currentUser\?\.\(\)/);
+  assert.match(stylesSource, /\.site-header \.header-actions[\s\S]*pointer-events: auto !important;/);
+  assert.match(stylesSource, /\.site-header \.auth-user-button[\s\S]*touch-action: manipulation;/);
+});
+
 test("all primary pages load the cache-busted auth script once", () => {
   const pages = [
     "index.html",
@@ -38,7 +46,7 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260803-2/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260803-3/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
   });
 });

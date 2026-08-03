@@ -133,6 +133,16 @@
     button.setAttribute("aria-expanded", String(willOpen));
   }
 
+  function restorePageInteractions() {
+    closeMenus();
+    window.requestAnimationFrame(() => {
+      document.documentElement.style.removeProperty("overflow");
+      document.body.style.removeProperty("overflow");
+      document.body.style.removeProperty("position");
+      document.body.style.removeProperty("width");
+    });
+  }
+
   enhanceAuthControls();
 
   document.querySelectorAll("[data-auth-login]").forEach((button) => {
@@ -203,5 +213,13 @@
     window.location.assign("index.html");
   });
 
-  identity.init();
+  identity.on("close", restorePageInteractions);
+
+  window.addEventListener("pageshow", () => {
+    const currentUser = identity.currentUser?.();
+    if (currentUser) updateAuthUI(currentUser);
+    restorePageInteractions();
+  });
+
+  identity.init({ locale: "pt" });
 })();

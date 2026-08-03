@@ -4647,7 +4647,7 @@ details p {
     position: absolute !important;
     left: -8px !important;
     top: 50% !important;
-    z-index: 3 !important;
+    z-index: 1 !important;
     flex: 0 0 auto !important;
     max-width: none !important;
     margin: 0 !important;
@@ -4661,8 +4661,28 @@ details p {
   }
 
   .site-header .header-actions {
+    position: relative !important;
+    z-index: 5 !important;
     margin-left: auto !important;
     padding-left: 176px !important;
+    pointer-events: auto !important;
+  }
+
+  .site-header .mobile-menu-button {
+    position: relative;
+    z-index: 6;
+    touch-action: manipulation;
+  }
+
+  .site-header .header-search,
+  .site-header .cart-button,
+  .site-header .auth-controls,
+  .site-header .auth-login-button,
+  .site-header .auth-user-button {
+    position: relative;
+    z-index: 6;
+    pointer-events: auto;
+    touch-action: manipulation;
   }
 }
 
