@@ -2205,6 +2205,67 @@ html.reveal-enabled .indie-art {
   background: #343434;
 }
 
+.community-thanks {
+  grid-template-columns: 150px minmax(0, 720px);
+  min-height: 280px;
+  background:
+    linear-gradient(105deg, rgba(25, 17, 40, 0.98), rgba(45, 34, 64, 0.96) 54%, rgba(73, 36, 28, 0.96)),
+    #24212c;
+}
+
+.community-thanks-mark {
+  display: grid;
+  width: 138px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  color: #fff;
+  background:
+    linear-gradient(145deg, rgba(137, 91, 255, 0.76), rgba(255, 106, 19, 0.76)),
+    #26202f;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+.community-thanks-mark span {
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.community-kicker {
+  margin: 0 0 8px;
+  color: #ff9b63;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.community-thanks h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.05;
+}
+
+.community-thanks > div:last-child > p:not(.community-kicker) {
+  max-width: 660px;
+  margin: 0 0 20px;
+  color: #d8d2df;
+  line-height: 1.65;
+}
+
+.community-review-cta {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  padding: 0 18px;
+  color: #171717;
+  background: var(--orange);
+  font-weight: 900;
+}
+
 .portrait {
   height: 210px;
   border-radius: var(--radius);
@@ -2283,15 +2344,49 @@ blockquote {
   overflow: hidden;
 }
 
+.community-review-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.community-review-card:hover {
+  border-color: rgba(255, 106, 19, 0.5);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
 .review-grid h3,
 .review-grid p {
   margin-inline: 14px;
 }
 
 .review-cover {
-  min-height: 118px;
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: hidden;
   border-radius: var(--radius) var(--radius) 0 0;
-  background: linear-gradient(135deg, #555, #191919);
+  background: #171717;
+}
+
+.review-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.community-review-card:nth-child(1) .review-cover img { object-position: center 58%; }
+.community-review-card:nth-child(2) .review-cover img { object-position: center center; }
+.community-review-card:nth-child(3) .review-cover img { object-position: center 60%; }
+.community-review-card:nth-child(4) .review-cover img { object-position: center 58%; }
+
+.community-review-card:hover .review-cover img {
+  transform: scale(1.025);
 }
 
 .review-cover.players-coop { background: url("assets/players-coop-review.webp") center 38% / cover; }
@@ -2305,6 +2400,42 @@ blockquote {
   color: #ffb43b;
   font-size: 12px;
   font-weight: 700;
+}
+
+.community-review-copy {
+  display: flex;
+  min-height: 225px;
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.community-review-copy h3 {
+  margin-top: 9px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.community-review-copy p {
+  margin-top: 0;
+  line-height: 1.55;
+}
+
+.community-review-copy small {
+  margin-top: auto;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.community-review-note {
+  max-width: 820px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .review-grid small {
@@ -3288,6 +3419,44 @@ details p {
   .header-actions:has(.header-search.expanded) .auth-controls,
   .header-actions:has(.header-search:focus-within) .auth-controls {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .community-thanks {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 20px;
+    padding: 34px 18px;
+  }
+
+  .community-thanks-mark {
+    width: 86px;
+  }
+
+  .community-thanks-mark span {
+    font-size: 27px;
+  }
+
+  .community-thanks h2 {
+    font-size: 30px;
+  }
+
+  .community-reviews .section-heading {
+    align-items: flex-start;
+  }
+
+  .community-reviews .review-grid > .community-review-card {
+    flex-basis: min(78vw, 292px);
+  }
+
+  .community-review-copy {
+    min-height: 218px;
+  }
+
+  .community-review-note {
+    margin-top: 12px;
+    font-size: 12px;
   }
 }
 
