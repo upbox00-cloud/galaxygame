@@ -113,15 +113,15 @@
   }
 
   function closeMenus(except = null) {
-    document.querySelectorAll("[data-auth-dropdown]").forEach((dropdown) => {
+    document.querySelectorAll("[data-auth-dropdown], [data-auth-login-dropdown]").forEach((dropdown) => {
       if (dropdown !== except) dropdown.hidden = true;
     });
     document.querySelectorAll("[data-auth-login]").forEach((button) => {
       const dropdown = button.parentElement?.querySelector("[data-auth-login-dropdown]");
-      button.setAttribute("aria-expanded", String(dropdown === except && !except.hidden));
+      button.setAttribute("aria-expanded", String(Boolean(except && dropdown === except && !except.hidden)));
     });
     document.querySelectorAll("[data-auth-menu]").forEach((button) => {
-      button.setAttribute("aria-expanded", String(button.nextElementSibling === except && !except.hidden));
+      button.setAttribute("aria-expanded", String(Boolean(except && button.nextElementSibling === except && !except.hidden)));
     });
   }
 
@@ -150,30 +150,6 @@
       toggleDropdown(button, dropdown);
     });
   });
-
-  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-    document.querySelectorAll(".auth-controls, [data-auth-user]").forEach((shell) => {
-      shell.addEventListener("pointerenter", () => {
-        const loginButton = shell.querySelector("[data-auth-login]:not([hidden])");
-        const loginDropdown = shell.querySelector("[data-auth-login-dropdown]");
-        if (loginButton && loginDropdown) {
-          closeMenus(loginDropdown);
-          loginDropdown.hidden = false;
-          loginButton.setAttribute("aria-expanded", "true");
-          return;
-        }
-        const userButton = shell.querySelector("[data-auth-menu]");
-        const userDropdown = shell.querySelector("[data-auth-dropdown]");
-        if (userButton && userDropdown && !shell.hidden) {
-          closeMenus(userDropdown);
-          userDropdown.hidden = false;
-          userButton.setAttribute("aria-expanded", "true");
-        }
-      });
-
-      shell.addEventListener("pointerleave", () => closeMenus());
-    });
-  }
 
   document.querySelectorAll("[data-auth-open-login]").forEach((button) => {
     button.addEventListener("click", (event) => {

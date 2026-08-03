@@ -20,6 +20,12 @@ test("hidden auth states cannot be overridden by icon display styles", () => {
   assert.match(stylesSource, /\.auth-dropdown\[hidden\]/);
 });
 
+test("account menu is controlled only by click and closes both dropdown types", () => {
+  assert.match(authSource, /\[data-auth-dropdown\], \[data-auth-login-dropdown\]/);
+  assert.match(authSource, /toggleDropdown\(button, dropdown\)/);
+  assert.doesNotMatch(authSource, /pointerenter|pointerleave/);
+});
+
 test("all primary pages load the cache-busted auth script once", () => {
   const pages = [
     "index.html",
@@ -32,7 +38,7 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260803-1/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260803-2/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
   });
 });
