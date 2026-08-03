@@ -262,6 +262,13 @@ select,
   position: relative;
 }
 
+/* Author-level display rules must never override the Identity state. */
+.auth-controls [hidden],
+.auth-user[hidden],
+.auth-dropdown[hidden] {
+  display: none !important;
+}
+
 .auth-login-button,
 .auth-user-button,
 .account-logout {

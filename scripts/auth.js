@@ -6,7 +6,7 @@
   const accountPage = document.body.classList.contains("account-page");
   const params = new URLSearchParams(window.location.search);
   const userIconSvg = `
-    <span class="header-user-icon" aria-hidden="true">
+    <span class="header-user-icon" data-auth-icon aria-hidden="true">
       <svg viewBox="0 0 24 24" focusable="false">
         <path d="M20 21a8 8 0 0 0-16 0"/>
         <circle cx="12" cy="7" r="4"/>
@@ -38,6 +38,11 @@
 
   function enhanceAuthControls() {
     document.querySelectorAll(".auth-controls").forEach((controls) => {
+      const duplicateLoginDropdowns = controls.querySelectorAll("[data-auth-login-dropdown]");
+      duplicateLoginDropdowns.forEach((dropdown, index) => {
+        if (index > 0) dropdown.remove();
+      });
+
       if (controls.dataset.authEnhanced === "true") return;
       controls.dataset.authEnhanced = "true";
       controls.classList.add("account-shell-control");
@@ -72,18 +77,32 @@
   }
 
   function updateAuthUI(user) {
+    const isLoggedIn = Boolean(user);
+
+    // Rebuild the icon buttons so repeated Identity events can never append icons.
     document.querySelectorAll("[data-auth-login]").forEach((button) => {
-      button.hidden = Boolean(user);
+      button.innerHTML = `${userIconSvg}<span class="sr-only">Entrar / Criar conta</span>`;
+    });
+    document.querySelectorAll("[data-auth-menu]").forEach((button) => {
+      button.innerHTML = `${userIconSvg}<span class="sr-only" data-auth-name>Minha Conta</span>`;
+    });
+    document.querySelectorAll("[data-auth-login]").forEach((button) => {
+      button.hidden = isLoggedIn;
+      button.setAttribute("aria-hidden", String(isLoggedIn));
     });
     document.querySelectorAll("[data-auth-login-dropdown]").forEach((dropdown) => {
       dropdown.hidden = true;
     });
     document.querySelectorAll("[data-auth-user]").forEach((container) => {
-      container.hidden = !user;
+      container.hidden = !isLoggedIn;
+      container.setAttribute("aria-hidden", String(!isLoggedIn));
     });
     document.querySelectorAll("[data-auth-name]").forEach((element) => {
       element.textContent = userLabel(user);
       element.title = user?.email || "";
+    });
+    document.querySelectorAll(".auth-controls").forEach((controls) => {
+      controls.dataset.authState = isLoggedIn ? "logged-in" : "logged-out";
     });
     renderAccount(user);
   }
