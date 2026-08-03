@@ -158,7 +158,9 @@
 .sales-chat-product strong, .sales-chat-product small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sales-chat-product strong { font-size: 13px; }
 .sales-chat-product small { margin-top: 2px; color: #999; font-size: 11px; }
-.sales-chat-product b { color: #fff; font-size: 13px; }
+.sales-chat-product-offer { display: grid; justify-items: end; gap: 3px; }
+.sales-chat-product-offer b { color: #fff; font-size: 13px; }
+.sales-chat-product-offer small { color: var(--chat-orange); font-size: 10px; font-weight: 800; }
 .sales-chat-suggestions { display: flex; gap: 6px; overflow-x: auto; padding: 6px 14px 10px; scrollbar-width: none; }
 .sales-chat-suggestions:empty { display: none; }
 .sales-chat-suggestions button { flex: 0 0 auto; padding: 7px 10px; border: 1px solid rgba(255, 100, 20, .48); border-radius: 16px; background: transparent; color: #eee; font-size: 12px; cursor: pointer; }

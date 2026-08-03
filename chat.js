@@ -42,7 +42,7 @@
     if (document.querySelector('link[data-chat-styles]')) return;
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "chat.css?v=20260720-3";
+    link.href = "chat.css?v=20260803-1";
     link.dataset.chatStyles = "";
     document.head.append(link);
   }
@@ -86,9 +86,11 @@
           image.addEventListener("error", () => image.remove(), { once: true });
           link.append(image);
         }
-        const copy = el("span");
+        const copy = el("span", "sales-chat-product-details");
         copy.append(el("strong", "", product.name), el("small", "", product.platform));
-        link.append(copy, el("b", "", formatEUR(product.price)));
+        const offer = el("span", "sales-chat-product-offer");
+        offer.append(el("b", "", formatEUR(product.price)), el("small", "", "Ver jogo"));
+        link.append(copy, offer);
         list.append(link);
       });
       article.append(list);

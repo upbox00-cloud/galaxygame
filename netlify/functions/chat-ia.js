@@ -16,9 +16,15 @@ const SYSTEM_PROMPT = `És a assistente virtual de vendas da GalaxyGame, uma loj
 
 Responde por defeito em português de Portugal e adapta-te ao idioma do cliente. Sê profissional, calorosa, objetiva e útil. Faz no máximo uma pergunta curta quando faltar informação essencial.
 
+Forma de atendimento:
+- Conversa como uma atendente humana experiente: natural, atenta e sem frases mecânicas. Não repitas a pergunta do cliente nem comeces todas as respostas com a mesma saudação.
+- Ao recomendar jogos, explica brevemente por que cada opção combina com o pedido. Apresenta preços de forma natural e termina com uma pergunta curta que ajude o cliente a decidir.
+- Não transformes a resposta num relatório técnico. Usa listas apenas quando facilitarem realmente a comparação.
+
 Regras obrigatórias:
 - Recomenda no máximo 3 produtos e apenas produtos presentes em CATÁLOGO RELEVANTE.
-- Usa exclusivamente nomes, plataformas, preços, descontos, datas e ligações fornecidos no contexto. Nunca inventes stock, edições, compatibilidade ou promoções.
+- Usa exclusivamente nomes, plataformas, preços, descontos e datas fornecidos no contexto. Nunca inventes stock, edições, compatibilidade ou promoções.
+- NUNCA escrevas links, URLs, Markdown, IDs, nomes de ficheiros, "produto.html" ou expressões como "Ver produto" na resposta. A interface apresenta automaticamente os jogos recomendados em botões clicáveis abaixo da tua mensagem.
 - Confirma sempre a plataforma antes de orientar uma compra.
 - Depois da confirmação do pagamento, o jogo fica disponível em até 10 minutos na conta GalaxyGame do cliente, em Minha Conta > Meus Pedidos, e também é enviado por email com instruções de ativação.
 - Existe infraestrutura de pedidos para Stripe, mas o checkout público ainda não cria uma sessão de pagamento. Não afirmes que cartão, MB WAY, Multibanco, Apple Pay, Google Pay, Klarna, Scalapay ou outro método está disponível enquanto esse método não estiver visível e ativo no checkout.
@@ -229,6 +235,20 @@ function toGeminiContents(messages) {
   }));
 }
 
+function cleanAssistantReply(value) {
+  return String(value || "")
+    .replace(/\[([^\]]+)\]\((?:[^)]+)\)/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/(?:https?:\/\/|www\.)\S+/gi, "")
+    .replace(/\(?\s*produto\.html\?id=[^\s)\]]+\s*\)?/gi, "")
+    .replace(/\b(?:ver|abrir)\s+(?:o\s+)?(?:produto|jogo)\b\s*[:\-]?/gi, "")
+    .replace(/[ \t]+\n/g, "\n")
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 function incomingMessages(payload) {
   if (Array.isArray(payload?.messages)) return payload.messages;
   const history = Array.isArray(payload?.history) ? payload.history : [];
@@ -369,7 +389,7 @@ async function handler(event) {
       toGeminiContents(validation.messages),
       `${SYSTEM_PROMPT}\n\n${catalogContext(products)}`
     );
-    const reply = String(response.text || "").trim();
+    const reply = cleanAssistantReply(response.text);
     if (!reply) throw new Error("Empty model response");
     return json(200, { reply, products: products.slice(0, 3) });
   } catch (error) {
@@ -382,4 +402,4 @@ async function handler(event) {
 }
 
 exports.handler = handler;
-exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, incomingMessages, configuredGeminiKey, redactSecrets, geminiErrorDetails, providerErrorCode, providerDiagnostic, modelCandidates, generateGeminiReply, logGeminiError };
+exports._test = { normalize, extractBudget, requestedPlatform, searchProducts, validateMessages, publicProduct, isRateLimited, consumeDailyQuota, toGeminiContents, cleanAssistantReply, incomingMessages, configuredGeminiKey, redactSecrets, geminiErrorDetails, providerErrorCode, providerDiagnostic, modelCandidates, generateGeminiReply, logGeminiError };
