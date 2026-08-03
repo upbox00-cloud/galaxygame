@@ -1,4 +1,7 @@
 (function initializeAccountOrders() {
+  if (window.__GalaxyGameAccountOrdersReady) return;
+  window.__GalaxyGameAccountOrdersReady = true;
+
   const identity = window.netlifyIdentity;
   const list = document.querySelector("[data-account-orders]");
   if (!list) return;
@@ -47,8 +50,12 @@
     const copyButton = article.querySelector("[data-copy-code]");
     if (copyButton) {
       copyButton.addEventListener("click", async () => {
-        await navigator.clipboard.writeText(order.codigo || "");
-        copyButton.textContent = "Copiado";
+        try {
+          await navigator.clipboard.writeText(order.codigo || "");
+          copyButton.textContent = "Copiado";
+        } catch {
+          copyButton.textContent = "Seleciona e copia o código";
+        }
         setTimeout(() => { copyButton.textContent = "Copiar código"; }, 1600);
       });
     }
@@ -78,10 +85,15 @@
   }
 
   if (!identity) return;
-  identity.on("login", () => loadOrders());
-  setTimeout(() => {
-    if (identity.currentUser()) loadOrders();
-  }, 250);
+  let loadedForUser = "";
+  function loadForUser(user) {
+    if (!user || loadedForUser === user.id) return;
+    loadedForUser = user.id;
+    loadOrders();
+  }
+  identity.on("init", loadForUser);
+  identity.on("login", loadForUser);
+  loadForUser(identity.currentUser());
 })();
 
 function normalizeStatus(value) {

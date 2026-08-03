@@ -25,7 +25,62 @@ O widget e a integracao de autenticação ja estao incluidos no projeto, mas o s
 6. Em `External providers`, pode ativar Google ou outros fornecedores. Alguns fornecedores podem pedir um Client ID e Client Secret criados no respetivo painel.
 7. Confirme que o URL publicado e os URLs de redirecionamento autorizados estao corretos.
 
-O historico de pedidos ainda nao esta ligado ao Stripe. A pagina `minha-conta.html` mostra apenas os dados de identidade e um estado vazio em "Meus Pedidos".
+## Pagamentos e gestao de pedidos
+
+O fluxo de pedidos usa Stripe Checkout, Airtable, Netlify Identity e Resend:
+
+1. O cliente inicia sessao e finaliza o carrinho no Stripe.
+2. O webhook assinado cria o pedido na tabela `Pedidos` do Airtable sem duplicar o `StripeSessionId`.
+3. Um administrador abre `painel-pedidos.html`, cola o codigo e marca o pedido como enviado.
+4. O codigo passa a aparecer em `Minha Conta > Meus Pedidos` e segue por email atraves do Resend.
+
+Os precos enviados ao Stripe sao sempre lidos de `data/catalog-lite.json` no servidor. Valores enviados pelo navegador nao sao aceites como fonte de verdade.
+
+### Variaveis de ambiente
+
+Configure em `Site configuration > Environment variables` no Netlify e aplique-as a Functions/Runtime:
+
+- `AIRTABLE_TOKEN`: token pessoal com acesso de leitura e escrita a base de pedidos.
+- `AIRTABLE_BASE_ID`: ID da base que contem a tabela `Pedidos`.
+- `RESEND_API_KEY`: chave do Resend usada apenas pela Function de email.
+- `RESEND_FROM_EMAIL`: remetente verificado, por exemplo `GalaxyGame <pedidos@galaxygame.pt>`.
+- `STRIPE_SECRET_KEY`: chave secreta Stripe usada para criar Checkout Sessions e consultar os produtos pagos.
+- `STRIPE_WEBHOOK_SECRET`: segredo de assinatura `whsec_...` criado pelo endpoint do webhook.
+- `TEST_ORDER_EMAIL`: apenas local e opcional; email que recebe o pedido criado por `npm run testar:pedido`.
+
+Depois de alterar variaveis no Netlify, inicie um novo deploy. Nunca coloque valores reais em `.env.example`, HTML ou JavaScript do navegador.
+
+### Airtable
+
+A tabela deve chamar-se `Pedidos` e conter exatamente os campos `ClienteEmail`, `ClienteNome`, `Produto`, `Plataforma`, `ValorPagoEUR`, `Status`, `Codigo`, `DataCompra` e `StripeSessionId`. O campo `Status` deve aceitar `Aguardando codigo` e `Enviado`.
+
+### Webhook Stripe
+
+No Stripe Workbench/Developers, crie um endpoint para:
+
+`https://SEU-DOMINIO/.netlify/functions/stripe-webhook`
+
+Selecione os eventos `checkout.session.completed` e `checkout.session.async_payment_succeeded`. Copie o signing secret do endpoint para `STRIPE_WEBHOOK_SECRET`. O webhook recusa eventos quando este segredo nao esta configurado ou quando a assinatura tem mais de cinco minutos.
+
+Os meios de pagamento apresentados ao cliente sao controlados pela configuracao do Stripe. Ative apenas os meios que estejam disponiveis para a conta e para Portugal.
+
+### Administrador
+
+O painel confia exclusivamente em `app_metadata.roles`, que o cliente nao pode editar. Marque o utilizador do proprietario com a role `admin` no Netlify Identity e volte a iniciar sessao para obter um JWT atualizado. A protecao e validada novamente em todas as Functions; esconder a pagina no navegador nao e a unica barreira.
+
+### Resend
+
+Adicione `galaxygame.pt` em `Domains` no Resend, publique no DNS todos os registos fornecidos e aguarde o estado `Verified`. Depois configure `RESEND_FROM_EMAIL` com um endereco desse dominio. Enquanto o dominio nao estiver verificado, o envio com `pedidos@galaxygame.pt` pode ser recusado.
+
+### Pedido de teste
+
+Crie um `.env` local com `AIRTABLE_TOKEN`, `AIRTABLE_BASE_ID` e, opcionalmente, `TEST_ORDER_EMAIL`. Depois execute:
+
+```powershell
+npm run testar:pedido
+```
+
+O script cria um pedido pendente com um `StripeSessionId` iniciado por `test_`. Use somente uma base de teste ou apague o registo quando terminar.
 
 ## Assistente virtual de vendas
 
@@ -48,7 +103,7 @@ Abrir os HTML diretamente ou usar apenas o Live Server nao executa a Netlify Fun
 3. Restrinja o acesso a chave conforme as opcoes disponiveis na conta e nunca a coloque em JavaScript do frontend.
 4. Volte a fazer deploy para a funcao receber a nova variavel.
 
-O modelo predefinido e `gemini-2.5-flash`, com historico e tamanho de resposta limitados para controlar custos. Opcionalmente, pode definir `GEMINI_MODEL` no painel do Netlify sem alterar o codigo.
+O modelo predefinido e `gemini-3.5-flash-lite`, com fallback configurado e limites de historico e resposta para controlar custos. Opcionalmente, pode definir `GEMINI_MODEL` no painel do Netlify sem alterar o codigo.
 
 ### Seguranca e limites
 

@@ -44,9 +44,16 @@ async function airtableRequest(path, options = {}) {
   });
 
   const text = await response.text();
-  const data = text ? JSON.parse(text) : {};
+  let data = {};
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    data = { raw: text };
+  }
   if (!response.ok) {
-    throw new Error(data?.error?.message || `Airtable respondeu ${response.status}`);
+    const error = new Error(data?.error?.message || `Airtable respondeu ${response.status}`);
+    error.status = response.status;
+    throw error;
   }
   return data;
 }
@@ -76,10 +83,29 @@ async function findOrderByStripeSessionId(sessionId) {
   return records[0] || null;
 }
 
+async function getOrderById(recordId) {
+  if (!/^rec[a-zA-Z0-9]+$/.test(String(recordId || ""))) return null;
+  const formula = `RECORD_ID()='${escapeFormulaValue(recordId)}'`;
+  const records = await listOrdersByFormula(formula, { maxRecords: 1, sortNewest: false });
+  return records[0] || null;
+}
+
 async function createOrder(fields) {
   const data = await airtableRequest(AIRTABLE_TABLE, {
     method: "POST",
     body: { records: [{ fields }] }
+  });
+  return normalizeOrder(data.records?.[0]);
+}
+
+async function upsertOrderByStripeSessionId(fields) {
+  if (!fields?.StripeSessionId) throw new Error("StripeSessionId em falta no pedido");
+  const data = await airtableRequest(AIRTABLE_TABLE, {
+    method: "PATCH",
+    body: {
+      performUpsert: { fieldsToMergeOn: ["StripeSessionId"] },
+      records: [{ fields }]
+    }
   });
   return normalizeOrder(data.records?.[0]);
 }
@@ -118,11 +144,18 @@ function getUserEmail(context) {
   return user?.email || user?.user_metadata?.email || "";
 }
 
+function getUserName(context) {
+  const user = getUser(context);
+  return user?.user_metadata?.full_name || user?.user_metadata?.name || "";
+}
+
 function getUserRoles(context) {
   const user = getUser(context);
-  const appRoles = user?.app_metadata?.roles || user?.app_metadata?.authorization?.roles || [];
-  const userRoles = user?.user_metadata?.roles || [];
-  return [...appRoles, ...userRoles].map((role) => String(role).toLowerCase());
+  const directRoles = Array.isArray(user?.app_metadata?.roles) ? user.app_metadata.roles : [];
+  const authorizationRoles = Array.isArray(user?.app_metadata?.authorization?.roles)
+    ? user.app_metadata.authorization.roles
+    : [];
+  return [...directRoles, ...authorizationRoles].map((role) => String(role).toLowerCase());
 }
 
 function requireAdmin(context) {
@@ -133,23 +166,33 @@ function requireAdmin(context) {
 
 function verifyStripeSignature(event) {
   const secret = process.env.STRIPE_WEBHOOK_SECRET;
-  if (!secret) return true;
+  if (!secret) return false;
   const signature = event.headers["stripe-signature"] || event.headers["Stripe-Signature"];
   if (!signature) return false;
 
-  const parts = Object.fromEntries(signature.split(",").map((part) => {
-    const [key, value] = part.split("=");
-    return [key, value];
-  }));
-  if (!parts.t || !parts.v1) return false;
+  const parts = signature.split(",").reduce((result, part) => {
+    const separator = part.indexOf("=");
+    if (separator === -1) return result;
+    const key = part.slice(0, separator).trim();
+    const value = part.slice(separator + 1).trim();
+    if (!result[key]) result[key] = [];
+    result[key].push(value);
+    return result;
+  }, {});
+  const timestamp = Number(parts.t?.[0]);
+  const signatures = parts.v1 || [];
+  if (!Number.isFinite(timestamp) || !signatures.length) return false;
+  if (Math.abs(Math.floor(Date.now() / 1000) - timestamp) > 300) return false;
 
-  const payload = `${parts.t}.${event.body || ""}`;
+  const payload = `${timestamp}.${event.body || ""}`;
   const expected = crypto.createHmac("sha256", secret).update(payload).digest("hex");
-  try {
-    return crypto.timingSafeEqual(Buffer.from(expected), Buffer.from(parts.v1));
-  } catch {
-    return false;
-  }
+  return signatures.some((signatureValue) => {
+    try {
+      return crypto.timingSafeEqual(Buffer.from(expected, "hex"), Buffer.from(signatureValue, "hex"));
+    } catch {
+      return false;
+    }
+  });
 }
 
 function parseStripeProducts(session) {
@@ -179,6 +222,38 @@ function parseStripeProducts(session) {
   return {
     produto: metadata.Produto || metadata.produto || metadata.product || metadata.productName || "Produto GalaxyGame",
     plataforma: metadata.Plataforma || metadata.plataforma || metadata.platform || ""
+  };
+}
+
+async function fetchStripeProducts(session) {
+  const secret = process.env.STRIPE_SECRET_KEY;
+  if (!secret || !session?.id) return parseStripeProducts(session || {});
+
+  const params = new URLSearchParams({ limit: "100" });
+  params.append("expand[]", "data.price.product");
+  const response = await fetch(`https://api.stripe.com/v1/checkout/sessions/${encodeURIComponent(session.id)}/line_items?${params}`, {
+    headers: { authorization: `Bearer ${secret}` }
+  });
+  const text = await response.text();
+  let data = {};
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    data = {};
+  }
+  if (!response.ok) {
+    const error = new Error(data?.error?.message || `Stripe respondeu ${response.status}`);
+    error.status = response.status;
+    throw error;
+  }
+
+  const lines = Array.isArray(data.data) ? data.data : [];
+  if (!lines.length) return parseStripeProducts(session);
+  return {
+    produto: lines.map((line) => line.description || line.price?.product?.name).filter(Boolean).join(", "),
+    plataforma: Array.from(new Set(lines
+      .map((line) => line.price?.product?.metadata?.platform)
+      .filter(Boolean))).join(", ")
   };
 }
 
@@ -260,12 +335,17 @@ module.exports = {
   escapeFormulaValue,
   listOrdersByFormula,
   findOrderByStripeSessionId,
+  getOrderById,
   createOrder,
+  upsertOrderByStripeSessionId,
   updateOrder,
   normalizeOrder,
   getUserEmail,
+  getUserName,
+  getUserRoles,
   requireAdmin,
   verifyStripeSignature,
   parseStripeProducts,
+  fetchStripeProducts,
   sendCodeEmail
 };

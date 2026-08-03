@@ -1,4 +1,7 @@
 (function initializeAdminOrders() {
+  if (window.__GalaxyGameAdminOrdersReady) return;
+  window.__GalaxyGameAdminOrdersReady = true;
+
   const identity = window.netlifyIdentity;
   const shell = document.querySelector("[data-admin-shell]");
   const pendingList = document.querySelector("[data-admin-pending-list]");
@@ -9,8 +12,7 @@
   function isAdmin(user) {
     const roles = [
       ...(user?.app_metadata?.roles || []),
-      ...(user?.app_metadata?.authorization?.roles || []),
-      ...(user?.user_metadata?.roles || [])
+      ...(user?.app_metadata?.authorization?.roles || [])
     ].map((role) => String(role).toLowerCase());
     return roles.includes("admin");
   }
@@ -81,7 +83,8 @@
             },
             body: JSON.stringify({ recordId: order.id, codigo })
           });
-          if (!response.ok) throw new Error("Falha ao enviar pedido");
+          const data = await response.json().catch(() => ({}));
+          if (!response.ok) throw new Error(data.error || "Falha ao enviar pedido");
           article.remove();
           loadOrders("sent");
           if (!pendingList.children.length) renderEmpty(pendingList, "Sem pedidos aguardando código.");
@@ -104,6 +107,10 @@
       const response = await fetch(`/.netlify/functions/admin-pedidos?status=${encodeURIComponent(status)}`, {
         headers: await authHeaders()
       });
+      if (response.status === 401 || response.status === 403) {
+        window.location.replace("index.html");
+        return;
+      }
       if (!response.ok) throw new Error("Acesso negado ou erro ao carregar pedidos");
       const data = await response.json();
       const pedidos = data.pedidos || [];
@@ -127,12 +134,18 @@
     loadOrders(active === "sent" ? "sent" : "pending");
   }
 
+  let initialized = false;
+  let loadedForUser = "";
+
   function boot(user) {
+    initialized = true;
     if (!user || !isAdmin(user)) {
       window.location.replace("index.html");
       return;
     }
     shell.hidden = false;
+    if (loadedForUser === user.id) return;
+    loadedForUser = user.id;
     loadOrders("pending");
   }
 
@@ -142,8 +155,13 @@
     window.location.replace("index.html");
     return;
   }
+  identity.on("init", boot);
   identity.on("login", boot);
-  setTimeout(() => boot(identity.currentUser()), 250);
+  const currentUser = identity.currentUser();
+  if (currentUser) boot(currentUser);
+  setTimeout(() => {
+    if (!initialized) boot(identity.currentUser());
+  }, 1200);
 })();
 
 function escapeHtml(value) {

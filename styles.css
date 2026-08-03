@@ -1117,6 +1117,12 @@ select,
   font: inherit;
 }
 
+.checkout-form input[type="email"][readonly] {
+  color: #d7d7d7;
+  background: #191919;
+  cursor: default;
+}
+
 .checkout-consent {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -1140,6 +1146,11 @@ select,
   color: white;
   background: var(--orange);
   font-weight: 900;
+}
+
+.checkout-form > button:disabled {
+  opacity: .68;
+  cursor: wait;
 }
 
 .checkout-notice {

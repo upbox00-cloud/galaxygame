@@ -173,13 +173,69 @@
       remove(removeButton.dataset.cartRemove);
     });
     document.querySelector("[data-cart-clear]")?.addEventListener("click", clear);
-    document.querySelector("[data-checkout-form]")?.addEventListener("submit", (event) => {
+    const checkoutForm = document.querySelector("[data-checkout-form]");
+    const checkoutEmail = document.querySelector("[data-checkout-email]");
+
+    function syncCheckoutUser(user = window.netlifyIdentity?.currentUser()) {
+      if (!checkoutEmail) return;
+      checkoutEmail.value = user?.email || "";
+      checkoutEmail.readOnly = Boolean(user?.email);
+    }
+
+    window.netlifyIdentity?.on("init", syncCheckoutUser);
+    window.netlifyIdentity?.on("login", syncCheckoutUser);
+    syncCheckoutUser();
+
+    checkoutForm?.addEventListener("submit", async (event) => {
       event.preventDefault();
       const form = event.currentTarget;
-      if (!form.reportValidity()) return;
+      const identity = window.netlifyIdentity;
+      const user = identity?.currentUser();
       const notice = document.querySelector("[data-checkout-notice]");
-      notice.hidden = false;
-      notice.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      const button = form.querySelector("button[type='submit']");
+
+      if (!user) {
+        if (notice) {
+          notice.hidden = false;
+          notice.innerHTML = "<strong>Inicia sessão para continuar</strong><p>Assim conseguimos associar o pedido à tua conta e entregar o jogo com segurança.</p>";
+        }
+        identity?.open("login");
+        return;
+      }
+
+      syncCheckoutUser(user);
+      if (!form.reportValidity()) return;
+
+      button.disabled = true;
+      button.textContent = "A abrir pagamento seguro...";
+      if (notice) notice.hidden = true;
+      try {
+        const token = await user.jwt();
+        const response = await fetch("/.netlify/functions/criar-checkout", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "content-type": "application/json"
+          },
+          body: JSON.stringify({ items: readCart().map((item) => ({ id: item.id })) })
+        });
+        const data = await response.json().catch(() => ({}));
+        if (response.status === 401) {
+          identity?.open("login");
+          throw new Error("login_required");
+        }
+        if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
+        window.location.assign(data.checkoutUrl);
+      } catch (error) {
+        console.error("[checkout]", error.message);
+        button.disabled = false;
+        button.textContent = "Continuar para pagamento";
+        if (notice) {
+          notice.hidden = false;
+          notice.innerHTML = "<strong>Não foi possível abrir o pagamento</strong><p>Tenta novamente dentro de instantes ou contacta gamegalaxy26@gmail.com.</p>";
+          notice.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      }
     });
   }
 

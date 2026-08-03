@@ -6,7 +6,10 @@ exports.handler = async (event, context) => {
   if (adminError) return adminError;
 
   try {
-    const status = new URLSearchParams(event.rawQuery || "").get("status") || "Aguardando codigo";
+    const requestedStatus = new URLSearchParams(event.rawQuery || "").get("status") || "Aguardando codigo";
+    const status = ["Aguardando codigo", "Enviado"].includes(requestedStatus)
+      ? requestedStatus
+      : "Aguardando codigo";
     const formula = `{Status}='${escapeFormulaValue(status)}'`;
     const pedidos = await listOrdersByFormula(formula, { maxRecords: 100 });
     return json(200, { pedidos });

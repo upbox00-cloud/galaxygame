@@ -23,6 +23,7 @@ const requiredFiles = [
   "netlify/functions/chat-ia.js",
   "scripts/auth.js",
   "netlify/functions/stripe-webhook.js",
+  "netlify/functions/criar-checkout.js",
   "netlify/functions/admin-pedidos.js",
   "netlify/functions/marcar-pedido-enviado.js",
   "netlify/functions/meus-pedidos.js",
