@@ -240,6 +240,7 @@ function cleanAssistantReply(value) {
     .replace(/\[([^\]]+)\]\((?:[^)]+)\)/g, "$1")
     .replace(/\*\*([^*]+)\*\*/g, "$1")
     .replace(/`([^`]+)`/g, "$1")
+    .replace(/^\s*[*-]\s+/gm, "• ")
     .replace(/(?:https?:\/\/|www\.)\S+/gi, "")
     .replace(/\(?\s*produto\.html\?id=[^\s)\]]+\s*\)?/gi, "")
     .replace(/\b(?:ver|abrir)\s+(?:o\s+)?(?:produto|jogo)\b\s*[:\-]?/gi, "")

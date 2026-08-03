@@ -136,8 +136,8 @@ test("usa modelos Gemini atuais com fallback", async () => {
 
 test("remove links técnicos da resposta da atendente", () => {
   const reply = _test.cleanAssistantReply(
-    "Recomendo **Hogwarts Legacy**. [Ver produto](produto.html?id=hogwarts-legacy-ps5) ou https://example.com/jogo"
+    "Recomendo **Hogwarts Legacy**. [Ver produto](produto.html?id=hogwarts-legacy-ps5) ou https://example.com/jogo\n* Boa aventura"
   );
-  assert.equal(reply, "Recomendo Hogwarts Legacy. ou");
+  assert.equal(reply, "Recomendo Hogwarts Legacy. ou\n• Boa aventura");
   assert.doesNotMatch(reply, /produto\.html|https?:|\[|\*\*/);
 });
