@@ -61,3 +61,37 @@ test("checkout conhece o catálogo e os destaques manuais", () => {
   assert.equal(catalog.get("gta-vi-ps5").precoVendaEUR, 57.99);
   assert.ok(catalog.get("the-witcher-3-wild-hunt-ps5"));
 });
+
+test("email de entrega usa tabelas, estilos inline e imagens acessíveis", () => {
+  const previousUrl = process.env.URL;
+  process.env.URL = "https://galaxygame.example";
+  const html = orders.renderCodeEmail({
+    clienteNome: "Ana & Rui",
+    produto: "Jogo <Especial>",
+    plataforma: "PlayStation 5",
+    codigo: "ABCD-1234",
+    imagem: "https://images.example/cover.jpg"
+  });
+  assert.match(html, /max-width:600px/);
+  assert.match(html, /<table role="presentation"/);
+  assert.match(html, /alt="GalaxyGame - Jogos Digitais"/);
+  assert.match(html, /alt="Capa de Jogo &lt;Especial&gt;"/);
+  assert.match(html, /font-family:'Courier New'/);
+  assert.match(html, />ABCD-1234</);
+  assert.match(html, />Ver o meu pedido</);
+  assert.doesNotMatch(html, /class=/);
+  if (previousUrl === undefined) delete process.env.URL;
+  else process.env.URL = previousUrl;
+});
+
+test("email ignora URLs de capa inseguras", () => {
+  const html = orders.renderCodeEmail({
+    clienteNome: "Cliente",
+    produto: "Jogo",
+    plataforma: "Xbox Series X|S",
+    codigo: "SAFE-CODE",
+    imagem: "javascript:alert(1)"
+  });
+  assert.doesNotMatch(html, /javascript:/);
+  assert.doesNotMatch(html, /alt="Capa de/);
+});

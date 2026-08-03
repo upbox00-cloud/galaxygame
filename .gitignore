@@ -6,3 +6,4 @@ node_modules/
 npm-debug.log*
 netlify-dev*.log
 netlify-*-test*.log
+debug/email-entrega-preview.html

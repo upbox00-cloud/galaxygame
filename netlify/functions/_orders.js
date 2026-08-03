@@ -130,9 +130,16 @@ function normalizeOrder(record) {
     valorPagoEUR: Number(fields.ValorPagoEUR || 0),
     status: fields.Status || "",
     codigo: fields.Codigo || "",
+    imagem: normalizeImageField(fields.ImagemURL || fields.Imagem || fields.Capa),
     dataCompra: fields.DataCompra || "",
     stripeSessionId: fields.StripeSessionId || ""
   };
+}
+
+function normalizeImageField(value) {
+  if (typeof value === "string") return value;
+  if (Array.isArray(value)) return value[0]?.url || "";
+  return value?.url || "";
 }
 
 function getUser(context) {
@@ -283,42 +290,143 @@ async function sendCodeEmail(order) {
 
 function renderCodeEmail(order) {
   const safeName = escapeHtml(order.clienteNome || "cliente");
-  const product = escapeHtml(order.produto);
-  const platform = escapeHtml(order.plataforma);
+  const product = escapeHtml(order.produto || "Jogo digital GalaxyGame");
+  const platform = escapeHtml(order.plataforma || "Consola");
   const code = escapeHtml(order.codigo);
-  const accountUrl = `${process.env.URL || "https://galaxygame.pt"}/minha-conta.html`;
+  const siteUrl = publicSiteUrl();
+  const accountUrl = escapeHtml(`${siteUrl}/minha-conta.html`);
+  const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-header-logo-cropped.webp`);
+  const coverUrl = safeHttpUrl(order.imagem);
+  const coverCell = coverUrl ? `
+    <td width="122" valign="middle" style="width:122px;padding:16px 8px 16px 16px;">
+      <img src="${escapeHtml(coverUrl)}" width="104" alt="Capa de ${product}" style="display:block;width:104px;max-width:104px;height:auto;border:0;border-radius:6px;outline:none;text-decoration:none;" />
+    </td>` : "";
 
   return `
-    <div style="margin:0;background:#171717;color:#f5f5f5;font-family:Arial,sans-serif;padding:28px">
-      <div style="max-width:620px;margin:auto;background:#242424;border:1px solid #383838;border-radius:10px;overflow:hidden">
-        <div style="padding:24px;background:linear-gradient(135deg,#ff6a00,#6b38d8)">
-          <h1 style="margin:0;font-size:28px">GalaxyGame</h1>
-          <p style="margin:8px 0 0">O teu c&oacute;digo j&aacute; est&aacute; pronto.</p>
-        </div>
-        <div style="padding:24px">
-          <p>Ol&aacute; ${safeName},</p>
-          <p>O teu pedido foi marcado como enviado. Guarda este email e consulta tamb&eacute;m a tua &aacute;rea <strong>Minha Conta &gt; Meus Pedidos</strong>.</p>
-          <div style="background:#111;border:1px solid #ff6a00;border-radius:8px;padding:18px;margin:20px 0">
-            <p style="margin:0 0 8px;color:#bdbdbd">Produto</p>
-            <strong style="font-size:18px">${product}</strong>
-            <p style="margin:10px 0 0;color:#bdbdbd">Plataforma: ${platform}</p>
-          </div>
-          <div style="background:#fff;color:#111;border-radius:8px;padding:20px;text-align:center;margin:20px 0">
-            <p style="margin:0 0 8px;font-weight:700">C&oacute;digo / dados de acesso</p>
-            <div style="font-size:24px;font-weight:900;letter-spacing:1px;word-break:break-all">${code}</div>
-          </div>
-          <h2 style="font-size:18px">Como ativar</h2>
-          <ol>
-            <li>Confirma que est&aacute;s na consola correta.</li>
-            <li>Segue exatamente as instru&ccedil;&otilde;es recebidas no pedido.</li>
-            <li>Adiciona a conta/c&oacute;digo conforme indicado e descarrega o jogo pela biblioteca.</li>
-          </ol>
-          <p><a href="${accountUrl}" style="display:inline-block;background:#ff6a00;color:#111;font-weight:700;text-decoration:none;padding:12px 18px;border-radius:7px">Ver na Minha Conta</a></p>
-          <p style="color:#bdbdbd;font-size:13px">Precisas de ajuda? Escreve para gamegalaxy26@gmail.com.</p>
-        </div>
-      </div>
-    </div>
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="supported-color-schemes" content="dark" />
+    <title>O teu jogo est&aacute; pronto - GalaxyGame</title>
+  </head>
+  <body style="margin:0;padding:0;background-color:#111116;color:#f7f5fb;font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#111116" style="width:100%;margin:0;background-color:#111116;">
+      <tr>
+        <td align="center" style="padding:24px 12px;">
+          <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#1c1c22" style="width:100%;max-width:600px;background-color:#1c1c22;border:1px solid #35343d;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td align="center" bgcolor="#241a32" style="padding:28px 24px 26px;background-color:#241a32;background-image:linear-gradient(135deg,#21182f 0%,#512b72 55%,#c64f16 100%);">
+                <img src="${logoUrl}" width="260" alt="GalaxyGame - Jogos Digitais" style="display:block;width:260px;max-width:90%;height:auto;margin:0 auto 16px;border:0;outline:none;text-decoration:none;" />
+                <h1 style="margin:0;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:34px;font-weight:800;">O teu jogo est&aacute; pronto! &#127918;</h1>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:30px 28px 8px;color:#f7f5fb;">
+                <p style="margin:0 0 12px;color:#ffffff;font-size:20px;line-height:28px;font-weight:700;">Ol&aacute;, ${safeName}!</p>
+                <p style="margin:0;color:#cbc8d2;font-size:15px;line-height:24px;">O teu pedido foi preparado. Guarda este email e consulta-o sempre que precisares dos dados de acesso.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:18px 28px 0;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#26252d" style="width:100%;background-color:#26252d;border:1px solid #3c3a45;border-radius:7px;">
+                  <tr>
+                    ${coverCell}
+                    <td valign="middle" style="padding:18px 18px 18px ${coverUrl ? "10px" : "18px"};">
+                      <p style="margin:0 0 7px;color:#a9a6b2;font-size:12px;line-height:16px;text-transform:uppercase;">O teu jogo</p>
+                      <p style="margin:0 0 9px;color:#ffffff;font-size:18px;line-height:24px;font-weight:800;">${product}</p>
+                      <p style="margin:0;color:#ff8a3d;font-size:14px;line-height:20px;font-weight:700;">${platform}</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:22px 28px 0;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#2b1735" style="width:100%;background-color:#2b1735;border:2px solid #ff6a00;border-radius:7px;">
+                  <tr>
+                    <td align="center" style="padding:21px 14px 23px;">
+                      <p style="margin:0 0 10px;color:#d7cde0;font-size:13px;line-height:18px;font-weight:700;text-transform:uppercase;">O teu c&oacute;digo:</p>
+                      <p style="margin:0;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:27px;line-height:35px;font-weight:800;letter-spacing:2px;word-break:break-all;">${code}</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding:22px 28px 4px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td align="center" bgcolor="#ff6a00" style="border-radius:6px;background-color:#ff6a00;">
+                      <a href="${accountUrl}" style="display:inline-block;padding:14px 24px;color:#171117;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:18px;font-weight:800;text-decoration:none;">Ver o meu pedido</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:26px 28px 12px;">
+                <h2 style="margin:0 0 15px;color:#ffffff;font-size:19px;line-height:25px;">Como resgatar</h2>
+                ${renderEmailStep(1, "Abre a tua consola e confirma que estás na plataforma indicada no pedido.")}
+                ${renderEmailStep(2, "Acede à loja da consola e escolhe a opção para resgatar um código.")}
+                ${renderEmailStep(3, "Insere o código acima exatamente como aparece neste email.")}
+                ${renderEmailStep(4, "Confirma, abre a biblioteca e descarrega o jogo. Boa diversão!")}
+                <p style="margin:12px 0 0;color:#aaa7b1;font-size:12px;line-height:19px;">Se recebeste dados de acesso ou instru&ccedil;&otilde;es adicionais, segue primeiro o procedimento apresentado em Minha Conta &gt; Meus Pedidos.</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:24px 28px 28px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;border-top:1px solid #3a3941;">
+                  <tr>
+                    <td align="center" style="padding-top:21px;color:#aaa7b1;">
+                      <p style="margin:0 0 8px;font-size:13px;line-height:20px;">Precisas de ajuda? Escreve para <a href="mailto:gamegalaxy26@gmail.com" style="color:#ff8a3d;text-decoration:none;">gamegalaxy26@gmail.com</a></p>
+                      <p style="margin:0 0 8px;font-size:12px;line-height:18px;">Este &eacute; um email autom&aacute;tico, mas respondemos sempre que precisares de ajuda.</p>
+                      <p style="margin:0;font-size:12px;line-height:18px;">&copy; 2026 GalaxyGame. Todos os direitos reservados.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
   `;
+}
+
+function renderEmailStep(number, text) {
+  return `
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;margin:0 0 10px;">
+      <tr>
+        <td width="34" valign="top" style="width:34px;padding:0 10px 0 0;">
+          <div style="width:26px;height:26px;border-radius:13px;background-color:#5a3474;color:#ffffff;font-size:13px;line-height:26px;font-weight:800;text-align:center;">${number}</div>
+        </td>
+        <td valign="middle" style="color:#d4d1da;font-size:14px;line-height:21px;">${escapeHtml(text)}</td>
+      </tr>
+    </table>`;
+}
+
+function publicSiteUrl() {
+  const configured = process.env.URL || process.env.DEPLOY_PRIME_URL || "https://galaxygame.pt";
+  try {
+    const url = new URL(configured);
+    return `${url.protocol}//${url.host}`;
+  } catch {
+    return "https://galaxygame.pt";
+  }
+}
+
+function safeHttpUrl(value) {
+  try {
+    const url = new URL(String(value || ""));
+    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
+  } catch {
+    return "";
+  }
 }
 
 function escapeHtml(value) {
@@ -347,5 +455,6 @@ module.exports = {
   verifyStripeSignature,
   parseStripeProducts,
   fetchStripeProducts,
-  sendCodeEmail
+  sendCodeEmail,
+  renderCodeEmail
 };

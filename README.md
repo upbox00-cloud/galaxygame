@@ -82,6 +82,14 @@ npm run testar:pedido
 
 O script cria um pedido pendente com um `StripeSessionId` iniciado por `test_`. Use somente uma base de teste ou apague o registo quando terminar.
 
+Para visualizar o email sem enviar nada, execute:
+
+```powershell
+npm run preview:email
+```
+
+Abra `debug/email-entrega-preview.html` no navegador. O ficheiro usa dados ficticios e nao contacta Resend, Airtable ou Stripe.
+
 ## Assistente virtual de vendas
 
 A assistente usa a API Google Gemini atraves de `netlify/functions/chat-ia.js`. A chave nunca e enviada para o navegador: fica apenas nas variaveis de ambiente do Netlify. A funcao pesquisa primeiro os catalogos locais e envia ao modelo somente os produtos relevantes para a pergunta.
