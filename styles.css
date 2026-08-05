@@ -4843,13 +4843,21 @@ details p {
     touch-action: manipulation;
   }
 
-  .site-header .header-search,
+  .site-header .header-search:not(.expanded):not(:focus-within),
   .site-header .cart-button,
   .site-header .auth-controls,
   .site-header .auth-login-button,
   .site-header .auth-user-button {
     position: relative;
     z-index: 6;
+    pointer-events: auto;
+    touch-action: manipulation;
+  }
+
+  .site-header .header-search.expanded,
+  .site-header .header-search:focus-within {
+    position: fixed;
+    z-index: 1500;
     pointer-events: auto;
     touch-action: manipulation;
   }

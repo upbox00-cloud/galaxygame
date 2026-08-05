@@ -213,11 +213,11 @@ function resolveProductImage(product, callback, candidates = productImageCandida
   tryNext();
 }
 
-function showToast(message) {
+function showToast(message, duration = 1900) {
   toast.textContent = message;
   toast.classList.add("show");
   window.clearTimeout(showToast.timer);
-  showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 1900);
+  showToast.timer = window.setTimeout(() => toast.classList.remove("show"), duration);
 }
 
 function isPreorderProduct(product) {
@@ -250,6 +250,68 @@ function addToCart(product) {
     );
   }
   showToast(added ? `${productName} adicionado ao carrinho` : `${productName} já está no carrinho`);
+}
+
+let buyNowInFlight = false;
+
+function buyNowButtons() {
+  return document.querySelectorAll(".buy-button, .edition-buy-button, [data-mobile-buy-button]");
+}
+
+async function buyNow(product) {
+  if (buyNowInFlight) return;
+  buyNowInFlight = true;
+
+  const buttons = buyNowButtons();
+  const originalLabels = new Map();
+  buttons.forEach((button) => {
+    originalLabels.set(button, button.textContent);
+    button.disabled = true;
+    button.textContent = "A preparar pagamento...";
+  });
+
+  const restoreButtons = () => {
+    buttons.forEach((button) => {
+      button.disabled = false;
+      button.textContent = originalLabels.get(button) || button.textContent;
+    });
+    buyNowInFlight = false;
+  };
+
+  const identity = window.netlifyIdentity;
+  const user = identity?.currentUser?.();
+  if (!identity || !user) {
+    restoreButtons();
+    showToast("Inicia sessão para continuar a compra", 3200);
+    identity?.open("login");
+    return;
+  }
+
+  try {
+    const token = await user.jwt();
+    const response = await fetch("/.netlify/functions/criar-checkout", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        items: [{ id: product.id }],
+        cancelUrl: `produto.html?id=${encodeURIComponent(product.id)}`
+      })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (response.status === 401) {
+      identity.open("login");
+      throw new Error("login_required");
+    }
+    if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
+    window.location.href = data.checkoutUrl;
+  } catch (error) {
+    console.error("[buy-now]", error.message);
+    restoreButtons();
+    showToast("Não foi possível iniciar o pagamento. Tenta novamente ou contacta gamegalaxy26@gmail.com", 4200);
+  }
 }
 
 function getProductId() {
@@ -412,7 +474,8 @@ function renderEditions(product) {
         <li>Compatibilidade: ${escapeHtml(platform || "consola")}</li>
       </ul>
       <div class="edition-price">${original}<strong>${formatEUR(product.precoVendaEUR)}</strong></div>
-      <button type="button">${isPreorderProduct(product) ? "Pré-venda" : "Comprar agora"}</button>
+      <button type="button" class="edition-buy-button">${isPreorderProduct(product) ? "Pré-venda" : "Comprar agora"}</button>
+      <button type="button" class="cart-add-button">Adicionar ao carrinho</button>
     </article>
   `;
 }
@@ -756,7 +819,11 @@ function renderRelated(products, current) {
 }
 
 function bindProductActions(product) {
-  document.querySelectorAll(".buy-button, .edition-card button, [data-mobile-buy-button]").forEach((button) => {
+  buyNowButtons().forEach((button) => {
+    button.addEventListener("click", () => buyNow(product));
+  });
+
+  document.querySelectorAll(".cart-add-button").forEach((button) => {
     button.addEventListener("click", () => addToCart(product));
   });
 

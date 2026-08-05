@@ -31,7 +31,20 @@ function siteUrl() {
   return String(process.env.URL || process.env.DEPLOY_PRIME_URL || "https://galaxygame.pt").replace(/\/$/, "");
 }
 
-async function createStripeCheckout(products, customer) {
+function productImageUrl(product) {
+  const screenshot = Array.isArray(product.screenshots) ? product.screenshots[0] : "";
+  const candidate = product.capaSteamGridDB || product.imagemFallback || product.imagemPrincipal || screenshot || "assets/gta-vi-landscape-hq.webp";
+  if (/^https?:\/\//i.test(candidate)) return candidate;
+  return `${siteUrl()}/${String(candidate).replace(/^\/+/, "")}`;
+}
+
+function safeCancelPath(value) {
+  const path = String(value || "").trim();
+  if (/^[a-zA-Z0-9_-]+\.html(\?[a-zA-Z0-9=&%._~-]*)?$/.test(path)) return path;
+  return "carrinho.html?checkout=cancelado";
+}
+
+async function createStripeCheckout(products, customer, cancelPath) {
   const secret = process.env.STRIPE_SECRET_KEY;
   if (!secret) throw new Error("STRIPE_SECRET_KEY em falta");
 
@@ -39,8 +52,8 @@ async function createStripeCheckout(products, customer) {
     mode: "payment",
     locale: "pt",
     customer_email: customer.email,
-    success_url: `${siteUrl()}/minha-conta.html?checkout=sucesso&session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${siteUrl()}/carrinho.html?checkout=cancelado`,
+    success_url: `${siteUrl()}/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${siteUrl()}/${safeCancelPath(cancelPath)}`,
     "metadata[ClienteNome]": customer.name || "",
     "metadata[customer_email]": customer.email
   });
@@ -54,6 +67,7 @@ async function createStripeCheckout(products, customer) {
     params.set(`${prefix}[price_data][currency]`, "eur");
     params.set(`${prefix}[price_data][unit_amount]`, String(Math.round(Number(product.precoVendaEUR) * 100)));
     params.set(`${prefix}[price_data][product_data][name]`, String(product.nome).slice(0, 250));
+    params.set(`${prefix}[price_data][product_data][images][0]`, productImageUrl(product));
     params.set(`${prefix}[price_data][product_data][metadata][product_id]`, product.id);
     params.set(`${prefix}[price_data][product_data][metadata][platform]`, product.plataforma || "Consola");
   });
@@ -104,7 +118,7 @@ exports.handler = async (event, context) => {
     if (products.some((product) => !product || Number(product.precoVendaEUR) <= 0)) {
       return json(400, { error: "invalid_product" });
     }
-    const session = await createStripeCheckout(products, { email, name: getUserName(context) });
+    const session = await createStripeCheckout(products, { email, name: getUserName(context) }, body.cancelUrl);
     return json(200, { checkoutUrl: session.url });
   } catch (error) {
     console.error("[criar-checkout]", {

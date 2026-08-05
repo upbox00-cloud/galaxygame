@@ -246,10 +246,42 @@
   gap: 8px;
 }
 
+.cart-add-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 42px;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: transparent;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.22s ease, border-color 0.22s ease;
+}
+
+.cart-add-button:hover {
+  border-color: var(--orange);
+  transform: translateY(-1px);
+}
+
+.buy-button:disabled,
+.edition-buy-button:disabled,
+.cart-add-button:disabled,
+.mobile-buy-bar button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
+}
+
 .wish-button,
 .buy-button,
 .preorder-button,
-.edition-card button {
+.edition-buy-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -295,7 +327,7 @@
 .wish-button:hover,
 .buy-button:hover,
 .preorder-button:hover,
-.edition-card button:hover {
+.edition-buy-button:hover {
   filter: brightness(1.08);
   transform: translateY(-1px);
 }
@@ -885,7 +917,8 @@
   .wish-button,
   .buy-button,
   .preorder-button,
-  .edition-card button {
+  .edition-card button,
+  .cart-add-button {
     min-height: 48px;
   }
 
