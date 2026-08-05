@@ -7,7 +7,11 @@ const {
   normalizeName
 } = require("./common");
 
-const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY || "AIzaSyC76FHRs9GAtGDCWV5hnM4JbGnvA9wIQx4";
+const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
+if (!YOUTUBE_API_KEY) {
+  console.error("[enrich-youtube] YOUTUBE_API_KEY em falta nas variaveis de ambiente");
+  process.exit(1);
+}
 const YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search";
 const YOUTUBE_VIDEOS_URL = "https://www.googleapis.com/youtube/v3/videos";
 const DAILY_SEARCH_LIMIT = 90;

@@ -34,6 +34,28 @@ test("mobile return from Identity restores interactions and refreshes the user",
   assert.match(stylesSource, /\.site-header \.auth-user-button[\s\S]*touch-action: manipulation;/);
 });
 
+test("login handler restaura a página diretamente, sem depender só do evento close", () => {
+  // O widget do Netlify Identity nem sempre dispara "close" depois de um
+  // login bem sucedido (o modal já se fecha sozinho e identity.close() vira
+  // um no-op), o que deixava overflow/position do body presos e a página
+  // inteira sem responder a cliques. O handler de "login" tem de chamar
+  // restorePageInteractions() diretamente, sem depender só do listener de "close".
+  const loginHandlerMatch = authSource.match(/identity\.on\("login", \(user\) => \{[\s\S]*?\n {2}\}\);/);
+  assert.ok(loginHandlerMatch, "handler de login não encontrado");
+  const loginHandler = loginHandlerMatch[0];
+  assert.match(loginHandler, /restorePageInteractions\(\);/);
+  assert.match(loginHandler, /window\.setTimeout\(restorePageInteractions, \d+\);/);
+});
+
+test("restorePageInteractions limpa overflow, position, width e pointer-events do body/html", () => {
+  const fnMatch = authSource.match(/function restorePageInteractions\(\)[\s\S]*?\n {2}\}/);
+  assert.ok(fnMatch, "restorePageInteractions não encontrada");
+  const fn = fnMatch[0];
+  ["overflow", "position", "width", "pointer-events"].forEach((prop) => {
+    assert.match(fn, new RegExp(`removeProperty\\("${prop}"\\)`), `deveria remover a propriedade "${prop}"`);
+  });
+});
+
 test("all primary pages load the cache-busted auth script once", () => {
   const pages = [
     "index.html",
@@ -46,7 +68,7 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260803-3/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260805-1/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
   });
 });

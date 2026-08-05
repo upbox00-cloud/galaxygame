@@ -140,6 +140,8 @@
       document.body.style.removeProperty("overflow");
       document.body.style.removeProperty("position");
       document.body.style.removeProperty("width");
+      document.documentElement.style.removeProperty("pointer-events");
+      document.body.style.removeProperty("pointer-events");
     });
   }
 
@@ -203,7 +205,19 @@
 
   identity.on("login", (user) => {
     updateAuthUI(user);
-    identity.close();
+    try {
+      identity.close();
+    } catch (error) {
+      console.error("[auth] falha ao fechar o modal de login", error);
+    }
+    // O widget nem sempre dispara o evento "close" depois de um login bem
+    // sucedido (o modal já se fecha sozinho e a chamada acima pode virar
+    // um no-op), o que deixava o overflow/position do body presos e a
+    // página inteira sem responder a cliques. Chamamos diretamente aqui,
+    // em vez de confiar só no listener de "close".
+    restorePageInteractions();
+    window.setTimeout(restorePageInteractions, 400);
+
     const redirect = params.get("redirect");
     if (redirect) window.location.assign(redirect);
   });

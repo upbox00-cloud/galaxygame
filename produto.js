@@ -279,17 +279,35 @@ async function buyNow(product) {
   };
 
   const identity = window.netlifyIdentity;
-  const user = identity?.currentUser?.();
-  if (!identity || !user) {
+  if (!identity) {
+    console.error("[buy-now] window.netlifyIdentity indisponível (widget não carregou ou foi bloqueado)");
     restoreButtons();
-    showToast("Inicia sessão para continuar a compra", 3200);
-    identity?.open("login");
+    showToast("Não foi possível abrir o início de sessão. Recarrega a página e tenta novamente.", 4200);
     return;
   }
 
+  const user = identity.currentUser?.();
+  if (!user) {
+    restoreButtons();
+    showToast("Inicia sessão para continuar a compra", 3200);
+    identity.open("login");
+    return;
+  }
+
+  let token;
   try {
-    const token = await user.jwt();
-    const response = await fetch("/.netlify/functions/criar-checkout", {
+    token = await user.jwt();
+  } catch (error) {
+    console.error("[buy-now] falha ao obter o token de sessão (user.jwt())", error);
+    restoreButtons();
+    showToast("A tua sessão expirou. Inicia sessão novamente para continuar.", 4200);
+    identity.open("login");
+    return;
+  }
+
+  let response;
+  try {
+    response = await fetch("/.netlify/functions/criar-checkout", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -300,18 +318,44 @@ async function buyNow(product) {
         cancelUrl: `produto.html?id=${encodeURIComponent(product.id)}`
       })
     });
-    const data = await response.json().catch(() => ({}));
-    if (response.status === 401) {
-      identity.open("login");
-      throw new Error("login_required");
-    }
-    if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
-    window.location.href = data.checkoutUrl;
   } catch (error) {
-    console.error("[buy-now]", error.message);
+    console.error("[buy-now] falha de rede ao chamar /.netlify/functions/criar-checkout", error);
+    restoreButtons();
+    showToast("Sem ligação ao servidor de pagamento. Verifica a tua internet e tenta novamente.", 4200);
+    return;
+  }
+
+  let data = {};
+  try {
+    data = await response.json();
+  } catch (error) {
+    console.error("[buy-now] resposta de criar-checkout não é JSON válido", {
+      status: response.status,
+      statusText: response.statusText,
+      error
+    });
+  }
+
+  if (response.status === 401) {
+    console.error("[buy-now] sessão rejeitada (401) ao criar checkout", data);
+    identity.open("login");
+    restoreButtons();
+    showToast("A tua sessão expirou. Inicia sessão novamente para continuar.", 4200);
+    return;
+  }
+
+  if (!response.ok || !data.checkoutUrl) {
+    console.error("[buy-now] criar-checkout não devolveu um checkoutUrl válido", {
+      status: response.status,
+      statusText: response.statusText,
+      body: data
+    });
     restoreButtons();
     showToast("Não foi possível iniciar o pagamento. Tenta novamente ou contacta gamegalaxy26@gmail.com", 4200);
+    return;
   }
+
+  window.location.href = data.checkoutUrl;
 }
 
 function getProductId() {
@@ -819,11 +863,21 @@ function renderRelated(products, current) {
 }
 
 function bindProductActions(product) {
-  buyNowButtons().forEach((button) => {
-    button.addEventListener("click", () => buyNow(product));
+  const buttons = buyNowButtons();
+  if (!buttons.length) {
+    console.error("[produto] nenhum botão de compra encontrado (.buy-button/.edition-buy-button/[data-mobile-buy-button]); o clique em \"Comprar agora\" não vai funcionar");
+  }
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      buyNow(product).catch((error) => console.error("[buy-now] erro não tratado", error));
+    });
   });
 
-  document.querySelectorAll(".cart-add-button").forEach((button) => {
+  const cartButtons = document.querySelectorAll(".cart-add-button");
+  if (!cartButtons.length) {
+    console.error("[produto] nenhum botão \"Adicionar ao carrinho\" encontrado (.cart-add-button)");
+  }
+  cartButtons.forEach((button) => {
     button.addEventListener("click", () => addToCart(product));
   });
 
@@ -870,20 +924,33 @@ function bindLightbox() {
   });
 }
 
+function runProductStep(name, fn) {
+  try {
+    fn();
+  } catch (error) {
+    console.error(`[produto] falha ao executar ${name}, a continuar com o resto da página`, error);
+  }
+}
+
 async function initProductPage() {
   const products = await loadCatalogs();
   const productId = getProductId();
   const product = products.find((item) => item.id === productId) || products[0] || fallbackProducts[0];
 
-  renderHero(product);
-  renderAbout(product);
-  renderEditions(product);
-  renderVisuals(product);
-  renderDetails(product);
-  renderRelated(products, product);
-  bindProductActions(product);
-  bindLightbox();
+  // Cada passo corre isolado: se um render falhar (ex: dados de um produto
+  // específico com formato inesperado), os botões de compra continuam a
+  // ser ligados a seguir em vez de a página inteira ficar sem eventos.
+  runProductStep("renderHero", () => renderHero(product));
+  runProductStep("renderAbout", () => renderAbout(product));
+  runProductStep("renderEditions", () => renderEditions(product));
+  runProductStep("renderVisuals", () => renderVisuals(product));
+  runProductStep("renderDetails", () => renderDetails(product));
+  runProductStep("renderRelated", () => renderRelated(products, product));
+  runProductStep("bindProductActions", () => bindProductActions(product));
+  runProductStep("bindLightbox", () => bindLightbox());
 }
 
-initProductPage();
+initProductPage().catch((error) => {
+  console.error("[produto] falha crítica ao iniciar a página de produto", error);
+});
 
