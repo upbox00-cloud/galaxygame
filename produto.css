@@ -268,6 +268,63 @@
   transform: translateY(-1px);
 }
 
+.payment-trust-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.payment-trust-label {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.payment-trust-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  row-gap: 6px;
+}
+
+.payment-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  white-space: nowrap;
+  filter: saturate(0.96);
+}
+
+.payment-chip img {
+  display: block;
+  height: 12px;
+  width: auto;
+}
+
+.payment-chip.klarna,
+.payment-chip.apple-pay {
+  width: 30px;
+  padding: 0 3px;
+}
+
+.payment-chip.klarna { background: #fff; }
+.payment-chip.apple-pay { background: #fff; }
+.payment-chip.multibanco { color: #fff; background: linear-gradient(135deg, #0057a8, #009fe3); }
+.payment-chip.mbway { color: #fff; background: linear-gradient(135deg, #e6007e 0%, #e6007e 48%, #00a3e0 49%, #00a3e0 100%); }
+.payment-chip.scalapay { color: #083b2c; background: #00d084; }
+
 .buy-button:disabled,
 .edition-buy-button:disabled,
 .cart-add-button:disabled,
