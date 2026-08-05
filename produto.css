@@ -291,39 +291,14 @@
   row-gap: 6px;
 }
 
-.payment-chip {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-  padding: 0 6px;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: 0.2px;
-  line-height: 1;
-  white-space: nowrap;
+.payment-badge {
+  display: block;
+  width: 58px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
   filter: saturate(0.96);
 }
-
-.payment-chip img {
-  display: block;
-  height: 12px;
-  width: auto;
-}
-
-.payment-chip.klarna,
-.payment-chip.apple-pay {
-  width: 30px;
-  padding: 0 3px;
-}
-
-.payment-chip.klarna { background: #fff; }
-.payment-chip.apple-pay { background: #fff; }
-.payment-chip.multibanco { color: #fff; background: linear-gradient(135deg, #0057a8, #009fe3); }
-.payment-chip.mbway { color: #fff; background: linear-gradient(135deg, #e6007e 0%, #e6007e 48%, #00a3e0 49%, #00a3e0 100%); }
-.payment-chip.scalapay { color: #083b2c; background: #00d084; }
 
 .buy-button:disabled,
 .edition-buy-button:disabled,
