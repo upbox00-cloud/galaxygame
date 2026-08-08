@@ -167,6 +167,7 @@
   function recoveryErrorDetails(error) {
     return {
       status: Number(error?.status || error?.response?.status || 0),
+      code: String(error?.code || error?.json?.code || "").slice(0, 80),
       message: String(error?.json?.msg || error?.message || error?.data || "").slice(0, 300)
     };
   }
@@ -174,11 +175,14 @@
   function recoveryErrorMessage(error, stage = "recover") {
     const details = recoveryErrorDetails(error);
     const apiMessage = details.message.toLowerCase();
-    if (stage === "update" && (details.status === 400 || details.status === 422)) {
+    if (apiMessage.includes("password") || (stage === "update" && (details.status === 400 || details.status === 422))) {
       return "A nova palavra-passe nao foi aceite. Utiliza pelo menos 8 caracteres e evita uma palavra-passe demasiado simples.";
     }
-    if (details.status === 401 || details.status === 404 || details.status === 422 || apiMessage.includes("expired") || apiMessage.includes("invalid token")) {
+    if (details.status === 401 || details.status === 404 || apiMessage.includes("expired") || apiMessage.includes("invalid token") || apiMessage.includes("invalid recovery")) {
       return "Este link expirou ou ja foi utilizado. Pede um novo email de recuperacao e tenta novamente.";
+    }
+    if (details.status === 422) {
+      return "O Netlify Identity recusou este pedido. Pede um novo email de recuperacao e abre apenas o link mais recente.";
     }
     return "Nao foi possivel alterar a palavra-passe agora. Tenta novamente ou contacta gamegalaxy26@gmail.com.";
   }
@@ -214,7 +218,6 @@
     const form = overlay.querySelector(".password-recovery-form");
     const status = overlay.querySelector(".password-recovery-status");
     const submit = overlay.querySelector(".password-recovery-submit");
-    let recoveredUserPromise = null;
 
     function closeRecovery() {
       overlay.remove();
@@ -249,38 +252,37 @@
       status.textContent = "";
 
       try {
-        if (!identity?.gotrue?.recover) {
-          throw new Error("Cliente Netlify Identity indisponivel");
+        if (typeof window.GalaxyGameIdentity?.recoverPassword !== "function") {
+          throw new Error("Cliente moderno Netlify Identity indisponivel");
         }
 
-        if (!recoveredUserPromise) {
-          recoveredUserPromise = identity.gotrue.recover(token, true).catch((error) => {
-            const details = recoveryErrorDetails(error);
-            console.error("[auth] falha ao validar link de recuperacao", details);
-            throw Object.assign(error, { recoveryStage: "recover" });
-          });
-        }
-
-        const recoveredUser = await recoveredUserPromise;
-        const updatedUser = await recoveredUser.update({ password }).catch((error) => {
+        const recoveredUser = await window.GalaxyGameIdentity.recoverPassword(token, password).catch((error) => {
           const details = recoveryErrorDetails(error);
-          console.error("[auth] falha ao guardar nova palavra-passe", details);
-          throw Object.assign(error, { recoveryStage: "update" });
+          console.error("[auth] falha ao recuperar conta e guardar nova palavra-passe", details);
+          throw Object.assign(error, { recoveryStage: "recover" });
         });
 
         clearRecoveryToken();
-        updateAuthUI(updatedUser || recoveredUser);
+        let sessionUser = recoveredUser;
+        if (recoveredUser?.email && identity?.gotrue?.login) {
+          try {
+            sessionUser = await identity.gotrue.login(recoveredUser.email, password, true);
+          } catch (error) {
+            console.warn("[auth] palavra-passe alterada, mas o login automatico falhou", recoveryErrorDetails(error));
+          }
+        }
+        updateAuthUI(sessionUser);
         dialog.innerHTML = `
           <div class="password-recovery-success">
             <span class="password-recovery-success-icon" aria-hidden="true">&#10003;</span>
             <span class="password-recovery-kicker">Tudo pronto</span>
             <h1>Palavra-passe alterada com sucesso</h1>
             <p>Ja podes entrar na tua conta GalaxyGame com a nova palavra-passe.</p>
-            <button class="password-recovery-submit" type="button" data-recovery-login>Entrar na minha conta</button>
+            <button class="password-recovery-submit" type="button" data-recovery-login>Continuar na GalaxyGame</button>
           </div>`;
         dialog.querySelector("[data-recovery-login]").addEventListener("click", () => {
           closeRecovery();
-          identity?.open("login");
+          if (!identity?.currentUser?.()) identity?.open("login");
         });
       } catch (error) {
         status.textContent = recoveryErrorMessage(error, error?.recoveryStage);

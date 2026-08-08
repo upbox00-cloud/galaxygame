@@ -75,11 +75,9 @@ test("password recovery token is preserved before Identity initializes", () => {
 
 test("password recovery validates the token and updates only the password", () => {
   assert.match(authSource, /mountPasswordRecovery\(recoveryToken\)/);
-  assert.match(authSource, /identity\.gotrue\.recover\(token, true\)/);
-  assert.match(authSource, /recoveredUser\.update\(\{ password \}\)/);
-  assert.match(authSource, /let recoveredUserPromise = null/);
-  assert.match(authSource, /falha ao validar link de recuperacao/);
-  assert.match(authSource, /falha ao guardar nova palavra-passe/);
+  assert.match(authSource, /GalaxyGameIdentity\.recoverPassword\(token, password\)/);
+  assert.match(authSource, /identity\.gotrue\.login\(recoveredUser\.email, password, true\)/);
+  assert.match(authSource, /falha ao recuperar conta e guardar nova palavra-passe/);
   assert.match(stylesSource, /\.password-recovery-overlay[\s\S]*z-index: 5000;/);
 });
 
@@ -95,8 +93,13 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260808-3/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260809-1/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
+    assert.equal(
+      (html.match(/scripts\/identity-modern\.js\?v=20260809-1/g) || []).length,
+      1,
+      `${page} deve carregar o cliente moderno do Netlify Identity`
+    );
     assert.equal(
       (html.match(/scripts\/recovery-token\.js\?v=20260808-1/g) || []).length,
       1,
