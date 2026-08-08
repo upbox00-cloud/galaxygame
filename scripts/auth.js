@@ -5,6 +5,8 @@
   const identity = window.netlifyIdentity;
   const accountPage = document.body.classList.contains("account-page");
   const params = new URLSearchParams(window.location.search);
+  let refreshPromise = null;
+  let lastSessionRefresh = 0;
   let recoveryToken = window.__GalaxyGameRecoveryToken || "";
   try {
     recoveryToken ||= window.sessionStorage.getItem("galaxygame_recovery_token") || "";
@@ -293,6 +295,54 @@
     overlay.querySelector("input")?.focus();
   }
 
+  function enhanceIdentityAutofill() {
+    const applyAutocomplete = () => {
+      const widget = document.querySelector(".netlify-identity-widget");
+      if (!widget) return;
+
+      widget.querySelectorAll('input[type="email"]').forEach((input) => {
+        input.setAttribute("autocomplete", "username");
+        input.setAttribute("inputmode", "email");
+      });
+
+      const passwordInputs = [...widget.querySelectorAll('input[type="password"]')];
+      const autocomplete = passwordInputs.length > 1 ? "new-password" : "current-password";
+      passwordInputs.forEach((input) => input.setAttribute("autocomplete", autocomplete));
+    };
+
+    applyAutocomplete();
+    window.setTimeout(applyAutocomplete, 100);
+    window.setTimeout(applyAutocomplete, 400);
+  }
+
+  async function refreshPersistedSession(user = identity?.currentUser?.(), force = false) {
+    if (!user || typeof identity?.refresh !== "function") return user || null;
+    if (!force && Date.now() - lastSessionRefresh < 5 * 60 * 1000) {
+      updateAuthUI(user);
+      return user;
+    }
+    if (refreshPromise) return refreshPromise;
+
+    refreshPromise = identity.refresh()
+      .then(() => {
+        lastSessionRefresh = Date.now();
+        const refreshedUser = identity.currentUser?.() || user;
+        updateAuthUI(refreshedUser);
+        return refreshedUser;
+      })
+      .catch((error) => {
+        // An offline refresh must not sign the customer out or erase the saved session.
+        console.warn("[auth] nao foi possivel renovar a sessao neste momento", error?.message || error);
+        updateAuthUI(user);
+        return user;
+      })
+      .finally(() => {
+        refreshPromise = null;
+      });
+
+    return refreshPromise;
+  }
+
   enhanceAuthControls();
   mountPasswordRecovery(recoveryToken);
 
@@ -350,10 +400,12 @@
       return;
     }
     if (!user && params.get("login") === "1") identity.open("login");
+    if (user) refreshPersistedSession(user);
   });
 
   identity.on("login", (user) => {
     updateAuthUI(user);
+    refreshPersistedSession(user, true);
     try {
       identity.close();
     } catch (error) {
@@ -377,11 +429,18 @@
   });
 
   identity.on("close", restorePageInteractions);
+  identity.on("open", enhanceIdentityAutofill);
 
   window.addEventListener("pageshow", () => {
     const currentUser = identity.currentUser?.();
-    if (currentUser) updateAuthUI(currentUser);
+    if (currentUser) refreshPersistedSession(currentUser);
     restorePageInteractions();
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState !== "visible") return;
+    const currentUser = identity.currentUser?.();
+    if (currentUser) refreshPersistedSession(currentUser);
   });
 
   identity.init({ locale: "pt" });

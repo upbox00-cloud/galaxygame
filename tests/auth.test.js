@@ -31,8 +31,18 @@ test("mobile return from Identity restores interactions and refreshes the user",
   assert.match(authSource, /identity\.on\("close", restorePageInteractions\)/);
   assert.match(authSource, /window\.addEventListener\("pageshow"/);
   assert.match(authSource, /identity\.currentUser\?\.\(\)/);
+  assert.match(authSource, /refreshPersistedSession\(currentUser\)/);
+  assert.match(authSource, /visibilitychange/);
   assert.match(stylesSource, /\.site-header \.header-actions[\s\S]*pointer-events: auto !important;/);
   assert.match(stylesSource, /\.site-header \.auth-user-button[\s\S]*touch-action: manipulation;/);
+});
+
+test("saved sessions are refreshed without storing customer passwords", () => {
+  assert.match(authSource, /identity\.refresh\(\)/);
+  assert.match(authSource, /refreshPersistedSession\(user, true\)/);
+  assert.match(authSource, /autocomplete", "username"/);
+  assert.match(authSource, /"current-password"/);
+  assert.doesNotMatch(authSource, /localStorage\.setItem\([^\n]*(password|senha)/i);
 });
 
 test("login handler restaura a página diretamente, sem depender só do evento close", () => {
@@ -85,7 +95,7 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260808-1/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260808-2/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
     assert.equal(
       (html.match(/scripts\/recovery-token\.js\?v=20260808-1/g) || []).length,
