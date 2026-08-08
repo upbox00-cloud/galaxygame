@@ -164,19 +164,20 @@
     }
   }
 
-  async function readJsonResponse(response) {
-    const text = await response.text();
-    if (!text) return {};
-    try {
-      return JSON.parse(text);
-    } catch (error) {
-      return { msg: text };
-    }
+  function recoveryErrorDetails(error) {
+    return {
+      status: Number(error?.status || error?.response?.status || 0),
+      message: String(error?.json?.msg || error?.message || error?.data || "").slice(0, 300)
+    };
   }
 
-  function recoveryErrorMessage(status, payload) {
-    const apiMessage = String(payload?.msg || payload?.error_description || "").toLowerCase();
-    if (status === 401 || status === 404 || status === 422 || apiMessage.includes("expired")) {
+  function recoveryErrorMessage(error, stage = "recover") {
+    const details = recoveryErrorDetails(error);
+    const apiMessage = details.message.toLowerCase();
+    if (stage === "update" && (details.status === 400 || details.status === 422)) {
+      return "A nova palavra-passe nao foi aceite. Utiliza pelo menos 8 caracteres e evita uma palavra-passe demasiado simples.";
+    }
+    if (details.status === 401 || details.status === 404 || details.status === 422 || apiMessage.includes("expired") || apiMessage.includes("invalid token")) {
       return "Este link expirou ou ja foi utilizado. Pede um novo email de recuperacao e tenta novamente.";
     }
     return "Nao foi possivel alterar a palavra-passe agora. Tenta novamente ou contacta gamegalaxy26@gmail.com.";
@@ -213,6 +214,7 @@
     const form = overlay.querySelector(".password-recovery-form");
     const status = overlay.querySelector(".password-recovery-status");
     const submit = overlay.querySelector(".password-recovery-submit");
+    let recoveredUserPromise = null;
 
     function closeRecovery() {
       overlay.remove();
@@ -247,30 +249,27 @@
       status.textContent = "";
 
       try {
-        const verificationResponse = await fetch("/.netlify/identity/verify", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ type: "recovery", token })
-        });
-        const session = await readJsonResponse(verificationResponse);
-        if (!verificationResponse.ok || !session.access_token) {
-          throw { status: verificationResponse.status, payload: session };
+        if (!identity?.gotrue?.recover) {
+          throw new Error("Cliente Netlify Identity indisponivel");
         }
 
-        const updateResponse = await fetch("/.netlify/identity/user", {
-          method: "PUT",
-          headers: {
-            Authorization: `Bearer ${session.access_token}`,
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({ password })
-        });
-        const updatePayload = await readJsonResponse(updateResponse);
-        if (!updateResponse.ok) {
-          throw { status: updateResponse.status, payload: updatePayload };
+        if (!recoveredUserPromise) {
+          recoveredUserPromise = identity.gotrue.recover(token, true).catch((error) => {
+            const details = recoveryErrorDetails(error);
+            console.error("[auth] falha ao validar link de recuperacao", details);
+            throw Object.assign(error, { recoveryStage: "recover" });
+          });
         }
+
+        const recoveredUser = await recoveredUserPromise;
+        const updatedUser = await recoveredUser.update({ password }).catch((error) => {
+          const details = recoveryErrorDetails(error);
+          console.error("[auth] falha ao guardar nova palavra-passe", details);
+          throw Object.assign(error, { recoveryStage: "update" });
+        });
 
         clearRecoveryToken();
+        updateAuthUI(updatedUser || recoveredUser);
         dialog.innerHTML = `
           <div class="password-recovery-success">
             <span class="password-recovery-success-icon" aria-hidden="true">&#10003;</span>
@@ -284,7 +283,7 @@
           identity?.open("login");
         });
       } catch (error) {
-        status.textContent = recoveryErrorMessage(error?.status, error?.payload);
+        status.textContent = recoveryErrorMessage(error, error?.recoveryStage);
         submit.disabled = false;
         submit.textContent = "Guardar nova palavra-passe";
       }

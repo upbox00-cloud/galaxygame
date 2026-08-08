@@ -384,6 +384,10 @@ body.password-recovery-open {
   overflow: hidden;
 }
 
+body.password-recovery-open .sales-chat {
+  display: none !important;
+}
+
 .password-recovery-overlay {
   position: fixed;
   inset: 0;
