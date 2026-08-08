@@ -5,6 +5,7 @@ const assert = require("node:assert/strict");
 
 const root = path.resolve(__dirname, "..");
 const authSource = fs.readFileSync(path.join(root, "scripts", "auth.js"), "utf8");
+const recoverySource = fs.readFileSync(path.join(root, "scripts", "recovery-token.js"), "utf8");
 const stylesSource = fs.readFileSync(path.join(root, "styles.css"), "utf8");
 
 test("auth initialization and controls are idempotent", () => {
@@ -56,6 +57,22 @@ test("restorePageInteractions limpa overflow, position, width e pointer-events d
   });
 });
 
+test("password recovery token is preserved before Identity initializes", () => {
+  assert.match(recoverySource, /get\("recovery_token"\)/);
+  assert.match(recoverySource, /sessionStorage\.setItem\("galaxygame_recovery_token", token\)/);
+  assert.match(recoverySource, /history\.replaceState/);
+});
+
+test("password recovery validates the token and updates only the password", () => {
+  assert.match(authSource, /mountPasswordRecovery\(recoveryToken\)/);
+  assert.match(authSource, /fetch\("\/\.netlify\/identity\/verify"/);
+  assert.match(authSource, /JSON\.stringify\(\{ type: "recovery", token \}\)/);
+  assert.match(authSource, /fetch\("\/\.netlify\/identity\/user"/);
+  assert.match(authSource, /Authorization: `Bearer \$\{session\.access_token\}`/);
+  assert.match(authSource, /JSON\.stringify\(\{ password \}\)/);
+  assert.match(stylesSource, /\.password-recovery-overlay[\s\S]*z-index: 5000;/);
+});
+
 test("all primary pages load the cache-busted auth script once", () => {
   const pages = [
     "index.html",
@@ -68,7 +85,12 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260805-1/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260808-1/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
+    assert.equal(
+      (html.match(/scripts\/recovery-token\.js\?v=20260808-1/g) || []).length,
+      1,
+      `${page} deve preservar o recovery token antes do widget`
+    );
   });
 });

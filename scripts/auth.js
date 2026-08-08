@@ -5,6 +5,12 @@
   const identity = window.netlifyIdentity;
   const accountPage = document.body.classList.contains("account-page");
   const params = new URLSearchParams(window.location.search);
+  let recoveryToken = window.__GalaxyGameRecoveryToken || "";
+  try {
+    recoveryToken ||= window.sessionStorage.getItem("galaxygame_recovery_token") || "";
+  } catch (error) {
+    // sessionStorage can be unavailable in strict privacy modes.
+  }
   const userIconSvg = `
     <span class="header-user-icon" data-auth-icon aria-hidden="true">
       <svg viewBox="0 0 24 24" focusable="false">
@@ -135,6 +141,7 @@
 
   function restorePageInteractions() {
     closeMenus();
+    if (document.body.classList.contains("password-recovery-open")) return;
     window.requestAnimationFrame(() => {
       document.documentElement.style.removeProperty("overflow");
       document.body.style.removeProperty("overflow");
@@ -145,7 +152,149 @@
     });
   }
 
+  function clearRecoveryToken() {
+    recoveryToken = "";
+    window.__GalaxyGameRecoveryToken = "";
+    try {
+      window.sessionStorage.removeItem("galaxygame_recovery_token");
+    } catch (error) {
+      // Nothing else is needed when storage is unavailable.
+    }
+  }
+
+  async function readJsonResponse(response) {
+    const text = await response.text();
+    if (!text) return {};
+    try {
+      return JSON.parse(text);
+    } catch (error) {
+      return { msg: text };
+    }
+  }
+
+  function recoveryErrorMessage(status, payload) {
+    const apiMessage = String(payload?.msg || payload?.error_description || "").toLowerCase();
+    if (status === 401 || status === 404 || status === 422 || apiMessage.includes("expired")) {
+      return "Este link expirou ou ja foi utilizado. Pede um novo email de recuperacao e tenta novamente.";
+    }
+    return "Nao foi possivel alterar a palavra-passe agora. Tenta novamente ou contacta gamegalaxy26@gmail.com.";
+  }
+
+  function mountPasswordRecovery(token) {
+    if (!token || document.querySelector("[data-password-recovery]")) return;
+
+    const overlay = document.createElement("div");
+    overlay.className = "password-recovery-overlay";
+    overlay.dataset.passwordRecovery = "";
+    overlay.innerHTML = `
+      <section class="password-recovery-dialog" role="dialog" aria-modal="true" aria-labelledby="password-recovery-title">
+        <button class="password-recovery-close" type="button" aria-label="Fechar">&times;</button>
+        <span class="password-recovery-kicker">Conta GalaxyGame</span>
+        <h1 id="password-recovery-title">Cria uma nova palavra-passe</h1>
+        <p>Escolhe uma palavra-passe segura para voltares a entrar na tua conta.</p>
+        <form class="password-recovery-form">
+          <label>
+            Nova palavra-passe
+            <input name="password" type="password" minlength="8" autocomplete="new-password" required />
+          </label>
+          <label>
+            Confirmar palavra-passe
+            <input name="confirmation" type="password" minlength="8" autocomplete="new-password" required />
+          </label>
+          <p class="password-recovery-hint">Utiliza pelo menos 8 caracteres.</p>
+          <p class="password-recovery-status" role="alert" aria-live="polite"></p>
+          <button class="password-recovery-submit" type="submit">Guardar nova palavra-passe</button>
+        </form>
+      </section>`;
+
+    const dialog = overlay.querySelector(".password-recovery-dialog");
+    const form = overlay.querySelector(".password-recovery-form");
+    const status = overlay.querySelector(".password-recovery-status");
+    const submit = overlay.querySelector(".password-recovery-submit");
+
+    function closeRecovery() {
+      overlay.remove();
+      document.body.classList.remove("password-recovery-open");
+      restorePageInteractions();
+    }
+
+    overlay.querySelector(".password-recovery-close").addEventListener("click", closeRecovery);
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) closeRecovery();
+    });
+    dialog.addEventListener("click", (event) => event.stopPropagation());
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const password = String(data.get("password") || "");
+      const confirmation = String(data.get("confirmation") || "");
+
+      status.className = "password-recovery-status";
+      if (password.length < 8) {
+        status.textContent = "A palavra-passe deve ter pelo menos 8 caracteres.";
+        return;
+      }
+      if (password !== confirmation) {
+        status.textContent = "As palavras-passe nao coincidem.";
+        return;
+      }
+
+      submit.disabled = true;
+      submit.textContent = "A guardar...";
+      status.textContent = "";
+
+      try {
+        const verificationResponse = await fetch("/.netlify/identity/verify", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ type: "recovery", token })
+        });
+        const session = await readJsonResponse(verificationResponse);
+        if (!verificationResponse.ok || !session.access_token) {
+          throw { status: verificationResponse.status, payload: session };
+        }
+
+        const updateResponse = await fetch("/.netlify/identity/user", {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${session.access_token}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ password })
+        });
+        const updatePayload = await readJsonResponse(updateResponse);
+        if (!updateResponse.ok) {
+          throw { status: updateResponse.status, payload: updatePayload };
+        }
+
+        clearRecoveryToken();
+        dialog.innerHTML = `
+          <div class="password-recovery-success">
+            <span class="password-recovery-success-icon" aria-hidden="true">&#10003;</span>
+            <span class="password-recovery-kicker">Tudo pronto</span>
+            <h1>Palavra-passe alterada com sucesso</h1>
+            <p>Ja podes entrar na tua conta GalaxyGame com a nova palavra-passe.</p>
+            <button class="password-recovery-submit" type="button" data-recovery-login>Entrar na minha conta</button>
+          </div>`;
+        dialog.querySelector("[data-recovery-login]").addEventListener("click", () => {
+          closeRecovery();
+          identity?.open("login");
+        });
+      } catch (error) {
+        status.textContent = recoveryErrorMessage(error?.status, error?.payload);
+        submit.disabled = false;
+        submit.textContent = "Guardar nova palavra-passe";
+      }
+    });
+
+    document.body.append(overlay);
+    document.body.classList.add("password-recovery-open");
+    overlay.querySelector("input")?.focus();
+  }
+
   enhanceAuthControls();
+  mountPasswordRecovery(recoveryToken);
 
   document.querySelectorAll("[data-auth-login]").forEach((button) => {
     const dropdown = button.parentElement?.querySelector("[data-auth-login-dropdown]");
