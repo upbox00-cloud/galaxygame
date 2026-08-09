@@ -44,6 +44,36 @@ function safeCancelPath(value) {
   return "carrinho.html?checkout=cancelado";
 }
 
+const PORTUGAL_PAYMENT_METHODS = ["card", "link", "mb_way", "multibanco", "klarna", "paypal"];
+
+function checkoutPaymentMethods() {
+  const configured = String(process.env.STRIPE_PAYMENT_METHOD_TYPES || "")
+    .split(",")
+    .map((method) => method.trim().toLowerCase())
+    .filter(Boolean);
+  return configured.length ? Array.from(new Set(configured)) : PORTUGAL_PAYMENT_METHODS;
+}
+
+async function requestStripeCheckout(params, secret) {
+  const response = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${secret}`,
+      "content-type": "application/x-www-form-urlencoded",
+      "stripe-version": "2025-10-29.clover"
+    },
+    body: params.toString()
+  });
+  const text = await response.text();
+  let data = {};
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    data = {};
+  }
+  return { response, data };
+}
+
 async function createStripeCheckout(products, customer, cancelPath) {
   const secret = process.env.STRIPE_SECRET_KEY;
   if (!secret) throw new Error("STRIPE_SECRET_KEY em falta");
@@ -51,11 +81,16 @@ async function createStripeCheckout(products, customer, cancelPath) {
   const params = new URLSearchParams({
     mode: "payment",
     locale: "pt",
+    "adaptive_pricing[enabled]": "false",
     customer_email: customer.email,
     success_url: `${siteUrl()}/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${siteUrl()}/${safeCancelPath(cancelPath)}`,
     "metadata[ClienteNome]": customer.name || "",
     "metadata[customer_email]": customer.email
+  });
+
+  checkoutPaymentMethods().forEach((method, index) => {
+    params.set(`payment_method_types[${index}]`, method);
   });
 
   const productIds = products.map((product) => product.id).join(",");
@@ -72,20 +107,19 @@ async function createStripeCheckout(products, customer, cancelPath) {
     params.set(`${prefix}[price_data][product_data][metadata][platform]`, product.plataforma || "Consola");
   });
 
-  const response = await fetch("https://api.stripe.com/v1/checkout/sessions", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${secret}`,
-      "content-type": "application/x-www-form-urlencoded"
-    },
-    body: params.toString()
-  });
-  const text = await response.text();
-  let data = {};
-  try {
-    data = text ? JSON.parse(text) : {};
-  } catch {
-    data = {};
+  let { response, data } = await requestStripeCheckout(params, secret);
+
+  // Keep checkout available while a newly requested method is still being
+  // activated in the Stripe Dashboard. Dynamic methods remain the fallback.
+  if (!response.ok && response.status === 400 && data?.error?.param?.startsWith("payment_method_types")) {
+    console.warn("[criar-checkout] metodo de pagamento ainda indisponivel; a usar configuracao dinamica", {
+      param: data.error.param,
+      code: data.error.code || null
+    });
+    [...params.keys()]
+      .filter((key) => key.startsWith("payment_method_types["))
+      .forEach((key) => params.delete(key));
+    ({ response, data } = await requestStripeCheckout(params, secret));
   }
   if (!response.ok || !data.url) {
     const error = new Error(data?.error?.message || `Stripe respondeu ${response.status}`);
@@ -129,4 +163,4 @@ exports.handler = async (event, context) => {
   }
 };
 
-exports._test = { loadCatalog, createStripeCheckout };
+exports._test = { loadCatalog, createStripeCheckout, checkoutPaymentMethods, PORTUGAL_PAYMENT_METHODS };

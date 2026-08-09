@@ -64,6 +64,8 @@ Selecione os eventos `checkout.session.completed` e `checkout.session.async_paym
 
 Os meios de pagamento apresentados ao cliente sao controlados pela configuracao do Stripe. Ative apenas os meios que estejam disponiveis para a conta e para Portugal.
 
+O Checkout desativa o Adaptive Pricing para apresentar e cobrar sempre em EUR. Por defeito, solicita Cartao (incluindo Apple Pay e Google Pay quando elegiveis), Link, MB WAY, Multibanco, Klarna e PayPal. Ative estes meios em `Stripe Dashboard > Settings > Payment methods`; o Stripe mostra apenas os que forem elegiveis para a conta, o valor e o dispositivo do cliente. A lista pode ser ajustada com `STRIPE_PAYMENT_METHOD_TYPES`. Scalapay esta em private preview e nao aceita atualmente contas comerciais sediadas em Portugal, por isso nao faz parte da configuracao predefinida.
+
 ### Administrador
 
 O painel confia exclusivamente em `app_metadata.roles`, que o cliente nao pode editar. Marque o utilizador do proprietario com a role `admin` no Netlify Identity e volte a iniciar sessao para obter um JWT atualizado. A protecao e validada novamente em todas as Functions; esconder a pagina no navegador nao e a unica barreira.

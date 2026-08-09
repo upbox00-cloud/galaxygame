@@ -62,6 +62,42 @@ test("checkout conhece o catálogo e os destaques manuais", () => {
   assert.ok(catalog.get("the-witcher-3-wild-hunt-ps5"));
 });
 
+test("checkout cobra apenas em euros e pede meios de pagamento portugueses", async () => {
+  const previousSecret = process.env.STRIPE_SECRET_KEY;
+  const previousMethods = process.env.STRIPE_PAYMENT_METHOD_TYPES;
+  const originalFetch = global.fetch;
+  let request;
+  process.env.STRIPE_SECRET_KEY = "sk_test_only";
+  delete process.env.STRIPE_PAYMENT_METHOD_TYPES;
+  global.fetch = async (url, options) => {
+    request = { url, options };
+    return new Response(JSON.stringify({ url: "https://checkout.stripe.test/session" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    await checkout._test.createStripeCheckout([
+      { id: "jogo", nome: "Jogo", plataforma: "PlayStation 5", precoVendaEUR: 19.99 }
+    ], { email: "cliente@example.com", name: "Cliente" });
+    const params = new URLSearchParams(request.options.body);
+    const methods = [...params.entries()]
+      .filter(([key]) => key.startsWith("payment_method_types["))
+      .map(([, value]) => value);
+    assert.equal(params.get("line_items[0][price_data][currency]"), "eur");
+    assert.equal(params.get("adaptive_pricing[enabled]"), "false");
+    assert.deepEqual(methods, ["card", "link", "mb_way", "multibanco", "klarna", "paypal"]);
+    assert.equal(request.options.headers["stripe-version"], "2025-10-29.clover");
+  } finally {
+    global.fetch = originalFetch;
+    if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousSecret;
+    if (previousMethods === undefined) delete process.env.STRIPE_PAYMENT_METHOD_TYPES;
+    else process.env.STRIPE_PAYMENT_METHOD_TYPES = previousMethods;
+  }
+});
+
 test("email de entrega usa tabelas, estilos inline e imagens acessíveis", () => {
   const previousUrl = process.env.URL;
   process.env.URL = "https://galaxygame.example";
