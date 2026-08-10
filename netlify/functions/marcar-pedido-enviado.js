@@ -1,4 +1,4 @@
-const { json, requireAdmin, getOrderById, updateOrder, sendCodeEmail } = require("./_orders");
+const { json, requireAdmin, getPersistedOrderById, updatePersistedOrder, sendCodeEmail } = require("./_orders");
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
@@ -14,18 +14,18 @@ exports.handler = async (event, context) => {
 
   const recordId = String(body.recordId || "").trim();
   const codigo = String(body.codigo || "").trim();
-  if (!/^rec[a-zA-Z0-9]+$/.test(recordId) || !codigo || codigo.length > 4000) {
+  if (!/^(rec[a-zA-Z0-9]+|blob_[a-zA-Z0-9_-]+)$/.test(recordId) || !codigo || codigo.length > 4000) {
     return json(400, { error: "invalid_record_or_code" });
   }
 
   let updatedOrder;
   try {
-    const currentOrder = await getOrderById(recordId);
+    const currentOrder = await getPersistedOrderById(recordId);
     if (!currentOrder) return json(404, { error: "order_not_found" });
     if (currentOrder.status === "Enviado") return json(200, { ok: true, duplicate: true, pedido: currentOrder });
     if (!currentOrder.clienteEmail) return json(400, { error: "order_email_missing" });
 
-    updatedOrder = await updateOrder(recordId, {
+    updatedOrder = await updatePersistedOrder(recordId, {
       Codigo: codigo,
       Status: "Enviado"
     });
@@ -39,7 +39,7 @@ exports.handler = async (event, context) => {
     });
     if (updatedOrder) {
       try {
-        await updateOrder(recordId, { Status: "Aguardando codigo" });
+        await updatePersistedOrder(recordId, { Status: "Aguardando codigo" });
       } catch (rollbackError) {
         console.error("[marcar-pedido-enviado:rollback]", {
           message: rollbackError.message,

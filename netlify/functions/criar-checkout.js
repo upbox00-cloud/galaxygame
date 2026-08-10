@@ -28,7 +28,7 @@ function loadCatalog() {
 }
 
 function siteUrl() {
-  return String(process.env.URL || process.env.DEPLOY_PRIME_URL || "https://galaxygame.pt").replace(/\/$/, "");
+  return String(process.env.URL || "https://galaxygame.pt").replace(/\/$/, "");
 }
 
 function productImageUrl(product) {

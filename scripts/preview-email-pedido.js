@@ -2,7 +2,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { renderCodeEmail } = require("../netlify/functions/_orders");
 
-process.env.URL ||= "https://galaxygamestore-pt.netlify.app";
+process.env.URL ||= "https://galaxygame.pt";
 
 const previewOrder = {
   clienteNome: "Joana Martins",

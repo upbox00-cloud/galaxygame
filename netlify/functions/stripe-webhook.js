@@ -1,9 +1,10 @@
 const {
   json,
-  findOrderByStripeSessionId,
-  upsertOrderByStripeSessionId,
+  findPersistedOrderByStripeSessionId,
+  persistOrder,
   verifyStripeSignature,
-  fetchStripeProducts
+  fetchStripeProducts,
+  sendOrderConfirmationEmail
 } = require("./_orders");
 
 exports.handler = async (event) => {
@@ -34,7 +35,7 @@ exports.handler = async (event) => {
       return json(200, { received: true, pendingPayment: true, sessionId });
     }
 
-    const existing = await findOrderByStripeSessionId(sessionId);
+    const existing = await findPersistedOrderByStripeSessionId(sessionId);
     if (existing) return json(200, { received: true, duplicate: true, orderId: existing.id });
 
     const customer = session.customer_details || {};
@@ -43,7 +44,7 @@ exports.handler = async (event) => {
     const email = String(customer.email || session.customer_email || "").trim().toLowerCase();
     if (!email || !parsed.produto) return json(400, { error: "missing_order_data" });
 
-    const order = await upsertOrderByStripeSessionId({
+    const order = await persistOrder({
       ClienteEmail: email,
       ClienteNome: customer.name || session.metadata?.ClienteNome || "",
       Produto: parsed.produto,
@@ -55,9 +56,26 @@ exports.handler = async (event) => {
       StripeSessionId: sessionId
     });
 
-    return json(200, { received: true, orderId: order.id });
+    let confirmationEmailSent = false;
+    try {
+      await sendOrderConfirmationEmail(order);
+      confirmationEmailSent = true;
+    } catch (emailError) {
+      console.error("[stripe-webhook:confirmation-email]", {
+        message: emailError.message,
+        orderId: order.id
+      });
+    }
+
+    return json(200, { received: true, orderId: order.id, confirmationEmailSent });
   } catch (error) {
-    console.error("[stripe-webhook]", error);
+    console.error("[stripe-webhook]", {
+      message: error.message,
+      status: error.status || null,
+      eventType: stripeEvent.type,
+      eventId: stripeEvent.id || null,
+      sessionId: stripeEvent.data?.object?.id || null
+    });
     return json(500, { error: "webhook_failed" });
   }
 };

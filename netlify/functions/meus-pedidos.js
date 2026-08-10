@@ -1,4 +1,4 @@
-const { json, escapeFormulaValue, getUserEmail, listOrdersByFormula } = require("./_orders");
+const { json, getUserEmail, listPersistedOrders } = require("./_orders");
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "GET") return json(405, { error: "method_not_allowed" });
@@ -6,8 +6,7 @@ exports.handler = async (event, context) => {
   if (!email) return json(401, { error: "login_required" });
 
   try {
-    const formula = `{ClienteEmail}='${escapeFormulaValue(email)}'`;
-    const pedidos = await listOrdersByFormula(formula, { maxRecords: 100 });
+    const pedidos = await listPersistedOrders({ email, maxRecords: 100 });
     return json(200, {
       pedidos: pedidos.map((pedido) => ({
         id: pedido.id,

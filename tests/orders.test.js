@@ -87,6 +87,11 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
       .map(([, value]) => value);
     assert.equal(params.get("line_items[0][price_data][currency]"), "eur");
     assert.equal(params.get("adaptive_pricing[enabled]"), "false");
+    assert.equal(
+      params.get("success_url"),
+      "https://galaxygame.pt/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}"
+    );
+    assert.equal(params.get("cancel_url"), "https://galaxygame.pt/carrinho.html?checkout=cancelado");
     assert.deepEqual(methods, ["card", "link", "mb_way", "multibanco", "klarna", "paypal"]);
     assert.equal(request.options.headers["stripe-version"], "2025-10-29.clover");
   } finally {
@@ -95,6 +100,56 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
     else process.env.STRIPE_SECRET_KEY = previousSecret;
     if (previousMethods === undefined) delete process.env.STRIPE_PAYMENT_METHOD_TYPES;
     else process.env.STRIPE_PAYMENT_METHOD_TYPES = previousMethods;
+  }
+});
+
+test("pedidos continuam disponiveis em Netlify Blobs quando o Airtable falha", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const values = new Map();
+  const store = {
+    async get(key) {
+      return values.get(key) || null;
+    },
+    async setJSON(key, value) {
+      values.set(key, structuredClone(value));
+      return { etag: "test" };
+    },
+    async *list() {
+      yield { blobs: [...values.keys()].map((key) => ({ key })) };
+    }
+  };
+  delete process.env.AIRTABLE_BASE_ID;
+  delete process.env.AIRTABLE_TOKEN;
+  orders._test.setOrdersStoreFactory(() => store);
+
+  try {
+    const created = await orders.persistOrder({
+      ClienteEmail: "cliente@example.com",
+      ClienteNome: "Cliente",
+      Produto: "Jogo teste",
+      Plataforma: "PlayStation 5",
+      ValorPagoEUR: 19.99,
+      Status: "Aguardando codigo",
+      Codigo: "",
+      DataCompra: "2026-08-10T10:00:00.000Z",
+      StripeSessionId: "cs_test_blob"
+    });
+    assert.equal(created.id, "blob_cs_test_blob");
+
+    const customerOrders = await orders.listPersistedOrders({ email: "cliente@example.com" });
+    assert.equal(customerOrders.length, 1);
+    assert.equal(customerOrders[0].produto, "Jogo teste");
+
+    const sent = await orders.updatePersistedOrder(created.id, { Status: "Enviado", Codigo: "CODE-123" });
+    assert.equal(sent.status, "Enviado");
+    assert.equal(sent.codigo, "CODE-123");
+  } finally {
+    orders._test.setOrdersStoreFactory();
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
   }
 });
 
@@ -118,6 +173,49 @@ test("email de entrega usa tabelas, estilos inline e imagens acessíveis", () =>
   assert.doesNotMatch(html, /class=/);
   if (previousUrl === undefined) delete process.env.URL;
   else process.env.URL = previousUrl;
+});
+
+test("email de confirmacao informa que o pedido esta pendente e liga a Minha Conta", async () => {
+  const previousApiKey = process.env.RESEND_API_KEY;
+  const previousFrom = process.env.RESEND_FROM_EMAIL;
+  const previousUrl = process.env.URL;
+  const originalFetch = global.fetch;
+  let request;
+  process.env.RESEND_API_KEY = "re_test_only";
+  process.env.RESEND_FROM_EMAIL = "GalaxyGame <pedidos@galaxygame.pt>";
+  process.env.URL = "https://galaxygame.pt";
+  global.fetch = async (url, options) => {
+    request = { url, options };
+    return new Response(JSON.stringify({ id: "email_test" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    await orders.sendOrderConfirmationEmail({
+      id: "blob_cs_test_email",
+      clienteEmail: "cliente@example.com",
+      clienteNome: "Cliente",
+      produto: "Jogo teste",
+      plataforma: "PlayStation 5"
+    });
+    const payload = JSON.parse(request.options.body);
+    assert.equal(request.url, "https://api.resend.com/emails");
+    assert.deepEqual(payload.to, ["cliente@example.com"]);
+    assert.match(payload.subject, /Recebemos o teu pedido/);
+    assert.match(payload.html, /Estado: A aguardar preparacao do codigo/);
+    assert.match(payload.html, /https:\/\/galaxygame\.pt\/minha-conta\.html/);
+    assert.match(payload.html, /Jogo teste/);
+  } finally {
+    global.fetch = originalFetch;
+    if (previousApiKey === undefined) delete process.env.RESEND_API_KEY;
+    else process.env.RESEND_API_KEY = previousApiKey;
+    if (previousFrom === undefined) delete process.env.RESEND_FROM_EMAIL;
+    else process.env.RESEND_FROM_EMAIL = previousFrom;
+    if (previousUrl === undefined) delete process.env.URL;
+    else process.env.URL = previousUrl;
+  }
 });
 
 test("email ignora URLs de capa inseguras", () => {

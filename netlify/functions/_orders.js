@@ -1,7 +1,11 @@
 const crypto = require("crypto");
+const { getStore } = require("@netlify/blobs");
 
 const AIRTABLE_TABLE = "Pedidos";
 const AIRTABLE_API = "https://api.airtable.com/v0";
+const ORDER_STORE = "galaxygame-orders";
+const defaultOrdersStoreFactory = () => getStore({ name: ORDER_STORE, consistency: "strong" });
+let ordersStoreFactory = defaultOrdersStoreFactory;
 
 function env(name) {
   const value = process.env[name];
@@ -134,6 +138,177 @@ function normalizeOrder(record) {
     dataCompra: fields.DataCompra || "",
     stripeSessionId: fields.StripeSessionId || ""
   };
+}
+
+function ordersStore() {
+  return ordersStoreFactory();
+}
+
+function blobOrderKey(sessionId) {
+  return `orders/${String(sessionId || "").trim()}.json`;
+}
+
+function blobOrderId(sessionId) {
+  return `blob_${String(sessionId || "").trim()}`;
+}
+
+function normalizeBlobOrder(value) {
+  if (!value?.stripeSessionId) return null;
+  return {
+    id: blobOrderId(value.stripeSessionId),
+    clienteEmail: String(value.clienteEmail || "").trim().toLowerCase(),
+    clienteNome: value.clienteNome || "",
+    produto: value.produto || "",
+    plataforma: value.plataforma || "",
+    valorPagoEUR: Number(value.valorPagoEUR || 0),
+    status: value.status || "Aguardando codigo",
+    codigo: value.codigo || "",
+    imagem: normalizeImageField(value.imagem),
+    dataCompra: value.dataCompra || "",
+    stripeSessionId: value.stripeSessionId
+  };
+}
+
+function fieldsToBlobOrder(fields, current = {}) {
+  return normalizeBlobOrder({
+    ...current,
+    clienteEmail: fields.ClienteEmail ?? current.clienteEmail,
+    clienteNome: fields.ClienteNome ?? current.clienteNome,
+    produto: fields.Produto ?? current.produto,
+    plataforma: fields.Plataforma ?? current.plataforma,
+    valorPagoEUR: fields.ValorPagoEUR ?? current.valorPagoEUR,
+    status: fields.Status ?? current.status,
+    codigo: fields.Codigo ?? current.codigo,
+    imagem: fields.ImagemURL ?? fields.Imagem ?? current.imagem,
+    dataCompra: fields.DataCompra ?? current.dataCompra,
+    stripeSessionId: fields.StripeSessionId ?? current.stripeSessionId
+  });
+}
+
+async function getBlobOrderBySessionId(sessionId) {
+  if (!sessionId) return null;
+  const value = await ordersStore().get(blobOrderKey(sessionId), { type: "json", consistency: "strong" });
+  return normalizeBlobOrder(value);
+}
+
+async function upsertBlobOrder(fields) {
+  const sessionId = String(fields?.StripeSessionId || "").trim();
+  if (!sessionId) throw new Error("StripeSessionId em falta no pedido Blob");
+  const current = await getBlobOrderBySessionId(sessionId);
+  const order = fieldsToBlobOrder(fields, current || {});
+  await ordersStore().setJSON(blobOrderKey(sessionId), order);
+  return order;
+}
+
+async function listBlobOrders({ email = "", status = "", maxRecords = 100 } = {}) {
+  const store = ordersStore();
+  const keys = [];
+  for await (const page of store.list({ prefix: "orders/", paginate: true })) {
+    keys.push(...page.blobs.map((blob) => blob.key));
+    if (keys.length >= 1000) break;
+  }
+  const values = await Promise.all(keys.map((key) => store.get(key, { type: "json", consistency: "strong" })));
+  const normalizedEmail = String(email || "").trim().toLowerCase();
+  return values
+    .map(normalizeBlobOrder)
+    .filter(Boolean)
+    .filter((order) => !normalizedEmail || order.clienteEmail === normalizedEmail)
+    .filter((order) => !status || order.status === status)
+    .sort((a, b) => new Date(b.dataCompra || 0) - new Date(a.dataCompra || 0))
+    .slice(0, maxRecords);
+}
+
+function logStorageFallback(operation, error) {
+  console.warn(`[orders:${operation}] Airtable indisponivel; a usar Netlify Blobs`, {
+    message: error?.message || "erro desconhecido",
+    status: error?.status || null
+  });
+}
+
+async function findPersistedOrderByStripeSessionId(sessionId) {
+  const blobResult = await Promise.allSettled([getBlobOrderBySessionId(sessionId)]);
+  if (blobResult[0].status === "fulfilled" && blobResult[0].value) return blobResult[0].value;
+  try {
+    return await findOrderByStripeSessionId(sessionId);
+  } catch (error) {
+    logStorageFallback("find", error);
+    if (blobResult[0].status === "rejected") throw blobResult[0].reason;
+    return null;
+  }
+}
+
+async function persistOrder(fields) {
+  const [airtable, blob] = await Promise.allSettled([
+    upsertOrderByStripeSessionId(fields),
+    upsertBlobOrder(fields)
+  ]);
+  if (airtable.status === "rejected") logStorageFallback("save", airtable.reason);
+  if (blob.status === "rejected") {
+    console.error("[orders:save] Netlify Blobs falhou", { message: blob.reason?.message || "erro desconhecido" });
+  }
+  if (airtable.status === "rejected" && blob.status === "rejected") {
+    throw new Error(`Nao foi possivel guardar o pedido: ${airtable.reason?.message || blob.reason?.message}`);
+  }
+  return blob.status === "fulfilled" ? blob.value : airtable.value;
+}
+
+async function listPersistedOrders({ email = "", status = "", maxRecords = 100 } = {}) {
+  const formulaParts = [];
+  if (email) formulaParts.push(`{ClienteEmail}='${escapeFormulaValue(email)}'`);
+  if (status) formulaParts.push(`{Status}='${escapeFormulaValue(status)}'`);
+  const formula = formulaParts.length > 1 ? `AND(${formulaParts.join(",")})` : formulaParts[0] || "";
+  const [airtable, blob] = await Promise.allSettled([
+    listOrdersByFormula(formula, { maxRecords }),
+    listBlobOrders({ email, status, maxRecords })
+  ]);
+  if (airtable.status === "rejected") logStorageFallback("list", airtable.reason);
+  if (airtable.status === "rejected" && blob.status === "rejected") throw blob.reason;
+
+  const orders = new Map();
+  if (airtable.status === "fulfilled") {
+    airtable.value.forEach((order) => orders.set(order.stripeSessionId || order.id, order));
+  }
+  if (blob.status === "fulfilled") {
+    blob.value.forEach((order) => orders.set(order.stripeSessionId || order.id, order));
+  }
+  return [...orders.values()]
+    .sort((a, b) => new Date(b.dataCompra || 0) - new Date(a.dataCompra || 0))
+    .slice(0, maxRecords);
+}
+
+async function getPersistedOrderById(recordId) {
+  if (String(recordId || "").startsWith("blob_")) {
+    return getBlobOrderBySessionId(String(recordId).slice(5));
+  }
+  return getOrderById(recordId);
+}
+
+async function updatePersistedOrder(recordId, fields) {
+  if (String(recordId || "").startsWith("blob_")) {
+    const sessionId = String(recordId).slice(5);
+    const current = await getBlobOrderBySessionId(sessionId);
+    if (!current) return null;
+    return upsertBlobOrder({ ...fields, StripeSessionId: sessionId });
+  }
+
+  const updated = await updateOrder(recordId, fields);
+  if (updated?.stripeSessionId) {
+    try {
+      await upsertBlobOrder({
+        ...fields,
+        StripeSessionId: updated.stripeSessionId,
+        ClienteEmail: updated.clienteEmail,
+        ClienteNome: updated.clienteNome,
+        Produto: updated.produto,
+        Plataforma: updated.plataforma,
+        ValorPagoEUR: updated.valorPagoEUR,
+        DataCompra: updated.dataCompra
+      });
+    } catch (error) {
+      console.warn("[orders:update] copia Blob falhou", { message: error.message });
+    }
+  }
+  return updated;
 }
 
 function normalizeImageField(value) {
@@ -288,6 +463,38 @@ async function sendCodeEmail(order) {
   return data;
 }
 
+async function sendOrderConfirmationEmail(order) {
+  const siteUrl = publicSiteUrl();
+  const safeName = escapeHtml(order.clienteNome || "cliente");
+  const product = escapeHtml(order.produto || "Jogo digital GalaxyGame");
+  const platform = escapeHtml(order.plataforma || "Consola");
+  const accountUrl = escapeHtml(`${siteUrl}/minha-conta.html`);
+  const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-header-logo-cropped.webp`);
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${env("RESEND_API_KEY")}`,
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({
+      from: process.env.RESEND_FROM_EMAIL || "GalaxyGame <pedidos@galaxygame.pt>",
+      to: [order.clienteEmail],
+      reply_to: "gamegalaxy26@gmail.com",
+      subject: "Recebemos o teu pedido - GalaxyGame",
+      html: `<!doctype html><html lang="pt-PT"><body style="margin:0;background:#111116;color:#f7f5fb;font-family:Arial,Helvetica,sans-serif;"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#111116"><tr><td align="center" style="padding:24px 12px;"><table role="presentation" width="600" cellspacing="0" cellpadding="0" bgcolor="#1c1c22" style="width:100%;max-width:600px;border:1px solid #35343d;border-radius:8px;"><tr><td align="center" bgcolor="#241a32" style="padding:26px;background:#241a32;"><img src="${logoUrl}" width="250" alt="GalaxyGame - Jogos Digitais" style="display:block;max-width:90%;height:auto;border:0;"><h1 style="margin:18px 0 0;color:#fff;font-size:27px;">Pedido confirmado</h1></td></tr><tr><td style="padding:28px;color:#f7f5fb;"><p style="font-size:19px;font-weight:700;">Ola, ${safeName}!</p><p style="color:#cbc8d2;line-height:1.6;">O pagamento foi confirmado e o teu pedido ja aparece em Minha Conta &gt; Meus Pedidos.</p><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#28262f" style="margin:22px 0;border:1px solid #403d48;border-radius:6px;"><tr><td style="padding:18px;"><strong style="display:block;color:#fff;font-size:18px;">${product}</strong><span style="display:block;margin-top:8px;color:#ff8a3d;">${platform}</span><span style="display:block;margin-top:12px;color:#cbc8d2;">Estado: A aguardar preparacao do codigo</span></td></tr></table><p style="color:#cbc8d2;line-height:1.6;">Assim que o codigo ou os dados de acesso forem preparados, ficam disponiveis na tua conta e recebes um novo email.</p><table role="presentation" cellspacing="0" cellpadding="0" align="center"><tr><td bgcolor="#ff6a00" style="border-radius:6px;"><a href="${accountUrl}" style="display:inline-block;padding:14px 24px;color:#171117;font-weight:800;text-decoration:none;">Acompanhar o meu pedido</a></td></tr></table></td></tr><tr><td align="center" style="padding:20px 28px;border-top:1px solid #3a3941;color:#aaa7b1;font-size:12px;line-height:1.6;">Precisas de ajuda? <a href="mailto:gamegalaxy26@gmail.com" style="color:#ff8a3d;">gamegalaxy26@gmail.com</a><br>&copy; 2026 GalaxyGame.</td></tr></table></td></tr></table></body></html>`
+    })
+  });
+  const text = await response.text();
+  let data = {};
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    data = {};
+  }
+  if (!response.ok) throw new Error(data?.message || `Resend respondeu ${response.status}`);
+  return data;
+}
+
 function renderCodeEmail(order) {
   const safeName = escapeHtml(order.clienteNome || "cliente");
   const product = escapeHtml(order.produto || "Jogo digital GalaxyGame");
@@ -411,7 +618,7 @@ function renderEmailStep(number, text) {
 }
 
 function publicSiteUrl() {
-  const configured = process.env.URL || process.env.DEPLOY_PRIME_URL || "https://galaxygame.pt";
+  const configured = process.env.URL || "https://galaxygame.pt";
   try {
     const url = new URL(configured);
     return `${url.protocol}//${url.host}`;
@@ -455,6 +662,17 @@ module.exports = {
   verifyStripeSignature,
   parseStripeProducts,
   fetchStripeProducts,
+  findPersistedOrderByStripeSessionId,
+  persistOrder,
+  listPersistedOrders,
+  getPersistedOrderById,
+  updatePersistedOrder,
   sendCodeEmail,
-  renderCodeEmail
+  sendOrderConfirmationEmail,
+  renderCodeEmail,
+  _test: {
+    setOrdersStoreFactory(factory) {
+      ordersStoreFactory = factory || defaultOrdersStoreFactory;
+    }
+  }
 };

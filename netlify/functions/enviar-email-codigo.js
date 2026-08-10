@@ -1,4 +1,4 @@
-const { json, requireAdmin, getOrderById, sendCodeEmail } = require("./_orders");
+const { json, requireAdmin, getPersistedOrderById, sendCodeEmail } = require("./_orders");
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
@@ -7,7 +7,7 @@ exports.handler = async (event, context) => {
 
   try {
     const body = JSON.parse(event.body || "{}");
-    const order = await getOrderById(String(body.recordId || ""));
+    const order = await getPersistedOrderById(String(body.recordId || ""));
     if (!order) return json(404, { error: "order_not_found" });
     if (!order.clienteEmail || !order.codigo) return json(400, { error: "missing_email_or_code" });
     const result = await sendCodeEmail(order);
