@@ -95,31 +95,59 @@ async function getOrderById(recordId) {
 }
 
 async function createOrder(fields) {
-  const data = await airtableRequest(AIRTABLE_TABLE, {
-    method: "POST",
-    body: { records: [{ fields }] }
-  });
+  const data = await writeAirtableRecords("POST", [{ fields }]);
   return normalizeOrder(data.records?.[0]);
 }
 
 async function upsertOrderByStripeSessionId(fields) {
   if (!fields?.StripeSessionId) throw new Error("StripeSessionId em falta no pedido");
-  const data = await airtableRequest(AIRTABLE_TABLE, {
-    method: "PATCH",
-    body: {
-      performUpsert: { fieldsToMergeOn: ["StripeSessionId"] },
-      records: [{ fields }]
-    }
+  const data = await writeAirtableRecords("PATCH", [{ fields }], {
+    fieldsToMergeOn: ["StripeSessionId"]
   });
   return normalizeOrder(data.records?.[0]);
 }
 
 async function updateOrder(recordId, fields) {
-  const data = await airtableRequest(AIRTABLE_TABLE, {
-    method: "PATCH",
-    body: { records: [{ id: recordId, fields }] }
-  });
+  const data = await writeAirtableRecords("PATCH", [{ id: recordId, fields }]);
   return normalizeOrder(data.records?.[0]);
+}
+
+async function writeAirtableRecords(method, records, performUpsert) {
+  const mutableRecords = records.map((record) => ({
+    ...record,
+    fields: { ...(record.fields || {}) }
+  }));
+  const aliases = { Status: "Estado", Codigo: "Código" };
+
+  for (let attempt = 0; attempt < 6; attempt += 1) {
+    try {
+      return await airtableRequest(AIRTABLE_TABLE, {
+        method,
+        body: {
+          ...(performUpsert ? { performUpsert } : {}),
+          records: mutableRecords
+        }
+      });
+    } catch (error) {
+      const field = error.status === 422
+        ? error.message.match(/Unknown field name:\s*["']([^"']+)["']/i)?.[1]
+        : "";
+      const appearsInRecords = field && mutableRecords.some((record) => Object.hasOwn(record.fields, field));
+      if (!appearsInRecords) throw error;
+
+      const alias = aliases[field];
+      mutableRecords.forEach((record) => {
+        if (!Object.hasOwn(record.fields, field)) return;
+        if (alias && !Object.hasOwn(record.fields, alias)) record.fields[alias] = record.fields[field];
+        delete record.fields[field];
+      });
+      console.warn("[orders:airtable-schema] campo incompatível adaptado", {
+        field,
+        replacement: alias || null
+      });
+    }
+  }
+  throw new Error("Nao foi possivel adaptar os campos da tabela Pedidos");
 }
 
 function normalizeOrder(record) {
@@ -132,8 +160,8 @@ function normalizeOrder(record) {
     produto: fields.Produto || "",
     plataforma: fields.Plataforma || "",
     valorPagoEUR: Number(fields.ValorPagoEUR || 0),
-    status: fields.Status || "",
-    codigo: fields.Codigo || "",
+    status: fields.Status || fields.Estado || (fields.Codigo || fields["Código"] ? "Enviado" : "Aguardando codigo"),
+    codigo: fields.Codigo || fields["Código"] || "",
     imagem: normalizeImageField(fields.ImagemURL || fields.Imagem || fields.Capa),
     dataCompra: fields.DataCompra || "",
     stripeSessionId: fields.StripeSessionId || ""
@@ -255,7 +283,6 @@ async function persistOrder(fields) {
 async function listPersistedOrders({ email = "", status = "", maxRecords = 100 } = {}) {
   const formulaParts = [];
   if (email) formulaParts.push(`{ClienteEmail}='${escapeFormulaValue(email)}'`);
-  if (status) formulaParts.push(`{Status}='${escapeFormulaValue(status)}'`);
   const formula = formulaParts.length > 1 ? `AND(${formulaParts.join(",")})` : formulaParts[0] || "";
   const [airtable, blob] = await Promise.allSettled([
     listOrdersByFormula(formula, { maxRecords }),
@@ -272,6 +299,7 @@ async function listPersistedOrders({ email = "", status = "", maxRecords = 100 }
     blob.value.forEach((order) => orders.set(order.stripeSessionId || order.id, order));
   }
   return [...orders.values()]
+    .filter((order) => !status || order.status === status)
     .sort((a, b) => new Date(b.dataCompra || 0) - new Date(a.dataCompra || 0))
     .slice(0, maxRecords);
 }

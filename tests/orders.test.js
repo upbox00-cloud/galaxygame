@@ -103,6 +103,50 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
   }
 });
 
+test("Airtable adapta Status para Estado quando a base usa o nome portugues", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const originalFetch = global.fetch;
+  const requests = [];
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  global.fetch = async (_url, options) => {
+    const payload = JSON.parse(options.body);
+    requests.push(payload);
+    if (requests.length === 1) {
+      return new Response(JSON.stringify({ error: { message: 'Unknown field name: "Status"' } }), {
+        status: 422,
+        headers: { "content-type": "application/json" }
+      });
+    }
+    return new Response(JSON.stringify({
+      records: [{ id: "rec_test", fields: payload.records[0].fields }]
+    }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    const order = await orders.upsertOrderByStripeSessionId({
+      ClienteEmail: "cliente@example.com",
+      Produto: "Jogo teste",
+      Status: "Aguardando codigo",
+      StripeSessionId: "cs_test_airtable"
+    });
+    assert.equal(requests.length, 2);
+    assert.equal(requests[1].records[0].fields.Status, undefined);
+    assert.equal(requests[1].records[0].fields.Estado, "Aguardando codigo");
+    assert.equal(order.status, "Aguardando codigo");
+  } finally {
+    global.fetch = originalFetch;
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
 test("pedidos continuam disponiveis em Netlify Blobs quando o Airtable falha", async () => {
   const previousBase = process.env.AIRTABLE_BASE_ID;
   const previousToken = process.env.AIRTABLE_TOKEN;
