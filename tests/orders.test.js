@@ -5,6 +5,10 @@ const assert = require("node:assert/strict");
 const orders = require("../netlify/functions/_orders");
 const stripeWebhook = require("../netlify/functions/stripe-webhook");
 const checkout = require("../netlify/functions/criar-checkout");
+const adminOrders = require("../netlify/functions/admin-pedidos");
+const updateOrderStatus = require("../netlify/functions/atualizar-pedido-status");
+const sendOrder = require("../netlify/functions/marcar-pedido-enviado");
+const customerOrders = require("../netlify/functions/meus-pedidos");
 
 function signedEvent(body, secret, timestamp = Math.floor(Date.now() / 1000)) {
   const signature = crypto.createHmac("sha256", secret).update(`${timestamp}.${body}`).digest("hex");
@@ -12,6 +16,22 @@ function signedEvent(body, secret, timestamp = Math.floor(Date.now() / 1000)) {
     httpMethod: "POST",
     body,
     headers: { "stripe-signature": `t=${timestamp},v1=${signature}` }
+  };
+}
+
+function createMemoryStore() {
+  const values = new Map();
+  return {
+    async get(key) {
+      return values.get(key) || null;
+    },
+    async setJSON(key, value) {
+      values.set(key, structuredClone(value));
+      return { etag: "test" };
+    },
+    async *list() {
+      yield { blobs: [...values.keys()].map((key) => ({ key })) };
+    }
   };
 }
 
@@ -35,12 +55,28 @@ test("webhook recusa funcionar sem segredo configurado", async () => {
 });
 
 test("cargo admin só é aceite em app_metadata protegido", () => {
+  const previousEmails = process.env.ADMIN_EMAILS;
+  delete process.env.ADMIN_EMAILS;
   const unsafeContext = { clientContext: { user: { user_metadata: { roles: ["admin"] }, app_metadata: {} } } };
   const safeContext = { clientContext: { user: { user_metadata: {}, app_metadata: { roles: ["admin"] } } } };
   assert.deepEqual(orders.getUserRoles(unsafeContext), []);
   assert.deepEqual(orders.getUserRoles(safeContext), ["admin"]);
   assert.equal(orders.requireAdmin(unsafeContext).statusCode, 403);
   assert.equal(orders.requireAdmin(safeContext), null);
+  if (previousEmails === undefined) delete process.env.ADMIN_EMAILS;
+  else process.env.ADMIN_EMAILS = previousEmails;
+});
+
+test("ADMIN_EMAILS limita o painel ao email confirmado no token", () => {
+  const previousEmails = process.env.ADMIN_EMAILS;
+  process.env.ADMIN_EMAILS = "dono@galaxygame.pt, segunda@galaxygame.pt";
+  const allowed = { clientContext: { user: { email: "DONO@galaxygame.pt", app_metadata: {} } } };
+  const denied = { clientContext: { user: { email: "cliente@example.com", app_metadata: { roles: ["admin"] } } } };
+  assert.deepEqual(orders.getConfiguredAdminEmails(), ["dono@galaxygame.pt", "segunda@galaxygame.pt"]);
+  assert.equal(orders.requireAdmin(allowed), null);
+  assert.equal(orders.requireAdmin(denied).statusCode, 403);
+  if (previousEmails === undefined) delete process.env.ADMIN_EMAILS;
+  else process.env.ADMIN_EMAILS = previousEmails;
 });
 
 test("extrai produtos compactos guardados nos metadados Stripe", () => {
@@ -150,19 +186,7 @@ test("Airtable adapta Status para Estado quando a base usa o nome portugues", as
 test("pedidos continuam disponiveis em Netlify Blobs quando o Airtable falha", async () => {
   const previousBase = process.env.AIRTABLE_BASE_ID;
   const previousToken = process.env.AIRTABLE_TOKEN;
-  const values = new Map();
-  const store = {
-    async get(key) {
-      return values.get(key) || null;
-    },
-    async setJSON(key, value) {
-      values.set(key, structuredClone(value));
-      return { etag: "test" };
-    },
-    async *list() {
-      yield { blobs: [...values.keys()].map((key) => ({ key })) };
-    }
-  };
+  const store = createMemoryStore();
   delete process.env.AIRTABLE_BASE_ID;
   delete process.env.AIRTABLE_TOKEN;
   orders._test.setOrdersStoreFactory(() => store);
@@ -194,6 +218,116 @@ test("pedidos continuam disponiveis em Netlify Blobs quando o Airtable falha", a
     else process.env.AIRTABLE_BASE_ID = previousBase;
     if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
     else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
+test("painel lista, cancela e reabre pedidos apenas para o email administrador", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const previousAdmins = process.env.ADMIN_EMAILS;
+  delete process.env.AIRTABLE_BASE_ID;
+  delete process.env.AIRTABLE_TOKEN;
+  process.env.ADMIN_EMAILS = "admin@galaxygame.pt";
+  const store = createMemoryStore();
+  orders._test.setOrdersStoreFactory(() => store);
+  const adminContext = { clientContext: { user: { email: "admin@galaxygame.pt", app_metadata: {} } } };
+
+  try {
+    const created = await orders.persistOrder({
+      ClienteEmail: "cliente@example.com",
+      Produto: "Jogo do painel",
+      Plataforma: "Xbox Series X|S",
+      ValorPagoEUR: 29.99,
+      Status: "Aguardando codigo",
+      DataCompra: "2026-08-10T20:00:00.000Z",
+      StripeSessionId: "cs_test_admin"
+    });
+    const denied = await adminOrders.handler({ httpMethod: "GET", rawQuery: "status=all" }, {
+      clientContext: { user: { email: "cliente@example.com", app_metadata: { roles: ["admin"] } } }
+    });
+    assert.equal(denied.statusCode, 403);
+
+    const listed = await adminOrders.handler({ httpMethod: "GET", rawQuery: "status=all" }, adminContext);
+    assert.equal(listed.statusCode, 200);
+    assert.equal(JSON.parse(listed.body).pedidos[0].produto, "Jogo do painel");
+
+    const cancelled = await updateOrderStatus.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ recordId: created.id, status: "Cancelado" })
+    }, adminContext);
+    assert.equal(cancelled.statusCode, 200);
+    assert.equal(JSON.parse(cancelled.body).pedido.status, "Cancelado");
+
+    const reopened = await updateOrderStatus.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ recordId: created.id, status: "Aguardando codigo" })
+    }, adminContext);
+    assert.equal(reopened.statusCode, 200);
+    assert.equal(JSON.parse(reopened.body).pedido.status, "Aguardando codigo");
+  } finally {
+    orders._test.setOrdersStoreFactory();
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+    if (previousAdmins === undefined) delete process.env.ADMIN_EMAILS;
+    else process.env.ADMIN_EMAILS = previousAdmins;
+  }
+});
+
+test("entrega administrativa guarda o codigo, envia email e atualiza Minha Conta", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const previousAdmins = process.env.ADMIN_EMAILS;
+  const previousResend = process.env.RESEND_API_KEY;
+  const originalFetch = global.fetch;
+  delete process.env.AIRTABLE_BASE_ID;
+  delete process.env.AIRTABLE_TOKEN;
+  process.env.ADMIN_EMAILS = "admin@galaxygame.pt";
+  process.env.RESEND_API_KEY = "re_test_only";
+  const store = createMemoryStore();
+  orders._test.setOrdersStoreFactory(() => store);
+  global.fetch = async () => new Response(JSON.stringify({ id: "email_delivery_test" }), {
+    status: 200,
+    headers: { "content-type": "application/json" }
+  });
+  const adminContext = { clientContext: { user: { email: "admin@galaxygame.pt", app_metadata: {} } } };
+
+  try {
+    const created = await orders.persistOrder({
+      ClienteEmail: "cliente@example.com",
+      ClienteNome: "Cliente",
+      Produto: "Jogo entregue",
+      Plataforma: "PlayStation 5",
+      ValorPagoEUR: 39.99,
+      Status: "Aguardando codigo",
+      DataCompra: "2026-08-10T21:00:00.000Z",
+      StripeSessionId: "cs_test_delivery"
+    });
+    const delivered = await sendOrder.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ recordId: created.id, codigo: "CONTA: cliente / SENHA: teste" })
+    }, adminContext);
+    assert.equal(delivered.statusCode, 200);
+    assert.equal(JSON.parse(delivered.body).pedido.status, "Enviado");
+
+    const account = await customerOrders.handler({ httpMethod: "GET" }, {
+      clientContext: { user: { email: "cliente@example.com" } }
+    });
+    const accountOrder = JSON.parse(account.body).pedidos[0];
+    assert.equal(accountOrder.status, "Enviado");
+    assert.equal(accountOrder.codigo, "CONTA: cliente / SENHA: teste");
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+    if (previousAdmins === undefined) delete process.env.ADMIN_EMAILS;
+    else process.env.ADMIN_EMAILS = previousAdmins;
+    if (previousResend === undefined) delete process.env.RESEND_API_KEY;
+    else process.env.RESEND_API_KEY = previousResend;
   }
 });
 

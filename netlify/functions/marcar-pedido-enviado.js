@@ -29,7 +29,13 @@ exports.handler = async (event, context) => {
       Codigo: codigo,
       Status: "Enviado"
     });
-    updatedOrder = updatedOrder ? { ...updatedOrder, codigo, status: "Enviado" } : updatedOrder;
+    if (!updatedOrder || updatedOrder.codigo !== codigo || updatedOrder.status !== "Enviado") {
+      updatedOrder = null;
+      return json(409, {
+        error: "airtable_delivery_fields_missing",
+        requiredFields: ["Status", "Codigo"]
+      });
+    }
     await sendCodeEmail(updatedOrder);
     return json(200, { ok: true, pedido: updatedOrder });
   } catch (error) {

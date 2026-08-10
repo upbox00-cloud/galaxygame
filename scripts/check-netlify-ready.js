@@ -25,6 +25,7 @@ const requiredFiles = [
   "netlify/functions/stripe-webhook.js",
   "netlify/functions/criar-checkout.js",
   "netlify/functions/admin-pedidos.js",
+  "netlify/functions/atualizar-pedido-status.js",
   "netlify/functions/marcar-pedido-enviado.js",
   "netlify/functions/meus-pedidos.js",
   "netlify/functions/enviar-email-codigo.js",

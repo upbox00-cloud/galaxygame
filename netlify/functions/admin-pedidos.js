@@ -6,12 +6,20 @@ exports.handler = async (event, context) => {
   if (adminError) return adminError;
 
   try {
-    const requestedStatus = new URLSearchParams(event.rawQuery || "").get("status") || "Aguardando codigo";
-    const status = ["Aguardando codigo", "Enviado"].includes(requestedStatus)
-      ? requestedStatus
-      : "Aguardando codigo";
-    const pedidos = await listPersistedOrders({ status, maxRecords: 100 });
-    return json(200, { pedidos });
+    const requestedStatus = event.queryStringParameters?.status
+      || new URLSearchParams(event.rawQuery || "").get("status")
+      || "all";
+    const allowedStatuses = ["all", "Aguardando codigo", "Enviado", "Cancelado"];
+    const status = allowedStatuses.includes(requestedStatus) ? requestedStatus : "all";
+    const pedidos = await listPersistedOrders({
+      status: status === "all" ? "" : status,
+      maxRecords: 500
+    });
+    return json(200, {
+      pedidos,
+      total: pedidos.length,
+      generatedAt: new Date().toISOString()
+    });
   } catch (error) {
     console.error("[admin-pedidos]", error);
     return json(500, { error: "orders_fetch_failed" });

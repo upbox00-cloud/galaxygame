@@ -42,6 +42,7 @@ Configure em `Site configuration > Environment variables` no Netlify e aplique-a
 
 - `AIRTABLE_TOKEN`: token pessoal com acesso de leitura e escrita a base de pedidos.
 - `AIRTABLE_BASE_ID`: ID da base que contem a tabela `Pedidos`.
+- `ADMIN_EMAILS`: emails autorizados a abrir o painel, separados por virgula.
 - `RESEND_API_KEY`: chave do Resend usada apenas pela Function de email.
 - `RESEND_FROM_EMAIL`: remetente verificado, por exemplo `GalaxyGame <pedidos@galaxygame.pt>`.
 - `STRIPE_SECRET_KEY`: chave secreta Stripe usada para criar Checkout Sessions e consultar os produtos pagos.
@@ -52,7 +53,7 @@ Depois de alterar variaveis no Netlify, inicie um novo deploy. Nunca coloque val
 
 ### Airtable
 
-A tabela deve chamar-se `Pedidos` e conter exatamente os campos `ClienteEmail`, `ClienteNome`, `Produto`, `Plataforma`, `ValorPagoEUR`, `Status`, `Codigo`, `DataCompra` e `StripeSessionId`. O campo `Status` deve aceitar `Aguardando codigo` e `Enviado`.
+A tabela deve chamar-se `Pedidos` e conter exatamente os campos `ClienteEmail`, `ClienteNome`, `Produto`, `Plataforma`, `ValorPagoEUR`, `Status`, `Codigo`, `DataCompra` e `StripeSessionId`. O campo `Status` deve aceitar `Aguardando codigo`, `Enviado` e `Cancelado`. Use texto longo para `Codigo`, porque este campo tambem pode guardar dados de uma conta e instrucoes de acesso.
 
 ### Webhook Stripe
 
@@ -68,7 +69,11 @@ O Checkout desativa o Adaptive Pricing para apresentar e cobrar sempre em EUR. P
 
 ### Administrador
 
-O painel confia exclusivamente em `app_metadata.roles`, que o cliente nao pode editar. Marque o utilizador do proprietario com a role `admin` no Netlify Identity e volte a iniciar sessao para obter um JWT atualizado. A protecao e validada novamente em todas as Functions; esconder a pagina no navegador nao e a unica barreira.
+O painel esta disponivel em `/admin` e em `painel-pedidos.html`. Quando nao existe uma sessao, a pagina envia o utilizador para o login e regressa ao painel depois da autenticacao.
+
+Configure `ADMIN_EMAILS` no Netlify com o email confirmado do proprietario, por exemplo `proprietario@example.com`. Quando esta variavel existe, apenas os emails dessa lista sao aceites pelas Functions administrativas. Se a variavel estiver vazia, o sistema usa como alternativa a role `admin` de `app_metadata.roles`, que o cliente nao pode editar. Depois de alterar o email ou a role, termine a sessao e volte a entrar para renovar o JWT.
+
+O painel permite pesquisar, filtrar, cancelar, reabrir e entregar pedidos. Ao enviar, a Function guarda `Codigo`, muda `Status` para `Enviado`, envia o email pelo Resend e disponibiliza os mesmos dados em `Minha Conta > Meus Pedidos`. Nenhuma chave do Airtable ou Resend e enviada ao navegador.
 
 ### Resend
 

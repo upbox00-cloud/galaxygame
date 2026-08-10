@@ -1,4 +1,5 @@
 /scripts/auth.js /scripts/auth.js 200
+/admin /painel-pedidos.html 200
 /scripts/* /404.html 404
 /debug/* /404.html 404
 /logs/* /404.html 404

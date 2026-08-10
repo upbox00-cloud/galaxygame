@@ -351,7 +351,7 @@ function getUser(context) {
 
 function getUserEmail(context) {
   const user = getUser(context);
-  return user?.email || user?.user_metadata?.email || "";
+  return String(user?.email || user?.user_metadata?.email || "").trim().toLowerCase();
 }
 
 function getUserName(context) {
@@ -368,8 +368,20 @@ function getUserRoles(context) {
   return [...directRoles, ...authorizationRoles].map((role) => String(role).toLowerCase());
 }
 
+function getConfiguredAdminEmails() {
+  return String(process.env.ADMIN_EMAILS || "")
+    .split(/[;,\s]+/)
+    .map((email) => email.trim().toLowerCase())
+    .filter(Boolean);
+}
+
 function requireAdmin(context) {
   if (!getUser(context)) return json(401, { error: "login_required" });
+  const configuredEmails = getConfiguredAdminEmails();
+  if (configuredEmails.length) {
+    if (!configuredEmails.includes(getUserEmail(context))) return json(403, { error: "admin_required" });
+    return null;
+  }
   if (!getUserRoles(context).includes("admin")) return json(403, { error: "admin_required" });
   return null;
 }
@@ -686,6 +698,7 @@ module.exports = {
   getUserEmail,
   getUserName,
   getUserRoles,
+  getConfiguredAdminEmails,
   requireAdmin,
   verifyStripeSignature,
   parseStripeProducts,
