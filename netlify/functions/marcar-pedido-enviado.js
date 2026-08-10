@@ -29,6 +29,7 @@ exports.handler = async (event, context) => {
       Codigo: codigo,
       Status: "Enviado"
     });
+    updatedOrder = updatedOrder ? { ...updatedOrder, codigo, status: "Enviado" } : updatedOrder;
     await sendCodeEmail(updatedOrder);
     return json(200, { ok: true, pedido: updatedOrder });
   } catch (error) {

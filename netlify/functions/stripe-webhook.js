@@ -36,7 +36,24 @@ exports.handler = async (event) => {
     }
 
     const existing = await findPersistedOrderByStripeSessionId(sessionId);
-    if (existing) return json(200, { received: true, duplicate: true, orderId: existing.id });
+    if (existing) {
+      let confirmationEmailSent = false;
+      try {
+        await sendOrderConfirmationEmail(existing);
+        confirmationEmailSent = true;
+      } catch (emailError) {
+        console.error("[stripe-webhook:duplicate-confirmation-email]", {
+          message: emailError.message,
+          orderId: existing.id
+        });
+      }
+      return json(200, {
+        received: true,
+        duplicate: true,
+        orderId: existing.id,
+        confirmationEmailSent
+      });
+    }
 
     const customer = session.customer_details || {};
     const parsed = await fetchStripeProducts(session);
