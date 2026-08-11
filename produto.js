@@ -290,7 +290,7 @@ async function buyNow(product) {
   if (!user) {
     restoreButtons();
     showToast("Inicia sessão para continuar a compra", 3200);
-    identity.open("login");
+    window.location.assign(`login.html?mode=login&redirect=${encodeURIComponent(window.location.href.replace(window.location.origin + "/", ""))}`);
     return;
   }
 
@@ -301,7 +301,7 @@ async function buyNow(product) {
     console.error("[buy-now] falha ao obter o token de sessão (user.jwt())", error);
     restoreButtons();
     showToast("A tua sessão expirou. Inicia sessão novamente para continuar.", 4200);
-    identity.open("login");
+    window.location.assign(`login.html?mode=login&redirect=${encodeURIComponent(window.location.href.replace(window.location.origin + "/", ""))}`);
     return;
   }
 
@@ -338,9 +338,9 @@ async function buyNow(product) {
 
   if (response.status === 401) {
     console.error("[buy-now] sessão rejeitada (401) ao criar checkout", data);
-    identity.open("login");
     restoreButtons();
     showToast("A tua sessão expirou. Inicia sessão novamente para continuar.", 4200);
+    window.location.assign(`login.html?mode=login&redirect=${encodeURIComponent(window.location.href.replace(window.location.origin + "/", ""))}`);
     return;
   }
 

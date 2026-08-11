@@ -4563,6 +4563,11 @@ details p {
 }
 
 /* Dedicated login used by protected operational pages. */
+.netlify-identity-widget {
+  display: none !important;
+  pointer-events: none !important;
+}
+
 .admin-login-page {
   min-height: 100vh;
   background:
@@ -4617,6 +4622,39 @@ details p {
 .admin-login-form {
   display: grid;
   gap: 16px;
+}
+
+.admin-login-modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin: 0 0 20px;
+  padding: 4px;
+  border-radius: 7px;
+  background: #121215;
+}
+
+.admin-login-modes button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: #a9a9af;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.admin-login-modes button.is-active {
+  background: #343239;
+  color: #fff;
+}
+
+.admin-login-form[hidden],
+.admin-login-modes[hidden],
+.admin-login-recovery[hidden],
+.admin-login-form [hidden] {
+  display: none !important;
 }
 
 .admin-login-form label {

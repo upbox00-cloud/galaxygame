@@ -1,13 +1,20 @@
-(function preserveIdentityRecoveryToken() {
+(function preserveIdentityEmailTokens() {
   const hash = window.location.hash.replace(/^#/, "");
-  const token = new URLSearchParams(hash).get("recovery_token");
-  if (!token) return;
+  const params = new URLSearchParams(hash);
+  const recoveryToken = params.get("recovery_token");
+  const confirmationToken = params.get("confirmation_token");
+  if (!recoveryToken && !confirmationToken) return;
 
   try {
-    window.sessionStorage.setItem("galaxygame_recovery_token", token);
+    if (recoveryToken) window.sessionStorage.setItem("galaxygame_recovery_token", recoveryToken);
+    if (confirmationToken) window.sessionStorage.setItem("galaxygame_confirmation_token", confirmationToken);
   } catch (error) {
-    window.__GalaxyGameRecoveryToken = token;
+    if (recoveryToken) window.__GalaxyGameRecoveryToken = recoveryToken;
+    if (confirmationToken) window.__GalaxyGameConfirmationToken = confirmationToken;
   }
 
   window.history.replaceState(null, document.title, `${window.location.pathname}${window.location.search}`);
+  if (confirmationToken && !/\/login\.html$/i.test(window.location.pathname)) {
+    window.location.replace("login.html?mode=confirmacao&redirect=minha-conta.html");
+  }
 })();

@@ -10,6 +10,7 @@ const adminLoginSource = fs.readFileSync(path.join(root, "admin-login.js"), "utf
 const adminLoginHtml = fs.readFileSync(path.join(root, "login.html"), "utf8");
 const recoverySource = fs.readFileSync(path.join(root, "scripts", "recovery-token.js"), "utf8");
 const stylesSource = fs.readFileSync(path.join(root, "styles.css"), "utf8");
+const produtoSource = fs.readFileSync(path.join(root, "produto.js"), "utf8");
 
 test("auth initialization and controls are idempotent", () => {
   assert.match(authSource, /if \(window\.__GalaxyGameAuthReady\) return;/);
@@ -87,10 +88,26 @@ test("admin authentication uses a dedicated page instead of the blocking Identit
   assert.doesNotMatch(adminLoginHtml, /scripts\/auth\.js/);
 });
 
+test("all customer authentication uses the dedicated page and never opens the legacy modal", () => {
+  assert.doesNotMatch(authSource, /identity\.open\(/);
+  assert.doesNotMatch(produtoSource, /identity\.open\(/);
+  assert.match(adminLoginSource, /identity\.gotrue\.signup\(email, password/);
+  assert.match(adminLoginSource, /identity\.gotrue\.confirm\(confirmationToken, true\)/);
+  assert.match(adminLoginHtml, /data-login-mode="signup"/);
+  assert.match(stylesSource, /\.netlify-identity-widget\s*\{[\s\S]*display: none !important;[\s\S]*pointer-events: none !important;/);
+});
+
 test("password recovery token is preserved before Identity initializes", () => {
   assert.match(recoverySource, /get\("recovery_token"\)/);
-  assert.match(recoverySource, /sessionStorage\.setItem\("galaxygame_recovery_token", token\)/);
+  assert.match(recoverySource, /sessionStorage\.setItem\("galaxygame_recovery_token", recoveryToken\)/);
   assert.match(recoverySource, /history\.replaceState/);
+});
+
+test("email confirmation token is preserved and handled outside the Identity modal", () => {
+  assert.match(recoverySource, /get\("confirmation_token"\)/);
+  assert.match(recoverySource, /sessionStorage\.setItem\("galaxygame_confirmation_token", confirmationToken\)/);
+  assert.match(recoverySource, /login\.html\?mode=confirmacao&redirect=minha-conta\.html/);
+  assert.match(adminLoginHtml, /scripts\/recovery-token\.js\?v=20260811-2/);
 });
 
 test("password recovery validates the token and updates only the password", () => {
@@ -113,7 +130,7 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260811-1/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260811-2/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
     assert.equal(
       (html.match(/scripts\/identity-modern\.js\?v=20260809-1/g) || []).length,
@@ -121,9 +138,14 @@ test("all primary pages load the cache-busted auth script once", () => {
       `${page} deve carregar o cliente moderno do Netlify Identity`
     );
     assert.equal(
-      (html.match(/scripts\/recovery-token\.js\?v=20260808-1/g) || []).length,
+      (html.match(/scripts\/recovery-token\.js\?v=20260811-2/g) || []).length,
       1,
       `${page} deve preservar o recovery token antes do widget`
+    );
+    assert.equal(
+      (html.match(/styles\.css\?v=20260811-3/g) || []).length,
+      1,
+      `${page} deve carregar o CSS que bloqueia o modal antigo`
     );
   });
 });

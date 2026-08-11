@@ -118,7 +118,13 @@
 
   function redirectToLogin() {
     const returnTo = encodeURIComponent("minha-conta.html");
-    window.location.replace(`index.html?login=1&redirect=${returnTo}`);
+    window.location.replace(`login.html?mode=login&redirect=${returnTo}`);
+  }
+
+  function loginPageUrl(mode = "login", requestedDestination = "") {
+    const currentPage = `${window.location.pathname.split("/").pop() || "index.html"}${window.location.search}`;
+    const destination = requestedDestination || currentPage;
+    return `login.html?mode=${encodeURIComponent(mode)}&redirect=${encodeURIComponent(destination)}`;
   }
 
   function closeMenus(except = null) {
@@ -302,7 +308,7 @@
           </div>`;
         dialog.querySelector("[data-recovery-login]").addEventListener("click", () => {
           closeRecovery();
-          if (!identity?.currentUser?.()) identity?.open("login");
+          if (!identity?.currentUser?.()) window.location.assign(loginPageUrl("login"));
         });
       } catch (error) {
         status.textContent = recoveryErrorMessage(error, error?.recoveryStage);
@@ -387,7 +393,7 @@
     button.addEventListener("click", (event) => {
       event.stopPropagation();
       closeMenus();
-      identity?.open("login");
+      window.location.assign(loginPageUrl("login"));
     });
   });
 
@@ -395,7 +401,7 @@
     button.addEventListener("click", (event) => {
       event.stopPropagation();
       closeMenus();
-      identity?.open("signup");
+      window.location.assign(loginPageUrl("signup"));
     });
   });
 
@@ -420,7 +426,9 @@
       redirectToLogin();
       return;
     }
-    if (!user && params.get("login") === "1") identity.open("login");
+    if (!user && params.get("login") === "1") {
+      window.location.replace(loginPageUrl("login", params.get("redirect") || "index.html"));
+    }
     if (user) refreshPersistedSession(user);
   });
 
@@ -451,8 +459,13 @@
 
   identity.on("close", finishIdentityModal);
   identity.on("open", () => {
-    identityModalOpen = true;
-    enhanceIdentityAutofill();
+    identityModalOpen = false;
+    try {
+      identity.close();
+    } catch {
+      // The custom login page replaces the legacy modal completely.
+    }
+    finishIdentityModal();
   });
 
   window.addEventListener("pageshow", (event) => {
