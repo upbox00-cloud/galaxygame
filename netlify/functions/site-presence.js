@@ -83,7 +83,15 @@ exports.handler = async (event, context) => {
     return json(405, { error: "method_not_allowed" });
   } catch (error) {
     console.error("[site-presence]", { message: error?.message || "erro desconhecido" });
-    return json(500, { error: "presence_failed" });
+    const diagnostic = event.queryStringParameters?.diagnostic === "1"
+      ? {
+          name: error?.name || "Error",
+          message: error?.message || "erro desconhecido",
+          hasEventBlobs: Boolean(event?.blobs),
+          hasEnvironmentContext: Boolean(process.env.NETLIFY_BLOBS_CONTEXT)
+        }
+      : undefined;
+    return json(500, { error: "presence_failed", ...(diagnostic ? { diagnostic } : {}) });
   }
 };
 
