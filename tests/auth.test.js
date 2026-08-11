@@ -28,7 +28,7 @@ test("account menu is controlled only by click and closes both dropdown types", 
 });
 
 test("mobile return from Identity restores interactions and refreshes the user", () => {
-  assert.match(authSource, /identity\.on\("close", restorePageInteractions\)/);
+  assert.match(authSource, /identity\.on\("close", finishIdentityModal\)/);
   assert.match(authSource, /window\.addEventListener\("pageshow"/);
   assert.match(authSource, /identity\.currentUser\?\.\(\)/);
   assert.match(authSource, /refreshPersistedSession\(currentUser\)/);
@@ -54,8 +54,7 @@ test("login handler restaura a página diretamente, sem depender só do evento c
   const loginHandlerMatch = authSource.match(/identity\.on\("login", \(user\) => \{[\s\S]*?\n {2}\}\);/);
   assert.ok(loginHandlerMatch, "handler de login não encontrado");
   const loginHandler = loginHandlerMatch[0];
-  assert.match(loginHandler, /restorePageInteractions\(\);/);
-  assert.match(loginHandler, /window\.setTimeout\(restorePageInteractions, \d+\);/);
+  assert.match(loginHandler, /finishIdentityModal\(\);/);
 });
 
 test("restorePageInteractions limpa overflow, position, width e pointer-events do body/html", () => {
@@ -65,6 +64,14 @@ test("restorePageInteractions limpa overflow, position, width e pointer-events d
   ["overflow", "position", "width", "pointer-events"].forEach((prop) => {
     assert.match(fn, new RegExp(`removeProperty\\("${prop}"\\)`), `deveria remover a propriedade "${prop}"`);
   });
+});
+
+test("stale Identity overlay is removed after login and mobile return", () => {
+  assert.match(authSource, /querySelectorAll\("\.netlify-identity-widget"\)/);
+  assert.match(authSource, /identityModalOpen = false/);
+  assert.match(authSource, /finishIdentityModal\(\)/);
+  assert.match(authSource, /window\.setTimeout\(restorePageInteractions, 600\)/);
+  assert.match(authSource, /"height", "touch-action", "pointer-events"/);
 });
 
 test("password recovery token is preserved before Identity initializes", () => {
@@ -93,7 +100,7 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260809-1/g) || [];
+    const matches = html.match(/scripts\/auth\.js\?v=20260811-1/g) || [];
     assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
     assert.equal(
       (html.match(/scripts\/identity-modern\.js\?v=20260809-1/g) || []).length,

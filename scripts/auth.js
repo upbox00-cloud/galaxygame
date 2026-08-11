@@ -7,6 +7,7 @@
   const params = new URLSearchParams(window.location.search);
   let refreshPromise = null;
   let lastSessionRefresh = 0;
+  let identityModalOpen = false;
   let recoveryToken = window.__GalaxyGameRecoveryToken || "";
   try {
     recoveryToken ||= window.sessionStorage.getItem("galaxygame_recovery_token") || "";
@@ -141,9 +142,16 @@
     button.setAttribute("aria-expanded", String(willOpen));
   }
 
+  function removeStaleIdentityLayer() {
+    if (identityModalOpen) return;
+    document.querySelectorAll(".netlify-identity-widget").forEach((widget) => widget.remove());
+    document.documentElement.classList.remove("netlify-identity-widget-open");
+    document.body.classList.remove("netlify-identity-widget-open");
+  }
+
   function restorePageInteractions() {
     closeMenus();
-    if (document.body.classList.contains("password-recovery-open")) return;
+    if (identityModalOpen || document.body.classList.contains("password-recovery-open")) return;
     window.requestAnimationFrame(() => {
       document.documentElement.style.removeProperty("overflow");
       document.body.style.removeProperty("overflow");
@@ -151,7 +159,19 @@
       document.body.style.removeProperty("width");
       document.documentElement.style.removeProperty("pointer-events");
       document.body.style.removeProperty("pointer-events");
+      [document.documentElement, document.body].forEach((element) => {
+        ["overflow", "overflow-x", "overflow-y", "position", "inset", "top", "right", "bottom", "left", "width", "height", "touch-action", "pointer-events"]
+          .forEach((property) => element.style.removeProperty(property));
+      });
+      removeStaleIdentityLayer();
     });
+  }
+
+  function finishIdentityModal() {
+    identityModalOpen = false;
+    restorePageInteractions();
+    window.setTimeout(restorePageInteractions, 120);
+    window.setTimeout(restorePageInteractions, 600);
   }
 
   function clearRecoveryToken() {
@@ -407,6 +427,7 @@
   identity.on("login", (user) => {
     updateAuthUI(user);
     refreshPersistedSession(user, true);
+    identityModalOpen = false;
     try {
       identity.close();
     } catch (error) {
@@ -417,8 +438,7 @@
     // um no-op), o que deixava o overflow/position do body presos e a
     // página inteira sem responder a cliques. Chamamos diretamente aqui,
     // em vez de confiar só no listener de "close".
-    restorePageInteractions();
-    window.setTimeout(restorePageInteractions, 400);
+    finishIdentityModal();
 
     const redirect = params.get("redirect");
     if (redirect) window.location.assign(redirect);
@@ -429,19 +449,24 @@
     window.location.assign("index.html");
   });
 
-  identity.on("close", restorePageInteractions);
-  identity.on("open", enhanceIdentityAutofill);
+  identity.on("close", finishIdentityModal);
+  identity.on("open", () => {
+    identityModalOpen = true;
+    enhanceIdentityAutofill();
+  });
 
-  window.addEventListener("pageshow", () => {
+  window.addEventListener("pageshow", (event) => {
     const currentUser = identity.currentUser?.();
     if (currentUser) refreshPersistedSession(currentUser);
-    restorePageInteractions();
+    if (currentUser || event.persisted) finishIdentityModal();
+    else restorePageInteractions();
   });
 
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState !== "visible") return;
     const currentUser = identity.currentUser?.();
     if (currentUser) refreshPersistedSession(currentUser);
+    if (currentUser || !document.querySelector(".netlify-identity-widget")) finishIdentityModal();
   });
 
   identity.init({ locale: "pt" });
