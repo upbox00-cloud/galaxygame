@@ -7,7 +7,7 @@ const ACTIVE_WINDOW_MS = 2 * 60 * 1000;
 const STALE_AFTER_MS = 24 * 60 * 60 * 1000;
 const MAX_RECORDS = 5000;
 
-let storeFactory = () => getStore({ name: STORE_NAME, consistency: "strong" });
+let storeFactory = () => getStore(STORE_NAME);
 
 function normalizeVisitorId(value) {
   const id = String(value || "").trim();
@@ -52,7 +52,7 @@ async function listPresence(context) {
   const now = Date.now();
   const values = await Promise.all(keys.slice(0, MAX_RECORDS).map(async (key) => ({
     key,
-    value: await store.get(key, { type: "json", consistency: "strong" })
+    value: await store.get(key, { type: "json" })
   })));
   const active = values.filter(({ value }) => Number(value?.lastSeen || 0) >= now - ACTIVE_WINDOW_MS);
   const pages = new Map();
@@ -83,15 +83,7 @@ exports.handler = async (event, context) => {
     return json(405, { error: "method_not_allowed" });
   } catch (error) {
     console.error("[site-presence]", { message: error?.message || "erro desconhecido" });
-    const diagnostic = event.queryStringParameters?.diagnostic === "1"
-      ? {
-          name: error?.name || "Error",
-          message: error?.message || "erro desconhecido",
-          hasEventBlobs: Boolean(event?.blobs),
-          hasEnvironmentContext: Boolean(process.env.NETLIFY_BLOBS_CONTEXT)
-        }
-      : undefined;
-    return json(500, { error: "presence_failed", ...(diagnostic ? { diagnostic } : {}) });
+    return json(500, { error: "presence_failed" });
   }
 };
 
@@ -99,5 +91,5 @@ exports._test = {
   normalizeVisitorId,
   normalizePage,
   setStoreFactory(factory) { storeFactory = factory; },
-  resetStoreFactory() { storeFactory = () => getStore({ name: STORE_NAME, consistency: "strong" }); }
+  resetStoreFactory() { storeFactory = () => getStore(STORE_NAME); }
 };
