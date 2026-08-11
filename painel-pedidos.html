@@ -9,94 +9,196 @@
     <script src="scripts/recovery-token.js?v=20260811-2"></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     <script src="scripts/identity-modern.js?v=20260809-1" defer></script>
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=20260811-3" />
+    <link rel="stylesheet" href="admin-dashboard.css?v=20260811-1" />
   </head>
   <body class="admin-orders-page">
-    <header class="site-header solid-header">
-      <a class="brand" href="index.html" aria-label="GalaxyGame">
-        <img src="assets/galaxygame-header-logo-cropped.webp" alt="GalaxyGame" />
-      </a>
-      <nav class="main-nav" aria-label="Menu do painel">
-        <a href="index.html">Loja</a>
-        <a href="catalogo.html">Cat&aacute;logo</a>
-        <a href="minha-conta.html">Minha Conta</a>
-      </nav>
-      <div class="header-actions">
-        <div class="auth-controls">
-          <button class="auth-login-button" type="button" data-auth-login>Entrar / Criar conta</button>
-          <div class="auth-user" data-auth-user hidden>
-            <button class="auth-user-button" type="button" data-auth-menu aria-haspopup="true" aria-expanded="false"><span data-auth-name>Minha conta</span></button>
-            <div class="auth-dropdown" data-auth-dropdown hidden><a href="minha-conta.html">Minha Conta</a><button type="button" data-auth-logout>Sair</button></div>
-          </div>
+    <div class="admin-app" data-admin-shell hidden>
+      <aside class="admin-sidebar" data-admin-sidebar>
+        <a class="admin-sidebar-brand" href="painel-pedidos.html" aria-label="GalaxyGame Admin">
+          <img src="assets/galaxygame-header-logo-cropped.webp" alt="GalaxyGame" />
+          <span>Admin</span>
+        </a>
+
+        <nav class="admin-side-nav" aria-label="Navegação do painel">
+          <button class="active" type="button" data-admin-view-button="overview">
+            <i data-lucide="house"></i><span>Início</span>
+          </button>
+          <button type="button" data-admin-view-button="orders">
+            <i data-lucide="shopping-bag"></i><span>Pedidos</span><b data-admin-side-pending>0</b>
+          </button>
+          <button type="button" data-admin-view-button="catalog">
+            <i data-lucide="gamepad-2"></i><span>Catálogo</span>
+          </button>
+          <button type="button" data-admin-view-button="customers">
+            <i data-lucide="users"></i><span>Clientes</span>
+          </button>
+        </nav>
+
+        <div class="admin-sidebar-bottom">
+          <a href="index.html" target="_blank" rel="noopener"><i data-lucide="store"></i><span>Ver loja</span></a>
+          <button type="button" data-auth-logout><i data-lucide="log-out"></i><span>Terminar sessão</span></button>
         </div>
-      </div>
-    </header>
+      </aside>
 
-    <main class="admin-orders-main">
-      <section class="admin-orders-shell" data-admin-shell hidden>
-        <div class="admin-orders-heading">
-          <div>
-            <p class="account-kicker">Admin GalaxyGame</p>
-            <h1>Gest&atilde;o de pedidos</h1>
-            <p>Processa compras, entrega jogos e acompanha cada cliente num s&oacute; lugar.</p>
-          </div>
-          <div class="admin-heading-actions">
-            <a class="admin-secondary-button" href="index.html" target="_blank" rel="noopener">Ver loja</a>
-            <button class="admin-secondary-button" type="button" data-admin-refresh>Atualizar</button>
-            <button class="account-logout" type="button" data-auth-logout>Sair</button>
-          </div>
-        </div>
+      <div class="admin-app-content">
+        <header class="admin-mobile-header">
+          <button type="button" data-admin-menu aria-label="Abrir menu"><i data-lucide="menu"></i></button>
+          <img src="assets/galaxygame-header-logo-cropped.webp" alt="GalaxyGame" />
+          <button type="button" data-admin-refresh aria-label="Atualizar painel"><i data-lucide="refresh-cw"></i></button>
+        </header>
 
-        <div class="admin-notice" data-admin-notice hidden role="status" aria-live="polite"></div>
-
-        <section class="admin-summary" aria-label="Resumo dos pedidos">
-          <article><span>Pendentes</span><strong data-admin-count="pending">0</strong></article>
-          <article><span>Enviados</span><strong data-admin-count="sent">0</strong></article>
-          <article><span>Cancelados</span><strong data-admin-count="cancelled">0</strong></article>
-          <article><span>Receita confirmada</span><strong data-admin-revenue>0,00&nbsp;&euro;</strong></article>
-        </section>
-
-        <section class="admin-workspace">
-          <div class="admin-toolbar">
-            <label class="admin-search">
-              <span>Pesquisar pedidos</span>
-              <input type="search" data-admin-search placeholder="Cliente, jogo, email ou sess&atilde;o Stripe" autocomplete="off" />
-            </label>
-            <div class="admin-tabs" role="tablist" aria-label="Estado dos pedidos">
-              <button class="active" type="button" data-admin-tab="pending">Pendentes <span data-admin-tab-count="pending">0</span></button>
-              <button type="button" data-admin-tab="sent">Enviados <span data-admin-tab-count="sent">0</span></button>
-              <button type="button" data-admin-tab="cancelled">Cancelados <span data-admin-tab-count="cancelled">0</span></button>
-              <button type="button" data-admin-tab="all">Todos <span data-admin-tab-count="all">0</span></button>
-            </div>
-          </div>
-
-          <div class="admin-list-heading">
+        <main class="admin-dashboard-main">
+          <header class="admin-dashboard-header">
             <div>
-              <h2 data-admin-list-title>Pedidos pendentes</h2>
-              <p data-admin-list-copy>Compras pagas que ainda precisam de c&oacute;digo ou dados de acesso.</p>
+              <p class="admin-eyebrow">GalaxyGame Admin</p>
+              <h1 data-admin-page-title>Visão geral</h1>
+              <p data-admin-page-copy>Acompanha o desempenho da loja e resolve o que precisa da tua atenção.</p>
             </div>
-            <span data-admin-updated></span>
-          </div>
+            <div class="admin-header-actions">
+              <span class="admin-last-update" data-admin-updated>A carregar dados...</span>
+              <button class="admin-icon-button" type="button" data-admin-refresh title="Atualizar dados"><i data-lucide="refresh-cw"></i></button>
+            </div>
+          </header>
 
-          <div class="admin-order-list" data-admin-order-list>
-            <div class="admin-loading">A validar o acesso e carregar pedidos...</div>
-          </div>
-        </section>
+          <div class="admin-notice" data-admin-notice hidden role="status" aria-live="polite"></div>
 
-        <aside class="admin-system-note">
-          <strong>Configura&ccedil;&atilde;o necess&aacute;ria</strong>
-          <p>A tabela <code>Pedidos</code> do Airtable deve incluir os campos <code>Status</code> e <code>Codigo</code>. O dom&iacute;nio do remetente tamb&eacute;m precisa estar verificado no Resend para a entrega por email funcionar.</p>
-        </aside>
-      </section>
-    </main>
+          <section class="admin-view active" data-admin-view="overview">
+            <div class="admin-period-row" aria-label="Período das estatísticas">
+              <span>Período</span>
+              <div class="admin-segmented">
+                <button type="button" data-admin-period="7">7 dias</button>
+                <button class="active" type="button" data-admin-period="30">30 dias</button>
+                <button type="button" data-admin-period="90">90 dias</button>
+              </div>
+            </div>
 
-    <footer class="site-footer"></footer>
-    <script src="footer.js?v=20260726-4" defer></script>
+            <section class="admin-kpi-grid" aria-label="Indicadores da loja">
+              <article class="admin-kpi-card">
+                <div><span>Receita</span><i data-lucide="euro"></i></div>
+                <strong data-admin-metric="revenue">0,00 €</strong>
+                <small data-admin-trend="revenue">Sem vendas no período anterior</small>
+              </article>
+              <article class="admin-kpi-card">
+                <div><span>Pedidos pagos</span><i data-lucide="receipt-text"></i></div>
+                <strong data-admin-metric="orders">0</strong>
+                <small data-admin-trend="orders">Sem pedidos no período anterior</small>
+              </article>
+              <article class="admin-kpi-card">
+                <div><span>Ticket médio</span><i data-lucide="badge-euro"></i></div>
+                <strong data-admin-metric="average">0,00 €</strong>
+                <small>Valor médio por pedido confirmado</small>
+              </article>
+              <article class="admin-kpi-card admin-kpi-attention">
+                <div><span>A preparar</span><i data-lucide="clock-3"></i></div>
+                <strong data-admin-metric="pending">0</strong>
+                <small data-admin-pending-copy>Nenhum pedido aguarda entrega</small>
+              </article>
+            </section>
+
+            <section class="admin-analytics-grid">
+              <article class="admin-panel admin-sales-panel">
+                <header>
+                  <div><span class="admin-panel-kicker">Desempenho</span><h2>Receita ao longo do tempo</h2></div>
+                  <strong data-admin-chart-total>0,00 €</strong>
+                </header>
+                <div class="admin-chart-wrap" data-admin-revenue-chart aria-label="Gráfico de receita"></div>
+              </article>
+
+              <article class="admin-panel admin-status-panel">
+                <header><div><span class="admin-panel-kicker">Operação</span><h2>Estado dos pedidos</h2></div></header>
+                <div class="admin-donut-layout">
+                  <div class="admin-donut" data-admin-donut><span><strong data-admin-donut-total>0</strong>pedidos</span></div>
+                  <div class="admin-donut-legend">
+                    <div><i class="pending"></i><span>Pendentes</span><strong data-admin-status-value="pending">0</strong></div>
+                    <div><i class="sent"></i><span>Enviados</span><strong data-admin-status-value="sent">0</strong></div>
+                    <div><i class="cancelled"></i><span>Cancelados</span><strong data-admin-status-value="cancelled">0</strong></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="admin-panel admin-tasks-panel">
+                <header><div><span class="admin-panel-kicker">Hoje</span><h2>Precisa da tua atenção</h2></div></header>
+                <button type="button" data-admin-go-orders="pending"><span class="admin-task-icon orange"><i data-lucide="package-open"></i></span><span><strong data-admin-task="pending">0 pedidos por preparar</strong><small>Adicionar código ou dados de acesso</small></span><i data-lucide="chevron-right"></i></button>
+                <button type="button" data-admin-go-orders="cancelled"><span class="admin-task-icon red"><i data-lucide="circle-x"></i></span><span><strong data-admin-task="cancelled">0 pedidos cancelados</strong><small>Rever o histórico de cancelamentos</small></span><i data-lucide="chevron-right"></i></button>
+                <button type="button" data-admin-view-target="catalog"><span class="admin-task-icon purple"><i data-lucide="gamepad-2"></i></span><span><strong data-admin-task="catalog">A carregar catálogo</strong><small>Consultar jogos e pré-vendas ativas</small></span><i data-lucide="chevron-right"></i></button>
+              </article>
+
+              <article class="admin-panel admin-ranking-panel">
+                <header><div><span class="admin-panel-kicker">Vendas</span><h2>Produtos mais vendidos</h2></div></header>
+                <div class="admin-ranking-list" data-admin-top-products></div>
+              </article>
+
+              <article class="admin-panel admin-platform-panel">
+                <header><div><span class="admin-panel-kicker">Consolas</span><h2>Vendas por plataforma</h2></div></header>
+                <div class="admin-platform-list" data-admin-platforms></div>
+              </article>
+
+              <article class="admin-panel admin-recent-panel">
+                <header><div><span class="admin-panel-kicker">Atividade</span><h2>Pedidos recentes</h2></div><button type="button" data-admin-view-target="orders">Ver todos</button></header>
+                <div class="admin-recent-orders" data-admin-recent-orders></div>
+              </article>
+            </section>
+          </section>
+
+          <section class="admin-view" data-admin-view="orders" hidden>
+            <section class="admin-summary" aria-label="Resumo dos pedidos">
+              <article><span>Pendentes</span><strong data-admin-count="pending">0</strong></article>
+              <article><span>Enviados</span><strong data-admin-count="sent">0</strong></article>
+              <article><span>Cancelados</span><strong data-admin-count="cancelled">0</strong></article>
+              <article><span>Receita confirmada</span><strong data-admin-revenue>0,00 €</strong></article>
+            </section>
+            <section class="admin-workspace">
+              <div class="admin-toolbar">
+                <label class="admin-search"><span>Pesquisar pedidos</span><input type="search" data-admin-search placeholder="Cliente, jogo, email ou sessão Stripe" autocomplete="off" /></label>
+                <div class="admin-tabs" role="tablist" aria-label="Estado dos pedidos">
+                  <button class="active" type="button" data-admin-tab="pending">Pendentes <span data-admin-tab-count="pending">0</span></button>
+                  <button type="button" data-admin-tab="sent">Enviados <span data-admin-tab-count="sent">0</span></button>
+                  <button type="button" data-admin-tab="cancelled">Cancelados <span data-admin-tab-count="cancelled">0</span></button>
+                  <button type="button" data-admin-tab="all">Todos <span data-admin-tab-count="all">0</span></button>
+                </div>
+              </div>
+              <div class="admin-list-heading"><div><h2 data-admin-list-title>Pedidos pendentes</h2><p data-admin-list-copy>Compras pagas que ainda precisam de código ou dados de acesso.</p></div></div>
+              <div class="admin-order-list" data-admin-order-list><div class="admin-loading">A carregar pedidos...</div></div>
+            </section>
+          </section>
+
+          <section class="admin-view" data-admin-view="catalog" hidden>
+            <section class="admin-catalog-summary">
+              <article><span>Produtos ativos</span><strong data-catalog-metric="total">0</strong></article>
+              <article><span>Em promoção</span><strong data-catalog-metric="discounted">0</strong></article>
+              <article><span>Pré-vendas</span><strong data-catalog-metric="preorders">0</strong></article>
+              <article><span>Preço médio</span><strong data-catalog-metric="average">0,00 €</strong></article>
+            </section>
+            <section class="admin-panel admin-catalog-panel">
+              <header><div><span class="admin-panel-kicker">Loja</span><h2>Catálogo de jogos</h2><p>Consulta rapidamente os produtos publicados em cada plataforma.</p></div><a href="catalogo.html" target="_blank" rel="noopener">Abrir catálogo</a></header>
+              <label class="admin-search"><span>Pesquisar produto</span><input type="search" data-admin-catalog-search placeholder="Nome, plataforma ou género" autocomplete="off" /></label>
+              <div class="admin-catalog-list" data-admin-catalog-list><div class="admin-loading">A carregar catálogo...</div></div>
+            </section>
+          </section>
+
+          <section class="admin-view" data-admin-view="customers" hidden>
+            <section class="admin-customer-summary">
+              <article><span>Clientes únicos</span><strong data-customer-metric="total">0</strong></article>
+              <article><span>Clientes recorrentes</span><strong data-customer-metric="returning">0</strong></article>
+              <article><span>Valor médio por cliente</span><strong data-customer-metric="average">0,00 €</strong></article>
+            </section>
+            <section class="admin-panel admin-customers-panel">
+              <header><div><span class="admin-panel-kicker">Relacionamento</span><h2>Clientes</h2><p>Resumo criado a partir dos pedidos confirmados.</p></div></header>
+              <label class="admin-search"><span>Pesquisar cliente</span><input type="search" data-admin-customer-search placeholder="Nome ou email" autocomplete="off" /></label>
+              <div class="admin-customer-list" data-admin-customer-list></div>
+            </section>
+          </section>
+        </main>
+      </div>
+      <button class="admin-sidebar-backdrop" type="button" data-admin-menu-close aria-label="Fechar menu"></button>
+    </div>
+
     <script src="scripts/auth.js?v=20260811-2" defer></script>
-    <script src="admin-pedidos.js?v=20260810-2" defer></script>
-    <script src="chat.js?v=20260726-3" defer></script>
+    <script src="admin-pedidos.js?v=20260811-1" defer></script>
   </body>
 </html>
