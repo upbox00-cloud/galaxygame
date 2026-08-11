@@ -1,7 +1,8 @@
 const { getStore } = require("@netlify/blobs");
 const { json, requireAdmin } = require("./_orders");
 
-const STORE_NAME = "galaxygame-presence";
+// Reuse the store already provisioned for orders; presence stays isolated by prefix.
+const STORE_NAME = "galaxygame-orders";
 const ACTIVE_WINDOW_MS = 2 * 60 * 1000;
 const STALE_AFTER_MS = 24 * 60 * 60 * 1000;
 const MAX_RECORDS = 5000;
