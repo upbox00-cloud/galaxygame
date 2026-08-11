@@ -261,6 +261,10 @@
   margin-bottom: 14px;
 }
 
+.admin-kpi-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .admin-kpi-card,
 .admin-summary article,
 .admin-catalog-summary article,
@@ -308,6 +312,19 @@
 .admin-kpi-card small.negative { color: var(--admin-red); }
 .admin-kpi-attention { border-top: 3px solid var(--admin-accent); }
 .admin-kpi-attention strong { color: #d85800; }
+.admin-kpi-live { border-top: 3px solid var(--admin-green); }
+.admin-kpi-live strong { color: var(--admin-green); }
+.admin-kpi-live svg { color: var(--admin-green); }
+.admin-kpi-live small[data-state="live"]::before {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--admin-green);
+  box-shadow: 0 0 0 4px rgb(35 135 90 / 12%);
+  content: "";
+}
 
 .admin-analytics-grid {
   display: grid;
@@ -601,6 +618,7 @@
 .admin-sidebar-backdrop { display: none; }
 
 @media (max-width: 1120px) {
+  .admin-kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .admin-analytics-grid { grid-template-columns: 1fr 1fr; }
   .admin-sales-panel,
   .admin-recent-panel { grid-column: 1 / -1; }

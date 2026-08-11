@@ -7,6 +7,8 @@ const root = path.resolve(__dirname, "..");
 const html = fs.readFileSync(path.join(root, "painel-pedidos.html"), "utf8");
 const script = fs.readFileSync(path.join(root, "admin-pedidos.js"), "utf8");
 const styles = fs.readFileSync(path.join(root, "admin-dashboard.css"), "utf8");
+const presence = fs.readFileSync(path.join(root, "presence.js"), "utf8");
+const presenceFunction = fs.readFileSync(path.join(root, "netlify", "functions", "site-presence.js"), "utf8");
 
 test("dashboard administrativo tem navegação enxuta e vistas funcionais", () => {
   ["overview", "orders", "catalog", "customers"].forEach((view) => {
@@ -45,4 +47,15 @@ test("catálogo e clientes usam os dados existentes da loja", () => {
   assert.match(script, /activeSales\(state\.orders\)/);
   assert.match(html, /data-admin-catalog-list/);
   assert.match(html, /data-admin-customer-list/);
+});
+
+test("painel apresenta visitantes ativos com presença anónima protegida", () => {
+  assert.match(html, /data-admin-live-count/);
+  assert.match(script, /\/\.netlify\/functions\/site-presence/);
+  assert.match(script, /window\.setInterval\(loadPresence, 20 \* 1000\)/);
+  assert.match(presence, /sessionStorage\.getItem\(STORAGE_KEY\)/);
+  assert.match(presence, /HEARTBEAT_INTERVAL_MS = 45 \* 1000/);
+  assert.match(presenceFunction, /requireAdmin\(context\)/);
+  assert.match(presenceFunction, /ACTIVE_WINDOW_MS = 2 \* 60 \* 1000/);
+  assert.doesNotMatch(presenceFunction, /user-agent|client-ip|email/i);
 });

@@ -217,3 +217,11 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
   else init();
 })();
+(function loadAnonymousPresence() {
+  if (window.__GalaxyGamePresenceLoaderReady) return;
+  window.__GalaxyGamePresenceLoaderReady = true;
+  const script = document.createElement("script");
+  script.src = "presence.js?v=20260811-1";
+  script.defer = true;
+  document.head.appendChild(script);
+})();

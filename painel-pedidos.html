@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=20260811-3" />
-    <link rel="stylesheet" href="admin-dashboard.css?v=20260811-1" />
+    <link rel="stylesheet" href="admin-dashboard.css?v=20260811-2" />
   </head>
   <body class="admin-orders-page">
     <div class="admin-app" data-admin-shell hidden>
@@ -78,6 +78,11 @@
             </div>
 
             <section class="admin-kpi-grid" aria-label="Indicadores da loja">
+              <article class="admin-kpi-card admin-kpi-live">
+                <div><span>Na loja agora</span><i data-lucide="radio"></i></div>
+                <strong data-admin-live-count>0</strong>
+                <small data-admin-live-copy>A verificar visitantes ativos...</small>
+              </article>
               <article class="admin-kpi-card">
                 <div><span>Receita</span><i data-lucide="euro"></i></div>
                 <strong data-admin-metric="revenue">0,00 €</strong>
@@ -199,6 +204,6 @@
     </div>
 
     <script src="scripts/auth.js?v=20260811-2" defer></script>
-    <script src="admin-pedidos.js?v=20260811-1" defer></script>
+    <script src="admin-pedidos.js?v=20260811-2" defer></script>
   </body>
 </html>

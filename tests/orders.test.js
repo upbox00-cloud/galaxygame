@@ -9,6 +9,7 @@ const adminOrders = require("../netlify/functions/admin-pedidos");
 const updateOrderStatus = require("../netlify/functions/atualizar-pedido-status");
 const sendOrder = require("../netlify/functions/marcar-pedido-enviado");
 const customerOrders = require("../netlify/functions/meus-pedidos");
+const sitePresence = require("../netlify/functions/site-presence");
 
 function signedEvent(body, secret, timestamp = Math.floor(Date.now() / 1000)) {
   const signature = crypto.createHmac("sha256", secret).update(`${timestamp}.${body}`).digest("hex");
@@ -29,11 +30,40 @@ function createMemoryStore() {
       values.set(key, structuredClone(value));
       return { etag: "test" };
     },
+    async delete(key) {
+      values.delete(key);
+    },
     async *list() {
       yield { blobs: [...values.keys()].map((key) => ({ key })) };
     }
   };
 }
+
+test("presença regista sessões anónimas e só revela a contagem ao admin", async () => {
+  const store = createMemoryStore();
+  sitePresence._test.setStoreFactory(() => store);
+  const heartbeat = await sitePresence.handler({
+    httpMethod: "POST",
+    body: JSON.stringify({ visitorId: "visitante_anonimo_123456", page: "/catalogo.html?busca=gta" })
+  }, {});
+  assert.equal(heartbeat.statusCode, 200);
+
+  const denied = await sitePresence.handler({ httpMethod: "GET" }, {});
+  assert.equal(denied.statusCode, 401);
+
+  const previousEmails = process.env.ADMIN_EMAILS;
+  process.env.ADMIN_EMAILS = "admin@galaxygame.pt";
+  const allowed = await sitePresence.handler({ httpMethod: "GET" }, {
+    clientContext: { user: { email: "admin@galaxygame.pt", app_metadata: {} } }
+  });
+  const payload = JSON.parse(allowed.body);
+  assert.equal(allowed.statusCode, 200);
+  assert.equal(payload.active, 1);
+  assert.deepEqual(payload.pages, [{ page: "/catalogo.html", count: 1 }]);
+  if (previousEmails === undefined) delete process.env.ADMIN_EMAILS;
+  else process.env.ADMIN_EMAILS = previousEmails;
+  sitePresence._test.resetStoreFactory();
+});
 
 test("valida a assinatura Stripe e rejeita eventos antigos", () => {
   const previous = process.env.STRIPE_WEBHOOK_SECRET;

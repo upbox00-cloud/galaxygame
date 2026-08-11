@@ -19,6 +19,7 @@
     customerQuery: "",
     view: "overview",
     period: 30,
+    presenceLoading: false,
     loading: false,
     booted: false
   };
@@ -211,6 +212,52 @@
     renderTopProducts(current);
     renderPlatforms(current);
     renderRecentOrders();
+  }
+
+  function pageLabel(path) {
+    const labels = {
+      "/": "Página inicial",
+      "/index.html": "Página inicial",
+      "/catalogo.html": "Catálogo",
+      "/produto.html": "Página de produto",
+      "/produto-xbox.html": "Produto Xbox",
+      "/carrinho.html": "Carrinho",
+      "/minha-conta.html": "Minha Conta",
+      "/pedido-confirmado.html": "Pedido confirmado",
+      "/como-funciona.html": "Como funciona"
+    };
+    return labels[path] || "Outra página";
+  }
+
+  function renderPresence(data) {
+    const count = Number(data?.active || 0);
+    const countElement = document.querySelector("[data-admin-live-count]");
+    const copyElement = document.querySelector("[data-admin-live-copy]");
+    if (countElement) countElement.textContent = String(count);
+    if (!copyElement) return;
+    const topPage = data?.pages?.[0];
+    copyElement.dataset.state = "live";
+    if (!count) copyElement.textContent = "Sem visitantes nos últimos 2 minutos";
+    else if (topPage) copyElement.textContent = `${topPage.count} ${topPage.count === 1 ? "sessão" : "sessões"} em ${pageLabel(topPage.page)}`;
+    else copyElement.textContent = `${count} ${count === 1 ? "sessão ativa" : "sessões ativas"}`;
+  }
+
+  async function loadPresence() {
+    if (state.presenceLoading || document.hidden) return;
+    state.presenceLoading = true;
+    try {
+      renderPresence(await apiRequest("/.netlify/functions/site-presence"));
+    } catch (error) {
+      if (!["login_required", "admin_required"].includes(error.code)) {
+        const copy = document.querySelector("[data-admin-live-copy]");
+        if (copy) {
+          copy.dataset.state = "offline";
+          copy.textContent = "Presença temporariamente indisponível";
+        }
+      }
+    } finally {
+      state.presenceLoading = false;
+    }
   }
 
   function localDateKey(date) {
@@ -545,6 +592,8 @@
     window.lucide?.createIcons();
     loadOrders();
     loadCatalog();
+    loadPresence();
+    window.setInterval(loadPresence, 20 * 1000);
   }
 
   document.querySelectorAll("[data-admin-view-button]").forEach((button) => button.addEventListener("click", () => setView(button.dataset.adminViewButton)));
@@ -562,7 +611,7 @@
   searchInput?.addEventListener("input", () => { state.query = searchInput.value; renderOrders(); });
   catalogSearch?.addEventListener("input", () => { state.catalogQuery = catalogSearch.value; renderCatalog(); });
   customerSearch?.addEventListener("input", () => { state.customerQuery = customerSearch.value; renderCustomers(); });
-  document.querySelectorAll("[data-admin-refresh]").forEach((button) => button.addEventListener("click", () => { loadOrders(); loadCatalog(); }));
+  document.querySelectorAll("[data-admin-refresh]").forEach((button) => button.addEventListener("click", () => { loadOrders(); loadCatalog(); loadPresence(); }));
   document.querySelector("[data-admin-menu]")?.addEventListener("click", () => document.body.classList.toggle("admin-menu-open"));
   document.querySelector("[data-admin-menu-close]")?.addEventListener("click", () => document.body.classList.remove("admin-menu-open"));
 
