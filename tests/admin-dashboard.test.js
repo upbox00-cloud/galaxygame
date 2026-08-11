@@ -56,6 +56,7 @@ test("painel apresenta visitantes ativos com presença anónima protegida", () =
   assert.match(presence, /sessionStorage\.getItem\(STORAGE_KEY\)/);
   assert.match(presence, /HEARTBEAT_INTERVAL_MS = 45 \* 1000/);
   assert.match(presenceFunction, /requireAdmin\(context\)/);
+  assert.match(presenceFunction, /event\?\.blobs\) connectLambda\(event\)/);
   assert.match(presenceFunction, /ACTIVE_WINDOW_MS = 2 \* 60 \* 1000/);
   assert.doesNotMatch(presenceFunction, /user-agent|client-ip|email/i);
 });

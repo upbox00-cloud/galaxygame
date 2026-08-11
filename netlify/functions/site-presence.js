@@ -1,4 +1,4 @@
-const { getStore } = require("@netlify/blobs");
+const { connectLambda, getStore } = require("@netlify/blobs");
 const { json, requireAdmin } = require("./_orders");
 
 // Reuse the store already provisioned for orders; presence stays isolated by prefix.
@@ -77,6 +77,7 @@ async function listPresence(context) {
 
 exports.handler = async (event, context) => {
   try {
+    if (event?.blobs) connectLambda(event);
     if (event.httpMethod === "POST") return await recordPresence(event);
     if (event.httpMethod === "GET") return await listPresence(context);
     return json(405, { error: "method_not_allowed" });
