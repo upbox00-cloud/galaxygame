@@ -162,7 +162,7 @@ function productImageCandidates(product) {
     product?.imagemPrincipal,
     product?.imagemFallback,
     ...supplierScreenshots,
-    "assets/gta-vi-landscape-hq.webp"
+    "assets/site-cosmic-gaming-bg.webp"
   ];
 
   return [...new Set(candidates.filter((value) => typeof value === "string" && value.trim()))];
@@ -178,7 +178,7 @@ function productHeroImageCandidates(product) {
     product?.imagemPrincipal,
     product?.imagemFallback,
     ...supplierScreenshots,
-    "assets/gta-vi-landscape-hq.webp"
+    "assets/site-cosmic-gaming-bg.webp"
   ];
 
   return [...new Set(candidates.filter((value) => typeof value === "string" && value.trim()))];
@@ -191,7 +191,7 @@ function productBackgroundImageCandidates(product) {
     product?.imagemFallback,
     product?.imagemPrincipal,
     product?.capaSteamGridDB,
-    "assets/gta-vi-landscape-hq.webp"
+    "assets/site-cosmic-gaming-bg.webp"
   ].filter((value) => typeof value === "string" && value.trim()))];
 }
 
@@ -948,9 +948,11 @@ async function initProductPage() {
   runProductStep("renderRelated", () => renderRelated(products, product));
   runProductStep("bindProductActions", () => bindProductActions(product));
   runProductStep("bindLightbox", () => bindLightbox());
+  document.body.classList.remove("product-loading");
 }
 
 initProductPage().catch((error) => {
   console.error("[produto] falha crítica ao iniciar a página de produto", error);
+  document.body.classList.remove("product-loading");
+  document.body.classList.add("product-load-error");
 });
-

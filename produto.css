@@ -38,7 +38,7 @@
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(39, 39, 39, 0.24) 64%, rgba(39, 39, 39, 0.54) 100%),
     linear-gradient(90deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.02) 48%, rgba(0, 0, 0, 0.32)),
-    url("assets/gta-vi-landscape-hq.webp") center / cover;
+    #18181d;
   filter: saturate(1.08) contrast(1.04);
   transform: scale(1.01);
 }
@@ -141,7 +141,7 @@
   aspect-ratio: 16 / 9;
   border: 0;
   border-radius: var(--radius);
-  background: url("assets/gta-vi-landscape-hq.webp") center / contain no-repeat;
+  background: linear-gradient(135deg, #2b2933, #17171b 68%);
   box-shadow: 0 20px 44px rgba(0, 0, 0, 0.34);
   cursor: zoom-in;
 }
@@ -450,7 +450,7 @@
 
 .edition-img {
   min-height: 145px;
-  background: url("assets/gta-vi-landscape-hq.webp") center / cover;
+  background: linear-gradient(135deg, #2b2933, #17171b 68%);
 }
 
 .edition-img.supplier-cover-clean {
@@ -459,9 +459,7 @@
 }
 
 .edition-img.deluxe {
-  background:
-    linear-gradient(135deg, rgba(255, 101, 196, 0.72), rgba(255, 122, 34, 0.48)),
-    url("assets/gta-vi-landscape-hq.webp") center / cover;
+  background: linear-gradient(135deg, rgba(142, 92, 255, 0.72), rgba(255, 122, 34, 0.48));
 }
 
 .edition-card h3,
@@ -519,8 +517,7 @@
   overflow: hidden;
   background:
     linear-gradient(0deg, rgba(0, 0, 0, 0.64), transparent 42%),
-    radial-gradient(circle at 70% 30%, rgba(255, 102, 195, 0.45), transparent 30%),
-    url("assets/gta-vi-landscape-hq.webp") center / cover;
+    linear-gradient(135deg, #2b2933, #17171b 68%);
 }
 
 .video-frame iframe {

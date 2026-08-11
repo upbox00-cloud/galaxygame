@@ -5,6 +5,21 @@ const assert = require("node:assert/strict");
 
 const root = path.resolve(__dirname, "..");
 const produtoSource = fs.readFileSync(path.join(root, "produto.js"), "utf8");
+const produtoHtml = fs.readFileSync(path.join(root, "produto.html"), "utf8");
+const produtoStyles = fs.readFileSync(path.join(root, "produto.css"), "utf8");
+
+test("product page never flashes the GTA VI artwork for another game", () => {
+  assert.match(produtoHtml, /class="product-page product-loading"/);
+  assert.match(produtoHtml, /produto\.css\?v=20260811-1/);
+  assert.match(produtoHtml, /produto\.js\?v=20260811-1/);
+  assert.match(produtoSource, /document\.body\.classList\.remove\("product-loading"\)/);
+  assert.match(produtoSource, /"assets\/site-cosmic-gaming-bg\.webp"/);
+
+  const heroRule = produtoStyles.match(/\.product-hero-bg\s*\{[\s\S]*?\n\}/)?.[0] || "";
+  const coverRule = produtoStyles.match(/\.cover-art\s*\{[\s\S]*?\n\}/)?.[0] || "";
+  assert.doesNotMatch(heroRule, /gta-vi/i);
+  assert.doesNotMatch(coverRule, /gta-vi/i);
+});
 
 test("initProductPage liga os botões de compra mesmo que uma etapa de render falhe", () => {
   // Se renderRelated (ou qualquer outro passo decorativo) rebentar para um
