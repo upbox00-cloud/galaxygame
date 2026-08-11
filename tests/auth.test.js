@@ -5,6 +5,9 @@ const assert = require("node:assert/strict");
 
 const root = path.resolve(__dirname, "..");
 const authSource = fs.readFileSync(path.join(root, "scripts", "auth.js"), "utf8");
+const adminSource = fs.readFileSync(path.join(root, "admin-pedidos.js"), "utf8");
+const adminLoginSource = fs.readFileSync(path.join(root, "admin-login.js"), "utf8");
+const adminLoginHtml = fs.readFileSync(path.join(root, "login.html"), "utf8");
 const recoverySource = fs.readFileSync(path.join(root, "scripts", "recovery-token.js"), "utf8");
 const stylesSource = fs.readFileSync(path.join(root, "styles.css"), "utf8");
 
@@ -72,6 +75,16 @@ test("stale Identity overlay is removed after login and mobile return", () => {
   assert.match(authSource, /finishIdentityModal\(\)/);
   assert.match(authSource, /window\.setTimeout\(restorePageInteractions, 600\)/);
   assert.match(authSource, /"height", "touch-action", "pointer-events"/);
+});
+
+test("admin authentication uses a dedicated page instead of the blocking Identity modal", () => {
+  assert.match(adminSource, /login\.html\?redirect=/);
+  assert.doesNotMatch(adminSource, /index\.html\?login=1/);
+  assert.match(adminLoginSource, /identity\.gotrue\.login\(email, password, true\)/);
+  assert.match(adminLoginSource, /requestPasswordRecovery\(email\)/);
+  assert.match(adminLoginSource, /window\.location\.replace\(destination\)/);
+  assert.match(adminLoginHtml, /data-admin-login-form/);
+  assert.doesNotMatch(adminLoginHtml, /scripts\/auth\.js/);
 });
 
 test("password recovery token is preserved before Identity initializes", () => {

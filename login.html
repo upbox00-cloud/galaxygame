@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Entrar | GalaxyGame</title>
+    <meta name="description" content="Inicia sessao na tua conta GalaxyGame." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260811-2" />
+  </head>
+  <body class="admin-login-page">
+    <main class="admin-login-main">
+      <a class="admin-login-brand" href="index.html" aria-label="Voltar a GalaxyGame">
+        <img src="assets/galaxygame-header-logo-cropped.webp" alt="GalaxyGame" />
+      </a>
+
+      <section class="admin-login-card" aria-labelledby="admin-login-title">
+        <p class="account-kicker">Area protegida</p>
+        <h1 id="admin-login-title">Entrar no painel</h1>
+        <p>Utiliza a conta GalaxyGame associada ao email autorizado como administrador.</p>
+
+        <form class="admin-login-form" data-admin-login-form>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="username" inputmode="email" required />
+          </label>
+          <label>
+            Palavra-passe
+            <input type="password" name="password" autocomplete="current-password" minlength="8" required />
+          </label>
+          <p class="admin-login-status" data-admin-login-status role="alert" aria-live="polite"></p>
+          <button type="submit" data-admin-login-submit>Entrar com seguranca</button>
+        </form>
+
+        <button class="admin-login-recovery" type="button" data-admin-login-recovery>Esqueci-me da palavra-passe</button>
+        <a class="admin-login-back" href="index.html">Voltar a loja</a>
+      </section>
+    </main>
+    <script src="admin-login.js?v=20260811-1" defer></script>
+  </body>
+</html>

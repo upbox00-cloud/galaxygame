@@ -4562,6 +4562,155 @@ details p {
   }
 }
 
+/* Dedicated login used by protected operational pages. */
+.admin-login-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(15, 12, 24, .92), rgba(20, 18, 24, .96)),
+    url("assets/site-cosmic-gaming-bg.webp") center / cover fixed;
+  color: #f7f7f8;
+}
+
+.admin-login-main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 22px;
+  padding: 30px 16px;
+}
+
+.admin-login-brand {
+  display: block;
+  width: min(300px, 72vw);
+}
+
+.admin-login-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.admin-login-card {
+  width: min(440px, 100%);
+  border: 1px solid #46434d;
+  border-top: 3px solid #ff6a00;
+  border-radius: 8px;
+  background: #1d1d21;
+  padding: 30px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, .42);
+}
+
+.admin-login-card h1 {
+  margin: 7px 0 10px;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.admin-login-card > p:not(.account-kicker) {
+  margin: 0 0 24px;
+  color: #aaaab0;
+  line-height: 1.55;
+}
+
+.admin-login-form {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-login-form label {
+  display: grid;
+  gap: 7px;
+  color: #dedee2;
+  font-weight: 800;
+}
+
+.admin-login-form input {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #484850;
+  border-radius: 7px;
+  outline: 0;
+  background: #121215;
+  color: #fff;
+  padding: 0 13px;
+  font: inherit;
+}
+
+.admin-login-form input:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 0 3px rgba(255, 106, 0, .14);
+}
+
+.admin-login-form button[type="submit"] {
+  min-height: 50px;
+  border: 0;
+  border-radius: 7px;
+  background: #ff6a00;
+  color: #151518;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.admin-login-form button:disabled,
+.admin-login-recovery:disabled {
+  cursor: wait;
+  opacity: .65;
+}
+
+.admin-login-status {
+  min-height: 20px;
+  margin: -3px 0 0;
+  color: #ffaaa2;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.admin-login-status[data-tone="success"] {
+  color: #82e3a7;
+}
+
+.admin-login-recovery,
+.admin-login-back {
+  display: block;
+  margin: 18px auto 0;
+  border: 0;
+  background: transparent;
+  color: #d1d1d5;
+  font: inherit;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.admin-login-back {
+  margin-top: 12px;
+  color: #929299;
+}
+
+@media (max-width: 520px) {
+  .admin-login-main {
+    place-items: stretch;
+    justify-content: stretch;
+    padding: 22px 14px;
+  }
+
+  .admin-login-brand {
+    justify-self: center;
+  }
+
+  .admin-login-card {
+    width: 100%;
+    padding: 24px 18px;
+  }
+
+  .admin-login-card h1 {
+    font-size: 32px;
+  }
+}
+
 @media (max-width: 360px) {
   .brand-mark,
   .product-header .brand-mark {

@@ -19,7 +19,7 @@
 
   function redirectToLogin() {
     const redirect = encodeURIComponent("painel-pedidos.html");
-    window.location.replace(`index.html?login=1&redirect=${redirect}`);
+    window.location.replace(`login.html?redirect=${redirect}`);
   }
 
   async function authHeaders() {
