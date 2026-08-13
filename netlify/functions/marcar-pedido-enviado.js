@@ -1,6 +1,7 @@
-const { json, requireAdmin, getPersistedOrderById, updatePersistedOrder, sendCodeEmail } = require("./_orders");
+const { json, configureOrderStorage, requireAdmin, getPersistedOrderById, updatePersistedOrder, sendCodeEmail } = require("./_orders");
 
 exports.handler = async (event, context) => {
+  configureOrderStorage(event);
   if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
   const adminError = requireAdmin(context);
   if (adminError) return adminError;
@@ -35,7 +36,6 @@ exports.handler = async (event, context) => {
       updatedOrder = null;
       return json(409, { error: "order_delivery_not_saved" });
     }
-    updatedOrder = { ...updatedOrder, codigo, status: "Enviado" };
     await sendCodeEmail(updatedOrder);
     return json(200, { ok: true, pedido: updatedOrder });
   } catch (error) {

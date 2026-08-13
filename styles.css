@@ -5395,6 +5395,28 @@ details p {
   align-items: flex-start;
 }
 
+.account-order-product {
+  display: flex;
+  min-width: 0;
+  gap: 14px;
+  align-items: center;
+}
+
+.account-order-product img {
+  width: 64px;
+  height: 86px;
+  flex: 0 0 64px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #191919;
+}
+
+.account-order-product > div {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+}
+
 .account-order-top mark {
   border-radius: 999px;
   padding: 6px 10px;

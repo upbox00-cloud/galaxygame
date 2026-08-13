@@ -8,14 +8,25 @@ const previewOrder = {
   clienteNome: "Joana Martins",
   produto: "Grand Theft Auto VI - Edição Digital",
   plataforma: "PlayStation 5",
+  codigo: "Email: joana.playstation@example.com\nPalavra-passe: GalaxyDemo2026\nPerfil: GalaxyGame GTA VI",
+  imagem: `${process.env.URL.replace(/\/$/, "")}/assets/gta-vi-original.webp`
+};
+
+const xboxPreviewOrder = {
+  clienteNome: "Miguel Santos",
+  produto: "Forza Horizon 5 - Edição Digital",
+  plataforma: "Xbox Series X|S",
   codigo: "GG26-DEMO-7X9P-K4LM",
   imagem: `${process.env.URL.replace(/\/$/, "")}/assets/gta-vi-original.webp`
 };
 
 const outputDirectory = path.resolve(__dirname, "..", "debug");
 const outputFile = path.join(outputDirectory, "email-entrega-preview.html");
+const xboxOutputFile = path.join(outputDirectory, "email-entrega-xbox-preview.html");
 fs.mkdirSync(outputDirectory, { recursive: true });
 fs.writeFileSync(outputFile, renderCodeEmail(previewOrder), "utf8");
+fs.writeFileSync(xboxOutputFile, renderCodeEmail(xboxPreviewOrder), "utf8");
 
 console.log(`Preview criado em: ${outputFile}`);
+console.log(`Preview Xbox criado em: ${xboxOutputFile}`);
 console.log("Este comando nao envia emails nem contacta servicos externos.");

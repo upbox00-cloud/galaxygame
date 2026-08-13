@@ -560,7 +560,10 @@
 .admin-order-title small,
 .admin-order-title strong { display: block; }
 .admin-order-title small { margin-bottom: 4px; color: var(--admin-muted); }
-.admin-order-title strong { font-size: 18px; }
+.admin-order-title strong { color: #202126; font-size: 18px; line-height: 1.25; }
+.admin-order-product { display: flex; min-width: 0; gap: 12px; align-items: center; }
+.admin-order-product img { width: 58px; height: 76px; flex: 0 0 58px; border-radius: 5px; object-fit: cover; background: #ececf0; }
+.admin-order-product span { display: block; margin-bottom: 3px; color: #8a5baa; font-size: 10px; font-weight: 900; text-transform: uppercase; }
 .admin-order-title mark { align-self: start; border-radius: 12px; background: #fff0e6; color: #bd4f08; padding: 5px 9px; font-weight: 900; }
 .admin-order-title mark[data-status="sent"] { background: #e7f6ed; color: #24764e; }
 .admin-order-title mark[data-status="cancelled"] { background: #fbe9ea; color: #ad3f47; }

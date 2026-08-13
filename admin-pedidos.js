@@ -408,8 +408,9 @@
     const hasValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(order.clienteEmail || "").trim());
     const article = document.createElement("article");
     article.className = `admin-order-card admin-order-${mode}`;
+    const cover = productImage(order);
     article.innerHTML = `
-      <div class="admin-order-primary"><div class="admin-order-title"><div><small>Pedido ${escapeHtml(order.id)}</small><strong>${escapeHtml(order.produto || "Produto sem nome")}</strong></div><mark data-status="${mode}">${statusLabel(order)}</mark></div>${orderDetails(order)}</div>
+      <div class="admin-order-primary"><div class="admin-order-title"><div class="admin-order-product">${cover ? `<img src="${escapeHtml(cover)}" alt="Capa de ${escapeHtml(order.produto || "jogo comprado")}" loading="lazy" />` : ""}<div><small>Pedido ${escapeHtml(order.id)}</small><span>Jogo comprado</span><strong>${escapeHtml(order.produto || "Produto sem nome")}</strong></div></div><mark data-status="${mode}">${statusLabel(order)}</mark></div>${orderDetails(order)}</div>
       <div class="admin-order-action">
         ${mode === "pending" && hasValidEmail ? `<form class="admin-send-form" data-send-order><label>Código ou dados da conta<textarea name="codigo" rows="4" maxlength="4000" placeholder="Cola aqui o código, email, palavra-passe e instruções necessárias" autocomplete="off" autocapitalize="off" spellcheck="false" required></textarea></label><div class="admin-action-row"><button type="submit">Enviar ao cliente</button><button class="admin-danger-button" type="button" data-order-status="Cancelado">Cancelar pedido</button></div></form>`
           : mode === "pending" ? `<div class="admin-cancelled-box"><p><strong>Pedido incompleto:</strong> falta um email de cliente válido. Este registo não pode receber uma entrega.</p><button class="admin-danger-button" type="button" data-order-status="Cancelado">Retirar da fila</button></div>`
@@ -480,7 +481,7 @@
   }
 
   function productImage(product) {
-    const value = product.capaSteamGridDB || product.screenshots?.[0] || product.imagemFallback || "";
+    const value = product.imagem || product.capaSteamGridDB || product.screenshots?.[0] || product.imagemFallback || "";
     try {
       const url = new URL(value, window.location.href);
       return ["http:", "https:"].includes(url.protocol) ? url.href : "";

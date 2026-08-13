@@ -1,8 +1,9 @@
-const { json, requireAdmin, getPersistedOrderById, updatePersistedOrder } = require("./_orders");
+const { json, configureOrderStorage, requireAdmin, getPersistedOrderById, updatePersistedOrder } = require("./_orders");
 
 const ALLOWED_STATUSES = ["Aguardando codigo", "Cancelado"];
 
 exports.handler = async (event, context) => {
+  configureOrderStorage(event);
   if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
   const adminError = requireAdmin(context);
   if (adminError) return adminError;

@@ -25,25 +25,31 @@
 
   function renderOrder(order) {
     const sent = normalizeStatus(order.status) === "enviado";
+    const isPlayStation = /playstation|\bps\s*[45]\b/i.test(`${order.plataforma || ""} ${order.produto || ""}`);
+    const deliveryLabel = isPlayStation ? "Dados da conta partilhada" : "Código de ativação Xbox";
+    const copyLabel = isPlayStation ? "Copiar dados" : "Copiar código";
     const article = document.createElement("article");
     article.className = `account-order-card ${sent ? "sent" : "pending"}`;
     article.innerHTML = `
       <div class="account-order-top">
-        <div>
+        <div class="account-order-product">
+          ${order.imagem ? `<img src="${escapeHtml(order.imagem)}" alt="Capa de ${escapeHtml(order.produto)}" loading="lazy" />` : ""}
+          <div>
           <strong>${escapeHtml(order.produto)}</strong>
           <span>${escapeHtml(order.plataforma || "Plataforma não indicada")}</span>
+          </div>
         </div>
-        <mark>${sent ? "Enviado" : "Aguardando código"}</mark>
+        <mark>${sent ? "Entregue" : "Em preparação"}</mark>
       </div>
       <p>Compra: ${formatDate(order.dataCompra)}</p>
       ${sent ? `
         <div class="account-code">
-          <span>Código / dados de acesso</span>
+          <span>${deliveryLabel}</span>
           <code>${escapeHtml(order.codigo)}</code>
-          <button type="button" data-copy-code>Copiar código</button>
+          <button type="button" data-copy-code>${copyLabel}</button>
         </div>
       ` : `
-        <p class="account-order-note">Estamos preparando o teu código. Vais recebê-lo em breve por email e aqui na tua conta.</p>
+        <p class="account-order-note">Estamos a preparar a tua entrega. Vais recebê-la por email e também ficará disponível aqui na tua conta.</p>
       `}
     `;
 
@@ -56,7 +62,7 @@
         } catch {
           copyButton.textContent = "Seleciona e copia o código";
         }
-        setTimeout(() => { copyButton.textContent = "Copiar código"; }, 1600);
+        setTimeout(() => { copyButton.textContent = copyLabel; }, 1600);
       });
     }
     return article;

@@ -1,11 +1,18 @@
 const crypto = require("crypto");
-const { getStore } = require("@netlify/blobs");
+const fs = require("fs");
+const path = require("path");
+const { connectLambda, getStore } = require("@netlify/blobs");
 
 const AIRTABLE_TABLE = "Pedidos";
 const AIRTABLE_API = "https://api.airtable.com/v0";
 const ORDER_STORE = "galaxygame-orders";
 const defaultOrdersStoreFactory = () => getStore(ORDER_STORE);
 let ordersStoreFactory = defaultOrdersStoreFactory;
+let catalogCache = null;
+
+function configureOrderStorage(event) {
+  if (event?.blobs) connectLambda(event);
+}
 
 function env(name) {
   const value = process.env[name];
@@ -227,7 +234,7 @@ function fieldsToBlobOrder(fields, current = {}) {
 
 async function getBlobOrderBySessionId(sessionId) {
   if (!sessionId) return null;
-  const value = await ordersStore().get(blobOrderKey(sessionId), { type: "json" });
+  const value = await ordersStore().get(blobOrderKey(sessionId), { type: "json", consistency: "strong" });
   return normalizeBlobOrder(value);
 }
 
@@ -249,7 +256,7 @@ async function listBlobOrders({ email = "", status = "", maxRecords = 100 } = {}
     keys.push(...page.blobs.map((blob) => blob.key));
     if (keys.length >= 1000) break;
   }
-  const values = await Promise.all(keys.map((key) => store.get(key, { type: "json" })));
+  const values = await Promise.all(keys.map((key) => store.get(key, { type: "json", consistency: "strong" })));
   const normalizedEmail = String(email || "").trim().toLowerCase();
   return values
     .map(normalizeBlobOrder)
@@ -310,9 +317,13 @@ async function listPersistedOrders({ email = "", status = "", maxRecords = 100 }
     airtable.value.forEach((order) => orders.set(order.stripeSessionId || order.id, order));
   }
   if (blob.status === "fulfilled") {
-    blob.value.forEach((order) => orders.set(order.stripeSessionId || order.id, order));
+    blob.value.forEach((order) => {
+      const key = order.stripeSessionId || order.id;
+      orders.set(key, mergeOrderCopies(orders.get(key), order));
+    });
   }
   return [...orders.values()]
+    .map(enrichOrderFromCatalog)
     .filter(isMeaningfulOrder)
     .filter((order) => !status || order.status === status)
     .sort((a, b) => new Date(b.dataCompra || 0) - new Date(a.dataCompra || 0))
@@ -321,9 +332,9 @@ async function listPersistedOrders({ email = "", status = "", maxRecords = 100 }
 
 async function getPersistedOrderById(recordId) {
   if (String(recordId || "").startsWith("blob_")) {
-    return getBlobOrderBySessionId(String(recordId).slice(5));
+    return enrichOrderFromCatalog(await getBlobOrderBySessionId(String(recordId).slice(5)));
   }
-  return getOrderById(recordId);
+  return enrichOrderFromCatalog(await getOrderById(recordId));
 }
 
 async function updatePersistedOrder(recordId, fields) {
@@ -363,11 +374,74 @@ async function updatePersistedOrder(recordId, fields) {
     throw airtable[0].reason;
   }
   const saved = blob[0].status === "fulfilled" ? blob[0].value : airtable[0].value;
+  if (fields.Status !== undefined && saved?.status !== fields.Status) {
+    throw new Error("O estado do pedido nao foi confirmado no armazenamento");
+  }
+  if (fields.Codigo !== undefined && saved?.codigo !== fields.Codigo) {
+    throw new Error("Os dados de entrega nao foram confirmados no armazenamento");
+  }
+  return enrichOrderFromCatalog(saved);
+}
+
+function statusPriority(value) {
+  const status = String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  if (status.includes("enviado")) return 3;
+  if (status.includes("cancelado")) return 2;
+  return 1;
+}
+
+function mergeOrderCopies(airtableOrder, blobOrder) {
+  if (!airtableOrder) return blobOrder;
+  if (!blobOrder) return airtableOrder;
+  const preferred = statusPriority(blobOrder.status) >= statusPriority(airtableOrder.status) ? blobOrder : airtableOrder;
+  const fallback = preferred === blobOrder ? airtableOrder : blobOrder;
   return {
-    ...saved,
-    ...(fields.Status !== undefined ? { status: fields.Status } : {}),
-    ...(fields.Codigo !== undefined ? { codigo: fields.Codigo } : {})
+    ...fallback,
+    ...preferred,
+    clienteEmail: preferred.clienteEmail || fallback.clienteEmail,
+    clienteNome: preferred.clienteNome || fallback.clienteNome,
+    produto: preferred.produto || fallback.produto,
+    plataforma: preferred.plataforma || fallback.plataforma,
+    imagem: preferred.imagem || fallback.imagem,
+    codigo: preferred.codigo || fallback.codigo,
+    stripeSessionId: preferred.stripeSessionId || fallback.stripeSessionId
   };
+}
+
+function catalogNameKey(value) {
+  return String(value || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\b(ps4|ps5|playstation\s*4|playstation\s*5|xbox\s*one|xbox\s*series\s*x\|?s?|midia\s*digital|media\s*digital|edicao\s*digital|digital)\b/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function loadOrderCatalog() {
+  if (catalogCache) return catalogCache;
+  try {
+    const file = path.resolve(__dirname, "../../data/catalog-lite.json");
+    const parsed = JSON.parse(fs.readFileSync(file, "utf8"));
+    catalogCache = Array.isArray(parsed) ? parsed : (parsed.produtos || []);
+  } catch (error) {
+    console.warn("[orders:catalog] nao foi possivel carregar capas", { message: error.message });
+    catalogCache = [];
+  }
+  return catalogCache;
+}
+
+function enrichOrderFromCatalog(order) {
+  if (!order || order.imagem || !order.produto) return order;
+  const key = catalogNameKey(order.produto);
+  if (!key) return order;
+  const platformKey = catalogNameKey(order.plataforma);
+  const matches = loadOrderCatalog().filter((product) => catalogNameKey(product.nome || product.name) === key);
+  const product = matches.find((item) => !platformKey || catalogNameKey(item.plataforma || item.platform).includes(platformKey)) || matches[0];
+  if (!product) return order;
+  const imagem = normalizeImageField(product.capaSteamGridDB)
+    || normalizeImageField(product.screenshots)
+    || normalizeImageField(product.imagemFallback || product.imagem || product.image);
+  return imagem ? { ...order, imagem } : order;
 }
 
 function normalizeImageField(value) {
@@ -464,7 +538,8 @@ function parseStripeProducts(session) {
       if (Array.isArray(list) && list.length) {
         return {
           produto: list.map((item) => item.nome || item.name || item.produto || item.title).filter(Boolean).join(", "),
-          plataforma: Array.from(new Set(list.map((item) => item.plataforma || item.platform).filter(Boolean))).join(", ")
+          plataforma: Array.from(new Set(list.map((item) => item.plataforma || item.platform).filter(Boolean))).join(", "),
+          imagem: list.map((item) => item.imagem || item.image || item.capaSteamGridDB || item.imagemFallback).find(Boolean) || ""
         };
       }
     } catch {
@@ -474,7 +549,8 @@ function parseStripeProducts(session) {
 
   return {
     produto: metadata.Produto || metadata.produto || metadata.product || metadata.productName || "Produto GalaxyGame",
-    plataforma: metadata.Plataforma || metadata.plataforma || metadata.platform || ""
+    plataforma: metadata.Plataforma || metadata.plataforma || metadata.platform || "",
+    imagem: metadata.ImagemURL || metadata.imagem || metadata.image || ""
   };
 }
 
@@ -506,7 +582,8 @@ async function fetchStripeProducts(session) {
     produto: lines.map((line) => line.description || line.price?.product?.name).filter(Boolean).join(", "),
     plataforma: Array.from(new Set(lines
       .map((line) => line.price?.product?.metadata?.platform)
-      .filter(Boolean))).join(", ")
+      .filter(Boolean))).join(", "),
+    imagem: lines.map((line) => line.price?.product?.images?.[0]).find(Boolean) || ""
   };
 }
 
@@ -521,7 +598,7 @@ async function sendCodeEmail(order) {
       from: process.env.RESEND_FROM_EMAIL || "GalaxyGame <pedidos@galaxygame.pt>",
       to: [order.clienteEmail],
       reply_to: "gamegalaxy26@gmail.com",
-      subject: "O teu c\u00f3digo est\u00e1 pronto! \ud83c\udfae GalaxyGame",
+      subject: "O teu jogo est\u00e1 pronto! \ud83c\udfae GalaxyGame",
       html: renderCodeEmail(order)
     })
   });
@@ -575,6 +652,11 @@ function renderCodeEmail(order) {
   const accountUrl = escapeHtml(`${siteUrl}/minha-conta.html`);
   const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-header-logo-cropped.webp`);
   const coverUrl = safeHttpUrl(order.imagem);
+  const isPlayStation = /playstation|\bps\s*[45]\b/i.test(order.plataforma || order.produto || "");
+  const deliveryTitle = isPlayStation ? "Dados da tua conta partilhada" : "O teu c&oacute;digo Xbox";
+  const deliveryIntro = isPlayStation
+    ? "Abaixo encontras os dados de acesso. Mant&eacute;m o email e a palavra-passe exatamente como foram enviados."
+    : "Copia o c&oacute;digo abaixo exatamente como aparece e resgata-o na tua conta Xbox.";
   const coverCell = coverUrl ? `
     <td width="122" valign="middle" style="width:122px;padding:16px 8px 16px 16px;">
       <img src="${escapeHtml(coverUrl)}" width="104" alt="Capa de ${product}" style="display:block;width:104px;max-width:104px;height:auto;border:0;border-radius:6px;outline:none;text-decoration:none;" />
@@ -596,8 +678,12 @@ function renderCodeEmail(order) {
         <td align="center" style="padding:24px 12px;">
           <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#1c1c22" style="width:100%;max-width:600px;background-color:#1c1c22;border:1px solid #35343d;border-radius:8px;overflow:hidden;">
             <tr>
-              <td align="center" bgcolor="#241a32" style="padding:28px 24px 26px;background-color:#241a32;background-image:linear-gradient(135deg,#21182f 0%,#512b72 55%,#c64f16 100%);">
-                <img src="${logoUrl}" width="260" alt="GalaxyGame - Jogos Digitais" style="display:block;width:260px;max-width:90%;height:auto;margin:0 auto 16px;border:0;outline:none;text-decoration:none;" />
+              <td align="center" bgcolor="#050507" style="padding:22px 24px;background-color:#050507;">
+                <img src="${logoUrl}" width="300" alt="GalaxyGame - Jogos Digitais" style="display:block;width:300px;max-width:88%;height:auto;margin:0 auto;border:0;outline:none;text-decoration:none;" />
+              </td>
+            </tr>
+            <tr>
+              <td align="center" bgcolor="#512b72" style="padding:21px 24px;background-color:#512b72;background-image:linear-gradient(90deg,#512b72 0%,#bd471a 100%);">
                 <h1 style="margin:0;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:34px;font-weight:800;">O teu jogo est&aacute; pronto! &#127918;</h1>
               </td>
             </tr>
@@ -626,8 +712,9 @@ function renderCodeEmail(order) {
                 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#2b1735" style="width:100%;background-color:#2b1735;border:2px solid #ff6a00;border-radius:7px;">
                   <tr>
                     <td align="center" style="padding:21px 14px 23px;">
-                      <p style="margin:0 0 10px;color:#d7cde0;font-size:13px;line-height:18px;font-weight:700;text-transform:uppercase;">O teu c&oacute;digo:</p>
-                      <p style="margin:0;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:27px;line-height:35px;font-weight:800;letter-spacing:2px;word-break:break-all;">${code}</p>
+                      <p style="margin:0 0 7px;color:#ffffff;font-size:17px;line-height:23px;font-weight:800;">${deliveryTitle}</p>
+                      <p style="margin:0 auto 16px;max-width:470px;color:#cfc5d7;font-size:12px;line-height:18px;">${deliveryIntro}</p>
+                      <div style="margin:0;padding:16px 18px;background-color:#17121d;border:1px solid #74418f;border-radius:6px;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:${isPlayStation ? "17px" : "25px"};line-height:${isPlayStation ? "27px" : "34px"};font-weight:700;text-align:left;white-space:pre-wrap;word-break:break-word;">${code}</div>
                     </td>
                   </tr>
                 </table>
@@ -646,12 +733,9 @@ function renderCodeEmail(order) {
             </tr>
             <tr>
               <td style="padding:26px 28px 12px;">
-                <h2 style="margin:0 0 15px;color:#ffffff;font-size:19px;line-height:25px;">Como resgatar</h2>
-                ${renderEmailStep(1, "Abre a tua consola e confirma que estás na plataforma indicada no pedido.")}
-                ${renderEmailStep(2, "Acede à loja da consola e escolhe a opção para resgatar um código.")}
-                ${renderEmailStep(3, "Insere o código acima exatamente como aparece neste email.")}
-                ${renderEmailStep(4, "Confirma, abre a biblioteca e descarrega o jogo. Boa diversão!")}
-                <p style="margin:12px 0 0;color:#aaa7b1;font-size:12px;line-height:19px;">Se recebeste dados de acesso ou instru&ccedil;&otilde;es adicionais, segue primeiro o procedimento apresentado em Minha Conta &gt; Meus Pedidos.</p>
+                <h2 style="margin:0 0 15px;color:#ffffff;font-size:19px;line-height:25px;">${isPlayStation ? "Como adicionar a conta e descarregar" : "Como resgatar na Xbox"}</h2>
+                ${isPlayStation ? renderPlayStationEmailSteps() : renderXboxEmailSteps()}
+                <p style="margin:12px 0 0;color:#aaa7b1;font-size:12px;line-height:19px;">Segue tamb&eacute;m qualquer instru&ccedil;&atilde;o adicional inclu&iacute;da nos dados de entrega. Se precisares de ajuda, fala connosco antes de alterares os dados da conta.</p>
               </td>
             </tr>
             <tr>
@@ -688,6 +772,24 @@ function renderEmailStep(number, text) {
     </table>`;
 }
 
+function renderPlayStationEmailSteps() {
+  return [
+    "Na PlayStation, escolhe Adicionar utilizador e depois Começar ou Iniciar sessão.",
+    "Introduz o email e a palavra-passe enviados na caixa acima.",
+    "Abre Biblioteca > Comprados, seleciona o jogo e inicia a transferência.",
+    "Quando terminar, volta ao teu utilizador habitual para jogar. Não alteres o email, a palavra-passe nem as definições de segurança da conta partilhada."
+  ].map((text, index) => renderEmailStep(index + 1, text)).join("");
+}
+
+function renderXboxEmailSteps() {
+  return [
+    "Inicia sessão na tua conta Xbox e abre a Microsoft Store.",
+    "Escolhe Resgatar ou Utilizar um código.",
+    "Introduz o código enviado acima exatamente como aparece.",
+    "Confirma o resgate, abre a biblioteca e instala o jogo."
+  ].map((text, index) => renderEmailStep(index + 1, text)).join("");
+}
+
 function publicSiteUrl() {
   const configured = process.env.URL || "https://galaxygame.pt";
   try {
@@ -718,6 +820,7 @@ function escapeHtml(value) {
 
 module.exports = {
   json,
+  configureOrderStorage,
   escapeFormulaValue,
   listOrdersByFormula,
   findOrderByStripeSessionId,

@@ -556,6 +556,9 @@ test("email de entrega usa tabelas, estilos inline e imagens acessíveis", () =>
   assert.match(html, /font-family:'Courier New'/);
   assert.match(html, />ABCD-1234</);
   assert.match(html, />Ver o meu pedido</);
+  assert.match(html, /Dados da tua conta partilhada/);
+  assert.match(html, /Como adicionar a conta e descarregar/);
+  assert.doesNotMatch(html, /Como resgatar na Xbox/);
   assert.doesNotMatch(html, /class=/);
   if (previousUrl === undefined) delete process.env.URL;
   else process.env.URL = previousUrl;
@@ -614,4 +617,6 @@ test("email ignora URLs de capa inseguras", () => {
   });
   assert.doesNotMatch(html, /javascript:/);
   assert.doesNotMatch(html, /alt="Capa de/);
+  assert.match(html, /O teu c&oacute;digo Xbox/);
+  assert.match(html, /Como resgatar na Xbox/);
 });

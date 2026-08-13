@@ -1,6 +1,7 @@
-const { json, getUserEmail, listPersistedOrders } = require("./_orders");
+const { json, configureOrderStorage, getUserEmail, listPersistedOrders } = require("./_orders");
 
 exports.handler = async (event, context) => {
+  configureOrderStorage(event);
   if (event.httpMethod !== "GET") return json(405, { error: "method_not_allowed" });
   const email = getUserEmail(context);
   if (!email) return json(401, { error: "login_required" });
@@ -15,7 +16,8 @@ exports.handler = async (event, context) => {
         valorPagoEUR: pedido.valorPagoEUR,
         status: pedido.status,
         dataCompra: pedido.dataCompra,
-        codigo: pedido.status === "Enviado" ? pedido.codigo : ""
+        codigo: pedido.status === "Enviado" ? pedido.codigo : "",
+        imagem: pedido.imagem || ""
       }))
     });
   } catch (error) {
