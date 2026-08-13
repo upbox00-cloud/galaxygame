@@ -39,6 +39,24 @@ function createMemoryStore() {
   };
 }
 
+function createEventuallyConsistentMemoryStore() {
+  const values = new Map();
+  const staleValues = new Map();
+  return {
+    async get(key) {
+      return structuredClone(staleValues.get(key) || values.get(key) || null);
+    },
+    async setJSON(key, value) {
+      if (!staleValues.has(key) && values.has(key)) staleValues.set(key, structuredClone(values.get(key)));
+      values.set(key, structuredClone(value));
+      return { etag: "test" };
+    },
+    async delete(key) { values.delete(key); staleValues.delete(key); },
+    async *list() { yield { blobs: [...values.keys()].map((key) => ({ key })) }; },
+    latest(key) { return structuredClone(values.get(key) || null); }
+  };
+}
+
 test("presença regista sessões anónimas e só revela a contagem ao admin", async () => {
   const store = createMemoryStore();
   sitePresence._test.setStoreFactory(() => store);
@@ -351,6 +369,48 @@ test("pedido do Airtable continua atualizavel quando a coluna de estado e recusa
     assert.equal(updated.status, "Cancelado");
     const stored = await store.get("orders/cs_test_schema.json");
     assert.equal(stored.status, "Cancelado");
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
+test("cancelamento confirma o novo estado mesmo com leitura eventual do Blobs", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const originalFetch = global.fetch;
+  const store = createEventuallyConsistentMemoryStore();
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  orders._test.setOrdersStoreFactory(() => store);
+  await store.setJSON("orders/cs_test_eventual.json", {
+    clienteEmail: "cliente@example.com",
+    produto: "Jogo eventual",
+    plataforma: "PlayStation 5",
+    status: "Aguardando codigo",
+    stripeSessionId: "cs_test_eventual"
+  });
+  global.fetch = async (_url, options = {}) => {
+    const status = (options.method || "GET") === "PATCH" ? "Cancelado" : "Aguardando codigo";
+    return new Response(JSON.stringify({ records: [{
+      id: "recEventual123",
+      fields: {
+        ClienteEmail: "cliente@example.com",
+        Produto: "Jogo eventual",
+        Plataforma: "PlayStation 5",
+        Estado: status,
+        StripeSessionId: "cs_test_eventual"
+      }
+    }] }), { status: 200, headers: { "content-type": "application/json" } });
+  };
+  try {
+    const updated = await orders.updatePersistedOrder("recEventual123", { Status: "Cancelado" });
+    assert.equal(updated.status, "Cancelado");
+    assert.equal(store.latest("orders/cs_test_eventual.json").status, "Cancelado");
   } finally {
     global.fetch = originalFetch;
     orders._test.setOrdersStoreFactory();

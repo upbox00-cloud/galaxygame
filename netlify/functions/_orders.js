@@ -219,10 +219,12 @@ async function getBlobOrderBySessionId(sessionId) {
   return normalizeBlobOrder(value);
 }
 
-async function upsertBlobOrder(fields) {
+async function upsertBlobOrder(fields, currentOverride) {
   const sessionId = String(fields?.StripeSessionId || "").trim();
   if (!sessionId) throw new Error("StripeSessionId em falta no pedido Blob");
-  const current = await getBlobOrderBySessionId(sessionId);
+  const current = currentOverride === undefined
+    ? await getBlobOrderBySessionId(sessionId)
+    : normalizeBlobOrder(currentOverride);
   const order = fieldsToBlobOrder(fields, current || {});
   await ordersStore().setJSON(blobOrderKey(sessionId), order);
   return order;
@@ -334,6 +336,9 @@ async function updatePersistedOrder(recordId, fields) {
         ValorPagoEUR: current.valorPagoEUR,
         ImagemURL: current.imagem,
         DataCompra: current.dataCompra
+      }, {
+        ...current,
+        stripeSessionId: current.stripeSessionId
       })])
     : [{ status: "rejected", reason: new Error("Pedido sem StripeSessionId") }];
 
