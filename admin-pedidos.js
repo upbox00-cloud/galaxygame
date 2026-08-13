@@ -77,8 +77,8 @@
   }
 
   function errorMessage(error, fallback) {
-    if (error?.code === "airtable_delivery_fields_missing") return "Cria os campos Status e Codigo na tabela Pedidos do Airtable antes de fazer a entrega.";
-    if (error?.code === "airtable_status_field_missing") return "Cria o campo Status na tabela Pedidos do Airtable antes de alterar este pedido.";
+    if (error?.code === "order_delivery_not_saved") return "Não foi possível guardar os dados de entrega. Atualiza a página e tenta novamente.";
+    if (error?.code === "order_status_not_saved") return "Não foi possível alterar este pedido. Atualiza a página e tenta novamente.";
     if (error?.code === "send_failed") return "O pedido não foi enviado. Confirma o domínio no Resend e tenta novamente.";
     return fallback;
   }
@@ -409,11 +409,13 @@
     article.innerHTML = `
       <div class="admin-order-primary"><div class="admin-order-title"><div><small>Pedido ${escapeHtml(order.id)}</small><strong>${escapeHtml(order.produto || "Produto sem nome")}</strong></div><mark data-status="${mode}">${statusLabel(order)}</mark></div>${orderDetails(order)}</div>
       <div class="admin-order-action">
-        ${mode === "pending" ? `<form class="admin-send-form" data-send-order><label>Código ou dados da conta<textarea name="codigo" rows="4" maxlength="4000" placeholder="Cola aqui o código, email, palavra-passe e instruções necessárias" required></textarea></label><div class="admin-action-row"><button type="submit">Enviar ao cliente</button><button class="admin-danger-button" type="button" data-order-status="Cancelado">Cancelar pedido</button></div></form>`
+        ${mode === "pending" ? `<form class="admin-send-form" data-send-order><label>Código ou dados da conta<textarea name="codigo" rows="4" maxlength="4000" placeholder="Cola aqui o código, email, palavra-passe e instruções necessárias" autocomplete="off" autocapitalize="off" spellcheck="false" required></textarea></label><div class="admin-action-row"><button type="submit">Enviar ao cliente</button><button class="admin-danger-button" type="button" data-order-status="Cancelado">Cancelar pedido</button></div></form>`
           : mode === "sent" ? `<div class="admin-code-box"><span>Dados entregues</span><code>${escapeHtml(order.codigo || "Sem dados guardados")}</code></div>`
             : `<div class="admin-cancelled-box"><p>Este pedido não está na fila de entrega.</p><button class="admin-secondary-button" type="button" data-order-status="Aguardando codigo">Reabrir pedido</button></div>`}
       </div>`;
     article.querySelector("[data-send-order]")?.addEventListener("submit", (event) => sendOrder(event, order, article));
+    const deliveryField = article.querySelector('textarea[name="codigo"]');
+    deliveryField?.addEventListener("pointerdown", () => deliveryField.focus());
     article.querySelector("[data-order-status]")?.addEventListener("click", (event) => changeStatus(order, event.currentTarget.dataset.orderStatus, event.currentTarget));
     return article;
   }

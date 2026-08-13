@@ -305,6 +305,62 @@ test("painel lista, cancela e reabre pedidos apenas para o email administrador",
   }
 });
 
+test("pedido do Airtable continua atualizavel quando a coluna de estado e recusada", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const originalFetch = global.fetch;
+  const store = createMemoryStore();
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  orders._test.setOrdersStoreFactory(() => store);
+  await store.setJSON("orders/cs_test_schema.json", {
+    clienteEmail: "cliente@example.com",
+    clienteNome: "Cliente",
+    produto: "Jogo com esquema antigo",
+    plataforma: "PlayStation 5",
+    valorPagoEUR: 19.99,
+    status: "Aguardando codigo",
+    codigo: "",
+    dataCompra: "2026-08-13T10:00:00.000Z",
+    stripeSessionId: "cs_test_schema"
+  });
+  global.fetch = async (_url, options = {}) => {
+    if ((options.method || "GET") === "PATCH") {
+      return new Response(JSON.stringify({ error: { message: 'Unknown field name: "Status"' } }), {
+        status: 422,
+        headers: { "content-type": "application/json" }
+      });
+    }
+    return new Response(JSON.stringify({ records: [{
+      id: "recSchema123",
+      fields: {
+        ClienteEmail: "cliente@example.com",
+        ClienteNome: "Cliente",
+        Produto: "Jogo com esquema antigo",
+        Plataforma: "PlayStation 5",
+        ValorPagoEUR: 19.99,
+        Estado: "Aguardando codigo",
+        DataCompra: "2026-08-13T10:00:00.000Z",
+        StripeSessionId: "cs_test_schema"
+      }
+    }] }), { status: 200, headers: { "content-type": "application/json" } });
+  };
+
+  try {
+    const updated = await orders.updatePersistedOrder("recSchema123", { Status: "Cancelado" });
+    assert.equal(updated.status, "Cancelado");
+    const stored = await store.get("orders/cs_test_schema.json");
+    assert.equal(stored.status, "Cancelado");
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
 test("entrega administrativa guarda o codigo, envia email e atualiza Minha Conta", async () => {
   const previousBase = process.env.AIRTABLE_BASE_ID;
   const previousToken = process.env.AIRTABLE_TOKEN;

@@ -573,7 +573,25 @@
 .admin-order-session dd { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: Consolas, monospace; font-size: 12px; }
 .admin-order-action { border-left: 1px solid #e2e2e5; padding-left: 20px; }
 .admin-send-form label { display: grid; gap: 7px; color: #55565d; font-size: 13px; font-weight: 900; }
-.admin-send-form textarea { width: 100%; min-height: 105px; resize: vertical; border: 1px solid #d0d0d5; border-radius: 6px; outline: 0; background: #fafafa; color: #222; padding: 11px; font: inherit; }
+.admin-orders-page .admin-send-form textarea {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 105px;
+  resize: vertical;
+  border: 1px solid #d0d0d5;
+  border-radius: 6px;
+  outline: 0;
+  background: #fff;
+  color: #222;
+  caret-color: #ff6a00;
+  padding: 11px;
+  font: inherit;
+  pointer-events: auto !important;
+  user-select: text;
+  touch-action: manipulation;
+}
+.admin-orders-page .admin-send-form textarea:focus { border-color: var(--admin-accent); box-shadow: 0 0 0 3px rgb(255 106 0 / 14%); }
 .admin-action-row { display: flex; gap: 8px; margin-top: 9px; }
 .admin-action-row > * { flex: 1; min-height: 42px; border: 1px solid #d4d4d8; border-radius: 6px; background: #fff; color: #33343a; font: inherit; font-weight: 900; cursor: pointer; }
 .admin-action-row button[type="submit"] { border-color: var(--admin-accent); background: var(--admin-accent); color: #1d1714; }

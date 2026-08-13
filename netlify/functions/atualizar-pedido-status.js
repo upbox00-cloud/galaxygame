@@ -25,10 +25,7 @@ exports.handler = async (event, context) => {
     if (!currentOrder) return json(404, { error: "order_not_found" });
     const updatedOrder = await updatePersistedOrder(recordId, { Status: status });
     if (!updatedOrder || updatedOrder.status !== status) {
-      return json(409, {
-        error: "airtable_status_field_missing",
-        requiredFields: ["Status"]
-      });
+      return json(409, { error: "order_status_not_saved" });
     }
     return json(200, { ok: true, pedido: updatedOrder });
   } catch (error) {

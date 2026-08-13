@@ -38,6 +38,9 @@ test("gestão de pedidos continua ligada às functions protegidas", () => {
   assert.match(script, /\/\.netlify\/functions\/atualizar-pedido-status/);
   assert.match(script, /Authorization: `Bearer \$\{await user\.jwt\(\)\}`/);
   assert.match(script, /data\.pedido/);
+  assert.match(script, /deliveryField\?\.addEventListener\("pointerdown"/);
+  assert.match(styles, /pointer-events: auto !important/);
+  assert.doesNotMatch(script, /Cria o campo Status/);
 });
 
 test("catálogo e clientes usam os dados existentes da loja", () => {

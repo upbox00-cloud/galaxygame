@@ -4,7 +4,7 @@ const { getStore } = require("@netlify/blobs");
 const AIRTABLE_TABLE = "Pedidos";
 const AIRTABLE_API = "https://api.airtable.com/v0";
 const ORDER_STORE = "galaxygame-orders";
-const defaultOrdersStoreFactory = () => getStore({ name: ORDER_STORE, consistency: "strong" });
+const defaultOrdersStoreFactory = () => getStore(ORDER_STORE);
 let ordersStoreFactory = defaultOrdersStoreFactory;
 
 function env(name) {
@@ -215,7 +215,7 @@ function fieldsToBlobOrder(fields, current = {}) {
 
 async function getBlobOrderBySessionId(sessionId) {
   if (!sessionId) return null;
-  const value = await ordersStore().get(blobOrderKey(sessionId), { type: "json", consistency: "strong" });
+  const value = await ordersStore().get(blobOrderKey(sessionId), { type: "json" });
   return normalizeBlobOrder(value);
 }
 
@@ -235,7 +235,7 @@ async function listBlobOrders({ email = "", status = "", maxRecords = 100 } = {}
     keys.push(...page.blobs.map((blob) => blob.key));
     if (keys.length >= 1000) break;
   }
-  const values = await Promise.all(keys.map((key) => store.get(key, { type: "json", consistency: "strong" })));
+  const values = await Promise.all(keys.map((key) => store.get(key, { type: "json" })));
   const normalizedEmail = String(email || "").trim().toLowerCase();
   return values
     .map(normalizeBlobOrder)
@@ -319,24 +319,32 @@ async function updatePersistedOrder(recordId, fields) {
     return upsertBlobOrder({ ...fields, StripeSessionId: sessionId });
   }
 
-  const updated = await updateOrder(recordId, fields);
-  if (updated?.stripeSessionId) {
-    try {
-      await upsertBlobOrder({
+  const current = await getOrderById(recordId);
+  if (!current) return null;
+
+  const airtable = await Promise.allSettled([updateOrder(recordId, fields)]);
+  const blob = current.stripeSessionId
+    ? await Promise.allSettled([upsertBlobOrder({
         ...fields,
-        StripeSessionId: updated.stripeSessionId,
-        ClienteEmail: updated.clienteEmail,
-        ClienteNome: updated.clienteNome,
-        Produto: updated.produto,
-        Plataforma: updated.plataforma,
-        ValorPagoEUR: updated.valorPagoEUR,
-        DataCompra: updated.dataCompra
-      });
-    } catch (error) {
-      console.warn("[orders:update] copia Blob falhou", { message: error.message });
-    }
+        StripeSessionId: current.stripeSessionId,
+        ClienteEmail: current.clienteEmail,
+        ClienteNome: current.clienteNome,
+        Produto: current.produto,
+        Plataforma: current.plataforma,
+        ValorPagoEUR: current.valorPagoEUR,
+        ImagemURL: current.imagem,
+        DataCompra: current.dataCompra
+      })])
+    : [{ status: "rejected", reason: new Error("Pedido sem StripeSessionId") }];
+
+  if (airtable[0].status === "rejected") logStorageFallback("update", airtable[0].reason);
+  if (blob[0].status === "rejected") {
+    console.warn("[orders:update] copia Blob falhou", { message: blob[0].reason?.message || "erro desconhecido" });
   }
-  return updated;
+  if (airtable[0].status === "rejected" && blob[0].status === "rejected") {
+    throw airtable[0].reason;
+  }
+  return blob[0].status === "fulfilled" ? blob[0].value : airtable[0].value;
 }
 
 function normalizeImageField(value) {
