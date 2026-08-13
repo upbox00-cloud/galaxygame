@@ -77,6 +77,7 @@
   }
 
   function errorMessage(error, fallback) {
+    if (error?.code === "order_email_missing") return "Este registo não tem um email de cliente válido. Só é possível entregar um pedido pago que tenha o email do destinatário.";
     if (error?.code === "order_delivery_not_saved") return "Não foi possível guardar os dados de entrega. Atualiza a página e tenta novamente.";
     if (error?.code === "order_status_not_saved") return "Não foi possível alterar este pedido. Atualiza a página e tenta novamente.";
     if (error?.code === "send_failed") return "O pedido não foi enviado. Confirma o domínio no Resend e tenta novamente.";
@@ -404,12 +405,14 @@
 
   function orderCard(order) {
     const mode = normalizeStatus(order.status);
+    const hasValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(order.clienteEmail || "").trim());
     const article = document.createElement("article");
     article.className = `admin-order-card admin-order-${mode}`;
     article.innerHTML = `
       <div class="admin-order-primary"><div class="admin-order-title"><div><small>Pedido ${escapeHtml(order.id)}</small><strong>${escapeHtml(order.produto || "Produto sem nome")}</strong></div><mark data-status="${mode}">${statusLabel(order)}</mark></div>${orderDetails(order)}</div>
       <div class="admin-order-action">
-        ${mode === "pending" ? `<form class="admin-send-form" data-send-order><label>Código ou dados da conta<textarea name="codigo" rows="4" maxlength="4000" placeholder="Cola aqui o código, email, palavra-passe e instruções necessárias" autocomplete="off" autocapitalize="off" spellcheck="false" required></textarea></label><div class="admin-action-row"><button type="submit">Enviar ao cliente</button><button class="admin-danger-button" type="button" data-order-status="Cancelado">Cancelar pedido</button></div></form>`
+        ${mode === "pending" && hasValidEmail ? `<form class="admin-send-form" data-send-order><label>Código ou dados da conta<textarea name="codigo" rows="4" maxlength="4000" placeholder="Cola aqui o código, email, palavra-passe e instruções necessárias" autocomplete="off" autocapitalize="off" spellcheck="false" required></textarea></label><div class="admin-action-row"><button type="submit">Enviar ao cliente</button><button class="admin-danger-button" type="button" data-order-status="Cancelado">Cancelar pedido</button></div></form>`
+          : mode === "pending" ? `<div class="admin-cancelled-box"><p><strong>Pedido incompleto:</strong> falta um email de cliente válido. Este registo não pode receber uma entrega.</p><button class="admin-danger-button" type="button" data-order-status="Cancelado">Retirar da fila</button></div>`
           : mode === "sent" ? `<div class="admin-code-box"><span>Dados entregues</span><code>${escapeHtml(order.codigo || "Sem dados guardados")}</code></div>`
             : `<div class="admin-cancelled-box"><p>Este pedido não está na fila de entrega.</p><button class="admin-secondary-button" type="button" data-order-status="Aguardando codigo">Reabrir pedido</button></div>`}
       </div>`;

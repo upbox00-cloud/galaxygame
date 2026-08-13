@@ -23,7 +23,9 @@ exports.handler = async (event, context) => {
     const currentOrder = await getPersistedOrderById(recordId);
     if (!currentOrder) return json(404, { error: "order_not_found" });
     if (currentOrder.status === "Enviado") return json(200, { ok: true, duplicate: true, pedido: currentOrder });
-    if (!currentOrder.clienteEmail) return json(400, { error: "order_email_missing" });
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(currentOrder.clienteEmail || "").trim())) {
+      return json(400, { error: "order_email_missing" });
+    }
 
     updatedOrder = await updatePersistedOrder(recordId, {
       Codigo: codigo,

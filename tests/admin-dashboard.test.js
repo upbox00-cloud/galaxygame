@@ -41,6 +41,8 @@ test("gestão de pedidos continua ligada às functions protegidas", () => {
   assert.match(script, /deliveryField\?\.addEventListener\("pointerdown"/);
   assert.match(styles, /pointer-events: auto !important/);
   assert.doesNotMatch(script, /Cria o campo Status/);
+  assert.match(script, /order_email_missing/);
+  assert.match(script, /Pedido incompleto:/);
 });
 
 test("catálogo e clientes usam os dados existentes da loja", () => {

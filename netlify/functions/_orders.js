@@ -77,7 +77,7 @@ async function listOrdersByFormula(filterByFormula, { maxRecords = 100, sortNewe
     records.push(...(data.records || []));
     offset = data.offset;
   } while (offset && records.length < maxRecords);
-  return records.slice(0, maxRecords).map(normalizeOrder);
+  return records.slice(0, maxRecords).map(normalizeOrder).filter(isMeaningfulOrder);
 }
 
 async function findOrderByStripeSessionId(sessionId) {
@@ -166,6 +166,18 @@ function normalizeOrder(record) {
     dataCompra: fields.DataCompra || "",
     stripeSessionId: fields.StripeSessionId || ""
   };
+}
+
+function isMeaningfulOrder(order) {
+  if (!order) return false;
+  return Boolean(
+    String(order.clienteEmail || "").trim()
+    || String(order.produto || "").trim()
+    || String(order.plataforma || "").trim()
+    || String(order.stripeSessionId || "").trim()
+    || String(order.dataCompra || "").trim()
+    || Number(order.valorPagoEUR || 0) > 0
+  );
 }
 
 function ordersStore() {
@@ -301,6 +313,7 @@ async function listPersistedOrders({ email = "", status = "", maxRecords = 100 }
     blob.value.forEach((order) => orders.set(order.stripeSessionId || order.id, order));
   }
   return [...orders.values()]
+    .filter(isMeaningfulOrder)
     .filter((order) => !status || order.status === status)
     .sort((a, b) => new Date(b.dataCompra || 0) - new Date(a.dataCompra || 0))
     .slice(0, maxRecords);
@@ -713,6 +726,7 @@ module.exports = {
   upsertOrderByStripeSessionId,
   updateOrder,
   normalizeOrder,
+  isMeaningfulOrder,
   getUserEmail,
   getUserName,
   getUserRoles,

@@ -57,6 +57,18 @@ function createEventuallyConsistentMemoryStore() {
   };
 }
 
+test("linhas vazias do Airtable não são tratadas como pedidos", () => {
+  assert.equal(orders.isMeaningfulOrder(orders.normalizeOrder({ id: "recEmpty", fields: {} })), false);
+  assert.equal(orders.isMeaningfulOrder(orders.normalizeOrder({
+    id: "recPaid",
+    fields: {
+      ClienteEmail: "cliente@example.com",
+      Produto: "Jogo digital",
+      StripeSessionId: "cs_test_paid"
+    }
+  })), true);
+});
+
 test("presença regista sessões anónimas e só revela a contagem ao admin", async () => {
   const store = createMemoryStore();
   sitePresence._test.setStoreFactory(() => store);
