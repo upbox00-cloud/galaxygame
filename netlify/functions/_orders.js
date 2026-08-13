@@ -349,7 +349,12 @@ async function updatePersistedOrder(recordId, fields) {
   if (airtable[0].status === "rejected" && blob[0].status === "rejected") {
     throw airtable[0].reason;
   }
-  return blob[0].status === "fulfilled" ? blob[0].value : airtable[0].value;
+  const saved = blob[0].status === "fulfilled" ? blob[0].value : airtable[0].value;
+  return {
+    ...saved,
+    ...(fields.Status !== undefined ? { status: fields.Status } : {}),
+    ...(fields.Codigo !== undefined ? { codigo: fields.Codigo } : {})
+  };
 }
 
 function normalizeImageField(value) {

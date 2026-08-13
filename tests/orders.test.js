@@ -421,6 +421,56 @@ test("cancelamento confirma o novo estado mesmo com leitura eventual do Blobs", 
   }
 });
 
+test("function de cancelamento responde com o estado pedido depois de uma escrita valida", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const previousAdmins = process.env.ADMIN_EMAILS;
+  const originalFetch = global.fetch;
+  const store = createEventuallyConsistentMemoryStore();
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  process.env.ADMIN_EMAILS = "admin@galaxygame.pt";
+  orders._test.setOrdersStoreFactory(() => store);
+  await store.setJSON("orders/cs_test_cancel_function.json", {
+    clienteEmail: "cliente@example.com",
+    produto: "Jogo para cancelar",
+    plataforma: "PlayStation 5",
+    status: "Aguardando codigo",
+    stripeSessionId: "cs_test_cancel_function"
+  });
+  global.fetch = async (_url, options = {}) => {
+    const requested = options.body ? JSON.parse(options.body) : {};
+    const status = requested.records?.[0]?.fields?.Status || "Aguardando codigo";
+    return new Response(JSON.stringify({ records: [{
+      id: "recCancelFunction123",
+      fields: {
+        ClienteEmail: "cliente@example.com",
+        Produto: "Jogo para cancelar",
+        Plataforma: "PlayStation 5",
+        Status: status,
+        StripeSessionId: "cs_test_cancel_function"
+      }
+    }] }), { status: 200, headers: { "content-type": "application/json" } });
+  };
+  try {
+    const response = await updateOrderStatus.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ recordId: "recCancelFunction123", status: "Cancelado" })
+    }, { clientContext: { user: { email: "admin@galaxygame.pt", app_metadata: {} } } });
+    assert.equal(response.statusCode, 200);
+    assert.equal(JSON.parse(response.body).pedido.status, "Cancelado");
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+    if (previousAdmins === undefined) delete process.env.ADMIN_EMAILS;
+    else process.env.ADMIN_EMAILS = previousAdmins;
+  }
+});
+
 test("entrega administrativa guarda o codigo, envia email e atualiza Minha Conta", async () => {
   const previousBase = process.env.AIRTABLE_BASE_ID;
   const previousToken = process.env.AIRTABLE_TOKEN;

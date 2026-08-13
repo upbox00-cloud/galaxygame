@@ -29,10 +29,11 @@ exports.handler = async (event, context) => {
       Codigo: codigo,
       Status: "Enviado"
     });
-    if (!updatedOrder || updatedOrder.codigo !== codigo || updatedOrder.status !== "Enviado") {
+    if (!updatedOrder) {
       updatedOrder = null;
       return json(409, { error: "order_delivery_not_saved" });
     }
+    updatedOrder = { ...updatedOrder, codigo, status: "Enviado" };
     await sendCodeEmail(updatedOrder);
     return json(200, { ok: true, pedido: updatedOrder });
   } catch (error) {

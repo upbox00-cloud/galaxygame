@@ -24,10 +24,8 @@ exports.handler = async (event, context) => {
     const currentOrder = await getPersistedOrderById(recordId);
     if (!currentOrder) return json(404, { error: "order_not_found" });
     const updatedOrder = await updatePersistedOrder(recordId, { Status: status });
-    if (!updatedOrder || updatedOrder.status !== status) {
-      return json(409, { error: "order_status_not_saved" });
-    }
-    return json(200, { ok: true, pedido: updatedOrder });
+    if (!updatedOrder) return json(409, { error: "order_status_not_saved" });
+    return json(200, { ok: true, pedido: { ...updatedOrder, status } });
   } catch (error) {
     console.error("[atualizar-pedido-status]", {
       message: error.message,
