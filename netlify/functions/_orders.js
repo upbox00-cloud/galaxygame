@@ -315,6 +315,22 @@ async function listPersistedOrders({ email = "", status = "", maxRecords = 100 }
   const orders = new Map();
   if (airtable.status === "fulfilled") {
     airtable.value.forEach((order) => orders.set(order.stripeSessionId || order.id, order));
+
+    // A listagem de Blobs pode demorar a revelar uma chave recém-criada.
+    // A leitura direta por sessão é consistente e garante que Minha Conta
+    // vê a entrega assim que o email é enviado.
+    const directBlobReads = await Promise.allSettled(
+      airtable.value
+        .filter((order) => order.stripeSessionId)
+        .map(async (order) => ({
+          key: order.stripeSessionId || order.id,
+          value: await getBlobOrderBySessionId(order.stripeSessionId)
+        }))
+    );
+    directBlobReads.forEach((result) => {
+      if (result.status !== "fulfilled" || !result.value.value) return;
+      orders.set(result.value.key, mergeOrderCopies(orders.get(result.value.key), result.value.value));
+    });
   }
   if (blob.status === "fulfilled") {
     blob.value.forEach((order) => {
@@ -617,7 +633,7 @@ async function sendOrderConfirmationEmail(order) {
   const product = escapeHtml(order.produto || "Jogo digital GalaxyGame");
   const platform = escapeHtml(order.plataforma || "Consola");
   const accountUrl = escapeHtml(`${siteUrl}/minha-conta.html`);
-  const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-header-logo-cropped.webp`);
+  const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-email-banner.jpg`);
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -650,7 +666,7 @@ function renderCodeEmail(order) {
   const code = escapeHtml(order.codigo);
   const siteUrl = publicSiteUrl();
   const accountUrl = escapeHtml(`${siteUrl}/minha-conta.html`);
-  const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-header-logo-cropped.webp`);
+  const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-email-banner.jpg`);
   const coverUrl = safeHttpUrl(order.imagem);
   const isPlayStation = /playstation|\bps\s*[45]\b/i.test(order.plataforma || order.produto || "");
   const deliveryTitle = isPlayStation ? "Dados da tua conta partilhada" : "O teu c&oacute;digo Xbox";
@@ -678,8 +694,8 @@ function renderCodeEmail(order) {
         <td align="center" style="padding:24px 12px;">
           <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" bgcolor="#1c1c22" style="width:100%;max-width:600px;background-color:#1c1c22;border:1px solid #35343d;border-radius:8px;overflow:hidden;">
             <tr>
-              <td align="center" bgcolor="#050507" style="padding:22px 24px;background-color:#050507;">
-                <img src="${logoUrl}" width="300" alt="GalaxyGame - Jogos Digitais" style="display:block;width:300px;max-width:88%;height:auto;margin:0 auto;border:0;outline:none;text-decoration:none;" />
+              <td align="center" bgcolor="#050507" style="padding:0;background-color:#050507;">
+                <img src="${logoUrl}" width="600" alt="GalaxyGame - Jogos Digitais" style="display:block;width:100%;max-width:600px;height:auto;margin:0 auto;border:0;outline:none;text-decoration:none;" />
               </td>
             </tr>
             <tr>

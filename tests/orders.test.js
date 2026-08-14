@@ -391,6 +391,56 @@ test("pedido do Airtable continua atualizavel quando a coluna de estado e recusa
   }
 });
 
+test("Minha Conta encontra a entrega por leitura direta mesmo antes do Blob aparecer na listagem", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const originalFetch = global.fetch;
+  const store = createMemoryStore();
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  orders._test.setOrdersStoreFactory(() => store);
+  await store.setJSON("orders/cs_test_direct_delivery.json", {
+    clienteEmail: "cliente@example.com",
+    clienteNome: "Cliente",
+    produto: "Jogo entregue",
+    plataforma: "PlayStation 5",
+    valorPagoEUR: 29.99,
+    status: "Enviado",
+    codigo: "Email: conta@example.com\nPalavra-passe: teste",
+    dataCompra: "2026-08-14T10:00:00.000Z",
+    stripeSessionId: "cs_test_direct_delivery"
+  });
+  store.list = async function* listWithoutNewKey() {
+    yield { blobs: [] };
+  };
+  global.fetch = async () => new Response(JSON.stringify({ records: [{
+    id: "recDirect123",
+    fields: {
+      ClienteEmail: "cliente@example.com",
+      ClienteNome: "Cliente",
+      Produto: "Jogo entregue",
+      Plataforma: "PlayStation 5",
+      ValorPagoEUR: 29.99,
+      DataCompra: "2026-08-14T10:00:00.000Z",
+      StripeSessionId: "cs_test_direct_delivery"
+    }
+  }] }), { status: 200, headers: { "content-type": "application/json" } });
+
+  try {
+    const listed = await orders.listPersistedOrders({ email: "cliente@example.com" });
+    assert.equal(listed.length, 1);
+    assert.equal(listed[0].status, "Enviado");
+    assert.match(listed[0].codigo, /conta@example\.com/);
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
 test("cancelamento confirma o novo estado mesmo com leitura eventual do Blobs", async () => {
   const previousBase = process.env.AIRTABLE_BASE_ID;
   const previousToken = process.env.AIRTABLE_TOKEN;
@@ -551,6 +601,8 @@ test("email de entrega usa tabelas, estilos inline e imagens acessíveis", () =>
   });
   assert.match(html, /max-width:600px/);
   assert.match(html, /<table role="presentation"/);
+  assert.match(html, /galaxygame-email-banner\.jpg/);
+  assert.match(html, /<img[^>]+width="600"[^>]+alt="GalaxyGame - Jogos Digitais"/);
   assert.match(html, /alt="GalaxyGame - Jogos Digitais"/);
   assert.match(html, /alt="Capa de Jogo &lt;Especial&gt;"/);
   assert.match(html, /font-family:'Courier New'/);
