@@ -33,8 +33,10 @@ function createMemoryStore() {
     async delete(key) {
       values.delete(key);
     },
-    async *list() {
-      yield { blobs: [...values.keys()].map((key) => ({ key })) };
+    list(options = {}) {
+      const page = { blobs: [...values.keys()].map((key) => ({ key })), directories: [] };
+      if (options.paginate) return (async function* pages() { yield page; })();
+      return Promise.resolve(page);
     }
   };
 }
@@ -52,7 +54,11 @@ function createEventuallyConsistentMemoryStore() {
       return { etag: "test" };
     },
     async delete(key) { values.delete(key); staleValues.delete(key); },
-    async *list() { yield { blobs: [...values.keys()].map((key) => ({ key })) }; },
+    list(options = {}) {
+      const page = { blobs: [...values.keys()].map((key) => ({ key })), directories: [] };
+      if (options.paginate) return (async function* pages() { yield page; })();
+      return Promise.resolve(page);
+    },
     latest(key) { return structuredClone(values.get(key) || null); }
   };
 }
@@ -410,8 +416,8 @@ test("Minha Conta encontra a entrega por leitura direta mesmo antes do Blob apar
     dataCompra: "2026-08-14T10:00:00.000Z",
     stripeSessionId: "cs_test_direct_delivery"
   });
-  store.list = async function* listWithoutNewKey() {
-    yield { blobs: [] };
+  store.list = async function listWithoutNewKey() {
+    return { blobs: [], directories: [] };
   };
   global.fetch = async () => new Response(JSON.stringify({ records: [{
     id: "recDirect123",

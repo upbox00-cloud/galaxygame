@@ -6,7 +6,7 @@ const { connectLambda, getStore } = require("@netlify/blobs");
 const AIRTABLE_TABLE = "Pedidos";
 const AIRTABLE_API = "https://api.airtable.com/v0";
 const ORDER_STORE = "galaxygame-orders";
-const defaultOrdersStoreFactory = () => getStore(ORDER_STORE);
+const defaultOrdersStoreFactory = () => getStore({ name: ORDER_STORE, consistency: "strong" });
 let ordersStoreFactory = defaultOrdersStoreFactory;
 let catalogCache = null;
 
@@ -251,11 +251,8 @@ async function upsertBlobOrder(fields, currentOverride) {
 
 async function listBlobOrders({ email = "", status = "", maxRecords = 100 } = {}) {
   const store = ordersStore();
-  const keys = [];
-  for await (const page of store.list({ prefix: "orders/", paginate: true })) {
-    keys.push(...page.blobs.map((blob) => blob.key));
-    if (keys.length >= 1000) break;
-  }
+  const page = await store.list({ prefix: "orders/" });
+  const keys = page.blobs.slice(0, 1000).map((blob) => blob.key);
   const values = await Promise.all(keys.map((key) => store.get(key, { type: "json", consistency: "strong" })));
   const normalizedEmail = String(email || "").trim().toLowerCase();
   return values
@@ -310,6 +307,11 @@ async function listPersistedOrders({ email = "", status = "", maxRecords = 100 }
     listBlobOrders({ email, status, maxRecords })
   ]);
   if (airtable.status === "rejected") logStorageFallback("list", airtable.reason);
+  if (blob.status === "rejected") {
+    console.error("[orders:list] Netlify Blobs falhou", {
+      message: blob.reason?.message || "erro desconhecido"
+    });
+  }
   if (airtable.status === "rejected" && blob.status === "rejected") throw blob.reason;
 
   const orders = new Map();
@@ -319,17 +321,26 @@ async function listPersistedOrders({ email = "", status = "", maxRecords = 100 }
     // A listagem de Blobs pode demorar a revelar uma chave recém-criada.
     // A leitura direta por sessão é consistente e garante que Minha Conta
     // vê a entrega assim que o email é enviado.
-    const directBlobReads = await Promise.allSettled(
-      airtable.value
-        .filter((order) => order.stripeSessionId)
-        .map(async (order) => ({
-          key: order.stripeSessionId || order.id,
-          value: await getBlobOrderBySessionId(order.stripeSessionId)
-        }))
-    );
-    directBlobReads.forEach((result) => {
-      if (result.status !== "fulfilled" || !result.value.value) return;
-      orders.set(result.value.key, mergeOrderCopies(orders.get(result.value.key), result.value.value));
+    let directBlobMatches = 0;
+    for (const order of airtable.value) {
+      if (!order.stripeSessionId) continue;
+      try {
+        const blobOrder = await getBlobOrderBySessionId(order.stripeSessionId);
+        if (!blobOrder) continue;
+        const key = order.stripeSessionId || order.id;
+        orders.set(key, mergeOrderCopies(orders.get(key), blobOrder));
+        directBlobMatches += 1;
+      } catch (error) {
+        console.error("[orders:list] leitura direta do pedido Blob falhou", {
+          sessionSuffix: String(order.stripeSessionId).slice(-8),
+          message: error?.message || "erro desconhecido"
+        });
+      }
+    }
+    console.info("[orders:list] fontes combinadas", {
+      airtable: airtable.value.length,
+      blobsListed: blob.status === "fulfilled" ? blob.value.length : 0,
+      blobsMatchedDirectly: directBlobMatches
     });
   }
   if (blob.status === "fulfilled") {

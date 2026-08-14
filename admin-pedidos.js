@@ -10,15 +10,17 @@
   const catalogSearch = document.querySelector("[data-admin-catalog-search]");
   const customerSearch = document.querySelector("[data-admin-customer-search]");
   const tabs = [...document.querySelectorAll("[data-admin-tab]")];
+  const ADMIN_STATE_KEY = "galaxygame_admin_ui_v1";
+  const savedUi = readSavedUi();
   const state = {
     orders: [],
     catalog: [],
-    filter: "pending",
-    query: "",
-    catalogQuery: "",
-    customerQuery: "",
-    view: "overview",
-    period: 30,
+    filter: savedUi.filter || "pending",
+    query: savedUi.query || "",
+    catalogQuery: savedUi.catalogQuery || "",
+    customerQuery: savedUi.customerQuery || "",
+    view: savedUi.view || "overview",
+    period: savedUi.period || 30,
     presenceLoading: false,
     loading: false,
     booted: false
@@ -37,6 +39,37 @@
     catalog: ["Catálogo", "Consulta os produtos publicados, promoções e pré-vendas da loja."],
     customers: ["Clientes", "Conhece os clientes que compram na GalaxyGame e o respetivo histórico."]
   };
+
+  function readSavedUi() {
+    try {
+      const saved = JSON.parse(window.localStorage.getItem(ADMIN_STATE_KEY) || "{}");
+      return {
+        view: ["overview", "orders", "catalog", "customers"].includes(saved.view) ? saved.view : "",
+        filter: ["pending", "sent", "cancelled", "all"].includes(saved.filter) ? saved.filter : "",
+        period: [7, 30, 90].includes(Number(saved.period)) ? Number(saved.period) : 0,
+        query: String(saved.query || "").slice(0, 200),
+        catalogQuery: String(saved.catalogQuery || "").slice(0, 200),
+        customerQuery: String(saved.customerQuery || "").slice(0, 200)
+      };
+    } catch {
+      return {};
+    }
+  }
+
+  function saveUi() {
+    try {
+      window.localStorage.setItem(ADMIN_STATE_KEY, JSON.stringify({
+        view: state.view,
+        filter: state.filter,
+        period: state.period,
+        query: state.query,
+        catalogQuery: state.catalogQuery,
+        customerQuery: state.customerQuery
+      }));
+    } catch {
+      // O painel continua funcional quando o navegador bloqueia armazenamento local.
+    }
+  }
 
   function redirectToLogin() {
     window.location.replace(`login.html?redirect=${encodeURIComponent("painel-pedidos.html")}`);
@@ -136,6 +169,7 @@
     if (view === "orders") renderOrders();
     if (view === "catalog") renderCatalog();
     if (view === "customers") renderCustomers();
+    saveUi();
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -595,6 +629,13 @@
     if (state.booted) return;
     state.booted = true;
     shell.hidden = false;
+    if (searchInput) searchInput.value = state.query;
+    if (catalogSearch) catalogSearch.value = state.catalogQuery;
+    if (customerSearch) customerSearch.value = state.customerQuery;
+    document.querySelectorAll("[data-admin-period]").forEach((button) => {
+      button.classList.toggle("active", Number(button.dataset.adminPeriod) === state.period);
+    });
+    setView(state.view);
     window.lucide?.createIcons();
     loadOrders();
     loadCatalog();
@@ -612,11 +653,12 @@
     state.period = Number(button.dataset.adminPeriod);
     document.querySelectorAll("[data-admin-period]").forEach((item) => item.classList.toggle("active", item === button));
     updateDashboard();
+    saveUi();
   }));
-  tabs.forEach((tab) => tab.addEventListener("click", () => { state.filter = tab.dataset.adminTab; renderOrders(); }));
-  searchInput?.addEventListener("input", () => { state.query = searchInput.value; renderOrders(); });
-  catalogSearch?.addEventListener("input", () => { state.catalogQuery = catalogSearch.value; renderCatalog(); });
-  customerSearch?.addEventListener("input", () => { state.customerQuery = customerSearch.value; renderCustomers(); });
+  tabs.forEach((tab) => tab.addEventListener("click", () => { state.filter = tab.dataset.adminTab; renderOrders(); saveUi(); }));
+  searchInput?.addEventListener("input", () => { state.query = searchInput.value; renderOrders(); saveUi(); });
+  catalogSearch?.addEventListener("input", () => { state.catalogQuery = catalogSearch.value; renderCatalog(); saveUi(); });
+  customerSearch?.addEventListener("input", () => { state.customerQuery = customerSearch.value; renderCustomers(); saveUi(); });
   document.querySelectorAll("[data-admin-refresh]").forEach((button) => button.addEventListener("click", () => { loadOrders(); loadCatalog(); loadPresence(); }));
   document.querySelector("[data-admin-menu]")?.addEventListener("click", () => document.body.classList.toggle("admin-menu-open"));
   document.querySelector("[data-admin-menu-close]")?.addEventListener("click", () => document.body.classList.remove("admin-menu-open"));

@@ -65,3 +65,11 @@ test("painel apresenta visitantes ativos com presença anónima protegida", () =
   assert.match(presenceFunction, /ACTIVE_WINDOW_MS = 2 \* 60 \* 1000/);
   assert.doesNotMatch(presenceFunction, /user-agent|client-ip|email/i);
 });
+
+test("painel restaura a vista e os filtros ao regressar", () => {
+  assert.match(script, /galaxygame_admin_ui_v1/);
+  assert.match(script, /function readSavedUi\(\)/);
+  assert.match(script, /function saveUi\(\)/);
+  assert.match(script, /window\.localStorage\.setItem/);
+  assert.match(script, /setView\(state\.view\)/);
+});
