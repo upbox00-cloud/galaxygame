@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
     <link rel="preload" href="assets/galaxygame-header-logo-cropped.webp" as="image" />
-    <link rel="stylesheet" href="styles.css?v=20260813-4" />
+    <link rel="stylesheet" href="styles.css?v=20260815-1" />
   </head>
   <body class="account-page">
     <header class="site-header solid-header">
@@ -44,7 +44,7 @@
     <main class="account-main">
       <section class="account-shell" data-account-content hidden>
         <div class="account-heading">
-          <div><p class="account-kicker">Área de cliente</p><h1>Minha Conta</h1><p>Gere os teus dados e acompanha os teus pedidos.</p></div>
+          <div><p class="account-kicker">Área de cliente</p><h1>Olá, <span data-account-greeting>jogador</span></h1><p>Os teus jogos, entregas e próximas descobertas num só lugar.</p></div>
           <button class="account-logout" type="button" data-auth-logout>Sair</button>
         </div>
 
@@ -54,11 +54,43 @@
           <div><span>Cliente desde</span><strong data-account-created></strong></div>
         </div>
 
+        <section class="account-overview" aria-label="Resumo da conta">
+          <div class="account-overview-copy">
+            <span class="account-overview-label">A tua biblioteca GalaxyGame</span>
+            <strong><span data-account-total>0</span> jogos na conta</strong>
+            <p>Acompanha cada entrega e encontra a próxima aventura escolhida para a tua consola.</p>
+          </div>
+          <div class="account-overview-stats">
+            <div><strong data-account-delivered>0</strong><span>Entregues</span></div>
+            <div><strong data-account-preparing>0</strong><span>Em preparação</span></div>
+            <div><strong data-account-cancelled>0</strong><span>Cancelados</span></div>
+          </div>
+        </section>
+
         <section class="account-orders">
-          <div class="section-heading"><div><h2>Meus Pedidos</h2><p>As tuas compras digitais ficarao reunidas aqui.</p></div></div>
+          <div class="section-heading account-section-heading"><div><h2>Meus Pedidos</h2><p>Consulta o estado e os dados de entrega de cada compra.</p></div></div>
+          <div class="account-order-filters" data-account-order-filters aria-label="Filtrar pedidos">
+            <button type="button" class="active" data-order-filter="all">Todos <span data-filter-count="all">0</span></button>
+            <button type="button" data-order-filter="pending">Em preparação <span data-filter-count="pending">0</span></button>
+            <button type="button" data-order-filter="sent">Entregues <span data-filter-count="sent">0</span></button>
+            <button type="button" data-order-filter="cancelled">Cancelados <span data-filter-count="cancelled">0</span></button>
+          </div>
           <div class="account-orders-list" data-account-orders>
             <div class="empty-orders"><strong>A carregar pedidos</strong><p>Estamos a consultar a tua área de cliente.</p></div>
           </div>
+        </section>
+
+        <section class="account-recommendations" data-account-recommendations hidden>
+          <div class="section-heading account-section-heading">
+            <div><p class="account-kicker">Selecionados para ti</p><h2>O teu próximo jogo</h2><p>Sugestões relacionadas com as plataformas e os jogos da tua biblioteca.</p></div>
+            <a href="catalogo.html">Explorar catálogo</a>
+          </div>
+          <div class="account-recommendation-grid" data-account-recommendation-grid></div>
+        </section>
+
+        <section class="account-care" aria-label="Apoio GalaxyGame">
+          <div><span>Compra acompanhada</span><strong>Estamos contigo depois do pagamento.</strong><p>Consulta como funciona a entrega ou fala diretamente com a nossa equipa em Portugal.</p></div>
+          <div class="account-care-actions"><a href="como-funciona.html">Como funciona</a><a href="mailto:gamegalaxy26@gmail.com">Pedir ajuda</a></div>
         </section>
       </section>
     </main>
@@ -71,7 +103,7 @@
     <script src="header-search.js?v=20260801-2" defer></script>
     <script src="footer.js?v=20260726-4" defer></script>
     <script src="scripts/auth.js?v=20260811-2" defer></script>
-    <script src="minha-conta.js?v=20260815-1" defer></script>
+    <script src="minha-conta.js?v=20260815-2" defer></script>
     <script src="chat.js?v=20260811-1" defer></script>
   </body>
 </html>

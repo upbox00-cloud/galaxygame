@@ -78,9 +78,21 @@ test("painel restaura a vista e os filtros ao regressar", () => {
 });
 
 test("Minha Conta apresenta pedidos cancelados sem os confundir com pedidos em preparacao", () => {
-  assert.match(accountScript, /const cancelled = \["cancelado", "cancelada", "canceled", "cancelled"\]/);
+  assert.match(accountScript, /\["cancelado", "cancelada", "canceled", "cancelled"\]\.includes\(status\)/);
   assert.match(accountScript, /cancelled \? "Pedido cancelado"/);
   assert.match(accountScript, /account-order-cancelled-note/);
   assert.match(siteStyles, /\.account-order-card\.cancelled/);
-  assert.match(accountHtml, /minha-conta\.js\?v=20260815-1/);
+  assert.match(accountHtml, /minha-conta\.js\?v=20260815-2/);
+});
+
+test("Minha Conta recomenda jogos do catalogo com base na biblioteca do cliente", () => {
+  assert.match(accountHtml, /data-account-recommendations/);
+  assert.match(accountHtml, /data-account-order-filters/);
+  assert.match(accountScript, /fetch\("data\/catalog-lite\.json"/);
+  assert.match(accountScript, /preferredPlatforms\.has\(platform\)/);
+  assert.match(accountScript, /preferredGenres\.has\(genre\)/);
+  assert.match(accountScript, /purchasedNames\.has\(base\)/);
+  assert.match(siteStyles, /\.account-recommendation-grid/);
+  assert.match(siteStyles, /@media \(max-width: 700px\)/);
+  assert.match(accountHtml, /styles\.css\?v=20260815-1/);
 });
