@@ -9,6 +9,9 @@ const script = fs.readFileSync(path.join(root, "admin-pedidos.js"), "utf8");
 const styles = fs.readFileSync(path.join(root, "admin-dashboard.css"), "utf8");
 const presence = fs.readFileSync(path.join(root, "presence.js"), "utf8");
 const presenceFunction = fs.readFileSync(path.join(root, "netlify", "functions", "site-presence.js"), "utf8");
+const accountHtml = fs.readFileSync(path.join(root, "minha-conta.html"), "utf8");
+const accountScript = fs.readFileSync(path.join(root, "minha-conta.js"), "utf8");
+const siteStyles = fs.readFileSync(path.join(root, "styles.css"), "utf8");
 
 test("dashboard administrativo tem navegação enxuta e vistas funcionais", () => {
   ["overview", "orders", "catalog", "customers"].forEach((view) => {
@@ -72,4 +75,12 @@ test("painel restaura a vista e os filtros ao regressar", () => {
   assert.match(script, /function saveUi\(\)/);
   assert.match(script, /window\.localStorage\.setItem/);
   assert.match(script, /setView\(state\.view\)/);
+});
+
+test("Minha Conta apresenta pedidos cancelados sem os confundir com pedidos em preparacao", () => {
+  assert.match(accountScript, /const cancelled = \["cancelado", "cancelada", "canceled", "cancelled"\]/);
+  assert.match(accountScript, /cancelled \? "Pedido cancelado"/);
+  assert.match(accountScript, /account-order-cancelled-note/);
+  assert.match(siteStyles, /\.account-order-card\.cancelled/);
+  assert.match(accountHtml, /minha-conta\.js\?v=20260815-1/);
 });

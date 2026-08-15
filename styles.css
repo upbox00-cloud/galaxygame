@@ -5430,10 +5430,24 @@ details p {
   color: #52d77f;
 }
 
+.account-order-card.cancelled {
+  border-color: rgba(220, 67, 67, .35);
+}
+
+.account-order-card.cancelled .account-order-top mark {
+  background: rgba(220, 67, 67, .16);
+  color: #ff8585;
+}
+
 .account-order-note {
   background: rgba(255, 255, 255, .05);
   border-radius: 7px;
   padding: 12px;
+}
+
+.account-order-cancelled-note {
+  background: rgba(220, 67, 67, .09);
+  color: #f1c6c6 !important;
 }
 
 @media (max-width: 760px) {

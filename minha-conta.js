@@ -24,12 +24,16 @@
   }
 
   function renderOrder(order) {
-    const sent = normalizeStatus(order.status) === "enviado";
+    const status = normalizeStatus(order.status);
+    const sent = status === "enviado";
+    const cancelled = ["cancelado", "cancelada", "canceled", "cancelled"].includes(status);
+    const visualState = sent ? "sent" : cancelled ? "cancelled" : "pending";
+    const statusLabel = sent ? "Entregue" : cancelled ? "Pedido cancelado" : "Em preparação";
     const isPlayStation = /playstation|\bps\s*[45]\b/i.test(`${order.plataforma || ""} ${order.produto || ""}`);
     const deliveryLabel = isPlayStation ? "Dados da conta partilhada" : "Código de ativação Xbox";
     const copyLabel = isPlayStation ? "Copiar dados" : "Copiar código";
     const article = document.createElement("article");
-    article.className = `account-order-card ${sent ? "sent" : "pending"}`;
+    article.className = `account-order-card ${visualState}`;
     article.innerHTML = `
       <div class="account-order-top">
         <div class="account-order-product">
@@ -39,7 +43,7 @@
           <span>${escapeHtml(order.plataforma || "Plataforma não indicada")}</span>
           </div>
         </div>
-        <mark>${sent ? "Entregue" : "Em preparação"}</mark>
+        <mark>${statusLabel}</mark>
       </div>
       <p>Compra: ${formatDate(order.dataCompra)}</p>
       ${sent ? `
@@ -48,6 +52,8 @@
           <code>${escapeHtml(order.codigo)}</code>
           <button type="button" data-copy-code>${copyLabel}</button>
         </div>
+      ` : cancelled ? `
+        <p class="account-order-note account-order-cancelled-note">Este pedido foi cancelado. Se precisares de ajuda, contacta-nos através de gamegalaxy26@gmail.com.</p>
       ` : `
         <p class="account-order-note">Estamos a preparar a tua entrega. Vais recebê-la por email e também ficará disponível aqui na tua conta.</p>
       `}
