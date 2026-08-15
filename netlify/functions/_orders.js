@@ -6,7 +6,10 @@ const { connectLambda, getStore } = require("@netlify/blobs");
 const AIRTABLE_TABLE = "Pedidos";
 const AIRTABLE_API = "https://api.airtable.com/v0";
 const ORDER_STORE = "galaxygame-orders";
-const defaultOrdersStoreFactory = () => getStore({ name: ORDER_STORE, consistency: "strong" });
+// The Lambda runtime does not expose the uncached edge URL required by
+// Netlify Blobs strong consistency. The default store remains persistent and
+// works in every deployed function that reads or updates an order.
+const defaultOrdersStoreFactory = () => getStore(ORDER_STORE);
 let ordersStoreFactory = defaultOrdersStoreFactory;
 let catalogCache = null;
 
@@ -234,7 +237,7 @@ function fieldsToBlobOrder(fields, current = {}) {
 
 async function getBlobOrderBySessionId(sessionId) {
   if (!sessionId) return null;
-  const value = await ordersStore().get(blobOrderKey(sessionId), { type: "json", consistency: "strong" });
+  const value = await ordersStore().get(blobOrderKey(sessionId), { type: "json" });
   return normalizeBlobOrder(value);
 }
 
@@ -253,7 +256,7 @@ async function listBlobOrders({ email = "", status = "", maxRecords = 100 } = {}
   const store = ordersStore();
   const page = await store.list({ prefix: "orders/" });
   const keys = page.blobs.slice(0, 1000).map((blob) => blob.key);
-  const values = await Promise.all(keys.map((key) => store.get(key, { type: "json", consistency: "strong" })));
+  const values = await Promise.all(keys.map((key) => store.get(key, { type: "json" })));
   const normalizedEmail = String(email || "").trim().toLowerCase();
   return values
     .map(normalizeBlobOrder)
