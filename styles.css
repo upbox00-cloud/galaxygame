@@ -16,6 +16,12 @@
   box-sizing: border-box;
 }
 
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
 html {
   background: var(--bg);
 }
@@ -3273,6 +3279,7 @@ details p {
 }
 
 .footer-brand,
+.footer-links,
 .footer-trust,
 .footer-payments {
   min-width: 0;
@@ -3289,6 +3296,20 @@ details p {
   width: min(270px, 100%);
   height: auto;
   filter: drop-shadow(0 12px 28px rgba(126, 87, 255, 0.2));
+}
+
+.footer-brand p,
+.footer-links a,
+.trust-seal strong,
+.trust-seal small {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1180px) and (min-width: 861px) {
+  .site-footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-inline: 5vw;
+  }
 }
 
 .footer-trust h2,

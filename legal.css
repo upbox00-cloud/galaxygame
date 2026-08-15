@@ -19,6 +19,8 @@ html {
 }
 
 body.legal-page {
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   color: var(--text);
   background: var(--page-bg);
@@ -270,15 +272,35 @@ body.legal-page {
   display: grid;
   grid-template-columns: minmax(190px, 1fr) minmax(160px, 0.8fr) minmax(260px, 1.2fr) minmax(280px, 1.15fr);
   gap: 28px;
-  padding: 38px 6vw 26px;
+  width: 100%;
+  max-width: none;
+  padding: 38px max(24px, calc((100% - 1120px) / 2)) 26px;
   border-top: 1px solid var(--line);
   background: #141414;
 }
 
 .footer-brand,
+.footer-links,
 .footer-trust,
 .footer-payments {
   min-width: 0;
+}
+
+.footer-logo-link {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.footer-logo {
+  display: block;
+  width: min(240px, 100%);
+  height: auto;
+  max-height: 82px;
+  object-fit: contain;
+  object-position: left center;
+  filter: drop-shadow(0 12px 28px rgba(126, 87, 255, 0.2));
 }
 
 .footer-brand strong {
@@ -294,6 +316,7 @@ body.legal-page {
 .footer-copy,
 .trust-seal small {
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 
 .footer-links,
@@ -589,6 +612,10 @@ body.legal-page {
     grid-template-columns: 1fr;
   }
 
+  .legal-footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .legal-index {
     position: static;
   }
@@ -622,6 +649,11 @@ body.legal-page {
   .legal-footer {
     grid-template-columns: 1fr;
     gap: 24px;
+    padding: 30px 18px 92px;
+  }
+
+  .footer-logo {
+    width: min(230px, 76vw);
   }
 
   .payment-methods {

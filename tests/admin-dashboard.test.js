@@ -94,5 +94,5 @@ test("Minha Conta recomenda jogos do catalogo com base na biblioteca do cliente"
   assert.match(accountScript, /purchasedNames\.has\(base\)/);
   assert.match(siteStyles, /\.account-recommendation-grid/);
   assert.match(siteStyles, /@media \(max-width: 700px\)/);
-  assert.match(accountHtml, /styles\.css\?v=20260815-1/);
+  assert.match(accountHtml, /styles\.css\?v=20260815-2/);
 });

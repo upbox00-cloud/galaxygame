@@ -2,7 +2,9 @@
   const footer = document.querySelector(".site-footer, .legal-footer");
   if (!footer) return;
 
-  footer.classList.add("enhanced-footer");
+  // Use one layout hook on store and legal pages so injected content never
+  // inherits the compact legacy footer structure.
+  footer.classList.add("site-footer", "enhanced-footer");
   footer.innerHTML = `
     <div class="footer-brand">
       <a class="footer-logo-link" href="index.html" aria-label="GalaxyGame - pagina inicial">
