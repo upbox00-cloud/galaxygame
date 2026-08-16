@@ -141,14 +141,17 @@
   aspect-ratio: 16 / 9;
   border: 0;
   border-radius: var(--radius);
-  background: linear-gradient(135deg, #2b2933, #17171b 68%);
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   box-shadow: 0 20px 44px rgba(0, 0, 0, 0.34);
   cursor: zoom-in;
 }
 
 .cover-art.supplier-cover-clean {
-  background-position: center 60%;
-  background-size: 118% auto;
+  background-position: center;
+  background-size: contain;
 }
 
 .buy-panel {

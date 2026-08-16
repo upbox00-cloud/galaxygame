@@ -10,7 +10,7 @@ const produtoStyles = fs.readFileSync(path.join(root, "produto.css"), "utf8");
 
 test("product page never flashes the GTA VI artwork for another game", () => {
   assert.match(produtoHtml, /class="product-page product-loading"/);
-  assert.match(produtoHtml, /produto\.css\?v=20260811-1/);
+  assert.match(produtoHtml, /produto\.css\?v=20260816-2/);
   assert.match(produtoHtml, /produto\.js\?v=20260816-1/);
   assert.match(produtoSource, /document\.body\.classList\.remove\("product-loading"\)/);
   assert.match(produtoSource, /"assets\/site-cosmic-gaming-bg\.webp"/);
@@ -19,6 +19,15 @@ test("product page never flashes the GTA VI artwork for another game", () => {
   const coverRule = produtoStyles.match(/\.cover-art\s*\{[\s\S]*?\n\}/)?.[0] || "";
   assert.doesNotMatch(heroRule, /gta-vi/i);
   assert.doesNotMatch(coverRule, /gta-vi/i);
+});
+
+test("product cover always fits inside its natural aspect ratio without cropping", () => {
+  const supplierCoverRule = produtoStyles.match(/\.cover-art\.supplier-cover-clean\s*\{([^}]*)\}/)?.[1] || "";
+  assert.match(produtoStyles, /\.cover-art\s*\{[\s\S]*?background-position:\s*center;/);
+  assert.match(produtoStyles, /\.cover-art\s*\{[\s\S]*?background-size:\s*contain;/);
+  assert.match(produtoStyles, /\.cover-art\s*\{[\s\S]*?background-repeat:\s*no-repeat;/);
+  assert.match(supplierCoverRule, /background-size:\s*contain/);
+  assert.doesNotMatch(supplierCoverRule, /118%/);
 });
 
 test("initProductPage liga os botões de compra mesmo que uma etapa de render falhe", () => {
