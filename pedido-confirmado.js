@@ -18,6 +18,7 @@
   let requestInFlight = false;
   async function validateAndTrack(user) {
     if (!user || requestInFlight) return;
+    if (!window.GalaxyGameConsent?.hasMarketingConsent()) return;
     try {
       if (window.sessionStorage.getItem(storageKey) === "tracked") return;
     } catch {
@@ -56,5 +57,8 @@
 
   identity.on("init", validateAndTrack);
   identity.on("login", validateAndTrack);
+  window.addEventListener("galaxygame:consent", (event) => {
+    if (event.detail?.choice === "accepted") validateAndTrack(identity.currentUser?.());
+  });
   validateAndTrack(identity.currentUser?.());
 })();

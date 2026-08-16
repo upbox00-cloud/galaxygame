@@ -576,6 +576,34 @@ body.legal-page {
   }
 }
 
+.legal-consent-button {
+  min-height: 44px;
+  margin-top: 10px;
+  padding: 0 18px;
+  border: 1px solid #ff681f;
+  border-radius: 6px;
+  background: #ff681f;
+  color: #111;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.legal-consent-button:hover,
+.legal-consent-button:focus-visible {
+  filter: brightness(1.08);
+  outline: 2px solid #a470ff;
+  outline-offset: 2px;
+}
+
+.legal-note {
+  margin-top: 14px;
+  padding: 14px;
+  border-left: 3px solid #7d55aa;
+  background: rgba(125, 85, 170, 0.1);
+  color: var(--legal-muted);
+}
+
 @media (max-width: 850px) {
   .legal-header {
     align-items: center;

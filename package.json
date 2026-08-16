@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "netlify dev --offline --no-open --port 8890 --functions-port 3998 --staticServerPort 3997",
-    "test": "node --test --test-isolation=none tests/chat.test.js tests/auth.test.js tests/orders.test.js tests/produto.test.js tests/admin-dashboard.test.js tests/responsive.test.js tests/meta-pixel.test.js",
+    "test": "node --test --test-isolation=none tests/chat.test.js tests/auth.test.js tests/orders.test.js tests/produto.test.js tests/admin-dashboard.test.js tests/responsive.test.js tests/meta-pixel.test.js tests/cookie-consent.test.js tests/pricing.test.js",
     "check:links": "node scripts/check-local-links.js",
     "check:launch": "node scripts/check-launch-readiness.js && npm run check:links && npm run check:netlify",
     "scrape:fornecedor": "node scripts/scrape-fornecedor.js",
@@ -25,6 +25,7 @@
     "enrich:news": "node scripts/enrich-news.js",
     "scrape:concorrente": "node scripts/scrape-concorrente.js",
     "gerar:precos": "node scripts/gerar-precos.js",
+    "precos:preview": "node scripts/gerar-precos.js --dry-run --sample=15",
     "relatorio": "node scripts/relatorio-margem.js",
     "atualizar:catalogo": "npm run scrape:all && npm run enrich:steamgriddb && npm run curadoria && npm run catalogo:lite && npm run youtube:diario",
     "agendar:catalogo": "powershell -ExecutionPolicy Bypass -File scripts/agendar-atualizacao-catalogo.ps1",

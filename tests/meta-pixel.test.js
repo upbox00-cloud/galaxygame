@@ -18,9 +18,11 @@ test("eventos Meta acompanham apenas passos reais do funil", () => {
 });
 
 test("Purchase valida no servidor e nao repete na mesma sessao do navegador", () => {
-  assert.match(confirmationHtml, /pedido-confirmado\.js\?v=20260816-1/);
+  assert.match(confirmationHtml, /pedido-confirmado\.js\?v=20260816-2/);
   assert.match(confirmationSource, /\.netlify\/functions\/confirmar-compra\?session_id=/);
   assert.match(confirmationSource, /sessionStorage\.getItem\(storageKey\) === "tracked"/);
+  assert.match(confirmationSource, /GalaxyGameConsent\?\.hasMarketingConsent\(\)/);
+  assert.match(confirmationSource, /galaxygame:consent/);
   assert.match(confirmationSource, /window\.fbq\("track", "Purchase"/);
   assert.ok(confirmationSource.indexOf("window.fbq") < confirmationSource.indexOf("sessionStorage.setItem"));
 });
