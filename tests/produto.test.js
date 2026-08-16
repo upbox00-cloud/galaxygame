@@ -11,7 +11,7 @@ const produtoStyles = fs.readFileSync(path.join(root, "produto.css"), "utf8");
 test("product page never flashes the GTA VI artwork for another game", () => {
   assert.match(produtoHtml, /class="product-page product-loading"/);
   assert.match(produtoHtml, /produto\.css\?v=20260811-1/);
-  assert.match(produtoHtml, /produto\.js\?v=20260811-2/);
+  assert.match(produtoHtml, /produto\.js\?v=20260816-1/);
   assert.match(produtoSource, /document\.body\.classList\.remove\("product-loading"\)/);
   assert.match(produtoSource, /"assets\/site-cosmic-gaming-bg\.webp"/);
 

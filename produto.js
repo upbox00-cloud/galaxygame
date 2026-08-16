@@ -220,6 +220,15 @@ function showToast(message, duration = 1900) {
   showToast.timer = window.setTimeout(() => toast.classList.remove("show"), duration);
 }
 
+function trackMetaEvent(eventName, parameters) {
+  if (typeof window.fbq !== "function") return;
+  try {
+    window.fbq("track", eventName, parameters);
+  } catch (error) {
+    console.warn(`[meta-pixel] falha ao enviar ${eventName}`, error);
+  }
+}
+
 function isPreorderProduct(product) {
   if (product.preorder === true) return true;
   if (/(^|\s)(ea sports\s*)?fc\s*27(\s|$)/i.test(String(product.nome || product.name || ""))) return true;
@@ -248,6 +257,17 @@ function addToCart(product) {
       [{ transform: "scale(1)" }, { transform: "scale(1.18)" }, { transform: "scale(1)" }],
       { duration: 320, easing: "cubic-bezier(.2,.8,.2,1)" }
     );
+  }
+  if (added) {
+    const value = Number(product.precoVendaEUR || 0);
+    trackMetaEvent("AddToCart", {
+      content_ids: [String(product.id)],
+      content_name: productName,
+      content_type: "product",
+      contents: [{ id: String(product.id), quantity: 1, item_price: value }],
+      value,
+      currency: "EUR"
+    });
   }
   showToast(added ? `${productName} adicionado ao carrinho` : `${productName} já está no carrinho`);
 }
@@ -355,6 +375,15 @@ async function buyNow(product) {
     return;
   }
 
+  const value = Number(product.precoVendaEUR || 0);
+  trackMetaEvent("InitiateCheckout", {
+    content_ids: [String(product.id)],
+    content_type: "product",
+    contents: [{ id: String(product.id), quantity: 1, item_price: value }],
+    num_items: 1,
+    value,
+    currency: "EUR"
+  });
   window.location.href = data.checkoutUrl;
 }
 

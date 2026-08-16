@@ -10,6 +10,7 @@ const updateOrderStatus = require("../netlify/functions/atualizar-pedido-status"
 const sendOrder = require("../netlify/functions/marcar-pedido-enviado");
 const customerOrders = require("../netlify/functions/meus-pedidos");
 const sitePresence = require("../netlify/functions/site-presence");
+const confirmPurchase = require("../netlify/functions/confirmar-compra");
 
 function signedEvent(body, secret, timestamp = Math.floor(Date.now() / 1000)) {
   const signature = crypto.createHmac("sha256", secret).update(`${timestamp}.${body}`).digest("hex");
@@ -202,6 +203,58 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
     else process.env.STRIPE_SECRET_KEY = previousSecret;
     if (previousMethods === undefined) delete process.env.STRIPE_PAYMENT_METHOD_TYPES;
     else process.env.STRIPE_PAYMENT_METHOD_TYPES = previousMethods;
+  }
+});
+
+test("Purchase so recebe valor depois de validar pagamento e cliente no Stripe", async () => {
+  const previousSecret = process.env.STRIPE_SECRET_KEY;
+  const originalFetch = global.fetch;
+  process.env.STRIPE_SECRET_KEY = "sk_test_only";
+  const context = { clientContext: { user: { email: "cliente@example.com" } } };
+  const event = {
+    httpMethod: "GET",
+    queryStringParameters: { session_id: "cs_test_sessaoSegura123" }
+  };
+
+  try {
+    global.fetch = async () => new Response(JSON.stringify({
+      id: "cs_test_sessaoSegura123",
+      payment_status: "paid",
+      amount_total: 5799,
+      currency: "eur",
+      customer_details: { email: "CLIENTE@example.com" }
+    }), { status: 200, headers: { "content-type": "application/json" } });
+    const accepted = await confirmPurchase.handler(event, context);
+    assert.equal(accepted.statusCode, 200);
+    assert.deepEqual(JSON.parse(accepted.body), {
+      value: 57.99,
+      currency: "EUR",
+      transactionId: "cs_test_sessaoSegura123"
+    });
+
+    global.fetch = async () => new Response(JSON.stringify({
+      id: "cs_test_sessaoSegura123",
+      payment_status: "paid",
+      amount_total: 5799,
+      currency: "eur",
+      customer_details: { email: "outra-pessoa@example.com" }
+    }), { status: 200, headers: { "content-type": "application/json" } });
+    const wrongCustomer = await confirmPurchase.handler(event, context);
+    assert.equal(wrongCustomer.statusCode, 403);
+
+    global.fetch = async () => new Response(JSON.stringify({
+      id: "cs_test_sessaoSegura123",
+      payment_status: "unpaid",
+      amount_total: 5799,
+      currency: "eur",
+      customer_details: { email: "cliente@example.com" }
+    }), { status: 200, headers: { "content-type": "application/json" } });
+    const unpaid = await confirmPurchase.handler(event, context);
+    assert.equal(unpaid.statusCode, 409);
+  } finally {
+    global.fetch = originalFetch;
+    if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousSecret;
   }
 });
 

@@ -22,6 +22,15 @@
     return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR" }).format(Number(value || 0));
   }
 
+  function trackMetaEvent(eventName, parameters) {
+    if (typeof window.fbq !== "function") return;
+    try {
+      window.fbq("track", eventName, parameters);
+    } catch (error) {
+      console.warn(`[meta-pixel] falha ao enviar ${eventName}`, error);
+    }
+  }
+
   function escapeHtml(value) {
     return String(value ?? "")
       .replace(/&/g, "&amp;")
@@ -225,6 +234,20 @@
           throw new Error("login_required");
         }
         if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
+        const items = readCart();
+        const checkoutValue = Number(total(items).toFixed(2));
+        trackMetaEvent("InitiateCheckout", {
+          content_ids: items.map((item) => String(item.id)),
+          content_type: "product",
+          contents: items.map((item) => ({
+            id: String(item.id),
+            quantity: 1,
+            item_price: Number(item.price || 0)
+          })),
+          num_items: items.length,
+          value: checkoutValue,
+          currency: "EUR"
+        });
         window.location.assign(data.checkoutUrl);
       } catch (error) {
         console.error("[checkout]", error.message);
