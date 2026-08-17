@@ -1945,6 +1945,49 @@ body.password-recovery-open .sales-chat {
   line-height: 1;
 }
 
+.hero-release-countdown {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 3px 14px;
+  width: min(390px, 100%);
+  margin: 0 0 18px;
+  border-left: 3px solid var(--orange);
+  border-radius: 0 6px 6px 0;
+  padding: 9px 12px;
+  background: rgba(11, 10, 15, 0.78);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(8px);
+}
+
+.hero-release-countdown .release-countdown-label {
+  color: #ff9d56;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero-release-countdown strong {
+  grid-column: 1 / -1;
+  color: #fff;
+  font-size: clamp(21px, 2vw, 28px);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.hero-release-countdown time {
+  grid-column: 2;
+  grid-row: 1;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.hero-release-countdown[data-countdown-state="unknown"] strong,
+.hero-release-countdown[data-countdown-state="released"] strong {
+  color: #ffb47c;
+}
+
 .content-section {
   width: min(1120px, 86vw);
   margin: 0 auto;
@@ -2298,6 +2341,53 @@ body.password-recovery-open .sales-chat {
 
 .catalog-card .cover::before {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.72), transparent 50%);
+}
+
+.release-countdown-card {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2px 8px;
+  min-height: 46px;
+  border: 1px solid rgba(255, 122, 24, 0.62);
+  border-radius: 6px;
+  padding: 7px 9px;
+  background: rgba(12, 10, 17, 0.9);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(8px);
+}
+
+.release-countdown-card .release-countdown-label {
+  color: #ff9b50;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.release-countdown-card strong {
+  grid-column: 1 / -1;
+  color: #fff;
+  font-size: clamp(13px, 1.05vw, 16px);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.release-countdown-card time {
+  grid-column: 2;
+  grid-row: 1;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.release-countdown-card[data-countdown-state="unknown"] strong,
+.release-countdown-card[data-countdown-state="released"] strong {
+  color: #ffb47c;
 }
 
 .game-info {

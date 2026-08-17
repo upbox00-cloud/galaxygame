@@ -597,6 +597,10 @@
 .admin-order-details a { color: #34353a; }
 .admin-order-session { grid-column: 1 / -1; }
 .admin-order-session dd { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: Consolas, monospace; font-size: 12px; }
+.admin-order-supplier { display: grid; gap: 4px; margin-top: 16px; border: 1px solid #e2d8ec; border-radius: 6px; background: #faf7fd; padding: 12px; }
+.admin-order-supplier span { color: #79539d; font-size: 10px; font-weight: 900; text-transform: uppercase; }
+.admin-order-supplier small { color: var(--admin-muted); }
+.admin-order-supplier a { width: fit-content; color: #6a3e94; font-weight: 900; }
 .admin-order-action { border-left: 1px solid #e2e2e5; padding-left: 20px; }
 .admin-send-form label { display: grid; gap: 7px; color: #55565d; font-size: 13px; font-weight: 900; }
 .admin-orders-page .admin-send-form textarea {
@@ -646,6 +650,11 @@
 .admin-catalog-item small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .admin-catalog-item small { margin-top: 5px; color: var(--admin-muted); }
 .admin-catalog-item > strong { color: #553986; }
+.admin-catalog-copy a { color: var(--admin-text); text-decoration: none; }
+.admin-catalog-copy mark { display: inline-block; margin-top: 6px; border-radius: 4px; background: #fff0e6; color: #b94e08; padding: 4px 6px; font-size: 10px; font-weight: 900; }
+.admin-catalog-price { display: grid; justify-items: end; gap: 6px; }
+.admin-catalog-price a { color: #6a3e94; font-size: 11px; font-weight: 900; }
+.admin-catalog-warning { border-left: 3px solid #ff6a00; padding-left: 9px; }
 .admin-customer-row { display: grid; grid-template-columns: minmax(200px, 1.4fr) repeat(3, minmax(100px, .6fr)); gap: 16px; align-items: center; border-top: 1px solid #ececef; padding: 14px 0; }
 .admin-customer-row:first-child { border-top: 0; }
 .admin-customer-row > div { min-width: 0; }
@@ -728,7 +737,7 @@
   .admin-order-session dd { max-width: calc(100vw - 80px); }
   .admin-action-row { display: grid; }
   .admin-catalog-item { grid-template-columns: 48px minmax(0, 1fr); }
-  .admin-catalog-item > strong { grid-column: 2; }
+  .admin-catalog-price { grid-column: 2; justify-items: start; }
   .admin-catalog-item img { width: 44px; height: 52px; }
   .admin-customer-row { grid-template-columns: 1fr 1fr; gap: 10px; }
   .admin-customer-row > div { grid-column: 1 / -1; }

@@ -102,6 +102,10 @@
     return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR" }).format(Number(value || 0));
   }
 
+  function formatBRL(value) {
+    return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(Number(value || 0));
+  }
+
   function setNotice(message = "", tone = "info") {
     if (!notice) return;
     notice.hidden = !message;
@@ -427,6 +431,7 @@
   }
 
   function orderDetails(order) {
+    const supplier = order.fornecedor ? `<aside class="admin-order-supplier"><span>Comprar no fornecedor</span><strong>${escapeHtml(order.fornecedor)}</strong><small>Custo Pix usado: ${escapeHtml(formatBRL(order.custoFornecedorBRL))}</small>${order.linkFornecedor ? `<a href="${escapeHtml(order.linkFornecedor)}" target="_blank" rel="noopener">Abrir produto no fornecedor</a>` : ""}</aside>` : "";
     return `<dl class="admin-order-details">
       <div><dt>Cliente</dt><dd>${escapeHtml(order.clienteNome || "Nome não indicado")}</dd></div>
       <div><dt>Email</dt><dd><a href="mailto:${escapeHtml(order.clienteEmail)}">${escapeHtml(order.clienteEmail || "Email não indicado")}</a></dd></div>
@@ -434,7 +439,7 @@
       <div><dt>Valor pago</dt><dd>${formatPrice(order.valorPagoEUR)}</dd></div>
       <div><dt>Data</dt><dd>${formatDate(order.dataCompra)}</dd></div>
       <div class="admin-order-session"><dt>Sessão Stripe</dt><dd title="${escapeHtml(order.stripeSessionId)}">${escapeHtml(order.stripeSessionId || "Sem sessão")}</dd></div>
-    </dl>`;
+    </dl>${supplier}`;
   }
 
   function orderCard(order) {
@@ -530,11 +535,11 @@
     const container = document.querySelector("[data-admin-catalog-list]");
     if (!container) return;
     container.innerHTML = products.length ? products.map((product) => `
-      <a class="admin-catalog-item" href="produto.html?id=${encodeURIComponent(product.id)}" target="_blank" rel="noopener">
+      <article class="admin-catalog-item${product.naoFoiPossivelIgualarConcorrente ? " admin-catalog-warning" : ""}">
         <img src="${escapeHtml(productImage(product))}" alt="" loading="lazy" />
-        <div><strong title="${escapeHtml(product.nome)}">${escapeHtml(product.nome)}</strong><small>${escapeHtml(product.plataforma)} · ${(product.genres || []).slice(0, 2).map(escapeHtml).join(", ") || "Sem género"}</small></div>
-        <strong>${escapeHtml(formatPrice(product.precoVendaEUR))}</strong>
-      </a>`).join("") : '<div class="admin-empty">Nenhum produto encontrado.</div>';
+        <div class="admin-catalog-copy"><a href="produto.html?id=${encodeURIComponent(product.id)}" target="_blank" rel="noopener"><strong title="${escapeHtml(product.nome)}">${escapeHtml(product.nome)}</strong></a><small>${escapeHtml(product.plataforma)} · ${(product.genres || []).slice(0, 2).map(escapeHtml).join(", ") || "Sem género"}</small><small>${escapeHtml(product.fornecedorSelecionado || "Fornecedor não definido")} · custo Pix ${escapeHtml(formatBRL(product.custoFornecedorBRL))}</small>${product.naoFoiPossivelIgualarConcorrente ? '<mark>Não foi possível igualar o concorrente</mark>' : ""}</div>
+        <div class="admin-catalog-price"><strong>${escapeHtml(formatPrice(product.precoVendaEUR))}</strong>${product.linkFornecedorSelecionado ? `<a href="${escapeHtml(product.linkFornecedorSelecionado)}" target="_blank" rel="noopener">Fornecedor</a>` : ""}</div>
+      </article>`).join("") : '<div class="admin-empty">Nenhum produto encontrado.</div>';
   }
 
   function updateCatalogSummary() {
@@ -589,9 +594,8 @@
 
   async function loadCatalog() {
     try {
-      const response = await fetch("data/catalog-lite.json", { cache: "no-store" });
-      if (!response.ok) throw new Error(`Catálogo respondeu ${response.status}`);
-      state.catalog = await response.json();
+      const data = await apiRequest("/.netlify/functions/admin-catalogo");
+      state.catalog = data.produtos || [];
       updateCatalogSummary();
       renderCatalog();
     } catch (error) {

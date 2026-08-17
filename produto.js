@@ -7,6 +7,7 @@ const fallbackProducts = [
     plataforma: "PlayStation 5",
     precoVendaEUR: 57.99,
     precoOriginalEUR: 79.99,
+    released: "2026-11-19",
     trailer: "https://www.youtube.com/embed/QdBZY2fkU-0",
     screenshots: [
       "assets/gta-vi-visual-beach-5k.webp",
@@ -29,6 +30,7 @@ const fallbackProducts = [
     plataforma: "Xbox Series X|S",
     precoVendaEUR: 69.99,
     precoOriginalEUR: 74.99,
+    released: "2026-11-19",
     trailer: "https://www.youtube.com/embed/QdBZY2fkU-0",
     screenshots: [
       "assets/gta-vi-visual-beach-5k.webp",
@@ -493,8 +495,31 @@ function renderHero(product) {
     : "Digital";
   document.querySelector(".price-line strong").textContent = formatEUR(product.precoVendaEUR);
   document.querySelector(".buy-button").textContent = isPreorderProduct(product) ? "Pré-venda" : "Comprar agora";
+  renderProductCountdown(product);
   renderMobileBuyBar(product);
   renderBackground(product);
+}
+
+function renderProductCountdown(product) {
+  const countdown = document.querySelector("[data-product-countdown]");
+  if (!countdown) return;
+
+  if (!isPreorderProduct(product)) {
+    countdown.hidden = true;
+    countdown.removeAttribute("data-release-countdown");
+    return;
+  }
+
+  const released = /^\d{4}-\d{2}-\d{2}$/.test(String(product.released || "")) ? product.released : "";
+  countdown.dataset.releaseCountdown = released;
+  countdown.hidden = false;
+
+  const refresh = () => window.GalaxyCountdown?.refresh(countdown);
+  if (window.GalaxyCountdown) {
+    refresh();
+  } else {
+    window.addEventListener("galaxy-countdown-ready", refresh, { once: true });
+  }
 }
 
 function renderMobileBuyBar(product) {
@@ -847,6 +872,7 @@ function renderProductGrid(container, products) {
           <img alt="" loading="lazy">
           <span class="tag">${escapeHtml(discountPercent(item))}</span>
           ${productPlatformBadgeHtml(item)}
+          ${productPreorderCountdownHtml(item)}
         </div>
         <h3>${escapeHtml(cleanProductTitle(item.nome))}</h3>
         <strong>${formatEUR(item.precoVendaEUR)}</strong>
@@ -869,6 +895,19 @@ function renderProductGrid(container, products) {
     });
     setImageSource(candidates[0]);
   });
+  window.GalaxyCountdown?.refresh(container);
+}
+
+function productPreorderCountdownHtml(product) {
+  if (!isPreorderProduct(product)) return "";
+  const released = /^\d{4}-\d{2}-\d{2}$/.test(String(product.released || "")) ? product.released : "";
+  return `
+    <div class="release-countdown release-countdown-card" data-release-countdown="${escapeHtml(released)}" aria-label="Contagem decrescente para o lancamento">
+      <span class="release-countdown-label">Lan&ccedil;amento em</span>
+      <strong data-countdown-value>Data a confirmar</strong>
+      <time data-countdown-date${released ? ` datetime="${released}"` : ""}></time>
+    </div>
+  `;
 }
 
 function renderRelated(products, current) {

@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { json, getUserEmail, getUserName } = require("./_orders");
+const commercialCatalog = require("./_data/catalogo-comercial.json");
 
 const SPECIAL_PRODUCTS = [
   {
@@ -23,7 +24,11 @@ function loadCatalog() {
   if (catalogById) return catalogById;
   const file = path.resolve(__dirname, "..", "..", "data", "catalog-lite.json");
   const products = JSON.parse(fs.readFileSync(file, "utf8"));
-  catalogById = new Map([...products, ...SPECIAL_PRODUCTS].map((product) => [product.id, product]));
+  const commercialById = new Map(commercialCatalog.map((product) => [product.id, product]));
+  catalogById = new Map([...products, ...SPECIAL_PRODUCTS].map((product) => [
+    product.id,
+    { ...product, ...(commercialById.get(product.id) || {}) }
+  ]));
   return catalogById;
 }
 
@@ -105,6 +110,11 @@ async function createStripeCheckout(products, customer, cancelPath) {
     params.set(`${prefix}[price_data][product_data][images][0]`, productImageUrl(product));
     params.set(`${prefix}[price_data][product_data][metadata][product_id]`, product.id);
     params.set(`${prefix}[price_data][product_data][metadata][platform]`, product.plataforma || "Consola");
+    if (product.fornecedorSelecionado) {
+      params.set(`${prefix}[price_data][product_data][metadata][supplier]`, product.fornecedorSelecionado);
+      params.set(`${prefix}[price_data][product_data][metadata][supplier_cost_brl]`, String(product.custoFornecedorBRL || ""));
+      params.set(`${prefix}[price_data][product_data][metadata][supplier_url]`, product.linkFornecedorSelecionado || "");
+    }
   });
 
   let { response, data } = await requestStripeCheckout(params, secret);

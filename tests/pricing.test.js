@@ -38,6 +38,28 @@ test("missing competitor uses 25 percent instead of the old 50 percent markup", 
   assert.equal(result.taxaStripeConsiderada, true);
 });
 
+test("the cheapest Pix supplier is always selected", () => {
+  const product = {
+    id: "ea-sports-fc-26-ps5",
+    nome: "EA SPORTS FC 26 - PS5",
+    plataforma: "PlayStation 5",
+    precoAtualBRL: 159.9,
+    precoPixBRL: 148.71,
+    linkFornecedor: "https://www.alphagames.com.br/fc-26"
+  };
+  const commercial = {
+    precoConcorrenteEUR: 9.99,
+    fornecedores: {
+      tca: { nome: "TCA Games", custoPixBRL: 47.4, url: "https://www.lojatcagames.com.br/products/fc-26-ps5" }
+    }
+  };
+  const result = _test.makeFinalProduct(product, null, 0.17264, null, commercial);
+  assert.equal(result.fornecedorSelecionado, "TCA Games");
+  assert.equal(result.custoFornecedorBRL, 47.4);
+  assert.equal(result.precoVendaEUR, 10.99);
+  assert.equal(result.abaixoDoConcorrente, true);
+});
+
 test("dry run option is explicit and sample size is limited", () => {
   assert.deepEqual(_test.readCliOptions(["--dry-run", "--sample=12"]), {
     dryRun: true,

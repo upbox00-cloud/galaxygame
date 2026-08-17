@@ -49,12 +49,23 @@ test("gestão de pedidos continua ligada às functions protegidas", () => {
 });
 
 test("catálogo e clientes usam os dados existentes da loja", () => {
-  assert.match(script, /fetch\("data\/catalog-lite\.json"/);
+  assert.match(script, /apiRequest\("\/\.netlify\/functions\/admin-catalogo"\)/);
+  assert.match(script, /Não foi possível igualar o concorrente/);
   assert.match(script, /function updateCatalogSummary\(\)/);
   assert.match(script, /function customerData\(\)/);
   assert.match(script, /activeSales\(state\.orders\)/);
   assert.match(html, /data-admin-catalog-list/);
   assert.match(html, /data-admin-customer-list/);
+});
+
+test("pedidos antigos recuperam o fornecedor mais barato pelo catálogo privado", () => {
+  const adminOrdersFunction = fs.readFileSync(path.join(root, "netlify", "functions", "admin-pedidos.js"), "utf8");
+  const commercialResolver = fs.readFileSync(path.join(root, "netlify", "functions", "_commercial-catalog.js"), "utf8");
+
+  assert.match(adminOrdersFunction, /supplierForOrder\(pedido\)/);
+  assert.match(commercialResolver, /fornecedorSelecionado/);
+  assert.match(commercialResolver, /linkFornecedorSelecionado/);
+  assert.match(commercialResolver, /custoFornecedorBRL/);
 });
 
 test("painel apresenta visitantes ativos com presença anónima protegida", () => {

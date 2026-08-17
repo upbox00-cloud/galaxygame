@@ -6,3 +6,17 @@
 [functions]
   node_bundler = "esbuild"
   included_files = ["data/*.json"]
+
+# Commercial costs are consumed by server functions only. The public catalog
+# deliberately contains sale prices without supplier or competitor data.
+[[redirects]]
+  from = "/netlify/functions/_data/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/scripts/.internal/*"
+  to = "/404.html"
+  status = 404
+  force = true

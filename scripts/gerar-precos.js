@@ -11,6 +11,8 @@ const { isExcludedProduct } = require("./product-exclusions");
 
 const INTERNAL_DIR = path.join(__dirname, ".internal");
 const INTERNAL_PRICE_FILE = path.join(INTERNAL_DIR, "catalogo-precos-internos.json");
+const COMMERCIAL_CONFIG_FILE = path.resolve(__dirname, "../netlify/functions/_data/produtos-comerciais.json");
+const COMMERCIAL_CATALOG_FILE = path.resolve(__dirname, "../netlify/functions/_data/catalogo-comercial.json");
 const EXCHANGE_CACHE_FILE = path.join(INTERNAL_DIR, "cambio-brl-eur.json");
 const EXCHANGE_API_URL = "https://open.er-api.com/v6/latest/BRL";
 const PRICING_CONFIG = Object.freeze({
@@ -20,7 +22,8 @@ const PRICING_CONFIG = Object.freeze({
   minimumMarkup: 0.22,
   noCompetitorMarkup: 0.25,
   stripePercentageFee: 0.029,
-  stripeFixedFeeEUR: 0.25
+  stripeFixedFeeEUR: 0.25,
+  competitorUndercutEUR: 0
 });
 
 function validStoredTrailer(value) {
@@ -97,12 +100,61 @@ function minimumSalePrice(cost, markup) {
   return roundUpTo99(priceIncludingStripe(cost * (1 + markup)));
 }
 
-function makeFinalProduct(product, competitor, rate, previous = null) {
-  const custoFornecedorBRL = Number(product.precoAtualBRL || product.custoFornecedorBRL || 0);
+function readCommercialConfig() {
+  try {
+    return JSON.parse(fs.readFileSync(COMMERCIAL_CONFIG_FILE, "utf8"));
+  } catch (error) {
+    console.warn(`[Precos] Configuracao comercial indisponivel: ${error.message}`);
+    return {};
+  }
+}
+
+function supplierCandidates(product, commercial = {}) {
+  const configured = commercial.fornecedores || {};
+  const alphaOverride = configured.alpha || {};
+  const alphaCost = Number(alphaOverride.custoPixBRL || product.precoPixBRL || product.precoAtualBRL || 0);
+  const candidates = [{
+    id: "alpha",
+    nome: alphaOverride.nome || "Alpha Games",
+    custoPixBRL: alphaCost,
+    custoSemPixBRL: Number(alphaOverride.custoSemPixBRL || product.precoSemPixBRL || product.precoAtualBRL || alphaCost),
+    url: alphaOverride.url || product.linkFornecedor || ""
+  }];
+  if (configured.tca) {
+    candidates.push({
+      id: "tca",
+      nome: configured.tca.nome || "TCA Games",
+      custoPixBRL: Number(configured.tca.custoPixBRL || 0),
+      custoSemPixBRL: Number(configured.tca.custoSemPixBRL || configured.tca.custoPixBRL || 0),
+      url: configured.tca.url || ""
+    });
+  }
+  return candidates
+    .filter((supplier) => Number.isFinite(supplier.custoPixBRL) && supplier.custoPixBRL > 0)
+    .sort((a, b) => a.custoPixBRL - b.custoPixBRL);
+}
+
+function competitorPsychologicalPrice(price) {
+  const target = Math.max(0, Number(price || 0) - PRICING_CONFIG.competitorUndercutEUR);
+  if (!target) return 0;
+  return Number(Math.max(0.99, Math.ceil(target) - 0.01).toFixed(2));
+}
+
+function makeFinalProduct(product, competitor, rate, previous = null, commercial = {}) {
+  const fornecedores = supplierCandidates(product, commercial);
+  const fornecedorSelecionado = fornecedores[0] || {
+    id: "alpha",
+    nome: "Alpha Games",
+    custoPixBRL: 0,
+    custoSemPixBRL: 0,
+    url: product.linkFornecedor || ""
+  };
+  const custoFornecedorBRL = fornecedorSelecionado.custoPixBRL;
   const custoFornecedorEUR = Number((custoFornecedorBRL * rate).toFixed(2));
   const precoMinimoEUR = minimumSalePrice(custoFornecedorEUR, PRICING_CONFIG.minimumMarkup);
   const precoSemConcorrenteEUR = minimumSalePrice(custoFornecedorEUR, PRICING_CONFIG.noCompetitorMarkup);
-  const precoConcorrenteEUR = competitor?.sem_referencia ? 0 : Number(competitor?.precoConcorrenteEUR || 0);
+  const configuredCompetitor = Number(commercial.precoConcorrenteEUR || 0);
+  const precoConcorrenteEUR = configuredCompetitor || (competitor?.sem_referencia ? 0 : Number(competitor?.precoConcorrenteEUR || 0));
 
   let precoVendaEUR;
   let abaixoDoConcorrente = false;
@@ -110,7 +162,8 @@ function makeFinalProduct(product, competitor, rate, previous = null) {
 
   if (precoConcorrenteEUR) {
     if (precoConcorrenteEUR >= precoMinimoEUR) {
-      precoVendaEUR = roundUpTo99(precoConcorrenteEUR);
+      precoVendaEUR = competitorPsychologicalPrice(precoConcorrenteEUR);
+      if (precoVendaEUR < precoMinimoEUR) precoVendaEUR = precoMinimoEUR;
       regraPreco = "concorrente";
     } else {
       precoVendaEUR = precoMinimoEUR;
@@ -151,6 +204,10 @@ function makeFinalProduct(product, competitor, rate, previous = null) {
     varianteFornecedorId: product.varianteFornecedorId || "",
     custoFornecedorBRL,
     custoFornecedorEUR,
+    fornecedorSelecionado: fornecedorSelecionado.nome,
+    fornecedorSelecionadoId: fornecedorSelecionado.id,
+    linkFornecedorSelecionado: fornecedorSelecionado.url,
+    fornecedores,
     precoVendaEUR,
     precoOriginalEUR,
     margemReal,
@@ -183,6 +240,10 @@ function makePublicProduct(product) {
   const {
     custoFornecedorBRL,
     custoFornecedorEUR,
+    fornecedorSelecionado,
+    fornecedorSelecionadoId,
+    linkFornecedorSelecionado,
+    fornecedores,
     margemReal,
     taxaStripeEstimadaEUR,
     abaixoDoConcorrente,
@@ -202,6 +263,25 @@ function saveInternalPrices(grouped) {
   const allProducts = Object.values(grouped).flat();
   fs.writeFileSync(INTERNAL_PRICE_FILE, `${JSON.stringify(allProducts, null, 2)}\n`, "utf8");
   console.log(`[Precos] Catalogo interno de margem gravado em scripts/.internal/catalogo-precos-internos.json`);
+}
+
+function saveCommercialCatalog(grouped) {
+  fs.mkdirSync(path.dirname(COMMERCIAL_CATALOG_FILE), { recursive: true });
+  const products = Object.values(grouped).flat().map((product) => ({
+    id: product.id,
+    fornecedorSelecionado: product.fornecedorSelecionado,
+    fornecedorSelecionadoId: product.fornecedorSelecionadoId,
+    custoFornecedorBRL: product.custoFornecedorBRL,
+    custoFornecedorEUR: product.custoFornecedorEUR,
+    linkFornecedorSelecionado: product.linkFornecedorSelecionado,
+    fornecedores: product.fornecedores,
+    precoConcorrenteEUR: product.precoConcorrenteEUR,
+    precoVendaEUR: product.precoVendaEUR,
+    regraPreco: product.regraPreco,
+    naoFoiPossivelIgualarConcorrente: product.abaixoDoConcorrente
+  }));
+  fs.writeFileSync(COMMERCIAL_CATALOG_FILE, `${JSON.stringify(products, null, 2)}\n`, "utf8");
+  console.log("[Precos] Catalogo comercial privado atualizado para checkout e painel admin.");
 }
 
 function readCliOptions(argv = process.argv.slice(2)) {
@@ -252,6 +332,7 @@ function showPricePreview(products, previousCatalogById, sampleSize) {
 async function main(options = readCliOptions()) {
   const products = loadJson("enriquecido.json", []);
   const competitors = loadJson("concorrente.json", []);
+  const commercialConfig = readCommercialConfig();
   const competitorMap = new Map(competitors.map((item) => [item.id, item]));
   const previousCatalog = Object.values(PLATFORMS)
     .flatMap((platform) => loadJson(platform.output, []));
@@ -274,7 +355,13 @@ async function main(options = readCliOptions()) {
 
   sellableProducts.forEach((product, index) => {
     if (!options.dryRun) console.log(`[Precos] Processando ${index + 1}/${sellableProducts.length}: ${product.nome}`);
-    const finalProduct = makeFinalProduct(product, competitorMap.get(product.id), rate, previousCatalogById.get(product.id));
+    const finalProduct = makeFinalProduct(
+      product,
+      competitorMap.get(product.id),
+      rate,
+      previousCatalogById.get(product.id),
+      commercialConfig[product.id] || {}
+    );
     if (finalProduct.abaixoDoConcorrente) belowCompetitor += 1;
     if (finalProduct.travaMargemAcionada) safetyLocked += 1;
     grouped[product.plataformaKey || "ps5"]?.push(finalProduct);
@@ -288,6 +375,7 @@ async function main(options = readCliOptions()) {
       console.log(`[Precos] Gravado data/${platform.output}: ${(grouped[platform.key] || []).length} produto(s).`);
     });
     saveInternalPrices(grouped);
+    saveCommercialCatalog(grouped);
   }
 
   const enrichedCount = sellableProducts.filter((item) => item.enriquecido).length;
@@ -312,6 +400,8 @@ module.exports._test = {
   exchangeResult,
   priceIncludingStripe,
   minimumSalePrice,
+  supplierCandidates,
+  competitorPsychologicalPrice,
   makeFinalProduct,
   readCliOptions
 };

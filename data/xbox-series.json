@@ -5,7 +5,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1524695012,
-    "precoVendaEUR": 38.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 58.99,
     "trailer": "https://www.youtube.com/embed/nTUoIyTMw0Q",
     "screenshots": [
@@ -29,7 +29,10 @@
     "steamGridMatchedName": "007 First Light",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/007-first-light-xbox-series-s-x-midia-digital-msqvb/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "a-plague-tale-requiem-xbox-series",
@@ -37,7 +40,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542734357,
-    "precoVendaEUR": 18.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 22.99,
     "trailer": "https://www.youtube.com/embed/qIbzwb8vzNI",
     "screenshots": [
@@ -62,7 +65,10 @@
     "steamGridMatchedName": "A Plague Tale: Requiem",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/a-plague-tale-requiem-xbox-series-s-x-midia-digital-1m2ja/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "a-way-out-xbox-series",
@@ -95,7 +101,12 @@
     "steamGridMatchedName": "A Way Out",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/a-way-out-xbox-one-series-s-x-midia-digital-1l6pc/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 32
   },
   {
     "id": "ace-combat-8-wings-of-theve-xbox-series",
@@ -103,7 +114,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545692947,
-    "precoVendaEUR": 49.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 69.99,
     "trailer": "https://www.youtube.com/embed/cW6zBuO7sb4",
     "screenshots": [
@@ -124,7 +135,10 @@
     "steamGridMatchedName": "Ace Combat 8: Wings of Theve",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ace-combat-8-wings-of-theve-xbox-series-s-x-midia-digital-13xmb/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "alan-wake-2-xbox-series",
@@ -132,7 +146,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468657464,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/dlQ3FeNu5Yw",
     "screenshots": [
@@ -156,7 +170,10 @@
     "steamGridMatchedName": "Alan Wake 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/alan-wake-2-xbox-series-s-x-midia-digital-1ykjb/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "alan-wake-remastered-xbox-series",
@@ -189,7 +206,10 @@
     "steamGridMatchedName": "Alan Wake Remastered",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/alan-wake-remastered-xbox-one-xbox-series-s-x-midia-digital-zzosl/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "ao-tennis-2-xbox-series",
@@ -197,7 +217,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1527340984,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 15.99,
     "trailer": "https://www.youtube.com/embed/nUHosOmnaik",
     "screenshots": [
@@ -221,7 +241,10 @@
     "steamGridMatchedName": "AO Tennis 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ao-tennis-2-xbox-one-midia-digital-qvi3y/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "arc-raiders-xbox-series",
@@ -229,8 +252,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1355119766,
-    "precoVendaEUR": 27.99,
-    "precoOriginalEUR": 27.99,
+    "precoVendaEUR": 25.99,
+    "precoOriginalEUR": 25.99,
     "trailer": "https://www.youtube.com/embed/xuftkDxjGT4",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/673/6739bd3566489a5b4a53aa268eaef97e.jpg",
@@ -253,7 +276,10 @@
     "steamGridMatchedName": "Arc Raiders",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/arc-raiders-xbox-series-s-x-midia-digital-kzkej/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-triple-pack-xbox-series",
@@ -279,7 +305,10 @@
     "steamGridMatchedName": "Assassin's Creed Rogue",
     "steamGridMatchScore": 0.607,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-triple-pack-xbox-one-series-s-x-13ifw/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassins-creed-black-flag-resynced-xbox-series",
@@ -287,7 +316,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1511643762,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 39.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/U9EmVkQ5v54",
     "screenshots": [
@@ -305,7 +334,10 @@
     "steamGridMatchedName": "Assassin's Creed IV: Black Flag",
     "steamGridMatchScore": 0.527,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-black-flag-resynced-xbox-series-s-x-midia-digital-tke5n/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassins-creed-odyssey-xbox-series",
@@ -313,8 +345,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542729321,
-    "precoVendaEUR": 15.99,
-    "precoOriginalEUR": 15.99,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
     "trailer": "https://www.youtube.com/embed/6F8L3d_OIE0",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65610-bd0e11cbb00421306917813138915802-1024-1024.webp"
@@ -331,7 +363,10 @@
     "steamGridMatchedName": "Assassin's Creed Odyssey",
     "steamGridMatchScore": 0.735,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassins-creed-origins-xbox-series",
@@ -339,7 +374,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542729948,
-    "precoVendaEUR": 13.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 13.99,
     "trailer": "https://www.youtube.com/embed/cK4iAjzAoas",
     "screenshots": [
@@ -357,7 +392,10 @@
     "steamGridMatchedName": "Assassin's Creed Origins",
     "steamGridMatchScore": 0.735,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassins-creed-shadows-xbox-series",
@@ -365,7 +403,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1534116897,
-    "precoVendaEUR": 29.99,
+    "precoVendaEUR": 27.99,
     "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/vovkzbtYBC8",
     "screenshots": [
@@ -383,7 +421,12 @@
     "steamGridMatchedName": "Assassin's Creed Shadows",
     "steamGridMatchScore": 0.735,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-shadows-xbox-series-s-x-midia-digital-llhs1/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 14
   },
   {
     "id": "assetto-corsa-xbox-series",
@@ -418,7 +461,10 @@
     "steamGridMatchedName": "Assetto Corsa",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assetto-corsa-xbox-one-midia-digital-1jh2i/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "batman-arkham-knight-xbox-series",
@@ -450,7 +496,12 @@
     "steamGridMatchedName": "Batman: Arkham Knight",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-knight-xbox-one-series-s-x-midia-digital-otonm/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 23
   },
   {
     "id": "battlefield-6-xbox-series",
@@ -458,7 +509,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463328752,
-    "precoVendaEUR": 35.99,
+    "precoVendaEUR": 33.99,
     "precoOriginalEUR": 48.99,
     "trailer": "https://www.youtube.com/embed/pgNCgJG0vnY",
     "screenshots": [
@@ -483,7 +534,10 @@
     "steamGridMatchedName": "Battlefield 6",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/battlefield-6-xbox-series-s-x-midia-digital-1433p/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "battlefield-v-xbox-series",
@@ -518,7 +572,10 @@
     "steamGridMatchedName": "Battlefield V",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/battlefield-v-xbox-one-series-s-x-midia-digital-9l791/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "borderlands-4-xbox-series",
@@ -526,7 +583,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464425377,
-    "precoVendaEUR": 29.99,
+    "precoVendaEUR": 27.99,
     "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/NtSRtcXcCnk",
     "screenshots": [
@@ -549,7 +606,10 @@
     "steamGridMatchedName": "Borderlands 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/borderlands-4-xbox-series-s-x-midia-digital-103lh/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-modern-warfare-ii-xbox-series",
@@ -557,8 +617,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561945009,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 37.99,
+    "precoOriginalEUR": 37.99,
     "trailer": "https://www.youtube.com/embed/ztjfwecrY8E",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/81c/81c2f27b74bb7acacd3301688ad90921.jpg",
@@ -582,7 +642,10 @@
     "steamGridMatchedName": "Call of Duty: Modern Warfare II",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-modern-warfare-ii-xbox-one-series-s-x-midia-digital-i82w5/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-advanced-warfare-xbox-series",
@@ -615,7 +678,10 @@
     "steamGridMatchedName": "Call of Duty: Advanced Warfare",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-advanced-warfare-xbox-one-series-s-x-midia-digital-1477d/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-black-ops-versao-do-xbox-360-xbox-series",
@@ -623,7 +689,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561413649,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 58.99,
     "trailer": "https://www.youtube.com/embed/EVBJ4O-w3m4",
     "screenshots": [
@@ -641,7 +707,10 @@
     "steamGridMatchedName": "Call of Duty: Black Ops - OSX",
     "steamGridMatchScore": 0.622,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-black-ops-xbox-one-series-s-x-midia-digital-copia-abcfc/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-black-ops-2-versao-do-xbox-360-xbox-series",
@@ -649,7 +718,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561244149,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 58.99,
     "trailer": "https://www.youtube.com/embed/fCImNIUkpak",
     "screenshots": [
@@ -667,7 +736,10 @@
     "steamGridMatchedName": "Call of Duty: Black Ops - OSX",
     "steamGridMatchScore": 0.579,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-black-ops-2-xbox-one-series-s-x-midia-digital-copia-t27zl/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-black-ops-4-xbox-series",
@@ -675,7 +747,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542712350,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 10.99,
     "trailer": "https://www.youtube.com/embed/6kqe2ICmTxc",
     "screenshots": [
@@ -700,7 +772,10 @@
     "steamGridMatchedName": "Call of Duty: Black Ops 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-black-ops-4-xbox-one-midia-digital-11pzd/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-black-ops-6-xbox-series",
@@ -708,7 +783,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1275952649,
-    "precoVendaEUR": 27.99,
+    "precoVendaEUR": 25.99,
     "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/h0uxvKUjsj4",
     "screenshots": [
@@ -733,7 +808,10 @@
     "steamGridMatchedName": "Call of Duty: Black Ops 6",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-black-ops-6-xbox-one-series-s-x-midia-digital-1n8v8/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-ghost-xbox-series",
@@ -759,7 +837,10 @@
     "steamGridMatchedName": "Call of Duty: Ghosts",
     "steamGridMatchScore": 0.808,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-dutty-ghost-xbox-one-series-s-x-midia-digital-1p11e/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-modern-warfare-xbox-series",
@@ -767,8 +848,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463410716,
-    "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 22.99,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
     "trailer": "https://www.youtube.com/embed/bH1lHCirCGI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e8e/e8e92ec1aff7d7767662614d6b47e1c6.jpg",
@@ -792,7 +873,10 @@
     "steamGridMatchedName": "Call of Duty: Modern Warfare",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-modern-warfare-xbox-one-series-s-x-midia-digital-109qs/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-modern-warfare-2-xbox-series",
@@ -800,8 +884,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464690155,
-    "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 42.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/ztjfwecrY8E",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/468/468450c797e2388adb27f43a9bfb545f.jpg",
@@ -824,7 +908,10 @@
     "steamGridMatchedName": "Call of Duty: Modern Warfare 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-modern-warfare-ii-xbox-one-series-s-x-midia-digital-17lmo/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-modern-warfare-3-xbox-series",
@@ -832,7 +919,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464712467,
-    "precoVendaEUR": 27.99,
+    "precoVendaEUR": 25.99,
     "precoOriginalEUR": 38.99,
     "trailer": "https://www.youtube.com/embed/i3IsLrPeZG8",
     "screenshots": [
@@ -857,7 +944,12 @@
     "steamGridMatchedName": "Call of Duty: Modern Warfare 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-modern-warfare-iii-xbox-one-series-s-x-midia-digital-cb932/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 3
   },
   {
     "id": "call-of-duty-modern-warfare-4-xbox-series",
@@ -865,7 +957,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1534684176,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 41.99,
     "precoOriginalEUR": 47.99,
     "trailer": "https://www.youtube.com/embed/jLbst85USN8",
     "screenshots": [
@@ -885,7 +977,12 @@
     "steamGridMatchedName": "Call of Duty 4: Modern Warfare",
     "steamGridMatchScore": 0.917,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-modern-warfare-4-xbox-series-s-x-midia-digital-1vmai/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 3
   },
   {
     "id": "call-of-duty-vanguard-xbox-series",
@@ -893,7 +990,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542723165,
-    "precoVendaEUR": 20.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 20.99,
     "trailer": "https://www.youtube.com/embed/OQ1CwPhE8KQ",
     "screenshots": [
@@ -917,7 +1014,10 @@
     "steamGridMatchedName": "Call of Duty: Vanguard",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-vanguard-xbox-one-series-s-x-midia-digital-sy4w6/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "captain-tsubasa-2-world-fighters-xbox-series",
@@ -925,7 +1025,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545677584,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 39.99,
     "precoOriginalEUR": 58.99,
     "trailer": "https://www.youtube.com/embed/DtgoZFRvaSs",
     "screenshots": [
@@ -943,7 +1043,10 @@
     "steamGridMatchedName": "Captain Tsubasa: New Kick Off",
     "steamGridMatchScore": 0.456,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/captain-tsubasa-2-world-fighters-xbox-series-s-x-midia-digital-12wln/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "civilization-iv-xbox-series",
@@ -951,8 +1054,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542737288,
-    "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 22.99,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
     "trailer": "https://www.youtube.com/embed/9gKby5Glg_I",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65636-f4546e7a05d2a3b01417813148988968-1024-1024.webp"
@@ -969,7 +1072,10 @@
     "steamGridMatchedName": "Civilization Simulator",
     "steamGridMatchScore": 0.515,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/civilization-iv-xbox-one-midia-digital-nbc0x/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "control-resonant-xbox-series",
@@ -977,8 +1083,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543024529,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 37.99,
+    "precoOriginalEUR": 38.99,
     "trailer": "https://www.youtube.com/embed/e1_eZyFM5-4",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/616/616d40205c7195eb56478ff6d746d3bb.jpg",
@@ -1001,7 +1107,10 @@
     "steamGridMatchedName": "CONTROL Resonant",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/control-resonant-xbox-series-s-x-midia-digital-110v6/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "crash-bandicoot-4-xbox-series",
@@ -1027,7 +1136,10 @@
     "steamGridMatchedName": "Crash Bandicoot",
     "steamGridMatchScore": 0.796,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/crash-bandicoot-4-xbox-one-series-s-x-midia-digital-jdln1/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "crash-bandicoot-crashversary-bundle-xbox-series",
@@ -1035,7 +1147,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471369848,
-    "precoVendaEUR": 73.99,
+    "precoVendaEUR": 68.99,
     "precoOriginalEUR": 86.99,
     "trailer": "https://www.youtube.com/embed/4fbO2-egZ3U",
     "screenshots": [
@@ -1053,7 +1165,10 @@
     "steamGridMatchedName": "Crash Bandicoot: On the Run!",
     "steamGridMatchScore": 0.474,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/crash-bandicoot-crashversary-bundle-xbox-one-series-s-x-midia-digital-zva3s/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "crash-trilogy-xbox-series",
@@ -1079,7 +1194,10 @@
     "steamGridMatchedName": "Crash Time 2",
     "steamGridMatchScore": 0.469,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/crash-trilogy-xbox-one-series-s-x-midia-digital-1co4y/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "crimson-desert-xbox-series",
@@ -1087,7 +1205,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1475222029,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 41.99,
     "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/VWIw_f8e9Pg",
     "screenshots": [
@@ -1110,7 +1228,10 @@
     "steamGridMatchedName": "CRIMSON DESERT",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/crimson-desert-xbox-series-s-x-midia-digital-2vdgf/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "dark-souls-2-xbox-series",
@@ -1118,7 +1239,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1276600701,
-    "precoVendaEUR": 15.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/U6uyuIQYlfY",
     "screenshots": [
@@ -1136,7 +1257,10 @@
     "steamGridMatchedName": "Dark Souls",
     "steamGridMatchScore": 0.767,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dark-souls-2-xbox-one-series-s-x-midia-digital-1lcth/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "dark-souls-3-xbox-series",
@@ -1144,7 +1268,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464453513,
-    "precoVendaEUR": 38.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/cWBwFhUv1-8",
     "screenshots": [
@@ -1162,7 +1286,10 @@
     "steamGridMatchedName": "Dark Souls",
     "steamGridMatchScore": 0.767,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dark-souls-iii-xbox-one-series-s-x-midia-digital-1q2tm/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "dark-souls-remastered-xbox-series",
@@ -1195,7 +1322,10 @@
     "steamGridMatchedName": "Dark Souls: Remastered",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dark-souls-remastered-xbox-one-series-s-x-midia-digital-1com1/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "dead-space-xbox-series",
@@ -1203,8 +1333,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468719121,
-    "precoVendaEUR": 18.99,
-    "precoOriginalEUR": 18.99,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/ctQl9wa3ydE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/16b/16b2cb24c12e995b8842c6c1542e3aa1.jpg",
@@ -1226,7 +1356,10 @@
     "steamGridMatchedName": "Dead Space",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dead-space-xbox-series-s-x-midia-digital-1rpx3/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "deadrising-4-xbox-series",
@@ -1252,7 +1385,10 @@
     "steamGridMatchedName": "Dead Rising 4",
     "steamGridMatchScore": 0.654,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/deadrising-4-xbox-one-midia-digital-6muju/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "devil-may-cry-5-xbox-series",
@@ -1284,7 +1420,10 @@
     "steamGridMatchedName": "Devil May Cry 5",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/devil-may-cry-5-xbox-series-s-x-midia-digital-1i3z1/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "diablo-iv-xbox-series",
@@ -1292,7 +1431,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464389635,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/Ro26B394ZBM",
     "screenshots": [
@@ -1317,7 +1456,12 @@
     "steamGridMatchedName": "Diablo IV",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/diablo-iv-xbox-one-series-s-x-midia-digital-19m3j/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 18
   },
   {
     "id": "dragon-age-the-veilguard-xbox-series",
@@ -1325,7 +1469,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464572491,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 22.99,
     "trailer": "https://www.youtube.com/embed/NdtmtuzICOI",
     "screenshots": [
@@ -1348,7 +1492,10 @@
     "steamGridMatchedName": "Dragon Age: The Veilguard",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dragon-age-the-veilguard-xbox-series-s-x-midia-digital-1jvv9/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "dragon-ball-sparking-zero-xbox-series",
@@ -1356,8 +1503,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464608113,
-    "precoVendaEUR": 51.99,
-    "precoOriginalEUR": 51.99,
+    "precoVendaEUR": 47.99,
+    "precoOriginalEUR": 47.99,
     "trailer": "https://www.youtube.com/embed/XTvBSY0YMyg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/f72/f72139d952f80b5f4382260f7547708f.jpg",
@@ -1381,7 +1528,10 @@
     "steamGridMatchedName": "Dragon Ball: Sparking! Zero",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dragon-ball-sparking-zero-xbox-series-s-x-midia-digital-1u3pz/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "dragon-ball-z-kakarot-xbox-series",
@@ -1389,7 +1539,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1483314108,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 15.99,
     "trailer": "https://www.youtube.com/embed/D6MDjzqnK1Y",
     "screenshots": [
@@ -1414,7 +1564,10 @@
     "steamGridMatchedName": "Dragon Ball Z: Kakarot",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dragon-ball-z-kakarot-xbox-one-series-s-x-midia-digital-1m04t/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "ea-family-bundle-xbox-series",
@@ -1440,7 +1593,10 @@
     "steamGridMatchedName": "EA Family Bundle",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ea-family-bundle-xbox-one-xbox-series-s-x-midia-digital-dx1uf/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "ea-sports-college-football-27-xbox-series",
@@ -1448,7 +1604,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544417611,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 39.99,
     "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/a-JpwwMa5aM",
     "screenshots": [
@@ -1469,7 +1625,10 @@
     "steamGridMatchedName": "EA Sports FIFA 21",
     "steamGridMatchScore": 0.404,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ea-sports-college-football-27-xbox-series-s-x-midia-digital-uhzq8/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "ea-sports-fc-27-standard-xbox-series",
@@ -1477,7 +1636,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1564733940,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 41.99,
     "precoOriginalEUR": 45.99,
     "trailer": "https://www.youtube.com/embed/MOclJJ7IpSY",
     "screenshots": [
@@ -1495,7 +1654,12 @@
     "steamGridMatchedName": "EA Sports FC 24",
     "steamGridMatchScore": 0.8,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/fc-27-standard-ea-sports-xbox-one-series-s-x-midia-digital-tnpcp/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 2
   },
   {
     "id": "ea-sports-fc-27-standard-ultimate-edition-xbox-series",
@@ -1503,8 +1667,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1564735539,
-    "precoVendaEUR": 62.99,
-    "precoOriginalEUR": 62.99,
+    "precoVendaEUR": 58.99,
+    "precoOriginalEUR": 58.99,
     "trailer": "https://www.youtube.com/embed/MOclJJ7IpSY",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/92059-dbedb7b1139922733717848623652488-1024-1024.webp"
@@ -1521,7 +1685,12 @@
     "steamGridMatchedName": "EA Sports FC 24",
     "steamGridMatchScore": 0.8,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/fc-27-standard-ea-sports-ultimate-edition-xbox-one-series-s-x-midia-digital-1odoi/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 2
   },
   {
     "id": "elden-ring-shadow-of-the-erdtree-xbox-series",
@@ -1529,8 +1698,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463377044,
-    "precoVendaEUR": 51.99,
-    "precoOriginalEUR": 51.99,
+    "precoVendaEUR": 47.99,
+    "precoOriginalEUR": 47.99,
     "trailer": "https://www.youtube.com/embed/qLZenOn7WUo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ba6/ba6675855ee539784357aed3ca095ce2.jpg",
@@ -1554,7 +1723,12 @@
     "steamGridMatchedName": "Elden Ring: Shadow of the Erdtree",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/elden-ring-shadow-of-the-erdtree-xbox-one-series-s-x-u8uy2/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 10
   },
   {
     "id": "elden-ring-xbox-series",
@@ -1562,7 +1736,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463281391,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/E3Huy2cdih0",
     "screenshots": [
@@ -1587,7 +1761,12 @@
     "steamGridMatchedName": "Elden Ring",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/elden-ring-xbox-one-series-s-x-midia-digital-os1b0/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 10
   },
   {
     "id": "elden-ring-nightreign-xbox-series",
@@ -1595,7 +1774,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463388584,
-    "precoVendaEUR": 33.99,
+    "precoVendaEUR": 31.99,
     "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/Djtsw5k_DNc",
     "screenshots": [
@@ -1620,7 +1799,10 @@
     "steamGridMatchedName": "Elden Ring Nightreign",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/elden-ring-nightreign-xbox-one-series-s-x-midia-digital-1g60b/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "escape-the-backrooms-xbox-series",
@@ -1652,7 +1834,10 @@
     "steamGridMatchedName": "Escape the Backrooms",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/escape-the-backrooms-xbox-series-s-x-midia-digital-l1nej/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "fable-xbox-series",
@@ -1660,7 +1845,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543720768,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 39.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/_4zJJSEm1ag",
     "screenshots": [
@@ -1685,7 +1870,10 @@
     "steamGridMatchedName": "Fable",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/fable-xbox-series-s-x-midia-digital-1pej4/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "fc-24-xbox-series",
@@ -1693,7 +1881,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464399333,
-    "precoVendaEUR": 15.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 15.99,
     "trailer": "https://www.youtube.com/embed/XhP3Xh4LMA8",
     "screenshots": [
@@ -1711,7 +1899,10 @@
     "steamGridMatchedName": "ワンコインエンジニアFC上",
     "steamGridMatchScore": 0.44,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/fc-24-xbox-one-series-s-x-midia-digital-1s75k/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "fc-25-ea-sports-xbox-series",
@@ -1719,7 +1910,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463319280,
-    "precoVendaEUR": 18.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 22.99,
     "trailer": "https://www.youtube.com/embed/pBM2xyco_Kg",
     "screenshots": [
@@ -1737,7 +1928,10 @@
     "steamGridMatchedName": "EA Sports FC 25",
     "steamGridMatchScore": 0.52,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/fc-25-ea-sports-xbox-one-series-s-x-midia-digital-7u5do/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "fc-26-standard-ea-sports-xbox-series",
@@ -1745,7 +1939,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462769203,
-    "precoVendaEUR": 20.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 45.99,
     "trailer": "https://www.youtube.com/embed/TSi0iJYSQ24",
     "screenshots": [
@@ -1763,7 +1957,12 @@
     "steamGridMatchedName": "EA SPORTS FC™ 26",
     "steamGridMatchScore": 0.52,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/fc-26-standard-ea-sports-xbox-one-series-s-x-midia-digital-1mt84/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 2
   },
   {
     "id": "fobia-st-dinfna-hotel-xbox-series",
@@ -1795,7 +1994,10 @@
     "steamGridMatchedName": "Fobia - St. Dinfna Hotel",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/fobia-st-dinfna-hotel-xbox-one-series-s-x-midia-digital-opgif/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "forza-horizon-4-xbox-series",
@@ -1803,8 +2005,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468660706,
-    "precoVendaEUR": 27.99,
-    "precoOriginalEUR": 27.99,
+    "precoVendaEUR": 25.99,
+    "precoOriginalEUR": 25.99,
     "trailer": "https://www.youtube.com/embed/5xy4n73WOMM",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/722/7226b83de614b7c5171b7c2694d53fce.jpg",
@@ -1828,7 +2030,10 @@
     "steamGridMatchedName": "Forza Horizon 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/forza-horizon-4-xbox-one-series-s-x-midia-digital-1aajz/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "forza-horizon-5-xbox-series",
@@ -1836,7 +2041,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462796888,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 27.99,
     "trailer": "https://www.youtube.com/embed/FYH9n37B7Yw",
     "screenshots": [
@@ -1861,7 +2066,12 @@
     "steamGridMatchedName": "Forza Horizon 5",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/forza-horizon-5-xbox-one-series-s-x-midia-digital-1s998/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 19
   },
   {
     "id": "forza-horizon-6-xbox-series",
@@ -1869,7 +2079,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1523035644,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 39.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/oYhaW-Vr4wg",
     "screenshots": [
@@ -1893,7 +2103,10 @@
     "steamGridMatchedName": "Forza Horizon 6",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/forza-horizon-6-xbox-series-s-x-midia-digital-93gw6/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "gears-of-war-reloaded-xbox-series",
@@ -1901,7 +2114,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1541864606,
-    "precoVendaEUR": 18.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 19.99,
     "trailer": "https://www.youtube.com/embed/vx8cUpL40Kc",
     "screenshots": [
@@ -1926,7 +2139,10 @@
     "steamGridMatchedName": "Gears of War: Reloaded",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/gear-pf-war-reloaded-xbox-series-s-x-midia-digital-15rmb/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "gta-v-xbox-series",
@@ -1934,8 +2150,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462791821,
-    "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 22.99,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
     "trailer": "https://www.youtube.com/embed/QkkoHAzjnUs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/gta-v-1a89f8997367f0c0d817724599657056-1024-1024.webp"
@@ -1952,7 +2168,12 @@
     "steamGridMatchedName": "Grand Theft Auto V",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/gta-v-xbox-series-s-x-midia-digital-1wm60/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 1
   },
   {
     "id": "gta-grand-theft-auto-vi-xbox-series",
@@ -1960,7 +2181,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1549094910,
-    "precoVendaEUR": 62.99,
+    "precoVendaEUR": 58.99,
     "precoOriginalEUR": 77.99,
     "trailer": "https://www.youtube.com/embed/QdBZY2fkU-0",
     "screenshots": [
@@ -1978,7 +2199,12 @@
     "steamGridMatchedName": "Grand Theft Auto VI",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/gta-grand-theft-auto-vi-xbox-series-s-x-midia-digital-bot1s/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 1
   },
   {
     "id": "gta-grand-theft-auto-vi-ultimate-midia-digita-xbox-series",
@@ -1986,7 +2212,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1550012886,
-    "precoVendaEUR": 73.99,
+    "precoVendaEUR": 68.99,
     "precoOriginalEUR": 95.99,
     "trailer": "https://www.youtube.com/embed/QdBZY2fkU-0",
     "screenshots": [
@@ -2004,7 +2230,12 @@
     "steamGridMatchedName": "Grand Theft Auto VI",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/gta-grand-theft-auto-vi-ultimate-xbox-series-s-x-midia-digital-copia-ajcdt/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 1
   },
   {
     "id": "gta-grand-theft-auto-the-trilogy-xbox-series",
@@ -2012,7 +2243,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468686230,
-    "precoVendaEUR": 20.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 22.99,
     "trailer": "https://www.youtube.com/embed/7x7zr1onxfU",
     "screenshots": [
@@ -2030,7 +2261,12 @@
     "steamGridMatchedName": "Grand Theft Auto: The Trilogy - The Definitive Edition",
     "steamGridMatchScore": 0.944,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/gta-grand-theft-auto-the-trilogy-xbox-one-series-s-x-midia-digital-5k3iw/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 46
   },
   {
     "id": "halloween-the-game-xbox-series",
@@ -2038,8 +2274,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543660208,
-    "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 35.99,
+    "precoVendaEUR": 33.99,
+    "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/VcoT-VeH4Lc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349760-52dc11c3b87edca85217815476570666-1024-1024.webp"
@@ -2056,7 +2292,10 @@
     "steamGridMatchedName": "The Halloween Incident",
     "steamGridMatchScore": 0.473,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/halloween-the-game-xbox-series-s-x-midia-digital-u97fv/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "halo-campaign-evolved-xbox-series",
@@ -2064,8 +2303,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545687636,
-    "precoVendaEUR": 57.99,
-    "precoOriginalEUR": 57.99,
+    "precoVendaEUR": 35.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/0MxBFXH2a_U",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/7f0/7f074d2e43a973552128d487ed551b2c.jpg",
@@ -2090,7 +2329,12 @@
     "steamGridMatchedName": "Halo: Campaign Evolved",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/halo-campaign-evolved-xbox-series-s-x-midia-digital-1fqoi/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 20
   },
   {
     "id": "hell-let-loose-vietnam-xbox-series",
@@ -2098,7 +2342,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544892399,
-    "precoVendaEUR": 33.99,
+    "precoVendaEUR": 31.99,
     "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/8zdQFX0Li8Q",
     "screenshots": [
@@ -2121,7 +2365,10 @@
     "steamGridMatchedName": "Hell Let Loose: Vietnam",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hell-let-loose-vietnam-xbox-series-s-x-midia-digital-zlesy/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "hogwarts-legacy-xbox-series",
@@ -2129,7 +2376,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464422891,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/1O6Qstncpnc",
     "screenshots": [
@@ -2154,7 +2401,12 @@
     "steamGridMatchedName": "Hogwarts Legacy",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hogwarts-legacy-xbox-one-series-s-x-midia-digital-17gzp/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 16
   },
   {
     "id": "hollow-knight-voidheart-edition-xbox-series",
@@ -2162,7 +2414,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1481038047,
-    "precoVendaEUR": 15.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/FzzsWP2GWmg",
     "screenshots": [
@@ -2180,7 +2432,10 @@
     "steamGridMatchedName": "Hollow Knight: Voidheart Edition",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hollow-knight-voidheart-edition-xbox-one-series-s-x-midia-digital-115rg/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "hollow-knight-silksong-xbox-series",
@@ -2188,7 +2443,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1366183952,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/6XGeJwsUP9c",
     "screenshots": [
@@ -2215,7 +2470,10 @@
     "steamGridMatchedName": "Hollow Knight: Silksong",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hollow-knight-silksong-xbox-one-series-s-x-midia-digital-rg1cm/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "injustice-2-xbox-series",
@@ -2247,7 +2505,10 @@
     "steamGridMatchedName": "Injustice 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/injustice-2-xbox-one-series-s-x-midia-digital-3sdn4/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "invincible-vs-xbox-series",
@@ -2255,7 +2516,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544426738,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/c080-rY2d-8",
     "screenshots": [
@@ -2273,7 +2534,10 @@
     "steamGridMatchedName": "Invincible VS",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/invincible-vs-xbox-series-s-x-midia-digital-1fabb/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "it-takes-two-xbox-series",
@@ -2281,8 +2545,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468673033,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 9.99,
+    "precoVendaEUR": 8.99,
+    "precoOriginalEUR": 8.99,
     "trailer": "https://www.youtube.com/embed/GAWHzGNcTEw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/252/252844a85405a3147440806709a47f79.jpg",
@@ -2307,7 +2571,12 @@
     "steamGridMatchedName": "It Takes Two",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/it-takes-two-xbox-one-series-s-x-midia-digital-oziqx/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 31
   },
   {
     "id": "lego-batman-3-beyond-gotham-xbox-series",
@@ -2341,7 +2610,10 @@
     "steamGridMatchedName": "LEGO Batman 3: Beyond Gotham",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/lego-batman-3-beyond-gotham-xbox-one-series-s-x-midia-digital-1ri4j/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "lego-batman-legacy-of-the-dark-knight-xbox-series",
@@ -2349,7 +2621,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1524697480,
-    "precoVendaEUR": 38.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/DfJaUpW_P00",
     "screenshots": [
@@ -2374,7 +2646,10 @@
     "steamGridMatchedName": "LEGO Batman: Legacy of the Dark Knight",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/lego-batman-legacy-of-the-dark-knight-xbox-series-s-x-midia-digital-ojetq/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "lego-marvel-s-avengers-xbox-series",
@@ -2407,7 +2682,10 @@
     "steamGridMatchedName": "LEGO Marvel's Avengers",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/lego-marvels-avengers-xbox-one-series-s-x-midia-digital-vpgnj/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "little-nightmares-xbox-series",
@@ -2415,7 +2693,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1483288491,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/aOadxZBsPiA",
     "screenshots": [
@@ -2441,7 +2719,10 @@
     "steamGridMatchedName": "Little Nightmares",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/little-nightmares-xbox-one-series-s-x-midia-digital-weq95/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "little-nightmares-ii-xbox-series",
@@ -2475,7 +2756,10 @@
     "steamGridMatchedName": "Little Nightmares II",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/little-nightmares-ii-xbox-one-series-s-x-midia-digital-k9ykt/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "mad-max-xbox-series",
@@ -2508,7 +2792,10 @@
     "steamGridMatchedName": "Mad Max",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mad-max-xbox-one-series-s-x-midia-digital-vfdx9/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "mafia-ii-2-definitive-edition-xbox-series",
@@ -2534,7 +2821,10 @@
     "steamGridMatchedName": "Mafia II: Definitive Edition",
     "steamGridMatchScore": 0.843,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mafia-ii-definitive-edition-xbox-one-series-s-x-midia-digital-i5dfo/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "mafia-iii-3-definitive-edition-xbox-series",
@@ -2542,7 +2832,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468665936,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 25.99,
     "trailer": "https://www.youtube.com/embed/kmKOLvnullE",
     "screenshots": [
@@ -2560,7 +2850,10 @@
     "steamGridMatchedName": "Mafia III: Definitive Edition",
     "steamGridMatchScore": 0.845,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mafia-iii-definitive-edition-xbox-one-series-s-x-midia-digital-9j523/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "mafia-trilogy-xbox-series",
@@ -2568,7 +2861,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542919419,
-    "precoVendaEUR": 13.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 13.99,
     "trailer": "https://www.youtube.com/embed/BtO5UTZ0EH8",
     "screenshots": [
@@ -2593,7 +2886,10 @@
     "steamGridMatchedName": "Mafia III",
     "steamGridMatchScore": 0.456,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mafia-trilogy-xbox-one-midia-digital-yaid8/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "mafia-the-old-country-xbox-series",
@@ -2601,8 +2897,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464589596,
-    "precoVendaEUR": 33.99,
-    "precoOriginalEUR": 33.99,
+    "precoVendaEUR": 31.99,
+    "precoOriginalEUR": 32.99,
     "trailer": "https://www.youtube.com/embed/AMtLTi0koGE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/13a/13a0c30f914cc2e22c5de76e1a4b284a.jpg",
@@ -2625,7 +2921,10 @@
     "steamGridMatchedName": "Mafia: The Old Country",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mafia-the-old-country-xbox-series-s-x-midia-digital-1exyk/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "marathon-xbox-series",
@@ -2633,7 +2932,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545681626,
-    "precoVendaEUR": 27.99,
+    "precoVendaEUR": 25.99,
     "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/ckI_m8bbXfw",
     "screenshots": [
@@ -2658,7 +2957,10 @@
     "steamGridMatchedName": "Marathon",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/marathon-xbox-series-s-x-midia-digital-dxq3y/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "metal-gear-solid-snake-eater-xbox-series",
@@ -2666,7 +2968,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464636985,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 39.99,
     "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/ajh3YHJ6baI",
     "screenshots": [
@@ -2691,7 +2993,10 @@
     "steamGridMatchedName": "Metal Gear Solid 3: Snake Eater",
     "steamGridMatchScore": 0.893,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/metal-gear-solid-snake-eater-xbox-series-s-x-midia-digital-ie69n/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "microsoft-flight-simulator-xbox-series",
@@ -2699,7 +3004,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542716867,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 27.99,
     "trailer": "https://www.youtube.com/embed/p3xp-SnZDoY",
     "screenshots": [
@@ -2723,7 +3028,10 @@
     "steamGridMatchedName": "Microsoft Flight Simulator",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/microsoft-flight-simulator-xbox-series-s-x-midia-digital-lg5pf/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "middle-earth-shadow-of-war-xbox-series",
@@ -2756,7 +3064,10 @@
     "steamGridMatchedName": "Middle-earth: Shadow of War",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/middle-earth-shadow-of-war-xbox-one-series-s-x-midia-digital-10biq/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "white_logo",
+    "steamGridNeedsReview": false
   },
   {
     "id": "minecraft-xbox-series",
@@ -2764,7 +3075,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463267630,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 13.99,
     "trailer": "https://www.youtube.com/embed/wJO_vIDZn-I",
     "screenshots": [
@@ -2792,7 +3103,12 @@
     "steamGridMatchedName": "Minecraft",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/minecraft-xbox-one-series-s-x-midia-digital-ctlfc/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 5
   },
   {
     "id": "minecraft-dungeons-2-xbox-series",
@@ -2800,7 +3116,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545707567,
-    "precoVendaEUR": 20.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/VyZKYhM0Kv4",
     "screenshots": [
@@ -2818,7 +3134,10 @@
     "steamGridMatchedName": "Minecraft Dungeons",
     "steamGridMatchScore": 0.807,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/minecraft-dungeons-2-xbox-series-s-x-midia-digital-qdj9j/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "minecraft-legends-xbox-series",
@@ -2850,7 +3169,10 @@
     "steamGridMatchedName": "Minecraft Legends",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/minecraft-legends-xbox-one-series-s-x-midia-digital-1r72n/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "mortal-kombat-1-xbox-series",
@@ -2858,7 +3180,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561372554,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/UZ6eFEjFfJ0",
     "screenshots": [
@@ -2883,7 +3205,12 @@
     "steamGridMatchedName": "Mortal Kombat 1",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mortal-kombat-1-xbox-series-s-x-midia-digital-1v6ez/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 24
   },
   {
     "id": "mortal-kombat-11-xbox-series",
@@ -2915,7 +3242,12 @@
     "steamGridMatchedName": "Mortal Kombat 11",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mortal-kombat-11-xbox-one-series-s-x-midia-digital-1o0l7/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 24
   },
   {
     "id": "naruto-shippuden-ultimate-ninja-storm-4-xbox-series",
@@ -2923,7 +3255,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464726291,
-    "precoVendaEUR": 14.99,
+    "precoVendaEUR": 13.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/OfPiQcV6has",
     "screenshots": [
@@ -2948,7 +3280,10 @@
     "steamGridMatchedName": "Naruto Shippuden: Ultimate Ninja STORM 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/naruto-shippuden-ultimate-ninja-storm-4-xbox-one-series-s-x-quhzk/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "naruto-x-boruto-ultimate-ninja-storm-connections-xbox-series",
@@ -2956,7 +3291,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1287889040,
-    "precoVendaEUR": 38.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 41.99,
     "trailer": "https://www.youtube.com/embed/UqJgPGT99Wg",
     "screenshots": [
@@ -2978,7 +3313,10 @@
     "steamGridMatchedName": "Naruto X Boruto Ultimate Ninja STORM Connections",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/naruto-x-boruto-ultimate-ninja-storm-connections-xbox-one-series-s-x-flxsc/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "nba-2k21-xbox-series",
@@ -2986,7 +3324,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1483316542,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 27.99,
     "trailer": "https://www.youtube.com/embed/UwwySDPim5g",
     "screenshots": [
@@ -3007,7 +3345,10 @@
     "steamGridMatchedName": "NBA 2K21",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/nba-2k21-xbox-one-series-s-x-midia-digital-g3fv6/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "nba-2k23-xbox-series",
@@ -3015,7 +3356,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542732567,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/KOVV0iR1izs",
     "screenshots": [
@@ -3040,7 +3381,10 @@
     "steamGridMatchedName": "NBA 2K23",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/nba-2k23-xbox-series-s-x-midia-digital-148uw/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "material",
+    "steamGridNeedsReview": false
   },
   {
     "id": "nba-2k25-xbox-series",
@@ -3048,7 +3392,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464370131,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/zwQ9RjfvJN0",
     "screenshots": [
@@ -3066,7 +3410,10 @@
     "steamGridMatchedName": "NBA 2K25",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/nba-2k25-xbox-one-series-s-x-midia-digital-bfx28/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "nba-2k26-xbox-series",
@@ -3074,7 +3421,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463358390,
-    "precoVendaEUR": 15.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 25.99,
     "trailer": null,
     "screenshots": [
@@ -3092,7 +3439,12 @@
     "steamGridMatchedName": "NBA 2K26",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/nba-2k26-xbox-one-series-s-x-midia-digital-1mc8k/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 27
   },
   {
     "id": "need-for-speed-heat-xbox-series",
@@ -3124,7 +3476,10 @@
     "steamGridMatchedName": "Need for Speed: Heat",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/need-for-speed-heat-xbox-one-series-s-x-midia-digital-1tgt9/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "need-for-speed-payback-xbox-series",
@@ -3157,7 +3512,10 @@
     "steamGridMatchedName": "Need for Speed: Payback",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/need-for-speed-payback-xbox-one-midia-digital-1udth/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "need-for-speed-unbound-xbox-series",
@@ -3183,7 +3541,10 @@
     "steamGridMatchedName": "Need for Speed: Unbound",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/need-for-speed-unbound-xbox-series-s-x-midia-digital-1stv8/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "white_logo",
+    "steamGridNeedsReview": false
   },
   {
     "id": "onimusha-way-of-the-sword-xbox-series",
@@ -3191,7 +3552,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543664198,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 39.99,
     "precoOriginalEUR": 58.99,
     "trailer": "https://www.youtube.com/embed/LNq35HHUtNc",
     "screenshots": [
@@ -3216,7 +3577,10 @@
     "steamGridMatchedName": "Onimusha: Way of the Sword",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/onimusha-way-of-the-sword-xbox-series-s-x-midia-digital-1hdgr/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "outlast-2-xbox-series",
@@ -3250,7 +3614,10 @@
     "steamGridMatchedName": "Outlast 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/outlast-2-xbox-one-series-s-x-midia-digital-x1ei5/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "palworld-xbox-series",
@@ -3280,12 +3647,15 @@
       "RPG",
       "Indie"
     ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d4c3b722bf2366bf129ebf5441c9ec80.jpg",
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d0c2b1e87b18968832aec662ff2889dd.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Palworld",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/palworld-xbox-one-series-s-x-midia-digital-bgs4n/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "payday-2-crimewave-xbox-series",
@@ -3311,7 +3681,10 @@
     "steamGridMatchedName": "Payday 2",
     "steamGridMatchScore": 0.533,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/payday-2-crimewave-xbox-one-series-s-x-midia-digital-hxj81/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "payday-3-xbox-series",
@@ -3319,7 +3692,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1481026330,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 25.99,
     "trailer": "https://www.youtube.com/embed/dc5gw3ctb0o",
     "screenshots": [
@@ -3346,7 +3719,10 @@
     "steamGridMatchedName": "PAYDAY 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/payday-3-xbox-series-s-x-midia-digital-109dv/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "white_logo",
+    "steamGridNeedsReview": false
   },
   {
     "id": "poppy-playtime-capitulo-2-xbox-series",
@@ -3354,7 +3730,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1505017544,
-    "precoVendaEUR": 10.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 13.99,
     "trailer": "https://www.youtube.com/embed/XVENjm3Bjk0",
     "screenshots": [
@@ -3372,7 +3748,10 @@
     "steamGridMatchedName": "Poppy Playtime",
     "steamGridMatchScore": 0.536,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/poppy-playtime-capitulo-2-xbox-one-series-s-x-midia-digital-1gpyl/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "poppy-playtime-capitulo-3-xbox-series",
@@ -3380,7 +3759,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1505026314,
-    "precoVendaEUR": 15.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/s3_k03RC668",
     "screenshots": [
@@ -3398,7 +3777,10 @@
     "steamGridMatchedName": "Poppy Playtime",
     "steamGridMatchScore": 0.536,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/poppy-playtime-capitulo-3-xbox-one-series-s-x-midia-digital-17h8b/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "poppy-playtime-capitulo-4-xbox-series",
@@ -3406,7 +3788,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1505030216,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/tych99G3-P0",
     "screenshots": [
@@ -3424,7 +3806,10 @@
     "steamGridMatchedName": "Poppy Playtime",
     "steamGridMatchScore": 0.536,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/poppy-playtime-capitulo-4-xbox-one-series-s-x-midia-digital-190ms/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "poppy-playtime-capitulo-5-xbox-series",
@@ -3432,7 +3817,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543683238,
-    "precoVendaEUR": 15.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/EriEensiy0I",
     "screenshots": [
@@ -3450,7 +3835,10 @@
     "steamGridMatchedName": "Poppy Playtime",
     "steamGridMatchScore": 0.536,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/poppy-playtime-capitulo-5-xbox-series-s-x-midia-digital-1ahm0/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "pragmata-xbox-series",
@@ -3458,8 +3846,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1501636121,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 37.99,
+    "precoOriginalEUR": 37.99,
     "trailer": "https://www.youtube.com/embed/oncaa_fMsyw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ca1/ca18d0aae36eb9111d699e5fc301792c.jpg",
@@ -3482,7 +3870,10 @@
     "steamGridMatchedName": "Pragmata",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/pragmata-xbox-series-s-x-midia-digital-1v0ux/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "rayman-legends-retold-xbox-series",
@@ -3490,8 +3881,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543662272,
-    "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 35.99,
+    "precoVendaEUR": 33.99,
+    "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/2_7BQ9hLGkk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/3f3/3f3de84c57189243164a050f7271fb01.jpg",
@@ -3512,7 +3903,10 @@
     "steamGridMatchedName": "Rayman Legends",
     "steamGridMatchScore": 0.667,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/rayman-legends-retold-xbox-series-s-x-midia-digital-1t8og/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "red-dead-2-xbox-series",
@@ -3520,7 +3914,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462776443,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/gmA6MrX81z4",
     "screenshots": [
@@ -3538,7 +3932,10 @@
     "steamGridMatchedName": "Red Dead Online",
     "steamGridMatchScore": 0.56,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/red-dead-2-xbox-one-series-s-x-midia-digital-c4mb5/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "red-dead-redemption-xbox-series",
@@ -3546,7 +3943,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1450101940,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 48.99,
     "trailer": "https://www.youtube.com/embed/-o7rES_3ymA",
     "screenshots": [
@@ -3571,7 +3968,10 @@
     "steamGridMatchedName": "Red Dead Redemption",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/red-dead-redemption-xbox-one-series-s-x-midia-digital-13r2o/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "resident-evil-0-xbox-series",
@@ -3597,7 +3997,10 @@
     "steamGridMatchedName": "Resident Evil 0",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-0-xbox-one-series-s-x-midia-digital-s39ox/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "resident-evil-3-xbox-series",
@@ -3605,7 +4008,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1481040898,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 13.99,
     "trailer": "https://www.youtube.com/embed/xNjGFUaorYc",
     "screenshots": [
@@ -3623,7 +4026,10 @@
     "steamGridMatchedName": "Resident Evil 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-3-xbox-one-series-s-x-midia-digital-9tysu/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "resident-evil-4-2005-xbox-series",
@@ -3656,7 +4062,12 @@
     "steamGridMatchedName": "Resident Evil 4",
     "steamGridMatchScore": 0.75,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-4-2005-xbox-one-series-s-x-midia-digital-g18up/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 12
   },
   {
     "id": "resident-evil-4-remake-xbox-series",
@@ -3664,7 +4075,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463299559,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 15.99,
     "trailer": "https://www.youtube.com/embed/Id2EaldBaWw",
     "screenshots": [
@@ -3682,7 +4093,12 @@
     "steamGridMatchedName": "Resident Evil 4",
     "steamGridMatchScore": 0.709,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-4-remake-xbox-series-s-x-midia-digital-gssoe/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 12
   },
   {
     "id": "resident-evil-5-xbox-series",
@@ -3690,7 +4106,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468653658,
-    "precoVendaEUR": 8.99,
+    "precoVendaEUR": 7.99,
     "precoOriginalEUR": 8.99,
     "trailer": "https://www.youtube.com/embed/EUI48f4iWPc",
     "screenshots": [
@@ -3715,7 +4131,10 @@
     "steamGridMatchedName": "Resident Evil 5",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-5-xbox-one-series-s-x-midia-digital-qal0e/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "resident-evil-6-xbox-series",
@@ -3723,7 +4142,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1490055473,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/8SlXT8JtYSM",
     "screenshots": [
@@ -3748,7 +4167,10 @@
     "steamGridMatchedName": "Resident Evil 6",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-6-xbox-one-series-s-x-midia-digital-1f5aa/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "resident-evil-requiem-exclusiva-xbox-series",
@@ -3756,7 +4178,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1452034601,
-    "precoVendaEUR": 33.99,
+    "precoVendaEUR": 31.99,
     "precoOriginalEUR": 45.99,
     "trailer": "https://www.youtube.com/embed/POz1-EmLsTY",
     "screenshots": [
@@ -3774,7 +4196,12 @@
     "steamGridMatchedName": "Resident Evil Requiem",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-requiem-exclusiva-series-s-x-midia-digital-1r12o/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 12
   },
   {
     "id": "resident-evil-village-xbox-series",
@@ -3782,7 +4209,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1500880637,
-    "precoVendaEUR": 10.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 11.99,
     "trailer": "https://www.youtube.com/embed/tjfTxFzGh3Q",
     "screenshots": [
@@ -3807,7 +4234,10 @@
     "steamGridMatchedName": "Resident Evil Village",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-village-xbox-one-xbox-series-s-x-midia-digital-netm6/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "resident-evil-village-gold-xbox-series",
@@ -3815,7 +4245,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462803105,
-    "precoVendaEUR": 13.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/IJDIenuQepo",
     "screenshots": [
@@ -3833,7 +4263,10 @@
     "steamGridMatchedName": "Resident Evil Village",
     "steamGridMatchScore": 0.785,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-village-gold-xbox-one-series-s-x-midia-digital-181s8/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "riders-republic-xbox-series",
@@ -3841,8 +4274,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1541825105,
-    "precoVendaEUR": 15.99,
-    "precoOriginalEUR": 15.99,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
     "trailer": "https://www.youtube.com/embed/tasjYid5Yec",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1d8/1d8dd69aa0322d1e9849e28a00104c8d.jpg",
@@ -3867,7 +4300,10 @@
     "steamGridMatchedName": "Riders Republic",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/riders-republic-xbox-one-xbox-series-s-x-midia-digital-11mnz/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "sekiro-xbox-series",
@@ -3875,8 +4311,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463283886,
-    "precoVendaEUR": 11.99,
-    "precoOriginalEUR": 11.99,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 10.99,
     "trailer": "https://www.youtube.com/embed/P1hbZQSMDP8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/474/474bbffbbf4f93834b735000c19390b0.jpg"
@@ -3893,7 +4329,10 @@
     "steamGridMatchedName": "Sekira",
     "steamGridMatchScore": 0.5,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/sekiro-xbox-one-series-s-x-midia-digital-ui16w/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "shadow-of-the-tomb-raider-xbox-series",
@@ -3901,8 +4340,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542714362,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 9.99,
+    "precoVendaEUR": 8.99,
+    "precoOriginalEUR": 8.99,
     "trailer": "https://www.youtube.com/embed/XYtyeqVQnRI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/167/16728aa54b1130772b06cdcac128e056.jpg",
@@ -3926,7 +4365,10 @@
     "steamGridMatchedName": "Shadow of the Tomb Raider",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/shadow-of-the-tomb-raider-xbox-one-midia-digital-bb0xi/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "silent-hill-2-xbox-series",
@@ -3934,7 +4376,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464465821,
-    "precoVendaEUR": 18.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 19.99,
     "trailer": "https://www.youtube.com/embed/CMvrMTmuJuA",
     "screenshots": [
@@ -3959,7 +4401,12 @@
     "steamGridMatchedName": "Silent Hill 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/silent-hill-2-xbox-series-s-x-midia-digital-l61ba/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 43
   },
   {
     "id": "silent-hill-f-xbox-series",
@@ -3967,8 +4414,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464536445,
-    "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 35.99,
+    "precoVendaEUR": 33.99,
+    "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/0NMoPvqaz10",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/8b2/8b243945a439d181d8736e785064e01d.jpg",
@@ -3992,7 +4439,10 @@
     "steamGridMatchedName": "Silent Hill f",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/silent-hill-f-xbox-series-s-x-midia-digital-zvk30/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "space-marine-2-xbox-series",
@@ -4000,7 +4450,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463288475,
-    "precoVendaEUR": 22.99,
+    "precoVendaEUR": 20.99,
     "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/A_HljUo8Jjk",
     "screenshots": [
@@ -4018,7 +4468,10 @@
     "steamGridMatchedName": "Space Rift",
     "steamGridMatchScore": 0.443,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/space-marine-2-xbox-series-s-x-midia-digital-qgvfr/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "split-fiction-xbox-series",
@@ -4026,7 +4479,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463339100,
-    "precoVendaEUR": 18.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 32.99,
     "trailer": "https://www.youtube.com/embed/fcwngWPXQtg",
     "screenshots": [
@@ -4051,7 +4504,12 @@
     "steamGridMatchedName": "Split Fiction",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/split-fiction-xbox-series-s-x-midia-digital-1yf0s/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 49
   },
   {
     "id": "spongebob-squarepants-battle-for-bikini-bottom-xbox-series",
@@ -4083,7 +4541,10 @@
     "steamGridMatchedName": "SpongeBob SquarePants: Battle for Bikini Bottom",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/spongebob-squarepants-battle-for-bikini-bottom-xbox-one-series-s-x-midia-digital-10xgh/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "star-wars-jedi-fallen-order-xbox-series",
@@ -4116,7 +4577,12 @@
     "steamGridMatchedName": "Star Wars Jedi: Fallen Order",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/star-wars-jedi-fallen-order-xbox-one-series-s-x-midia-digital-14b02/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 22
   },
   {
     "id": "starfield-xbox-series",
@@ -4124,7 +4590,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544429255,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/Ek3I6_9c58E",
     "screenshots": [
@@ -4149,7 +4615,10 @@
     "steamGridMatchedName": "Starfield",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/starfield-xbox-series-s-x-midia-digital-1xi53/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "street-fighter-6-xbox-series",
@@ -4157,8 +4626,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468711016,
-    "precoVendaEUR": 20.99,
-    "precoOriginalEUR": 20.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "trailer": "https://www.youtube.com/embed/1INU3FOJsTw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d15/d1531ac6ecdac24cf5f9562af7d6f057.jpg",
@@ -4183,7 +4652,12 @@
     "steamGridMatchedName": "Street Fighter 6",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/street-fighter-6-xbox-series-s-x-midia-digital-1uns8/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 25
   },
   {
     "id": "stumble-guys-xbox-series",
@@ -4215,7 +4689,10 @@
     "steamGridMatchedName": "Stumble Guys",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/stumble-guys-xbox-one-series-s-x-midia-digital-16kdr/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "tekken-8-xbox-series",
@@ -4223,7 +4700,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1481028642,
-    "precoVendaEUR": 31.99,
+    "precoVendaEUR": 29.99,
     "precoOriginalEUR": 31.99,
     "trailer": "https://www.youtube.com/embed/2hPuRQz6IlM",
     "screenshots": [
@@ -4248,7 +4725,12 @@
     "steamGridMatchedName": "Tekken 8",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tekken-8-xbox-series-s-x-midia-digital-2teen/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 26
   },
   {
     "id": "the-division-2-xbox-series",
@@ -4274,7 +4756,10 @@
     "steamGridMatchedName": "The Ground Division",
     "steamGridMatchScore": 0.516,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-division-2-xbox-one-series-s-x-midia-digital-16rra/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-quarry-xbox-series",
@@ -4282,8 +4767,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542918093,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 9.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/Zh2K7SxRHmo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/8b1/8b1beb5fe3945ae56d66119782d39b39.jpg",
@@ -4307,7 +4792,10 @@
     "steamGridMatchedName": "The Quarry",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-quarry-xbox-series-s-x-midia-digital-1p3sx/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-witcher-3-wild-hunt-xbox-series",
@@ -4315,7 +4803,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468669135,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/XHrskkHf958",
     "screenshots": [
@@ -4340,7 +4828,12 @@
     "steamGridMatchedName": "The Witcher 3: Wild Hunt",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-witcher-3-wild-hunt-xbox-one-series-s-x-midia-digital-ja78c/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 9
   },
   {
     "id": "titanfall-2-xbox-series",
@@ -4373,7 +4866,10 @@
     "steamGridMatchedName": "Titanfall 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/titanfall-2-xbox-one-midia-digital-1jp1v/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "tom-clancy-s-ghost-recon-breakpoint-xbox-series",
@@ -4381,7 +4877,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1504978402,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/y-9_d3IT_yA",
     "screenshots": [
@@ -4407,7 +4903,10 @@
     "steamGridMatchedName": "Tom Clancy's Ghost Recon Breakpoint",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tom-clancys-ghost-recon-breakpoint-xbox-one-series-s-x-midia-digital-7k7cj/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "tom-clancy-s-ghost-recon-wildlands-xbox-series",
@@ -4415,7 +4914,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1504990721,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 13.99,
     "trailer": "https://www.youtube.com/embed/WdJub3Kz2wI",
     "screenshots": [
@@ -4441,7 +4940,10 @@
     "steamGridMatchedName": "Tom Clancy's Ghost Recon Wildlands",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tom-clancys-ghost-recon-wildlands-xbox-one-series-s-x-midia-digital-17h5g/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "tomb-raider-definitive-edition-xbox-series",
@@ -4474,7 +4976,10 @@
     "steamGridMatchedName": "Tomb Raider: Definitive Edition",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-definitive-edition-xbox-one-series-s-x-midia-digital-2lm1c/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "tomb-raider-legacy-of-atlantis-xbox-series",
@@ -4482,7 +4987,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544422102,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/n6JxVxSHjqE",
     "screenshots": [
@@ -4502,7 +5007,10 @@
     "steamGridMatchedName": "Tomb Raider: Legacy of Atlantis",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tomb-raider-legacy-of-atlantis-xbox-series-s-x-midia-digital-1ivp6/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "tony-hawk-s-pro-skater-1-2-xbox-series",
@@ -4510,7 +5018,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542727972,
-    "precoVendaEUR": 11.99,
+    "precoVendaEUR": 10.99,
     "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/bgGeMuyz7rg",
     "screenshots": [
@@ -4535,7 +5043,10 @@
     "steamGridMatchedName": "Tony Hawk's Pro Skater 1 + 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tony-hawks-pro-skater-12-xbox-one-midia-digital-14r60/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "truck-simulator-cargo-driver-2025-euro-xbox-series",
@@ -4543,7 +5054,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1569255724,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 11.99,
     "trailer": "https://www.youtube.com/embed/KuDpSl-hlqg",
     "screenshots": [
@@ -4561,7 +5072,10 @@
     "steamGridMatchedName": "TRUCK SIMULATOR US DRIVER",
     "steamGridMatchScore": 0.535,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/truck-simulator-cargo-driver-2025-euro-xbox-one-xbox-series-s-x-midia-digital-azrnh/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "ufc-3-xbox-series",
@@ -4569,8 +5083,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542724481,
-    "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 22.99,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
     "trailer": "https://www.youtube.com/embed/Gx_6-zp9eis",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65595-e9fc99c64b5b73901717813131993201-1024-1024.webp"
@@ -4587,7 +5101,10 @@
     "steamGridMatchedName": "UFC 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ufc-3-xbox-one-midia-digital-1r5wv/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "ufc-4-xbox-series",
@@ -4595,7 +5112,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1479901335,
-    "precoVendaEUR": 20.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 22.99,
     "trailer": "https://www.youtube.com/embed/GjugTk9ovcI",
     "screenshots": [
@@ -4619,7 +5136,10 @@
     "steamGridMatchedName": "UFC 3",
     "steamGridMatchScore": 0.613,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ufc-4-xbox-one-series-s-x-midia-digital-7ifn9/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "ufc-5-xbox-series",
@@ -4627,7 +5147,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468678892,
-    "precoVendaEUR": 13.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/1R4MdobS1nI",
     "screenshots": [
@@ -4648,7 +5168,10 @@
     "steamGridMatchedName": "UFC 5",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ufc-5-xbox-series-s-x-midia-digital-7yr3b/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "ufc-6-xbox-series",
@@ -4656,8 +5179,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1541869404,
-    "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 42.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/T2MP_T2e-aU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/64797-6efeded7b1358bb49717812096053870-1024-1024.webp"
@@ -4674,7 +5197,10 @@
     "steamGridMatchedName": "UFC 3",
     "steamGridMatchScore": 0.613,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ufc-6-xbox-series-s-x-midia-digital-12rvk/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "unravel-two-xbox-series",
@@ -4709,7 +5235,10 @@
     "steamGridMatchedName": "Unravel Two",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/unravel-two-xbox-one-midia-digital-vrueg/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "unravel-xbox-series",
@@ -4745,7 +5274,10 @@
     "steamGridMatchedName": "Unravel",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/unravel-xbox-one-midia-digital-1s1eq/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "watch-dogs-2-deluxe-xbox-series",
@@ -4753,7 +5285,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1465754741,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 13.99,
     "trailer": "https://www.youtube.com/embed/hh9x4NqW0Dw",
     "screenshots": [
@@ -4778,7 +5310,10 @@
     "steamGridMatchedName": "Watch Dogs 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/watch-dogs-2-deluxe-xbox-one-series-s-x-midia-digital-1fscq/",
-    "enriquecido": true
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "watch-dogs-complete-edition-xbox-series",
@@ -4804,7 +5339,10 @@
     "steamGridMatchedName": "Watch Dogs",
     "steamGridMatchScore": 0.582,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/watch-dogs-complete-edition-xbox-one-series-s-x-midia-digital-1cjy1/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "wukong-xbox-series",
@@ -4812,7 +5350,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1476942553,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 41.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/zeLqm8g6rhc",
     "screenshots": [
@@ -4830,7 +5368,10 @@
     "steamGridMatchedName": "Wukong",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/wukong-xbox-series-s-x-midia-digital-4cbbn/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "wwe-2k26-xbox-series",
@@ -4838,7 +5379,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1546262344,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 46.99,
     "trailer": "https://www.youtube.com/embed/89e7yn7h1NU",
     "screenshots": [
@@ -4856,6 +5397,9 @@
     "steamGridMatchedName": "WWE 2K26",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/wwe-2k26-xbox-series-s-x-midia-digital-18ic9/",
-    "enriquecido": false
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   }
 ]

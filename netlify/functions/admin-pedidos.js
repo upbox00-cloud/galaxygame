@@ -1,4 +1,5 @@
 const { json, configureOrderStorage, listPersistedOrders, requireAdmin } = require("./_orders");
+const { supplierForOrder } = require("./_commercial-catalog");
 
 exports.handler = async (event, context) => {
   configureOrderStorage(event);
@@ -12,10 +13,14 @@ exports.handler = async (event, context) => {
       || "all";
     const allowedStatuses = ["all", "Aguardando codigo", "Enviado", "Cancelado"];
     const status = allowedStatuses.includes(requestedStatus) ? requestedStatus : "all";
-    const pedidos = await listPersistedOrders({
+    const persistedOrders = await listPersistedOrders({
       status: status === "all" ? "" : status,
       maxRecords: 500
     });
+    const pedidos = persistedOrders.map((pedido) => ({
+      ...pedido,
+      ...supplierForOrder(pedido)
+    }));
     return json(200, {
       pedidos,
       total: pedidos.length,

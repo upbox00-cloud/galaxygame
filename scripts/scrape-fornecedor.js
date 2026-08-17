@@ -5,6 +5,7 @@ const {
   randomDelay,
   getHtml,
   saveJson,
+  parseMoney,
   extractPrices,
   toProductId,
   firstText,
@@ -69,10 +70,8 @@ function parseProductsFromPage(html, platform, pageUrl) {
     );
     const priceFromAttr = Number(root.find(".js-price-display").first().attr("data-product-price") || 0) / 100;
     const { precoAtualBRL: fallbackAtual, precoOriginalBRL: fallbackOriginal } = extractPrices($, root);
-    const precoAtualBRL =
-      priceFromAttr ||
-      fallbackAtual ||
-      Number(bestVariant?.price_number);
+    const prices = variantPrices(bestVariant, priceFromAttr || fallbackAtual);
+    const precoAtualBRL = prices.precoAtualBRL;
     const rawPrecoOriginalBRL =
       fallbackOriginal ||
       Number(bestVariant?.compare_at_price_number) ||
@@ -86,6 +85,9 @@ function parseProductsFromPage(html, platform, pageUrl) {
       id: toProductId(nome, platform.key),
       nome,
       precoAtualBRL,
+      precoPixBRL: prices.precoPixBRL,
+      precoSemPixBRL: prices.precoSemPixBRL,
+      descontoPixAplicado: prices.descontoPixAplicado,
       precoOriginalBRL,
       tipoMidia: "listagem",
       linkFornecedor: new URL(link, pageUrl).href,
@@ -123,6 +125,25 @@ function visibleVariants(variants) {
     .filter((variant) => Number(variant.price_number || 0) > 0);
 }
 
+function pixDiscountEnabled(variant) {
+  const paymentVisibility = variant?.popup_discount_visibility || {};
+  return Object.values(paymentVisibility).some((provider) => provider?.methods?.pix?.show_discount === true);
+}
+
+function variantPrices(variant, fallbackPrice = 0) {
+  const regularPrice = Number(variant?.price_number || 0) || Number(fallbackPrice || 0);
+  const advertisedPixPrice = parseMoney(variant?.price_with_payment_discount_short || "");
+  const pixPrice = pixDiscountEnabled(variant) && advertisedPixPrice > 0
+    ? advertisedPixPrice
+    : regularPrice;
+  return {
+    precoAtualBRL: pixPrice,
+    precoPixBRL: pixPrice,
+    precoSemPixBRL: regularPrice,
+    descontoPixAplicado: pixPrice > 0 && regularPrice > pixPrice
+  };
+}
+
 function pickPrimaryVariant(variants) {
   const available = visibleVariants(variants);
   return available.find((variant) => {
@@ -158,7 +179,8 @@ function readProductDetailPrice(html) {
   const primaryVariant = pickPrimaryVariant(variants);
   const selectedVariant = primaryVariant || pickBestVariant(variants);
   const { precoAtualBRL: fallbackAtual, precoOriginalBRL: fallbackOriginal } = extractPrices($, $("#single-product").first());
-  const precoAtualBRL = Number(selectedVariant?.price_number || 0) || fallbackAtual;
+  const prices = variantPrices(selectedVariant, fallbackAtual);
+  const precoAtualBRL = prices.precoAtualBRL;
   const rawOriginal =
     Number(selectedVariant?.compare_at_price_number || 0) ||
     fallbackOriginal ||
@@ -168,6 +190,9 @@ function readProductDetailPrice(html) {
   if (!precoAtualBRL) return null;
   return {
     precoAtualBRL,
+    precoPixBRL: prices.precoPixBRL,
+    precoSemPixBRL: prices.precoSemPixBRL,
+    descontoPixAplicado: prices.descontoPixAplicado,
     precoOriginalBRL,
     tipoMidia: primaryVariant ? "Primaria" : variants.length ? "unica" : "unica",
     varianteFornecedorId: selectedVariant?.id || ""
@@ -257,7 +282,15 @@ async function main() {
   console.log(`\n[Fornecedor] Concluido. Total: ${total} produto(s). Ficheiro: data/raw-fornecedor.json`);
 }
 
-main().catch((error) => {
-  console.error("[Fornecedor] Erro inesperado:", error);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch((error) => {
+    console.error("[Fornecedor] Erro inesperado:", error);
+    process.exitCode = 1;
+  });
+}
+
+module.exports._test = {
+  pixDiscountEnabled,
+  variantPrices,
+  readProductDetailPrice
+};

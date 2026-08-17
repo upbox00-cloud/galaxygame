@@ -53,7 +53,13 @@ Depois de alterar variaveis no Netlify, inicie um novo deploy. Nunca coloque val
 
 ### Airtable
 
-A tabela deve chamar-se `Pedidos` e conter exatamente os campos `ClienteEmail`, `ClienteNome`, `Produto`, `Plataforma`, `ValorPagoEUR`, `Status`, `Codigo`, `DataCompra` e `StripeSessionId`. O campo `Status` deve aceitar `Aguardando codigo`, `Enviado` e `Cancelado`. Use texto longo para `Codigo`, porque este campo tambem pode guardar dados de uma conta e instrucoes de acesso.
+A tabela deve chamar-se `Pedidos` e conter os campos `ClienteEmail`, `ClienteNome`, `Produto`, `Plataforma`, `ValorPagoEUR`, `Status`, `Codigo`, `DataCompra` e `StripeSessionId`. O campo `Status` deve aceitar `Aguardando codigo`, `Enviado` e `Cancelado`. Use texto longo para `Codigo`, porque este campo tambem pode guardar dados de uma conta e instrucoes de acesso. Para manter no Airtable o retrato comercial do pedido, adicione tambem `Fornecedor` (texto), `CustoFornecedorBRL` (numero/moeda) e `LinkFornecedor` (URL). Mesmo sem estes campos opcionais, a copia persistente do pedido no Netlify Blobs conserva esta informacao.
+
+### Fornecedores e preco concorrente
+
+A Alpha Games e importada automaticamente pelo scraper. Quando a pagina anuncia desconto Pix, `precoPixBRL` passa a ser o custo usado; o preco sem Pix fica guardado separadamente para auditoria. Os custos manuais da TCA Games e os precos do concorrente ficam em `netlify/functions/_data/produtos-comerciais.json`, indexados pelo mesmo `id` do catalogo.
+
+Para adicionar a TCA a outro produto, crie a entrada `fornecedores.tca` com `nome`, `custoPixBRL` e `url`. O campo opcional `precoConcorrenteEUR` define a referencia manual em euros. Ao executar `npm run gerar:precos`, o motor compara os custos Pix validos da Alpha e da TCA, escolhe sempre o menor e atualiza o catalogo comercial privado usado pelo checkout e pelo painel administrativo.
 
 ### Webhook Stripe
 

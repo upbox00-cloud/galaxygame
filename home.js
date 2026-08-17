@@ -33,7 +33,7 @@ const MANUAL_CATALOG_PRODUCTS = [
     plataforma: "PlayStation 5",
     precoVendaEUR: 57.99,
     precoOriginalEUR: 79.99,
-    released: null,
+    released: "2026-11-19",
     rating: 5,
     ratings_count: 0,
     added: 0,
@@ -62,7 +62,7 @@ const MANUAL_CATALOG_PRODUCTS = [
     plataforma: "Xbox Series X|S",
     precoVendaEUR: 69.99,
     precoOriginalEUR: 74.99,
-    released: null,
+    released: "2026-11-19",
     rating: 5,
     ratings_count: 0,
     added: 0,
@@ -332,6 +332,7 @@ function createCatalogCard(product) {
       <div class="cover catalog-cover ${isSupplierCatalogImage(product, image) ? "supplier-cover-clean" : ""}" style="--art: url('${escapeCatalogHtml(image)}')">
         <span class="tag">${escapeCatalogHtml(discountPercent(product))}</span>
         ${platformBadgeHtml(product)}
+        ${preorderCountdownHtml(product)}
       </div>
       <div class="game-info">
         <h3 title="${escapeCatalogHtml(name)}">${escapeCatalogHtml(name)}</h3>
@@ -342,6 +343,18 @@ function createCatalogCard(product) {
         <div class="platforms"><span>${escapeCatalogHtml(platform)}</span></div>
       </div>
     </a>
+  `;
+}
+
+function preorderCountdownHtml(product) {
+  if (!isPreorderProduct(product)) return "";
+  const released = /^\d{4}-\d{2}-\d{2}$/.test(String(product.released || "")) ? product.released : "";
+  return `
+    <div class="release-countdown release-countdown-card" data-release-countdown="${escapeCatalogHtml(released)}" aria-label="Contagem decrescente para o lancamento">
+      <span class="release-countdown-label">Lan&ccedil;amento em</span>
+      <strong data-countdown-value>Data a confirmar</strong>
+      <time data-countdown-date${released ? ` datetime="${released}"` : ""}></time>
+    </div>
   `;
 }
 
@@ -527,6 +540,7 @@ function renderCatalog() {
 
   catalogGrid.innerHTML = visible.map(createCatalogCard).join("");
   resolveGridCardImages(catalogGrid, visible);
+  window.GalaxyCountdown?.refresh(catalogGrid);
   catalogCounter.textContent = `${filtered.length} produto(s)`;
 
   if (!filtered.length) {
@@ -671,6 +685,7 @@ function renderHighlightGrid(grid, products) {
   }
   grid.innerHTML = products.map(createCatalogCard).join("");
   resolveGridCardImages(grid, products);
+  window.GalaxyCountdown?.refresh(grid);
   grid.querySelectorAll(".game-card").forEach((card, index) => {
     card.style.transitionDelay = `${Math.min(index * 25, 200)}ms`;
     requestAnimationFrame(() => card.classList.add("revealed"));

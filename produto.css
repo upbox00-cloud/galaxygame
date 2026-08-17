@@ -205,6 +205,52 @@
   text-align: center;
 }
 
+.product-release-countdown {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 5px 12px;
+  min-height: 66px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 122, 24, 0.68);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  background: linear-gradient(110deg, rgba(40, 21, 53, 0.94), rgba(37, 26, 27, 0.94));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.product-release-countdown[hidden] {
+  display: none;
+}
+
+.product-release-countdown .release-countdown-label {
+  color: #ff9d56;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.product-release-countdown strong {
+  grid-column: 1 / -1;
+  color: #fff;
+  font-size: clamp(21px, 2vw, 27px);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.product-release-countdown time {
+  grid-column: 2;
+  grid-row: 1;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.product-release-countdown[data-countdown-state="unknown"] strong,
+.product-release-countdown[data-countdown-state="released"] strong {
+  color: #ffb47c;
+}
+
 .select-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -757,6 +803,19 @@
   font-weight: 900;
 }
 
+.mini-cover .release-countdown-card {
+  min-height: 42px;
+  padding: 6px 7px;
+}
+
+.mini-cover .release-countdown-card strong {
+  font-size: 12px;
+}
+
+.mini-cover .release-countdown-card time {
+  display: none;
+}
+
 .related-card-link {
   display: grid;
   grid-template-rows: auto auto auto;
@@ -939,6 +998,10 @@
 
   .buy-panel h1 {
     font-size: 24px;
+  }
+
+  .product-release-countdown strong {
+    font-size: clamp(18px, 6vw, 25px);
   }
 
   .select-row {

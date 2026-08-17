@@ -163,6 +163,7 @@ test("checkout conhece o catálogo e os destaques manuais", () => {
   const catalog = checkout._test.loadCatalog();
   assert.equal(catalog.get("gta-vi-ps5").precoVendaEUR, 57.99);
   assert.ok(catalog.get("the-witcher-3-wild-hunt-ps5"));
+  assert.equal(catalog.get("ea-sports-fc-26-ps5").fornecedorSelecionado, "TCA Games");
 });
 
 test("checkout cobra apenas em euros e pede meios de pagamento portugueses", async () => {
@@ -182,7 +183,7 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
 
   try {
     await checkout._test.createStripeCheckout([
-      { id: "jogo", nome: "Jogo", plataforma: "PlayStation 5", precoVendaEUR: 19.99 }
+      { id: "jogo", nome: "Jogo", plataforma: "PlayStation 5", precoVendaEUR: 19.99, fornecedorSelecionado: "TCA Games", custoFornecedorBRL: 47.4, linkFornecedorSelecionado: "https://www.lojatcagames.com.br/products/jogo" }
     ], { email: "cliente@example.com", name: "Cliente" });
     const params = new URLSearchParams(request.options.body);
     const methods = [...params.entries()]
@@ -190,6 +191,8 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
       .map(([, value]) => value);
     assert.equal(params.get("line_items[0][price_data][currency]"), "eur");
     assert.equal(params.get("adaptive_pricing[enabled]"), "false");
+    assert.equal(params.get("line_items[0][price_data][product_data][metadata][supplier]"), "TCA Games");
+    assert.equal(params.get("line_items[0][price_data][product_data][metadata][supplier_cost_brl]"), "47.4");
     assert.equal(
       params.get("success_url"),
       "https://galaxygame.pt/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}"

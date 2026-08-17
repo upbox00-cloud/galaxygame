@@ -70,7 +70,10 @@ exports.handler = async (event) => {
       Status: "Aguardando codigo",
       Codigo: "",
       DataCompra: new Date().toISOString(),
-      StripeSessionId: sessionId
+      StripeSessionId: sessionId,
+      Fornecedor: parsed.fornecedor || "",
+      CustoFornecedorBRL: Number(parsed.custoFornecedorBRL || 0),
+      LinkFornecedor: parsed.linkFornecedor || ""
     });
 
     let confirmationEmailSent = false;

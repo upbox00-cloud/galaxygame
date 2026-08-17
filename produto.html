@@ -16,8 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="assets/galaxygame-header-logo-cropped.webp" as="image" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260815-2" />
-    <link rel="stylesheet" href="produto.css?v=20260816-2" />
+    <link rel="stylesheet" href="styles.css?v=20260817-1" />
+    <link rel="stylesheet" href="produto.css?v=20260817-2" />
   </head>
   <body class="product-page product-loading">
     <header class="site-header product-header">
@@ -62,6 +62,12 @@
             <h1>A carregar produto...</h1>
             <div class="edition-pill">Edição digital · Conta GalaxyGame + email</div>
             <div class="stock-line">Preço final em euros · Compra com informação clara</div>
+
+            <div class="release-countdown product-release-countdown" data-product-countdown hidden>
+              <span class="release-countdown-label">Lan&ccedil;amento em</span>
+              <strong data-countdown-value>Data a confirmar</strong>
+              <time data-countdown-date></time>
+            </div>
 
             <div class="select-row">
               <button type="button" data-product-platform>Plataforma</button>
@@ -182,7 +188,8 @@
     </footer>
 
     <script src="cart.js?v=20260816-1" defer></script>
-    <script src="produto.js?v=20260816-1" defer></script>
+    <script src="release-countdown.js?v=20260817-2" defer></script>
+    <script src="produto.js?v=20260817-2" defer></script>
     <script src="noticias.js?v=20260714-8" defer></script>
     <script src="header-search.js?v=20260801-2" defer></script>
     <script src="footer.js?v=20260815-1" defer></script>

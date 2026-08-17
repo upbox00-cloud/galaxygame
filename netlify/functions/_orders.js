@@ -174,7 +174,10 @@ function normalizeOrder(record) {
     codigo: fields.Codigo || fields["Código"] || "",
     imagem: normalizeImageField(fields.ImagemURL || fields.Imagem || fields.Capa),
     dataCompra: fields.DataCompra || "",
-    stripeSessionId: fields.StripeSessionId || ""
+    stripeSessionId: fields.StripeSessionId || "",
+    fornecedor: fields.Fornecedor || "",
+    custoFornecedorBRL: Number(fields.CustoFornecedorBRL || 0),
+    linkFornecedor: fields.LinkFornecedor || ""
   };
 }
 
@@ -215,7 +218,10 @@ function normalizeBlobOrder(value) {
     codigo: value.codigo || "",
     imagem: normalizeImageField(value.imagem),
     dataCompra: value.dataCompra || "",
-    stripeSessionId: value.stripeSessionId
+    stripeSessionId: value.stripeSessionId,
+    fornecedor: value.fornecedor || "",
+    custoFornecedorBRL: Number(value.custoFornecedorBRL || 0),
+    linkFornecedor: value.linkFornecedor || ""
   };
 }
 
@@ -231,7 +237,10 @@ function fieldsToBlobOrder(fields, current = {}) {
     codigo: fields.Codigo ?? current.codigo,
     imagem: fields.ImagemURL ?? fields.Imagem ?? current.imagem,
     dataCompra: fields.DataCompra ?? current.dataCompra,
-    stripeSessionId: fields.StripeSessionId ?? current.stripeSessionId
+    stripeSessionId: fields.StripeSessionId ?? current.stripeSessionId,
+    fornecedor: fields.Fornecedor ?? current.fornecedor,
+    custoFornecedorBRL: fields.CustoFornecedorBRL ?? current.custoFornecedorBRL,
+    linkFornecedor: fields.LinkFornecedor ?? current.linkFornecedor
   });
 }
 
@@ -389,7 +398,10 @@ async function updatePersistedOrder(recordId, fields) {
         Plataforma: current.plataforma,
         ValorPagoEUR: current.valorPagoEUR,
         ImagemURL: current.imagem,
-        DataCompra: current.dataCompra
+        DataCompra: current.dataCompra,
+        Fornecedor: current.fornecedor,
+        CustoFornecedorBRL: current.custoFornecedorBRL,
+        LinkFornecedor: current.linkFornecedor
       }, {
         ...current,
         stripeSessionId: current.stripeSessionId
@@ -434,7 +446,10 @@ function mergeOrderCopies(airtableOrder, blobOrder) {
     plataforma: preferred.plataforma || fallback.plataforma,
     imagem: preferred.imagem || fallback.imagem,
     codigo: preferred.codigo || fallback.codigo,
-    stripeSessionId: preferred.stripeSessionId || fallback.stripeSessionId
+    stripeSessionId: preferred.stripeSessionId || fallback.stripeSessionId,
+    fornecedor: preferred.fornecedor || fallback.fornecedor,
+    custoFornecedorBRL: preferred.custoFornecedorBRL || fallback.custoFornecedorBRL,
+    linkFornecedor: preferred.linkFornecedor || fallback.linkFornecedor
   };
 }
 
@@ -569,7 +584,10 @@ function parseStripeProducts(session) {
         return {
           produto: list.map((item) => item.nome || item.name || item.produto || item.title).filter(Boolean).join(", "),
           plataforma: Array.from(new Set(list.map((item) => item.plataforma || item.platform).filter(Boolean))).join(", "),
-          imagem: list.map((item) => item.imagem || item.image || item.capaSteamGridDB || item.imagemFallback).find(Boolean) || ""
+          imagem: list.map((item) => item.imagem || item.image || item.capaSteamGridDB || item.imagemFallback).find(Boolean) || "",
+          fornecedor: Array.from(new Set(list.map((item) => item.fornecedor || item.supplier).filter(Boolean))).join(", "),
+          custoFornecedorBRL: list.reduce((sum, item) => sum + Number(item.custoFornecedorBRL || item.supplierCostBRL || 0), 0),
+          linkFornecedor: list.map((item) => item.linkFornecedor || item.supplierUrl).filter(Boolean).join("\n")
         };
       }
     } catch {
@@ -580,7 +598,10 @@ function parseStripeProducts(session) {
   return {
     produto: metadata.Produto || metadata.produto || metadata.product || metadata.productName || "Produto GalaxyGame",
     plataforma: metadata.Plataforma || metadata.plataforma || metadata.platform || "",
-    imagem: metadata.ImagemURL || metadata.imagem || metadata.image || ""
+    imagem: metadata.ImagemURL || metadata.imagem || metadata.image || "",
+    fornecedor: metadata.Fornecedor || metadata.fornecedor || metadata.supplier || "",
+    custoFornecedorBRL: Number(metadata.CustoFornecedorBRL || metadata.supplier_cost_brl || 0),
+    linkFornecedor: metadata.LinkFornecedor || metadata.supplier_url || ""
   };
 }
 
@@ -608,12 +629,16 @@ async function fetchStripeProducts(session) {
 
   const lines = Array.isArray(data.data) ? data.data : [];
   if (!lines.length) return parseStripeProducts(session);
+  const productMetadata = lines.map((line) => line.price?.product?.metadata || {});
   return {
     produto: lines.map((line) => line.description || line.price?.product?.name).filter(Boolean).join(", "),
     plataforma: Array.from(new Set(lines
       .map((line) => line.price?.product?.metadata?.platform)
       .filter(Boolean))).join(", "),
-    imagem: lines.map((line) => line.price?.product?.images?.[0]).find(Boolean) || ""
+    imagem: lines.map((line) => line.price?.product?.images?.[0]).find(Boolean) || "",
+    fornecedor: Array.from(new Set(productMetadata.map((metadata) => metadata.supplier).filter(Boolean))).join(", "),
+    custoFornecedorBRL: productMetadata.reduce((sum, metadata) => sum + Number(metadata.supplier_cost_brl || 0), 0),
+    linkFornecedor: productMetadata.map((metadata) => metadata.supplier_url).filter(Boolean).join("\n")
   };
 }
 
