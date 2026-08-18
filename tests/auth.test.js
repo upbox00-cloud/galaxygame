@@ -143,7 +143,7 @@ test("all primary pages load the cache-busted auth script once", () => {
       `${page} deve preservar o recovery token antes do widget`
     );
     assert.equal(
-      (html.match(/styles\.css\?v=\d+(?:-\d+)?/g) || []).length,
+      (html.match(/styles(?:\.min)?\.css\?v=\d+(?:-\d+)?/g) || []).length,
       1,
       `${page} deve carregar o CSS que bloqueia o modal antigo`
     );

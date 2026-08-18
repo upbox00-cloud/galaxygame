@@ -90,8 +90,53 @@
     "candidatos": []
   },
   {
+    "id": "assassin-s-creed-chronicles-trilogy-ps4",
+    "nome": "ASSASSIN'S CREED CHRONICLES TRILOGY - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-chronicles-russia-ps4",
+    "nome": "ASSASSIN'S CREED CHRONICLES: RUSSIA - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-mirage-ps4",
+    "nome": "ASSASSIN'S CREED MIRAGE - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-mirage-e-assassin-s-creed-valhalla-ps4",
+    "nome": "ASSASSIN'S CREED MIRAGE E ASSASSIN’S CREED VALHALLA - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "assassin-s-creed-odyssey-ps4",
     "nome": "ASSASSIN'S CREED ODYSSEY - PS4 - MIDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-origins-ps4",
+    "nome": "ASSASSIN'S CREED ORIGINS - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -126,6 +171,15 @@
     "candidatos": []
   },
   {
+    "id": "assassin-s-creed-triple-pack-black-flag-unity-syndicate-ps4",
+    "nome": "ASSASSIN'S CREED TRIPLE PACK: BLACK FLAG, UNITY, SYNDICATE - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "assassin-s-creed-valhalla-ps4",
     "nome": "ASSASSIN'S CREED VALHALLA - PS4 - MIDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -135,8 +189,8 @@
     "candidatos": []
   },
   {
-    "id": "assassin-s-creed-origins-ps4",
-    "nome": "ASSASSIN`S CREED ORIGINS - PS4 - MÍDIA DIGITAL",
+    "id": "assassin-s-creed-chronicles-china-ps4",
+    "nome": "ASSASSIN’S CREED CHRONICLES: CHINA - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -144,8 +198,35 @@
     "candidatos": []
   },
   {
-    "id": "assassin-s-creed-mirage-ps4",
-    "nome": "ASSASSIN´S CREED MIRAGE - PS4 - MÍDIA DIGITAL",
+    "id": "assassin-s-creed-chronicles-india-ps4",
+    "nome": "ASSASSIN’S CREED CHRONICLES: INDIA - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-freedom-cry-ps4",
+    "nome": "ASSASSIN’S CREED FREEDOM CRY - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-mythology-pack-ps4",
+    "nome": "ASSASSIN’S CREED MYTHOLOGY PACK - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-unity-ps4",
+    "nome": "ASSASSIN’S CREED UNITY - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -173,6 +254,42 @@
   {
     "id": "astro-bot-rescue-mission-vr-ps4",
     "nome": "ASTRO BOT RESCUE MISSION VR - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "avatar-the-last-airbender-quest-for-balance-ps4",
+    "nome": "AVATAR THE LAST AIRBENDER: QUEST FOR BALANCE - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "baldur-s-gate-dark-aliance-ps4",
+    "nome": "BALDUR'S GATE: DARK ALIANCE - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "baldur-s-gate-dark-aliance-ii-ps4",
+    "nome": "BALDUR'S GATE: DARK ALIANCE II - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "batman-shadows-edition-the-telltale-ps4",
+    "nome": "BATMAN SHADOWS EDITION THE TELLTALE - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -218,6 +335,15 @@
   {
     "id": "battlefield-1-ps4",
     "nome": "BATTLEFIELD 1 - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "battlefield-1-e-titanfall-2-conjunto-ultimate-ps4",
+    "nome": "BATTLEFIELD 1 E TITANFALL 2 CONJUNTO ULTIMATE - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -279,6 +405,15 @@
     "candidatos": []
   },
   {
+    "id": "bloodborne-complete-edition-bundle-ps4",
+    "nome": "BLOODBORNE COMPLETE EDITION BUNDLE - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "bob-esponja-calca-quadrada-ps4",
     "nome": "BOB ESPONJA CALÇA QUADRADA - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -324,6 +459,51 @@
     "candidatos": []
   },
   {
+    "id": "borderlands-2-vr-ps4",
+    "nome": "BORDERLANDS 2 VR - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-3-ps4",
+    "nome": "BORDERLANDS 3 - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-legendary-collection-ps4",
+    "nome": "BORDERLANDS LEGENDARY COLLECTION - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-game-of-the-year-edition-ps4",
+    "nome": "BORDERLANDS: GAME OF THE YEAR EDITION - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-the-handsome-collection-ps4",
+    "nome": "BORDERLANDS: THE HANDSOME COLLECTION - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "bud-spencer-e-terence-hill-slaps-and-beans-2-ps4",
     "nome": "BUD SPENCER & TERENCE HILL - SLAPS AND BEANS 2 - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -344,6 +524,15 @@
   {
     "id": "bully-ps4",
     "nome": "BULLY - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "bundle-assassin-s-creed-valhalla-watch-dogs-legion-ps4",
+    "nome": "BUNDLE ASSASSIN’S CREED VALHALLA + WATCH DOGS: LEGION - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -688,22 +877,22 @@
     "nome": "DARK SOULS REMASTERED - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 11.99,
-    "nomeConcorrente": "<img width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo.png\" alt=\"Tom Clancy’s RainBow Six Siege  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo.png 800w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
+    "precoConcorrenteEUR": 3.99,
+    "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png\" alt=\"Batman: Arkham Knight LOW COST | PS45\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo.png\" alt=\"Tom Clancy’s RainBow Six Siege  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo.png 800w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
-        "precoConcorrenteEUR": 11.99,
+        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png\" alt=\"Batman: Arkham Knight LOW COST | PS45\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 3.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png\" alt=\"Mad Max  PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 12.99,
+        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 4.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo.png\" alt=\"Dragon Age: Inquisition LOW COST | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 13.99,
+        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/metal-gear-solid-v-the-phantom-pain-ps4-catalogo.png\" alt=\"METAL GEAR SOLID V: THE PHANTOM PAIN  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/metal-gear-solid-v-the-phantom-pain-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/04/metal-gear-solid-v-the-phantom-pain-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/metal-gear-solid-v-the-phantom-pain-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/metal-gear-solid-v-the-phantom-pain-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/metal-gear-solid-v-the-phantom-pain-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/metal-gear-solid-v-the-phantom-pain-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 9.99,
         "score": 3
       }
     ]
@@ -841,7 +1030,7 @@
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
-    "candidatos": []
+    "erro": "aborted"
   },
   {
     "id": "dragon-ball-fighter-z-ps4",
@@ -1352,13 +1541,13 @@
         "score": 4
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png\" alt=\"Until Dawn  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 12.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mortal-kombat-x-ps4-catalogo.png\" alt=\"Mortal Kombat X  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mortal-kombat-x-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/04/mortal-kombat-x-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/mortal-kombat-x-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/mortal-kombat-x-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/mortal-kombat-x-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/mortal-kombat-x-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 10.99,
         "score": 4
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo.png\" alt=\"inFAMOUS First Light PREMIUM  | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
-        "precoConcorrenteEUR": 14.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo.png\" alt=\"Assassin&#039;s Creed Unity PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 15.99,
         "score": 4
       }
     ]
@@ -1548,22 +1737,22 @@
     "nome": "LEGO BATMAN 3: BEYOND GOTHAM - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 4.49,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png\" alt=\"Batman: Arkham Knight PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 12.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png\" alt=\"Until Dawn  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png\" alt=\"Batman: Arkham Knight PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/11/batman-arkham-knight-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 4.49,
-        "score": 4
-      },
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/just-cause-3-ps4-catalogo.png\" alt=\"Just Cause 3  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/just-cause-3-ps4-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2020/03/just-cause-3-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/just-cause-3-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/just-cause-3-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/just-cause-3-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/just-cause-3-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
-        "precoConcorrenteEUR": 4.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png\" alt=\"Until Dawn  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 12.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo.png\" alt=\"Tom Clancy’s RainBow Six Siege  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo.png 800w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2016/04/rainbow-six-ps4-catalogo-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
-        "precoConcorrenteEUR": 11.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo.png\" alt=\"Dragon Age: Inquisition LOW COST | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 13.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo.png\" alt=\"Assassin&#039;s Creed Unity PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 15.99,
         "score": 3
       }
     ]
@@ -1617,10 +1806,26 @@
     "id": "lego-dc-super-viloes-ps4",
     "nome": "LEGO DC SUPER-VILÕES - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
+    "sem_referencia": false,
+    "precoConcorrenteEUR": 12.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png\" alt=\"Until Dawn  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png\" alt=\"Until Dawn  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 12.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo.png\" alt=\"Dragon Age: Inquisition LOW COST | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/dragon-age-inquisition-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 13.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo.png\" alt=\"Assassin&#039;s Creed Unity PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/assassins-creed-unity-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 15.99,
+        "score": 3
+      }
+    ]
   },
   {
     "id": "lego-harry-potter-collection-ps4",
@@ -2037,6 +2242,15 @@
     "candidatos": []
   },
   {
+    "id": "mortal-kombat-conjunto-deus-ancestral-ps4",
+    "nome": "MORTAL KOMBAT: CONJUNTO DEUS ANCESTRAL - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "mortal-kombat-legacy-kollection-ps4",
     "nome": "MORTAL KOMBAT: LEGACY KOLLECTION - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -2343,6 +2557,15 @@
     "candidatos": []
   },
   {
+    "id": "pacote-assassin-s-creed-valhalla-immortals-fenyx-rising-ps4",
+    "nome": "PACOTE ASSASSIN’S CREED VALHALLA + IMMORTALS FENYX RISING - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "pacote-crash-bandicoot-n-sane-trilogy-ctr-nitro-fueled-ps4",
     "nome": "PACOTE CRASH BANDICOOT N. SANE TRILOGY + CTR NITRO-FUELED - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -2427,10 +2650,16 @@
     "id": "plants-vs-zombies-garden-warfare-2-ps4",
     "nome": "PLANTS VS. ZOMBIES GARDEN WARFARE 2 - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
+    "sem_referencia": false,
+    "precoConcorrenteEUR": 12.88,
+    "nomeConcorrente": "<img width=\"294\" height=\"432\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png\" alt=\"Plants vs. Zombies: Battle for Neighborville | Origin\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png 294w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-64x94.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-204x300.png 204w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-51x75.png 51w\" sizes=\"(max-width:767px) 294px, 294px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img width=\"294\" height=\"432\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png\" alt=\"Plants vs. Zombies: Battle for Neighborville | Origin\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png 294w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-64x94.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-204x300.png 204w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-51x75.png 51w\" sizes=\"(max-width:767px) 294px, 294px\"/>",
+        "precoConcorrenteEUR": 12.88,
+        "score": 3
+      }
+    ]
   },
   {
     "id": "plants-vs-zombies-batalha-por-neighborville-ps4",
@@ -3634,22 +3863,22 @@
     "nome": "TWISTED METAL - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 4.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 9.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png\" alt=\"Mad Max Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 4.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png\" alt=\"Mad Max Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 9.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"410\" height=\"410\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo.png\" alt=\"God of War III Remastered  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo.png 410w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 410px, 410px\"/>",
-        "precoConcorrenteEUR": 10.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"440\" height=\"440\" src=\"https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo.png\" alt=\"PAYDAY 2: CRIMEWAVE EDITION  PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo.png 440w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 440px, 440px\"/>",
+        "precoConcorrenteEUR": 11.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"410\" height=\"410\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo.png\" alt=\"Little Big Planet 3  PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo.png 410w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 410px, 410px\"/>",
-        "precoConcorrenteEUR": 12.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo.png\" alt=\"inFAMOUS First Light PREMIUM  | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 14.99,
         "score": 3
       }
     ]
@@ -3686,22 +3915,22 @@
     "nome": "TWISTED METAL: BLACK - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 4.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 9.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png\" alt=\"Mad Max Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 4.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png\" alt=\"Mad Max Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/mad-max-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 9.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"410\" height=\"410\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo.png\" alt=\"God of War III Remastered  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo.png 410w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/03/god-of-war-iii-remastered-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 410px, 410px\"/>",
-        "precoConcorrenteEUR": 10.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"440\" height=\"440\" src=\"https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo.png\" alt=\"PAYDAY 2: CRIMEWAVE EDITION  PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo.png 440w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2021/06/payday-2-crimewave-edition-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 440px, 440px\"/>",
+        "precoConcorrenteEUR": 11.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"410\" height=\"410\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo.png\" alt=\"Little Big Planet 3  PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo.png 410w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/06/littlebigplanet-3-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 410px, 410px\"/>",
-        "precoConcorrenteEUR": 12.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo.png\" alt=\"inFAMOUS First Light PREMIUM  | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/09/infamous-first-light-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 14.99,
         "score": 3
       }
     ]
@@ -3941,6 +4170,42 @@
     "candidatos": []
   },
   {
+    "id": "assassin-s-creed-chronicles-trilogy-ps5",
+    "nome": "ASSASSIN'S CREED CHRONICLES TRILOGY - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-chronicles-russia-ps5",
+    "nome": "ASSASSIN'S CREED CHRONICLES: RUSSIA - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-mirage-ps5",
+    "nome": "ASSASSIN'S CREED MIRAGE - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-mirage-e-assassin-s-creed-valhalla-ps5",
+    "nome": "ASSASSIN'S CREED MIRAGE E ASSASSIN’S CREED VALHALLA - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "assassin-s-creed-odyssey-ps5",
     "nome": "ASSASSIN'S CREED ODYSSEY - PS5 - MIDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -3950,8 +4215,26 @@
     "candidatos": []
   },
   {
+    "id": "assassin-s-creed-origins-ps5",
+    "nome": "ASSASSIN'S CREED ORIGINS - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "assassin-s-creed-rogue-remastered-ps5",
     "nome": "ASSASSIN'S CREED ROGUE REMASTERED - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-shadows-ps5",
+    "nome": "ASSASSIN'S CREED SHADOWS - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -3977,6 +4260,15 @@
     "candidatos": []
   },
   {
+    "id": "assassin-s-creed-triple-pack-black-flag-unity-syndicate-ps5",
+    "nome": "ASSASSIN'S CREED TRIPLE PACK: BLACK FLAG, UNITY, SYNDICATE - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "assassin-s-creed-valhalla-ps5",
     "nome": "ASSASSIN'S CREED VALHALLA - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -3986,35 +4278,69 @@
     "candidatos": []
   },
   {
-    "id": "assassin-s-creed-mirage-ps5",
-    "nome": "ASSASSIN`S CREED MIRAGE - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "assassin-s-creed-origins-ps5",
-    "nome": "ASSASSIN`S CREED ORIGINS - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "assassin-s-creed-shadows-ps5",
-    "nome": "ASSASSIN`S CREED SHADOWS - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "assassins-creed-black-flag-resynced-ps5",
     "nome": "ASSASSINS CREED BLACK FLAG RESYNCED - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": false,
+    "precoConcorrenteEUR": 24.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 24.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png\" alt=\"GODFALL LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 34.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 39.99,
+        "score": 3
+      }
+    ]
+  },
+  {
+    "id": "assassin-s-creed-chronicles-china-ps5",
+    "nome": "ASSASSIN’S CREED CHRONICLES: CHINA - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-chronicles-india-ps5",
+    "nome": "ASSASSIN’S CREED CHRONICLES: INDIA - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-freedom-cry-ps5",
+    "nome": "ASSASSIN’S CREED FREEDOM CRY - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-mythology-pack-ps5",
+    "nome": "ASSASSIN’S CREED MYTHOLOGY PACK - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-unity-ps5",
+    "nome": "ASSASSIN’S CREED UNITY - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -4049,6 +4375,24 @@
     "candidatos": []
   },
   {
+    "id": "avatar-legends-the-fighting-game-ps5",
+    "nome": "AVATAR LEGENDS: THE FIGHTING GAME - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "avatar-the-last-airbender-quest-for-balance-ps5",
+    "nome": "AVATAR THE LAST AIRBENDER: QUEST FOR BALANCE - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "avatar-frontiers-of-pandora-ps5",
     "nome": "AVATAR: FRONTIERS OF PANDORA - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -4060,6 +4404,33 @@
   {
     "id": "baldur-s-gate-3-ps5",
     "nome": "BALDUR'S GATE 3 - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "baldur-s-gate-dark-aliance-ps5",
+    "nome": "BALDUR'S GATE: DARK ALIANCE - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "baldur-s-gate-dark-aliance-ii-ps5",
+    "nome": "BALDUR'S GATE: DARK ALIANCE II - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "batman-shadows-edition-the-telltale-ps5",
+    "nome": "BATMAN SHADOWS EDITION THE TELLTALE - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -4096,6 +4467,15 @@
   {
     "id": "battlefield-1-ps5",
     "nome": "BATTLEFIELD 1 - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "battlefield-1-e-titanfall-2-conjunto-ultimate-ps5",
+    "nome": "BATTLEFIELD 1 E TITANFALL 2 CONJUNTO ULTIMATE - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -4175,6 +4555,15 @@
     "candidatos": []
   },
   {
+    "id": "bloodborne-complete-edition-bundle-ps5",
+    "nome": "BLOODBORNE COMPLETE EDITION BUNDLE - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "bob-esponja-calca-quadrada-ps5",
     "nome": "BOB ESPONJA CALÇA QUADRADA - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -4229,8 +4618,44 @@
     "candidatos": []
   },
   {
+    "id": "borderlands-3-ps5",
+    "nome": "BORDERLANDS 3 - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "borderlands-4-ps5",
     "nome": "BORDERLANDS 4 - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-legendary-collection-ps5",
+    "nome": "BORDERLANDS LEGENDARY COLLECTION - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-game-of-the-year-edition-ps5",
+    "nome": "BORDERLANDS: GAME OF THE YEAR EDITION - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-the-handsome-collection-ps5",
+    "nome": "BORDERLANDS: THE HANDSOME COLLECTION - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -4265,8 +4690,8 @@
     "candidatos": []
   },
   {
-    "id": "bundle-mortal-kombat-1-mortal-kombat-xl-e-mortal-kombat-11-ps5",
-    "nome": "BUNDLE MORTAL KOMBAT 1 MORTAL KOMBAT XL & MORTAL KOMBAT 11 - PS5 - MÍDIA DIGITAL",
+    "id": "bundle-assassin-s-creed-valhalla-watch-dogs-legion-ps5",
+    "nome": "BUNDLE ASSASSIN’S CREED VALHALLA + WATCH DOGS: LEGION - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -4503,22 +4928,22 @@
     "nome": "CLAIR OBSCUR: EXPEDITION 33 - PS5 - MIDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 24.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+    "precoConcorrenteEUR": 12.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
-        "precoConcorrenteEUR": 24.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 12.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo.png\" alt=\"Call of Duty: Black Ops Cold War LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 30.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 27.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 31.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo.png\" alt=\"Gran Turismo  7 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 47.99,
         "score": 3
       }
     ]
@@ -4771,23 +5196,23 @@
     "nome": "DEATH STRANDING 2: ON THE BEACH - PS5 - MIDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 10.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 24.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 10.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 24.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png\" alt=\"Warhammer: Chaosbane Slayer Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 23.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 33.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 31.99,
-        "score": 4
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png\" alt=\"Ratchet &amp; Clank: Rift Apart LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png 800w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
+        "precoConcorrenteEUR": 36.99,
+        "score": 3
       }
     ]
   },
@@ -4994,22 +5419,22 @@
     "nome": "DYING LIGHT: THE BEAST - PS5 - MIDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 27.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 10.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 27.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 10.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png\" alt=\"Temtem PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 39.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 24.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo.png\" alt=\"FINAL FANTASY VII REMAKE INTERGRADE PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 43.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png\" alt=\"Returnal LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 36.99,
         "score": 3
       }
     ]
@@ -5226,12 +5651,17 @@
     "nome": "FARMING SIMULATOR 17 - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 46.95,
-    "nomeConcorrente": "<img width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/90983.jpg\" alt=\"Dragon Ball Z Kakarot Daima Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/90983.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-500x500.jpg 500w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-300x300.jpg 300w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-768x768.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-150x150.jpg 150w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-75x75.jpg 75w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-480x480.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-400x400.jpg 400w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-64x64.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
+    "precoConcorrenteEUR": 19.49,
+    "nomeConcorrente": "<img width=\"1168\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg\" alt=\"Big Buck Hunter Arcade:Ultimate Trophy - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg 1168w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-389x500.jpg 389w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-934x1200.jpg 934w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-234x300.jpg 234w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-768x986.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-58x75.jpg 58w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-480x616.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-800x1027.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-64x82.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1168px) 100vw, 1168px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/90983.jpg\" alt=\"Dragon Ball Z Kakarot Daima Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/90983.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-500x500.jpg 500w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-300x300.jpg 300w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-768x768.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-150x150.jpg 150w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-75x75.jpg 75w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-480x480.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-400x400.jpg 400w, https://www.jogodigital.com/wp-content/uploads/2026/02/90983-64x64.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
-        "precoConcorrenteEUR": 46.95,
+        "nomeConcorrente": "<img width=\"1168\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg\" alt=\"Big Buck Hunter Arcade:Ultimate Trophy - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg 1168w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-389x500.jpg 389w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-934x1200.jpg 934w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-234x300.jpg 234w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-768x986.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-58x75.jpg 58w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-480x616.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-800x1027.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-64x82.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1168px) 100vw, 1168px\"/>",
+        "precoConcorrenteEUR": 19.49,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img width=\"971\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/51669.jpg\" alt=\"Dragon Ball FighterZ PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/51669.jpg 971w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-324x500.jpg 324w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-777x1200.jpg 777w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-194x300.jpg 194w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-768x1186.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-49x75.jpg 49w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-480x742.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-800x1236.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/51669-64x99.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:971px) 100vw, 971px\"/>",
+        "precoConcorrenteEUR": 21.98,
         "score": 3
       }
     ]
@@ -5502,22 +5932,22 @@
     "nome": "FIVE NIGHTS AT FREDDY'S: INTO THE PIT - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 23.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png\" alt=\"Warhammer: Chaosbane Slayer Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 27.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png\" alt=\"Warhammer: Chaosbane Slayer Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 23.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 27.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 31.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png\" alt=\"GODFALL LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 34.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png\" alt=\"Returnal LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 36.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png\" alt=\"Temtem LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 34.99,
         "score": 3
       }
     ]
@@ -5545,17 +5975,12 @@
     "nome": "FIVE NIGHTS AT FREDDY`S: SECURITY BREACH - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 19.49,
-    "nomeConcorrente": "<img width=\"1168\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg\" alt=\"Big Buck Hunter Arcade:Ultimate Trophy - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg 1168w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-389x500.jpg 389w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-934x1200.jpg 934w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-234x300.jpg 234w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-768x986.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-58x75.jpg 58w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-480x616.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-800x1027.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-64x82.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1168px) 100vw, 1168px\"/>",
+    "precoConcorrenteEUR": 35.49,
+    "nomeConcorrente": "<img width=\"1200\" height=\"1200\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/54713.jpg\" alt=\"Alan Wake 2 - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/54713.jpg 1200w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-500x500.jpg 500w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-300x300.jpg 300w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-768x768.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-150x150.jpg 150w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-75x75.jpg 75w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-480x480.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-400x400.jpg 400w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-800x800.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-64x64.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1200px) 100vw, 1200px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img width=\"1168\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg\" alt=\"Big Buck Hunter Arcade:Ultimate Trophy - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/94215.jpg 1168w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-389x500.jpg 389w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-934x1200.jpg 934w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-234x300.jpg 234w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-768x986.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-58x75.jpg 58w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-480x616.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-800x1027.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/94215-64x82.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1168px) 100vw, 1168px\"/>",
-        "precoConcorrenteEUR": 19.49,
-        "score": 3
-      },
-      {
-        "nomeConcorrente": "<img width=\"971\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/93956.jpg\" alt=\"Code Vein II PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/93956.jpg 971w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-324x500.jpg 324w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-777x1200.jpg 777w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-194x300.jpg 194w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-768x1186.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-49x75.jpg 49w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-480x742.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-800x1236.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/93956-64x99.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:971px) 100vw, 971px\"/>",
-        "precoConcorrenteEUR": 61.28,
+        "nomeConcorrente": "<img width=\"1200\" height=\"1200\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/54713.jpg\" alt=\"Alan Wake 2 - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/54713.jpg 1200w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-500x500.jpg 500w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-300x300.jpg 300w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-768x768.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-150x150.jpg 150w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-75x75.jpg 75w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-480x480.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-400x400.jpg 400w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-800x800.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/54713-64x64.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1200px) 100vw, 1200px\"/>",
+        "precoConcorrenteEUR": 35.49,
         "score": 3
       }
     ]
@@ -5646,22 +6071,22 @@
     "nome": "GOD OF WAR SONS OF SPARTA - PS5 - MIDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 47.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo.png\" alt=\"Gran Turismo  7 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 12.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo.png\" alt=\"Gran Turismo  7 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/gran-turismo-7-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 47.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 12.99,
         "score": 4
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png\" alt=\"Warhammer: Chaosbane Slayer Edition PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 52.99,
-        "score": 5
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 31.99,
+        "score": 4
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png\" alt=\"Returnal PREMIUM  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 54.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png\" alt=\"Temtem LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 34.99,
         "score": 4
       }
     ]
@@ -5679,10 +6104,26 @@
     "id": "gorn-2-ps5",
     "nome": "GORN 2 - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
+    "sem_referencia": false,
+    "precoConcorrenteEUR": 31.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 31.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 33.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png\" alt=\"GODFALL LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 34.99,
+        "score": 3
+      }
+    ]
   },
   {
     "id": "gorn-collection-ps5",
@@ -5743,22 +6184,22 @@
     "nome": "HALO: CAMPAIGN EVOLVED - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 36.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5.png\" alt=\"Marvel&#039;s Wolverine Low Cost | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
+    "precoConcorrenteEUR": 49.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5.png\" alt=\"STAR WARS: Galactic Racer PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5.png\" alt=\"Marvel&#039;s Wolverine Low Cost | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/06/wolverine-catalogo-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
-        "precoConcorrenteEUR": 36.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5.png\" alt=\"STAR WARS: Galactic Racer PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/05/star-wars-galatic-racer-catalogo-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
+        "precoConcorrenteEUR": 49.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5.png\" alt=\"The Blood of Dawnwalker Low Cost | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
-        "precoConcorrenteEUR": 36.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5.png\" alt=\"The Blood of Dawnwalker PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/05/the-blood-of-dawnwalker-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
+        "precoConcorrenteEUR": 54.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5.png\" alt=\"GTA VI Low Cost | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
-        "precoConcorrenteEUR": 42.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"500\" height=\"500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5.png\" alt=\"GTA VI PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5.png 500w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-480x480.png 480w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2026/05/grand-theft-auto-vi-catalogo-ps5-64x64.png 64w\" sizes=\"(max-width:767px) 480px, 500px\"/>",
+        "precoConcorrenteEUR": 57.99,
         "score": 3
       }
     ]
@@ -5858,22 +6299,22 @@
     "nome": "HORIZON CALL OF THE MOUNTAIN - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 23.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png\" alt=\"Warhammer: Chaosbane Slayer Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 29.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png\" alt=\"Demon&#039;s Souls LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png\" alt=\"Warhammer: Chaosbane Slayer Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/11/warhammer-chaosbane-slayer-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 23.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png\" alt=\"Demon&#039;s Souls LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 29.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo.png\" alt=\"FINAL FANTASY VII REMAKE INTERGRADE PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 43.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 31.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png\" alt=\"DEATHLOOP PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/deathloop-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 49.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 33.99,
         "score": 3
       }
     ]
@@ -6270,17 +6711,17 @@
     "nome": "LITTLE NIGHTMARES ENHANCED EDITION - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 33.99,
-    "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 12.99,
+    "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 33.99,
-        "score": 4
+        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 12.99,
+        "score": 3
       },
       {
-        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png\" alt=\"Temtem LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 34.99,
+        "nomeConcorrente": "<img width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo.png\" alt=\"Call of Duty: Black Ops Cold War LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2022/05/call-of-duty-black-ops-cold-war-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 30.99,
         "score": 3
       },
       {
@@ -6304,22 +6745,22 @@
     "nome": "LITTLE NIGHTMARES III - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 12.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 10.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 12.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 10.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png\" alt=\"Demon&#039;s Souls LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 29.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 24.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo.png\" alt=\"FINAL FANTASY VII REMAKE INTERGRADE PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2021/08/final-fantasy-vii-remake-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 43.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png\" alt=\"Temtem LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 34.99,
         "score": 3
       }
     ]
@@ -6588,6 +7029,15 @@
   {
     "id": "mortal-kombat-xl-ps5",
     "nome": "MORTAL KOMBAT XL - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "mortal-kombat-conjunto-deus-ancestral-ps5",
+    "nome": "MORTAL KOMBAT: CONJUNTO DEUS ANCESTRAL - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -6955,6 +7405,15 @@
     "candidatos": []
   },
   {
+    "id": "pacote-assassin-s-creed-valhalla-immortals-fenyx-rising-ps5",
+    "nome": "PACOTE ASSASSIN’S CREED VALHALLA + IMMORTALS FENYX RISING - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "pacote-crash-bandicoot-n-sane-trilogy-ctr-nitro-fueled-ps5",
     "nome": "PACOTE CRASH BANDICOOT N. SANE TRILOGY + CTR NITRO-FUELED - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -7057,10 +7516,16 @@
     "id": "plants-vs-zombies-garden-warfare-2-ps5",
     "nome": "PLANTS VS. ZOMBIES GARDEN WARFARE 2 - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
+    "sem_referencia": false,
+    "precoConcorrenteEUR": 12.88,
+    "nomeConcorrente": "<img width=\"294\" height=\"432\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png\" alt=\"Plants vs. Zombies: Battle for Neighborville | Origin\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png 294w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-64x94.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-204x300.png 204w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-51x75.png 51w\" sizes=\"(max-width:767px) 294px, 294px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img width=\"294\" height=\"432\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png\" alt=\"Plants vs. Zombies: Battle for Neighborville | Origin\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin.png 294w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-64x94.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-204x300.png 204w, https://www.jogodigital.com/wp-content/uploads/2023/01/battle-for-neighborville-origin-51x75.png 51w\" sizes=\"(max-width:767px) 294px, 294px\"/>",
+        "precoConcorrenteEUR": 12.88,
+        "score": 3
+      }
+    ]
   },
   {
     "id": "plants-vs-zombies-batalha-por-neighborville-ps5",
@@ -7076,22 +7541,22 @@
     "nome": "PLANTS VS. ZOMBIES: REPLANTED - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 10.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 24.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 10.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+        "precoConcorrenteEUR": 24.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 12.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png\" alt=\"Temtem LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/temtem-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 34.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png\" alt=\"Demon&#039;s Souls LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 29.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png\" alt=\"Returnal LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 36.99,
         "score": 3
       }
     ]
@@ -7675,6 +8140,11 @@
         "nomeConcorrente": "<img width=\"1081\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/91818.jpg\" alt=\"Double Dragon: Revive - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/91818.jpg 1081w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-360x500.jpg 360w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-865x1200.jpg 865w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-216x300.jpg 216w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-768x1066.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-54x75.jpg 54w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-480x666.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-800x1110.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-64x89.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1081px) 100vw, 1081px\"/>",
         "precoConcorrenteEUR": 47.49,
         "score": 3
+      },
+      {
+        "nomeConcorrente": "<img width=\"1171\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/91654.jpg\" alt=\"Cronos: The New Dawn PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/91654.jpg 1171w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-390x500.jpg 390w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-937x1200.jpg 937w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-234x300.jpg 234w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-768x984.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-59x75.jpg 59w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-480x615.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-800x1025.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/91654-64x82.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1171px) 100vw, 1171px\"/>",
+        "precoConcorrenteEUR": 55.26,
+        "score": 3
       }
     ]
   },
@@ -8088,12 +8558,12 @@
     "nome": "SUPER BOMBERMAN R2 - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 24.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
+    "precoConcorrenteEUR": 10.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
-        "precoConcorrenteEUR": 24.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png\" alt=\"Overcooked! All You Can Eat PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/09/overcooked-all-you-can-eat-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 10.99,
         "score": 3
       },
       {
@@ -8102,8 +8572,8 @@
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png\" alt=\"Demon&#039;s Souls PREMIUM  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 45.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png\" alt=\"Ratchet &amp; Clank: Rift Apart LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png 800w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
+        "precoConcorrenteEUR": 36.99,
         "score": 3
       }
     ]
@@ -8239,12 +8709,12 @@
     "nome": "THE FIRST BERSERKER: KHAZAN - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 12.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "precoConcorrenteEUR": 27.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 12.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png\" alt=\"Devil May Cry 5 Special Edition LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/devil-may-cry-5-special-edition-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 27.99,
         "score": 3
       },
       {
@@ -8253,8 +8723,8 @@
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png\" alt=\"GODFALL LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2023/10/godfall-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 34.99,
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png\" alt=\"Ratchet &amp; Clank: Rift Apart LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png 800w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
+        "precoConcorrenteEUR": 36.99,
         "score": 3
       }
     ]
@@ -8678,22 +9148,22 @@
     "nome": "UNCHARTED: COLEÇÃO LEGADO DOS LADRÕES- PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": false,
-    "precoConcorrenteEUR": 36.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png\" alt=\"Ratchet &amp; Clank: Rift Apart LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png 800w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
+    "precoConcorrenteEUR": 12.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png\" alt=\"DIRT 5 PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/dirt-5-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 12.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png\" alt=\"Demon&#039;s Souls LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/demons-souls-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 29.99,
+        "score": 3
+      },
       {
         "nomeConcorrente": "<img loading=\"lazy\" width=\"800\" height=\"800\" src=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png\" alt=\"Ratchet &amp; Clank: Rift Apart LOW COST | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5.png 800w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-500x500.png 500w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-768x768.png 768w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-75x75.png 75w, https://www.jogodigital.com/wp-content/uploads/2020/10/ratchet-clank-rift-apart-catalogo-ps5-480x480.png 480w\" sizes=\"(max-width:767px) 480px, (max-width:800px) 100vw, 800px\"/>",
         "precoConcorrenteEUR": 36.99,
-        "score": 3
-      },
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png\" alt=\"Returnal LOW COST  | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2022/05/returnal-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 36.99,
-        "score": 3
-      },
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"425\" height=\"425\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png\" alt=\"Destruction AllStars PREMIUM | PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo.png 425w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/04/destruction-allstars-ps5-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 425px, 425px\"/>",
-        "precoConcorrenteEUR": 39.99,
         "score": 3
       }
     ]
@@ -8728,42 +9198,6 @@
   {
     "id": "watch-dogs-bundle-1-2-ps5",
     "nome": "WATCH DOGS BUNDLE 1+2 - PS5 - MIDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "watch-dogs-complete-edition-ps5",
-    "nome": "WATCH DOGS COMPLETE EDITION - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "watch-dogs-legion-ps5",
-    "nome": "WATCH DOGS: LEGION - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "wuchang-fallen-feathers-ps5",
-    "nome": "WUCHANG: FALLEN FEATHERS - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "wwe-2k26-ps5",
-    "nome": "WWE 2K26 - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -9289,15 +9723,15 @@
     "plataforma": "Xbox One",
     "sem_referencia": false,
     "precoConcorrenteEUR": 14.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Syndicate | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo.png\" alt=\"GTA V | Xbox One\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
     "candidatos": [
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Syndicate | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo.png\" alt=\"GTA V | Xbox One\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
         "precoConcorrenteEUR": 14.99,
         "score": 3
       },
       {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo.png\" alt=\"GTA V | Xbox One\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/08/gta-v-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Syndicate | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-syndicate-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
         "precoConcorrenteEUR": 14.99,
         "score": 3
       }

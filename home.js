@@ -257,59 +257,42 @@ function catalogImageCandidates(product) {
   ].filter((value) => typeof value === "string" && value.trim()))];
 }
 
-function resolveCatalogImage(product, callback) {
+function optimizedCatalogImage(source, width = 440, height = 660) {
+  const value = String(source || "").trim();
+  if (!value || !/^https?:\/\//i.test(value)) return value;
+  if (["localhost", "127.0.0.1", "::1"].includes(window.location.hostname)) return value;
+  const trustedRemoteImage = /^https:\/\/(media\.rawg\.io|cdn2\.steamgriddb\.com|acdn-us\.mitiendanube\.com)\//i.test(value);
+  if (!trustedRemoteImage) return value;
+  const params = new URLSearchParams({
+    url: value,
+    w: String(width),
+    h: String(height),
+    fit: "cover",
+    q: "84"
+  });
+  return `/.netlify/images?${params}`;
+}
+
+function bindImageFallback(image, product, width = 440, height = 660) {
   const candidates = catalogImageCandidates(product);
-  let index = 0;
-
-  function tryNext() {
+  let index = Math.max(0, candidates.indexOf(image.dataset.originalSource));
+  image.addEventListener("error", () => {
+    index += 1;
     const source = candidates[index];
     if (!source) return;
-    const image = new Image();
-    image.onload = () => callback(source);
-    image.onerror = () => {
-      index += 1;
-      tryNext();
-    };
-    image.src = source;
-  }
-
-  tryNext();
+    image.dataset.originalSource = source;
+    image.src = optimizedCatalogImage(source, width, height);
+    image.closest(".cover")?.classList.toggle("supplier-cover-clean", isSupplierCatalogImage(product, source));
+  });
 }
 
-function resolveCategoryImage(product, callback) {
-  const candidates = [...new Set([
-    product?.capaSteamGridDB,
-    product?.imagemFallback,
-    product?.imagemPrincipal,
-    ...(Array.isArray(product?.screenshots) ? product.screenshots : [])
-  ].filter((value) => typeof value === "string" && value.trim()))];
-  let index = 0;
-
-  function tryNext() {
-    const source = candidates[index];
-    if (!source) return;
-    const image = new Image();
-    image.onload = () => callback(source);
-    image.onerror = () => {
-      index += 1;
-      tryNext();
-    };
-    image.src = source;
-  }
-
-  tryNext();
-}
-
-function resolveGridCardImages(grid, products) {
+function bindGridCardImages(grid, products) {
   if (!grid) return;
   grid.querySelectorAll(".catalog-card").forEach((card, index) => {
-    const cover = card.querySelector(".catalog-cover");
+    const image = card.querySelector(".cover-art");
     const product = products[index];
-    if (!cover || !product) return;
-    resolveCatalogImage(product, (source) => {
-      cover.classList.toggle("supplier-cover-clean", isSupplierCatalogImage(product, source));
-      cover.style.setProperty("--art", `url('${safeCatalogCssUrl(source)}')`);
-    });
+    if (!image || !product) return;
+    bindImageFallback(image, product);
   });
 }
 
@@ -329,7 +312,9 @@ function createCatalogCard(product) {
 
   return `
     <a class="game-card catalog-card" href="produto.html?id=${encodeURIComponent(product.id)}" data-platforms="${escapeCatalogHtml(platform)}" ${trailer ? `data-trailer="${escapeCatalogHtml(trailer)}"` : ""}>
-      <div class="cover catalog-cover ${isSupplierCatalogImage(product, image) ? "supplier-cover-clean" : ""}" style="--art: url('${escapeCatalogHtml(image)}')">
+      <div class="cover catalog-cover ${isSupplierCatalogImage(product, image) ? "supplier-cover-clean" : ""}">
+        <img class="cover-art" src="${escapeCatalogHtml(optimizedCatalogImage(image))}" data-original-source="${escapeCatalogHtml(image)}"
+          width="440" height="660" alt="Capa de ${escapeCatalogHtml(name)}" loading="lazy" decoding="async" />
         <span class="tag">${escapeCatalogHtml(discountPercent(product))}</span>
         ${platformBadgeHtml(product)}
         ${preorderCountdownHtml(product)}
@@ -539,7 +524,7 @@ function renderCatalog() {
   const selectedLabels = [...catalogState.selectedPlatforms].map((key) => CATALOG_FILES[key]?.label).filter(Boolean);
 
   catalogGrid.innerHTML = visible.map(createCatalogCard).join("");
-  resolveGridCardImages(catalogGrid, visible);
+  bindGridCardImages(catalogGrid, visible);
   window.GalaxyCountdown?.refresh(catalogGrid);
   catalogCounter.textContent = `${filtered.length} produto(s)`;
 
@@ -684,7 +669,7 @@ function renderHighlightGrid(grid, products) {
     return;
   }
   grid.innerHTML = products.map(createCatalogCard).join("");
-  resolveGridCardImages(grid, products);
+  bindGridCardImages(grid, products);
   window.GalaxyCountdown?.refresh(grid);
   grid.querySelectorAll(".game-card").forEach((card, index) => {
     card.style.transitionDelay = `${Math.min(index * 25, 200)}ms`;
@@ -824,16 +809,20 @@ function renderHomeCategories(products) {
     usedGames.add(baseGameKey(selected.nome));
     tile.href = `catalogo.html?genero=${encodeURIComponent(tile.dataset.categoryGenre)}`;
     tile.querySelector("[data-category-game]").textContent = displayProductName(selected);
-    resolveCategoryImage(selected, (image) => {
-      const artwork = document.createElement("img");
-      artwork.className = "category-art";
-      artwork.src = image;
-      artwork.alt = `Capa de ${displayProductName(selected)}`;
-      artwork.loading = "lazy";
-      tile.querySelector(".category-art")?.remove();
-      tile.prepend(artwork);
-      tile.classList.add("category-ready");
-    });
+    const image = productImage(selected);
+    const artwork = document.createElement("img");
+    artwork.className = "category-art";
+    artwork.src = optimizedCatalogImage(image, 720, 240);
+    artwork.dataset.originalSource = image;
+    artwork.width = 720;
+    artwork.height = 240;
+    artwork.alt = `Capa de ${displayProductName(selected)}`;
+    artwork.loading = "lazy";
+    artwork.decoding = "async";
+    bindImageFallback(artwork, selected, 720, 240);
+    tile.querySelector(".category-art")?.remove();
+    tile.prepend(artwork);
+    tile.classList.add("category-ready");
   });
 }
 
@@ -858,9 +847,20 @@ function renderHomeRecommendation(products) {
   const salePrice = Number(selected.precoVendaEUR || 0);
 
   recommendation.href = `produto.html?id=${encodeURIComponent(selected.id)}`;
-  resolveCatalogImage(selected, (image) => {
+  const setRecommendationImage = () => {
+    const image = optimizedCatalogImage(productImage(selected), 1200, 520);
     recommendation.style.backgroundImage = `linear-gradient(90deg, rgba(18,18,18,.94), rgba(18,18,18,.45) 55%, rgba(18,18,18,.08)), url("${safeCatalogCssUrl(image)}")`;
-  });
+  };
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      setRecommendationImage();
+      observer.disconnect();
+    }, { rootMargin: "500px 0px" });
+    observer.observe(recommendation);
+  } else {
+    setRecommendationImage();
+  }
   recommendation.querySelector("[data-recommendation-platform]").textContent = repairCatalogText(selected.plataforma || "Consola");
   recommendation.querySelector("[data-recommendation-title]").textContent = name;
   recommendation.querySelector("[data-recommendation-copy]").textContent = `Poupa ${discountValue(selected)}% neste jogo digital. O acesso fica em Minha Conta > Meus Pedidos e também segue por email com instruções.`;

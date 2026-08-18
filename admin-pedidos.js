@@ -21,6 +21,8 @@
     customerQuery: savedUi.customerQuery || "",
     view: savedUi.view || "overview",
     period: savedUi.period || 30,
+    visitsPeriod: 7,
+    visitsHistory: [],
     presenceLoading: false,
     loading: false,
     booted: false
@@ -273,12 +275,63 @@
     const countElement = document.querySelector("[data-admin-live-count]");
     const copyElement = document.querySelector("[data-admin-live-copy]");
     if (countElement) countElement.textContent = String(count);
-    if (!copyElement) return;
-    const topPage = data?.pages?.[0];
-    copyElement.dataset.state = "live";
-    if (!count) copyElement.textContent = "Sem visitantes nos últimos 2 minutos";
-    else if (topPage) copyElement.textContent = `${topPage.count} ${topPage.count === 1 ? "sessão" : "sessões"} em ${pageLabel(topPage.page)}`;
-    else copyElement.textContent = `${count} ${count === 1 ? "sessão ativa" : "sessões ativas"}`;
+    if (copyElement) {
+      const topPage = data?.pages?.[0];
+      copyElement.dataset.state = "live";
+      if (!count) copyElement.textContent = "Sem visitantes nos últimos 2 minutos";
+      else if (topPage) copyElement.textContent = `${topPage.count} ${topPage.count === 1 ? "sessão" : "sessões"} em ${pageLabel(topPage.page)}`;
+      else copyElement.textContent = `${count} ${count === 1 ? "sessão ativa" : "sessões ativas"}`;
+    }
+    if (Array.isArray(data?.history)) {
+      state.visitsHistory = data.history;
+      renderVisitsChart();
+    }
+  }
+
+  function renderVisitsChart() {
+    const container = document.querySelector("[data-admin-visits-chart]");
+    const total = document.querySelector("[data-admin-visits-total]");
+    if (!container || !total) return;
+    const days = state.visitsPeriod;
+    const values = state.visitsHistory.slice(-days).map((item) => ({
+      date: new Date(`${item.date}T12:00:00`),
+      value: Number(item.count || 0)
+    }));
+    const visits = values.reduce((sum, item) => sum + item.value, 0);
+    total.textContent = `${visits} ${visits === 1 ? "visita" : "visitas"}`;
+    if (!values.length || !visits) {
+      container.innerHTML = '<div class="admin-chart-empty"><span>Ainda não existem visitas registadas neste período.<br>O gráfico será preenchido automaticamente.</span></div>';
+      return;
+    }
+
+    const width = 760;
+    const height = 230;
+    const margin = { top: 18, right: 12, bottom: 30, left: 40 };
+    const chartWidth = width - margin.left - margin.right;
+    const chartHeight = height - margin.top - margin.bottom;
+    const max = Math.max(...values.map((item) => item.value), 1);
+    const points = values.map((item, index) => ({
+      ...item,
+      x: margin.left + (values.length === 1 ? chartWidth / 2 : (index / (values.length - 1)) * chartWidth),
+      y: margin.top + chartHeight - (item.value / max) * chartHeight
+    }));
+    const line = points.map((point, index) => `${index ? "L" : "M"}${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+    const area = `${line} L${points.at(-1).x.toFixed(1)},${margin.top + chartHeight} L${points[0].x.toFixed(1)},${margin.top + chartHeight} Z`;
+    const firstDate = formatDate(values[0].date, { day: "2-digit", month: "short" });
+    const lastDate = formatDate(values.at(-1).date, { day: "2-digit", month: "short" });
+    container.innerHTML = `
+      <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Visitas dos últimos ${days === 1 ? "1 dia" : `${days} dias`}">
+        <defs><linearGradient id="adminChartArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7653a7" stop-opacity=".28"/><stop offset="1" stop-color="#7653a7" stop-opacity="0"/></linearGradient></defs>
+        <line class="admin-chart-grid" x1="${margin.left}" y1="${margin.top}" x2="${width - margin.right}" y2="${margin.top}"/>
+        <line class="admin-chart-grid" x1="${margin.left}" y1="${margin.top + chartHeight / 2}" x2="${width - margin.right}" y2="${margin.top + chartHeight / 2}"/>
+        <line class="admin-chart-grid" x1="${margin.left}" y1="${margin.top + chartHeight}" x2="${width - margin.right}" y2="${margin.top + chartHeight}"/>
+        <text class="admin-chart-label" x="${margin.left - 8}" y="${margin.top + 4}" text-anchor="end">${max}</text>
+        <text class="admin-chart-label" x="${margin.left - 8}" y="${margin.top + chartHeight + 4}" text-anchor="end">0</text>
+        <path class="admin-chart-area" d="${area}"/><path class="admin-chart-line" d="${line}"/>
+        ${points.map((point) => `<circle class="admin-chart-point" cx="${point.x}" cy="${point.y}" r="3"><title>${escapeHtml(formatDate(point.date, { dateStyle: "medium" }))}: ${point.value} ${point.value === 1 ? "visita" : "visitas"}</title></circle>`).join("")}
+        <text class="admin-chart-label" x="${margin.left}" y="${height - 5}">${escapeHtml(firstDate)}</text>
+        <text class="admin-chart-label" x="${width - margin.right}" y="${height - 5}" text-anchor="end">${escapeHtml(lastDate)}</text>
+      </svg>`;
   }
 
   async function loadPresence() {
@@ -658,6 +711,11 @@
     document.querySelectorAll("[data-admin-period]").forEach((item) => item.classList.toggle("active", item === button));
     updateDashboard();
     saveUi();
+  }));
+  document.querySelectorAll("[data-admin-visits-period]").forEach((button) => button.addEventListener("click", () => {
+    state.visitsPeriod = Number(button.dataset.adminVisitsPeriod);
+    document.querySelectorAll("[data-admin-visits-period]").forEach((item) => item.classList.toggle("active", item === button));
+    renderVisitsChart();
   }));
   tabs.forEach((tab) => tab.addEventListener("click", () => { state.filter = tab.dataset.adminTab; renderOrders(); saveUi(); }));
   searchInput?.addEventListener("input", () => { state.query = searchInput.value; renderOrders(); saveUi(); });

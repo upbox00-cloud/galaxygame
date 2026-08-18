@@ -7,4 +7,8 @@ npm-debug.log*
 netlify-dev*.log
 netlify-*-test*.log
 debug/email-entrega-preview.html
+debug/email-entrega-xbox-preview.html
+debug/*-dev.log
+debug/*-dev-error.log
 scripts/.internal/cambio-brl-eur.json
+styles.min.css

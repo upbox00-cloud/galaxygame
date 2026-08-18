@@ -214,14 +214,23 @@
     });
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
-  else init();
+  function scheduleInit() {
+    if ("requestIdleCallback" in window) window.requestIdleCallback(init, { timeout: 2200 });
+    else window.setTimeout(init, 1000);
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", scheduleInit, { once: true });
+  else scheduleInit();
 })();
 (function loadAnonymousPresence() {
   if (window.__GalaxyGamePresenceLoaderReady) return;
   window.__GalaxyGamePresenceLoaderReady = true;
-  const script = document.createElement("script");
-  script.src = "presence.js?v=20260811-1";
-  script.defer = true;
-  document.head.appendChild(script);
+  const load = () => {
+    const script = document.createElement("script");
+    script.src = "presence.js?v=20260811-1";
+    script.defer = true;
+    document.head.appendChild(script);
+  };
+  if ("requestIdleCallback" in window) window.requestIdleCallback(load, { timeout: 3500 });
+  else window.setTimeout(load, 1800);
 })();

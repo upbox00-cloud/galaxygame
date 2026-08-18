@@ -35,7 +35,8 @@ function createMemoryStore() {
       values.delete(key);
     },
     list(options = {}) {
-      const page = { blobs: [...values.keys()].map((key) => ({ key })), directories: [] };
+      const keys = [...values.keys()].filter((key) => !options.prefix || key.startsWith(options.prefix));
+      const page = { blobs: keys.map((key) => ({ key })), directories: [] };
       if (options.paginate) return (async function* pages() { yield page; })();
       return Promise.resolve(page);
     }
@@ -100,6 +101,41 @@ test("presença regista sessões anónimas e só revela a contagem ao admin", as
   if (previousEmails === undefined) delete process.env.ADMIN_EMAILS;
   else process.env.ADMIN_EMAILS = previousEmails;
   sitePresence._test.resetStoreFactory();
+});
+
+test("presença acumula visitas diarias unicas e devolve historico de 30 dias ao admin", async () => {
+  const store = createMemoryStore();
+  sitePresence._test.setStoreFactory(() => store);
+
+  await sitePresence.handler({
+    httpMethod: "POST",
+    body: JSON.stringify({ visitorId: "visitante_um_1234567890", page: "/" })
+  }, {});
+  await sitePresence.handler({
+    httpMethod: "POST",
+    body: JSON.stringify({ visitorId: "visitante_um_1234567890", page: "/catalogo.html" })
+  }, {});
+  await sitePresence.handler({
+    httpMethod: "POST",
+    body: JSON.stringify({ visitorId: "visitante_dois_1234567890", page: "/" })
+  }, {});
+
+  const previousEmails = process.env.ADMIN_EMAILS;
+  process.env.ADMIN_EMAILS = "admin@galaxygame.pt";
+  const response = await sitePresence.handler({ httpMethod: "GET" }, {
+    clientContext: { user: { email: "admin@galaxygame.pt", app_metadata: {} } }
+  });
+  const payload = JSON.parse(response.body);
+  if (previousEmails === undefined) delete process.env.ADMIN_EMAILS;
+  else process.env.ADMIN_EMAILS = previousEmails;
+  sitePresence._test.resetStoreFactory();
+
+  assert.equal(response.statusCode, 200);
+  assert.equal(payload.history.length, 30);
+  const today = payload.history.at(-1);
+  assert.match(today.date, /^\d{4}-\d{2}-\d{2}$/);
+  assert.equal(today.count, 2);
+  assert.equal(payload.history.slice(0, -1).every((day) => day.count === 0), true);
 });
 
 test("valida a assinatura Stripe e rejeita eventos antigos", () => {

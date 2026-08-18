@@ -398,6 +398,7 @@
 .admin-chart-point { fill: #fff; stroke: #6e4aa1; stroke-width: 2; }
 .admin-chart-label { fill: #777780; font: 11px Arial, sans-serif; }
 .admin-chart-empty { display: grid; place-items: center; height: 100%; color: var(--admin-muted); text-align: center; }
+.admin-visits-panel > header { flex-wrap: wrap; row-gap: 10px; }
 
 .admin-donut-layout {
   display: grid;

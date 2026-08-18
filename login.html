@@ -3,24 +3,22 @@
   <head>
     <!-- Cookie consent controls optional marketing scripts, including Meta Pixel. -->
     <link rel="stylesheet" href="cookie-consent.css?v=20260816-1" />
-    <script src="cookie-consent.js?v=20260816-1"></script>
+    <script src="cookie-consent.js?v=20260816-1" defer></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
     <title>Entrar | GalaxyGame</title>
     <meta name="description" content="Inicia sessao na tua conta GalaxyGame." />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <script src="scripts/recovery-token.js?v=20260811-2"></script>
+    <script src="scripts/recovery-token.js?v=20260811-2" defer></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260815-2" />
+    <link rel="preload" href="assets/fonts/roboto-condensed-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.min.css?v=20260818-1" />
   </head>
   <body class="admin-login-page">
     <main class="admin-login-main">
       <a class="admin-login-brand" href="index.html" aria-label="Voltar a GalaxyGame">
-        <img src="assets/galaxygame-header-logo-cropped.webp" alt="GalaxyGame" />
+        <img src="assets/galaxygame-header-logo-cropped.webp" alt="GalaxyGame" width="560" height="190" decoding="async" />
       </a>
 
       <section class="admin-login-card" aria-labelledby="admin-login-title">

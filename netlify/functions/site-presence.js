@@ -6,6 +6,8 @@ const STORE_NAME = "galaxygame-orders";
 const ACTIVE_WINDOW_MS = 2 * 60 * 1000;
 const STALE_AFTER_MS = 24 * 60 * 60 * 1000;
 const MAX_RECORDS = 5000;
+const VISIT_HISTORY_DAYS = 30;
+const MAX_VISITORS_PER_DAY = 20000;
 
 let storeFactory = () => getStore(STORE_NAME);
 
@@ -24,6 +26,18 @@ function normalizePage(value) {
   }
 }
 
+function dateKey(date) {
+  return date.toISOString().slice(0, 10);
+}
+
+async function registerDailyVisit(store, visitorId, now) {
+  const key = `visits/daily/${dateKey(new Date(now))}.json`;
+  const day = (await store.get(key, { type: "json" })) || { visitors: {} };
+  if (day.visitors[visitorId] || Object.keys(day.visitors).length >= MAX_VISITORS_PER_DAY) return;
+  day.visitors[visitorId] = now;
+  await store.setJSON(key, day);
+}
+
 async function recordPresence(event) {
   let body = {};
   try {
@@ -33,11 +47,30 @@ async function recordPresence(event) {
   }
   const visitorId = normalizeVisitorId(body.visitorId);
   if (!visitorId) return json(400, { error: "invalid_visitor" });
-  await storeFactory().setJSON(`active/${visitorId}.json`, {
-    lastSeen: Date.now(),
-    page: normalizePage(body.page)
-  });
+  const now = Date.now();
+  const store = storeFactory();
+  await Promise.all([
+    store.setJSON(`active/${visitorId}.json`, {
+      lastSeen: now,
+      page: normalizePage(body.page)
+    }),
+    registerDailyVisit(store, visitorId, now)
+  ]);
   return json(200, { received: true });
+}
+
+async function visitHistory(store) {
+  const now = Date.now();
+  const days = [];
+  for (let offset = VISIT_HISTORY_DAYS - 1; offset >= 0; offset -= 1) {
+    days.push(new Date(now - offset * 24 * 60 * 60 * 1000));
+  }
+  const counts = await Promise.all(days.map(async (date) => {
+    const key = `visits/daily/${dateKey(date)}.json`;
+    const day = await store.get(key, { type: "json" });
+    return { date: dateKey(date), count: day ? Object.keys(day.visitors || {}).length : 0 };
+  }));
+  return counts;
 }
 
 async function listPresence(context) {
@@ -65,12 +98,14 @@ async function listPresence(context) {
     .slice(0, 100)
     .map(({ key }) => key);
   if (staleKeys.length) await Promise.allSettled(staleKeys.map((key) => store.delete(key)));
+  const history = await visitHistory(store);
   return json(200, {
     active: active.length,
     pages: [...pages.entries()]
       .map(([page, count]) => ({ page, count }))
       .sort((a, b) => b.count - a.count || a.page.localeCompare(b.page)),
     windowSeconds: ACTIVE_WINDOW_MS / 1000,
+    history,
     generatedAt: new Date(now).toISOString()
   });
 }

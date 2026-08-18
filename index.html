@@ -3,22 +3,22 @@
   <head>
     <!-- Cookie consent controls optional marketing scripts, including Meta Pixel. -->
     <link rel="stylesheet" href="cookie-consent.css?v=20260816-1" />
-    <script src="cookie-consent.js?v=20260816-1"></script>
+    <script src="cookie-consent.js?v=20260816-1" defer></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GalaxyGame - Jogos digitais PlayStation 4, PlayStation 5, Xbox One e Xbox Series</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <script src="scripts/recovery-token.js?v=20260811-2"></script>
+    <script src="scripts/recovery-token.js?v=20260811-2" defer></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     <script src="scripts/identity-modern.js?v=20260809-1" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="assets/galaxygame-header-logo-cropped.webp" as="image" />
-    <link rel="preload" href="assets/gta-vi-landscape-hq.webp" as="image" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260817-1" />
+    <link rel="preload" href="assets/fonts/roboto-condensed-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/gta-vi-landscape-1440.webp" as="image" type="image/webp"
+      imagesrcset="assets/gta-vi-landscape-960.webp 960w, assets/gta-vi-landscape-1440.webp 1440w, assets/gta-vi-landscape-hq.webp 1920w"
+      imagesizes="100vw" fetchpriority="high" />
+    <link rel="stylesheet" href="styles.min.css?v=20260818-1" />
   </head>
-  <body>
+  <body class="home-page">
     <header class="site-header">
       <a class="brand" href="#" aria-label="GalaxyGame">
         <span class="brand-mark">CK</span>
@@ -74,7 +74,14 @@
 
     <main>
       <section class="hero">
-        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-media" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 700px)" srcset="assets/gta-vi-landscape-960.webp" />
+            <img src="assets/gta-vi-landscape-1440.webp"
+              srcset="assets/gta-vi-landscape-960.webp 960w, assets/gta-vi-landscape-1440.webp 1440w, assets/gta-vi-landscape-hq.webp 1920w"
+              sizes="100vw" width="1920" height="1080" alt="" fetchpriority="high" decoding="async" />
+          </picture>
+        </div>
         <div class="hero-platform-bar" aria-label="Escolher plataforma">
           <button data-platform="PlayStation 4">
             <span class="platform-icon ps-icon">PS</span>
@@ -233,19 +240,19 @@
         </div>
         <div class="review-grid">
           <article class="community-review-card">
-            <figure class="review-cover"><img src="assets/community-black-ops.jpg" alt="Comando PlayStation em frente a uma partida de Call of Duty" loading="lazy" /></figure>
+            <figure class="review-cover"><img src="assets/community-black-ops.jpg" alt="Comando PlayStation em frente a uma partida de Call of Duty" width="720" height="1333" loading="lazy" decoding="async" /></figure>
             <div class="community-review-copy"><span class="review-meta">Momento de jogo</span><h3>A&ccedil;&atilde;o at&eacute; ao &uacute;ltimo minuto</h3><p>Obrigado a todos os jogadores que escolhem a GalaxyGame para descobrir a pr&oacute;xima aventura.</p><small>Imagem ilustrativa</small></div>
           </article>
           <article class="community-review-card">
-            <figure class="review-cover"><img src="assets/community-first-light.jpg" alt="Jogador com comando PlayStation 5 diante da televis&atilde;o" loading="lazy" /></figure>
+            <figure class="review-cover"><img src="assets/community-first-light.jpg" alt="Jogador com comando PlayStation 5 diante da televis&atilde;o" width="447" height="447" loading="lazy" decoding="async" /></figure>
             <div class="community-review-copy"><span class="review-meta">Nova aventura</span><h3>Pronto para entrar no jogo</h3><p>Queremos que encontres a edi&ccedil;&atilde;o certa, recebas instru&ccedil;&otilde;es claras e jogues sem complica&ccedil;&otilde;es.</p><small>Imagem ilustrativa</small></div>
           </article>
           <article class="community-review-card">
-            <figure class="review-cover"><img src="assets/community-football-dual.jpg" alt="Dois comandos PlayStation durante uma partida de futebol" loading="lazy" /></figure>
+            <figure class="review-cover"><img src="assets/community-football-dual.jpg" alt="Dois comandos PlayStation durante uma partida de futebol" width="415" height="739" loading="lazy" decoding="async" /></figure>
             <div class="community-review-copy"><span class="review-meta">Jogar em companhia</span><h3>Mais uma partida?</h3><p>As melhores mem&oacute;rias tamb&eacute;m nascem no sof&aacute;, com dois comandos e um desafio entre amigos.</p><small>Imagem ilustrativa</small></div>
           </article>
           <article class="community-review-card">
-            <figure class="review-cover"><img src="assets/community-football-night.jpg" alt="Comandos PlayStation durante uma partida de futebol &agrave; noite" loading="lazy" /></figure>
+            <figure class="review-cover"><img src="assets/community-football-night.jpg" alt="Comandos PlayStation durante uma partida de futebol &agrave; noite" width="736" height="1308" loading="lazy" decoding="async" /></figure>
             <div class="community-review-copy"><span class="review-meta">O teu momento</span><h3>A comunidade continua a crescer</h3><p>Obrigado pela confian&ccedil;a. A tua opini&atilde;o ajuda-nos a melhorar o atendimento e a experi&ecirc;ncia da loja.</p><small>Imagem ilustrativa</small></div>
           </article>
         </div>
@@ -301,12 +308,12 @@
     </footer>
 
     <script src="release-countdown.js?v=20260817-1" defer></script>
-    <script src="home.js?v=20260817-1" defer></script>
-    <script src="noticias.js" defer></script>
+    <script src="home.js?v=20260818-1" defer></script>
+    <script src="noticias.js?v=20260818-1" defer></script>
     <script src="cart.js?v=20260801-1" defer></script>
     <script src="header-search.js?v=20260801-2" defer></script>
 <script src="footer.js?v=20260815-1" defer></script>
 <script src="scripts/auth.js?v=20260811-2" defer></script>
-    <script src="chat.js?v=20260811-1" defer></script>
+    <script src="chat.js?v=20260818-1" defer></script>
   </body>
 </html>

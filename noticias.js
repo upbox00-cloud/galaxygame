@@ -166,5 +166,10 @@ if (isProductNewsPage) {
   window.addEventListener("product-news-ready", (event) => loadNews(event.detail?.name, event.detail?.images || []));
   loadNews(window.productNewsContext?.name || document.body.dataset.productNewsQuery, window.productNewsContext?.images || []);
 } else {
-  loadNews();
+  const scheduleNews = () => loadNews();
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(scheduleNews, { timeout: 4000 });
+  } else {
+    window.setTimeout(scheduleNews, 1800);
+  }
 }
