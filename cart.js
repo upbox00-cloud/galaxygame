@@ -166,7 +166,7 @@
         <div class="cart-line-copy">
           <div class="cart-line-tags"><span>${escapeHtml(item.platform)}</span>${item.preorder ? "<span>Pre-venda</span>" : "<span>Conta + email</span>"}</div>
           <a href="produto.html?id=${encodeURIComponent(item.id)}"><h2>${escapeHtml(item.name)}</h2></a>
-          <p>${item.preorder ? "Reserva registada em Minha Conta > Meus Pedidos e confirmada por email." : "Depois da confirmacao do pagamento, disponivel em ate 10 minutos em Minha Conta > Meus Pedidos e enviado por email com instrucoes."}</p>
+          <p>${item.preorder ? "Reserva confirmada por email. Com sessao iniciada, tambem fica guardada em Minha Conta." : "Depois da confirmacao do pagamento, recebes por email os dados e as instrucoes da compra."}</p>
           <button type="button" data-cart-remove="${escapeHtml(item.id)}">Remover</button>
         </div>
         <div class="cart-line-price">${item.originalPrice > item.price ? `<s>${formatEUR(item.originalPrice)}</s>` : ""}<strong>${formatEUR(item.price)}</strong></div>
@@ -184,11 +184,39 @@
     document.querySelector("[data-cart-clear]")?.addEventListener("click", clear);
     const checkoutForm = document.querySelector("[data-checkout-form]");
     const checkoutEmail = document.querySelector("[data-checkout-email]");
+    const checkoutEmailLabel = document.querySelector("[data-checkout-email-label]");
+    const checkoutEmailHelp = document.querySelector("[data-checkout-email-help]");
+    const checkoutEmailError = document.querySelector("[data-checkout-email-error]");
+    const accountOptions = document.querySelector("[data-checkout-account-options]");
+    const signedInNotice = document.querySelector("[data-checkout-signed-in]");
+
+    function normalizedEmail(value) {
+      return String(value || "").trim().toLowerCase();
+    }
+
+    function validEmail(value) {
+      const email = normalizedEmail(value);
+      return email.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+    }
+
+    function showEmailError(message = "") {
+      if (!checkoutEmailError || !checkoutEmail) return;
+      checkoutEmailError.textContent = message;
+      checkoutEmailError.hidden = !message;
+      checkoutEmail.setAttribute("aria-invalid", String(Boolean(message)));
+    }
 
     function syncCheckoutUser(user = window.netlifyIdentity?.currentUser()) {
       if (!checkoutEmail) return;
       checkoutEmail.value = user?.email || "";
       checkoutEmail.readOnly = Boolean(user?.email);
+      accountOptions?.toggleAttribute("hidden", Boolean(user));
+      signedInNotice?.toggleAttribute("hidden", !user);
+      if (checkoutEmailLabel) checkoutEmailLabel.textContent = user ? "Email associado à tua conta" : "O teu melhor email";
+      if (checkoutEmailHelp) checkoutEmailHelp.textContent = user
+        ? "Este pedido ficará associado à tua conta GalaxyGame e também será enviado para este email."
+        : "Usaremos este email para identificar o pedido, enviar a confirmação e entregar as informações da compra.";
+      showEmailError();
     }
 
     window.netlifyIdentity?.on("init", syncCheckoutUser);
@@ -202,37 +230,40 @@
       const user = identity?.currentUser();
       const notice = document.querySelector("[data-checkout-notice]");
       const button = form.querySelector("button[type='submit']");
+      const email = normalizedEmail(user?.email || checkoutEmail?.value);
 
-      if (!user) {
-        if (notice) {
-          notice.hidden = false;
-          notice.innerHTML = "<strong>Inicia sessão para continuar</strong><p>Assim conseguimos associar o pedido à tua conta e entregar o jogo com segurança.</p>";
-        }
-        identity?.open("login");
+      showEmailError();
+      if (!validEmail(email)) {
+        showEmailError("Digite um email válido para continuar.");
+        checkoutEmail?.focus();
         return;
       }
-
-      syncCheckoutUser(user);
-      if (!form.reportValidity()) return;
+      if (checkoutEmail) checkoutEmail.value = email;
+      const consent = form.querySelector('.checkout-consent input[type="checkbox"]');
+      if (!consent?.checked) {
+        consent?.focus();
+        form.reportValidity();
+        return;
+      }
 
       button.disabled = true;
       button.textContent = "A abrir pagamento seguro...";
       if (notice) notice.hidden = true;
       try {
-        const token = await user.jwt();
+        const token = user ? await user.jwt() : "";
         const response = await fetch("/.netlify/functions/criar-checkout", {
           method: "POST",
           headers: {
-            Authorization: `Bearer ${token}`,
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
             "content-type": "application/json"
           },
-          body: JSON.stringify({ items: readCart().map((item) => ({ id: item.id })) })
+          body: JSON.stringify({
+            items: readCart().map((item) => ({ id: item.id })),
+            email: user ? undefined : email,
+            checkoutMode: user ? "registered" : "guest"
+          })
         });
         const data = await response.json().catch(() => ({}));
-        if (response.status === 401) {
-          identity?.open("login");
-          throw new Error("login_required");
-        }
         if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
         const items = readCart();
         const checkoutValue = Number(total(items).toFixed(2));

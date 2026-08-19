@@ -29,12 +29,14 @@ O widget e a integracao de autenticação ja estao incluidos no projeto, mas o s
 
 O fluxo de pedidos usa Stripe Checkout, Airtable, Netlify Identity e Resend:
 
-1. O cliente inicia sessao e finaliza o carrinho no Stripe.
+1. O cliente pode iniciar sessao ou comprar como convidado, indicando um email valido, e finaliza o carrinho no Stripe.
 2. O webhook assinado cria o pedido na tabela `Pedidos` do Airtable sem duplicar o `StripeSessionId`.
 3. Um administrador abre `painel-pedidos.html`, cola o codigo e marca o pedido como enviado.
 4. O codigo passa a aparecer em `Minha Conta > Meus Pedidos` e segue por email atraves do Resend.
 
 Os precos enviados ao Stripe sao sempre lidos de `data/catalog-lite.json` no servidor. Valores enviados pelo navegador nao sao aceites como fonte de verdade.
+
+No checkout convidado, o email e normalizado e validado novamente pela Function antes de criar a sessao Stripe. O pedido fica identificado como `Convidado` e continua a ser criado exclusivamente pelo webhook assinado depois do pagamento. Se o cliente criar e confirmar uma conta mais tarde com o mesmo email, os pedidos anteriores aparecem automaticamente em `Minha Conta`, sem duplicacao nem migracao manual.
 
 ### Variaveis de ambiente
 
@@ -53,7 +55,7 @@ Depois de alterar variaveis no Netlify, inicie um novo deploy. Nunca coloque val
 
 ### Airtable
 
-A tabela deve chamar-se `Pedidos` e conter os campos `ClienteEmail`, `ClienteNome`, `Produto`, `Plataforma`, `ValorPagoEUR`, `Status`, `Codigo`, `DataCompra` e `StripeSessionId`. O campo `Status` deve aceitar `Aguardando codigo`, `Enviado` e `Cancelado`. Use texto longo para `Codigo`, porque este campo tambem pode guardar dados de uma conta e instrucoes de acesso. Para manter no Airtable o retrato comercial do pedido, adicione tambem `Fornecedor` (texto), `CustoFornecedorBRL` (numero/moeda) e `LinkFornecedor` (URL). Mesmo sem estes campos opcionais, a copia persistente do pedido no Netlify Blobs conserva esta informacao.
+A tabela deve chamar-se `Pedidos` e conter os campos `ClienteEmail`, `ClienteNome`, `Produto`, `Plataforma`, `ValorPagoEUR`, `Status`, `Codigo`, `DataCompra` e `StripeSessionId`. O campo `Status` deve aceitar `Aguardando codigo`, `Enviado` e `Cancelado`. Use texto longo para `Codigo`, porque este campo tambem pode guardar dados de uma conta e instrucoes de acesso. Os campos opcionais `TipoCliente` e `UserId` guardam a origem convidado/cadastrado e o identificador Identity quando existe. Para manter no Airtable o retrato comercial do pedido, adicione tambem `Fornecedor` (texto), `CustoFornecedorBRL` (numero/moeda) e `LinkFornecedor` (URL). Mesmo sem estes campos opcionais, a copia persistente do pedido no Netlify Blobs conserva esta informacao.
 
 ### Fornecedores e preco concorrente
 
@@ -132,6 +134,6 @@ O modelo predefinido e `gemini-3.5-flash-lite`, com fallback configurado e limit
 - Existe um limite basico de 12 pedidos por IP a cada 10 minutos. Como e um limite em memoria por instancia serverless, um site com trafego elevado deve substitui-lo por Netlify Blobs, Redis ou outro armazenamento partilhado.
 - Existe tambem um teto local de 500 chamadas validas por dia em cada instancia da Function. Este contador reinicia diariamente e sempre que a instancia e recriada ou o site recebe um novo deploy; nao representa um limite global rigoroso entre varias instancias.
 - A conversa fica apenas no `sessionStorage` do navegador e desaparece ao terminar a sessao. Nao se deve enviar palavras-passe, dados bancarios ou outros dados sensiveis.
-- O checkout atual ainda nao esta ligado a um processador de pagamento; a assistente foi instruida a comunicar isso sem inventar metodos disponiveis.
+- O checkout usa Stripe e os pedidos pagos sao confirmados apenas pelo webhook assinado; o navegador nunca decide o estado de pagamento.
 
 Execute os testes locais com `npm test`.

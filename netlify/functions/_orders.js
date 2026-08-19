@@ -163,6 +163,10 @@ async function writeAirtableRecords(method, records, performUpsert) {
 function normalizeOrder(record) {
   if (!record) return null;
   const fields = record.fields || {};
+  const rawCustomerType = String(fields.TipoCliente || fields.CustomerType || "").trim().toLowerCase();
+  const isGuest = rawCustomerType === "guest"
+    || rawCustomerType === "convidado"
+    || (!fields.UserId && String(fields.ClienteNome || "").trim().toLowerCase() === "convidado");
   return {
     id: record.id,
     clienteEmail: fields.ClienteEmail || "",
@@ -177,7 +181,10 @@ function normalizeOrder(record) {
     stripeSessionId: fields.StripeSessionId || "",
     fornecedor: fields.Fornecedor || "",
     custoFornecedorBRL: Number(fields.CustoFornecedorBRL || 0),
-    linkFornecedor: fields.LinkFornecedor || ""
+    linkFornecedor: fields.LinkFornecedor || "",
+    tipoCliente: isGuest ? "Convidado" : "Cadastrado",
+    isGuest,
+    userId: fields.UserId || ""
   };
 }
 
@@ -207,6 +214,11 @@ function blobOrderId(sessionId) {
 
 function normalizeBlobOrder(value) {
   if (!value?.stripeSessionId) return null;
+  const rawCustomerType = String(value.tipoCliente || value.customerType || "").trim().toLowerCase();
+  const isGuest = value.isGuest === true
+    || rawCustomerType === "guest"
+    || rawCustomerType === "convidado"
+    || (!value.userId && String(value.clienteNome || "").trim().toLowerCase() === "convidado");
   return {
     id: blobOrderId(value.stripeSessionId),
     clienteEmail: String(value.clienteEmail || "").trim().toLowerCase(),
@@ -221,7 +233,10 @@ function normalizeBlobOrder(value) {
     stripeSessionId: value.stripeSessionId,
     fornecedor: value.fornecedor || "",
     custoFornecedorBRL: Number(value.custoFornecedorBRL || 0),
-    linkFornecedor: value.linkFornecedor || ""
+    linkFornecedor: value.linkFornecedor || "",
+    tipoCliente: isGuest ? "Convidado" : "Cadastrado",
+    isGuest,
+    userId: value.userId || ""
   };
 }
 
@@ -240,7 +255,10 @@ function fieldsToBlobOrder(fields, current = {}) {
     stripeSessionId: fields.StripeSessionId ?? current.stripeSessionId,
     fornecedor: fields.Fornecedor ?? current.fornecedor,
     custoFornecedorBRL: fields.CustoFornecedorBRL ?? current.custoFornecedorBRL,
-    linkFornecedor: fields.LinkFornecedor ?? current.linkFornecedor
+    linkFornecedor: fields.LinkFornecedor ?? current.linkFornecedor,
+    tipoCliente: fields.TipoCliente ?? fields.CustomerType ?? current.tipoCliente,
+    isGuest: fields.TipoCliente === "Convidado" || fields.CustomerType === "guest" || current.isGuest,
+    userId: fields.UserId ?? current.userId
   });
 }
 

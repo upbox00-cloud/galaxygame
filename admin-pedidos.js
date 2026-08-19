@@ -10,6 +10,7 @@
   const catalogSearch = document.querySelector("[data-admin-catalog-search]");
   const customerSearch = document.querySelector("[data-admin-customer-search]");
   const tabs = [...document.querySelectorAll("[data-admin-tab]")];
+  const customerTypeFilters = [...document.querySelectorAll("[data-admin-customer-type]")];
   const ADMIN_STATE_KEY = "galaxygame_admin_ui_v1";
   const savedUi = readSavedUi();
   const state = {
@@ -19,6 +20,7 @@
     query: savedUi.query || "",
     catalogQuery: savedUi.catalogQuery || "",
     customerQuery: savedUi.customerQuery || "",
+    customerType: savedUi.customerType || "all",
     view: savedUi.view || "overview",
     period: savedUi.period || 30,
     visitsPeriod: 7,
@@ -51,7 +53,8 @@
         period: [7, 30, 90].includes(Number(saved.period)) ? Number(saved.period) : 0,
         query: String(saved.query || "").slice(0, 200),
         catalogQuery: String(saved.catalogQuery || "").slice(0, 200),
-        customerQuery: String(saved.customerQuery || "").slice(0, 200)
+        customerQuery: String(saved.customerQuery || "").slice(0, 200),
+        customerType: ["all", "registered", "guest"].includes(saved.customerType) ? saved.customerType : "all"
       };
     } catch {
       return {};
@@ -66,7 +69,8 @@
         period: state.period,
         query: state.query,
         catalogQuery: state.catalogQuery,
-        customerQuery: state.customerQuery
+        customerQuery: state.customerQuery,
+        customerType: state.customerType
       }));
     } catch {
       // O painel continua funcional quando o navegador bloqueia armazenamento local.
@@ -478,14 +482,18 @@
     const query = state.query.trim().toLowerCase();
     return state.orders.filter((order) => {
       const matchesStatus = state.filter === "all" || normalizeStatus(order.status) === state.filter;
-      const haystack = [order.clienteNome, order.clienteEmail, order.produto, order.plataforma, order.stripeSessionId].join(" ").toLowerCase();
-      return matchesStatus && (!query || haystack.includes(query));
+      const customerType = order.isGuest || String(order.tipoCliente || "").toLowerCase() === "convidado" ? "guest" : "registered";
+      const matchesCustomerType = state.customerType === "all" || customerType === state.customerType;
+      const haystack = [order.id, order.clienteNome, order.clienteEmail, order.produto, order.plataforma, order.stripeSessionId, order.tipoCliente].join(" ").toLowerCase();
+      return matchesStatus && matchesCustomerType && (!query || haystack.includes(query));
     });
   }
 
   function orderDetails(order) {
+    const customerType = order.isGuest || String(order.tipoCliente || "").toLowerCase() === "convidado" ? "Convidado" : "Cadastrado";
     const supplier = order.fornecedor ? `<aside class="admin-order-supplier"><span>Comprar no fornecedor</span><strong>${escapeHtml(order.fornecedor)}</strong><small>Custo Pix usado: ${escapeHtml(formatBRL(order.custoFornecedorBRL))}</small>${order.linkFornecedor ? `<a href="${escapeHtml(order.linkFornecedor)}" target="_blank" rel="noopener">Abrir produto no fornecedor</a>` : ""}</aside>` : "";
     return `<dl class="admin-order-details">
+      <div><dt>Tipo de cliente</dt><dd>${customerType}</dd></div>
       <div><dt>Cliente</dt><dd>${escapeHtml(order.clienteNome || "Nome não indicado")}</dd></div>
       <div><dt>Email</dt><dd><a href="mailto:${escapeHtml(order.clienteEmail)}">${escapeHtml(order.clienteEmail || "Email não indicado")}</a></dd></div>
       <div><dt>Plataforma</dt><dd>${escapeHtml(order.plataforma || "Não indicada")}</dd></div>
@@ -501,8 +509,10 @@
     const article = document.createElement("article");
     article.className = `admin-order-card admin-order-${mode}`;
     const cover = productImage(order);
+    const customerType = order.isGuest || String(order.tipoCliente || "").toLowerCase() === "convidado" ? "guest" : "registered";
+    const customerTypeBadge = `<span class="admin-customer-type-badge ${customerType}">${customerType === "guest" ? "Convidado" : "Cadastrado"}</span>`;
     article.innerHTML = `
-      <div class="admin-order-primary"><div class="admin-order-title"><div class="admin-order-product">${cover ? `<img src="${escapeHtml(cover)}" alt="Capa de ${escapeHtml(order.produto || "jogo comprado")}" loading="lazy" />` : ""}<div><small>Pedido ${escapeHtml(order.id)}</small><span>Jogo comprado</span><strong>${escapeHtml(order.produto || "Produto sem nome")}</strong></div></div><mark data-status="${mode}">${statusLabel(order)}</mark></div>${orderDetails(order)}</div>
+      <div class="admin-order-primary"><div class="admin-order-title"><div class="admin-order-product">${cover ? `<img src="${escapeHtml(cover)}" alt="Capa de ${escapeHtml(order.produto || "jogo comprado")}" loading="lazy" />` : ""}<div><small>Pedido ${escapeHtml(order.id)}</small><span>Jogo comprado</span><strong>${escapeHtml(order.produto || "Produto sem nome")}</strong></div></div><div class="admin-order-badges">${customerTypeBadge}<mark data-status="${mode}">${statusLabel(order)}</mark></div></div>${orderDetails(order)}</div>
       <div class="admin-order-action">
         ${mode === "pending" && hasValidEmail ? `<form class="admin-send-form" data-send-order><label>Código ou dados da conta<textarea name="codigo" rows="4" maxlength="4000" placeholder="Cola aqui o código, email, palavra-passe e instruções necessárias" autocomplete="off" autocapitalize="off" spellcheck="false" required></textarea></label><div class="admin-action-row"><button type="submit">Enviar ao cliente</button><button class="admin-danger-button" type="button" data-order-status="Cancelado">Cancelar pedido</button></div></form>`
           : mode === "pending" ? `<div class="admin-cancelled-box"><p><strong>Pedido incompleto:</strong> falta um email de cliente válido. Este registo não pode receber uma entrega.</p><button class="admin-danger-button" type="button" data-order-status="Cancelado">Retirar da fila</button></div>`
@@ -521,6 +531,7 @@
     document.querySelector("[data-admin-list-title]").textContent = title;
     document.querySelector("[data-admin-list-copy]").textContent = copy;
     tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.adminTab === state.filter));
+    customerTypeFilters.forEach((button) => button.classList.toggle("active", button.dataset.adminCustomerType === state.customerType));
     const orders = filteredOrders();
     orderList.innerHTML = "";
     if (!orders.length) {
@@ -718,6 +729,11 @@
     renderVisitsChart();
   }));
   tabs.forEach((tab) => tab.addEventListener("click", () => { state.filter = tab.dataset.adminTab; renderOrders(); saveUi(); }));
+  customerTypeFilters.forEach((button) => button.addEventListener("click", () => {
+    state.customerType = button.dataset.adminCustomerType;
+    renderOrders();
+    saveUi();
+  }));
   searchInput?.addEventListener("input", () => { state.query = searchInput.value; renderOrders(); saveUi(); });
   catalogSearch?.addEventListener("input", () => { state.catalogQuery = catalogSearch.value; renderCatalog(); saveUi(); });
   customerSearch?.addEventListener("input", () => { state.customerQuery = customerSearch.value; renderCustomers(); saveUi(); });

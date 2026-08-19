@@ -88,6 +88,14 @@ test("painel restaura a vista e os filtros ao regressar", () => {
   assert.match(script, /setView\(state\.view\)/);
 });
 
+test("painel distingue e pesquisa pedidos de convidados", () => {
+  assert.match(html, /data-admin-customer-type="guest"/);
+  assert.match(html, /data-admin-customer-type="registered"/);
+  assert.match(script, /customerTypeFilters/);
+  assert.match(script, /admin-customer-type-badge/);
+  assert.match(script, /order\.id, order\.clienteNome/);
+});
+
 test("Minha Conta apresenta pedidos cancelados sem os confundir com pedidos em preparacao", () => {
   assert.match(accountScript, /\["cancelado", "cancelada", "canceled", "cancelled"\]\.includes\(status\)/);
   assert.match(accountScript, /cancelled \? "Pedido cancelado"/);

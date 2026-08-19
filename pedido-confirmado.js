@@ -1,5 +1,24 @@
 (function trackConfirmedPurchase() {
-  const sessionId = new URLSearchParams(window.location.search).get("session_id") || "";
+  const params = new URLSearchParams(window.location.search);
+  const sessionId = params.get("session_id") || "";
+  const isGuestCheckout = params.get("guest") === "1";
+
+  if (isGuestCheckout) {
+    const copy = document.querySelector("[data-confirm-copy]");
+    const sub = document.querySelector("[data-confirm-sub]");
+    const primary = document.querySelector("[data-confirm-primary]");
+    const secondary = document.querySelector("[data-confirm-secondary]");
+    const guestAccount = document.querySelector("[data-confirm-guest]");
+    if (copy) copy.textContent = "A confirmação foi enviada para o email usado no pagamento.";
+    if (sub) sub.textContent = "Quando a entrega estiver pronta, vais receber nesse email o código ou os dados de acesso e as instruções do jogo.";
+    if (primary) {
+      primary.href = "login.html?mode=signup&redirect=minha-conta.html";
+      primary.textContent = "Criar minha conta";
+    }
+    if (secondary) secondary.textContent = "Agora não";
+    if (guestAccount) guestAccount.hidden = false;
+  }
+
   if (!/^cs_(?:test|live)_[A-Za-z0-9]+$/.test(sessionId)) return;
 
   const storageKey = `galaxygame-meta-purchase:${sessionId}`;

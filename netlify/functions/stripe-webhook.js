@@ -60,10 +60,13 @@ exports.handler = async (event) => {
     const amount = Number(session.amount_total || 0) / 100;
     const email = String(customer.email || session.customer_email || "").trim().toLowerCase();
     if (!email || !parsed.produto) return json(400, { error: "missing_order_data" });
+    const isGuest = session.metadata?.customer_type === "guest";
 
     const order = await persistOrder({
       ClienteEmail: email,
-      ClienteNome: customer.name || session.metadata?.ClienteNome || "",
+      ClienteNome: customer.name || session.metadata?.ClienteNome || (isGuest ? "Convidado" : ""),
+      TipoCliente: isGuest ? "Convidado" : "Cadastrado",
+      UserId: isGuest ? "" : String(session.metadata?.identity_user_id || ""),
       Produto: parsed.produto,
       Plataforma: parsed.plataforma,
       ValorPagoEUR: Number(amount.toFixed(2)),

@@ -9,6 +9,8 @@ const homeHtml = fs.readFileSync("index.html", "utf8");
 const homeScript = fs.readFileSync("home.js", "utf8");
 const siteStyles = fs.readFileSync("styles.css", "utf8");
 const netlifyConfig = fs.readFileSync("netlify.toml", "utf8");
+const cartHtml = fs.readFileSync("carrinho.html", "utf8");
+const cartScript = fs.readFileSync("cart.js", "utf8");
 
 test("rodape partilhado usa o mesmo layout nas paginas legais e na loja", () => {
   assert.match(footerScript, /classList\.add\("site-footer", "enhanced-footer"\)/);
@@ -32,4 +34,12 @@ test("home entrega o LCP e as capas de forma responsiva sem perder qualidade", (
   assert.doesNotMatch(homeScript, /new Image\(\)/);
   assert.match(siteStyles, /content-visibility:\s*auto/);
   assert.match(netlifyConfig, /\[images\][\s\S]*remote_images/);
+});
+
+test("checkout convidado tem email acessivel e controlos adequados no mobile", () => {
+  assert.match(cartHtml, /data-checkout-account-options/);
+  assert.match(cartHtml, /data-checkout-email[^>]*inputmode="email"/);
+  assert.match(cartHtml, /data-checkout-email-error[^>]*aria-live="polite"/);
+  assert.match(cartScript, /checkoutMode: user \? "registered" : "guest"/);
+  assert.match(siteStyles, /@media \(max-width: 520px\)[\s\S]*\.checkout-account-actions a/s);
 });

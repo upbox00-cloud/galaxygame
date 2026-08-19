@@ -104,6 +104,32 @@
         color: var(--accent);
         text-decoration: none;
       }
+
+      .confirm-guest-account {
+        margin: 22px 0 0;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(112, 63, 164, 0.12);
+      }
+
+      .confirm-guest-account strong,
+      .confirm-guest-account p {
+        display: block;
+        margin: 0;
+      }
+
+      .confirm-guest-account p {
+        margin-top: 6px;
+        font-size: 14px;
+      }
+
+      .confirm-guest-account a {
+        display: inline-flex;
+        margin-top: 14px;
+        color: var(--accent);
+        font-weight: 800;
+      }
     </style>
   </head>
   <body class="legal-page">
@@ -120,17 +146,21 @@
       <section class="confirm-card">
         <span class="confirm-icon" aria-hidden="true">&#10003;</span>
         <h1>Pagamento confirmado!</h1>
-        <p>O teu código vai aparecer em breve na tua conta e no teu email.</p>
-        <p class="confirm-sub">Costuma demorar até 10 minutos. Vais encontrar tudo em <strong>Minha Conta &gt; Meus Pedidos</strong> e também recebes um email com as instruções de ativação.</p>
+        <p data-confirm-copy>O teu código vai aparecer em breve na tua conta e no teu email.</p>
+        <p class="confirm-sub" data-confirm-sub>Costuma demorar até 10 minutos. Vais encontrar tudo em <strong>Minha Conta &gt; Meus Pedidos</strong> e também recebes um email com as instruções de ativação.</p>
         <div class="confirm-actions">
-          <a class="confirm-primary" href="minha-conta.html">Ver os meus pedidos</a>
-          <a class="confirm-secondary" href="catalogo.html">Continuar a comprar</a>
+          <a class="confirm-primary" href="minha-conta.html" data-confirm-primary>Ver os meus pedidos</a>
+          <a class="confirm-secondary" href="catalogo.html" data-confirm-secondary>Continuar a comprar</a>
+        </div>
+        <div class="confirm-guest-account" data-confirm-guest hidden>
+          <strong>Queres acompanhar esta compra na GalaxyGame?</strong>
+          <p>Cria uma conta com o mesmo email usado no pagamento. Depois de confirmares o email, o pedido aparecerá automaticamente em Minha Conta.</p>
         </div>
         <p class="confirm-support">Precisas de ajuda? Escreve para <a href="mailto:gamegalaxy26@gmail.com">gamegalaxy26@gmail.com</a></p>
       </section>
     </main>
     <script src="scripts/auth.js?v=20260811-2" defer></script>
-    <script src="pedido-confirmado.js?v=20260816-2" defer></script>
+    <script src="pedido-confirmado.js?v=20260819-1" defer></script>
     <script src="chat.js?v=20260818-1" defer></script>
   </body>
 </html>

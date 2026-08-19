@@ -49,6 +49,12 @@ function safeCancelPath(value) {
   return "carrinho.html?checkout=cancelado";
 }
 
+function normalizeCheckoutEmail(value) {
+  const email = String(value || "").trim().toLowerCase();
+  if (!email || email.length > 254) return "";
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? email : "";
+}
+
 const PORTUGAL_PAYMENT_METHODS = ["card", "link", "mb_way", "multibanco", "klarna", "paypal"];
 
 function checkoutPaymentMethods() {
@@ -88,11 +94,14 @@ async function createStripeCheckout(products, customer, cancelPath) {
     locale: "pt",
     "adaptive_pricing[enabled]": "false",
     customer_email: customer.email,
-    success_url: `${siteUrl()}/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}`,
+    success_url: `${siteUrl()}/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}${customer.isGuest ? "&guest=1" : ""}`,
     cancel_url: `${siteUrl()}/${safeCancelPath(cancelPath)}`,
     "metadata[ClienteNome]": customer.name || "",
-    "metadata[customer_email]": customer.email
+    "metadata[customer_email]": customer.email,
+    "metadata[customer_type]": customer.isGuest ? "guest" : "registered"
   });
+
+  if (customer.userId) params.set("metadata[identity_user_id]", customer.userId);
 
   checkoutPaymentMethods().forEach((method, index) => {
     params.set(`payment_method_types[${index}]`, method);
@@ -141,8 +150,6 @@ async function createStripeCheckout(products, customer, cancelPath) {
 
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
-  const email = getUserEmail(context).trim().toLowerCase();
-  if (!email) return json(401, { error: "login_required" });
 
   let body;
   try {
@@ -150,6 +157,14 @@ exports.handler = async (event, context) => {
   } catch {
     return json(400, { error: "invalid_json" });
   }
+
+  const authenticatedEmail = normalizeCheckoutEmail(getUserEmail(context));
+  const guestEmail = normalizeCheckoutEmail(body.email);
+  const isGuest = !authenticatedEmail;
+  const email = authenticatedEmail || guestEmail;
+  if (!email) return json(400, { error: "invalid_email" });
+  const user = context?.clientContext?.user || null;
+  const userId = isGuest ? "" : String(user?.sub || user?.id || "").trim();
 
   const ids = Array.from(new Set((Array.isArray(body.items) ? body.items : [])
     .map((item) => String(item?.id || item || "").trim())
@@ -162,8 +177,13 @@ exports.handler = async (event, context) => {
     if (products.some((product) => !product || Number(product.precoVendaEUR) <= 0)) {
       return json(400, { error: "invalid_product" });
     }
-    const session = await createStripeCheckout(products, { email, name: getUserName(context) }, body.cancelUrl);
-    return json(200, { checkoutUrl: session.url });
+    const session = await createStripeCheckout(products, {
+      email,
+      name: isGuest ? "Convidado" : getUserName(context),
+      isGuest,
+      userId
+    }, body.cancelUrl);
+    return json(200, { checkoutUrl: session.url, checkoutMode: isGuest ? "guest" : "registered" });
   } catch (error) {
     console.error("[criar-checkout]", {
       message: error.message,
@@ -173,4 +193,4 @@ exports.handler = async (event, context) => {
   }
 };
 
-exports._test = { loadCatalog, createStripeCheckout, checkoutPaymentMethods, PORTUGAL_PAYMENT_METHODS };
+exports._test = { loadCatalog, createStripeCheckout, checkoutPaymentMethods, normalizeCheckoutEmail, PORTUGAL_PAYMENT_METHODS };

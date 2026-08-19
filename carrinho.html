@@ -14,7 +14,7 @@
     <script src="scripts/identity-modern.js?v=20260809-1" defer></script>
     <link rel="preload" href="assets/fonts/roboto-condensed-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/galaxygame-header-logo-cropped.webp" as="image" />
-    <link rel="stylesheet" href="styles.min.css?v=20260818-1" />
+    <link rel="stylesheet" href="styles.min.css?v=20260819-1" />
   </head>
   <body class="cart-page" data-cart-page>
     <header class="site-header solid-header">
@@ -51,23 +51,40 @@
           <div class="cart-summary-line"><span>Entrega digital</span><strong>Grátis</strong></div>
           <div class="cart-summary-total"><span>Total</span><strong data-cart-total>0,00 €</strong></div>
           <p class="cart-tax-note">Preço final apresentado em euros. Confirma sempre a plataforma antes de finalizar.</p>
-          <form class="checkout-form" data-checkout-form>
-            <label><span>Email associado à tua conta</span><input type="email" data-checkout-email required autocomplete="email" placeholder="Inicia sessão para continuar"></label>
+          <div class="checkout-access" data-checkout-access>
+            <div class="checkout-account-options" data-checkout-account-options>
+              <div class="checkout-account-copy"><strong>Já tens conta?</strong><span>Entra para acompanhares esta compra em Minha Conta.</span></div>
+              <div class="checkout-account-actions">
+                <a href="login.html?mode=login&amp;redirect=carrinho.html">Entrar</a>
+                <a href="login.html?mode=signup&amp;redirect=carrinho.html">Criar conta</a>
+              </div>
+              <div class="checkout-divider"><span>ou</span></div>
+              <div class="checkout-guest-copy"><strong>Quer comprar mais rápido?</strong><span>Continua como convidado, sem criares palavra-passe.</span></div>
+            </div>
+            <div class="checkout-signed-in" data-checkout-signed-in hidden>
+              <strong>Compra associada à tua conta</strong>
+              <span>O pedido ficará disponível em Minha Conta e também seguirá por email.</span>
+            </div>
+          </div>
+          <form class="checkout-form" data-checkout-form novalidate>
+            <label><span data-checkout-email-label>O teu melhor email</span><input type="email" data-checkout-email required maxlength="254" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="nome@exemplo.pt" aria-describedby="checkout-email-help checkout-email-error"></label>
+            <p class="checkout-email-help" id="checkout-email-help" data-checkout-email-help>Usaremos este email para identificar o pedido, enviar a confirmação e entregar as informações da compra.</p>
+            <p class="checkout-email-error" id="checkout-email-error" data-checkout-email-error role="alert" aria-live="polite" hidden></p>
             <label class="checkout-consent"><input type="checkbox" required><span>Li e aceito os <a href="termos.html">Termos e Condições</a> e confirmei a plataforma dos jogos.</span></label>
             <button type="submit">Continuar para pagamento</button>
           </form>
-          <div class="checkout-notice" data-checkout-notice hidden><strong>Carrinho preparado</strong><p>Depois da confirma&ccedil;&atilde;o do pagamento, os teus produtos ficam dispon&iacute;veis em at&eacute; 10 minutos em Minha Conta &gt; Meus Pedidos e tamb&eacute;m seguem por email com instru&ccedil;&otilde;es.</p></div>
+          <div class="checkout-notice" data-checkout-notice hidden><strong>Carrinho preparado</strong><p>Depois da confirma&ccedil;&atilde;o do pagamento, recebes por email os dados e as instru&ccedil;&otilde;es da compra. Se entrares na tua conta, o pedido tamb&eacute;m fica dispon&iacute;vel em Minha Conta &gt; Meus Pedidos.</p></div>
         </aside>
       </div>
 
       <section class="cart-confidence" aria-label="Informações de confiança">
-        <article><strong>Conta GalaxyGame + email</strong><span>Depois da confirma&ccedil;&atilde;o do pagamento, o pedido fica dispon&iacute;vel em at&eacute; 10 minutos em Minha Conta &gt; Meus Pedidos e tamb&eacute;m segue por email.</span></article>
+        <article><strong>Entrega por email</strong><span>Depois da confirma&ccedil;&atilde;o do pagamento, recebes os dados da compra por email. Com sess&atilde;o iniciada, o pedido tamb&eacute;m fica guardado em Minha Conta.</span></article>
         <article><strong>Plataforma confirmada</strong><span>PS4, PS5, Xbox One ou Xbox Series sempre identificados.</span></article>
         <article><strong>Apoio em português</strong><span>Ajuda antes e depois da compra para acesso e instalação.</span></article>
       </section>
     </main>
 
     <footer class="site-footer"><div><strong>GalaxyGame</strong><p>Jogos digitais para PlayStation e Xbox.</p></div><div class="footer-links"><a href="como-funciona.html">Como funciona</a><a href="termos.html">Termos e Condições</a><a href="privacidade.html">Privacidade</a><a href="reembolsos.html">Entregas e reembolsos</a></div></footer>
-<script src="cart.js?v=20260816-1" defer></script><script src="header-search.js?v=20260801-2" defer></script><script src="footer.js?v=20260815-1" defer></script><script src="scripts/auth.js?v=20260811-2" defer></script><script src="chat.js?v=20260818-1" defer></script>
+<script src="cart.js?v=20260819-1" defer></script><script src="header-search.js?v=20260801-2" defer></script><script src="footer.js?v=20260815-1" defer></script><script src="scripts/auth.js?v=20260811-2" defer></script><script src="chat.js?v=20260818-1" defer></script>
   </body>
 </html>

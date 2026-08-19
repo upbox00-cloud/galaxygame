@@ -301,18 +301,12 @@ async function buyNow(product) {
   };
 
   const identity = window.netlifyIdentity;
-  if (!identity) {
-    console.error("[buy-now] window.netlifyIdentity indisponível (widget não carregou ou foi bloqueado)");
-    restoreButtons();
-    showToast("Não foi possível abrir o início de sessão. Recarrega a página e tenta novamente.", 4200);
-    return;
-  }
-
-  const user = identity.currentUser?.();
+  const user = identity?.currentUser?.();
   if (!user) {
+    window.ConsoleCart?.add(product);
     restoreButtons();
-    showToast("Inicia sessão para continuar a compra", 3200);
-    window.location.assign(`login.html?mode=login&redirect=${encodeURIComponent(window.location.href.replace(window.location.origin + "/", ""))}`);
+    showToast("Produto preparado. Escolhe entrar ou comprar como convidado.", 2600);
+    window.setTimeout(() => window.location.assign("carrinho.html?checkout=guest"), 250);
     return;
   }
 

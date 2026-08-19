@@ -18,7 +18,7 @@ test("eventos Meta acompanham apenas passos reais do funil", () => {
 });
 
 test("Purchase valida no servidor e nao repete na mesma sessao do navegador", () => {
-  assert.match(confirmationHtml, /pedido-confirmado\.js\?v=20260816-2/);
+  assert.match(confirmationHtml, /pedido-confirmado\.js\?v=20260819-1/);
   assert.match(confirmationSource, /\.netlify\/functions\/confirmar-compra\?session_id=/);
   assert.match(confirmationSource, /sessionStorage\.getItem\(storageKey\) === "tracked"/);
   assert.match(confirmationSource, /GalaxyGameConsent\?\.hasMarketingConsent\(\)/);

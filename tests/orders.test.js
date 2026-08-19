@@ -202,6 +202,62 @@ test("checkout conhece o catálogo e os destaques manuais", () => {
   assert.equal(catalog.get("ea-sports-fc-26-ps5").fornecedorSelecionado, "TCA Games");
 });
 
+test("checkout de convidado valida e normaliza o email sem exigir login", async () => {
+  assert.equal(checkout._test.normalizeCheckoutEmail("  Cliente@Example.COM "), "cliente@example.com");
+  assert.equal(checkout._test.normalizeCheckoutEmail("email-invalido"), "");
+
+  const previousSecret = process.env.STRIPE_SECRET_KEY;
+  const originalFetch = global.fetch;
+  let stripeParams;
+  process.env.STRIPE_SECRET_KEY = "sk_test_only";
+  global.fetch = async (_url, options) => {
+    stripeParams = new URLSearchParams(options.body);
+    return new Response(JSON.stringify({ url: "https://checkout.stripe.test/guest" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    const response = await checkout.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }], email: "  Cliente@Example.COM " })
+    }, {});
+    assert.equal(response.statusCode, 200);
+    assert.equal(JSON.parse(response.body).checkoutMode, "guest");
+    assert.equal(stripeParams.get("customer_email"), "cliente@example.com");
+    assert.equal(stripeParams.get("metadata[customer_type]"), "guest");
+    assert.equal(stripeParams.get("metadata[identity_user_id]"), null);
+    assert.match(stripeParams.get("success_url"), /&guest=1$/);
+
+    const invalid = await checkout.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }], email: "invalido" })
+    }, {});
+    assert.equal(invalid.statusCode, 400);
+    assert.equal(JSON.parse(invalid.body).error, "invalid_email");
+  } finally {
+    global.fetch = originalFetch;
+    if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousSecret;
+  }
+});
+
+test("pedidos convidados ficam identificados e associados pelo email", () => {
+  const guest = orders.normalizeOrder({
+    id: "recGuest",
+    fields: {
+      ClienteEmail: "cliente@example.com",
+      ClienteNome: "Convidado",
+      TipoCliente: "Convidado",
+      StripeSessionId: "cs_test_guest"
+    }
+  });
+  assert.equal(guest.isGuest, true);
+  assert.equal(guest.tipoCliente, "Convidado");
+  assert.equal(guest.clienteEmail, "cliente@example.com");
+});
+
 test("checkout cobra apenas em euros e pede meios de pagamento portugueses", async () => {
   const previousSecret = process.env.STRIPE_SECRET_KEY;
   const previousMethods = process.env.STRIPE_PAYMENT_METHOD_TYPES;
