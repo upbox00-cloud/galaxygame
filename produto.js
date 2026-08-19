@@ -449,6 +449,7 @@ function renderBackground(product) {
     cover.style.aspectRatio = `${loadedImage.naturalWidth} / ${loadedImage.naturalHeight}`;
     cover.style.setProperty("--cover-ideal-width", `${coverWidth}px`);
     cover.parentElement.style.setProperty("--product-cover-width", `${coverWidth}px`);
+    cover.closest(".product-top")?.style.setProperty("--product-cover-width", `${coverWidth}px`);
     cover.style.backgroundImage = background;
     cover.dataset.zoomSrc = image;
   }, productHeroImageCandidates(product));

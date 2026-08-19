@@ -10,8 +10,8 @@ const produtoStyles = fs.readFileSync(path.join(root, "produto.css"), "utf8");
 
 test("product page never flashes the GTA VI artwork for another game", () => {
   assert.match(produtoHtml, /class="product-page product-loading"/);
-  assert.match(produtoHtml, /produto\.css\?v=20260817-2/);
-  assert.match(produtoHtml, /produto\.js\?v=20260819-1/);
+  assert.match(produtoHtml, /produto\.css\?v=20260819-2/);
+  assert.match(produtoHtml, /produto\.js\?v=20260819-2/);
   assert.match(produtoSource, /document\.body\.classList\.remove\("product-loading"\)/);
   assert.match(produtoSource, /"assets\/site-cosmic-gaming-bg\.webp"/);
 
@@ -28,6 +28,15 @@ test("product cover always fits inside its natural aspect ratio without cropping
   assert.match(produtoStyles, /\.cover-art\s*\{[\s\S]*?background-repeat:\s*no-repeat;/);
   assert.match(supplierCoverRule, /background-size:\s*contain/);
   assert.doesNotMatch(supplierCoverRule, /118%/);
+});
+
+test("product cover stays next to the purchase panel without a tiled background", () => {
+  const heroRule = produtoStyles.match(/\.product-hero-bg\s*\{[\s\S]*?\n\}/)?.[0] || "";
+  const topRule = produtoStyles.match(/\.product-top\s*\{[\s\S]*?\n\}/)?.[0] || "";
+  assert.match(heroRule, /background-size:\s*cover/);
+  assert.match(heroRule, /background-repeat:\s*no-repeat/);
+  assert.match(topRule, /grid-template-columns:\s*minmax\(0, var\(--product-cover-width/);
+  assert.match(produtoSource, /closest\("\.product-top"\)\?\.style\.setProperty\("--product-cover-width"/);
 });
 
 test("initProductPage liga os botões de compra mesmo que uma etapa de render falhe", () => {
