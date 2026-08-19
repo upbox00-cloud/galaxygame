@@ -258,6 +258,43 @@ test("pedidos convidados ficam identificados e associados pelo email", () => {
   assert.equal(guest.clienteEmail, "cliente@example.com");
 });
 
+test("checkout apenas por email fica identificado no Stripe e nos pedidos", async () => {
+  const previousSecret = process.env.STRIPE_SECRET_KEY;
+  const originalFetch = global.fetch;
+  let stripeParams;
+  process.env.STRIPE_SECRET_KEY = "sk_test_only";
+  global.fetch = async (_url, options) => {
+    stripeParams = new URLSearchParams(options.body);
+    return new Response(JSON.stringify({ url: "https://checkout.stripe.test/email-only" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    const response = await checkout.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }], email: "cliente@example.com", checkoutMode: "email_only" })
+    }, {});
+    assert.equal(response.statusCode, 200);
+    assert.equal(JSON.parse(response.body).checkoutMode, "email_only");
+    assert.equal(stripeParams.get("metadata[customer_type]"), "email_only");
+    assert.equal(stripeParams.get("metadata[ClienteNome]"), "Compra por email");
+
+    const order = orders.normalizeOrder({
+      id: "recEmailOnly",
+      fields: { ClienteEmail: "cliente@example.com", TipoCliente: "Apenas email" }
+    });
+    assert.equal(order.isEmailOnly, true);
+    assert.equal(order.isGuest, true);
+    assert.equal(order.tipoCliente, "Apenas email");
+  } finally {
+    global.fetch = originalFetch;
+    if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousSecret;
+  }
+});
+
 test("checkout cobra apenas em euros e pede meios de pagamento portugueses", async () => {
   const previousSecret = process.env.STRIPE_SECRET_KEY;
   const previousMethods = process.env.STRIPE_PAYMENT_METHOD_TYPES;

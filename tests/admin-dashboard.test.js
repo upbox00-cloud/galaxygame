@@ -94,6 +94,8 @@ test("painel distingue e pesquisa pedidos de convidados", () => {
   assert.match(script, /customerTypeFilters/);
   assert.match(script, /admin-customer-type-badge/);
   assert.match(script, /order\.id, order\.clienteNome/);
+  assert.match(html, /data-admin-customer-type="email_only"/);
+  assert.match(script, /Apenas email/);
 });
 
 test("Minha Conta apresenta pedidos cancelados sem os confundir com pedidos em preparacao", () => {

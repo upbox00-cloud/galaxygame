@@ -11,7 +11,7 @@ const produtoStyles = fs.readFileSync(path.join(root, "produto.css"), "utf8");
 test("product page never flashes the GTA VI artwork for another game", () => {
   assert.match(produtoHtml, /class="product-page product-loading"/);
   assert.match(produtoHtml, /produto\.css\?v=20260819-3/);
-  assert.match(produtoHtml, /produto\.js\?v=20260819-2/);
+  assert.match(produtoHtml, /produto\.js\?v=20260819-3/);
   assert.match(produtoSource, /document\.body\.classList\.remove\("product-loading"\)/);
   assert.match(produtoSource, /"assets\/site-cosmic-gaming-bg\.webp"/);
 
@@ -62,23 +62,8 @@ test("bindProductActions avisa em consola se nenhum botão de compra for encontr
   assert.match(produtoSource, /if \(!buttons\.length\) \{\s*\n\s*console\.error\(/);
 });
 
-test("buyNow regista console.error e mostra toast visível em cada ponto de falha", () => {
-  const failurePoints = [
-    /falha ao obter o token de sessão/,
-    /falha de rede ao chamar \/\.netlify\/functions\/criar-checkout/,
-    /resposta de criar-checkout não é JSON válido/,
-    /sessão rejeitada \(401\) ao criar checkout/,
-    /não devolveu um checkoutUrl válido/
-  ];
-  failurePoints.forEach((pattern) => {
-    assert.match(produtoSource, pattern, `esperava um console.error com padrão: ${pattern}`);
-  });
-
-  assert.match(produtoSource, /carrinho\.html\?checkout=guest/);
-
-  // Nunca pode falhar silenciosamente: cada saída de erro tem de mostrar um toast.
-  const buyNowMatch = produtoSource.match(/async function buyNow\(product\) \{[\s\S]*?\n\}/);
-  assert.ok(buyNowMatch, "função buyNow não encontrada");
-  const showToastCalls = buyNowMatch[0].match(/showToast\(/g) || [];
-  assert.ok(showToastCalls.length >= 4, "buyNow deveria mostrar um toast em cada ramo de erro");
+test("Comprar agora abre a identificação do cliente antes do pagamento", () => {
+  assert.match(produtoSource, /window\.location\.assign\(`finalizar-compra\.html\?produto=\$\{productId\}`\)/);
+  assert.doesNotMatch(produtoSource, /carrinho\.html\?checkout=guest/);
+  assert.match(produtoSource, /Nao foi possivel identificar este jogo/);
 });

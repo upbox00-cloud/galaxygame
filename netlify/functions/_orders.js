@@ -164,7 +164,8 @@ function normalizeOrder(record) {
   if (!record) return null;
   const fields = record.fields || {};
   const rawCustomerType = String(fields.TipoCliente || fields.CustomerType || "").trim().toLowerCase();
-  const isGuest = rawCustomerType === "guest"
+  const isEmailOnly = ["email_only", "apenas email", "so email", "só email"].includes(rawCustomerType);
+  const isGuest = isEmailOnly || rawCustomerType === "guest"
     || rawCustomerType === "convidado"
     || (!fields.UserId && String(fields.ClienteNome || "").trim().toLowerCase() === "convidado");
   return {
@@ -182,7 +183,8 @@ function normalizeOrder(record) {
     fornecedor: fields.Fornecedor || "",
     custoFornecedorBRL: Number(fields.CustoFornecedorBRL || 0),
     linkFornecedor: fields.LinkFornecedor || "",
-    tipoCliente: isGuest ? "Convidado" : "Cadastrado",
+    tipoCliente: isEmailOnly ? "Apenas email" : (isGuest ? "Convidado" : "Cadastrado"),
+    isEmailOnly,
     isGuest,
     userId: fields.UserId || ""
   };
@@ -215,7 +217,8 @@ function blobOrderId(sessionId) {
 function normalizeBlobOrder(value) {
   if (!value?.stripeSessionId) return null;
   const rawCustomerType = String(value.tipoCliente || value.customerType || "").trim().toLowerCase();
-  const isGuest = value.isGuest === true
+  const isEmailOnly = value.isEmailOnly === true || ["email_only", "apenas email", "so email", "só email"].includes(rawCustomerType);
+  const isGuest = isEmailOnly || value.isGuest === true
     || rawCustomerType === "guest"
     || rawCustomerType === "convidado"
     || (!value.userId && String(value.clienteNome || "").trim().toLowerCase() === "convidado");
@@ -234,7 +237,8 @@ function normalizeBlobOrder(value) {
     fornecedor: value.fornecedor || "",
     custoFornecedorBRL: Number(value.custoFornecedorBRL || 0),
     linkFornecedor: value.linkFornecedor || "",
-    tipoCliente: isGuest ? "Convidado" : "Cadastrado",
+    tipoCliente: isEmailOnly ? "Apenas email" : (isGuest ? "Convidado" : "Cadastrado"),
+    isEmailOnly,
     isGuest,
     userId: value.userId || ""
   };
@@ -257,7 +261,8 @@ function fieldsToBlobOrder(fields, current = {}) {
     custoFornecedorBRL: fields.CustoFornecedorBRL ?? current.custoFornecedorBRL,
     linkFornecedor: fields.LinkFornecedor ?? current.linkFornecedor,
     tipoCliente: fields.TipoCliente ?? fields.CustomerType ?? current.tipoCliente,
-    isGuest: fields.TipoCliente === "Convidado" || fields.CustomerType === "guest" || current.isGuest,
+    isEmailOnly: fields.TipoCliente === "Apenas email" || fields.CustomerType === "email_only" || current.isEmailOnly,
+    isGuest: fields.TipoCliente === "Apenas email" || fields.CustomerType === "email_only" || fields.TipoCliente === "Convidado" || fields.CustomerType === "guest" || current.isGuest,
     userId: fields.UserId ?? current.userId
   });
 }

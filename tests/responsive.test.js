@@ -11,6 +11,9 @@ const siteStyles = fs.readFileSync("styles.css", "utf8");
 const netlifyConfig = fs.readFileSync("netlify.toml", "utf8");
 const cartHtml = fs.readFileSync("carrinho.html", "utf8");
 const cartScript = fs.readFileSync("cart.js", "utf8");
+const quickCheckoutHtml = fs.readFileSync("finalizar-compra.html", "utf8");
+const quickCheckoutScript = fs.readFileSync("finalizar-compra.js", "utf8");
+const quickCheckoutStyles = fs.readFileSync("finalizar-compra.css", "utf8");
 
 test("rodape partilhado usa o mesmo layout nas paginas legais e na loja", () => {
   assert.match(footerScript, /classList\.add\("site-footer", "enhanced-footer"\)/);
@@ -42,4 +45,14 @@ test("checkout convidado tem email acessivel e controlos adequados no mobile", (
   assert.match(cartHtml, /data-checkout-email-error[^>]*aria-live="polite"/);
   assert.match(cartScript, /checkoutMode: user \? "registered" : "guest"/);
   assert.match(siteStyles, /@media \(max-width: 520px\)[\s\S]*\.checkout-account-actions a/s);
+});
+
+test("Comprar agora oferece conta ou apenas email antes do Stripe", () => {
+  assert.match(quickCheckoutHtml, /data-create-account/);
+  assert.match(quickCheckoutHtml, /data-email-checkout/);
+  assert.match(quickCheckoutHtml, /inputmode="email"/);
+  assert.match(quickCheckoutScript, /checkoutMode: "email_only"/);
+  assert.match(quickCheckoutScript, /\/\.netlify\/functions\/criar-checkout/);
+  assert.match(quickCheckoutStyles, /\[hidden\]\s*\{\s*display:\s*none !important/);
+  assert.match(quickCheckoutStyles, /@media \(max-width: 860px\)/);
 });

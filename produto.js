@@ -274,113 +274,17 @@ function addToCart(product) {
   showToast(added ? `${productName} adicionado ao carrinho` : `${productName} já está no carrinho`);
 }
 
-let buyNowInFlight = false;
-
 function buyNowButtons() {
   return document.querySelectorAll(".buy-button, .edition-buy-button, [data-mobile-buy-button]");
 }
 
 async function buyNow(product) {
-  if (buyNowInFlight) return;
-  buyNowInFlight = true;
-
-  const buttons = buyNowButtons();
-  const originalLabels = new Map();
-  buttons.forEach((button) => {
-    originalLabels.set(button, button.textContent);
-    button.disabled = true;
-    button.textContent = "A preparar pagamento...";
-  });
-
-  const restoreButtons = () => {
-    buttons.forEach((button) => {
-      button.disabled = false;
-      button.textContent = originalLabels.get(button) || button.textContent;
-    });
-    buyNowInFlight = false;
-  };
-
-  const identity = window.netlifyIdentity;
-  const user = identity?.currentUser?.();
-  if (!user) {
-    window.ConsoleCart?.add(product);
-    restoreButtons();
-    showToast("Produto preparado. Escolhe entrar ou comprar como convidado.", 2600);
-    window.setTimeout(() => window.location.assign("carrinho.html?checkout=guest"), 250);
+  const productId = encodeURIComponent(String(product?.id || ""));
+  if (!productId) {
+    showToast("Nao foi possivel identificar este jogo. Atualiza a pagina e tenta novamente.", 4200);
     return;
   }
-
-  let token;
-  try {
-    token = await user.jwt();
-  } catch (error) {
-    console.error("[buy-now] falha ao obter o token de sessão (user.jwt())", error);
-    restoreButtons();
-    showToast("A tua sessão expirou. Inicia sessão novamente para continuar.", 4200);
-    window.location.assign(`login.html?mode=login&redirect=${encodeURIComponent(window.location.href.replace(window.location.origin + "/", ""))}`);
-    return;
-  }
-
-  let response;
-  try {
-    response = await fetch("/.netlify/functions/criar-checkout", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "content-type": "application/json"
-      },
-      body: JSON.stringify({
-        items: [{ id: product.id }],
-        cancelUrl: `produto.html?id=${encodeURIComponent(product.id)}`
-      })
-    });
-  } catch (error) {
-    console.error("[buy-now] falha de rede ao chamar /.netlify/functions/criar-checkout", error);
-    restoreButtons();
-    showToast("Sem ligação ao servidor de pagamento. Verifica a tua internet e tenta novamente.", 4200);
-    return;
-  }
-
-  let data = {};
-  try {
-    data = await response.json();
-  } catch (error) {
-    console.error("[buy-now] resposta de criar-checkout não é JSON válido", {
-      status: response.status,
-      statusText: response.statusText,
-      error
-    });
-  }
-
-  if (response.status === 401) {
-    console.error("[buy-now] sessão rejeitada (401) ao criar checkout", data);
-    restoreButtons();
-    showToast("A tua sessão expirou. Inicia sessão novamente para continuar.", 4200);
-    window.location.assign(`login.html?mode=login&redirect=${encodeURIComponent(window.location.href.replace(window.location.origin + "/", ""))}`);
-    return;
-  }
-
-  if (!response.ok || !data.checkoutUrl) {
-    console.error("[buy-now] criar-checkout não devolveu um checkoutUrl válido", {
-      status: response.status,
-      statusText: response.statusText,
-      body: data
-    });
-    restoreButtons();
-    showToast("Não foi possível iniciar o pagamento. Tenta novamente ou contacta gamegalaxy26@gmail.com", 4200);
-    return;
-  }
-
-  const value = Number(product.precoVendaEUR || 0);
-  trackMetaEvent("InitiateCheckout", {
-    content_ids: [String(product.id)],
-    content_type: "product",
-    contents: [{ id: String(product.id), quantity: 1, item_price: value }],
-    num_items: 1,
-    value,
-    currency: "EUR"
-  });
-  window.location.href = data.checkoutUrl;
+  window.location.assign(`finalizar-compra.html?produto=${productId}`);
 }
 
 function getProductId() {

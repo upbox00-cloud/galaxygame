@@ -98,7 +98,7 @@ async function createStripeCheckout(products, customer, cancelPath) {
     cancel_url: `${siteUrl()}/${safeCancelPath(cancelPath)}`,
     "metadata[ClienteNome]": customer.name || "",
     "metadata[customer_email]": customer.email,
-    "metadata[customer_type]": customer.isGuest ? "guest" : "registered"
+    "metadata[customer_type]": customer.customerType || (customer.isGuest ? "guest" : "registered")
   });
 
   if (customer.userId) params.set("metadata[identity_user_id]", customer.userId);
@@ -161,6 +161,8 @@ exports.handler = async (event, context) => {
   const authenticatedEmail = normalizeCheckoutEmail(getUserEmail(context));
   const guestEmail = normalizeCheckoutEmail(body.email);
   const isGuest = !authenticatedEmail;
+  const requestedMode = String(body.checkoutMode || "").trim().toLowerCase();
+  const customerType = isGuest && requestedMode === "email_only" ? "email_only" : (isGuest ? "guest" : "registered");
   const email = authenticatedEmail || guestEmail;
   if (!email) return json(400, { error: "invalid_email" });
   const user = context?.clientContext?.user || null;
@@ -179,11 +181,12 @@ exports.handler = async (event, context) => {
     }
     const session = await createStripeCheckout(products, {
       email,
-      name: isGuest ? "Convidado" : getUserName(context),
+      name: customerType === "email_only" ? "Compra por email" : (isGuest ? "Convidado" : getUserName(context)),
       isGuest,
+      customerType,
       userId
     }, body.cancelUrl);
-    return json(200, { checkoutUrl: session.url, checkoutMode: isGuest ? "guest" : "registered" });
+    return json(200, { checkoutUrl: session.url, checkoutMode: customerType });
   } catch (error) {
     console.error("[criar-checkout]", {
       message: error.message,

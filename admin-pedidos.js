@@ -54,7 +54,7 @@
         query: String(saved.query || "").slice(0, 200),
         catalogQuery: String(saved.catalogQuery || "").slice(0, 200),
         customerQuery: String(saved.customerQuery || "").slice(0, 200),
-        customerType: ["all", "registered", "guest"].includes(saved.customerType) ? saved.customerType : "all"
+        customerType: ["all", "registered", "guest", "email_only"].includes(saved.customerType) ? saved.customerType : "all"
       };
     } catch {
       return {};
@@ -482,15 +482,28 @@
     const query = state.query.trim().toLowerCase();
     return state.orders.filter((order) => {
       const matchesStatus = state.filter === "all" || normalizeStatus(order.status) === state.filter;
-      const customerType = order.isGuest || String(order.tipoCliente || "").toLowerCase() === "convidado" ? "guest" : "registered";
+      const customerType = customerTypeKey(order);
       const matchesCustomerType = state.customerType === "all" || customerType === state.customerType;
       const haystack = [order.id, order.clienteNome, order.clienteEmail, order.produto, order.plataforma, order.stripeSessionId, order.tipoCliente].join(" ").toLowerCase();
       return matchesStatus && matchesCustomerType && (!query || haystack.includes(query));
     });
   }
 
+  function customerTypeKey(order) {
+    const type = String(order?.tipoCliente || "").trim().toLowerCase();
+    if (order?.isEmailOnly || ["email_only", "apenas email", "so email", "só email"].includes(type)) return "email_only";
+    if (order?.isGuest || type === "guest" || type === "convidado") return "guest";
+    return "registered";
+  }
+
+  function customerTypeLabel(order) {
+    const type = customerTypeKey(order);
+    if (type === "email_only") return "Apenas email";
+    return type === "guest" ? "Convidado" : "Cadastrado";
+  }
+
   function orderDetails(order) {
-    const customerType = order.isGuest || String(order.tipoCliente || "").toLowerCase() === "convidado" ? "Convidado" : "Cadastrado";
+    const customerType = customerTypeLabel(order);
     const supplier = order.fornecedor ? `<aside class="admin-order-supplier"><span>Comprar no fornecedor</span><strong>${escapeHtml(order.fornecedor)}</strong><small>Custo Pix usado: ${escapeHtml(formatBRL(order.custoFornecedorBRL))}</small>${order.linkFornecedor ? `<a href="${escapeHtml(order.linkFornecedor)}" target="_blank" rel="noopener">Abrir produto no fornecedor</a>` : ""}</aside>` : "";
     return `<dl class="admin-order-details">
       <div><dt>Tipo de cliente</dt><dd>${customerType}</dd></div>
@@ -509,8 +522,8 @@
     const article = document.createElement("article");
     article.className = `admin-order-card admin-order-${mode}`;
     const cover = productImage(order);
-    const customerType = order.isGuest || String(order.tipoCliente || "").toLowerCase() === "convidado" ? "guest" : "registered";
-    const customerTypeBadge = `<span class="admin-customer-type-badge ${customerType}">${customerType === "guest" ? "Convidado" : "Cadastrado"}</span>`;
+    const customerType = customerTypeKey(order);
+    const customerTypeBadge = `<span class="admin-customer-type-badge ${customerType === "registered" ? "registered" : "guest"}">${customerTypeLabel(order)}</span>`;
     article.innerHTML = `
       <div class="admin-order-primary"><div class="admin-order-title"><div class="admin-order-product">${cover ? `<img src="${escapeHtml(cover)}" alt="Capa de ${escapeHtml(order.produto || "jogo comprado")}" loading="lazy" />` : ""}<div><small>Pedido ${escapeHtml(order.id)}</small><span>Jogo comprado</span><strong>${escapeHtml(order.produto || "Produto sem nome")}</strong></div></div><div class="admin-order-badges">${customerTypeBadge}<mark data-status="${mode}">${statusLabel(order)}</mark></div></div>${orderDetails(order)}</div>
       <div class="admin-order-action">

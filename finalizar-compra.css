@@ -1,0 +1,53 @@
+.quick-checkout-page { min-height: 100vh; background: #16151a url("assets/site-cosmic-gaming-bg.webp") center top / cover fixed no-repeat; color: #f7f5fa; }
+[hidden] { display: none !important; }
+.quick-checkout-main { width: min(1160px, calc(100% - 40px)); margin: 0 auto; padding: 46px 0 90px; }
+.quick-checkout-back { display: inline-flex; color: #c9c4d0; text-decoration: none; margin-bottom: 26px; }
+.quick-checkout-back::before { content: "←"; margin-right: 8px; }
+.quick-checkout-heading { max-width: 720px; margin-bottom: 30px; }
+.quick-checkout-heading p { margin: 0 0 6px; color: #ff6b16; font-weight: 800; text-transform: uppercase; }
+.quick-checkout-heading h1 { margin: 0 0 10px; font-size: clamp(34px, 5vw, 52px); line-height: 1; letter-spacing: 0; }
+.quick-checkout-heading span { color: #c9c4d0; font-size: 17px; }
+.quick-checkout-layout { display: grid; grid-template-columns: minmax(0, .88fr) minmax(420px, 1.12fr); gap: 22px; align-items: start; }
+.quick-product-summary, .quick-identification { border: 1px solid rgba(255,255,255,.13); border-radius: 8px; background: rgba(25,24,29,.96); box-shadow: 0 24px 70px rgba(0,0,0,.28); }
+.quick-product-summary { display: grid; grid-template-columns: 132px 1fr; gap: 22px; padding: 24px; }
+.quick-product-cover { width: 132px; aspect-ratio: 2 / 3; background: #0e0d11; border-radius: 6px; overflow: hidden; }
+.quick-product-cover img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.quick-product-summary h2 { margin: 7px 0 8px; font-size: 25px; line-height: 1.12; letter-spacing: 0; }
+.quick-product-summary div > span { color: #ff7b2f; font-weight: 800; }
+.quick-product-summary div > p { color: #aaa4b0; }
+.quick-product-price { display: flex; gap: 12px; align-items: baseline; margin-top: 24px; }
+.quick-product-price del { color: #8e8992; }
+.quick-product-price strong { font-size: 30px; }
+.quick-trust-list { grid-column: 1 / -1; margin: 0; padding: 18px 20px 18px 42px; border-top: 1px solid rgba(255,255,255,.1); color: #d6d1db; line-height: 1.7; }
+.quick-trust-list li::marker { color: #ff6b16; }
+.quick-identification { padding: 28px; }
+.quick-identification-intro span { color: #ff6b16; font-weight: 800; text-transform: uppercase; }
+.quick-identification-intro h2 { margin: 6px 0; font-size: 30px; letter-spacing: 0; }
+.quick-identification-intro p { margin: 0 0 22px; color: #aaa4b0; }
+.quick-account-choice, .quick-signed-in { padding: 20px; border: 1px solid rgba(178,127,255,.36); border-radius: 6px; background: #222027; }
+.quick-account-choice > div:first-child { display: grid; gap: 4px; }
+.quick-account-choice span, .quick-signed-in p { color: #bdb7c4; }
+.quick-account-actions { display: flex; gap: 10px; margin-top: 17px; }
+.quick-account-actions a, .quick-signed-in button, .quick-email-form button { min-height: 48px; border-radius: 5px; border: 1px solid #ff6511; padding: 0 20px; display: inline-flex; justify-content: center; align-items: center; font: inherit; font-weight: 800; text-decoration: none; cursor: pointer; }
+.quick-account-actions a:first-child, .quick-signed-in button, .quick-email-form button { background: #ff6511; color: #111015; }
+.quick-account-actions a:last-child { color: #fff; background: transparent; }
+.quick-signed-in { display: grid; gap: 7px; }
+.quick-signed-in > span { color: #54db8c; font-size: 13px; font-weight: 800; text-transform: uppercase; }
+.quick-signed-in strong { font-size: 19px; overflow-wrap: anywhere; }
+.quick-signed-in button { width: 100%; margin-top: 10px; }
+.quick-divider { display: flex; align-items: center; gap: 14px; margin: 22px 0; color: #918b97; text-align: center; }
+.quick-divider::before, .quick-divider::after { content: ""; flex: 1; height: 1px; background: rgba(255,255,255,.12); }
+.quick-email-form { display: grid; gap: 14px; }
+.quick-email-form > label:first-child { display: grid; gap: 7px; font-weight: 800; }
+.quick-email-form input[type="email"] { min-height: 52px; border: 1px solid #5b5662; border-radius: 5px; background: #111015; color: #fff; padding: 0 14px; font: inherit; }
+.quick-email-form input[type="email"]:focus { outline: 2px solid #ff6511; outline-offset: 1px; }
+.quick-email-form > p { margin: 0; color: #aaa4b0; line-height: 1.45; }
+.quick-terms { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; color: #d6d1db; }
+.quick-terms input { width: 18px; height: 18px; accent-color: #ff6511; }
+.quick-terms a { color: #ff9a61; }
+.quick-email-form button { width: 100%; border: 0; background: linear-gradient(90deg, #ff7417, #ff4037); }
+.quick-email-form button:disabled, .quick-signed-in button:disabled { opacity: .65; cursor: wait; }
+.quick-checkout-error { padding: 11px 13px; border-left: 3px solid #ff5555; background: rgba(255,77,77,.1); color: #ffd2d2 !important; }
+.quick-payment-note { margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.1); color: #8f8995; font-size: 13px; line-height: 1.45; }
+@media (max-width: 860px) { .quick-checkout-main { width: min(100% - 28px, 680px); padding-top: 28px; } .quick-checkout-layout { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .quick-checkout-main { width: calc(100% - 22px); padding: 22px 0 70px; } .quick-checkout-heading h1 { font-size: 34px; } .quick-product-summary { grid-template-columns: 92px 1fr; gap: 15px; padding: 16px; } .quick-product-cover { width: 92px; } .quick-product-summary h2 { font-size: 20px; overflow-wrap: anywhere; } .quick-product-price { margin-top: 14px; } .quick-product-price strong { font-size: 25px; } .quick-identification { padding: 18px 15px; } .quick-account-actions { display: grid; } .quick-divider span { max-width: 150px; } }
