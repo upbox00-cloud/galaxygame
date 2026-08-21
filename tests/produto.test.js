@@ -62,8 +62,8 @@ test("bindProductActions avisa em consola se nenhum botão de compra for encontr
   assert.match(produtoSource, /if \(!buttons\.length\) \{\s*\n\s*console\.error\(/);
 });
 
-test("Comprar agora abre a identificação do cliente antes do pagamento", () => {
-  assert.match(produtoSource, /window\.location\.assign\(`finalizar-compra\.html\?produto=\$\{productId\}`\)/);
-  assert.doesNotMatch(produtoSource, /carrinho\.html\?checkout=guest/);
-  assert.match(produtoSource, /Nao foi possivel identificar este jogo/);
+test("Comprar agora abre o Stripe diretamente sem etapa de identificacao", () => {
+  assert.match(produtoSource, /fetch\("\/\.netlify\/functions\/criar-checkout"/);
+  assert.match(produtoSource, /window\.location\.assign\(data\.checkoutUrl\)/);
+  assert.doesNotMatch(produtoSource, /finalizar-compra\.html/);
 });

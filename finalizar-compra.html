@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="pt-PT">
   <head>
-    <!-- Cookie consent controls optional marketing scripts, including Meta Pixel. -->
     <link rel="stylesheet" href="cookie-consent.css?v=20260816-1" />
     <script src="cookie-consent.js?v=20260816-1" defer></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,nofollow" />
-    <title>Finalizar compra | GalaxyGame</title>
-    <meta name="description" content="Identifica-te ou continua apenas com email para finalizar a tua compra GalaxyGame." />
+    <title>Pagamento seguro | GalaxyGame</title>
+    <meta name="description" content="A abrir o pagamento seguro GalaxyGame no Stripe." />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <script src="scripts/recovery-token.js?v=20260811-2" defer></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
@@ -35,63 +34,20 @@
       <a class="quick-checkout-back" data-product-back href="catalogo.html">Voltar ao produto</a>
       <header class="quick-checkout-heading">
         <p>Finalização segura</p>
-        <h1>Como queres receber a tua compra?</h1>
-        <span>Escolhe criar uma conta ou continua apenas com o teu email. O pagamento é concluído no Stripe.</span>
+        <h1>A abrir o pagamento</h1>
+        <span>O Stripe recolhe o teu email e apresenta os métodos de pagamento disponíveis.</span>
       </header>
-
-      <div class="quick-checkout-layout">
-        <section class="quick-product-summary" aria-labelledby="quick-product-title">
-          <div class="quick-product-cover"><img data-product-image alt="" width="300" height="450" /></div>
-          <div>
-            <span data-product-platform>Plataforma</span>
-            <h2 id="quick-product-title" data-product-name>A carregar jogo...</h2>
-            <p>Conteúdo digital para consola</p>
-            <div class="quick-product-price"><del data-product-old-price hidden></del><strong data-product-price>--</strong></div>
-          </div>
-          <ul class="quick-trust-list">
-            <li>Pagamento seguro processado pelo Stripe</li>
-            <li>Entrega por email após preparação do pedido</li>
-            <li>Apoio em português antes e depois da compra</li>
-          </ul>
-        </section>
-
-        <section class="quick-identification" aria-labelledby="quick-identification-title">
-          <div class="quick-identification-intro">
-            <span>Passo 1 de 2</span>
-            <h2 id="quick-identification-title">Identifica a tua compra</h2>
-            <p>Não precisas de criar uma conta para comprar.</p>
-          </div>
-
-          <div class="quick-signed-in" data-signed-in hidden>
-            <span>Estás com sessão iniciada</span>
-            <strong data-account-email></strong>
-            <p>O pedido ficará guardado em Minha Conta e também será enviado para o teu email.</p>
-            <button type="button" data-account-checkout>Continuar com a minha conta</button>
-          </div>
-
-          <div class="quick-account-choice" data-account-choice>
-            <div><strong>Queres acompanhar tudo na tua conta?</strong><span>Cria uma conta para veres o estado do pedido e os dados de entrega no site.</span></div>
-            <div class="quick-account-actions"><a data-create-account href="login.html?mode=signup">Criar conta</a><a data-login-account href="login.html?mode=login">Já tenho conta</a></div>
-          </div>
-
-          <div class="quick-divider" data-guest-divider><span>ou continua apenas com email</span></div>
-
-          <form class="quick-email-form" data-email-checkout novalidate>
-            <label>O teu email<input type="email" name="email" maxlength="254" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="nome@exemplo.pt" required /></label>
-            <p>O pedido será identificado no painel como <strong>Apenas email</strong>. Receberás a confirmação e os dados do jogo neste endereço.</p>
-            <label class="quick-terms"><input type="checkbox" name="terms" required /><span>Li e aceito os <a href="termos.html" target="_blank">Termos e Condições</a> e confirmei a plataforma do jogo.</span></label>
-            <p class="quick-checkout-error" data-checkout-error role="alert" aria-live="polite" hidden></p>
-            <button type="submit">Continuar para pagamento</button>
-          </form>
-
-          <footer class="quick-payment-note">Preço final em euros. Pagamento seguro com cartão, MB WAY, Multibanco, Klarna e outros métodos disponibilizados pelo Stripe.</footer>
+      <div class="quick-checkout-layout" aria-live="polite">
+        <section class="quick-identification">
+          <h2>A abrir o Stripe...</h2>
+          <p>Não feches esta página. Serás encaminhado automaticamente para o pagamento seguro.</p>
         </section>
       </div>
     </main>
 
     <footer class="site-footer"><div><strong>GalaxyGame</strong><p>Jogos digitais para PlayStation e Xbox.</p></div><div class="footer-links"><a href="como-funciona.html">Como funciona</a><a href="termos.html">Termos e Condições</a><a href="privacidade.html">Privacidade</a><a href="cookies.html">Cookies</a></div></footer>
     <script src="cart.js?v=20260819-1" defer></script>
-    <script src="finalizar-compra.js?v=20260819-1" defer></script>
+    <script src="finalizar-compra.js?v=20260821-1" defer></script>
     <script src="header-search.js?v=20260801-2" defer></script>
     <script src="footer.js?v=20260815-1" defer></script>
     <script src="scripts/auth.js?v=20260811-2" defer></script>

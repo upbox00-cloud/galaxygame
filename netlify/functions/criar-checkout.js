@@ -93,13 +93,18 @@ async function createStripeCheckout(products, customer, cancelPath) {
     mode: "payment",
     locale: "pt",
     "adaptive_pricing[enabled]": "false",
-    customer_email: customer.email,
     success_url: `${siteUrl()}/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}${customer.isGuest ? "&guest=1" : ""}`,
     cancel_url: `${siteUrl()}/${safeCancelPath(cancelPath)}`,
     "metadata[ClienteNome]": customer.name || "",
-    "metadata[customer_email]": customer.email,
     "metadata[customer_type]": customer.customerType || (customer.isGuest ? "guest" : "registered")
   });
+
+  // For guests Stripe Checkout is the single source of truth for the email.
+  // Logged-in customers keep the convenience of a pre-filled account email.
+  if (customer.email) {
+    params.set("customer_email", customer.email);
+    params.set("metadata[customer_email]", customer.email);
+  }
 
   if (customer.userId) params.set("metadata[identity_user_id]", customer.userId);
 
@@ -109,6 +114,18 @@ async function createStripeCheckout(products, customer, cancelPath) {
 
   const productIds = products.map((product) => product.id).join(",");
   if (productIds.length <= 500) params.set("metadata[product_ids]", productIds);
+
+  const suppliers = Array.from(new Set(products
+    .map((product) => String(product.fornecedorSelecionado || "").trim())
+    .filter((supplier) => supplier === "Alpha Games" || supplier === "TCA Games")));
+  const supplierCostBRL = products.reduce((total, product) => total + Number(product.custoFornecedorBRL || 0), 0);
+  const supplierUrls = products
+    .map((product) => String(product.linkFornecedorSelecionado || "").trim())
+    .filter(Boolean)
+    .join("\n");
+  if (suppliers.length === 1) params.set("metadata[Fornecedor]", suppliers[0]);
+  if (supplierCostBRL > 0) params.set("metadata[CustoFornecedorBRL]", String(Number(supplierCostBRL.toFixed(2))));
+  if (supplierUrls && supplierUrls.length <= 500) params.set("metadata[LinkFornecedor]", supplierUrls);
 
   products.forEach((product, index) => {
     const prefix = `line_items[${index}]`;
@@ -159,12 +176,9 @@ exports.handler = async (event, context) => {
   }
 
   const authenticatedEmail = normalizeCheckoutEmail(getUserEmail(context));
-  const guestEmail = normalizeCheckoutEmail(body.email);
   const isGuest = !authenticatedEmail;
-  const requestedMode = String(body.checkoutMode || "").trim().toLowerCase();
-  const customerType = isGuest && requestedMode === "email_only" ? "email_only" : (isGuest ? "guest" : "registered");
-  const email = authenticatedEmail || guestEmail;
-  if (!email) return json(400, { error: "invalid_email" });
+  const customerType = isGuest ? "guest" : "registered";
+  const email = authenticatedEmail;
   const user = context?.clientContext?.user || null;
   const userId = isGuest ? "" : String(user?.sub || user?.id || "").trim();
 
@@ -181,7 +195,7 @@ exports.handler = async (event, context) => {
     }
     const session = await createStripeCheckout(products, {
       email,
-      name: customerType === "email_only" ? "Compra por email" : (isGuest ? "Convidado" : getUserName(context)),
+      name: isGuest ? "" : getUserName(context),
       isGuest,
       customerType,
       userId

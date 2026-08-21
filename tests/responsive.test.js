@@ -39,20 +39,20 @@ test("home entrega o LCP e as capas de forma responsiva sem perder qualidade", (
   assert.match(netlifyConfig, /\[images\][\s\S]*remote_images/);
 });
 
-test("checkout convidado tem email acessivel e controlos adequados no mobile", () => {
+test("checkout convidado recolhe o email no Stripe e mantem controlos adequados no mobile", () => {
   assert.match(cartHtml, /data-checkout-account-options/);
-  assert.match(cartHtml, /data-checkout-email[^>]*inputmode="email"/);
-  assert.match(cartHtml, /data-checkout-email-error[^>]*aria-live="polite"/);
+  assert.doesNotMatch(cartHtml, /data-checkout-email/);
+  assert.match(cartHtml, /Stripe recolhe o teu email/);
   assert.match(cartScript, /checkoutMode: user \? "registered" : "guest"/);
   assert.match(siteStyles, /@media \(max-width: 520px\)[\s\S]*\.checkout-account-actions a/s);
 });
 
-test("Comprar agora oferece conta ou apenas email antes do Stripe", () => {
-  assert.match(quickCheckoutHtml, /data-create-account/);
-  assert.match(quickCheckoutHtml, /data-email-checkout/);
-  assert.match(quickCheckoutHtml, /inputmode="email"/);
-  assert.match(quickCheckoutScript, /checkoutMode: "email_only"/);
+test("rota antiga de Comprar agora redireciona automaticamente para o Stripe", () => {
+  assert.doesNotMatch(quickCheckoutHtml, /data-email-checkout/);
+  assert.doesNotMatch(quickCheckoutHtml, /inputmode="email"/);
+  assert.match(quickCheckoutScript, /checkoutMode: user \? "registered" : "guest"/);
   assert.match(quickCheckoutScript, /\/\.netlify\/functions\/criar-checkout/);
+  assert.match(quickCheckoutScript, /window\.location\.replace\(data\.checkoutUrl\)/);
   assert.match(quickCheckoutStyles, /\[hidden\]\s*\{\s*display:\s*none !important/);
   assert.match(quickCheckoutStyles, /@media \(max-width: 860px\)/);
 });

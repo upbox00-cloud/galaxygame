@@ -505,6 +505,9 @@
   function orderDetails(order) {
     const customerType = customerTypeLabel(order);
     const supplier = order.fornecedor ? `<aside class="admin-order-supplier"><span>Comprar no fornecedor</span><strong>${escapeHtml(order.fornecedor)}</strong><small>Custo Pix usado: ${escapeHtml(formatBRL(order.custoFornecedorBRL))}</small>${order.linkFornecedor ? `<a href="${escapeHtml(order.linkFornecedor)}" target="_blank" rel="noopener">Abrir produto no fornecedor</a>` : ""}</aside>` : "";
+    const backup = ["blob", "blob-fallback"].includes(order.storageSource)
+      ? '<aside class="admin-order-supplier"><span>Rede de segurança</span><strong>Guardado no Netlify Blobs</strong><small>Este pedido ainda não tem uma cópia confirmada no Airtable.</small></aside>'
+      : "";
     return `<dl class="admin-order-details">
       <div><dt>Tipo de cliente</dt><dd>${customerType}</dd></div>
       <div><dt>Cliente</dt><dd>${escapeHtml(order.clienteNome || "Nome não indicado")}</dd></div>
@@ -513,7 +516,7 @@
       <div><dt>Valor pago</dt><dd>${formatPrice(order.valorPagoEUR)}</dd></div>
       <div><dt>Data</dt><dd>${formatDate(order.dataCompra)}</dd></div>
       <div class="admin-order-session"><dt>Sessão Stripe</dt><dd title="${escapeHtml(order.stripeSessionId)}">${escapeHtml(order.stripeSessionId || "Sem sessão")}</dd></div>
-    </dl>${supplier}`;
+    </dl>${backup}${supplier}`;
   }
 
   function orderCard(order) {

@@ -183,46 +183,6 @@
     });
     document.querySelector("[data-cart-clear]")?.addEventListener("click", clear);
     const checkoutForm = document.querySelector("[data-checkout-form]");
-    const checkoutEmail = document.querySelector("[data-checkout-email]");
-    const checkoutEmailLabel = document.querySelector("[data-checkout-email-label]");
-    const checkoutEmailHelp = document.querySelector("[data-checkout-email-help]");
-    const checkoutEmailError = document.querySelector("[data-checkout-email-error]");
-    const accountOptions = document.querySelector("[data-checkout-account-options]");
-    const signedInNotice = document.querySelector("[data-checkout-signed-in]");
-
-    function normalizedEmail(value) {
-      return String(value || "").trim().toLowerCase();
-    }
-
-    function validEmail(value) {
-      const email = normalizedEmail(value);
-      return email.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
-    }
-
-    function showEmailError(message = "") {
-      if (!checkoutEmailError || !checkoutEmail) return;
-      checkoutEmailError.textContent = message;
-      checkoutEmailError.hidden = !message;
-      checkoutEmail.setAttribute("aria-invalid", String(Boolean(message)));
-    }
-
-    function syncCheckoutUser(user = window.netlifyIdentity?.currentUser()) {
-      if (!checkoutEmail) return;
-      checkoutEmail.value = user?.email || "";
-      checkoutEmail.readOnly = Boolean(user?.email);
-      accountOptions?.toggleAttribute("hidden", Boolean(user));
-      signedInNotice?.toggleAttribute("hidden", !user);
-      if (checkoutEmailLabel) checkoutEmailLabel.textContent = user ? "Email associado à tua conta" : "O teu melhor email";
-      if (checkoutEmailHelp) checkoutEmailHelp.textContent = user
-        ? "Este pedido ficará associado à tua conta GalaxyGame e também será enviado para este email."
-        : "Usaremos este email para identificar o pedido, enviar a confirmação e entregar as informações da compra.";
-      showEmailError();
-    }
-
-    window.netlifyIdentity?.on("init", syncCheckoutUser);
-    window.netlifyIdentity?.on("login", syncCheckoutUser);
-    syncCheckoutUser();
-
     checkoutForm?.addEventListener("submit", async (event) => {
       event.preventDefault();
       const form = event.currentTarget;
@@ -230,15 +190,6 @@
       const user = identity?.currentUser();
       const notice = document.querySelector("[data-checkout-notice]");
       const button = form.querySelector("button[type='submit']");
-      const email = normalizedEmail(user?.email || checkoutEmail?.value);
-
-      showEmailError();
-      if (!validEmail(email)) {
-        showEmailError("Digite um email válido para continuar.");
-        checkoutEmail?.focus();
-        return;
-      }
-      if (checkoutEmail) checkoutEmail.value = email;
       const consent = form.querySelector('.checkout-consent input[type="checkbox"]');
       if (!consent?.checked) {
         consent?.focus();
@@ -259,7 +210,6 @@
           },
           body: JSON.stringify({
             items: readCart().map((item) => ({ id: item.id })),
-            email: user ? undefined : email,
             checkoutMode: user ? "registered" : "guest"
           })
         });

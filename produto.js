@@ -279,12 +279,56 @@ function buyNowButtons() {
 }
 
 async function buyNow(product) {
-  const productId = encodeURIComponent(String(product?.id || ""));
+  const productId = String(product?.id || "").trim();
   if (!productId) {
     showToast("Nao foi possivel identificar este jogo. Atualiza a pagina e tenta novamente.", 4200);
     return;
   }
-  window.location.assign(`finalizar-compra.html?produto=${productId}`);
+
+  const buttons = [...buyNowButtons()];
+  buttons.forEach((button) => {
+    button.disabled = true;
+    button.dataset.checkoutLabel = button.textContent;
+    button.textContent = "A abrir pagamento seguro...";
+  });
+
+  try {
+    const user = window.netlifyIdentity?.currentUser?.() || null;
+    const token = user ? await user.jwt() : "";
+    const response = await fetch("/.netlify/functions/criar-checkout", {
+      method: "POST",
+      headers: {
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+        "content-type": "application/json"
+      },
+      body: JSON.stringify({
+        items: [{ id: productId }],
+        checkoutMode: user ? "registered" : "guest",
+        cancelUrl: `produto.html?id=${encodeURIComponent(productId)}`
+      })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
+
+    const value = Number(product.precoVendaEUR || 0);
+    trackMetaEvent("InitiateCheckout", {
+      content_ids: [productId],
+      content_type: "product",
+      contents: [{ id: productId, quantity: 1, item_price: value }],
+      num_items: 1,
+      value,
+      currency: "EUR"
+    });
+    window.location.assign(data.checkoutUrl);
+  } catch (error) {
+    console.error("[buy-now]", { message: error.message });
+    showToast("Nao foi possivel abrir o pagamento. Tenta novamente dentro de instantes.", 4800);
+    buttons.forEach((button) => {
+      button.disabled = false;
+      button.textContent = button.dataset.checkoutLabel || "Comprar agora";
+      delete button.dataset.checkoutLabel;
+    });
+  }
 }
 
 function getProductId() {

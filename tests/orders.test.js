@@ -1,4 +1,6 @@
 const crypto = require("node:crypto");
+const fs = require("node:fs");
+const path = require("node:path");
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
@@ -11,6 +13,7 @@ const sendOrder = require("../netlify/functions/marcar-pedido-enviado");
 const customerOrders = require("../netlify/functions/meus-pedidos");
 const sitePresence = require("../netlify/functions/site-presence");
 const confirmPurchase = require("../netlify/functions/confirmar-compra");
+const recoverOrder = require("../netlify/functions/admin-recuperar-pedido");
 
 function signedEvent(body, secret, timestamp = Math.floor(Date.now() / 1000)) {
   const signature = crypto.createHmac("sha256", secret).update(`${timestamp}.${body}`).digest("hex");
@@ -27,9 +30,13 @@ function createMemoryStore() {
     async get(key) {
       return values.get(key) || null;
     },
-    async setJSON(key, value) {
+    async setJSON(key, value, options = {}) {
+      if (options.onlyIfNew && values.has(key)) return { modified: false, etag: "test" };
       values.set(key, structuredClone(value));
-      return { etag: "test" };
+      return { modified: true, etag: "test" };
+    },
+    async getWithMetadata(key) {
+      return values.has(key) ? { data: structuredClone(values.get(key)), metadata: {}, etag: "test" } : null;
     },
     async delete(key) {
       values.delete(key);
@@ -43,6 +50,24 @@ function createMemoryStore() {
   };
 }
 
+test("rotas de pedidos inicializam Netlify Blobs no modo Lambda", () => {
+  const entries = [
+    "stripe-webhook.js",
+    "marcar-pedido-enviado.js",
+    "enviar-email-codigo.js",
+    "meus-pedidos.js",
+    "atualizar-pedido-status.js",
+    "admin-pedidos.js",
+    "admin-pedidos-fallback.js",
+    "admin-recuperar-pedido.js"
+  ];
+  entries.forEach((entry) => {
+    const source = fs.readFileSync(path.join(__dirname, "..", "netlify", "functions", entry), "utf8");
+    assert.match(source, /require\(["']@netlify\/blobs["']\)/, `${entry} deve importar o SDK diretamente`);
+    assert.match(source, /event\?\.blobs\) connectLambda\(event\)/, `${entry} deve ligar o contexto Lambda`);
+  });
+});
+
 function createEventuallyConsistentMemoryStore() {
   const values = new Map();
   const staleValues = new Map();
@@ -50,10 +75,15 @@ function createEventuallyConsistentMemoryStore() {
     async get(key) {
       return structuredClone(staleValues.get(key) || values.get(key) || null);
     },
-    async setJSON(key, value) {
+    async setJSON(key, value, options = {}) {
+      if (options.onlyIfNew && values.has(key)) return { modified: false, etag: "test" };
       if (!staleValues.has(key) && values.has(key)) staleValues.set(key, structuredClone(values.get(key)));
       values.set(key, structuredClone(value));
-      return { etag: "test" };
+      return { modified: true, etag: "test" };
+    },
+    async getWithMetadata(key) {
+      const value = staleValues.get(key) || values.get(key);
+      return value ? { data: structuredClone(value), metadata: {}, etag: "test" } : null;
     },
     async delete(key) { values.delete(key); staleValues.delete(key); },
     list(options = {}) {
@@ -202,7 +232,7 @@ test("checkout conhece o catálogo e os destaques manuais", () => {
   assert.equal(catalog.get("ea-sports-fc-26-ps5").fornecedorSelecionado, "TCA Games");
 });
 
-test("checkout de convidado valida e normaliza o email sem exigir login", async () => {
+test("checkout de convidado deixa o Stripe recolher o email", async () => {
   assert.equal(checkout._test.normalizeCheckoutEmail("  Cliente@Example.COM "), "cliente@example.com");
   assert.equal(checkout._test.normalizeCheckoutEmail("email-invalido"), "");
 
@@ -221,21 +251,21 @@ test("checkout de convidado valida e normaliza o email sem exigir login", async 
   try {
     const response = await checkout.handler({
       httpMethod: "POST",
-      body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }], email: "  Cliente@Example.COM " })
+      body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }] })
     }, {});
     assert.equal(response.statusCode, 200);
     assert.equal(JSON.parse(response.body).checkoutMode, "guest");
-    assert.equal(stripeParams.get("customer_email"), "cliente@example.com");
+    assert.equal(stripeParams.get("customer_email"), null);
     assert.equal(stripeParams.get("metadata[customer_type]"), "guest");
     assert.equal(stripeParams.get("metadata[identity_user_id]"), null);
     assert.match(stripeParams.get("success_url"), /&guest=1$/);
 
-    const invalid = await checkout.handler({
+    const legacyEmail = await checkout.handler({
       httpMethod: "POST",
       body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }], email: "invalido" })
     }, {});
-    assert.equal(invalid.statusCode, 400);
-    assert.equal(JSON.parse(invalid.body).error, "invalid_email");
+    assert.equal(legacyEmail.statusCode, 200);
+    assert.equal(stripeParams.get("customer_email"), null);
   } finally {
     global.fetch = originalFetch;
     if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
@@ -258,7 +288,7 @@ test("pedidos convidados ficam identificados e associados pelo email", () => {
   assert.equal(guest.clienteEmail, "cliente@example.com");
 });
 
-test("checkout apenas por email fica identificado no Stripe e nos pedidos", async () => {
+test("modo antigo apenas por email e tratado como convidado e recolhido pelo Stripe", async () => {
   const previousSecret = process.env.STRIPE_SECRET_KEY;
   const originalFetch = global.fetch;
   let stripeParams;
@@ -277,9 +307,10 @@ test("checkout apenas por email fica identificado no Stripe e nos pedidos", asyn
       body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }], email: "cliente@example.com", checkoutMode: "email_only" })
     }, {});
     assert.equal(response.statusCode, 200);
-    assert.equal(JSON.parse(response.body).checkoutMode, "email_only");
-    assert.equal(stripeParams.get("metadata[customer_type]"), "email_only");
-    assert.equal(stripeParams.get("metadata[ClienteNome]"), "Compra por email");
+    assert.equal(JSON.parse(response.body).checkoutMode, "guest");
+    assert.equal(stripeParams.get("metadata[customer_type]"), "guest");
+    assert.equal(stripeParams.get("metadata[ClienteNome]"), "");
+    assert.equal(stripeParams.get("customer_email"), null);
 
     const order = orders.normalizeOrder({
       id: "recEmailOnly",
@@ -322,6 +353,9 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
     assert.equal(params.get("adaptive_pricing[enabled]"), "false");
     assert.equal(params.get("line_items[0][price_data][product_data][metadata][supplier]"), "TCA Games");
     assert.equal(params.get("line_items[0][price_data][product_data][metadata][supplier_cost_brl]"), "47.4");
+    assert.equal(params.get("metadata[Fornecedor]"), "TCA Games");
+    assert.equal(params.get("metadata[CustoFornecedorBRL]"), "47.4");
+    assert.equal(params.get("metadata[LinkFornecedor]"), "https://www.lojatcagames.com.br/products/jogo");
     assert.equal(
       params.get("success_url"),
       "https://galaxygame.pt/pedido-confirmado.html?session_id={CHECKOUT_SESSION_ID}"
@@ -431,6 +465,283 @@ test("Airtable adapta Status para Estado quando a base usa o nome portugues", as
     else process.env.AIRTABLE_BASE_ID = previousBase;
     if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
     else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
+test("Airtable recebe os campos comerciais com os nomes exatos da tabela Pedidos", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const originalFetch = global.fetch;
+  let writtenFields;
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  global.fetch = async (_url, options) => {
+    const payload = JSON.parse(options.body);
+    writtenFields = payload.records[0].fields;
+    return new Response(JSON.stringify({ records: [{ id: "rec_exact", fields: writtenFields }] }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    await orders.upsertOrderByStripeSessionId({
+      ClienteEmail: "cliente@example.com",
+      StripeSessionId: "cs_test_exact_fields",
+      customerType: "Apenas email",
+      userId: "identity-user-123",
+      supplier: "tca games",
+      supplierCostBRL: "47.40"
+    });
+    assert.equal(writtenFields.TipoCliente, "Apenas email");
+    assert.equal(writtenFields.UserId, "identity-user-123");
+    assert.equal(writtenFields.Fornecedor, "TCA Games");
+    assert.equal(writtenFields.CustoFornecedorBRL, 47.4);
+    assert.equal(writtenFields.customerType, undefined);
+    assert.equal(writtenFields.userId, undefined);
+    assert.equal(writtenFields.supplier, undefined);
+    assert.equal(writtenFields.supplierCostBRL, undefined);
+  } finally {
+    global.fetch = originalFetch;
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
+test("webhook tenta o email mesmo quando Airtable e Blobs falham", async () => {
+  const previousWebhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+  const previousStripeSecret = process.env.STRIPE_SECRET_KEY;
+  const previousResend = process.env.RESEND_API_KEY;
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const originalFetch = global.fetch;
+  const webhookSecret = "whsec_independent_email";
+  let resendCalls = 0;
+  process.env.STRIPE_WEBHOOK_SECRET = webhookSecret;
+  process.env.RESEND_API_KEY = "re_test_only";
+  delete process.env.STRIPE_SECRET_KEY;
+  delete process.env.AIRTABLE_BASE_ID;
+  delete process.env.AIRTABLE_TOKEN;
+  const eventStore = createMemoryStore();
+  orders._test.setOrdersStoreFactory(() => ({
+    async get(key, options) {
+      if (key.startsWith("orders/")) throw new Error("Blobs indisponivel");
+      return eventStore.get(key, options);
+    },
+    async getWithMetadata(key, options) {
+      if (key.startsWith("orders/")) throw new Error("Blobs indisponivel");
+      return eventStore.getWithMetadata(key, options);
+    },
+    async setJSON(key, value, options) {
+      if (key.startsWith("orders/")) throw new Error("Blobs indisponivel");
+      return eventStore.setJSON(key, value, options);
+    }
+  }));
+  global.fetch = async (url) => {
+    if (url === "https://api.resend.com/emails") resendCalls += 1;
+    return new Response(JSON.stringify({ id: "email_independent" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    const body = JSON.stringify({
+      id: "evt_independent_email",
+      type: "checkout.session.completed",
+      data: { object: {
+        id: "cs_test_independent_email",
+        payment_status: "paid",
+        amount_total: 1999,
+        customer_details: { email: "cliente@example.com", name: "Cliente" },
+        metadata: {
+          Produto: "Jogo teste",
+          Plataforma: "PlayStation 5",
+          Fornecedor: "Alpha Games",
+          CustoFornecedorBRL: "50"
+        }
+      } }
+    });
+    const response = await stripeWebhook.handler(signedEvent(body, webhookSecret));
+    assert.equal(response.statusCode, 500);
+    assert.equal(JSON.parse(response.body).confirmationEmailSent, true);
+    assert.equal(resendCalls, 2);
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    if (previousWebhookSecret === undefined) delete process.env.STRIPE_WEBHOOK_SECRET;
+    else process.env.STRIPE_WEBHOOK_SECRET = previousWebhookSecret;
+    if (previousStripeSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousStripeSecret;
+    if (previousResend === undefined) delete process.env.RESEND_API_KEY;
+    else process.env.RESEND_API_KEY = previousResend;
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
+test("webhook preserva no Blob, alerta o admin e nao duplica quando o Airtable falha", async () => {
+  const previous = {
+    webhook: process.env.STRIPE_WEBHOOK_SECRET,
+    stripe: process.env.STRIPE_SECRET_KEY,
+    resend: process.env.RESEND_API_KEY,
+    base: process.env.AIRTABLE_BASE_ID,
+    token: process.env.AIRTABLE_TOKEN,
+    admins: process.env.ADMIN_EMAILS
+  };
+  const originalFetch = global.fetch;
+  const webhookSecret = "whsec_airtable_disaster";
+  const store = createMemoryStore();
+  const sentEmails = [];
+  let airtableWrites = 0;
+
+  process.env.STRIPE_WEBHOOK_SECRET = webhookSecret;
+  process.env.RESEND_API_KEY = "re_test_only";
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  process.env.ADMIN_EMAILS = "admin@galaxygame.pt";
+  delete process.env.STRIPE_SECRET_KEY;
+  orders._test.setOrdersStoreFactory(() => store);
+  orders._test.setRetryDelay(async () => {});
+  global.fetch = async (url, options = {}) => {
+    if (String(url).startsWith("https://api.airtable.com/")) {
+      if (options.method === "PATCH") airtableWrites += 1;
+      return new Response(JSON.stringify({ error: { type: "SERVER_ERROR", message: "Falha Airtable simulada" } }), {
+        status: 503,
+        headers: { "content-type": "application/json" }
+      });
+    }
+    if (url === "https://api.resend.com/emails") {
+      sentEmails.push(JSON.parse(options.body));
+      return new Response(JSON.stringify({ id: `email_${sentEmails.length}` }), {
+        status: 200,
+        headers: { "content-type": "application/json" }
+      });
+    }
+    throw new Error(`Pedido de rede inesperado: ${url}`);
+  };
+
+  try {
+    const body = JSON.stringify({
+      id: "evt_airtable_disaster",
+      type: "checkout.session.completed",
+      data: { object: {
+        id: "cs_live_airtable_disaster",
+        payment_status: "paid",
+        amount_total: 299,
+        customer_details: { email: "cliente@example.com", name: "Cliente Real" },
+        metadata: {
+          Produto: "Jogo de teste",
+          Plataforma: "PlayStation 5",
+          Fornecedor: "TCA Games",
+          CustoFornecedorBRL: "10.50"
+        }
+      } }
+    });
+    const first = await stripeWebhook.handler(signedEvent(body, webhookSecret));
+    assert.equal(first.statusCode, 200);
+    assert.equal(JSON.parse(first.body).fallbackUsed, true);
+    assert.equal(airtableWrites, 3);
+
+    const preserved = await store.get("orders/cs_live_airtable_disaster.json", { type: "json" });
+    assert.equal(preserved.clienteEmail, "cliente@example.com");
+    assert.equal(preserved.produto, "Jogo de teste");
+    assert.equal(sentEmails.length, 2);
+    assert.deepEqual(sentEmails.map((email) => email.to[0]).sort(), ["admin@galaxygame.pt", "cliente@example.com"]);
+
+    const duplicate = await stripeWebhook.handler(signedEvent(body, webhookSecret));
+    assert.equal(duplicate.statusCode, 200);
+    assert.equal(JSON.parse(duplicate.body).duplicate, true);
+    assert.equal(sentEmails.length, 2);
+    assert.equal(airtableWrites, 3);
+
+    const secondEventBody = body.replace("evt_airtable_disaster", "evt_airtable_disaster_async");
+    const duplicateSession = await stripeWebhook.handler(signedEvent(secondEventBody, webhookSecret));
+    assert.equal(duplicateSession.statusCode, 200);
+    assert.equal(JSON.parse(duplicateSession.body).duplicate, true);
+    assert.equal(sentEmails.length, 2);
+    assert.equal(airtableWrites, 3);
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    orders._test.setRetryDelay();
+    const restore = (name, value) => {
+      if (value === undefined) delete process.env[name];
+      else process.env[name] = value;
+    };
+    restore("STRIPE_WEBHOOK_SECRET", previous.webhook);
+    restore("STRIPE_SECRET_KEY", previous.stripe);
+    restore("RESEND_API_KEY", previous.resend);
+    restore("AIRTABLE_BASE_ID", previous.base);
+    restore("AIRTABLE_TOKEN", previous.token);
+    restore("ADMIN_EMAILS", previous.admins);
+  }
+});
+
+test("admin recupera uma sessao Stripe paga que nao ficou no Airtable", async () => {
+  const previous = {
+    stripe: process.env.STRIPE_SECRET_KEY,
+    base: process.env.AIRTABLE_BASE_ID,
+    token: process.env.AIRTABLE_TOKEN,
+    admins: process.env.ADMIN_EMAILS
+  };
+  const originalFetch = global.fetch;
+  const store = createMemoryStore();
+  process.env.STRIPE_SECRET_KEY = "sk_live_test_only";
+  process.env.ADMIN_EMAILS = "admin@galaxygame.pt";
+  delete process.env.AIRTABLE_BASE_ID;
+  delete process.env.AIRTABLE_TOKEN;
+  orders._test.setOrdersStoreFactory(() => store);
+  global.fetch = async (url) => {
+    if (String(url).endsWith("/v1/checkout/sessions/cs_live_recovery123")) {
+      return new Response(JSON.stringify({
+        id: "cs_live_recovery123",
+        payment_status: "paid",
+        amount_total: 299,
+        created: 1787344638,
+        customer_details: { email: "cliente@example.com", name: "Cliente" },
+        metadata: { customer_type: "guest" }
+      }), { status: 200, headers: { "content-type": "application/json" } });
+    }
+    if (String(url).includes("/v1/checkout/sessions/cs_live_recovery123/line_items")) {
+      return new Response(JSON.stringify({
+        data: [{
+          description: "Jogo recuperado",
+          price: { product: { name: "Jogo recuperado", images: [], metadata: { platform: "PlayStation 5" } } }
+        }]
+      }), { status: 200, headers: { "content-type": "application/json" } });
+    }
+    throw new Error(`Pedido de rede inesperado: ${url}`);
+  };
+
+  try {
+    const response = await recoverOrder.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ sessionId: "cs_live_recovery123" }),
+      headers: {}
+    }, { clientContext: { user: { email: "admin@galaxygame.pt", app_metadata: {} } } });
+    assert.equal(response.statusCode, 200);
+    const result = JSON.parse(response.body);
+    assert.equal(result.recovered, true);
+    assert.equal(result.pedido.valorPagoEUR, 2.99);
+    const preserved = await store.get("orders/cs_live_recovery123.json", { type: "json" });
+    assert.equal(preserved.produto, "Jogo recuperado");
+    assert.equal(preserved.clienteEmail, "cliente@example.com");
+  } finally {
+    global.fetch = originalFetch;
+    orders._test.setOrdersStoreFactory();
+    const restore = (name, value) => {
+      if (value === undefined) delete process.env[name];
+      else process.env[name] = value;
+    };
+    restore("STRIPE_SECRET_KEY", previous.stripe);
+    restore("AIRTABLE_BASE_ID", previous.base);
+    restore("AIRTABLE_TOKEN", previous.token);
+    restore("ADMIN_EMAILS", previous.admins);
   }
 });
 

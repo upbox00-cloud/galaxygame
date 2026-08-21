@@ -6,11 +6,23 @@ const { connectLambda, getStore } = require("@netlify/blobs");
 const AIRTABLE_TABLE = "Pedidos";
 const AIRTABLE_API = "https://api.airtable.com/v0";
 const ORDER_STORE = "galaxygame-orders";
+const AIRTABLE_WRITE_ATTEMPTS = 3;
+const WEBHOOK_LEASE_MS = 5 * 60 * 1000;
+const AIRTABLE_FIELD_ALIASES = Object.freeze({
+  CustomerType: "TipoCliente",
+  customerType: "TipoCliente",
+  userId: "UserId",
+  fornecedor: "Fornecedor",
+  supplier: "Fornecedor",
+  custoFornecedorBRL: "CustoFornecedorBRL",
+  supplierCostBRL: "CustoFornecedorBRL"
+});
 // The Lambda runtime does not expose the uncached edge URL required by
 // Netlify Blobs strong consistency. The default store remains persistent and
 // works in every deployed function that reads or updates an order.
 const defaultOrdersStoreFactory = () => getStore(ORDER_STORE);
 let ordersStoreFactory = defaultOrdersStoreFactory;
+let retryDelay = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
 let catalogCache = null;
 
 function configureOrderStorage(event) {
@@ -67,6 +79,8 @@ async function airtableRequest(path, options = {}) {
   if (!response.ok) {
     const error = new Error(data?.error?.message || `Airtable respondeu ${response.status}`);
     error.status = response.status;
+    error.airtableType = data?.error?.type || null;
+    error.airtableBody = data;
     throw error;
   }
   return data;
@@ -125,7 +139,7 @@ async function updateOrder(recordId, fields) {
 async function writeAirtableRecords(method, records, performUpsert) {
   const mutableRecords = records.map((record) => ({
     ...record,
-    fields: { ...(record.fields || {}) }
+    fields: canonicalizeAirtableFields(record.fields || {})
   }));
   const aliases = { Status: "Estado", Codigo: "Código" };
 
@@ -143,12 +157,12 @@ async function writeAirtableRecords(method, records, performUpsert) {
         ? error.message.match(/Unknown field name:\s*["']([^"']+)["']/i)?.[1]
         : "";
       const appearsInRecords = field && mutableRecords.some((record) => Object.hasOwn(record.fields, field));
-      if (!appearsInRecords) throw error;
-
       const alias = aliases[field];
+      if (!appearsInRecords || !alias) throw error;
+
       mutableRecords.forEach((record) => {
         if (!Object.hasOwn(record.fields, field)) return;
-        if (alias && !Object.hasOwn(record.fields, alias)) record.fields[alias] = record.fields[field];
+        if (!Object.hasOwn(record.fields, alias)) record.fields[alias] = record.fields[field];
         delete record.fields[field];
       });
       console.warn("[orders:airtable-schema] campo incompatível adaptado", {
@@ -158,6 +172,33 @@ async function writeAirtableRecords(method, records, performUpsert) {
     }
   }
   throw new Error("Nao foi possivel adaptar os campos da tabela Pedidos");
+}
+
+function canonicalizeAirtableFields(fields) {
+  const canonical = { ...fields };
+  Object.entries(AIRTABLE_FIELD_ALIASES).forEach(([source, target]) => {
+    if (!Object.hasOwn(canonical, source)) return;
+    if (!Object.hasOwn(canonical, target)) canonical[target] = canonical[source];
+    delete canonical[source];
+  });
+
+  if (Object.hasOwn(canonical, "Fornecedor")) {
+    canonical.Fornecedor = normalizeSupplierName(canonical.Fornecedor);
+  }
+  if (Object.hasOwn(canonical, "CustoFornecedorBRL")) {
+    const cost = Number(canonical.CustoFornecedorBRL || 0);
+    canonical.CustoFornecedorBRL = Number.isFinite(cost) ? cost : 0;
+  }
+  if (Object.hasOwn(canonical, "TipoCliente")) canonical.TipoCliente = String(canonical.TipoCliente || "");
+  if (Object.hasOwn(canonical, "UserId")) canonical.UserId = String(canonical.UserId || "");
+  return canonical;
+}
+
+function normalizeSupplierName(value) {
+  const normalized = String(value || "").trim().toLowerCase();
+  if (normalized === "alpha games") return "Alpha Games";
+  if (normalized === "tca games") return "TCA Games";
+  return "";
 }
 
 function normalizeOrder(record) {
@@ -186,7 +227,8 @@ function normalizeOrder(record) {
     tipoCliente: isEmailOnly ? "Apenas email" : (isGuest ? "Convidado" : "Cadastrado"),
     isEmailOnly,
     isGuest,
-    userId: fields.UserId || ""
+    userId: fields.UserId || "",
+    storageSource: "airtable"
   };
 }
 
@@ -240,7 +282,8 @@ function normalizeBlobOrder(value) {
     tipoCliente: isEmailOnly ? "Apenas email" : (isGuest ? "Convidado" : "Cadastrado"),
     isEmailOnly,
     isGuest,
-    userId: value.userId || ""
+    userId: value.userId || "",
+    storageSource: "blob"
   };
 }
 
@@ -299,10 +342,15 @@ async function listBlobOrders({ email = "", status = "", maxRecords = 100 } = {}
     .slice(0, maxRecords);
 }
 
-function logStorageFallback(operation, error) {
+function logStorageFallback(operation, error, fields = {}) {
   console.warn(`[orders:${operation}] Airtable indisponivel; a usar Netlify Blobs`, {
+    fallback: ORDER_STORE,
     message: error?.message || "erro desconhecido",
-    status: error?.status || null
+    status: error?.status || null,
+    airtableType: error?.airtableType || null,
+    airtableResponse: error?.airtableBody || null,
+    stripeSessionSuffix: String(fields.StripeSessionId || "").slice(-12) || null,
+    customerEmail: String(fields.ClienteEmail || "").trim().toLowerCase() || null
   });
 }
 
@@ -320,17 +368,60 @@ async function findPersistedOrderByStripeSessionId(sessionId) {
 
 async function persistOrder(fields) {
   const [airtable, blob] = await Promise.allSettled([
-    upsertOrderByStripeSessionId(fields),
+    retryAirtableWrite(() => upsertOrderByStripeSessionId(fields), fields),
     upsertBlobOrder(fields)
   ]);
-  if (airtable.status === "rejected") logStorageFallback("save", airtable.reason);
+  if (airtable.status === "rejected") logStorageFallback("save", airtable.reason, fields);
   if (blob.status === "rejected") {
     console.error("[orders:save] Netlify Blobs falhou", { message: blob.reason?.message || "erro desconhecido" });
   }
   if (airtable.status === "rejected" && blob.status === "rejected") {
     throw new Error(`Nao foi possivel guardar o pedido: ${airtable.reason?.message || blob.reason?.message}`);
   }
-  return blob.status === "fulfilled" ? blob.value : airtable.value;
+  const saved = blob.status === "fulfilled" ? blob.value : airtable.value;
+  return {
+    ...saved,
+    storageState: {
+      airtableSaved: airtable.status === "fulfilled",
+      blobSaved: blob.status === "fulfilled",
+      fallbackUsed: airtable.status === "rejected" && blob.status === "fulfilled",
+      airtableError: airtable.status === "rejected" ? serializeOperationalError(airtable.reason) : null,
+      blobError: blob.status === "rejected" ? serializeOperationalError(blob.reason) : null
+    }
+  };
+}
+
+async function retryAirtableWrite(operation, fields = {}) {
+  let lastError;
+  for (let attempt = 1; attempt <= AIRTABLE_WRITE_ATTEMPTS; attempt += 1) {
+    try {
+      return await operation();
+    } catch (error) {
+      lastError = error;
+      const permanentConfigurationError = /Variavel de ambiente em falta/i.test(error?.message || "")
+        || [401, 403].includes(Number(error?.status));
+      if (attempt >= AIRTABLE_WRITE_ATTEMPTS || permanentConfigurationError) break;
+      const delayMs = attempt * 350;
+      console.warn("[orders:airtable-retry] tentativa de escrita falhou", {
+        attempt,
+        nextAttempt: attempt + 1,
+        delayMs,
+        status: error?.status || null,
+        message: error?.message || "erro desconhecido",
+        stripeSessionSuffix: String(fields.StripeSessionId || "").slice(-12) || null
+      });
+      await retryDelay(delayMs);
+    }
+  }
+  throw lastError;
+}
+
+function serializeOperationalError(error) {
+  return {
+    message: String(error?.message || "erro desconhecido").slice(0, 500),
+    status: Number(error?.status || 0) || null,
+    type: error?.airtableType || null
+  };
 }
 
 async function listPersistedOrders({ email = "", status = "", maxRecords = 100 } = {}) {
@@ -472,7 +563,8 @@ function mergeOrderCopies(airtableOrder, blobOrder) {
     stripeSessionId: preferred.stripeSessionId || fallback.stripeSessionId,
     fornecedor: preferred.fornecedor || fallback.fornecedor,
     custoFornecedorBRL: preferred.custoFornecedorBRL || fallback.custoFornecedorBRL,
-    linkFornecedor: preferred.linkFornecedor || fallback.linkFornecedor
+    linkFornecedor: preferred.linkFornecedor || fallback.linkFornecedor,
+    storageSource: "airtable+blob"
   };
 }
 
@@ -608,7 +700,7 @@ function parseStripeProducts(session) {
           produto: list.map((item) => item.nome || item.name || item.produto || item.title).filter(Boolean).join(", "),
           plataforma: Array.from(new Set(list.map((item) => item.plataforma || item.platform).filter(Boolean))).join(", "),
           imagem: list.map((item) => item.imagem || item.image || item.capaSteamGridDB || item.imagemFallback).find(Boolean) || "",
-          fornecedor: Array.from(new Set(list.map((item) => item.fornecedor || item.supplier).filter(Boolean))).join(", "),
+          fornecedor: singleSupplier(list.map((item) => item.fornecedor || item.supplier)),
           custoFornecedorBRL: list.reduce((sum, item) => sum + Number(item.custoFornecedorBRL || item.supplierCostBRL || 0), 0),
           linkFornecedor: list.map((item) => item.linkFornecedor || item.supplierUrl).filter(Boolean).join("\n")
         };
@@ -622,7 +714,7 @@ function parseStripeProducts(session) {
     produto: metadata.Produto || metadata.produto || metadata.product || metadata.productName || "Produto GalaxyGame",
     plataforma: metadata.Plataforma || metadata.plataforma || metadata.platform || "",
     imagem: metadata.ImagemURL || metadata.imagem || metadata.image || "",
-    fornecedor: metadata.Fornecedor || metadata.fornecedor || metadata.supplier || "",
+    fornecedor: normalizeSupplierName(metadata.Fornecedor || metadata.fornecedor || metadata.supplier),
     custoFornecedorBRL: Number(metadata.CustoFornecedorBRL || metadata.supplier_cost_brl || 0),
     linkFornecedor: metadata.LinkFornecedor || metadata.supplier_url || ""
   };
@@ -659,10 +751,15 @@ async function fetchStripeProducts(session) {
       .map((line) => line.price?.product?.metadata?.platform)
       .filter(Boolean))).join(", "),
     imagem: lines.map((line) => line.price?.product?.images?.[0]).find(Boolean) || "",
-    fornecedor: Array.from(new Set(productMetadata.map((metadata) => metadata.supplier).filter(Boolean))).join(", "),
+    fornecedor: singleSupplier(productMetadata.map((metadata) => metadata.supplier)),
     custoFornecedorBRL: productMetadata.reduce((sum, metadata) => sum + Number(metadata.supplier_cost_brl || 0), 0),
     linkFornecedor: productMetadata.map((metadata) => metadata.supplier_url).filter(Boolean).join("\n")
   };
+}
+
+function singleSupplier(values) {
+  const suppliers = Array.from(new Set((values || []).map(normalizeSupplierName).filter(Boolean)));
+  return suppliers.length === 1 ? suppliers[0] : "";
 }
 
 async function sendCodeEmail(order) {
@@ -719,6 +816,96 @@ async function sendOrderConfirmationEmail(order) {
   }
   if (!response.ok) throw new Error(data?.message || `Resend respondeu ${response.status}`);
   return data;
+}
+
+function webhookEventKey(eventId) {
+  return `webhook-events/${String(eventId || "").trim()}.json`;
+}
+
+async function claimWebhookEvent(eventId, sessionId) {
+  if (!/^evt_[A-Za-z0-9_]+$/.test(String(eventId || ""))) throw new Error("Stripe event id invalido");
+  const store = ordersStore();
+  const key = webhookEventKey(eventId);
+  const now = new Date().toISOString();
+  const initial = { eventId, sessionId, status: "processing", startedAt: now, updatedAt: now, emailSent: false };
+  const created = await store.setJSON(key, initial, { onlyIfNew: true });
+  if (created?.modified !== false) return { claimed: true, state: initial };
+
+  let existing;
+  let etag = "";
+  if (typeof store.getWithMetadata === "function") {
+    const result = await store.getWithMetadata(key, { type: "json" });
+    existing = result?.data || null;
+    etag = result?.etag || "";
+  } else {
+    existing = await store.get(key, { type: "json" });
+  }
+  if (!existing) return { claimed: false, inProgress: true, state: initial };
+  if (existing.status === "complete") return { claimed: false, duplicate: true, state: existing };
+
+  const age = Date.now() - new Date(existing.updatedAt || existing.startedAt || 0).getTime();
+  if (existing.status === "processing" && Number.isFinite(age) && age < WEBHOOK_LEASE_MS) {
+    return { claimed: false, inProgress: true, state: existing };
+  }
+
+  const retryState = {
+    ...existing,
+    status: "processing",
+    sessionId: sessionId || existing.sessionId,
+    startedAt: now,
+    updatedAt: now,
+    retryCount: Number(existing.retryCount || 0) + 1
+  };
+  const reclaimed = await store.setJSON(key, retryState, etag ? { onlyIfMatch: etag } : {});
+  if (reclaimed?.modified === false) return { claimed: false, inProgress: true, state: existing };
+  return { claimed: true, retried: true, state: retryState };
+}
+
+async function finishWebhookEvent(eventId, updates = {}) {
+  const store = ordersStore();
+  const key = webhookEventKey(eventId);
+  const current = await store.get(key, { type: "json" }) || { eventId };
+  const next = { ...current, ...updates, updatedAt: new Date().toISOString() };
+  await store.setJSON(key, next);
+  return next;
+}
+
+async function sendOperationalAlert({ subject, message, sessionId = "", customerEmail = "" }) {
+  const recipients = getConfiguredAdminEmails();
+  if (!recipients.length) recipients.push("gamegalaxy26@gmail.com");
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${env("RESEND_API_KEY")}`,
+      "content-type": "application/json"
+    },
+    body: JSON.stringify({
+      from: process.env.RESEND_FROM_EMAIL || "GalaxyGame <pedidos@galaxygame.pt>",
+      to: recipients,
+      reply_to: "gamegalaxy26@gmail.com",
+      subject: `[GalaxyGame] ${String(subject || "Alerta operacional").slice(0, 150)}`,
+      html: `<!doctype html><html lang="pt-PT"><body style="margin:0;background:#111116;color:#f7f5fb;font-family:Arial,sans-serif"><div style="max-width:600px;margin:0 auto;padding:28px"><h1 style="font-size:22px;color:#ff7a18">Atenção necessária</h1><p style="line-height:1.6">${escapeHtml(message)}</p><p style="color:#bbb">Sessão Stripe: <strong>${escapeHtml(sessionId || "não indicada")}</strong><br>Email do cliente: <strong>${escapeHtml(customerEmail || "não indicado")}</strong></p><p style="color:#bbb">Consulta o painel administrativo e os logs das Functions antes de responder ao cliente.</p></div></body></html>`
+    })
+  });
+  const text = await response.text();
+  let data = {};
+  try { data = text ? JSON.parse(text) : {}; } catch { data = {}; }
+  if (!response.ok) throw new Error(data?.message || `Resend respondeu ${response.status}`);
+  return data;
+}
+
+async function listFallbackOrders({ maxRecords = 500 } = {}) {
+  const [airtable, blobs] = await Promise.allSettled([
+    listOrdersByFormula("", { maxRecords }),
+    listBlobOrders({ maxRecords })
+  ]);
+  if (blobs.status === "rejected") throw blobs.reason;
+  const airtableSessions = new Set(airtable.status === "fulfilled"
+    ? airtable.value.map((order) => order.stripeSessionId).filter(Boolean)
+    : []);
+  return blobs.value
+    .filter((order) => !airtableSessions.has(order.stripeSessionId))
+    .map((order) => ({ ...order, storageSource: "blob-fallback" }));
 }
 
 function renderCodeEmail(order) {
@@ -923,10 +1110,17 @@ module.exports = {
   updatePersistedOrder,
   sendCodeEmail,
   sendOrderConfirmationEmail,
+  sendOperationalAlert,
+  claimWebhookEvent,
+  finishWebhookEvent,
+  listFallbackOrders,
   renderCodeEmail,
   _test: {
     setOrdersStoreFactory(factory) {
       ordersStoreFactory = factory || defaultOrdersStoreFactory;
+    },
+    setRetryDelay(factory) {
+      retryDelay = factory || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds)));
     }
   }
 };
