@@ -97,7 +97,18 @@
 
   function openPreferences() {
     removeBanner();
-    showBanner();
+    showBannerWhenReady();
+  }
+
+  function showBannerWhenReady() {
+    if (!document.fonts?.load) {
+      showBanner();
+      return;
+    }
+    Promise.race([
+      document.fonts.load('400 16px "Roboto Condensed"'),
+      new Promise((resolve) => window.setTimeout(resolve, 600))
+    ]).then(showBanner);
   }
 
   const consent = readConsent();
@@ -110,7 +121,7 @@
   };
 
   function onReady() {
-    if (!readConsent()) showBanner();
+    if (!readConsent()) showBannerWhenReady();
     document.querySelectorAll("[data-cookie-preferences]").forEach((button) => {
       button.addEventListener("click", openPreferences);
     });

@@ -2660,6 +2660,59 @@ body.password-recovery-open .sales-chat {
   color: transparent;
 }
 
+.news-card-skeleton {
+  pointer-events: none;
+}
+
+.news-card-skeleton .news-card-image,
+.news-card-skeleton time,
+.news-card-skeleton h3,
+.news-card-skeleton p,
+.news-card-skeleton .news-card-body > span {
+  overflow: hidden;
+  color: transparent;
+  background: linear-gradient(90deg, #252525 0%, #363636 50%, #252525 100%);
+  background-size: 220% 100%;
+  animation: skeletonPulse 1.1s ease-in-out infinite;
+}
+
+.news-card-skeleton time {
+  width: 72px;
+  height: 12px;
+  border-radius: 4px;
+}
+
+.news-card-skeleton h3 {
+  width: 86%;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.news-card-skeleton p {
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+}
+
+.news-card-skeleton .news-card-body > span {
+  display: block;
+  width: 82px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.home-page .skeleton-card .cover,
+.home-page .skeleton-card h3,
+.home-page .skeleton-card .game-price,
+.home-page .skeleton-card .platforms span,
+.home-page .news-card-skeleton .news-card-image,
+.home-page .news-card-skeleton time,
+.home-page .news-card-skeleton h3,
+.home-page .news-card-skeleton p,
+.home-page .news-card-skeleton .news-card-body > span {
+  animation: none;
+}
+
 @keyframes skeletonPulse {
   0% { background-position: 120% 0; }
   100% { background-position: -120% 0; }
@@ -2858,6 +2911,7 @@ body.catalog-filters-open {
 .trust-band {
   justify-content: center;
   gap: clamp(18px, 5vw, 74px);
+  min-height: 126px;
   padding: 22px 8vw;
   background: #151515;
 }
@@ -3372,7 +3426,6 @@ blockquote {
   object-position: center;
   transform: scale(1);
   transition: transform 300ms ease, filter 300ms ease;
-  will-change: transform;
 }
 
 .cat.category-ready span {
@@ -4028,6 +4081,7 @@ details p {
   }
 
   .trust-band {
+    min-height: 188px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
@@ -4333,6 +4387,7 @@ details p {
 
   .trust-band {
     grid-template-columns: 1fr;
+    min-height: 330px;
   }
 
   .hero-content {

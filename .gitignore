@@ -12,3 +12,4 @@ debug/*-dev.log
 debug/*-dev-error.log
 scripts/.internal/cambio-brl-eur.json
 styles.min.css
+styles.home.min.css

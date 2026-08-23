@@ -106,11 +106,14 @@ function headerCompactSearchBlob(product) {
 
 function loadHeaderCatalog() {
   if (headerCatalogPromise) return headerCatalogPromise;
-  headerCatalogPromise = fetch("data/catalog-lite.json", { cache: "no-store" })
-    .then((response) => (response.ok ? response.json() : []))
+  headerCatalogPromise = (window.__galaxyCatalogLitePromise ||= fetch("data/catalog-lite.json", { cache: "default" })
+    .then((response) => {
+      if (!response.ok) throw new Error("catalog-lite indisponivel");
+      return response.json();
+    }))
     .then((items) => Array.isArray(items) ? items : [])
     .catch(() => Promise.all(HEADER_CATALOG_FILES.map(({ file, platform }) =>
-      fetch(file, { cache: "no-store" })
+      fetch(file, { cache: "default" })
         .then((response) => (response.ok ? response.json() : []))
         .then((items) => Array.isArray(items) ? items.map((product) => ({ ...product, plataforma: product.plataforma || platform })) : [])
         .catch(() => [])
@@ -190,7 +193,7 @@ function mountSearchPreview(form) {
       <div class="search-preview-list">
         ${visible.map((product) => `
           <a class="search-preview-item" href="produto.html?id=${encodeURIComponent(product.id)}">
-            <img src="${escapeHeaderHtml(headerProductImage(product))}" alt="" loading="lazy">
+            <img src="${escapeHeaderHtml(headerProductImage(product))}" alt="" width="80" height="120" loading="lazy" decoding="async">
             <span>
               <strong>${escapeHeaderHtml(displayHeaderProductName(product))}</strong>
               <small>${escapeHeaderHtml(product.plataforma || product.platform || "Jogo digital")}</small>
@@ -273,14 +276,17 @@ document.querySelector(".hero-search")?.addEventListener("click", () => {
 (() => {
   const header = document.querySelector(".site-header");
   if (!header) return;
+  const strip = document.querySelector(".mobile-platform-strip");
+  const mobileQuery = window.matchMedia("(max-width: 640px)");
   let lastScrollY = window.scrollY;
+  let updateQueued = false;
 
   const updateHeaderState = () => {
+    updateQueued = false;
     const currentScrollY = window.scrollY;
     header.classList.toggle("is-scrolled", currentScrollY > 12);
 
-    const strip = document.querySelector(".mobile-platform-strip");
-    if (strip && window.matchMedia("(max-width: 640px)").matches) {
+    if (strip && mobileQuery.matches) {
       const scrollingDown = currentScrollY > lastScrollY && currentScrollY > 120;
       const scrollingUp = currentScrollY < lastScrollY || currentScrollY <= 20;
       if (scrollingDown) document.body.classList.add("mobile-platform-hidden");
@@ -292,9 +298,15 @@ document.querySelector(".hero-search")?.addEventListener("click", () => {
     lastScrollY = Math.max(currentScrollY, 0);
   };
 
+  const queueHeaderUpdate = () => {
+    if (updateQueued) return;
+    updateQueued = true;
+    window.requestAnimationFrame(updateHeaderState);
+  };
+
   updateHeaderState();
-  window.addEventListener("scroll", updateHeaderState, { passive: true });
-  window.addEventListener("resize", updateHeaderState, { passive: true });
+  window.addEventListener("scroll", queueHeaderUpdate, { passive: true });
+  window.addEventListener("resize", queueHeaderUpdate, { passive: true });
 })();
 
 document.querySelectorAll(".site-header").forEach((header) => {

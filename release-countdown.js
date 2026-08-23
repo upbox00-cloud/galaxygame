@@ -56,8 +56,12 @@
     }
 
     if (dateLabel) {
-      dateLabel.dateTime = element.dataset.releaseCountdown;
-      dateLabel.textContent = formatReleaseDate(releaseDate);
+      const releaseValue = element.dataset.releaseCountdown;
+      if (dateLabel.dateTime !== releaseValue) dateLabel.dateTime = releaseValue;
+      if (dateLabel.dataset.renderedDate !== releaseValue) {
+        dateLabel.textContent = formatReleaseDate(releaseDate);
+        dateLabel.dataset.renderedDate = releaseValue;
+      }
     }
 
     const remaining = releaseDate.getTime() - now;
@@ -68,7 +72,8 @@
     }
 
     element.dataset.countdownState = "counting";
-    value.textContent = formatRemaining(remaining).text;
+    const nextText = formatRemaining(remaining).text;
+    if (value.textContent !== nextText) value.textContent = nextText;
   }
 
   function refresh(root) {

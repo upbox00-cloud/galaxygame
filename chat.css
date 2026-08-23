@@ -161,8 +161,7 @@
 .sales-chat-product-offer { display: grid; justify-items: end; gap: 3px; }
 .sales-chat-product-offer b { color: #fff; font-size: 13px; }
 .sales-chat-product-offer small { color: var(--chat-orange); font-size: 10px; font-weight: 800; }
-.sales-chat-suggestions { display: flex; gap: 6px; overflow-x: auto; padding: 6px 14px 10px; scrollbar-width: none; }
-.sales-chat-suggestions:empty { display: none; }
+.sales-chat-suggestions { display: flex; min-height: 59px; gap: 6px; overflow-x: auto; padding: 6px 14px 10px; scrollbar-width: none; }
 .sales-chat-suggestions button { flex: 0 0 auto; padding: 7px 10px; border: 1px solid rgba(255, 100, 20, .48); border-radius: 16px; background: transparent; color: #eee; font-size: 12px; cursor: pointer; }
 .sales-chat-suggestions button:hover, .sales-chat-suggestions button:focus-visible { background: #44281b; }
 .sales-chat-form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px; padding: 10px 12px 7px; border-top: 1px solid var(--chat-border); background: var(--chat-panel); }

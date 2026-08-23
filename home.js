@@ -268,7 +268,7 @@ function optimizedCatalogImage(source, width = 440, height = 660) {
     w: String(width),
     h: String(height),
     fit: "cover",
-    q: "84"
+    q: "72"
   });
   return `/.netlify/images?${params}`;
 }
@@ -314,7 +314,7 @@ function createCatalogCard(product) {
     <a class="game-card catalog-card" href="produto.html?id=${encodeURIComponent(product.id)}" data-platforms="${escapeCatalogHtml(platform)}" ${trailer ? `data-trailer="${escapeCatalogHtml(trailer)}"` : ""}>
       <div class="cover catalog-cover ${isSupplierCatalogImage(product, image) ? "supplier-cover-clean" : ""}">
         <img class="cover-art" src="${escapeCatalogHtml(optimizedCatalogImage(image))}" data-original-source="${escapeCatalogHtml(image)}"
-          width="440" height="660" alt="Capa de ${escapeCatalogHtml(name)}" loading="lazy" decoding="async" />
+          width="440" height="660" alt="Capa de ${escapeCatalogHtml(name)}" loading="lazy" decoding="async" fetchpriority="low" />
         <span class="tag">${escapeCatalogHtml(discountPercent(product))}</span>
         ${platformBadgeHtml(product)}
         ${preorderCountdownHtml(product)}
@@ -348,7 +348,7 @@ function validCatalogTrailer(value) {
 }
 
 async function loadCatalogFile(platformKey, config) {
-  const response = await fetch(config.file, { cache: "no-store" });
+  const response = await fetch(config.file, { cache: "default" });
   if (!response.ok) throw new Error(`Falha ao carregar ${config.file}`);
   const products = await response.json();
   return Array.isArray(products)
@@ -370,11 +370,11 @@ async function loadCatalogs() {
         }
       })
     )
-    : await fetch("data/catalog-lite.json", { cache: "no-store" })
+    : await (window.__galaxyCatalogLitePromise ||= fetch("data/catalog-lite.json", { cache: "default" })
       .then((response) => {
         if (!response.ok) throw new Error("catalog-lite indisponivel");
         return response.json();
-      })
+      }))
       .then((products) => {
         const groups = Object.keys(CATALOG_FILES).map((platformKey) => [platformKey, []]);
         const grouped = Object.fromEntries(groups);
@@ -504,7 +504,11 @@ function platformParamToKey(value) {
 
 function renderCatalogSkeletons(count = 12) {
   if (!catalogGrid) return;
-  catalogGrid.innerHTML = Array.from({ length: count }, () => `
+  catalogGrid.innerHTML = catalogSkeletonCards(count);
+}
+
+function catalogSkeletonCards(count) {
+  return Array.from({ length: count }, () => `
     <article class="game-card catalog-card skeleton-card" aria-hidden="true">
       <div class="cover catalog-cover"></div>
       <div class="game-info">
@@ -514,6 +518,31 @@ function renderCatalogSkeletons(count = 12) {
       </div>
     </article>
   `).join("");
+}
+
+function renderHomeSkeletons() {
+  const gridCounts = {
+    trending: 8,
+    catalogPreview: 12,
+    preorders: 8,
+    bestSellers: 8,
+    recentReleases: 8
+  };
+
+  Object.entries(gridCounts).forEach(([gridName, count]) => {
+    const grid = document.querySelector(`[data-game-grid="${gridName}"]`);
+    const section = grid?.closest("section");
+    if (!grid || !section) return;
+    section.hidden = false;
+    section.dataset.homeLoading = "true";
+    grid.innerHTML = catalogSkeletonCards(count);
+  });
+
+  const recommendationSection = document.querySelector("#escolha-recomendada");
+  if (recommendationSection) {
+    recommendationSection.hidden = false;
+    recommendationSection.dataset.homeLoading = "true";
+  }
 }
 
 function renderCatalog() {
@@ -664,6 +693,7 @@ function curatedThenAutomatic(curatedPool, automaticPool, automaticSort, limit) 
 function renderHighlightGrid(grid, products) {
   if (!grid) return;
   toggleSectionForGrid(grid, products.length > 0);
+  grid.closest("section")?.removeAttribute("data-home-loading");
   if (!products.length) {
     grid.innerHTML = "";
     return;
@@ -866,6 +896,7 @@ function renderHomeRecommendation(products) {
   recommendation.querySelector("[data-recommendation-copy]").textContent = `Poupa ${discountValue(selected)}% neste jogo digital. O acesso fica em Minha Conta > Meus Pedidos e também segue por email com instruções.`;
   recommendation.querySelector("[data-recommendation-old-price]").textContent = originalPrice > salePrice ? formatCatalogEUR(originalPrice) : "";
   recommendation.querySelector("[data-recommendation-price]").textContent = formatCatalogEUR(salePrice);
+  section.removeAttribute("data-home-loading");
   section.hidden = false;
   window.observeRevealTargets?.();
 }
@@ -1056,7 +1087,11 @@ async function initCatalogHome() {
   if (!catalogGrid && !hasHomeContent) return;
 
   if (catalogGrid) bindCatalogControls();
-  if (catalogGrid) renderCatalogSkeletons();
+  if (catalogGrid) {
+    renderCatalogSkeletons();
+  } else {
+    renderHomeSkeletons();
+  }
   try {
     await loadCatalogs();
     bindHeroPlatformBar();
@@ -1107,4 +1142,16 @@ async function initCatalogHome() {
   }
 }
 
-initCatalogHome();
+function scheduleCatalogHome() {
+  const run = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(() => initCatalogHome(), { timeout: 1600 });
+    } else {
+      window.setTimeout(initCatalogHome, 350);
+    }
+  };
+  if (document.readyState === "complete") run();
+  else window.addEventListener("load", run, { once: true });
+}
+
+scheduleCatalogHome();

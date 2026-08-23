@@ -8,7 +8,7 @@
   footer.innerHTML = `
     <div class="footer-brand">
       <a class="footer-logo-link" href="index.html" aria-label="GalaxyGame - pagina inicial">
-        <img class="footer-logo" src="assets/galaxygame-header-logo.webp" alt="GalaxyGame" loading="lazy">
+        <img class="footer-logo" src="assets/galaxygame-header-logo.webp" alt="GalaxyGame" width="620" height="413" loading="lazy" decoding="async">
       </a>
       <p>Jogos digitais para PlayStation 4, PlayStation 5, Xbox One e Xbox Series X|S, com compra clara e apoio pensado para jogadores em Portugal.</p>
     </div>
@@ -46,7 +46,7 @@
     <section class="footer-payments" aria-label="Metodos de pagamento aceites">
       <h2>M&eacute;todos de pagamento aceites</h2>
       <!-- Mostrar estes icones apenas se estes metodos estiverem de facto ativados na conta Stripe do site. -->
-      <img class="payment-strip" src="assets/payments.webp" alt="M&eacute;todos de pagamento: Visa, Mastercard, Multibanco, MB WAY, PayPal, Klarna, Apple Pay e Google Pay" loading="lazy">
+      <img class="payment-strip" src="assets/payments.webp" alt="M&eacute;todos de pagamento: Visa, Mastercard, Multibanco, MB WAY, PayPal, Klarna, Apple Pay e Google Pay" width="900" height="506" loading="lazy" decoding="async">
     </section>
 
     <p class="footer-copy">&copy; 2026 GalaxyGame. Todos os direitos reservados.</p>

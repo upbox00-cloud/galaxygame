@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "netlify dev --offline --no-open --port 8890 --functions-port 3998 --staticServerPort 3997",
-    "build:css": "esbuild styles.css --minify --outfile=styles.min.css",
+    "build:css": "node scripts/build-css.js",
     "test": "node --test --test-isolation=none tests/chat.test.js tests/auth.test.js tests/orders.test.js tests/produto.test.js tests/admin-dashboard.test.js tests/responsive.test.js tests/meta-pixel.test.js tests/cookie-consent.test.js tests/pricing.test.js tests/supplier-pix.test.js tests/countdown.test.js",
     "check:links": "node scripts/check-local-links.js",
     "check:launch": "node scripts/check-launch-readiness.js && npm run check:links && npm run check:netlify",
@@ -42,6 +42,8 @@
     "simple-icons": "^16.27.0"
   },
   "devDependencies": {
-    "netlify-cli": "^26.2.0"
+    "esbuild": "^0.28.2",
+    "netlify-cli": "^26.2.0",
+    "purgecss": "^8.0.0"
   }
 }

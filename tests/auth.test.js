@@ -130,21 +130,34 @@ test("all primary pages load the cache-busted auth script once", () => {
 
   pages.forEach((page) => {
     const html = fs.readFileSync(path.join(root, page), "utf8");
-    const matches = html.match(/scripts\/auth\.js\?v=20260811-2/g) || [];
-    assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
-    assert.equal(
-      (html.match(/scripts\/identity-modern\.js\?v=20260809-1/g) || []).length,
-      1,
-      `${page} deve carregar o cliente moderno do Netlify Identity`
-    );
+    if (page === "index.html") {
+      assert.equal(
+        (html.match(/scripts\/auth-loader\.js\?v=20260823-2/g) || []).length,
+        1,
+        "a home deve carregar Identity sem bloquear a renderizacao"
+      );
+      const loader = fs.readFileSync(path.join(root, "scripts", "auth-loader.js"), "utf8");
+      assert.equal((loader.match(/scripts\/auth\.js\?v=20260811-7/g) || []).length, 1);
+      assert.equal((loader.match(/scripts\/identity-modern\.js\?v=20260809-1/g) || []).length, 1);
+      assert.match(loader, /identity\.netlify\.com\/v1\/netlify-identity-widget\.js/);
+    } else {
+      const matches = html.match(/scripts\/auth\.js\?v=20260811-2/g) || [];
+      assert.equal(matches.length, 1, `${page} deve carregar auth.js exatamente uma vez`);
+    }
+    if (page !== "index.html") {
+      assert.equal(
+        (html.match(/scripts\/identity-modern\.js\?v=20260809-1/g) || []).length,
+        1,
+        `${page} deve carregar o cliente moderno do Netlify Identity`
+      );
+    }
     assert.equal(
       (html.match(/scripts\/recovery-token\.js\?v=20260811-2/g) || []).length,
       1,
       `${page} deve preservar o recovery token antes do widget`
     );
-    assert.equal(
-      (html.match(/styles(?:\.min)?\.css\?v=\d+(?:-\d+)?/g) || []).length,
-      1,
+    assert.ok(
+      (html.match(/styles(?:\.home)?(?:\.min)?\.css\?v=\d+(?:-\d+)?/g) || []).length >= 1,
       `${page} deve carregar o CSS que bloqueia o modal antigo`
     );
   });

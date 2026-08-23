@@ -14,6 +14,7 @@ const requiredFiles = [
   "painel-pedidos.html",
   "favicon.svg",
   "styles.css",
+  "styles.home.min.css",
   "cookie-consent.css",
   "produto.css",
   "finalizar-compra.css",

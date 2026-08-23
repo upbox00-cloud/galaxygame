@@ -7,6 +7,18 @@ const newsSourceLink = document.querySelector("[data-news-source]");
 const isProductNewsPage = document.body.classList.contains("product-page");
 let localNewsCachePromise;
 
+function renderNewsSkeletons(count = NEWS_LIMIT) {
+  if (!newsSection || !newsList || isProductNewsPage) return;
+  newsSection.hidden = false;
+  newsSection.dataset.homeLoading = "true";
+  newsList.innerHTML = Array.from({ length: count }, () => `
+    <article class="news-card news-card-skeleton" aria-hidden="true">
+      <div class="news-card-image"></div>
+      <div class="news-card-body"><time></time><h3></h3><p></p><span></span></div>
+    </article>
+  `).join("");
+}
+
 function normalizeNewsKey(value) {
   return String(value || "")
     .normalize("NFD")
@@ -97,7 +109,7 @@ function renderNews(items, fallbackImages = []) {
     return `
       <article class="news-card">
         <div class="news-card-image">
-          ${image ? `<img src="${escapeNewsHtml(image)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}
+          ${image ? `<img src="${escapeNewsHtml(image)}" alt="" width="720" height="405" loading="lazy" decoding="async" fetchpriority="low" referrerpolicy="no-referrer">` : ""}
         </div>
         <div class="news-card-body">
           <time datetime="${escapeNewsHtml(item.pubDate || "")}">${escapeNewsHtml(date)}</time>
@@ -114,6 +126,7 @@ function renderNews(items, fallbackImages = []) {
     return;
   }
   newsList.innerHTML = cards;
+  newsSection.removeAttribute("data-home-loading");
   newsSection.hidden = false;
 
   if (typeof window.observeRevealTargets === "function") {
@@ -166,6 +179,7 @@ if (isProductNewsPage) {
   window.addEventListener("product-news-ready", (event) => loadNews(event.detail?.name, event.detail?.images || []));
   loadNews(window.productNewsContext?.name || document.body.dataset.productNewsQuery, window.productNewsContext?.images || []);
 } else {
+  renderNewsSkeletons();
   const scheduleNews = () => loadNews();
   if ("requestIdleCallback" in window) {
     window.requestIdleCallback(scheduleNews, { timeout: 4000 });
