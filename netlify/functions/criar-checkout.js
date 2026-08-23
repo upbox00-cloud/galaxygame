@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { json, getUserEmail, getUserName } = require("./_orders");
+const { json, getUserEmail, getUserName, sendOperationalAlert } = require("./_orders");
 const commercialCatalog = require("./_data/catalogo-comercial.json");
 
 const SPECIAL_PRODUCTS = [
@@ -187,6 +187,13 @@ exports.handler = async (event, context) => {
     .filter(Boolean)));
   if (!ids.length || ids.length > 10) return json(400, { error: "invalid_cart" });
 
+  const requestId = String(context?.awsRequestId || event.headers?.["x-nf-request-id"] || "").trim();
+  console.info("[criar-checkout] pedido recebido", {
+    requestId: requestId || null,
+    customerType,
+    productIds: ids
+  });
+
   try {
     const catalog = loadCatalog();
     const products = ids.map((id) => catalog.get(id));
@@ -200,12 +207,40 @@ exports.handler = async (event, context) => {
       customerType,
       userId
     }, body.cancelUrl);
-    return json(200, { checkoutUrl: session.url, checkoutMode: customerType });
+    console.info("[criar-checkout] sessao Stripe criada", {
+      requestId: requestId || null,
+      customerType,
+      sessionId: session.id || null,
+      productIds: ids
+    });
+    return json(200, {
+      checkoutUrl: session.url,
+      checkoutMode: customerType,
+      checkoutSessionId: session.id || "",
+      checkoutValue: Number(products.reduce((total, product) => total + Number(product.precoVendaEUR || 0), 0).toFixed(2)),
+      currency: "EUR",
+      productIds: products.map((product) => product.id)
+    });
   } catch (error) {
     console.error("[criar-checkout]", {
       message: error.message,
-      status: error.status || null
+      status: error.status || null,
+      requestId: requestId || null,
+      customerType,
+      productIds: ids
     });
+    try {
+      await sendOperationalAlert({
+        subject: "Falha ao criar checkout Stripe",
+        message: `A sessao de pagamento nao foi criada. Motivo: ${error.message}. Request ID: ${requestId || "nao indicado"}. Produtos: ${ids.join(", ")}. Tipo de cliente: ${customerType}.`,
+        customerEmail: email
+      });
+    } catch (alertError) {
+      console.error("[criar-checkout] falha ao enviar alerta operacional", {
+        message: alertError.message,
+        requestId: requestId || null
+      });
+    }
     return json(500, { error: "checkout_failed" });
   }
 };

@@ -117,3 +117,10 @@ test("Minha Conta recomenda jogos do catalogo com base na biblioteca do cliente"
   assert.match(siteStyles, /@media \(max-width: 700px\)/);
   assert.match(accountHtml, /styles(?:\.min)?\.css\?v=\d+(?:-\d+)?/);
 });
+
+test("painel recupera compras pagas pelo Session ID do Stripe", () => {
+  assert.match(html, /data-admin-recovery-form/);
+  assert.match(script, /\/\.netlify\/functions\/admin-recuperar-pedido/);
+  assert.match(script, /sendConfirmation/);
+  assert.match(styles, /\.admin-recovery/);
+});

@@ -28,15 +28,11 @@
     // Continue without browser-side deduplication when storage is unavailable.
   }
 
-  const identity = window.netlifyIdentity;
-  if (!identity) {
-    console.warn("[purchase] Netlify Identity indisponivel");
-    return;
-  }
+  const identity = window.netlifyIdentity || null;
 
   let requestInFlight = false;
-  async function validateAndTrack(user) {
-    if (!user || requestInFlight) return;
+  async function validateAndTrack(user = identity?.currentUser?.() || null) {
+    if (requestInFlight) return;
     if (!window.GalaxyGameConsent?.hasMarketingConsent()) return;
     try {
       if (window.sessionStorage.getItem(storageKey) === "tracked") return;
@@ -46,9 +42,9 @@
 
     requestInFlight = true;
     try {
-      const token = await user.jwt();
+      const token = user ? await user.jwt() : "";
       const response = await fetch(`/.netlify/functions/confirmar-compra?session_id=${encodeURIComponent(sessionId)}`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
         cache: "no-store"
       });
       const purchase = await response.json().catch(() => ({}));
@@ -74,10 +70,10 @@
     }
   }
 
-  identity.on("init", validateAndTrack);
-  identity.on("login", validateAndTrack);
+  identity?.on("init", validateAndTrack);
+  identity?.on("login", validateAndTrack);
   window.addEventListener("galaxygame:consent", (event) => {
-    if (event.detail?.choice === "accepted") validateAndTrack(identity.currentUser?.());
+    if (event.detail?.choice === "accepted") validateAndTrack();
   });
-  validateAndTrack(identity.currentUser?.());
+  validateAndTrack();
 })();

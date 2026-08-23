@@ -242,7 +242,7 @@ test("checkout de convidado deixa o Stripe recolher o email", async () => {
   process.env.STRIPE_SECRET_KEY = "sk_test_only";
   global.fetch = async (_url, options) => {
     stripeParams = new URLSearchParams(options.body);
-    return new Response(JSON.stringify({ url: "https://checkout.stripe.test/guest" }), {
+    return new Response(JSON.stringify({ id: "cs_test_checkoutGuest123", url: "https://checkout.stripe.test/guest" }), {
       status: 200,
       headers: { "content-type": "application/json" }
     });
@@ -254,7 +254,11 @@ test("checkout de convidado deixa o Stripe recolher o email", async () => {
       body: JSON.stringify({ items: [{ id: "gta-vi-ps5" }] })
     }, {});
     assert.equal(response.statusCode, 200);
-    assert.equal(JSON.parse(response.body).checkoutMode, "guest");
+    const checkoutResult = JSON.parse(response.body);
+    assert.equal(checkoutResult.checkoutMode, "guest");
+    assert.equal(checkoutResult.checkoutSessionId, "cs_test_checkoutGuest123");
+    assert.equal(checkoutResult.checkoutValue, 57.99);
+    assert.equal(checkoutResult.currency, "EUR");
     assert.equal(stripeParams.get("customer_email"), null);
     assert.equal(stripeParams.get("metadata[customer_type]"), "guest");
     assert.equal(stripeParams.get("metadata[identity_user_id]"), null);
@@ -397,6 +401,33 @@ test("Purchase so recebe valor depois de validar pagamento e cliente no Stripe",
       currency: "EUR",
       transactionId: "cs_test_sessaoSegura123"
     });
+
+    global.fetch = async () => new Response(JSON.stringify({
+      id: "cs_test_sessaoSegura123",
+      payment_status: "paid",
+      amount_total: 5799,
+      currency: "eur",
+      customer_details: { email: "convidado@example.com" },
+      metadata: { customer_type: "guest" }
+    }), { status: 200, headers: { "content-type": "application/json" } });
+    const guestAccepted = await confirmPurchase.handler(event, {});
+    assert.equal(guestAccepted.statusCode, 200);
+    assert.deepEqual(JSON.parse(guestAccepted.body), {
+      value: 57.99,
+      currency: "EUR",
+      transactionId: "cs_test_sessaoSegura123"
+    });
+
+    global.fetch = async () => new Response(JSON.stringify({
+      id: "cs_test_sessaoSegura123",
+      payment_status: "paid",
+      amount_total: 5799,
+      currency: "eur",
+      customer_details: { email: "cliente@example.com" },
+      metadata: { customer_type: "registered" }
+    }), { status: 200, headers: { "content-type": "application/json" } });
+    const registeredWithoutLogin = await confirmPurchase.handler(event, {});
+    assert.equal(registeredWithoutLogin.statusCode, 401);
 
     global.fetch = async () => new Response(JSON.stringify({
       id: "cs_test_sessaoSegura123",

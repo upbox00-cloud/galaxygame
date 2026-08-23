@@ -9,6 +9,7 @@
   const searchInput = document.querySelector("[data-admin-search]");
   const catalogSearch = document.querySelector("[data-admin-catalog-search]");
   const customerSearch = document.querySelector("[data-admin-customer-search]");
+  const recoveryForm = document.querySelector("[data-admin-recovery-form]");
   const tabs = [...document.querySelectorAll("[data-admin-tab]")];
   const customerTypeFilters = [...document.querySelectorAll("[data-admin-customer-type]")];
   const ADMIN_STATE_KEY = "galaxygame_admin_ui_v1";
@@ -705,6 +706,54 @@
     }
   }
 
+  async function recoverPaidOrder(event) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const button = form.querySelector('button[type="submit"]');
+    const formData = new FormData(form);
+    const sessionId = String(formData.get("sessionId") || "").trim();
+    if (!/^cs_(?:test|live)_[A-Za-z0-9]+$/.test(sessionId) || button.disabled) {
+      form.reportValidity();
+      return;
+    }
+    button.disabled = true;
+    button.textContent = "A recuperar...";
+    setNotice("A confirmar o pagamento diretamente no Stripe...", "info");
+    try {
+      const data = await apiRequest("/.netlify/functions/admin-recuperar-pedido", {
+        method: "POST",
+        body: JSON.stringify({
+          sessionId,
+          sendConfirmation: formData.get("sendConfirmation") === "on"
+        })
+      });
+      const recoveredOrder = data.pedido;
+      if (recoveredOrder) {
+        const index = state.orders.findIndex((order) => order.stripeSessionId === recoveredOrder.stripeSessionId || order.id === recoveredOrder.id);
+        if (index >= 0) state.orders[index] = recoveredOrder;
+        else state.orders.unshift(recoveredOrder);
+      }
+      form.reset();
+      form.querySelector('[name="sendConfirmation"]').checked = true;
+      state.filter = "pending";
+      refreshAllViews();
+      setNotice(data.existing
+        ? "Este pedido já estava guardado e foi localizado com sucesso."
+        : `Pedido recuperado${data.confirmationEmailSent ? " e confirmação enviada ao cliente" : ""}.`, "success");
+    } catch (error) {
+      if (["login_required", "admin_required"].includes(error.code)) return;
+      const messages = {
+        invalid_session_id: "O Session ID não é válido.",
+        payment_not_paid: "A sessão existe, mas o Stripe não a apresenta como paga.",
+        missing_order_data: "O Stripe não devolveu email ou produto suficientes para recuperar o pedido."
+      };
+      setNotice(messages[error.code] || "Não foi possível recuperar este pedido. Consulta os logs da Function.", "error");
+    } finally {
+      button.disabled = false;
+      button.textContent = "Recuperar pedido";
+    }
+  }
+
   function boot(user) {
     if (!user) {
       redirectToLogin();
@@ -753,6 +802,7 @@
   searchInput?.addEventListener("input", () => { state.query = searchInput.value; renderOrders(); saveUi(); });
   catalogSearch?.addEventListener("input", () => { state.catalogQuery = catalogSearch.value; renderCatalog(); saveUi(); });
   customerSearch?.addEventListener("input", () => { state.customerQuery = customerSearch.value; renderCustomers(); saveUi(); });
+  recoveryForm?.addEventListener("submit", recoverPaidOrder);
   document.querySelectorAll("[data-admin-refresh]").forEach((button) => button.addEventListener("click", () => { loadOrders(); loadCatalog(); loadPresence(); }));
   document.querySelector("[data-admin-menu]")?.addEventListener("click", () => document.body.classList.toggle("admin-menu-open"));
   document.querySelector("[data-admin-menu-close]")?.addEventListener("click", () => document.body.classList.remove("admin-menu-open"));

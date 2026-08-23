@@ -747,3 +747,61 @@
 @media (prefers-reduced-motion: reduce) {
   .admin-sidebar { transition: none; }
 }
+.admin-recovery {
+  display: grid;
+  grid-template-columns: minmax(240px, 1.2fr) minmax(280px, 1fr) auto auto;
+  align-items: end;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding: 18px;
+  border: 1px solid #dedbe4;
+  border-left: 3px solid #7653a7;
+  background: #faf9fc;
+}
+
+.admin-recovery > div,
+.admin-recovery label {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.admin-recovery strong { font-size: 17px; }
+.admin-recovery small { color: #6e6878; line-height: 1.35; }
+.admin-recovery label > span { color: #57515f; font-size: 12px; font-weight: 700; }
+.admin-recovery input[type="text"] {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid #cbc7d1;
+  background: #fff;
+  color: #17151b;
+}
+.admin-recovery-email {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 42px;
+  white-space: nowrap;
+  font-size: 13px;
+}
+.admin-recovery button {
+  min-height: 42px;
+  padding: 0 18px;
+  border: 0;
+  background: #ff6a00;
+  color: #171117;
+  font-weight: 800;
+  cursor: pointer;
+}
+.admin-recovery button:disabled { cursor: wait; opacity: .65; }
+
+@media (max-width: 1050px) {
+  .admin-recovery { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 620px) {
+  .admin-recovery { grid-template-columns: 1fr; padding: 15px; }
+  .admin-recovery-email { white-space: normal; }
+  .admin-recovery button { width: 100%; }
+}

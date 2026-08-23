@@ -33,8 +33,6 @@ exports.handler = async (event, context) => {
   if (event.httpMethod !== "GET") return json(405, { error: "method_not_allowed" });
 
   const authenticatedEmail = getUserEmail(context).trim().toLowerCase();
-  if (!authenticatedEmail) return json(401, { error: "login_required" });
-
   const sessionId = validSessionId(event.queryStringParameters?.session_id);
   if (!sessionId) return json(400, { error: "invalid_session_id" });
 
@@ -47,7 +45,13 @@ exports.handler = async (event, context) => {
   try {
     const session = await fetchCheckoutSession(sessionId, secret);
     const stripeEmail = String(session.customer_details?.email || session.customer_email || "").trim().toLowerCase();
-    if (!stripeEmail || stripeEmail !== authenticatedEmail) {
+    const customerType = String(session.metadata?.customer_type || "").trim().toLowerCase();
+    const isGuestCheckout = customerType === "guest" || customerType === "email_only";
+
+    // The Stripe redirect contains an unguessable session ID. Guest sessions may
+    // validate the conversion without exposing email or order information.
+    if (!isGuestCheckout && !authenticatedEmail) return json(401, { error: "login_required" });
+    if (!isGuestCheckout && (!stripeEmail || stripeEmail !== authenticatedEmail)) {
       console.warn("[confirmar-compra] sessao nao pertence ao cliente autenticado", {
         sessionSuffix: sessionId.slice(-8)
       });

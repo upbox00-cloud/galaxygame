@@ -38,6 +38,19 @@
       });
       const data = await response.json().catch(() => ({}));
       if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
+      if (typeof window.fbq === "function") {
+        try {
+          window.fbq("track", "InitiateCheckout", {
+            content_ids: Array.isArray(data.productIds) ? data.productIds : [productId],
+            content_type: "product",
+            num_items: 1,
+            value: Number(data.checkoutValue || 0),
+            currency: "EUR"
+          }, data.checkoutSessionId ? { eventID: data.checkoutSessionId } : undefined);
+        } catch (trackingError) {
+          console.warn("[meta-pixel] falha ao enviar InitiateCheckout", trackingError);
+        }
+      }
       window.location.replace(data.checkoutUrl);
     } catch (error) {
       console.error("[finalizar-compra]", { message: error.message });

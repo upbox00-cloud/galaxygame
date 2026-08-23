@@ -222,10 +222,10 @@ function showToast(message, duration = 1900) {
   showToast.timer = window.setTimeout(() => toast.classList.remove("show"), duration);
 }
 
-function trackMetaEvent(eventName, parameters) {
+function trackMetaEvent(eventName, parameters, options) {
   if (typeof window.fbq !== "function") return;
   try {
-    window.fbq("track", eventName, parameters);
+    window.fbq("track", eventName, parameters, options);
   } catch (error) {
     console.warn(`[meta-pixel] falha ao enviar ${eventName}`, error);
   }
@@ -310,7 +310,7 @@ async function buyNow(product) {
     const data = await response.json().catch(() => ({}));
     if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
 
-    const value = Number(product.precoVendaEUR || 0);
+    const value = Number(data.checkoutValue ?? product.precoVendaEUR ?? 0);
     trackMetaEvent("InitiateCheckout", {
       content_ids: [productId],
       content_type: "product",
@@ -318,7 +318,7 @@ async function buyNow(product) {
       num_items: 1,
       value,
       currency: "EUR"
-    });
+    }, data.checkoutSessionId ? { eventID: data.checkoutSessionId } : undefined);
     window.location.assign(data.checkoutUrl);
   } catch (error) {
     console.error("[buy-now]", { message: error.message });

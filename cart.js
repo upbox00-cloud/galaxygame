@@ -22,10 +22,10 @@
     return new Intl.NumberFormat("pt-PT", { style: "currency", currency: "EUR" }).format(Number(value || 0));
   }
 
-  function trackMetaEvent(eventName, parameters) {
+  function trackMetaEvent(eventName, parameters, options) {
     if (typeof window.fbq !== "function") return;
     try {
-      window.fbq("track", eventName, parameters);
+      window.fbq("track", eventName, parameters, options);
     } catch (error) {
       console.warn(`[meta-pixel] falha ao enviar ${eventName}`, error);
     }
@@ -216,7 +216,7 @@
         const data = await response.json().catch(() => ({}));
         if (!response.ok || !data.checkoutUrl) throw new Error(data.error || "checkout_failed");
         const items = readCart();
-        const checkoutValue = Number(total(items).toFixed(2));
+        const checkoutValue = Number(data.checkoutValue ?? total(items).toFixed(2));
         trackMetaEvent("InitiateCheckout", {
           content_ids: items.map((item) => String(item.id)),
           content_type: "product",
@@ -228,7 +228,7 @@
           num_items: items.length,
           value: checkoutValue,
           currency: "EUR"
-        });
+        }, data.checkoutSessionId ? { eventID: data.checkoutSessionId } : undefined);
         window.location.assign(data.checkoutUrl);
       } catch (error) {
         console.error("[checkout]", error.message);

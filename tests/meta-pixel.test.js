@@ -15,14 +15,18 @@ test("eventos Meta acompanham apenas passos reais do funil", () => {
   assert.ok(cartSource.indexOf('trackMetaEvent("InitiateCheckout"') < cartSource.indexOf("window.location.assign(data.checkoutUrl)"));
   assert.match(productSource, /currency: "EUR"/);
   assert.match(cartSource, /currency: "EUR"/);
+  assert.match(productSource, /eventID: data\.checkoutSessionId/);
+  assert.match(cartSource, /eventID: data\.checkoutSessionId/);
 });
 
 test("Purchase valida no servidor e nao repete na mesma sessao do navegador", () => {
-  assert.match(confirmationHtml, /pedido-confirmado\.js\?v=20260819-1/);
+  assert.match(confirmationHtml, /pedido-confirmado\.js\?v=20260822-1/);
   assert.match(confirmationSource, /\.netlify\/functions\/confirmar-compra\?session_id=/);
   assert.match(confirmationSource, /sessionStorage\.getItem\(storageKey\) === "tracked"/);
   assert.match(confirmationSource, /GalaxyGameConsent\?\.hasMarketingConsent\(\)/);
   assert.match(confirmationSource, /galaxygame:consent/);
   assert.match(confirmationSource, /window\.fbq\("track", "Purchase"/);
+  assert.match(confirmationSource, /headers: token \? \{ Authorization:/);
+  assert.doesNotMatch(confirmationSource, /if \(!user \|\| requestInFlight\) return/);
   assert.ok(confirmationSource.indexOf("window.fbq") < confirmationSource.indexOf("sessionStorage.setItem"));
 });
