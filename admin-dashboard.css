@@ -212,6 +212,20 @@
   border-color: var(--admin-accent);
 }
 
+.admin-icon-button:disabled,
+.admin-mobile-header button:disabled {
+  cursor: wait;
+  opacity: .72;
+}
+
+.admin-refreshing svg {
+  animation: admin-refresh-spin .7s linear infinite;
+}
+
+@keyframes admin-refresh-spin {
+  to { transform: rotate(360deg); }
+}
+
 .admin-view[hidden] {
   display: none !important;
 }

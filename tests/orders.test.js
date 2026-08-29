@@ -376,6 +376,53 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
   }
 });
 
+test("checkout preserva e identifica todos os jogos de um carrinho multiplo", async () => {
+  const previousSecret = process.env.STRIPE_SECRET_KEY;
+  const originalFetch = global.fetch;
+  let stripeParams;
+  process.env.STRIPE_SECRET_KEY = "sk_test_only";
+  global.fetch = async (_url, options) => {
+    stripeParams = new URLSearchParams(options.body);
+    return new Response(JSON.stringify({ id: "cs_test_multi", url: "https://checkout.stripe.test/multi" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    const response = await checkout.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({
+        items: [
+          { id: "gta-vi-ps5" },
+          { id: "gta-vi-xbox-series" }
+        ]
+      })
+    }, {});
+    const result = JSON.parse(response.body);
+
+    assert.equal(response.statusCode, 200);
+    assert.deepEqual(result.productIds, ["gta-vi-ps5", "gta-vi-xbox-series"]);
+    assert.equal(result.checkoutValue, 127.98);
+    assert.equal(stripeParams.get("line_items[0][quantity]"), "1");
+    assert.equal(stripeParams.get("line_items[1][quantity]"), "1");
+    assert.match(stripeParams.get("line_items[0][price_data][product_data][name]"), /PlayStation 5/);
+    assert.match(stripeParams.get("line_items[1][price_data][product_data][name]"), /Xbox Series/);
+    assert.equal(stripeParams.get("line_items[0][price_data][product_data][description]"), "Jogo 1 de 2 - PlayStation 5");
+    assert.equal(stripeParams.get("line_items[1][price_data][product_data][description]"), "Jogo 2 de 2 - Xbox Series X|S");
+    assert.match(stripeParams.get("custom_text[submit][message]"), /Esta compra inclui 2 jogos/);
+    assert.match(stripeParams.get("custom_text[submit][message]"), /Confirma todos os itens em Detalhes/);
+    assert.deepEqual(JSON.parse(stripeParams.get("metadata[items]")), [
+      { id: "gta-vi-ps5", nome: "Grand Theft Auto VI - PlayStation 5", plataforma: "PlayStation 5" },
+      { id: "gta-vi-xbox-series", nome: "Grand Theft Auto VI - Xbox Series X|S", plataforma: "Xbox Series X|S" }
+    ]);
+  } finally {
+    global.fetch = originalFetch;
+    if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousSecret;
+  }
+});
+
 test("Purchase so recebe valor depois de validar pagamento e cliente no Stripe", async () => {
   const previousSecret = process.env.STRIPE_SECRET_KEY;
   const originalFetch = global.fetch;

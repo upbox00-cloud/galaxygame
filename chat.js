@@ -227,7 +227,7 @@
   window.__GalaxyGamePresenceLoaderReady = true;
   const load = () => {
     const script = document.createElement("script");
-    script.src = "presence.js?v=20260811-1";
+    script.src = "presence.js?v=20260829-1";
     script.defer = true;
     document.head.appendChild(script);
   };

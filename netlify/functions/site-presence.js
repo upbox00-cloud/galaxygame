@@ -8,6 +8,7 @@ const STALE_AFTER_MS = 24 * 60 * 60 * 1000;
 const MAX_RECORDS = 5000;
 const VISIT_HISTORY_DAYS = 30;
 const MAX_VISITORS_PER_DAY = 20000;
+const VISIT_PREFIX = "visits/unique-browser-v2/daily";
 
 let storeFactory = () => getStore(STORE_NAME);
 
@@ -31,7 +32,7 @@ function dateKey(date) {
 }
 
 async function registerDailyVisit(store, visitorId, now) {
-  const key = `visits/daily/${dateKey(new Date(now))}.json`;
+  const key = `${VISIT_PREFIX}/${dateKey(new Date(now))}.json`;
   const day = (await store.get(key, { type: "json" })) || { visitors: {} };
   if (day.visitors[visitorId] || Object.keys(day.visitors).length >= MAX_VISITORS_PER_DAY) return;
   day.visitors[visitorId] = now;
@@ -66,7 +67,7 @@ async function visitHistory(store) {
     days.push(new Date(now - offset * 24 * 60 * 60 * 1000));
   }
   const counts = await Promise.all(days.map(async (date) => {
-    const key = `visits/daily/${dateKey(date)}.json`;
+    const key = `${VISIT_PREFIX}/${dateKey(date)}.json`;
     const day = await store.get(key, { type: "json" });
     return { date: dateKey(date), count: day ? Object.keys(day.visitors || {}).length : 0 };
   }));

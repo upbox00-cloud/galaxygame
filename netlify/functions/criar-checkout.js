@@ -115,6 +115,23 @@ async function createStripeCheckout(products, customer, cancelPath) {
   const productIds = products.map((product) => product.id).join(",");
   if (productIds.length <= 500) params.set("metadata[product_ids]", productIds);
 
+  const compactItems = JSON.stringify(products.map((product) => ({
+    id: product.id,
+    nome: String(product.nome || "").slice(0, 120),
+    plataforma: String(product.plataforma || "Consola").slice(0, 60)
+  })));
+  if (compactItems.length <= 500) params.set("metadata[items]", compactItems);
+
+  if (products.length > 1) {
+    const names = products
+      .map((product) => `${String(product.nome || "Jogo").slice(0, 54)} (${String(product.plataforma || "Consola").slice(0, 28)})`)
+      .join("; ");
+    params.set(
+      "custom_text[submit][message]",
+      `Esta compra inclui ${products.length} jogos: ${names}. Confirma todos os itens em Detalhes antes de pagar.`
+    );
+  }
+
   const suppliers = Array.from(new Set(products
     .map((product) => String(product.fornecedorSelecionado || "").trim())
     .filter((supplier) => supplier === "Alpha Games" || supplier === "TCA Games")));
@@ -133,6 +150,12 @@ async function createStripeCheckout(products, customer, cancelPath) {
     params.set(`${prefix}[price_data][currency]`, "eur");
     params.set(`${prefix}[price_data][unit_amount]`, String(Math.round(Number(product.precoVendaEUR) * 100)));
     params.set(`${prefix}[price_data][product_data][name]`, String(product.nome).slice(0, 250));
+    params.set(
+      `${prefix}[price_data][product_data][description]`,
+      products.length > 1
+        ? `Jogo ${index + 1} de ${products.length} - ${product.plataforma || "Consola"}`
+        : String(product.plataforma || "Consola")
+    );
     params.set(`${prefix}[price_data][product_data][images][0]`, productImageUrl(product));
     params.set(`${prefix}[price_data][product_data][metadata][product_id]`, product.id);
     params.set(`${prefix}[price_data][product_data][metadata][platform]`, product.plataforma || "Consola");

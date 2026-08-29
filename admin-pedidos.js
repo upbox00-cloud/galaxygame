@@ -28,6 +28,7 @@
     visitsHistory: [],
     presenceLoading: false,
     loading: false,
+    refreshing: false,
     booted: false
   };
 
@@ -303,7 +304,7 @@
       value: Number(item.count || 0)
     }));
     const visits = values.reduce((sum, item) => sum + item.value, 0);
-    total.textContent = `${visits} ${visits === 1 ? "visita" : "visitas"}`;
+    total.textContent = `${visits} ${visits === 1 ? "visitante único" : "visitantes únicos"}`;
     if (!values.length || !visits) {
       container.innerHTML = '<div class="admin-chart-empty"><span>Ainda não existem visitas registadas neste período.<br>O gráfico será preenchido automaticamente.</span></div>';
       return;
@@ -706,6 +707,30 @@
     }
   }
 
+  async function refreshDashboard() {
+    if (state.refreshing) return;
+    state.refreshing = true;
+    const buttons = [...document.querySelectorAll("[data-admin-refresh]")];
+    const updated = document.querySelector("[data-admin-updated]");
+    buttons.forEach((button) => {
+      button.disabled = true;
+      button.setAttribute("aria-busy", "true");
+      button.classList.add("admin-refreshing");
+    });
+    if (updated) updated.textContent = "A atualizar...";
+    try {
+      await Promise.allSettled([loadOrders(), loadCatalog(), loadPresence()]);
+      if (updated) updated.textContent = `Atualizado às ${new Intl.DateTimeFormat("pt-PT", { timeStyle: "short" }).format(new Date())}`;
+    } finally {
+      state.refreshing = false;
+      buttons.forEach((button) => {
+        button.disabled = false;
+        button.removeAttribute("aria-busy");
+        button.classList.remove("admin-refreshing");
+      });
+    }
+  }
+
   async function recoverPaidOrder(event) {
     event.preventDefault();
     const form = event.currentTarget;
@@ -770,9 +795,7 @@
     });
     setView(state.view);
     window.lucide?.createIcons();
-    loadOrders();
-    loadCatalog();
-    loadPresence();
+    refreshDashboard();
     window.setInterval(loadPresence, 20 * 1000);
   }
 
@@ -803,7 +826,7 @@
   catalogSearch?.addEventListener("input", () => { state.catalogQuery = catalogSearch.value; renderCatalog(); saveUi(); });
   customerSearch?.addEventListener("input", () => { state.customerQuery = customerSearch.value; renderCustomers(); saveUi(); });
   recoveryForm?.addEventListener("submit", recoverPaidOrder);
-  document.querySelectorAll("[data-admin-refresh]").forEach((button) => button.addEventListener("click", () => { loadOrders(); loadCatalog(); loadPresence(); }));
+  document.querySelectorAll("[data-admin-refresh]").forEach((button) => button.addEventListener("click", refreshDashboard));
   document.querySelector("[data-admin-menu]")?.addEventListener("click", () => document.body.classList.toggle("admin-menu-open"));
   document.querySelector("[data-admin-menu-close]")?.addEventListener("click", () => document.body.classList.remove("admin-menu-open"));
 

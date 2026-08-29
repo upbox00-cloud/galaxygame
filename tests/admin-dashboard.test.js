@@ -72,12 +72,21 @@ test("painel apresenta visitantes ativos com presença anónima protegida", () =
   assert.match(html, /data-admin-live-count/);
   assert.match(script, /\/\.netlify\/functions\/site-presence/);
   assert.match(script, /window\.setInterval\(loadPresence, 20 \* 1000\)/);
-  assert.match(presence, /sessionStorage\.getItem\(STORAGE_KEY\)/);
+  assert.match(presence, /localStorage\.getItem\(STORAGE_KEY\)/);
+  assert.match(presence, /navigator\.webdriver/);
+  assert.match(presence, /lighthouse\|pagespeed/);
   assert.match(presence, /HEARTBEAT_INTERVAL_MS = 45 \* 1000/);
   assert.match(presenceFunction, /requireAdmin\(context\)/);
   assert.match(presenceFunction, /event\?\.blobs\) connectLambda\(event\)/);
   assert.match(presenceFunction, /ACTIVE_WINDOW_MS = 2 \* 60 \* 1000/);
   assert.doesNotMatch(presenceFunction, /user-agent|client-ip|email/i);
+});
+
+test("botão de atualização aguarda todos os dados e dá feedback visual", () => {
+  assert.match(script, /async function refreshDashboard\(\)/);
+  assert.match(script, /Promise\.allSettled\(\[loadOrders\(\), loadCatalog\(\), loadPresence\(\)\]\)/);
+  assert.match(script, /button\.setAttribute\("aria-busy", "true"\)/);
+  assert.match(styles, /\.admin-refreshing svg/);
 });
 
 test("painel restaura a vista e os filtros ao regressar", () => {
