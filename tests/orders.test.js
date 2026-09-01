@@ -85,6 +85,17 @@ test("email de entrega PlayStation separa email e palavra-passe sem cortar os da
   assert.match(html, /overflow-wrap:anywhere/);
   assert.match(text, /cliente@example\.com/);
   assert.match(text, /Segura-123!/);
+  assert.match(html, /Tutorial em v&iacute;deo para PS5/);
+  assert.match(html, /assets\/tutorial-primaria-ps5\.mp4/);
+  assert.match(text, /assets\/tutorial-primaria-ps5\.mp4/);
+});
+
+test("tutorial em vídeo aparece apenas nas entregas PlayStation 5", () => {
+  const ps4 = orders.renderCodeEmail({ plataforma: "PlayStation 4", codigo: "conta: a senha: b" });
+  const xbox = orders.renderCodeEmail({ plataforma: "Xbox Series X|S", codigo: "ABCD" });
+
+  assert.doesNotMatch(ps4, /tutorial-primaria-ps5\.mp4/);
+  assert.doesNotMatch(xbox, /tutorial-primaria-ps5\.mp4/);
 });
 
 function createEventuallyConsistentMemoryStore() {

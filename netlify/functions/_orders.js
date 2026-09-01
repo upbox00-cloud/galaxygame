@@ -922,6 +922,8 @@ function renderCodeEmail(order) {
   const logoUrl = escapeHtml(`${siteUrl}/assets/galaxygame-email-banner.jpg`);
   const coverUrl = safeHttpUrl(order.imagem);
   const isPlayStation = /playstation|\bps\s*[45]\b/i.test(order.plataforma || order.produto || "");
+  const isPlayStation5 = /playstation\s*5|\bps\s*5\b/i.test(order.plataforma || order.produto || "");
+  const ps5TutorialUrl = escapeHtml(`${siteUrl}/assets/tutorial-primaria-ps5.mp4`);
   const deliveryTitle = isPlayStation ? "Dados da tua conta partilhada" : "O teu c&oacute;digo Xbox";
   const deliveryIntro = isPlayStation
     ? "Abaixo encontras os dados de acesso. Mant&eacute;m o email e a palavra-passe exatamente como foram enviados."
@@ -1006,6 +1008,7 @@ function renderCodeEmail(order) {
                 <h2 style="margin:0 0 15px;color:#ffffff;font-size:19px;line-height:25px;">${isPlayStation ? "Como adicionar a conta e descarregar" : "Como resgatar na Xbox"}</h2>
                 ${isPlayStation ? renderPlayStationEmailSteps() : renderXboxEmailSteps()}
                 <p style="margin:12px 0 0;color:#aaa7b1;font-size:12px;line-height:19px;">Segue tamb&eacute;m qualquer instru&ccedil;&atilde;o adicional inclu&iacute;da nos dados de entrega. Se precisares de ajuda, fala connosco antes de alterares os dados da conta.</p>
+                ${isPlayStation5 ? renderPs5Tutorial(ps5TutorialUrl) : ""}
               </td>
             </tr>
             <tr>
@@ -1093,6 +1096,7 @@ function renderDeliveryDetails(value, isPlayStation) {
 
 function renderCodeEmailText(order) {
   const isPlayStation = /playstation|\bps\s*[45]\b/i.test(order.plataforma || order.produto || "");
+  const isPlayStation5 = /playstation\s*5|\bps\s*5\b/i.test(order.plataforma || order.produto || "");
   const heading = isPlayStation ? "DADOS DA TUA CONTA PARTILHADA" : "O TEU CÓDIGO XBOX";
   return [
     "O teu jogo está pronto! - GalaxyGame",
@@ -1107,9 +1111,33 @@ function renderCodeEmailText(order) {
       ? "Na PlayStation, adiciona um utilizador, inicia sessão com os dados acima e descarrega o jogo em Biblioteca > Comprados. Não alteres os dados da conta."
       : "Na Xbox, abre a Microsoft Store, escolhe Resgatar código e introduz o código acima.",
     "",
+    ...(isPlayStation5 ? ["Tutorial em vídeo PS5:", `${publicSiteUrl()}/assets/tutorial-primaria-ps5.mp4`, ""] : []),
     `Consulta o teu pedido: ${publicSiteUrl()}/minha-conta.html`,
     "Ajuda: gamegalaxy26@gmail.com"
   ].join("\n");
+}
+
+function renderPs5Tutorial(tutorialUrl) {
+  return `
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#17121d" style="width:100%;margin-top:20px;background-color:#17121d;border:1px solid #74418f;border-radius:6px;border-collapse:separate;">
+      <tr>
+        <td align="center" style="padding:19px 16px 10px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:23px;font-weight:800;">Tutorial em v&iacute;deo para PS5</td>
+      </tr>
+      <tr>
+        <td align="center" style="padding:0 16px 16px;color:#cfc5d7;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:20px;">V&ecirc; o passo a passo para adicionar a conta e descarregar o teu jogo.</td>
+      </tr>
+      <tr>
+        <td align="center" style="padding:0 16px 20px;">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" bgcolor="#ff6a00" style="background-color:#ff6a00;border-radius:5px;">
+            <tr>
+              <td align="center">
+                <a href="${tutorialUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:14px 24px;color:#171117;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:18px;font-weight:800;text-decoration:none;">Assistir ao tutorial PS5</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>`;
 }
 
 function renderEmailStep(number, text) {
