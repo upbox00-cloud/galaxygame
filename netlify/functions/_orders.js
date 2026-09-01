@@ -774,7 +774,8 @@ async function sendCodeEmail(order) {
       to: [order.clienteEmail],
       reply_to: "gamegalaxy26@gmail.com",
       subject: "O teu jogo est\u00e1 pronto! \ud83c\udfae GalaxyGame",
-      html: renderCodeEmail(order)
+      html: renderCodeEmail(order),
+      text: renderCodeEmailText(order)
     })
   });
 
@@ -922,6 +923,7 @@ function renderCodeEmail(order) {
   const deliveryIntro = isPlayStation
     ? "Abaixo encontras os dados de acesso. Mant&eacute;m o email e a palavra-passe exatamente como foram enviados."
     : "Copia o c&oacute;digo abaixo exatamente como aparece e resgata-o na tua conta Xbox.";
+  const deliveryDetails = renderDeliveryDetails(order.codigo, isPlayStation);
   const coverCell = coverUrl ? `
     <td width="122" valign="middle" style="width:122px;padding:16px 8px 16px 16px;">
       <img src="${escapeHtml(coverUrl)}" width="104" alt="Capa de ${product}" style="display:block;width:104px;max-width:104px;height:auto;border:0;border-radius:6px;outline:none;text-decoration:none;" />
@@ -979,7 +981,7 @@ function renderCodeEmail(order) {
                     <td align="center" style="padding:21px 14px 23px;">
                       <p style="margin:0 0 7px;color:#ffffff;font-size:17px;line-height:23px;font-weight:800;">${deliveryTitle}</p>
                       <p style="margin:0 auto 16px;max-width:470px;color:#cfc5d7;font-size:12px;line-height:18px;">${deliveryIntro}</p>
-                      <div style="margin:0;padding:16px 18px;background-color:#17121d;border:1px solid #74418f;border-radius:6px;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:${isPlayStation ? "17px" : "25px"};line-height:${isPlayStation ? "27px" : "34px"};font-weight:700;text-align:left;white-space:pre-wrap;word-break:break-word;">${code}</div>
+                      ${deliveryDetails || `<div style="margin:0;padding:16px 18px;background-color:#17121d;border:1px solid #74418f;border-radius:6px;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:${isPlayStation ? "17px" : "25px"};line-height:${isPlayStation ? "27px" : "34px"};font-weight:700;text-align:left;white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere;">${code}</div>`}
                     </td>
                   </tr>
                 </table>
@@ -1023,6 +1025,88 @@ function renderCodeEmail(order) {
   </body>
 </html>
   `;
+}
+
+function parsePlayStationDelivery(value) {
+  const source = String(value || "").trim();
+  const fields = { email: "", password: "", extra: "" };
+  if (!source) return fields;
+
+  const labels = "email|e-mail|login|utilizador|usu[aá]rio|conta|palavra[- ]?passe|senha|password";
+  const pattern = new RegExp(`(^|[\\s\\r\\n;|])(${labels})\\s*(?::|=|-)\\s*`, "gi");
+  const markers = [];
+  let match;
+
+  while ((match = pattern.exec(source))) {
+    markers.push({ label: match[2], start: match.index, valueStart: pattern.lastIndex });
+  }
+
+  if (!markers.length) return fields;
+
+  const extra = [];
+  const prefix = source.slice(0, markers[0].start).replace(/^[\s;|:-]+|[\s;|:-]+$/g, "").trim();
+  if (prefix) extra.push(prefix);
+
+  markers.forEach((marker, index) => {
+    const nextStart = markers[index + 1]?.start ?? source.length;
+    const label = marker.label.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const content = source.slice(marker.valueStart, nextStart).replace(/^[\s;|:-]+|[\s;|:-]+$/g, "").trim();
+    if (!content) return;
+    if (/palavra|senha|password/.test(label)) {
+      if (!fields.password) fields.password = content;
+      else extra.push(`${marker.label}: ${content}`);
+    } else if (!fields.email) {
+      fields.email = content;
+    } else {
+      extra.push(`${marker.label}: ${content}`);
+    }
+  });
+
+  fields.extra = extra.join("\n");
+  return fields;
+}
+
+function renderDeliveryRow(label, value) {
+  if (!value) return "";
+  return `
+    <tr>
+      <td style="padding:13px 14px;border-bottom:1px solid #403449;color:#ffb27d;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:17px;font-weight:800;text-transform:uppercase;">${label}</td>
+      <td style="padding:13px 14px;border-bottom:1px solid #403449;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:17px;line-height:25px;font-weight:700;word-break:break-all;overflow-wrap:anywhere;">${escapeHtml(value)}</td>
+    </tr>`;
+}
+
+function renderDeliveryDetails(value, isPlayStation) {
+  if (!isPlayStation) return "";
+  const details = parsePlayStationDelivery(value);
+  if (!details.email && !details.password) return "";
+
+  return `
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#17121d" style="width:100%;background-color:#17121d;border:1px solid #74418f;border-radius:6px;border-collapse:separate;">
+      ${renderDeliveryRow("Email / utilizador", details.email)}
+      ${renderDeliveryRow("Palavra-passe", details.password)}
+      ${renderDeliveryRow("Informa&ccedil;&atilde;o adicional", details.extra)}
+    </table>`;
+}
+
+function renderCodeEmailText(order) {
+  const isPlayStation = /playstation|\bps\s*[45]\b/i.test(order.plataforma || order.produto || "");
+  const heading = isPlayStation ? "DADOS DA TUA CONTA PARTILHADA" : "O TEU CÓDIGO XBOX";
+  return [
+    "O teu jogo está pronto! - GalaxyGame",
+    "",
+    `Olá, ${order.clienteNome || "cliente"}!`,
+    `${order.produto || "Jogo digital GalaxyGame"} - ${order.plataforma || "Consola"}`,
+    "",
+    heading,
+    String(order.codigo || ""),
+    "",
+    isPlayStation
+      ? "Na PlayStation, adiciona um utilizador, inicia sessão com os dados acima e descarrega o jogo em Biblioteca > Comprados. Não alteres os dados da conta."
+      : "Na Xbox, abre a Microsoft Store, escolhe Resgatar código e introduz o código acima.",
+    "",
+    `Consulta o teu pedido: ${publicSiteUrl()}/minha-conta.html`,
+    "Ajuda: gamegalaxy26@gmail.com"
+  ].join("\n");
 }
 
 function renderEmailStep(number, text) {
@@ -1115,6 +1199,7 @@ module.exports = {
   finishWebhookEvent,
   listFallbackOrders,
   renderCodeEmail,
+  renderCodeEmailText,
   _test: {
     setOrdersStoreFactory(factory) {
       ordersStoreFactory = factory || defaultOrdersStoreFactory;

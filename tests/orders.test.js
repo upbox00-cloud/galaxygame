@@ -68,6 +68,25 @@ test("rotas de pedidos inicializam Netlify Blobs no modo Lambda", () => {
   });
 });
 
+test("email de entrega PlayStation separa email e palavra-passe sem cortar os dados", () => {
+  const order = {
+    clienteNome: "Carlos",
+    produto: "Jogo PlayStation",
+    plataforma: "PlayStation 5",
+    codigo: "conta: cliente@example.com senha: Segura-123!"
+  };
+  const html = orders.renderCodeEmail(order);
+  const text = orders.renderCodeEmailText(order);
+
+  assert.match(html, /Email \/ utilizador/);
+  assert.match(html, /cliente@example\.com/);
+  assert.match(html, /Palavra-passe/);
+  assert.match(html, /Segura-123!/);
+  assert.match(html, /overflow-wrap:anywhere/);
+  assert.match(text, /cliente@example\.com/);
+  assert.match(text, /Segura-123!/);
+});
+
 function createEventuallyConsistentMemoryStore() {
   const values = new Map();
   const staleValues = new Map();
