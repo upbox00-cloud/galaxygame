@@ -565,6 +565,53 @@ test("Airtable adapta Status para Estado quando a base usa o nome portugues", as
   }
 });
 
+test("Airtable guarda o pedido mesmo quando LinkFornecedor não existe na tabela", async () => {
+  const previousBase = process.env.AIRTABLE_BASE_ID;
+  const previousToken = process.env.AIRTABLE_TOKEN;
+  const originalFetch = global.fetch;
+  const requests = [];
+  process.env.AIRTABLE_BASE_ID = "app_test";
+  process.env.AIRTABLE_TOKEN = "pat_test";
+  global.fetch = async (_url, options) => {
+    const payload = JSON.parse(options.body);
+    requests.push(payload);
+    if (requests.length === 1) {
+      return new Response(JSON.stringify({ error: { message: 'Unknown field name: "LinkFornecedor"' } }), {
+        status: 422,
+        headers: { "content-type": "application/json" }
+      });
+    }
+    return new Response(JSON.stringify({
+      records: [{ id: "rec_link_optional", fields: payload.records[0].fields }]
+    }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+
+  try {
+    const order = await orders.upsertOrderByStripeSessionId({
+      ClienteEmail: "cliente@example.com",
+      Produto: "Jogo teste",
+      Status: "Aguardando codigo",
+      StripeSessionId: "cs_test_optional_link",
+      Fornecedor: "TCA Games",
+      LinkFornecedor: "https://www.lojatcagames.com.br/products/jogo"
+    });
+    assert.equal(requests.length, 2);
+    assert.equal(requests[0].records[0].fields.LinkFornecedor, "https://www.lojatcagames.com.br/products/jogo");
+    assert.equal(requests[1].records[0].fields.LinkFornecedor, undefined);
+    assert.equal(requests[1].records[0].fields.Fornecedor, "TCA Games");
+    assert.equal(order.stripeSessionId, "cs_test_optional_link");
+  } finally {
+    global.fetch = originalFetch;
+    if (previousBase === undefined) delete process.env.AIRTABLE_BASE_ID;
+    else process.env.AIRTABLE_BASE_ID = previousBase;
+    if (previousToken === undefined) delete process.env.AIRTABLE_TOKEN;
+    else process.env.AIRTABLE_TOKEN = previousToken;
+  }
+});
+
 test("Airtable recebe os campos comerciais com os nomes exatos da tabela Pedidos", async () => {
   const previousBase = process.env.AIRTABLE_BASE_ID;
   const previousToken = process.env.AIRTABLE_TOKEN;

@@ -17,6 +17,7 @@ const AIRTABLE_FIELD_ALIASES = Object.freeze({
   custoFornecedorBRL: "CustoFornecedorBRL",
   supplierCostBRL: "CustoFornecedorBRL"
 });
+const AIRTABLE_OPTIONAL_FIELDS = new Set(["LinkFornecedor"]);
 // The Lambda runtime does not expose the uncached edge URL required by
 // Netlify Blobs strong consistency. The default store remains persistent and
 // works in every deployed function that reads or updates an order.
@@ -158,16 +159,18 @@ async function writeAirtableRecords(method, records, performUpsert) {
         : "";
       const appearsInRecords = field && mutableRecords.some((record) => Object.hasOwn(record.fields, field));
       const alias = aliases[field];
-      if (!appearsInRecords || !alias) throw error;
+      const canOmit = AIRTABLE_OPTIONAL_FIELDS.has(field);
+      if (!appearsInRecords || (!alias && !canOmit)) throw error;
 
       mutableRecords.forEach((record) => {
         if (!Object.hasOwn(record.fields, field)) return;
-        if (!Object.hasOwn(record.fields, alias)) record.fields[alias] = record.fields[field];
+        if (alias && !Object.hasOwn(record.fields, alias)) record.fields[alias] = record.fields[field];
         delete record.fields[field];
       });
-      console.warn("[orders:airtable-schema] campo incompatível adaptado", {
+      console.warn("[orders:airtable-schema] campo incompatível tratado", {
         field,
-        replacement: alias || null
+        replacement: alias || null,
+        omitted: canOmit && !alias
       });
     }
   }
