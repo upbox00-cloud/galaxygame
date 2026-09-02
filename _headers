@@ -4,7 +4,7 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
 
 /data/*.json
-  Cache-Control: public, max-age=300
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /assets/*
   Cache-Control: public, max-age=31536000, immutable

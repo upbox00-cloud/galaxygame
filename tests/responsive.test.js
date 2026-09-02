@@ -47,6 +47,13 @@ test("home entrega o LCP e as capas de forma responsiva sem perder qualidade", (
   assert.doesNotMatch(homeScript, /new Image\(\)/);
   assert.match(siteStyles, /content-visibility:\s*auto/);
   assert.match(netlifyConfig, /\[images\][\s\S]*remote_images/);
+  assert.doesNotMatch(homeHtml, /rel="preload"[^>]+styles\.home\.min\.css/);
+});
+
+test("catalogo publico usa cache rapido com revalidacao em segundo plano", () => {
+  const headers = fs.readFileSync("_headers", "utf8");
+  assert.match(headers, /\/data\/\*\.json[\s\S]*max-age=3600, stale-while-revalidate=86400/);
+  assert.match(netlifyConfig, /\/data\/\*\.json[\s\S]*max-age=3600, stale-while-revalidate=86400/);
 });
 
 test("checkout convidado recolhe o email no Stripe e mantem controlos adequados no mobile", () => {
