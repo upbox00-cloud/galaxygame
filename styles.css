@@ -2372,19 +2372,24 @@ body.password-recovery-open .sales-chat {
   position: absolute;
   inset: 0;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border: 0;
   opacity: 0;
   pointer-events: none;
-  background: transparent;
-  transform: scale(1.03);
-  transition: opacity 220ms ease, transform 420ms ease;
+  overflow: hidden;
+  background: #080808;
+  transition: opacity 220ms ease;
 }
 
 .cover-video iframe {
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   border: 0;
 }
 
@@ -2414,12 +2419,10 @@ body.password-recovery-open .sales-chat {
 
 .game-card.video-playing .cover-video {
   opacity: 1;
-  transform: scale(1);
 }
 
 .related-card-link.video-playing .cover-video {
   opacity: 1;
-  transform: scale(1);
 }
 
 .game-card.video-playing .cover::before {

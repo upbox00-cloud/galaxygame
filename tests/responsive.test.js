@@ -8,6 +8,14 @@ const adminStyles = fs.readFileSync("admin-dashboard.css", "utf8");
 const homeHtml = fs.readFileSync("index.html", "utf8");
 const homeScript = fs.readFileSync("home.js", "utf8");
 const siteStyles = fs.readFileSync("styles.css", "utf8");
+const cssBuildScript = fs.readFileSync("scripts/build-css.js", "utf8");
+
+test("trailers dos cards mantêm a proporção 16:9 sem zoom", () => {
+  assert.match(siteStyles, /\.cover-video\s*\{[^}]*align-items:\s*center;[^}]*justify-content:\s*center;[^}]*overflow:\s*hidden;/s);
+  assert.match(siteStyles, /\.cover-video iframe\s*\{[^}]*height:\s*auto;[^}]*aspect-ratio:\s*16\s*\/\s*9;/s);
+  assert.doesNotMatch(siteStyles, /\.cover-video\s*\{[^}]*transform:\s*scale\(/s);
+  assert.match(cssBuildScript, /dynamicMediaPattern\s*=\s*\/\^\(cover-video\|card-preview-video\)/);
+});
 const netlifyConfig = fs.readFileSync("netlify.toml", "utf8");
 const cartHtml = fs.readFileSync("carrinho.html", "utf8");
 const cartScript = fs.readFileSync("cart.js", "utf8");

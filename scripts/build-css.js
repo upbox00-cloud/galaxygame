@@ -20,6 +20,7 @@ const homeContent = [
 ].map((file) => path.join(root, file));
 
 const dynamicStatePattern = /^(active|hidden|visible|loaded|open|ready|is-|has-|mobile-|auth-|chat-|cart-|catalog-|category-|recommendation-|news-|release-|platform-|search-|skeleton-|reveal|footer)/;
+const dynamicMediaPattern = /^(cover-video|card-preview-video)$/;
 
 async function minify(css) {
   const result = await esbuild.transform(css, {
@@ -41,9 +42,9 @@ async function build() {
     })),
     css: [{ raw: source }],
     safelist: {
-      standard: [dynamicStatePattern],
-      deep: [dynamicStatePattern],
-      greedy: [dynamicStatePattern]
+      standard: [dynamicStatePattern, dynamicMediaPattern],
+      deep: [dynamicStatePattern, dynamicMediaPattern],
+      greedy: [dynamicStatePattern, dynamicMediaPattern]
     }
   });
   fs.writeFileSync(path.join(root, "styles.home.min.css"), await minify(home.css));
