@@ -68,7 +68,7 @@ test("rotas de pedidos inicializam Netlify Blobs no modo Lambda", () => {
   });
 });
 
-test("email de entrega PlayStation separa email e palavra-passe sem cortar os dados", () => {
+test("email de entrega PlayStation preserva os dados sem cortar ou reordenar", () => {
   const order = {
     clienteNome: "Carlos",
     produto: "Jogo PlayStation",
@@ -78,9 +78,8 @@ test("email de entrega PlayStation separa email e palavra-passe sem cortar os da
   const html = orders.renderCodeEmail(order);
   const text = orders.renderCodeEmailText(order);
 
-  assert.match(html, /Email \/ utilizador/);
+  assert.match(html, /conta: cliente@example\.com senha: Segura-123!/);
   assert.match(html, /cliente@example\.com/);
-  assert.match(html, /Palavra-passe/);
   assert.match(html, /Segura-123!/);
   assert.match(html, /overflow-wrap:anywhere/);
   assert.match(text, /cliente@example\.com/);
@@ -92,23 +91,36 @@ test("email de entrega PlayStation separa email e palavra-passe sem cortar os da
   assert.match(text, /Sábado: 9h-19h/);
 });
 
-test("email preserva instruções do produto sem as misturar com a palavra-passe", () => {
+test("email preserva exatamente o formato recebido do fornecedor", () => {
+  const supplierText = [
+    "*FC 26  PS5 PRIMÁRIA*",
+    "Email: donovan92anto@outlook.com",
+    "Senha: antvanan92",
+    "",
+    "⚠️ Código depois da senha: *8Pfa8a*",
+    "Obs: Digitar maiúsculas e minúsculas",
+    "⚠️ APÓS ATIVAR FAÇA LOGOUT PARA DESCONECTAR O PERFIL  E VOLTE PARA O SEU PERFIL PESSOAL."
+  ].join("\n");
   const html = orders.renderCodeEmail({
     produto: "FC 26 PS5",
     plataforma: "PlayStation 5",
-    codigo: [
-      "Email: jogador@example.com",
-      "Senha: Passe-Segura-123",
-      "***TUTORIAL DE INSTALAÇÃO - CONTA PRIMÁRIA PS5***",
-      "Código após instalar: 9876",
-      "***FC 26 PS5 PRIMÁRIA*** senha auxiliar: não alterar"
-    ].join("\n")
+    codigo: supplierText
   });
 
-  assert.match(html, /Palavra-passe[\s\S]*Passe-Segura-123/);
-  assert.match(html, /Informa&ccedil;&atilde;o adicional[\s\S]*TUTORIAL DE INSTALAÇÃO/);
-  assert.match(html, /senha auxiliar: não alterar/);
+  const escapedSupplierText = supplierText.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  assert.ok(html.includes(escapedSupplierText));
+  assert.ok(html.indexOf("*FC 26  PS5 PRIMÁRIA*") < html.indexOf("Email: donovan92anto@outlook.com"));
+  assert.ok(html.indexOf("Email: donovan92anto@outlook.com") < html.indexOf("Senha: antvanan92"));
+  assert.ok(html.indexOf("Senha: antvanan92") < html.indexOf("Código depois da senha: *8Pfa8a*"));
+  assert.match(html, /white-space:pre-wrap/);
   assert.doesNotMatch(html, /word-break:break-all/);
+
+  const text = orders.renderCodeEmailText({
+    produto: "FC 26 PS5",
+    plataforma: "PlayStation 5",
+    codigo: supplierText
+  });
+  assert.ok(text.includes(supplierText));
 });
 
 test("tutorial em vídeo aparece apenas nas entregas PlayStation 5", () => {
@@ -1283,7 +1295,8 @@ test("email de entrega usa tabelas, estilos inline e imagens acessíveis", () =>
   assert.match(html, /<img[^>]+width="600"[^>]+alt="GalaxyGame - Jogos Digitais"/);
   assert.match(html, /alt="GalaxyGame - Jogos Digitais"/);
   assert.match(html, /alt="Capa de Jogo &lt;Especial&gt;"/);
-  assert.match(html, /font-family:'Courier New'/);
+  assert.match(html, /font-family:Arial,Helvetica,sans-serif/);
+  assert.match(html, /white-space:pre-wrap/);
   assert.match(html, />ABCD-1234</);
   assert.match(html, />Ver o meu pedido</);
   assert.match(html, /Dados da tua conta partilhada/);

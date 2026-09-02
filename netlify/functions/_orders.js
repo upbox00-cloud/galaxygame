@@ -1034,74 +1034,11 @@ function renderCodeEmail(order) {
   `;
 }
 
-function parsePlayStationDelivery(value) {
-  const source = String(value || "").trim();
-  const fields = { email: "", password: "", extra: "" };
-  if (!source) return fields;
-
-  const labels = "email|e-mail|login|utilizador|usu[aá]rio|conta|palavra[- ]?passe|senha|password";
-  const extra = [];
-  const credentialPattern = new RegExp(`(^|\\s)(${labels})\\s*(?::|=|-)\\s*`, "gi");
-
-  source.split(/\r?\n/).forEach((rawLine) => {
-    const line = rawLine.trim();
-    if (!line) return;
-    const normalizedLine = line.replace(/^[-•]\s*/, "");
-    const markers = [];
-    let match;
-    credentialPattern.lastIndex = 0;
-    while ((match = credentialPattern.exec(normalizedLine))) {
-      markers.push({ label: match[2], start: match.index, valueStart: credentialPattern.lastIndex });
-    }
-
-    const prefix = markers.length ? normalizedLine.slice(0, markers[0].start).trim() : normalizedLine;
-    if (!markers.length || prefix || /^\*{2,}|^tutorial\b|^instru[cç][oõ]es?\b/i.test(normalizedLine)) {
-      extra.push(line);
-      return;
-    }
-
-    markers.forEach((marker, index) => {
-      const nextStart = markers[index + 1]?.start ?? normalizedLine.length;
-      const label = marker.label.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-      const content = normalizedLine.slice(marker.valueStart, nextStart).replace(/^[\s;|:-]+|[\s;|:-]+$/g, "").trim();
-      if (!content) return;
-      if (/palavra|senha|password/.test(label)) {
-        if (!fields.password) fields.password = content;
-        else extra.push(`${marker.label}: ${content}`);
-      } else if (!fields.email) {
-        fields.email = content;
-      } else {
-        extra.push(`${marker.label}: ${content}`);
-      }
-    });
-  });
-
-  fields.extra = extra.join("\n");
-  return fields;
-}
-
-function renderDeliveryRow(label, value) {
-  if (!value) return "";
-  return `
-    <tr>
-      <td style="padding:15px 16px;border-bottom:1px solid #403449;text-align:left;">
-        <p style="margin:0 0 7px;color:#ffb27d;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:17px;font-weight:800;text-transform:uppercase;">${label}</p>
-        <div style="margin:0;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:16px;line-height:24px;font-weight:700;white-space:pre-wrap;word-break:normal;overflow-wrap:anywhere;">${escapeHtml(value)}</div>
-      </td>
-    </tr>`;
-}
-
 function renderDeliveryDetails(value, isPlayStation) {
   if (!isPlayStation) return "";
-  const details = parsePlayStationDelivery(value);
-  if (!details.email && !details.password) return "";
-
-  return `
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#17121d" style="width:100%;background-color:#17121d;border:1px solid #74418f;border-radius:6px;border-collapse:separate;">
-      ${renderDeliveryRow("Email / utilizador", details.email)}
-      ${renderDeliveryRow("Palavra-passe", details.password)}
-      ${renderDeliveryRow("Informa&ccedil;&atilde;o adicional", details.extra)}
-    </table>`;
+  const content = String(value || "").trim();
+  if (!content) return "";
+  return `<div style="margin:0;padding:18px;background-color:#17121d;border:1px solid #74418f;border-radius:6px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;font-weight:600;text-align:left;white-space:pre-wrap;word-break:normal;overflow-wrap:anywhere;">${escapeHtml(content)}</div>`;
 }
 
 function renderCodeEmailText(order) {
