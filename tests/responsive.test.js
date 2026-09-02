@@ -28,6 +28,8 @@ test("rodape partilhado usa o mesmo layout nas paginas legais e na loja", () => 
   assert.match(legalStyles, /\.footer-logo\s*\{[^}]*width:\s*min\(240px, 100%\)/s);
   assert.match(legalStyles, /padding:\s*38px max\(24px, calc\(\(100% - 1120px\) \/ 2\)\) 26px/);
   assert.match(legalStyles, /@media \(max-width: 560px\)[\s\S]*\.legal-footer\s*\{[^}]*grid-template-columns:\s*1fr/s);
+  assert.match(footerScript, /Segunda a sexta: 10h-22h/);
+  assert.match(footerScript, /S&aacute;bado: 9h-19h/);
 });
 
 test("painel administrativo contem textos longos dentro dos cartoes no mobile", () => {

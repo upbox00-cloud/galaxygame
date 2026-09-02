@@ -11,6 +11,7 @@
         <img class="footer-logo" src="assets/galaxygame-header-logo.webp" alt="GalaxyGame" width="620" height="413" loading="lazy" decoding="async">
       </a>
       <p>Jogos digitais para PlayStation 4, PlayStation 5, Xbox One e Xbox Series X|S, com compra clara e apoio pensado para jogadores em Portugal.</p>
+      <p style="margin-top:14px;line-height:1.55;"><strong style="display:block;margin-bottom:4px;color:#ffffff;">Hor&aacute;rio de atendimento e prepara&ccedil;&atilde;o</strong><span style="display:block;">Segunda a sexta: 10h-22h</span><span style="display:block;">S&aacute;bado: 9h-19h</span></p>
     </div>
 
     <nav class="footer-links" aria-label="Links do rodape">

@@ -808,7 +808,7 @@ async function sendOrderConfirmationEmail(order) {
       to: [order.clienteEmail],
       reply_to: "gamegalaxy26@gmail.com",
       subject: "Recebemos o teu pedido - GalaxyGame",
-      html: `<!doctype html><html lang="pt-PT"><body style="margin:0;background:#111116;color:#f7f5fb;font-family:Arial,Helvetica,sans-serif;"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#111116"><tr><td align="center" style="padding:24px 12px;"><table role="presentation" width="600" cellspacing="0" cellpadding="0" bgcolor="#1c1c22" style="width:100%;max-width:600px;border:1px solid #35343d;border-radius:8px;"><tr><td align="center" bgcolor="#241a32" style="padding:26px;background:#241a32;"><img src="${logoUrl}" width="250" alt="GalaxyGame - Jogos Digitais" style="display:block;max-width:90%;height:auto;border:0;"><h1 style="margin:18px 0 0;color:#fff;font-size:27px;">Pedido confirmado</h1></td></tr><tr><td style="padding:28px;color:#f7f5fb;"><p style="font-size:19px;font-weight:700;">Ola, ${safeName}!</p><p style="color:#cbc8d2;line-height:1.6;">O pagamento foi confirmado e o teu pedido ja aparece em Minha Conta &gt; Meus Pedidos.</p><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#28262f" style="margin:22px 0;border:1px solid #403d48;border-radius:6px;"><tr><td style="padding:18px;"><strong style="display:block;color:#fff;font-size:18px;">${product}</strong><span style="display:block;margin-top:8px;color:#ff8a3d;">${platform}</span><span style="display:block;margin-top:12px;color:#cbc8d2;">Estado: A aguardar preparacao do codigo</span></td></tr></table><p style="color:#cbc8d2;line-height:1.6;">Assim que o codigo ou os dados de acesso forem preparados, ficam disponiveis na tua conta e recebes um novo email.</p><table role="presentation" cellspacing="0" cellpadding="0" align="center"><tr><td bgcolor="#ff6a00" style="border-radius:6px;"><a href="${accountUrl}" style="display:inline-block;padding:14px 24px;color:#171117;font-weight:800;text-decoration:none;">Acompanhar o meu pedido</a></td></tr></table></td></tr><tr><td align="center" style="padding:20px 28px;border-top:1px solid #3a3941;color:#aaa7b1;font-size:12px;line-height:1.6;">Precisas de ajuda? <a href="mailto:gamegalaxy26@gmail.com" style="color:#ff8a3d;">gamegalaxy26@gmail.com</a><br>&copy; 2026 GalaxyGame.</td></tr></table></td></tr></table></body></html>`
+      html: `<!doctype html><html lang="pt-PT"><body style="margin:0;background:#111116;color:#f7f5fb;font-family:Arial,Helvetica,sans-serif;"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#111116"><tr><td align="center" style="padding:24px 12px;"><table role="presentation" width="600" cellspacing="0" cellpadding="0" bgcolor="#1c1c22" style="width:100%;max-width:600px;border:1px solid #35343d;border-radius:8px;"><tr><td align="center" bgcolor="#241a32" style="padding:26px;background:#241a32;"><img src="${logoUrl}" width="250" alt="GalaxyGame - Jogos Digitais" style="display:block;max-width:90%;height:auto;border:0;"><h1 style="margin:18px 0 0;color:#fff;font-size:27px;">Pedido confirmado</h1></td></tr><tr><td style="padding:28px;color:#f7f5fb;"><p style="font-size:19px;font-weight:700;">Ola, ${safeName}!</p><p style="color:#cbc8d2;line-height:1.6;">O pagamento foi confirmado e o teu pedido ja aparece em Minha Conta &gt; Meus Pedidos.</p><table role="presentation" width="100%" cellspacing="0" cellpadding="0" bgcolor="#28262f" style="margin:22px 0;border:1px solid #403d48;border-radius:6px;"><tr><td style="padding:18px;"><strong style="display:block;color:#fff;font-size:18px;">${product}</strong><span style="display:block;margin-top:8px;color:#ff8a3d;">${platform}</span><span style="display:block;margin-top:12px;color:#cbc8d2;">Estado: A aguardar preparacao do codigo</span></td></tr></table><p style="color:#cbc8d2;line-height:1.6;">Assim que o codigo ou os dados de acesso forem preparados, ficam disponiveis na tua conta e recebes um novo email.</p><p style="margin:18px 0;color:#cbc8d2;line-height:1.6;"><strong style="color:#ffffff;">Hor&aacute;rio de atendimento e prepara&ccedil;&atilde;o:</strong><br>Segunda a sexta: 10h-22h<br>S&aacute;bado: 9h-19h</p><table role="presentation" cellspacing="0" cellpadding="0" align="center"><tr><td bgcolor="#ff6a00" style="border-radius:6px;"><a href="${accountUrl}" style="display:inline-block;padding:14px 24px;color:#171117;font-weight:800;text-decoration:none;">Acompanhar o meu pedido</a></td></tr></table></td></tr><tr><td align="center" style="padding:20px 28px;border-top:1px solid #3a3941;color:#aaa7b1;font-size:12px;line-height:1.6;">Precisas de ajuda? <a href="mailto:gamegalaxy26@gmail.com" style="color:#ff8a3d;">gamegalaxy26@gmail.com</a><br>&copy; 2026 GalaxyGame.</td></tr></table></td></tr></table></body></html>`
     })
   });
   const text = await response.text();
@@ -1017,6 +1017,7 @@ function renderCodeEmail(order) {
                   <tr>
                     <td align="center" style="padding-top:21px;color:#aaa7b1;">
                       <p style="margin:0 0 8px;font-size:13px;line-height:20px;">Precisas de ajuda? Escreve para <a href="mailto:gamegalaxy26@gmail.com" style="color:#ff8a3d;text-decoration:none;">gamegalaxy26@gmail.com</a></p>
+                      <p style="margin:0 0 8px;font-size:12px;line-height:19px;"><strong style="color:#ffffff;">Hor&aacute;rio de atendimento e prepara&ccedil;&atilde;o</strong><br>Segunda a sexta: 10h-22h<br>S&aacute;bado: 9h-19h</p>
                       <p style="margin:0 0 8px;font-size:12px;line-height:18px;">Este &eacute; um email autom&aacute;tico, mas respondemos sempre que precisares de ajuda.</p>
                       <p style="margin:0;font-size:12px;line-height:18px;">&copy; 2026 GalaxyGame. Todos os direitos reservados.</p>
                     </td>
@@ -1039,33 +1040,40 @@ function parsePlayStationDelivery(value) {
   if (!source) return fields;
 
   const labels = "email|e-mail|login|utilizador|usu[aá]rio|conta|palavra[- ]?passe|senha|password";
-  const pattern = new RegExp(`(^|[\\s\\r\\n;|])(${labels})\\s*(?::|=|-)\\s*`, "gi");
-  const markers = [];
-  let match;
-
-  while ((match = pattern.exec(source))) {
-    markers.push({ label: match[2], start: match.index, valueStart: pattern.lastIndex });
-  }
-
-  if (!markers.length) return fields;
-
   const extra = [];
-  const prefix = source.slice(0, markers[0].start).replace(/^[\s;|:-]+|[\s;|:-]+$/g, "").trim();
-  if (prefix) extra.push(prefix);
+  const credentialPattern = new RegExp(`(^|\\s)(${labels})\\s*(?::|=|-)\\s*`, "gi");
 
-  markers.forEach((marker, index) => {
-    const nextStart = markers[index + 1]?.start ?? source.length;
-    const label = marker.label.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    const content = source.slice(marker.valueStart, nextStart).replace(/^[\s;|:-]+|[\s;|:-]+$/g, "").trim();
-    if (!content) return;
-    if (/palavra|senha|password/.test(label)) {
-      if (!fields.password) fields.password = content;
-      else extra.push(`${marker.label}: ${content}`);
-    } else if (!fields.email) {
-      fields.email = content;
-    } else {
-      extra.push(`${marker.label}: ${content}`);
+  source.split(/\r?\n/).forEach((rawLine) => {
+    const line = rawLine.trim();
+    if (!line) return;
+    const normalizedLine = line.replace(/^[-•]\s*/, "");
+    const markers = [];
+    let match;
+    credentialPattern.lastIndex = 0;
+    while ((match = credentialPattern.exec(normalizedLine))) {
+      markers.push({ label: match[2], start: match.index, valueStart: credentialPattern.lastIndex });
     }
+
+    const prefix = markers.length ? normalizedLine.slice(0, markers[0].start).trim() : normalizedLine;
+    if (!markers.length || prefix || /^\*{2,}|^tutorial\b|^instru[cç][oõ]es?\b/i.test(normalizedLine)) {
+      extra.push(line);
+      return;
+    }
+
+    markers.forEach((marker, index) => {
+      const nextStart = markers[index + 1]?.start ?? normalizedLine.length;
+      const label = marker.label.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+      const content = normalizedLine.slice(marker.valueStart, nextStart).replace(/^[\s;|:-]+|[\s;|:-]+$/g, "").trim();
+      if (!content) return;
+      if (/palavra|senha|password/.test(label)) {
+        if (!fields.password) fields.password = content;
+        else extra.push(`${marker.label}: ${content}`);
+      } else if (!fields.email) {
+        fields.email = content;
+      } else {
+        extra.push(`${marker.label}: ${content}`);
+      }
+    });
   });
 
   fields.extra = extra.join("\n");
@@ -1076,8 +1084,10 @@ function renderDeliveryRow(label, value) {
   if (!value) return "";
   return `
     <tr>
-      <td style="padding:13px 14px;border-bottom:1px solid #403449;color:#ffb27d;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:17px;font-weight:800;text-transform:uppercase;">${label}</td>
-      <td style="padding:13px 14px;border-bottom:1px solid #403449;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:17px;line-height:25px;font-weight:700;word-break:break-all;overflow-wrap:anywhere;">${escapeHtml(value)}</td>
+      <td style="padding:15px 16px;border-bottom:1px solid #403449;text-align:left;">
+        <p style="margin:0 0 7px;color:#ffb27d;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:17px;font-weight:800;text-transform:uppercase;">${label}</p>
+        <div style="margin:0;color:#ffffff;font-family:'Courier New',Courier,monospace;font-size:16px;line-height:24px;font-weight:700;white-space:pre-wrap;word-break:normal;overflow-wrap:anywhere;">${escapeHtml(value)}</div>
+      </td>
     </tr>`;
 }
 
@@ -1112,6 +1122,10 @@ function renderCodeEmailText(order) {
       : "Na Xbox, abre a Microsoft Store, escolhe Resgatar código e introduz o código acima.",
     "",
     ...(isPlayStation5 ? ["Tutorial em vídeo PS5:", `${publicSiteUrl()}/assets/tutorial-primaria-ps5.mp4`, ""] : []),
+    "Horário de atendimento e preparação:",
+    "Segunda a sexta: 10h-22h",
+    "Sábado: 9h-19h",
+    "",
     `Consulta o teu pedido: ${publicSiteUrl()}/minha-conta.html`,
     "Ajuda: gamegalaxy26@gmail.com"
   ].join("\n");

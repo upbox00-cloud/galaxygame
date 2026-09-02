@@ -88,6 +88,27 @@ test("email de entrega PlayStation separa email e palavra-passe sem cortar os da
   assert.match(html, /Tutorial em v&iacute;deo para PS5/);
   assert.match(html, /assets\/tutorial-primaria-ps5\.mp4/);
   assert.match(text, /assets\/tutorial-primaria-ps5\.mp4/);
+  assert.match(html, /Segunda a sexta: 10h-22h/);
+  assert.match(text, /Sábado: 9h-19h/);
+});
+
+test("email preserva instruções do produto sem as misturar com a palavra-passe", () => {
+  const html = orders.renderCodeEmail({
+    produto: "FC 26 PS5",
+    plataforma: "PlayStation 5",
+    codigo: [
+      "Email: jogador@example.com",
+      "Senha: Passe-Segura-123",
+      "***TUTORIAL DE INSTALAÇÃO - CONTA PRIMÁRIA PS5***",
+      "Código após instalar: 9876",
+      "***FC 26 PS5 PRIMÁRIA*** senha auxiliar: não alterar"
+    ].join("\n")
+  });
+
+  assert.match(html, /Palavra-passe[\s\S]*Passe-Segura-123/);
+  assert.match(html, /Informa&ccedil;&atilde;o adicional[\s\S]*TUTORIAL DE INSTALAÇÃO/);
+  assert.match(html, /senha auxiliar: não alterar/);
+  assert.doesNotMatch(html, /word-break:break-all/);
 });
 
 test("tutorial em vídeo aparece apenas nas entregas PlayStation 5", () => {
@@ -1305,6 +1326,8 @@ test("email de confirmacao informa que o pedido esta pendente e liga a Minha Con
     assert.match(payload.html, /Estado: A aguardar preparacao do codigo/);
     assert.match(payload.html, /https:\/\/galaxygame\.pt\/minha-conta\.html/);
     assert.match(payload.html, /Jogo teste/);
+    assert.match(payload.html, /Segunda a sexta: 10h-22h/);
+    assert.match(payload.html, /S&aacute;bado: 9h-19h/);
   } finally {
     global.fetch = originalFetch;
     if (previousApiKey === undefined) delete process.env.RESEND_API_KEY;
