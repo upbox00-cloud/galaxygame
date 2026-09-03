@@ -524,7 +524,7 @@ function catalogSkeletonCards(count) {
 function renderHomeSkeletons() {
   const gridCounts = {
     trending: 8,
-    catalogPreview: 12,
+    catalogPreview: HOME_CATALOG_PREVIEW_SIZE,
     preorders: 8,
     bestSellers: 8,
     recentReleases: 8

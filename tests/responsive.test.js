@@ -64,6 +64,9 @@ test("catalogo da home mostra 14 jogos populares em grelha vertical no mobile", 
     siteStyles,
     /@media \(max-width: 640px\)[\s\S]*\.catalog-preview-grid\s*\{[^}]*overflow-x:\s*auto;/s
   );
+  assert.match(homeHtml, /styles\.home\.min\.css\?v=20260903-1/);
+  assert.match(homeHtml, /home\.js\?v=20260903-1/);
+  assert.match(homeScript, /catalogPreview:\s*HOME_CATALOG_PREVIEW_SIZE/);
 });
 
 test("catalogo publico usa cache rapido com revalidacao em segundo plano", () => {
