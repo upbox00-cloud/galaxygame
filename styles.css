@@ -4620,7 +4620,6 @@ details p {
 
   .game-grid:not(.catalog-grid),
   .game-grid.compact:not(.catalog-grid),
-  .catalog-preview-grid,
   .review-grid,
   .news-grid,
   .category-grid {
@@ -4651,12 +4650,31 @@ details p {
   }
 
   .game-grid:not(.catalog-grid) > *,
-  .catalog-preview-grid > *,
   .review-grid > *,
   .news-grid > *,
   .category-grid > * {
     flex: 0 0 min(58vw, 220px);
     scroll-snap-align: start;
+  }
+
+  .catalog-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 10px;
+    margin-inline: 0;
+    padding: 0;
+    overflow: visible;
+    background: none;
+  }
+
+  .catalog-preview-grid::after {
+    display: none;
+  }
+
+  .catalog-preview-grid > * {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
   }
 
   .game-grid:not(.catalog-grid) .cover {

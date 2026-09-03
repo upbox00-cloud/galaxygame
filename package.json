@@ -7,10 +7,13 @@
   "scripts": {
     "dev": "netlify dev --offline --no-open --port 8890 --functions-port 3998 --staticServerPort 3997",
     "build:css": "node scripts/build-css.js",
-    "test": "node --test --test-isolation=none tests/chat.test.js tests/auth.test.js tests/orders.test.js tests/produto.test.js tests/admin-dashboard.test.js tests/responsive.test.js tests/meta-pixel.test.js tests/cookie-consent.test.js tests/pricing.test.js tests/supplier-pix.test.js tests/countdown.test.js",
+    "test": "node --test --test-isolation=none tests/chat.test.js tests/auth.test.js tests/orders.test.js tests/produto.test.js tests/admin-dashboard.test.js tests/responsive.test.js tests/meta-pixel.test.js tests/cookie-consent.test.js tests/pricing.test.js tests/supplier-pix.test.js tests/supplier-sync.test.js tests/countdown.test.js",
     "check:links": "node scripts/check-local-links.js",
     "check:launch": "node scripts/check-launch-readiness.js && npm run check:links && npm run check:netlify",
     "scrape:fornecedor": "node scripts/scrape-fornecedor.js",
+    "scrape:tca": "node scripts/scrape-tca.js",
+    "merge:fornecedores": "node scripts/merge-fornecedores.js",
+    "scrape:fornecedores": "npm run scrape:fornecedor && npm run scrape:tca && npm run merge:fornecedores",
     "enrich:rawg": "node scripts/enrich-rawg.js",
     "enrich:steamgriddb": "node scripts/enrich-steamgriddb.js",
     "trailers": "node scripts/enrich-youtube.js",
@@ -28,10 +31,10 @@
     "gerar:precos": "node scripts/gerar-precos.js",
     "precos:preview": "node scripts/gerar-precos.js --dry-run --sample=15",
     "relatorio": "node scripts/relatorio-margem.js",
-    "atualizar:catalogo": "npm run scrape:all && npm run enrich:steamgriddb && npm run curadoria && npm run catalogo:lite && npm run youtube:diario",
+    "atualizar:catalogo": "npm run scrape:all && npm run enrich:steamgriddb && npm run curadoria && npm run catalogo:lite",
     "agendar:catalogo": "powershell -ExecutionPolicy Bypass -File scripts/agendar-atualizacao-catalogo.ps1",
     "agendar:youtube": "powershell -ExecutionPolicy Bypass -File scripts/agendar-youtube-diario.ps1",
-    "scrape:all": "npm run scrape:fornecedor && npm run enrich:rawg && npm run scrape:concorrente && npm run gerar:precos"
+    "scrape:all": "npm run scrape:fornecedores && npm run enrich:rawg && npm run scrape:concorrente && npm run gerar:precos"
   },
   "dependencies": {
     "@google/genai": "^2.15.0",

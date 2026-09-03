@@ -11,6 +11,12 @@ const {
   platformMatches
 } = require("./common");
 
+const MAX_NEW_LOOKUPS = Math.max(0, Number(process.env.COMPETITOR_MAX_LOOKUPS || 80));
+
+function referenceKey(product) {
+  return `${product.plataforma || product.plataformaKey || ""}:${normalizeName(product.nome).toLowerCase()}`;
+}
+
 function scoreCandidate(product, candidateName, platform) {
   const base = normalizeName(product.nome).toLowerCase();
   const candidate = normalizeName(candidateName).toLowerCase();
@@ -49,10 +55,36 @@ function extractCandidates(html, product) {
 
 async function main() {
   const products = loadJson("enriquecido.json", []);
+  const previous = loadJson("concorrente.json", []);
+  const previousById = new Map(previous.map((item) => [item.id, item]));
+  const previousByReference = new Map(previous
+    .filter((item) => !item.pendente)
+    .map((item) => [referenceKey(item), item]));
   const result = [];
+  let lookups = 0;
 
   for (let index = 0; index < products.length; index += 1) {
     const product = products[index];
+    const cached = previousById.get(product.id) || previousByReference.get(referenceKey(product));
+    if (cached && !cached.pendente) {
+      result.push({ ...cached, id: product.id, nome: product.nome, plataforma: product.plataforma });
+      continue;
+    }
+    if (lookups >= MAX_NEW_LOOKUPS) {
+      result.push({
+        id: product.id,
+        nome: product.nome,
+        plataforma: product.plataforma,
+        plataformaKey: product.plataformaKey,
+        sem_referencia: true,
+        pendente: true,
+        precoConcorrenteEUR: 0,
+        nomeConcorrente: ""
+      });
+      continue;
+    }
+
+    lookups += 1;
     const query = encodeURIComponent(normalizeName(product.nome));
     const url = `https://www.jogodigital.com/?s=${query}&post_type=product&dgwt_wcas=1`;
     console.log(`[Concorrente] Processando ${index + 1}/${products.length}: ${product.nome}`);
@@ -65,7 +97,10 @@ async function main() {
         id: product.id,
         nome: product.nome,
         plataforma: product.plataforma,
+        plataformaKey: product.plataformaKey,
         sem_referencia: !best,
+        pendente: false,
+        consultadoEm: new Date().toISOString(),
         precoConcorrenteEUR: best?.precoConcorrenteEUR || 0,
         nomeConcorrente: best?.nomeConcorrente || "",
         candidatos: candidates.slice(0, 3)
@@ -76,7 +111,9 @@ async function main() {
         id: product.id,
         nome: product.nome,
         plataforma: product.plataforma,
+        plataformaKey: product.plataformaKey,
         sem_referencia: true,
+        pendente: true,
         precoConcorrenteEUR: 0,
         nomeConcorrente: "",
         erro: error.message
@@ -88,7 +125,8 @@ async function main() {
 
   const found = result.filter((item) => !item.sem_referencia).length;
   saveJson("concorrente.json", result);
-  console.log(`\n[Concorrente] Concluido. Referencias: ${found}/${products.length}. Ficheiro: data/concorrente.json`);
+  const pending = result.filter((item) => item.pendente).length;
+  console.log(`\n[Concorrente] Concluido. ${lookups} nova(s) consulta(s), ${found} referencia(s), ${pending} pendente(s).`);
 }
 
 main().catch((error) => {

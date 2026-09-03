@@ -48,16 +48,28 @@ function randomDelay(min = 1000, max = 2000) {
   return Math.floor(min + Math.random() * (max - min + 1));
 }
 
-async function getHtml(url) {
-  const response = await axios.get(url, {
-    timeout: 25000,
-    proxy: false,
-    headers: {
-      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36",
-      accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+async function getHtml(url, attempts = 3) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await axios.get(url, {
+        timeout: 25000,
+        proxy: false,
+        headers: {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+          accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        }
+      });
+      return response.data;
+    } catch (error) {
+      lastError = error;
+      const status = Number(error.response?.status || 0);
+      const retryable = !status || status === 429 || status >= 500;
+      if (!retryable || attempt === attempts) break;
+      await sleep(600 * attempt);
     }
-  });
-  return response.data;
+  }
+  throw lastError;
 }
 
 function loadJson(file, fallback = null) {

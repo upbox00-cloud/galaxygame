@@ -1,4 +1,5 @@
 const CATALOG_PAGE_SIZE = 30;
+const HOME_CATALOG_PREVIEW_SIZE = 14;
 const HOME_POPULARITY_MINIMUM = 500;
 const CHEAP_GAMES_MAX_PRICE_EUR = 15;
 const CATALOG_FILES = {
@@ -808,7 +809,7 @@ function renderHomeHighlights() {
 
   renderHighlightGrid(
     document.querySelector('[data-game-grid="catalogPreview"]'),
-    curatedThenAutomatic(products, popularProducts, popularitySort, 12)
+    uniqueGames(popularProducts, popularitySort, HOME_CATALOG_PREVIEW_SIZE)
   );
 
   renderHomeRecommendation(products);

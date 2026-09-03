@@ -1,0 +1,60 @@
+name: Atualizar catalogo dos fornecedores
+
+on:
+  schedule:
+    - cron: "20 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: galaxygame-catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      RAWG_KEY: ${{ secrets.RAWG_KEY }}
+      STEAMGRIDDB_TOKEN: ${{ secrets.STEAMGRIDDB_TOKEN }}
+
+    steps:
+      - name: Obter projeto
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Guardar catalogo anterior
+        run: cp data/catalog-lite.json /tmp/catalog-lite-before.json
+
+      - name: Atualizar Alpha e TCA
+        run: npm run atualizar:catalogo
+
+      - name: Validar integridade da atualizacao
+        run: |
+          node scripts/validate-catalog-update.js /tmp/catalog-lite-before.json
+          npm test
+          npm run check:launch
+
+      - name: Publicar alteracoes do catalogo
+        run: |
+          git config user.name "GalaxyGame Catalog Bot"
+          git config user.email "catalog-bot@galaxygame.pt"
+          git add data/*.json netlify/functions/_data/catalogo-comercial.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteracao no catalogo."
+            exit 0
+          fi
+          git commit -m "Atualizar catalogo Alpha e TCA"
+          git push origin HEAD:main

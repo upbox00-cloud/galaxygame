@@ -16,6 +16,12 @@ const { isExcludedProduct } = require("./product-exclusions");
 const TEST_BATMAN_MODE = process.argv.includes("--test-batman");
 const DETAIL_DELAY_MIN_MS = TEST_BATMAN_MODE ? 0 : 150;
 const DETAIL_DELAY_MAX_MS = TEST_BATMAN_MODE ? 0 : 350;
+const MINIMUM_PLATFORM_PRODUCTS = Object.freeze({
+  ps4: 100,
+  ps5: 100,
+  "xbox-one": 20,
+  "xbox-series": 20
+});
 
 function discoverMaxPages($, totalProducts = null) {
   let maxPage = 1;
@@ -278,8 +284,14 @@ async function main() {
   }
 
   const total = Object.values(result).reduce((sum, items) => sum + items.length, 0);
-  saveJson("raw-fornecedor.json", result);
-  console.log(`\n[Fornecedor] Concluido. Total: ${total} produto(s). Ficheiro: data/raw-fornecedor.json`);
+  if (!TEST_BATMAN_MODE) {
+    Object.entries(MINIMUM_PLATFORM_PRODUCTS).forEach(([key, minimum]) => {
+      const count = result[key]?.length || 0;
+      if (count < minimum) throw new Error(`Coleta Alpha incompleta em ${key}: ${count}; minimo seguro ${minimum}`);
+    });
+  }
+  saveJson("raw-alpha.json", result);
+  console.log(`\n[Alpha] Concluido. Total: ${total} produto(s). Ficheiro: data/raw-alpha.json`);
 }
 
 if (require.main === module) {
@@ -292,5 +304,6 @@ if (require.main === module) {
 module.exports._test = {
   pixDiscountEnabled,
   variantPrices,
-  readProductDetailPrice
+  readProductDetailPrice,
+  MINIMUM_PLATFORM_PRODUCTS
 };

@@ -50,6 +50,22 @@ test("home entrega o LCP e as capas de forma responsiva sem perder qualidade", (
   assert.doesNotMatch(homeHtml, /rel="preload"[^>]+styles\.home\.min\.css/);
 });
 
+test("catalogo da home mostra 14 jogos populares em grelha vertical no mobile", () => {
+  assert.match(homeScript, /HOME_CATALOG_PREVIEW_SIZE\s*=\s*14/);
+  assert.match(
+    homeScript,
+    /uniqueGames\(popularProducts, popularitySort, HOME_CATALOG_PREVIEW_SIZE\)/
+  );
+  assert.match(
+    siteStyles,
+    /@media \(max-width: 640px\)[\s\S]*\.catalog-preview-grid\s*\{[^}]*display:\s*grid;[^}]*grid-template-columns:\s*repeat\(2, minmax\(0, 1fr\)\);[^}]*overflow:\s*visible;/s
+  );
+  assert.doesNotMatch(
+    siteStyles,
+    /@media \(max-width: 640px\)[\s\S]*\.catalog-preview-grid\s*\{[^}]*overflow-x:\s*auto;/s
+  );
+});
+
 test("catalogo publico usa cache rapido com revalidacao em segundo plano", () => {
   const headers = fs.readFileSync("_headers", "utf8");
   assert.match(headers, /\/data\/\*\.json[\s\S]*max-age=3600, stale-while-revalidate=86400/);

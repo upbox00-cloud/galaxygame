@@ -11,6 +11,7 @@ const {
 const STEAMGRIDDB_TOKEN = process.env.STEAMGRIDDB_TOKEN || "aff91ae25ffecb0de75c38c035396ff5";
 const STEAMGRIDDB_BASE = "https://www.steamgriddb.com/api/v2";
 const REQUEST_DELAY_MS = Number(process.env.STEAMGRIDDB_DELAY_MS || 750);
+const MAX_NEW_LOOKUPS = Math.max(0, Number(process.env.STEAMGRIDDB_MAX_LOOKUPS || 80));
 const PREFERRED_GRID_QUERY = "dimensions=600x900&styles=alternate,white_logo,material";
 const FALLBACK_GRID_QUERY = "dimensions=600x900";
 
@@ -139,7 +140,23 @@ async function main() {
   const platformFiles = Object.values(PLATFORMS).map((platform) => platform.output);
   const catalogs = Object.fromEntries(platformFiles.map((file) => [file, loadJson(file, [])]));
   const cache = new Map();
+  Object.values(catalogs).flat().forEach((product) => {
+    if (!product.steamGridMatchValidated) return;
+    const name = searchName(product);
+    const key = normalizeText(name) || baseGameName(product.nome) || product.id;
+    if (!cache.has(key)) {
+      cache.set(key, {
+        url: product.capaSteamGridDB || null,
+        matchedName: product.steamGridMatchedName || null,
+        score: Number(product.steamGridMatchScore || 0),
+        gridScore: Number(product.steamGridGridScore || 0),
+        gridStyle: product.steamGridGridStyle || null,
+        risky: Boolean(product.steamGridNeedsReview)
+      });
+    }
+  });
   let processed = 0;
+  let lookups = 0;
   let success = 0;
   let failed = 0;
   const reviewItems = [];
@@ -154,7 +171,14 @@ async function main() {
       const key = normalizeText(name) || baseGameName(product.nome) || product.id;
 
       try {
+        if (product.steamGridMatchValidated) {
+          if (product.capaSteamGridDB) success += 1;
+          else failed += 1;
+          continue;
+        }
         if (!cache.has(key)) {
+          if (lookups >= MAX_NEW_LOOKUPS) continue;
+          lookups += 1;
           console.log(`[SteamGridDB] ${processed}/${total} A procurar capa: ${name}`);
           cache.set(key, await findCoverUrl(name));
         } else {
@@ -206,7 +230,7 @@ async function main() {
   console.log(`Produtos processados: ${processed}`);
   console.log(`Com capa encontrada: ${success}`);
   console.log(`Sem capa encontrada: ${failed}`);
-  console.log(`Jogos unicos pesquisados: ${cache.size}`);
+  console.log(`Novos jogos pesquisados: ${lookups}`);
   saveJson("imagens-para-revisar.json", reviewItems);
   console.log(`Produtos para revisao manual: ${reviewItems.length}`);
 }

@@ -1,0 +1,67 @@
+name: Atualizar trailers do YouTube
+
+on:
+  schedule:
+    - cron: "20 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: galaxygame-youtube-trailers
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      YOUTUBE_REVALIDATE_SEARCH_LIMIT: 20
+      YOUTUBE_REQUEST_LIMIT: 70
+
+    steps:
+      - name: Obter projeto
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Confirmar configuracao segura
+        run: test -n "$YOUTUBE_API_KEY"
+
+      - name: Revalidar trailers existentes
+        continue-on-error: true
+        run: npm run revalidar-trailers
+
+      - name: Procurar trailers ausentes
+        continue-on-error: true
+        run: npm run trailers
+
+      - name: Atualizar catalogo publico
+        run: npm run catalogo:lite
+
+      - name: Validar projeto
+        run: npm test
+
+      - name: Publicar trailers encontrados
+        run: |
+          git config user.name "GalaxyGame Trailer Bot"
+          git config user.email "trailer-bot@galaxygame.pt"
+          git add data/*.json
+          if git diff --cached --quiet; then
+            echo "Nenhum trailer novo encontrado."
+            exit 0
+          fi
+          git commit -m "Atualizar trailers do catalogo"
+          git pull --rebase origin main
+          git push origin HEAD:main

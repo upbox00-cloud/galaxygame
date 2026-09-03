@@ -71,7 +71,7 @@ async function getExchangeRate(options = {}) {
   }
 
   try {
-    const response = await axios.get(EXCHANGE_API_URL, { timeout: 15000 });
+    const response = await axios.get(EXCHANGE_API_URL, { timeout: 15000, proxy: false });
     const rate = Number(response.data?.rates?.EUR);
     if (response.data?.result === "success" && Number.isFinite(rate) && rate > 0) {
       saveExchangeCache(rate);
@@ -111,24 +111,35 @@ function readCommercialConfig() {
 
 function supplierCandidates(product, commercial = {}) {
   const configured = commercial.fornecedores || {};
-  const alphaOverride = configured.alpha || {};
-  const alphaCost = Number(alphaOverride.custoPixBRL || product.precoPixBRL || product.precoAtualBRL || 0);
-  const candidates = [{
+  const discovered = Array.isArray(product.fornecedores) ? product.fornecedores : [];
+  const fallbackAlpha = {
     id: "alpha",
-    nome: alphaOverride.nome || "Alpha Games",
-    custoPixBRL: alphaCost,
-    custoSemPixBRL: Number(alphaOverride.custoSemPixBRL || product.precoSemPixBRL || product.precoAtualBRL || alphaCost),
-    url: alphaOverride.url || product.linkFornecedor || ""
-  }];
-  if (configured.tca) {
-    candidates.push({
-      id: "tca",
-      nome: configured.tca.nome || "TCA Games",
-      custoPixBRL: Number(configured.tca.custoPixBRL || 0),
-      custoSemPixBRL: Number(configured.tca.custoSemPixBRL || configured.tca.custoPixBRL || 0),
-      url: configured.tca.url || ""
+    nome: "Alpha Games",
+    custoPixBRL: Number(product.precoPixBRL || product.precoAtualBRL || 0),
+    custoSemPixBRL: Number(product.precoSemPixBRL || product.precoAtualBRL || 0),
+    url: product.linkFornecedor || ""
+  };
+  const byId = new Map((discovered.length ? discovered : [fallbackAlpha]).map((supplier) => [supplier.id, { ...supplier }]));
+
+  Object.entries(configured).forEach(([id, override]) => {
+    if (!override || typeof override !== "object") return;
+    const current = byId.get(id) || { id };
+    byId.set(id, {
+      ...current,
+      ...override,
+      id,
+      nome: override.nome || current.nome || (id === "tca" ? "TCA Games" : "Alpha Games"),
+      url: override.url || current.url || ""
     });
-  }
+  });
+
+  const candidates = [...byId.values()].map((supplier) => ({
+    id: supplier.id,
+    nome: supplier.nome || (supplier.id === "tca" ? "TCA Games" : "Alpha Games"),
+    custoPixBRL: Number(supplier.custoPixBRL || 0),
+    custoSemPixBRL: Number(supplier.custoSemPixBRL || supplier.custoPixBRL || 0),
+    url: supplier.url || ""
+  }));
   return candidates
     .filter((supplier) => Number.isFinite(supplier.custoPixBRL) && supplier.custoPixBRL > 0)
     .sort((a, b) => a.custoPixBRL - b.custoPixBRL);
