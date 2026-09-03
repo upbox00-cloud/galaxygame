@@ -1070,6 +1070,112 @@ function bindTrendPlatformFilters() {
   });
 }
 
+function bindHeroCarousel() {
+  const carousel = document.querySelector("[data-hero-carousel]");
+  if (!carousel || carousel.dataset.heroReady === "true") return;
+
+  const track = carousel.querySelector("[data-hero-track]");
+  const slides = [...carousel.querySelectorAll("[data-hero-slide]")];
+  const dots = [...carousel.querySelectorAll("[data-hero-dot]")];
+  const previousButton = carousel.querySelector("[data-hero-prev]");
+  const nextButton = carousel.querySelector("[data-hero-next]");
+  const status = carousel.querySelector("[data-hero-status]");
+  if (!track || slides.length < 2) return;
+
+  const autoRotate = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const intervalMs = 6500;
+  let activeIndex = 0;
+  let timerId = 0;
+  let pointerStartX = null;
+
+  const prepareSlideImage = (index) => {
+    const image = slides[(index + slides.length) % slides.length]?.querySelector("img[loading='lazy']");
+    if (image) image.loading = "eager";
+  };
+
+  const setActiveSlide = (nextIndex, announce = false) => {
+    activeIndex = (nextIndex + slides.length) % slides.length;
+    prepareSlideImage(activeIndex);
+    if (activeIndex !== 0) prepareSlideImage(activeIndex + 1);
+    track.style.transform = `translate3d(-${activeIndex * 100}%, 0, 0)`;
+
+    slides.forEach((slide, index) => {
+      const isActive = index === activeIndex;
+      slide.classList.toggle("is-active", isActive);
+      slide.setAttribute("aria-hidden", String(!isActive));
+      slide.querySelectorAll("a, button").forEach((control) => {
+        control.tabIndex = isActive ? 0 : -1;
+      });
+    });
+
+    dots.forEach((dot, index) => {
+      const isActive = index === activeIndex;
+      dot.classList.toggle("is-active", isActive);
+      if (isActive) dot.setAttribute("aria-current", "true");
+      else dot.removeAttribute("aria-current");
+    });
+
+    if (announce && status) {
+      status.textContent = `A mostrar ${slides[activeIndex].getAttribute("aria-label").replace(/^\d+ de \d+:\s*/, "")}`;
+    }
+  };
+
+  const stopRotation = () => {
+    window.clearInterval(timerId);
+    timerId = 0;
+  };
+
+  const startRotation = () => {
+    stopRotation();
+    if (!autoRotate || document.hidden) return;
+    timerId = window.setInterval(() => setActiveSlide(activeIndex + 1), intervalMs);
+  };
+
+  const moveManually = (nextIndex) => {
+    setActiveSlide(nextIndex, true);
+    startRotation();
+  };
+
+  previousButton?.addEventListener("click", () => moveManually(activeIndex - 1));
+  nextButton?.addEventListener("click", () => moveManually(activeIndex + 1));
+  dots.forEach((dot, index) => dot.addEventListener("click", () => moveManually(index)));
+
+  carousel.addEventListener("focusin", stopRotation);
+  carousel.addEventListener("focusout", (event) => {
+    if (!carousel.contains(event.relatedTarget)) startRotation();
+  });
+  carousel.addEventListener("pointerdown", (event) => {
+    if (event.pointerType !== "mouse") pointerStartX = event.clientX;
+  });
+  carousel.addEventListener("pointerup", (event) => {
+    if (pointerStartX === null) return;
+    const distance = event.clientX - pointerStartX;
+    pointerStartX = null;
+    if (Math.abs(distance) < 45) return;
+    moveManually(activeIndex + (distance < 0 ? 1 : -1));
+  });
+  carousel.addEventListener("pointercancel", () => {
+    pointerStartX = null;
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stopRotation();
+    else startRotation();
+  });
+
+  carousel.dataset.heroReady = "true";
+  setActiveSlide(0);
+  startRotation();
+  const prepareFirstTransition = () => {
+    if ("requestIdleCallback" in window) {
+      window.requestIdleCallback(() => prepareSlideImage(1), { timeout: 1800 });
+    } else {
+      window.setTimeout(() => prepareSlideImage(1), 350);
+    }
+  };
+  if (document.readyState === "complete") prepareFirstTransition();
+  else window.addEventListener("load", prepareFirstTransition, { once: true });
+}
+
 function bindHeroPlatformBar() {
   document.querySelectorAll(".hero-platform-bar [data-platform]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -1155,4 +1261,5 @@ function scheduleCatalogHome() {
   else window.addEventListener("load", run, { once: true });
 }
 
+bindHeroCarousel();
 scheduleCatalogHome();

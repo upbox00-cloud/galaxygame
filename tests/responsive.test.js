@@ -68,10 +68,25 @@ test("catalogo da home mostra 14 jogos populares em grelha vertical no mobile", 
     siteStyles,
     /@media \(max-width: 640px\)[\s\S]*\.catalog-preview-grid\s*\{[^}]*overflow-x:\s*auto;/s
   );
-  assert.match(homeHtml, /styles\.home\.min\.css\?v=20260903-2/);
-  assert.match(homeHtml, /home\.js\?v=20260903-1/);
+  assert.match(homeHtml, /styles\.home\.min\.css\?v=20260903-3/);
+  assert.match(homeHtml, /home\.js\?v=20260903-2/);
   assert.match(homeScript, /catalogPreview:\s*HOME_CATALOG_PREVIEW_SIZE/);
   assert.match(homeHtml, /repeat\('\[data-game-grid="catalogPreview"\]',14\)/);
+});
+
+test("banner principal alterna automaticamente entre tres produtos sem antecipar o LCP", () => {
+  assert.equal((homeHtml.match(/data-hero-slide/g) || []).length, 3);
+  assert.match(homeHtml, /produto\.html\?id=gta-vi-ps5/);
+  assert.match(homeHtml, /produto\.html\?id=call-of-duty-modern-warfare-4-ps5/);
+  assert.match(homeHtml, /produto\.html\?id=ea-sports-fc-27-ps5/);
+  assert.match(homeHtml, /cod-modern-warfare-4-hero-640\.webp/);
+  assert.match(homeHtml, /fc-27-hero-640\.webp/);
+  assert.equal((homeHtml.match(/loading="lazy" fetchpriority="low"/g) || []).length, 2);
+  assert.match(homeScript, /intervalMs\s*=\s*6500/);
+  assert.match(homeScript, /setInterval\(\(\) => setActiveSlide\(activeIndex \+ 1\), intervalMs\)/);
+  assert.match(homeScript, /prefers-reduced-motion: reduce/);
+  assert.match(siteStyles, /\.hero-track\s*\{[^}]*display:\s*flex;[^}]*transition:\s*transform/s);
+  assert.match(siteStyles, /\.hero-slide\s*\{[^}]*flex:\s*0 0 100%/s);
 });
 
 test("catalogo publico usa cache rapido com revalidacao em segundo plano", () => {
