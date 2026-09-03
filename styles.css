@@ -4618,8 +4618,8 @@ details p {
     display: none;
   }
 
-  .game-grid:not(.catalog-grid),
-  .game-grid.compact:not(.catalog-grid),
+  .game-grid:not(.catalog-grid):not(.catalog-preview-grid),
+  .game-grid.compact:not(.catalog-grid):not(.catalog-preview-grid),
   .review-grid,
   .news-grid,
   .category-grid {
@@ -4634,7 +4634,7 @@ details p {
     scrollbar-width: none;
   }
 
-  .game-grid:not(.catalog-grid)::after,
+  .game-grid:not(.catalog-grid):not(.catalog-preview-grid)::after,
   .review-grid::after,
   .news-grid::after,
   .category-grid::after {
@@ -4642,14 +4642,14 @@ details p {
     flex: 0 0 4px;
   }
 
-  .game-grid:not(.catalog-grid)::-webkit-scrollbar,
+  .game-grid:not(.catalog-grid):not(.catalog-preview-grid)::-webkit-scrollbar,
   .review-grid::-webkit-scrollbar,
   .news-grid::-webkit-scrollbar,
   .category-grid::-webkit-scrollbar {
     display: none;
   }
 
-  .game-grid:not(.catalog-grid) > *,
+  .game-grid:not(.catalog-grid):not(.catalog-preview-grid) > *,
   .review-grid > *,
   .news-grid > *,
   .category-grid > * {
@@ -4725,7 +4725,7 @@ details p {
     margin-top: 0;
   }
 
-  .game-grid:not(.catalog-grid),
+  .game-grid:not(.catalog-grid):not(.catalog-preview-grid),
   .review-grid,
   .news-grid,
   .category-grid {
