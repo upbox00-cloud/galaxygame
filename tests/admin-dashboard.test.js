@@ -56,6 +56,9 @@ test("catálogo e clientes usam os dados existentes da loja", () => {
   assert.match(script, /activeSales\(state\.orders\)/);
   assert.match(html, /data-admin-catalog-list/);
   assert.match(html, /data-admin-customer-list/);
+  assert.match(script, /data-admin-price-form/);
+  assert.match(script, /data-admin-price-reset/);
+  assert.match(script, /Preço atualizado na loja e no checkout/);
 });
 
 test("pedidos antigos recuperam o fornecedor mais barato pelo catálogo privado", () => {
@@ -112,13 +115,13 @@ test("Minha Conta apresenta pedidos cancelados sem os confundir com pedidos em p
   assert.match(accountScript, /cancelled \? "Pedido cancelado"/);
   assert.match(accountScript, /account-order-cancelled-note/);
   assert.match(siteStyles, /\.account-order-card\.cancelled/);
-  assert.match(accountHtml, /minha-conta\.js\?v=20260815-2/);
+  assert.match(accountHtml, /minha-conta\.js\?v=20260919-1/);
 });
 
 test("Minha Conta recomenda jogos do catalogo com base na biblioteca do cliente", () => {
   assert.match(accountHtml, /data-account-recommendations/);
   assert.match(accountHtml, /data-account-order-filters/);
-  assert.match(accountScript, /fetch\("data\/catalog-lite\.json"/);
+  assert.match(accountScript, /fetch\("\/\.netlify\/functions\/catalogo-publico"/);
   assert.match(accountScript, /preferredPlatforms\.has\(platform\)/);
   assert.match(accountScript, /preferredGenres\.has\(genre\)/);
   assert.match(accountScript, /purchasedNames\.has\(base\)/);

@@ -1,6 +1,8 @@
 const fs = require("node:fs/promises");
 const path = require("node:path");
 const { GoogleGenAI } = require("@google/genai");
+const { connectLambda } = require("@netlify/blobs");
+const { readPriceOverrides, applyPriceOverrides } = require("./_price-overrides");
 
 const CATALOG_FILES = ["ps4.json", "ps5.json", "xbox-one.json", "xbox-series.json"];
 const MAX_MESSAGES = 8;
@@ -357,6 +359,7 @@ function logGeminiError(error) {
 }
 
 async function handler(event) {
+  if (event?.blobs) connectLambda(event);
   if (event.httpMethod === "OPTIONS") return { statusCode: 204, body: "" };
   if (event.httpMethod !== "POST") return json(405, { error: "Método não permitido." });
   if (isRateLimited(clientIp(event))) {
@@ -381,7 +384,7 @@ async function handler(event) {
   }
 
   try {
-    const catalog = await loadCatalog();
+    const catalog = applyPriceOverrides(await loadCatalog(), await readPriceOverrides());
     const latestQuestion = validation.messages.at(-1).content;
     const products = searchProducts(catalog, latestQuestion);
     const client = new GoogleGenAI({ apiKey: geminiApiKey });

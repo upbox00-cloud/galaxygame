@@ -106,9 +106,9 @@ function headerCompactSearchBlob(product) {
 
 function loadHeaderCatalog() {
   if (headerCatalogPromise) return headerCatalogPromise;
-  headerCatalogPromise = (window.__galaxyCatalogLitePromise ||= fetch("data/catalog-lite.json", { cache: "default" })
+  headerCatalogPromise = (window.__galaxyCurrentCatalogPromise ||= fetch("/.netlify/functions/catalogo-publico", { cache: "no-store" })
     .then((response) => {
-      if (!response.ok) throw new Error("catalog-lite indisponivel");
+      if (!response.ok) throw new Error("catalogo atual indisponivel");
       return response.json();
     }))
     .then((items) => Array.isArray(items) ? items : [])

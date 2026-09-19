@@ -288,8 +288,8 @@ test("extrai produtos compactos guardados nos metadados Stripe", () => {
   assert.equal(result.plataforma, "PlayStation 5, Xbox Series X|S");
 });
 
-test("checkout conhece o catálogo e os destaques manuais", () => {
-  const catalog = checkout._test.loadCatalog();
+test("checkout conhece o catálogo e os destaques manuais", async () => {
+  const catalog = await checkout._test.loadCatalog();
   assert.equal(catalog.get("gta-vi-ps5").precoVendaEUR, 57.99);
   assert.ok(catalog.get("the-witcher-3-wild-hunt-ps5"));
   assert.equal(catalog.get("ea-sports-fc-26-ps5").fornecedorSelecionado, "TCA Games");

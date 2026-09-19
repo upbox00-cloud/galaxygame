@@ -336,7 +336,8 @@ function getProductId() {
 }
 
 async function loadCatalogs() {
-  const loaded = await Promise.all(
+  const [loaded, currentCatalog] = await Promise.all([
+    Promise.all(
     CATALOG_FILES.map(async (file) => {
       try {
         const response = await fetch(file, { cache: "no-store" });
@@ -346,10 +347,16 @@ async function loadCatalogs() {
       } catch {
         return [];
       }
-    })
-  );
+    })),
+    fetch("/.netlify/functions/catalogo-publico", { cache: "no-store" })
+      .then((response) => response.ok ? response.json() : [])
+      .catch(() => [])
+  ]);
 
-  const products = loaded.flat();
+  const currentPrices = new Map((Array.isArray(currentCatalog) ? currentCatalog : []).map((product) => [product.id, product.precoVendaEUR]));
+  const products = loaded.flat().map((product) => currentPrices.has(product.id)
+    ? { ...product, precoVendaEUR: currentPrices.get(product.id) }
+    : product);
   if (!products.length) return fallbackProducts;
 
   const catalogIds = new Set(products.map((product) => product.id));

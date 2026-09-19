@@ -63,6 +63,8 @@ A Alpha Games e importada automaticamente pelo scraper. Quando a pagina anuncia 
 
 Para adicionar a TCA a outro produto, crie a entrada `fornecedores.tca` com `nome`, `custoPixBRL` e `url`. O campo opcional `precoConcorrenteEUR` define a referencia manual em euros. Ao executar `npm run gerar:precos`, o motor compara os custos Pix validos da Alpha e da TCA, escolhe sempre o menor e atualiza o catalogo comercial privado usado pelo checkout e pelo painel administrativo.
 
+O preco automatico protege atualmente uma margem minima de 35% sobre o custo depois da taxa Stripe estimada. Quando nao existe referencia de concorrente, usa 40% para deixar mais espaco para publicidade. O painel administrativo permite substituir o preco final de qualquer jogo; a alteracao fica guardada no Netlify Blobs e passa a valer imediatamente no catalogo, pesquisa, assistente e checkout. O botao `Repor` remove a substituicao e volta ao preco automatico.
+
 ### Webhook Stripe
 
 No Stripe Workbench/Developers, crie um endpoint para:

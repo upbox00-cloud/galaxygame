@@ -358,6 +358,14 @@ async function loadCatalogFile(platformKey, config) {
 }
 
 async function loadCatalogs() {
+  const currentCatalogPromise = (window.__galaxyCurrentCatalogPromise ||= fetch("/.netlify/functions/catalogo-publico", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error("catalogo atual indisponivel");
+      return response.json();
+    })
+    .catch(() => fetch("data/catalog-lite.json", { cache: "default" })
+      .then((response) => response.ok ? response.json() : [])
+      .catch(() => [])));
   const shouldLoadFullCatalog = Boolean(catalogGrid);
   const entries = shouldLoadFullCatalog
     ? await Promise.all(
@@ -397,7 +405,13 @@ async function loadCatalogs() {
         })
       ));
 
-  catalogState.productsByPlatform = Object.fromEntries(entries);
+  const currentPrices = new Map((await currentCatalogPromise).map((product) => [product.id, product.precoVendaEUR]));
+  catalogState.productsByPlatform = Object.fromEntries(entries.map(([platformKey, products]) => [
+    platformKey,
+    products.map((product) => currentPrices.has(product.id)
+      ? { ...product, precoVendaEUR: currentPrices.get(product.id) }
+      : product)
+  ]));
 
   MANUAL_CATALOG_PRODUCTS.forEach((manualProduct) => {
     const platformKey = manualProduct.catalogPlatform;

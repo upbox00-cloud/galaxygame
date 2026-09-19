@@ -69,7 +69,7 @@ test("catalogo da home mostra 14 jogos populares em grelha vertical no mobile", 
     /@media \(max-width: 640px\)[\s\S]*\.catalog-preview-grid\s*\{[^}]*overflow-x:\s*auto;/s
   );
   assert.match(homeHtml, /styles\.home\.min\.css\?v=20260903-3/);
-  assert.match(homeHtml, /home\.js\?v=20260903-2/);
+  assert.match(homeHtml, /home\.js\?v=20260919-1/);
   assert.match(homeScript, /catalogPreview:\s*HOME_CATALOG_PREVIEW_SIZE/);
   assert.match(homeHtml, /repeat\('\[data-game-grid="catalogPreview"\]',14\)/);
 });

@@ -667,7 +667,15 @@
 .admin-catalog-item > strong { color: #553986; }
 .admin-catalog-copy a { color: var(--admin-text); text-decoration: none; }
 .admin-catalog-copy mark { display: inline-block; margin-top: 6px; border-radius: 4px; background: #fff0e6; color: #b94e08; padding: 4px 6px; font-size: 10px; font-weight: 900; }
-.admin-catalog-price { display: grid; justify-items: end; gap: 6px; }
+.admin-catalog-price { display: grid; justify-items: end; gap: 6px; min-width: 190px; }
+.admin-catalog-price label { display: grid; gap: 4px; color: var(--admin-muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.admin-price-input { display: flex; align-items: center; overflow: hidden; border: 1px solid #d9d3e0; border-radius: 7px; background: #fff; }
+.admin-price-input b { padding-left: 9px; color: #6a3e94; }
+.admin-price-input input { width: 92px; border: 0; outline: 0; padding: 8px; color: var(--admin-text); font: inherit; font-size: 14px; font-weight: 900; }
+.admin-price-actions { display: flex; gap: 6px; }
+.admin-price-actions button { border: 0; border-radius: 6px; background: #6a3e94; color: #fff; padding: 6px 9px; font-size: 11px; font-weight: 900; cursor: pointer; }
+.admin-price-actions button[data-admin-price-reset] { background: #eee9f3; color: #553986; }
+.admin-price-actions button:disabled { cursor: wait; opacity: .55; }
 .admin-catalog-price a { color: #6a3e94; font-size: 11px; font-weight: 900; }
 .admin-catalog-warning { border-left: 3px solid #ff6a00; padding-left: 9px; }
 .admin-customer-row { display: grid; grid-template-columns: minmax(200px, 1.4fr) repeat(3, minmax(100px, .6fr)); gap: 16px; align-items: center; border-top: 1px solid #ececef; padding: 14px 0; }

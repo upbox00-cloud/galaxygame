@@ -1,5 +1,6 @@
 const publicCatalog = require("../../data/catalog-lite.json");
 const commercialCatalog = require("./_data/catalogo-comercial.json");
+const { readPriceOverrides, applyPriceOverrides } = require("./_price-overrides");
 
 function normalize(value) {
   return String(value || "")
@@ -24,9 +25,18 @@ function normalizePlatform(value) {
 function productsWithCommercialData() {
   const commercialById = new Map(commercialCatalog.map((product) => [product.id, product]));
   return publicCatalog.map((product) => ({
-    ...product,
-    ...(commercialById.get(product.id) || {})
+    ...(commercialById.get(product.id) || {}),
+    ...product
   }));
+}
+
+async function productsWithCurrentPrices() {
+  return applyPriceOverrides(productsWithCommercialData(), await readPriceOverrides());
+}
+
+async function publicProducts() {
+  const products = applyPriceOverrides(publicCatalog, await readPriceOverrides());
+  return products.map(({ precoManual, precoAutomaticoEUR, precoManualAtualizadoEm, ...product }) => product);
 }
 
 function supplierForOrder(order, products = productsWithCommercialData()) {
@@ -52,5 +62,7 @@ module.exports = {
   normalize,
   normalizePlatform,
   productsWithCommercialData,
+  productsWithCurrentPrices,
+  publicProducts,
   supplierForOrder
 };

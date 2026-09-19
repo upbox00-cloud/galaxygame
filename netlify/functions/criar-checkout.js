@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { json, getUserEmail, getUserName, sendOperationalAlert } = require("./_orders");
 const commercialCatalog = require("./_data/catalogo-comercial.json");
+const { readPriceOverrides, applyPriceOverrides } = require("./_price-overrides");
 
 const SPECIAL_PRODUCTS = [
   {
@@ -18,18 +19,21 @@ const SPECIAL_PRODUCTS = [
   }
 ];
 
-let catalogById;
+let baseCatalog;
 
-function loadCatalog() {
-  if (catalogById) return catalogById;
-  const file = path.resolve(__dirname, "..", "..", "data", "catalog-lite.json");
-  const products = JSON.parse(fs.readFileSync(file, "utf8"));
-  const commercialById = new Map(commercialCatalog.map((product) => [product.id, product]));
-  catalogById = new Map([...products, ...SPECIAL_PRODUCTS].map((product) => [
+async function loadCatalog() {
+  if (!baseCatalog) {
+    const file = path.resolve(__dirname, "..", "..", "data", "catalog-lite.json");
+    const products = JSON.parse(fs.readFileSync(file, "utf8"));
+    const commercialById = new Map(commercialCatalog.map((product) => [product.id, product]));
+    baseCatalog = [...products, ...SPECIAL_PRODUCTS].map((product) =>
+      ({ ...(commercialById.get(product.id) || {}), ...product }));
+  }
+  const currentProducts = applyPriceOverrides(baseCatalog, await readPriceOverrides());
+  return new Map(currentProducts.map((product) => [
     product.id,
-    { ...product, ...(commercialById.get(product.id) || {}) }
+    product
   ]));
-  return catalogById;
 }
 
 function siteUrl() {
@@ -218,7 +222,7 @@ exports.handler = async (event, context) => {
   });
 
   try {
-    const catalog = loadCatalog();
+    const catalog = await loadCatalog();
     const products = ids.map((id) => catalog.get(id));
     if (products.some((product) => !product || Number(product.precoVendaEUR) <= 0)) {
       return json(400, { error: "invalid_product" });

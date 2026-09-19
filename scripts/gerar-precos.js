@@ -19,8 +19,8 @@ const PRICING_CONFIG = Object.freeze({
   fallbackBrlToEur: 0.155,
   exchangeCacheMaxAgeMs: 24 * 60 * 60 * 1000,
   exchangeSafetyBuffer: 0.04,
-  minimumMarkup: 0.22,
-  noCompetitorMarkup: 0.25,
+  minimumMarkup: 0.35,
+  noCompetitorMarkup: 0.40,
   stripePercentageFee: 0.029,
   stripeFixedFeeEUR: 0.25,
   competitorUndercutEUR: 0

@@ -5,8 +5,8 @@ const { _test } = require("../scripts/gerar-precos");
 
 test("pricing configuration is centralized and includes exchange and Stripe protection", () => {
   assert.equal(_test.PRICING_CONFIG.exchangeSafetyBuffer, 0.04);
-  assert.equal(_test.PRICING_CONFIG.minimumMarkup, 0.22);
-  assert.equal(_test.PRICING_CONFIG.noCompetitorMarkup, 0.25);
+  assert.equal(_test.PRICING_CONFIG.minimumMarkup, 0.35);
+  assert.equal(_test.PRICING_CONFIG.noCompetitorMarkup, 0.40);
   assert.equal(_test.PRICING_CONFIG.stripePercentageFee, 0.029);
   assert.equal(_test.PRICING_CONFIG.stripeFixedFeeEUR, 0.25);
 });
@@ -18,13 +18,13 @@ test("exchange buffer is applied on top of the commercial BRL to EUR rate", () =
 });
 
 test("minimum price preserves markup after estimated Stripe fees", () => {
-  const price = _test.minimumSalePrice(32.78, 0.22);
+  const price = _test.minimumSalePrice(32.78, 0.35);
   const net = price - (price * 0.029 + 0.25);
   assert.ok(price.toFixed(2).endsWith(".99"));
-  assert.ok(net >= 32.78 * 1.22);
+  assert.ok(net >= 32.78 * 1.35);
 });
 
-test("missing competitor uses 25 percent instead of the old 50 percent markup", () => {
+test("missing competitor uses a 40 percent markup to leave room for ads", () => {
   const product = {
     id: "god-of-war-ragnarok-ps5",
     nome: "GOD OF WAR RAGNAROK - PS5",
@@ -34,7 +34,7 @@ test("missing competitor uses 25 percent instead of the old 50 percent markup", 
   };
   const result = _test.makeFinalProduct(product, { sem_referencia: true }, 0.17264);
   assert.equal(result.regraPreco, "sem-concorrente");
-  assert.equal(result.precoVendaEUR, 42.99);
+  assert.equal(result.precoVendaEUR, 47.99);
   assert.equal(result.taxaStripeConsiderada, true);
 });
 
@@ -56,7 +56,7 @@ test("the cheapest Pix supplier is always selected", () => {
   const result = _test.makeFinalProduct(product, null, 0.17264, null, commercial);
   assert.equal(result.fornecedorSelecionado, "TCA Games");
   assert.equal(result.custoFornecedorBRL, 47.4);
-  assert.equal(result.precoVendaEUR, 10.99);
+  assert.equal(result.precoVendaEUR, 11.99);
   assert.equal(result.abaixoDoConcorrente, true);
 });
 

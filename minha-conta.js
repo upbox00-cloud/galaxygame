@@ -243,7 +243,8 @@
 
   async function loadRecommendations(orders) {
     try {
-      const response = await fetch("data/catalog-lite.json", { cache: "no-store" });
+      let response = await fetch("/.netlify/functions/catalogo-publico", { cache: "no-store" });
+      if (!response.ok) response = await fetch("data/catalog-lite.json", { cache: "no-store" });
       if (!response.ok) return;
       const catalog = await response.json();
       if (!Array.isArray(catalog)) return;

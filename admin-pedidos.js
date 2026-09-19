@@ -611,6 +611,14 @@
     }
   }
 
+  function estimatedMargin(product) {
+    const price = Number(product.precoVendaEUR || 0);
+    const cost = Number(product.custoFornecedorEUR || 0);
+    if (!price || !cost) return "";
+    const net = price - price * 0.029 - 0.25;
+    return `${Math.round(((net - cost) / cost) * 100)}% margem após Stripe`;
+  }
+
   function renderCatalog() {
     const query = state.catalogQuery.toLowerCase().trim();
     const products = state.catalog.filter((product) => !query || [product.nome, product.plataforma, ...(product.genres || [])].join(" ").toLowerCase().includes(query)).slice(0, 30);
@@ -620,8 +628,38 @@
       <article class="admin-catalog-item${product.naoFoiPossivelIgualarConcorrente ? " admin-catalog-warning" : ""}">
         <img src="${escapeHtml(productImage(product))}" alt="" loading="lazy" />
         <div class="admin-catalog-copy"><a href="produto.html?id=${encodeURIComponent(product.id)}" target="_blank" rel="noopener"><strong title="${escapeHtml(product.nome)}">${escapeHtml(product.nome)}</strong></a><small>${escapeHtml(product.plataforma)} · ${(product.genres || []).slice(0, 2).map(escapeHtml).join(", ") || "Sem género"}</small><small>${escapeHtml(product.fornecedorSelecionado || "Fornecedor não definido")} · custo Pix ${escapeHtml(formatBRL(product.custoFornecedorBRL))}</small>${product.naoFoiPossivelIgualarConcorrente ? '<mark>Não foi possível igualar o concorrente</mark>' : ""}</div>
-        <div class="admin-catalog-price"><strong>${escapeHtml(formatPrice(product.precoVendaEUR))}</strong>${product.linkFornecedorSelecionado ? `<a href="${escapeHtml(product.linkFornecedorSelecionado)}" target="_blank" rel="noopener">Fornecedor</a>` : ""}</div>
+        <form class="admin-catalog-price" data-admin-price-form data-product-id="${escapeHtml(product.id)}">
+          <label><span>Preço final</span><span class="admin-price-input"><b>€</b><input type="number" name="precoVendaEUR" min="0.99" max="999.99" step="0.01" value="${Number(product.precoVendaEUR || 0).toFixed(2)}" required /></span></label>
+          <small>${escapeHtml(estimatedMargin(product))}${product.precoManual ? " · Preço manual" : " · Preço automático"}</small>
+          <span class="admin-price-actions"><button type="submit">Guardar</button>${product.precoManual ? '<button type="button" data-admin-price-reset>Repor</button>' : ""}</span>
+          ${product.linkFornecedorSelecionado ? `<a href="${escapeHtml(product.linkFornecedorSelecionado)}" target="_blank" rel="noopener">Fornecedor</a>` : ""}
+        </form>
       </article>`).join("") : '<div class="admin-empty">Nenhum produto encontrado.</div>';
+  }
+
+  async function saveCatalogPrice(form, reset = false) {
+    const button = form.querySelector(reset ? "[data-admin-price-reset]" : 'button[type="submit"]');
+    const input = form.elements.precoVendaEUR;
+    button.disabled = true;
+    input.disabled = true;
+    try {
+      const data = await apiRequest("/.netlify/functions/admin-catalogo", {
+        method: "POST",
+        body: JSON.stringify({
+          id: form.dataset.productId,
+          ...(reset ? { reset: true } : { precoVendaEUR: Number(input.value) })
+        })
+      });
+      const index = state.catalog.findIndex((product) => product.id === data.produto.id);
+      if (index >= 0) state.catalog[index] = data.produto;
+      updateCatalogSummary();
+      renderCatalog();
+      setNotice(reset ? "Preço automático reposto." : "Preço atualizado na loja e no checkout.", "success");
+    } catch (error) {
+      button.disabled = false;
+      input.disabled = false;
+      setNotice(error.code === "invalid_price" ? "Indica um preço entre 0,99 € e 999,99 €." : "Não foi possível guardar o preço.", "error");
+    }
   }
 
   function updateCatalogSummary() {
@@ -824,6 +862,18 @@
   }));
   searchInput?.addEventListener("input", () => { state.query = searchInput.value; renderOrders(); saveUi(); });
   catalogSearch?.addEventListener("input", () => { state.catalogQuery = catalogSearch.value; renderCatalog(); saveUi(); });
+  document.querySelector("[data-admin-catalog-list]")?.addEventListener("submit", (event) => {
+    const form = event.target.closest("[data-admin-price-form]");
+    if (!form) return;
+    event.preventDefault();
+    saveCatalogPrice(form);
+  });
+  document.querySelector("[data-admin-catalog-list]")?.addEventListener("click", (event) => {
+    const reset = event.target.closest("[data-admin-price-reset]");
+    if (!reset) return;
+    const form = reset.closest("[data-admin-price-form]");
+    if (form) saveCatalogPrice(form, true);
+  });
   customerSearch?.addEventListener("input", () => { state.customerQuery = customerSearch.value; renderCustomers(); saveUi(); });
   recoveryForm?.addEventListener("submit", recoverPaidOrder);
   document.querySelectorAll("[data-admin-refresh]").forEach((button) => button.addEventListener("click", refreshDashboard));
