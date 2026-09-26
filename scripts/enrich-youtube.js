@@ -14,9 +14,11 @@ if (!YOUTUBE_API_KEY) {
 }
 const YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search";
 const YOUTUBE_VIDEOS_URL = "https://www.googleapis.com/youtube/v3/videos";
-const DAILY_SEARCH_LIMIT = 90;
-const REQUEST_LIMIT = Math.min(90, Math.max(1, Number(process.env.YOUTUBE_REQUEST_LIMIT || 90)));
+const DAILY_SEARCH_LIMIT = Math.max(1, Number(process.env.YOUTUBE_DAILY_SEARCH_LIMIT || 80));
+const REQUEST_LIMIT = Math.min(70, DAILY_SEARCH_LIMIT, Math.max(1, Number(process.env.YOUTUBE_REQUEST_LIMIT || 70)));
 const REQUEST_DELAY_MS = Math.max(0, Number(process.env.YOUTUBE_REQUEST_DELAY_MS || 250));
+const NOT_FOUND_COOLDOWN_DAYS = Math.max(1, Number(process.env.YOUTUBE_NOT_FOUND_COOLDOWN_DAYS || 7));
+const MAX_NOT_FOUND_COOLDOWN_DAYS = Math.max(NOT_FOUND_COOLDOWN_DAYS, Number(process.env.YOUTUBE_NOT_FOUND_MAX_COOLDOWN_DAYS || 30));
 const PROGRESS_FILE = "youtube-progresso.json";
 const REVIEW_FILE = "trailers-para-revisar.json";
 const FIX_REVIEW_MODE = process.argv.includes("--fix-review");
@@ -239,6 +241,43 @@ function loadProgress() {
     : { version: 1, processed: {}, runs: [] };
 }
 
+function isoNow() {
+  return new Date().toISOString();
+}
+
+function addDaysIso(date, days) {
+  const next = new Date(date);
+  next.setUTCDate(next.getUTCDate() + days);
+  return next.toISOString();
+}
+
+function notFoundCooldownDays(attempts) {
+  const base = NOT_FOUND_COOLDOWN_DAYS * (2 ** Math.max(0, Number(attempts || 1) - 1));
+  return Math.min(MAX_NOT_FOUND_COOLDOWN_DAYS, base);
+}
+
+function isNotFoundInCooldown(entry, now = new Date()) {
+  if (!entry || entry.status !== "not-found" || !entry.nextRetryAt) return false;
+  const retryAt = Date.parse(entry.nextRetryAt);
+  return Number.isFinite(retryAt) && retryAt > now.getTime();
+}
+
+function makeNotFoundProgressEntry(previous, query, nowIso = isoNow()) {
+  const attempts = Number(previous?.attempts || 0) + 1;
+  return {
+    trailer: null,
+    status: "not-found",
+    query: query || previous?.query || "",
+    attempts,
+    processedAt: nowIso,
+    nextRetryAt: addDaysIso(nowIso, notFoundCooldownDays(attempts))
+  };
+}
+
+function groupExistingTrailer(group) {
+  return group.items.map(({ product }) => product.trailer).find(validTrailer) || "";
+}
+
 async function embeddableVideoIds(videoIds) {
   if (!videoIds.length) return new Map();
   const response = await axios.get(YOUTUBE_VIDEOS_URL, {
@@ -339,13 +378,28 @@ async function findReplacementTrailerForProduct(product, file) {
   return { trailer: null, query };
 }
 
-async function findOfficialTrailer(group, name) {
+async function findOfficialTrailer(group, name, options = {}) {
+  const searchCandidates = options.searchTrailerCandidates || searchTrailerCandidates;
+  const getVideoDetails = options.videoDetails || videoDetails;
+  const seenQueries = options.seenQueries || new Set();
+  const maxSearchRequests = Math.max(0, Number(options.maxSearchRequests || Infinity));
   const queries = searchQueriesForGroup(group, name);
   const seen = new Set();
   const candidates = [];
+  let searchRequests = 0;
 
   for (const query of queries) {
-    const results = await searchTrailerCandidates(query);
+    if (searchRequests >= maxSearchRequests) break;
+    if (seenQueries.has(query)) continue;
+    seenQueries.add(query);
+    searchRequests += 1;
+    let results;
+    try {
+      results = await searchCandidates(query);
+    } catch (error) {
+      error.searchRequests = searchRequests;
+      throw error;
+    }
     results.forEach((item) => {
       if (seen.has(item.videoId)) return;
       seen.add(item.videoId);
@@ -354,7 +408,13 @@ async function findOfficialTrailer(group, name) {
     if (results.length) break;
   }
 
-  const details = await videoDetails(candidates.map((item) => item.videoId), "snippet,status");
+  let details;
+  try {
+    details = await getVideoDetails(candidates.map((item) => item.videoId), "snippet,status");
+  } catch (error) {
+    error.searchRequests = searchRequests;
+    throw error;
+  }
   const hydrated = candidates
     .map((item) => ({ ...item, ...(details.get(item.videoId) || {}) }))
     .filter((item) => item.embeddable);
@@ -362,7 +422,7 @@ async function findOfficialTrailer(group, name) {
   const preferred = hydrated.find((item) => !groupHasTrailerConflict(group, item.title));
   const fallback = preferred || hydrated[0] || null;
 
-  if (!fallback) return { trailer: null, status: "not-found", query: queries[0], fallbackUsed: false };
+  if (!fallback) return { trailer: null, status: "not-found", query: queries[0], fallbackUsed: false, searchRequests };
   return {
     trailer: `https://www.youtube.com/embed/${fallback.videoId}`,
     videoId: fallback.videoId,
@@ -370,7 +430,8 @@ async function findOfficialTrailer(group, name) {
     channelTitle: fallback.channelTitle,
     query: fallback.query || queries[0],
     status: preferred ? "found" : "found-needs-review",
-    fallbackUsed: !preferred
+    fallbackUsed: !preferred,
+    searchRequests
   };
 }
 
@@ -453,6 +514,10 @@ function searchesUsedToday(progress) {
 function isQuotaError(error) {
   const reason = error.response?.data?.error?.errors?.[0]?.reason || "";
   return error.response?.status === 403 && /quota|dailyLimit/i.test(reason);
+}
+
+function isRateLimitError(error) {
+  return Number(error.response?.status || 0) === 429;
 }
 
 async function fixReviewedTrailers() {
@@ -545,47 +610,65 @@ async function main() {
   const groups = prioritizedGroups(groupProducts(catalogs));
   const progress = loadProgress();
   const reviewMap = loadReviewMap();
+  const searchedQueries = new Set();
+  const runStartedAt = new Date();
+  const startedAtIso = runStartedAt.toISOString();
   let requests = 0;
   let found = 0;
   let notFound = 0;
+  let analyzed = 0;
+  let alreadyHadTrailer = 0;
+  let cooldownSkipped = 0;
   let networkErrors = 0;
   let quotaReached = false;
+  let rateLimited = false;
+  let interruptionReason = "concluido";
 
   groups.forEach((group) => {
     const saved = progress.processed[group.key];
-    if (saved && Object.prototype.hasOwnProperty.call(saved, "trailer")) {
+    if (saved?.status === "found" && validTrailer(saved.trailer)) {
       setGroupTrailer(group, saved.trailer);
+      alreadyHadTrailer += 1;
       return;
     }
 
-    const existing = group.items.map(({ product }) => product.trailer).find(validTrailer);
+    const existing = groupExistingTrailer(group);
     if (existing) {
       setGroupTrailer(group, existing);
       progress.processed[group.key] = { trailer: existing, status: "found", source: "catalogo" };
-    } else if (group.items.every(({ product }) => product.trailer === null)) {
-      progress.processed[group.key] = { trailer: null, status: "not-found", source: "catalogo" };
+      alreadyHadTrailer += 1;
     }
   });
 
   saveCatalogs(catalogs);
   saveJson(PROGRESS_FILE, progress);
 
-  const validation = await validateExistingTrailers(groups, progress, catalogs, reviewMap);
   const searchesAlreadyUsed = searchesUsedToday(progress);
   const searchLimit = Math.min(REQUEST_LIMIT, Math.max(0, DAILY_SEARCH_LIMIT - searchesAlreadyUsed));
 
   for (const group of groups) {
     if (requests >= searchLimit) break;
-    if (progress.processed[group.key]) continue;
+    if (groupExistingTrailer(group)) continue;
+
+    const saved = progress.processed[group.key];
+    if (saved?.status === "found" && validTrailer(saved.trailer)) continue;
+    if (isNotFoundInCooldown(saved, runStartedAt)) {
+      cooldownSkipped += 1;
+      continue;
+    }
 
     const name = searchName(group.representative);
     if (!name) continue;
 
-    requests += 1;
-    console.log(`[YouTube] ${requests}/${searchLimit}: ${name}`);
+    analyzed += 1;
+    console.log(`[YouTube] ${analyzed}: ${name}`);
 
     try {
-      const result = await findOfficialTrailer(group, name);
+      const result = await findOfficialTrailer(group, name, {
+        seenQueries: searchedQueries,
+        maxSearchRequests: searchLimit - requests
+      });
+      requests += result.searchRequests || 0;
       const trailer = result.trailer;
       setGroupTrailer(group, trailer);
       if (result.fallbackUsed) {
@@ -604,26 +687,38 @@ async function main() {
           }));
         });
       }
-      progress.processed[group.key] = {
-        trailer,
-        status: result.status,
-        query: result.query,
-        videoTitle: result.title || "",
-        channelTitle: result.channelTitle || "",
-        processedAt: new Date().toISOString()
-      };
-      if (trailer) found += 1;
-      else notFound += 1;
+      if (trailer) {
+        progress.processed[group.key] = {
+          trailer,
+          status: result.status,
+          query: result.query,
+          videoTitle: result.title || "",
+          channelTitle: result.channelTitle || "",
+          processedAt: isoNow()
+        };
+        found += 1;
+      } else {
+        progress.processed[group.key] = makeNotFoundProgressEntry(saved, result.query);
+        notFound += 1;
+      }
     } catch (error) {
+      requests += Number(error.searchRequests || 0);
+      if (isRateLimitError(error)) {
+        console.warn(`[YouTube] HTTP 429 recebido em "${name}". A execucao sera interrompida sem novas buscas.`);
+        rateLimited = true;
+        interruptionReason = "http-429";
+        break;
+      }
       console.warn(`[YouTube] Falhou "${name}": ${error.message}`);
       networkErrors += 1;
       if (isQuotaError(error)) {
         quotaReached = true;
+        interruptionReason = "quota-diaria";
         break;
       }
     }
 
-    progress.updatedAt = new Date().toISOString();
+    progress.updatedAt = isoNow();
     saveJson(PROGRESS_FILE, progress);
     saveReviews(reviewMap);
     if (requests % 5 === 0) saveCatalogs(catalogs);
@@ -631,26 +726,42 @@ async function main() {
   }
 
   saveCatalogs(catalogs);
-  progress.updatedAt = new Date().toISOString();
+  progress.updatedAt = isoNow();
+  const remainingWithoutTrailer = groups.filter((group) => !groupExistingTrailer(group)).length;
+  if (requests >= searchLimit && interruptionReason === "concluido" && remainingWithoutTrailer > 0) {
+    interruptionReason = "limite-de-buscas";
+  }
   progress.runs.push({
-    date: new Date().toISOString(),
+    date: startedAtIso,
     requests,
+    analyzed,
     found,
     notFound,
+    alreadyHadTrailer,
+    cooldownSkipped,
+    remainingWithoutTrailer,
+    rateLimited,
+    interruptionReason,
     networkErrors,
-    validationCalls: validation.calls,
-    invalidEmbeds: validation.invalid
+    validationCalls: 0,
+    invalidEmbeds: 0
   });
   saveJson(PROGRESS_FILE, progress);
   saveReviews(reviewMap);
 
   console.log("\n[YouTube] Execucao concluida.");
-  console.log(`Validacoes de embed: ${validation.valid} validos, ${validation.invalid} rejeitados, ${validation.errors} erro(s)`);
+  console.log("Validacoes de embed: puladas nesta etapa; trailers existentes sao tratados em revalidar-trailers.");
+  console.log(`Produtos analisados: ${analyzed}`);
   console.log(`Buscas realizadas nesta execucao: ${requests}/${searchLimit}`);
   console.log(`Buscas usadas hoje: ${searchesAlreadyUsed + requests}/${DAILY_SEARCH_LIMIT}`);
   console.log(`Trailers encontrados: ${found}`);
+  console.log(`Ja possuiam trailer valido: ${alreadyHadTrailer}`);
   console.log(`Sem resultado: ${notFound}`);
+  console.log(`Adiados por cooldown: ${cooldownSkipped}`);
+  console.log(`Restantes sem trailer: ${remainingWithoutTrailer}`);
   console.log(`Erros de rede: ${networkErrors}`);
+  console.log(`HTTP 429: ${rateLimited ? "sim" : "nao"}`);
+  console.log(`Motivo da interrupcao: ${interruptionReason}`);
   console.log(`Jogos unicos concluidos: ${Object.keys(progress.processed).length}/${groups.length}`);
   console.log(`Produtos em revisao manual de trailer: ${reviewMap.size}`);
 
@@ -659,7 +770,22 @@ async function main() {
   }
 }
 
-(FIX_REVIEW_MODE ? fixReviewedTrailers() : main()).catch((error) => {
-  console.error("[YouTube] Erro inesperado:", error);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  (FIX_REVIEW_MODE ? fixReviewedTrailers() : main()).catch((error) => {
+    console.error("[YouTube] Erro inesperado:", error);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = {
+  _test: {
+    findOfficialTrailer,
+    isQuotaError,
+    isRateLimitError,
+    isNotFoundInCooldown,
+    makeNotFoundProgressEntry,
+    notFoundCooldownDays,
+    searchQueriesForGroup,
+    validTrailer
+  }
+};
