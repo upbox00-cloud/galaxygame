@@ -101,7 +101,7 @@
   },
   {
     "id": "ace-combat-7-skies-unknown-xbox-series",
-    "nome": "ACE COMBAT 7 SKIES UNKNOWN - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "nome": "ACE COMBAT 7: SKIES UNKNOWN - XBOX ONE & SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587681135,
@@ -140,7 +140,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545692947,
-    "precoVendaEUR": 64.99,
+    "precoVendaEUR": 63.99,
     "precoOriginalEUR": 70.99,
     "trailer": "https://www.youtube.com/embed/cW6zBuO7sb4",
     "screenshots": [
@@ -183,8 +183,8 @@
     "imagemFallback": "https://media.rawg.io/media/games/945/9455733af10406794b0c1b8d117bca76.jpg",
     "released": "2019-11-14",
     "rating": 4.29,
-    "ratings_count": 308,
-    "added": 2294,
+    "ratings_count": 310,
+    "added": 2295,
     "genres": [
       "Strategy"
     ],
@@ -339,7 +339,7 @@
     "released": "2012-02-22",
     "rating": 3.41,
     "ratings_count": 830,
-    "added": 6190,
+    "added": 6191,
     "genres": [
       "Action",
       "Shooter"
@@ -389,7 +389,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595936180,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/4E1jVWUMQiA",
     "screenshots": [
@@ -509,7 +509,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595937896,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 44.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/sYi6iy07GsE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1d9/1d97e52d817e2594db51a25e3caee6d7.jpg",
@@ -559,7 +559,7 @@
     "released": "2015-06-02",
     "rating": 3.08,
     "ratings_count": 675,
-    "added": 8708,
+    "added": 8707,
     "genres": [
       "Action",
       "Adventure",
@@ -594,8 +594,8 @@
     "imagemFallback": "https://media.rawg.io/media/games/0bc/0bcc108295a244b488d5c25f7d867220.jpg",
     "released": "2007-11-13",
     "rating": 3.92,
-    "ratings_count": 2040,
-    "added": 5594,
+    "ratings_count": 2041,
+    "added": 5595,
     "genres": [
       "Action"
     ],
@@ -605,6 +605,35 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-xbox-one-series-s-x-midia-digital-1443r/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-black-flag-resynced-xbox-series",
+    "nome": "ASSASSIN'S CREED BLACK FLAG RESYNCED - XBOX SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1511643762,
+    "precoVendaEUR": 45.99,
+    "precoOriginalEUR": 52.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/35547-107b03616f26a8dde917770433602622-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/35547-107b03616f26a8dde917770433602622-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a9f7e2af063303f02fd5d479c8816c79.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Black Flag Resynced",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-black-flag-resynced-xbox-series-s-x-midia-digital-tke5n/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-chronicles-china-xbox-series",
@@ -658,7 +687,7 @@
     "descricao": "Join Nikolaï Orelov in his search for redemption as you journey through an iconic, propaganda art style Russia in 2.5D gameplay. • Survive the aftermath of October Revolution. Dive into the middle of a major historical event served by iconic propaganda art style and its revolutionary symbolism. J...",
     "imagemFallback": "https://media.rawg.io/media/games/cd9/cd9a44c7a80b8319a84ea737e71cb592.jpg",
     "released": "2016-02-09",
-    "rating": 3.05,
+    "rating": 3.06,
     "ratings_count": 119,
     "added": 813,
     "genres": [
@@ -693,8 +722,8 @@
     "imagemFallback": "https://media.rawg.io/media/games/1be/1bed7fae69d1004c09dfe1101d5a3a94.jpg",
     "released": "2009-11-17",
     "rating": 4.43,
-    "ratings_count": 2986,
-    "added": 8279,
+    "ratings_count": 2988,
+    "added": 8285,
     "genres": [
       "Action"
     ],
@@ -725,7 +754,7 @@
     "imagemFallback": "https://media.rawg.io/media/games/c69/c69e0952cdea6baa7cf0739b2e7792fb.jpg",
     "released": "2019-03-29",
     "rating": 3.55,
-    "ratings_count": 416,
+    "ratings_count": 417,
     "added": 2493,
     "genres": [
       "Action",
@@ -759,7 +788,7 @@
     "released": "2013-10-29",
     "rating": 4.16,
     "ratings_count": 2669,
-    "added": 9841,
+    "added": 9839,
     "genres": [
       "Action"
     ],
@@ -837,7 +866,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595966950,
     "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 117.99,
+    "precoOriginalEUR": 116.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367830-cd34a4c16a708f7e5617893261932008-1024-1024.webp"
@@ -855,6 +884,42 @@
     "steamGridMatchScore": 0.568,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-mythology-pack-xbox-one-series-s-x-midia-digital-sjytx/",
     "enriquecido": false
+  },
+  {
+    "id": "assassin-s-creed-odyssey-xbox-series",
+    "nome": "ASSASSIN'S CREED ODYSSEY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1542729321,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/412/412b1dd5c880b80d8404451d3ff44360.jpg",
+      "https://media.rawg.io/media/screenshots/9b5/9b59a790deab688ea923e0cd7b0cadbd_sNpbwUf.jpg",
+      "https://media.rawg.io/media/screenshots/b09/b09a53fb76ea832671599a5f287ab34a.jpg",
+      "https://media.rawg.io/media/screenshots/2f9/2f993667330526171e4056c0a0663437.jpg",
+      "https://media.rawg.io/media/screenshots/6d8/6d8c268dff506f890478e6a0a492858b.jpg"
+    ],
+    "descricao": "Assassin's Creed Odyssey is the twentieth game in its series. It is the earliest game in the Assassin's Creed universe chronology and the prequel to Assassin's Creed Origins. ###Plot The events of Assassin's Creed Odyssey's take place in the Classical Era of Ancient Greece, in 431 BC, before the...",
+    "imagemFallback": "https://media.rawg.io/media/games/c6b/c6bd26767c1053fef2b10bb852943559.jpg",
+    "released": "2018-10-05",
+    "rating": 3.97,
+    "ratings_count": 2112,
+    "added": 8288,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/132d16811e7db45a5c501541c275851c.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Odyssey",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-series",
@@ -876,7 +941,7 @@
     "released": "2018-03-20",
     "rating": 3.67,
     "ratings_count": 115,
-    "added": 581,
+    "added": 582,
     "genres": [
       "Action",
       "Adventure"
@@ -887,6 +952,44 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-rogue-remastered-xbox-one-series-s-x-midia-digital-17eqw/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-shadows-xbox-series",
+    "nome": "ASSASSIN'S CREED SHADOWS XBOX SERIES S/X - MIDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1534116897,
+    "precoVendaEUR": 30.99,
+    "precoOriginalEUR": 35.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/b9c/b9c6546ce1488f918e6373073d800fa7.jpg",
+      "https://media.rawg.io/media/screenshots/801/801c5b2489abedcddf4acd94da35daaf.jpg",
+      "https://media.rawg.io/media/screenshots/b9c/b9ce924c7bfdbdc45793554a56932f36.jpg",
+      "https://media.rawg.io/media/screenshots/0f7/0f7bb8958b46684d773c75d26008d800.jpg",
+      "https://media.rawg.io/media/screenshots/aeb/aeb5d332cea63b7037543bd30d6da14e.jpg"
+    ],
+    "descricao": "A new Creed rises over Japan. Live the intertwined stories of Naoe, an adept shinobi Assassin from Iga Province, and Yasuke, the powerful African samurai of historical legend. Against the backdrop of the turbulent late Sengoku period, this remarkable duo will discover their common destiny as they...",
+    "imagemFallback": "https://media.rawg.io/media/games/526/526881e0f5f8c1550e51df3801f96ea3.jpg",
+    "released": "2025-03-20",
+    "rating": 3.26,
+    "ratings_count": 82,
+    "added": 529,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/fc16eb2e13f50f6905393c474820bbd8.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Shadows",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-shadows-xbox-series-s-x-midia-digital-llhs1/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 14
   },
   {
     "id": "assassin-s-creed-syndicate-xbox-series",
@@ -909,7 +1012,7 @@
     "released": "2015-10-23",
     "rating": 3.67,
     "ratings_count": 1521,
-    "added": 6072,
+    "added": 6073,
     "genres": [
       "Action"
     ],
@@ -919,6 +1022,32 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-syndicate-xbox-one-series-s-x-midia-digital-b52pu/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-triple-pack-xbox-series",
+    "nome": "ASSASSIN'S CREED TRIPLE PACK - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1519547355,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "trailer": "https://www.youtube.com/embed/yTqGZtJ9ICU",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349150-480bd58bbcf560d22617780994639109-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349150-480bd58bbcf560d22617780994639109-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Rogue",
+    "steamGridMatchScore": 0.607,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-triple-pack-xbox-one-series-s-x-13ifw/",
+    "enriquecido": false
   },
   {
     "id": "assassin-s-creed-valhalla-immortals-fenyx-rising-xbox-series",
@@ -955,7 +1084,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595965447,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 88.99,
+    "precoOriginalEUR": 87.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367829-21b9b469c4a8c5331b17893258431690-1024-1024.webp"
@@ -1071,84 +1200,6 @@
     "enriquecido": true
   },
   {
-    "id": "assassin-s-creed-triple-pack-xbox-series",
-    "nome": "ASSASSIN`S CREED TRIPLE PACK - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox Series X|S",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1519547355,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 8.99,
-    "trailer": "https://www.youtube.com/embed/yTqGZtJ9ICU",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349150-480bd58bbcf560d22617780994639109-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349150-480bd58bbcf560d22617780994639109-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Rogue",
-    "steamGridMatchScore": 0.607,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-triple-pack-xbox-one-series-s-x-13ifw/",
-    "enriquecido": false
-  },
-  {
-    "id": "assassins-creed-black-flag-resynced-xbox-series",
-    "nome": "ASSASSINS CREED BLACK FLAG RESYNCED - XBOX SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox Series X|S",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1511643762,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 52.99,
-    "trailer": "https://www.youtube.com/embed/U9EmVkQ5v54",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/35547-107b03616f26a8dde917770433602622-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/35547-107b03616f26a8dde917770433602622-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Black Flag Resynced",
-    "steamGridMatchScore": 0.812,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-black-flag-resynced-xbox-series-s-x-midia-digital-tke5n/",
-    "enriquecido": false
-  },
-  {
-    "id": "assassins-creed-odyssey-xbox-series",
-    "nome": "ASSASSINS CREED ODYSSEY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox Series X|S",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1542729321,
-    "precoVendaEUR": 16.99,
-    "precoOriginalEUR": 16.99,
-    "trailer": "https://www.youtube.com/embed/6F8L3d_OIE0",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65610-bd0e11cbb00421306917813138915802-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65610-bd0e11cbb00421306917813138915802-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Odyssey",
-    "steamGridMatchScore": 0.735,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/",
-    "enriquecido": false
-  },
-  {
     "id": "assassins-creed-origins-xbox-series",
     "nome": "ASSASSINS CREED ORIGINS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -1173,34 +1224,6 @@
     "steamGridMatchScore": 0.735,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
     "enriquecido": false
-  },
-  {
-    "id": "assassins-creed-shadows-xbox-series",
-    "nome": "ASSASSINS CREED SHADOWS XBOX SERIES S/X - MIDIA DIGITAL",
-    "plataforma": "Xbox Series X|S",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1534116897,
-    "precoVendaEUR": 30.99,
-    "precoOriginalEUR": 35.99,
-    "trailer": "https://www.youtube.com/embed/vovkzbtYBC8",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_5963-66d17b1b00a3811d6617598677124304-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_5963-66d17b1b00a3811d6617598677124304-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Shadows",
-    "steamGridMatchScore": 0.735,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-shadows-xbox-series-s-x-midia-digital-llhs1/",
-    "enriquecido": false,
-    "destaqueHome": true,
-    "prioridadeCuradoria": 14
   },
   {
     "id": "assetto-corsa-competizione-xbox-series",
@@ -1303,8 +1326,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595975390,
-    "precoVendaEUR": 19.99,
-    "precoOriginalEUR": 19.99,
+    "precoVendaEUR": 23.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/fTPJt7ZcR7g",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e79/e79b32462dcd1efa695f55c044701433.jpg",
@@ -1316,9 +1339,9 @@
     "descricao": "Avatar: Frontiers of Pandora™ is a first person, action-adventure game developed by Massive Entertainment – a Ubisoft studio, in collaboration with Lightstorm Entertainment and Disney. Built using the latest iteration of the Snowdrop engine, and developed exclusively for the new generation of con...",
     "imagemFallback": "https://media.rawg.io/media/games/983/9837c2e9a13a92c55c47327dfc22a81f.jpeg",
     "released": "2023-12-07",
-    "rating": 2.67,
-    "ratings_count": 55,
-    "added": 415,
+    "rating": 2.64,
+    "ratings_count": 56,
+    "added": 417,
     "genres": [
       "Action",
       "Adventure"
@@ -1329,6 +1352,35 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/avatar-frontiers-of-pandora-somente-xbox-series-s-x-midia-digital-1oo7n/",
     "enriquecido": true
+  },
+  {
+    "id": "batman-arkham-collections-xbox-series",
+    "nome": "BATMAN ARKHAM COLLECTIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1606555733,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 43.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Batman: Arkham Origins",
+    "steamGridMatchScore": 0.632,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "batman-arkham-knight-xbox-series",
@@ -1404,7 +1456,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1603254401,
     "precoVendaEUR": 5.99,
-    "precoOriginalEUR": 5.99,
+    "precoOriginalEUR": 26.99,
     "trailer": "https://www.youtube.com/embed/ASzOzrB-a9E",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9ed/9ed4bf5d435eb474356035a7ec82ba41.jpg",
@@ -1462,10 +1514,7 @@
     "steamGridMatchedName": "Battlefield 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mortal-kombat-x-xbox-one-xbox-series-s-x-midia-digital-copia-1h7et/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "battlefield-6-xbox-series",
@@ -2049,7 +2098,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471369848,
     "precoVendaEUR": 78.99,
-    "precoOriginalEUR": 88.99,
+    "precoOriginalEUR": 87.99,
     "trailer": "https://www.youtube.com/embed/4fbO2-egZ3U",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/crash-bundle-xbox-df3a37ba1aaf10d11717731647980182-1024-1024.webp"
@@ -2101,7 +2150,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1475222029,
     "precoVendaEUR": 43.99,
-    "precoOriginalEUR": 51.99,
+    "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/VWIw_f8e9Pg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/db1/db13b535ce6539774459f4a5890d1da5.jpg",
@@ -2249,10 +2298,7 @@
     "steamGridMatchedName": "DayZ",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dayz-xbox-one-xbox-series-s-x-midia-digital-1l6vd/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "dead-island-2-xbox-series",
@@ -2261,7 +2307,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1604787908,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
+    "precoOriginalEUR": 36.99,
     "trailer": "https://www.youtube.com/embed/Am8ET6CgJy8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2c6/2c60d574b9e1d1b30ce90e75b8be05e0.jpeg",
@@ -2449,8 +2495,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464572491,
-    "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 23.99,
+    "precoVendaEUR": 37.99,
+    "precoOriginalEUR": 37.99,
     "trailer": "https://www.youtube.com/embed/NdtmtuzICOI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d8d/d8d822cf4ff3adcd4c7787d9ef8d8546.jpg",
@@ -2583,7 +2629,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1588463689,
     "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 44.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/xone-dragonsdogma2-jpg-6364eac9c4e878768717882897169857-1024-1024.webp"
@@ -2759,8 +2805,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463377044,
-    "precoVendaEUR": 64.99,
-    "precoOriginalEUR": 64.99,
+    "precoVendaEUR": 63.99,
+    "precoOriginalEUR": 63.99,
     "trailer": "https://www.youtube.com/embed/qLZenOn7WUo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ba6/ba6675855ee539784357aed3ca095ce2.jpg",
@@ -2794,7 +2840,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463281391,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 47.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/E3Huy2cdih0",
     "screenshots": [
@@ -2945,10 +2991,7 @@
     "steamGridMatchedName": "Farm Manager 2021",
     "steamGridMatchScore": 0.765,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/farm-manager-2022-xbox-one-xbox-series-s-x-midia-digital-copia-z7e4j/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "fc-24-xbox-series",
@@ -3062,10 +3105,7 @@
     "steamGridMatchedName": "Final Fantasy VII",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/battlefield-4-xbox-one-xbox-series-s-x-midia-digital-copia-13app/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "final-fantasy-xvi-xbox-series",
@@ -3091,10 +3131,7 @@
     "steamGridMatchedName": "Final Fantasy XVI",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/final-fantasy-xvi-deluxe-xbox-series-s-x-midia-digital-1fqp6/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "fobia-st-dinfna-hotel-xbox-series",
@@ -3168,7 +3205,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462796888,
     "precoVendaEUR": 28.99,
-    "precoOriginalEUR": 44.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/FYH9n37B7Yw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5e2/5e2e7ccb084034da25d0b21b7c03c273.jpg",
@@ -3302,7 +3339,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462791821,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 17.99,
+    "precoOriginalEUR": 22.99,
     "trailer": "https://www.youtube.com/embed/QkkoHAzjnUs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/gta-v-1a89f8997367f0c0d817724599657056-1024-1024.webp"
@@ -3329,8 +3366,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468686230,
-    "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 22.99,
+    "precoVendaEUR": 54.99,
+    "precoOriginalEUR": 70.99,
     "trailer": "https://www.youtube.com/embed/7x7zr1onxfU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000267918-80cc5af0ed851299e017729108854788-1024-1024.webp"
@@ -3383,8 +3420,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543660208,
-    "precoVendaEUR": 38.99,
-    "precoOriginalEUR": 38.99,
+    "precoVendaEUR": 37.99,
+    "precoOriginalEUR": 37.99,
     "trailer": "https://www.youtube.com/embed/VcoT-VeH4Lc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349760-52dc11c3b87edca85217815476570666-1024-1024.webp"
@@ -3410,7 +3447,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545687636,
     "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 44.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/0MxBFXH2a_U",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/7f0/7f074d2e43a973552128d487ed551b2c.jpg",
@@ -3605,7 +3642,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544426738,
     "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 44.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/c080-rY2d-8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349912-7d0c5c366c069268f117816484927077-1024-1024.webp"
@@ -4045,7 +4082,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587677563,
-    "precoVendaEUR": 4.99,
+    "precoVendaEUR": 8.99,
     "precoOriginalEUR": 11.99,
     "trailer": "",
     "screenshots": [
@@ -4234,7 +4271,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463267630,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 14.99,
     "trailer": "https://www.youtube.com/embed/wJO_vIDZn-I",
     "screenshots": [
@@ -4450,10 +4487,7 @@
     "steamGridMatchedName": "Mortal Kombat X",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/sniper-ghost-warrior-contracts-2-xbox-one-xbox-series-s-x-midia-digital-copia-19rt6/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "naruto-shippuden-ultimate-ninja-storm-4-xbox-series",
@@ -4764,8 +4798,8 @@
     "imagemFallback": "https://media.rawg.io/media/games/174/1743b3dd185bda4a7be349347d4064df.jpg",
     "released": "2016-08-09",
     "rating": 3.71,
-    "ratings_count": 1590,
-    "added": 8270,
+    "ratings_count": 1591,
+    "added": 8272,
     "genres": [
       "Action",
       "Adventure",
@@ -5136,10 +5170,7 @@
     "steamGridMatchedName": "Pure Farming 2018",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/pure-farming-2018-xbox-one-xbox-series-s-x-midia-digital-copia-s7jpe/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "rayman-legends-retold-xbox-series",
@@ -5147,8 +5178,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543662272,
-    "precoVendaEUR": 38.99,
-    "precoOriginalEUR": 38.99,
+    "precoVendaEUR": 37.99,
+    "precoOriginalEUR": 37.99,
     "trailer": "https://www.youtube.com/embed/2_7BQ9hLGkk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/3f3/3f3de84c57189243164a050f7271fb01.jpg",
@@ -5236,10 +5267,7 @@
     "steamGridMatchedName": "REANIMAL",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/reanimal-xbox-series-s-x-midia-digital-1iquv/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "red-dead-2-xbox-series",
@@ -5571,10 +5599,7 @@
     "steamGridMatchedName": "Resident Evil: Revelations",
     "steamGridMatchScore": 0.567,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/resident-evil-remake-trilogy-xbox-one-series-s-x-midia-digital-11ftj/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "resident-evil-requiem-exclusiva-xbox-series",
@@ -5874,9 +5899,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/sea-of-thieves-xbox-one-series-s-x-midia-digital-x9v98/",
     "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 33
   },
@@ -5980,8 +6002,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464536445,
-    "precoVendaEUR": 38.99,
-    "precoOriginalEUR": 38.99,
+    "precoVendaEUR": 42.99,
+    "precoOriginalEUR": 42.99,
     "trailer": "https://www.youtube.com/embed/0NMoPvqaz10",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/8b2/8b243945a439d181d8736e785064e01d.jpg",
@@ -6038,10 +6060,7 @@
     "steamGridMatchedName": "Sniper Ghost Warrior Contracts 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/pure-farming-2018-xbox-one-xbox-series-s-x-midia-digital-copia-1d4zc/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "sonic-frontiers-xbox-series",
@@ -6049,8 +6068,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1586643272,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 11.99,
+    "precoVendaEUR": 23.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/hv_zibBXjlg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/fa4/fa4be1f90c7496b38abf418ad4aad690.jpg",
@@ -6307,7 +6326,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544429255,
     "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 44.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/Ek3I6_9c58E",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/f7d/f7d990724dd553484e527b4096025a65.jpg",
@@ -6486,9 +6505,9 @@
     "descricao": "From Rebel Wolves, comes the first chapter of a brand new role-playing saga: The Blood of Dawnwalker. Bloody conflicts sweep the lands, and the Black Death comes for the survivors. In the wake of the disasters claiming thousands of lives, the decimated human population struggles for survival. It'...",
     "imagemFallback": "https://media.rawg.io/media/games/319/319d18680fd0233e0ff724f234c97d17.jpg",
     "released": "2026-09-03",
-    "rating": 3.69,
-    "ratings_count": 10,
-    "added": 178,
+    "rating": 4.04,
+    "ratings_count": 23,
+    "added": 211,
     "genres": [
       "Action",
       "RPG"
@@ -6909,8 +6928,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468678892,
-    "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 37.99,
+    "precoOriginalEUR": 37.99,
     "trailer": "https://www.youtube.com/embed/1R4MdobS1nI",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000267899-26d2595002f6bf964e17729098893397-1024-1024.webp"
@@ -7313,25 +7332,31 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43286610608226",
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 53.99,
+    "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/MOclJJ7IpSY",
     "screenshots": [
-      "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/FC27XboxSeries_74f6f71d-8d15-4dca-a6cc-f6d78594df5f.jpg?v=1788471724"
+      "https://media.rawg.io/media/screenshots/8a3/8a362da6053e94416327b211eac26daa.jpg",
+      "https://media.rawg.io/media/screenshots/3d8/3d87b6344f25b392d3315eaf8fd2c24d.jpg",
+      "https://media.rawg.io/media/screenshots/b9d/b9d82085d8d051de495e1241f148e517.jpg",
+      "https://media.rawg.io/media/screenshots/018/018b8d079c88dfa272f06ddaa7ff020b.jpg",
+      "https://media.rawg.io/media/screenshots/d9b/d9b0ef34a249647310c5bc7577ce68e3.jpg"
     ],
-    "descricao": "",
-    "imagemFallback": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/FC27XboxSeries_74f6f71d-8d15-4dca-a6cc-f6d78594df5f.jpg?v=1788471724",
+    "descricao": "Welcome to The World’s Game in EA SPORTS FC™ 27. Step into The Grounds to experience a football playground where the streets meet the stadium, and feel greater control in every mode as community-driven innovations deliver more true-to-football gameplay.",
+    "imagemFallback": "https://media.rawg.io/media/screenshots/d9b/d9b0ef34a249647310c5bc7577ce68e3.jpg",
     "released": "2026-09-25",
     "rating": 0,
     "ratings_count": 0,
-    "added": 0,
-    "genres": [],
+    "added": 2,
+    "genres": [
+      "Sports"
+    ],
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "EA Sports FC 24",
     "steamGridMatchScore": 0.8,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/ea-sports-fc-27-xbox-series",
-    "enriquecido": false,
+    "enriquecido": true,
     "destaqueHome": true,
     "prioridadeCuradoria": 2
   },
