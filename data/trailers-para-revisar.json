@@ -1,5 +1,33 @@
 [
   {
+    "id": "ace-combat-7-skies-unknown-xbox-one",
+    "nome": "ACE COMBAT 7 SKIES UNKNOWN - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/KQCDj3emnHk",
+    "videoId": "KQCDj3emnHk",
+    "tituloVideo": "Ace Combat 7: Skies Unknown | Release Date Trailer | PS4",
+    "canal": "PlayStation Europe",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
+  },
+  {
+    "id": "ace-combat-7-skies-unknown-xbox-series",
+    "nome": "ACE COMBAT 7 SKIES UNKNOWN - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/KQCDj3emnHk",
+    "videoId": "KQCDj3emnHk",
+    "tituloVideo": "Ace Combat 7: Skies Unknown | Release Date Trailer | PS4",
+    "canal": "PlayStation Europe",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
+  },
+  {
     "id": "alan-wake-2-xbox-series",
     "nome": "ALAN WAKE 2 - XBOX SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -11,7 +39,63 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.755Z"
+    "revisadoEm": "2026-09-26T20:46:06.375Z"
+  },
+  {
+    "id": "ancestors-the-humankind-odyssey-xbox-one",
+    "nome": "ANCESTORS: THE HUMANKIND ODYSSEY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/4E1jVWUMQiA",
+    "videoId": "4E1jVWUMQiA",
+    "tituloVideo": "Ancestors: The Humankind Odyssey - Announcement Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
+  },
+  {
+    "id": "ancestors-the-humankind-odyssey-xbox-series",
+    "nome": "ANCESTORS: THE HUMANKIND ODYSSEY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/4E1jVWUMQiA",
+    "videoId": "4E1jVWUMQiA",
+    "tituloVideo": "Ancestors: The Humankind Odyssey - Announcement Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
+  },
+  {
+    "id": "avatar-frontiers-of-pandora-xbox-series",
+    "nome": "AVATAR: FRONTIERS OF PANDORA - XBOX SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/fTPJt7ZcR7g",
+    "videoId": "fTPJt7ZcR7g",
+    "tituloVideo": "Avatar: Frontiers of Pandora - Official World Premiere Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.471Z"
+  },
+  {
+    "id": "biomutant-xbox-one",
+    "nome": "Biomutant – Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/dOGSkl3o8uI",
+    "videoId": "dOGSkl3o8uI",
+    "tituloVideo": "Biomutant - Release Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.752Z"
   },
   {
     "id": "call-of-duty-modern-warfare-3-xbox-one",
@@ -53,7 +137,35 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.546Z"
+    "revisadoEm": "2026-09-26T20:46:06.135Z"
+  },
+  {
+    "id": "crash-team-racing-nitro-fueled-xbox-one",
+    "nome": "Crash Team Racing Nitro Fueled Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/dr2BCMRk_xc",
+    "videoId": "dr2BCMRk_xc",
+    "tituloVideo": "Crash Team Racing Nitro-Fueled - Reveal Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.855Z"
+  },
+  {
+    "id": "cuphead-xbox-one",
+    "nome": "Cuphead – Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/bE6ZeClM6uI",
+    "videoId": "bE6ZeClM6uI",
+    "tituloVideo": "Cuphead - Launch Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.751Z"
   },
   {
     "id": "dark-souls-3-xbox-one",
@@ -95,7 +207,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.547Z"
+    "revisadoEm": "2026-09-26T20:46:06.627Z"
   },
   {
     "id": "dark-souls-remastered-xbox-series",
@@ -109,7 +221,91 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.547Z"
+    "revisadoEm": "2026-09-26T20:46:06.627Z"
+  },
+  {
+    "id": "dead-island-2-xbox-one",
+    "nome": "DEAD ISLAND 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/Am8ET6CgJy8",
+    "videoId": "Am8ET6CgJy8",
+    "tituloVideo": "Dead Island 2 - Gameplay Trailer | PS5 & PS4 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.966Z"
+  },
+  {
+    "id": "dead-island-2-xbox-series",
+    "nome": "DEAD ISLAND 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/Am8ET6CgJy8",
+    "videoId": "Am8ET6CgJy8",
+    "tituloVideo": "Dead Island 2 - Gameplay Trailer | PS5 & PS4 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.966Z"
+  },
+  {
+    "id": "dragon-ball-xenoverse-xbox-one",
+    "nome": "Dragon Ball Xenoverse - Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/pXRXcOWWem8",
+    "videoId": "pXRXcOWWem8",
+    "tituloVideo": "Dragon Ball Xenoverse 3 - Welcome to West City Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.751Z"
+  },
+  {
+    "id": "dragon-ball-xenoverse-2-xbox-one",
+    "nome": "DRAGON BALL XENOVERSE 2 XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/JnUbg-9v_bE",
+    "videoId": "JnUbg-9v_bE",
+    "tituloVideo": "Launch Trailer - Dragon Ball XENOVERSE 2 | PS4, X1, Steam",
+    "canal": "Bandai Namco Entertainment America",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "dragon-ball-xenoverse-2-xbox-series",
+    "nome": "DRAGON BALL XENOVERSE 2 XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/JnUbg-9v_bE",
+    "videoId": "JnUbg-9v_bE",
+    "tituloVideo": "Launch Trailer - Dragon Ball XENOVERSE 2 | PS4, X1, Steam",
+    "canal": "Bandai Namco Entertainment America",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "dragon-s-dogma-2-xbox-series",
+    "nome": "Dragon's Dogma 2 – Xbox Series Mídia Digital",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/cT0rIgaiPWA",
+    "videoId": "cT0rIgaiPWA",
+    "tituloVideo": "Dragon's Dogma 2 - Main Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.375Z"
   },
   {
     "id": "fable-xbox-series",
@@ -123,7 +319,77 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.436Z"
+    "revisadoEm": "2026-09-26T20:46:05.958Z"
+  },
+  {
+    "id": "far-cry-3-classic-edition-xbox-one",
+    "nome": "Far Cry 3 Classic Edition - Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/GN563Yxar-o",
+    "videoId": "GN563Yxar-o",
+    "tituloVideo": "Far Cry 3 | Classic Edition Trailer | PS4",
+    "canal": "PlayStation Europe",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "farming-simulator-19-xbox-one",
+    "nome": "Farming Simulator 19 - Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/SKWR8B0LlhI",
+    "videoId": "SKWR8B0LlhI",
+    "tituloVideo": "Farming Simulator 19 – E3 2018 Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
+  },
+  {
+    "id": "farming-simulator-22-xbox-one",
+    "nome": "Farming Simulator 22 – Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/qg9VPiUtaic",
+    "videoId": "qg9VPiUtaic",
+    "tituloVideo": "Farming Simulator 22 - Cinematic Trailer  | PS5, PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
+  },
+  {
+    "id": "farming-simulator-22-xbox-series",
+    "nome": "Farming Simulator 22 – Xbox Series Mídia Digital",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/qg9VPiUtaic",
+    "videoId": "qg9VPiUtaic",
+    "tituloVideo": "Farming Simulator 22 - Cinematic Trailer  | PS5, PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
+  },
+  {
+    "id": "final-fantasy-xvi-xbox-series",
+    "nome": "FINAL FANTASY XVI - XBOX SERIES S/X - MIDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/gV5rIW1Qums",
+    "videoId": "gV5rIW1Qums",
+    "tituloVideo": "Final Fantasy XVI - State of Play June 2022 Dominance Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.269Z"
   },
   {
     "id": "gears-of-war-reloaded-xbox-series",
@@ -137,7 +403,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.667Z"
+    "revisadoEm": "2026-09-26T20:46:06.375Z"
   },
   {
     "id": "hell-let-loose-vietnam-xbox-series",
@@ -151,7 +417,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.667Z"
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
   },
   {
     "id": "hogwarts-legacy-xbox-one",
@@ -165,7 +431,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.320Z"
+    "revisadoEm": "2026-09-26T20:46:05.958Z"
   },
   {
     "id": "hogwarts-legacy-xbox-series",
@@ -179,7 +445,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.320Z"
+    "revisadoEm": "2026-09-26T20:46:05.958Z"
   },
   {
     "id": "hollow-knight-voidheart-edition-xbox-one",
@@ -193,7 +459,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.979Z"
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
   },
   {
     "id": "hollow-knight-voidheart-edition-xbox-series",
@@ -207,7 +473,21 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.979Z"
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "lego-harry-potter-collection-xbox-one",
+    "nome": "Lego Harry Potter Collection Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/MWjU0rlOjSs",
+    "videoId": "MWjU0rlOjSs",
+    "tituloVideo": "LEGO Harry Potter Collection - Official “Relive the Magic” Launch Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.752Z"
   },
   {
     "id": "mafia-iii-3-definitive-edition-xbox-one",
@@ -221,7 +501,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.755Z"
+    "revisadoEm": "2026-09-26T20:46:06.375Z"
   },
   {
     "id": "mafia-iii-3-definitive-edition-xbox-series",
@@ -235,7 +515,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.755Z"
+    "revisadoEm": "2026-09-26T20:46:06.375Z"
   },
   {
     "id": "mafia-trilogy-xbox-one",
@@ -249,7 +529,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.546Z"
+    "revisadoEm": "2026-09-26T20:46:06.135Z"
   },
   {
     "id": "mafia-trilogy-xbox-series",
@@ -263,7 +543,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.546Z"
+    "revisadoEm": "2026-09-26T20:46:06.135Z"
   },
   {
     "id": "metal-gear-solid-snake-eater-xbox-series",
@@ -277,7 +557,21 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.436Z"
+    "revisadoEm": "2026-09-26T20:46:06.135Z"
+  },
+  {
+    "id": "naruto-shippuden-ultimate-ninja-storm-legacy-xbox-one",
+    "nome": "NARUTO SHIPPUDEN: Ultimate Ninja STORM Legacy – Xbox One",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/QdiB4waBJN4",
+    "videoId": "QdiB4waBJN4",
+    "tituloVideo": "Naruto Ultimate Ninja Storm Legacy - Announcement Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.268Z"
   },
   {
     "id": "naruto-x-boruto-ultimate-ninja-storm-connections-xbox-one",
@@ -291,7 +585,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.546Z"
+    "revisadoEm": "2026-09-26T20:46:06.269Z"
   },
   {
     "id": "naruto-x-boruto-ultimate-ninja-storm-connections-xbox-series",
@@ -305,7 +599,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.546Z"
+    "revisadoEm": "2026-09-26T20:46:06.269Z"
   },
   {
     "id": "onimusha-way-of-the-sword-xbox-series",
@@ -319,7 +613,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.436Z"
+    "revisadoEm": "2026-09-26T20:46:05.958Z"
   },
   {
     "id": "pragmata-xbox-series",
@@ -333,7 +627,91 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.546Z"
+    "revisadoEm": "2026-09-26T20:46:06.135Z"
+  },
+  {
+    "id": "reanimal-xbox-series",
+    "nome": "REANIMAL - XBOX SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/mUymvhAXOnM",
+    "videoId": "mUymvhAXOnM",
+    "tituloVideo": "Reanimal - Announcement Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.135Z"
+  },
+  {
+    "id": "resident-evil-2-xbox-one",
+    "nome": "RESIDENT EVIL 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/u3wS-Q2KBpk",
+    "videoId": "u3wS-Q2KBpk",
+    "tituloVideo": "Resident Evil 2 | Launch Trailer | PS4",
+    "canal": "PlayStation Europe",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:05.958Z"
+  },
+  {
+    "id": "resident-evil-2-xbox-series",
+    "nome": "RESIDENT EVIL 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/u3wS-Q2KBpk",
+    "videoId": "u3wS-Q2KBpk",
+    "tituloVideo": "Resident Evil 2 | Launch Trailer | PS4",
+    "canal": "PlayStation Europe",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:05.958Z"
+  },
+  {
+    "id": "resident-evil-7-biohazard-midia-xbox-one",
+    "nome": "Resident Evil 7 Biohazard – Xbox One Mídia",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/V_Hbr9ITvc0",
+    "videoId": "V_Hbr9ITvc0",
+    "tituloVideo": "Resident Evil 7 biohazard - E3 2016 TAPE-1 \"Desolation\" Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.855Z"
+  },
+  {
+    "id": "sea-of-thieves-xbox-series",
+    "nome": "SEA OF THIEVES - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "arquivo": "xbox-series.json",
+    "trailer": "https://www.youtube.com/embed/xKLpWOEEUxc",
+    "videoId": "xKLpWOEEUxc",
+    "tituloVideo": "Sea of Thieves - Launch Trailer | PS5 Games",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "sekiro-shadows-die-twice-xbox-one",
+    "nome": "Sekiro Shadows Die Twice - Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/rXMX4YJ7Lks",
+    "videoId": "rXMX4YJ7Lks",
+    "tituloVideo": "Sekiro: Shadows Die Twice - Official Launch Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.135Z"
   },
   {
     "id": "silent-hill-2-xbox-series",
@@ -347,7 +725,63 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.436Z"
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "snowrunner-xbox-one",
+    "nome": "SnowRunner - Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/jrM7TAPs66Y",
+    "videoId": "jrM7TAPs66Y",
+    "tituloVideo": "SnowRunner - Overview Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.855Z"
+  },
+  {
+    "id": "stranded-deep-xbox-one",
+    "nome": "Stranded Deep - Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/E9_iyrd8EsA",
+    "videoId": "E9_iyrd8EsA",
+    "tituloVideo": "Stranded Deep - Official Launch Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "street-fighter-30th-anniversary-collection-xbox-one",
+    "nome": "Street Fighter 30th Anniversary Collection – Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/Q9iZROTh5Go",
+    "videoId": "Q9iZROTh5Go",
+    "tituloVideo": "Street Fighter 30th Anniversary Collection – Announcement Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.626Z"
+  },
+  {
+    "id": "tekken-7-xbox-one",
+    "nome": "Tekken 7 Xbox One Mídia Digital",
+    "plataforma": "Xbox One",
+    "arquivo": "xbox-one.json",
+    "trailer": "https://www.youtube.com/embed/1V-_q3SKh5w",
+    "videoId": "1V-_q3SKh5w",
+    "tituloVideo": "Tekken 7 – Launch Trailer | PS4",
+    "canal": "PlayStation",
+    "motivo": "trailer-existente-com-branding-de-outra-plataforma",
+    "origem": "videos.list",
+    "query": "",
+    "revisadoEm": "2026-09-26T20:46:06.269Z"
   },
   {
     "id": "tekken-8-xbox-series",
@@ -361,7 +795,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:45.667Z"
+    "revisadoEm": "2026-09-26T20:46:06.471Z"
   },
   {
     "id": "tom-clancy-s-ghost-recon-breakpoint-xbox-one",
@@ -375,7 +809,7 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:46.187Z"
+    "revisadoEm": "2026-09-26T20:46:06.375Z"
   },
   {
     "id": "tom-clancy-s-ghost-recon-breakpoint-xbox-series",
@@ -389,6 +823,6 @@
     "motivo": "trailer-existente-com-branding-de-outra-plataforma",
     "origem": "videos.list",
     "query": "",
-    "revisadoEm": "2026-08-05T04:19:46.187Z"
+    "revisadoEm": "2026-09-26T20:46:06.375Z"
   }
 ]
