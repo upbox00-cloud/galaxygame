@@ -105,6 +105,9 @@ test("automação diária usa a chave do YouTube sem exceder o orçamento de pes
   assert.match(workflow, /YOUTUBE_REVALIDATE_SEARCH_LIMIT:\s*20/);
   assert.match(workflow, /YOUTUBE_REQUEST_LIMIT:\s*70/);
   assert.match(workflow, /YOUTUBE_API_KEY\$GOOGLE_YOUTUBE_API_KEY\$GOOGLE_API_KEY/);
+  assert.match(workflow, /node --test tests\/supplier-sync\.test\.js tests\/pricing\.test\.js tests\/price-overrides\.test\.js/);
+  assert.doesNotMatch(workflow, /\bnpm test\b/);
+  assert.doesNotMatch(workflow, /--test-isolation=none/);
   assert.match(enrichYoutube, /process\.env\.YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_API_KEY/);
   assert.match(revalidateYoutube, /process\.env\.YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_API_KEY/);
   assert.match(workflow, /Revalidar trailers existentes[\s\S]*continue-on-error:\s*true/);

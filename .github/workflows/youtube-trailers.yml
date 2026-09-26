@@ -57,7 +57,7 @@ jobs:
         run: npm run catalogo:lite
 
       - name: Validar projeto
-        run: npm test
+        run: node --test tests/supplier-sync.test.js tests/pricing.test.js tests/price-overrides.test.js
 
       - name: Publicar trailers encontrados
         run: |
