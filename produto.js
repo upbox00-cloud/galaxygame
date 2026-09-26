@@ -232,15 +232,22 @@ function trackMetaEvent(eventName, parameters, options) {
 }
 
 function isPreorderProduct(product) {
+  const releaseTime = productReleaseTime(product);
+  if (Number.isFinite(releaseTime) && releaseTime <= Date.now()) return false;
   if (product.preorder === true) return true;
   if (/(^|\s)(ea sports\s*)?fc\s*27(\s|$)/i.test(String(product.nome || product.name || ""))) return true;
   if (Array.isArray(product.tags) && product.tags.some((tag) => /pre.?lan[cç]amento|pre.?venda/i.test(String(tag)))) return true;
-  if (!product.released || String(product.released).toLowerCase() === "tbd") return false;
 
-  const releaseDate = new Date(`${product.released}T00:00:00`);
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  return Number.isFinite(releaseDate.getTime()) && releaseDate > today;
+  return Number.isFinite(releaseTime) && releaseTime > Date.now();
+}
+
+function productReleaseTime(product) {
+  if (!product?.released || String(product.released).toLowerCase() === "tbd") return Number.POSITIVE_INFINITY;
+  const value = String(product.released).trim();
+  const time = /^\d{4}-\d{2}-\d{2}$/.test(value)
+    ? new Date(`${value}T00:00:00`).getTime()
+    : Date.parse(value);
+  return Number.isFinite(time) ? time : Number.POSITIVE_INFINITY;
 }
 
 function addToCart(product) {
@@ -460,7 +467,7 @@ function renderProductCountdown(product) {
     return;
   }
 
-  const released = /^\d{4}-\d{2}-\d{2}$/.test(String(product.released || "")) ? product.released : "";
+  const released = Number.isFinite(productReleaseTime(product)) ? String(product.released || "") : "";
   countdown.dataset.releaseCountdown = released;
   countdown.hidden = false;
 
@@ -850,7 +857,7 @@ function renderProductGrid(container, products) {
 
 function productPreorderCountdownHtml(product) {
   if (!isPreorderProduct(product)) return "";
-  const released = /^\d{4}-\d{2}-\d{2}$/.test(String(product.released || "")) ? product.released : "";
+  const released = Number.isFinite(productReleaseTime(product)) ? String(product.released || "") : "";
   return `
     <div class="release-countdown release-countdown-card" data-release-countdown="${escapeHtml(released)}" aria-label="Contagem decrescente para o lancamento">
       <span class="release-countdown-label">Lan&ccedil;amento em</span>

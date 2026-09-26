@@ -14,6 +14,12 @@ test("parses a valid catalog release date without changing its day", () => {
   assert.equal(date.getDate(), 19);
 });
 
+test("parses a release date with time for automatic launch transitions", () => {
+  const date = countdown.parseReleaseDate("2026-11-19T15:00:00+00:00");
+  assert.ok(date instanceof Date);
+  assert.equal(date.toISOString(), "2026-11-19T15:00:00.000Z");
+});
+
 test("rejects missing, malformed and impossible release dates", () => {
   assert.equal(countdown.parseReleaseDate(null), null);
   assert.equal(countdown.parseReleaseDate("tbd"), null);
@@ -47,6 +53,10 @@ test("preorder cards and product panel contain countdown hooks", () => {
   assert.match(productHtml, /data-product-countdown/);
   assert.match(home, /released: "2026-11-19"/);
   assert.match(productJs, /released: "2026-11-19"/);
+  assert.match(home, /if \(Number\.isFinite\(releaseTime\) && releaseTime <= Date\.now\(\)\) return false/);
+  assert.match(productJs, /if \(Number\.isFinite\(releaseTime\) && releaseTime <= Date\.now\(\)\) return false/);
+  assert.match(home, /function recentLaunchPriority\(product\)/);
+  assert.match(home, /\.\.\.launchedPreorders/);
 });
 
 test("product countdown waits for the shared module when scripts load out of order", () => {

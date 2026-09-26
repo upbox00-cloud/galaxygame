@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 45
     env:
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      GOOGLE_YOUTUBE_API_KEY: ${{ secrets.GOOGLE_YOUTUBE_API_KEY }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
       YOUTUBE_REVALIDATE_SEARCH_LIMIT: 20
       YOUTUBE_REQUEST_LIMIT: 70
 
@@ -37,7 +39,11 @@ jobs:
         run: npm ci
 
       - name: Confirmar configuracao segura
-        run: test -n "$YOUTUBE_API_KEY"
+        run: |
+          if [ -z "$YOUTUBE_API_KEY$GOOGLE_YOUTUBE_API_KEY$GOOGLE_API_KEY" ]; then
+            echo "Configure um secret YOUTUBE_API_KEY, GOOGLE_YOUTUBE_API_KEY ou GOOGLE_API_KEY para usar a YouTube Data API."
+            exit 1
+          fi
 
       - name: Revalidar trailers existentes
         continue-on-error: true

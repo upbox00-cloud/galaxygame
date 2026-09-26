@@ -4,7 +4,15 @@ const CATALOG_FILES = Object.values(PLATFORMS).map((platform) => platform.output
 
 const CURADORIA = [
   { prioridade: 1, nome: "Grand Theft Auto V / Grand Theft Auto VI", aliases: ["grand theft auto v", "grand theft auto 5", "gta v", "gta 5", "grand theft auto vi", "grand theft auto 6", "gta vi", "gta 6"] },
-  { prioridade: 2, nome: "EA Sports FC 26 / EA Sports FC 27", aliases: ["ea sports fc 26", "fc 26", "ea sports fc 27", "fc 27"] },
+  {
+    prioridade: 2,
+    nome: "EA Sports FC 26 / EA Sports FC 27",
+    aliases: ["ea sports fc 26", "fc 26", "ea sports fc 27", "fc 27"],
+    releaseDates: {
+      "ea sports fc 27": "2026-09-25",
+      "fc 27": "2026-09-25"
+    }
+  },
   { prioridade: 3, nome: "Call of Duty: Modern Warfare III / Modern Warfare 4", aliases: ["call of duty modern warfare iii", "call of duty modern warfare 3", "modern warfare iii", "modern warfare 3", "modern warfare 4", "call of duty modern warfare 4"] },
   { prioridade: 4, nome: "Fortnite", aliases: ["fortnite"] },
   { prioridade: 5, nome: "Minecraft", aliases: ["minecraft"] },
@@ -118,6 +126,27 @@ function bestCuratedMatch(product) {
   return best;
 }
 
+function productReleaseTime(product) {
+  const value = String(product?.released || "").trim();
+  if (!value || value.toLowerCase() === "tbd") return Number.POSITIVE_INFINITY;
+  const time = /^\d{4}-\d{2}-\d{2}$/.test(value)
+    ? new Date(`${value}T00:00:00`).getTime()
+    : Date.parse(value);
+  return Number.isFinite(time) ? time : Number.POSITIVE_INFINITY;
+}
+
+function curatedReleaseDate(match) {
+  if (!match?.item?.releaseDates) return "";
+  return match.item.releaseDates[normalized(match.alias)] || "";
+}
+
+function applyCuratedReleaseDate(product, match) {
+  const releaseDate = curatedReleaseDate(match);
+  if (!releaseDate || Number.isFinite(productReleaseTime(product))) return false;
+  product.released = releaseDate;
+  return true;
+}
+
 function main() {
   const foundPriorities = new Map();
   let markedProducts = 0;
@@ -139,6 +168,7 @@ function main() {
 
       product.destaqueHome = true;
       product.prioridadeCuradoria = match.item.prioridade;
+      applyCuratedReleaseDate(product, match);
       markedProducts += 1;
       changed = true;
 
@@ -171,4 +201,12 @@ function main() {
   }
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = {
+  _test: {
+    bestCuratedMatch,
+    applyCuratedReleaseDate,
+    productReleaseTime
+  }
+};

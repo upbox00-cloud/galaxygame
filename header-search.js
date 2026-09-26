@@ -152,6 +152,10 @@ function mountSearchPreview(form) {
 
   let debounceTimer = 0;
 
+  function isMobileSearch() {
+    return window.matchMedia("(max-width: 620px)").matches;
+  }
+
   function hidePreview() {
     panel.hidden = true;
     panel.innerHTML = "";
@@ -161,6 +165,12 @@ function mountSearchPreview(form) {
     form.classList.remove("expanded");
     hidePreview();
     input.blur();
+  }
+
+  function openMobileSearch() {
+    form.classList.add("expanded");
+    window.setTimeout(() => input.focus(), 30);
+    loadHeaderCatalog();
   }
 
   function renderResults(query, products) {
@@ -227,6 +237,11 @@ function mountSearchPreview(form) {
   });
 
   form.addEventListener("submit", hidePreview);
+  form.querySelector('button[type="submit"]')?.addEventListener("click", (event) => {
+    if (!isMobileSearch() || form.classList.contains("expanded")) return;
+    event.preventDefault();
+    openMobileSearch();
+  });
   closeButton.addEventListener("click", closeMobileSearch);
   document.addEventListener("click", (event) => {
     if (!form.contains(event.target)) {
@@ -252,10 +267,8 @@ document.querySelectorAll(".header-search").forEach((form) => {
     form.dataset.searchSubmitReady = "true";
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      if (window.matchMedia("(max-width: 620px)").matches && !form.classList.contains("expanded")) {
-        form.classList.add("expanded");
-        window.setTimeout(() => input?.focus(), 30);
-        loadHeaderCatalog();
+      if (isMobileSearch() && !form.classList.contains("expanded")) {
+        openMobileSearch();
         return;
       }
       const query = input?.value.trim() || "";

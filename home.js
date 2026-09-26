@@ -334,7 +334,7 @@ function createCatalogCard(product) {
 
 function preorderCountdownHtml(product) {
   if (!isPreorderProduct(product)) return "";
-  const released = /^\d{4}-\d{2}-\d{2}$/.test(String(product.released || "")) ? product.released : "";
+  const released = Number.isFinite(productReleaseTime(product)) ? String(product.released || "") : "";
   return `
     <div class="release-countdown release-countdown-card" data-release-countdown="${escapeCatalogHtml(released)}" aria-label="Contagem decrescente para o lancamento">
       <span class="release-countdown-label">Lan&ccedil;amento em</span>
@@ -431,6 +431,9 @@ function productGenres(product) {
 }
 
 function compareCatalogProducts(first, second) {
+  const launchPriority = recentLaunchPriority(second) - recentLaunchPriority(first);
+  if (launchPriority) return launchPriority;
+
   if (catalogState.sort === "price-asc") {
     return Number(first.precoVendaEUR || 0) - Number(second.precoVendaEUR || 0);
   }
@@ -485,7 +488,7 @@ function filteredCatalogProducts() {
     return matchesQuery && matchesMinPrice && matchesMaxPrice && matchesDiscount && matchesGenre && matchesPreorder;
   });
 
-  return catalogState.sort === "relevance" ? filtered : [...filtered].sort(compareCatalogProducts);
+  return [...filtered].sort(compareCatalogProducts);
 }
 
 function updateCatalogTabs() {
@@ -607,20 +610,32 @@ function allCatalogProducts() {
 
 function productReleaseTime(product) {
   if (!product.released || String(product.released).toLowerCase() === "tbd") return Number.POSITIVE_INFINITY;
-  const time = new Date(`${product.released}T00:00:00`).getTime();
+  const value = String(product.released).trim();
+  const time = /^\d{4}-\d{2}-\d{2}$/.test(value)
+    ? new Date(`${value}T00:00:00`).getTime()
+    : Date.parse(value);
   return Number.isFinite(time) ? time : Number.POSITIVE_INFINITY;
 }
 
 function isPreorderProduct(product) {
+  const releaseTime = productReleaseTime(product);
+  if (Number.isFinite(releaseTime) && releaseTime <= Date.now()) return false;
   if (product.preorder === true) return true;
   const supplierText = normalizeCatalogText(`${product.nome || ""} ${product.linkFornecedor || ""} ${(Array.isArray(product.tags) ? product.tags : []).join(" ")}`);
   if (/(^|\s)(ea sports\s*)?fc\s*27(\s|$)/.test(supplierText)) return true;
   if (/\b(pre venda|pre order|preorder|reserva antecipada)\b/.test(supplierText)) return true;
 
+  return Number.isFinite(releaseTime) && releaseTime > Date.now();
+}
+
+function recentLaunchPriority(product) {
   const releaseTime = productReleaseTime(product);
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  return Number.isFinite(releaseTime) && releaseTime > today.getTime();
+  if (!Number.isFinite(releaseTime) || releaseTime > Date.now()) return 0;
+  const ageDays = (Date.now() - releaseTime) / (1000 * 60 * 60 * 24);
+  if (ageDays > 30) return 0;
+  const text = normalizeCatalogText(`${product.nome || ""} ${(Array.isArray(product.tags) ? product.tags : []).join(" ")}`);
+  const wasPreorder = product.preorder === true || /\b(pre venda|pre order|preorder|reserva antecipada)\b/.test(text);
+  return wasPreorder ? 1000 - ageDays : 0;
 }
 
 function trendScore(product) {
@@ -768,11 +783,13 @@ function renderHomeHighlights() {
   const products = allCatalogProducts();
   if (!products.length) return;
   const popularProducts = products.filter(isPopularHomeProduct);
+  const launchedPreorders = products.filter((product) => recentLaunchPriority(product) > 0);
 
   const preordersGrid = document.querySelector('[data-game-grid="preorders"]');
-  const manualKeys = new Set(MANUAL_PREORDER_PRODUCTS.map((product) => baseGameKey(product.nome)));
+  const activeManualPreorders = MANUAL_PREORDER_PRODUCTS.filter(isPreorderProduct);
+  const manualKeys = new Set(activeManualPreorders.map((product) => baseGameKey(product.nome)));
   const preorderProducts = [
-    ...MANUAL_PREORDER_PRODUCTS,
+    ...activeManualPreorders,
     ...uniqueGames(
       products.filter((product) => isPreorderProduct(product) && !manualKeys.has(baseGameKey(product.nome))),
       (first, second) => productReleaseTime(first) - productReleaseTime(second),
@@ -787,7 +804,7 @@ function renderHomeHighlights() {
   const trendingCuratedPool = products.filter((product) =>
     activeTrendPlatform === "all" || product.catalogPlatform === activeTrendPlatform
   );
-  const trendingAutomaticPool = popularProducts.filter((product) => {
+  const trendingAutomaticPool = [...launchedPreorders, ...popularProducts].filter((product) => {
     if (trendScore(product) <= 0) return false;
     return activeTrendPlatform === "all" || product.catalogPlatform === activeTrendPlatform;
   });
@@ -799,12 +816,12 @@ function renderHomeHighlights() {
   const popularitySort = (first, second) => popularityScore(second) - popularityScore(first);
   renderHighlightGrid(
     document.querySelector('[data-game-grid="bestSellers"]'),
-    curatedThenAutomatic(products, popularProducts, popularitySort, 8)
+    curatedThenAutomatic([...launchedPreorders, ...products], popularProducts, popularitySort, 8)
   );
 
   const today = new Date();
   today.setHours(23, 59, 59, 999);
-  const recentAutomaticPool = popularProducts.filter((product) => {
+  const recentAutomaticPool = [...launchedPreorders, ...popularProducts].filter((product) => {
     const releaseTime = productReleaseTime(product);
     return Number.isFinite(releaseTime) && releaseTime <= today.getTime();
   });
@@ -823,7 +840,7 @@ function renderHomeHighlights() {
 
   renderHighlightGrid(
     document.querySelector('[data-game-grid="catalogPreview"]'),
-    uniqueGames(popularProducts, popularitySort, HOME_CATALOG_PREVIEW_SIZE)
+    uniqueGames([...launchedPreorders, ...popularProducts], popularitySort, HOME_CATALOG_PREVIEW_SIZE)
   );
 
   renderHomeRecommendation(products);

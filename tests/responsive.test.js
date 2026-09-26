@@ -54,7 +54,7 @@ test("catalogo da home mostra 14 jogos populares em grelha vertical no mobile", 
   assert.match(homeScript, /HOME_CATALOG_PREVIEW_SIZE\s*=\s*14/);
   assert.match(
     homeScript,
-    /uniqueGames\(popularProducts, popularitySort, HOME_CATALOG_PREVIEW_SIZE\)/
+    /uniqueGames\(\[\.\.\.launchedPreorders, \.\.\.popularProducts\], popularitySort, HOME_CATALOG_PREVIEW_SIZE\)/
   );
   assert.match(
     siteStyles,
@@ -72,6 +72,22 @@ test("catalogo da home mostra 14 jogos populares em grelha vertical no mobile", 
   assert.match(homeHtml, /home\.js\?v=20260919-1/);
   assert.match(homeScript, /catalogPreview:\s*HOME_CATALOG_PREVIEW_SIZE/);
   assert.match(homeHtml, /repeat\('\[data-game-grid="catalogPreview"\]',14\)/);
+});
+
+test("pesquisa mobile abre a lupa antes de submeter sem alterar desktop", () => {
+  const headerSearchScript = fs.readFileSync("header-search.js", "utf8");
+  assert.match(homeHtml, /header-search\.js\?v=20260919-1/);
+  assert.match(siteStyles, /@media \(max-width: 620px\)[\s\S]*\.header-search\.expanded/s);
+  assert.match(siteStyles, /\.header-search\.expanded input/);
+  assert.match(siteStyles, /\.header-search:not\(\.expanded\):not\(:focus-within\),\s*\.header-search:not\(\.expanded\):not\(:focus-within\) button/);
+  const smallPhoneSearchRules = siteStyles.slice(siteStyles.indexOf("width: clamp(196px, 52vw, 212px)"));
+  const collapsedSmallPhoneRule = smallPhoneSearchRules.match(
+    /\.header-search:not\(\.expanded\):not\(:focus-within\),[\s\S]*?width:\s*38px;[\s\S]*?flex-basis:\s*38px;/
+  )?.[0];
+  assert.ok(collapsedSmallPhoneRule, "a regra pequena deve limitar apenas a lupa fechada");
+  assert.doesNotMatch(collapsedSmallPhoneRule, /\.header-search,\s*\.header-search button/);
+  assert.match(headerSearchScript, /function openMobileSearch\(\)/);
+  assert.match(headerSearchScript, /button\[type="submit"\][\s\S]*event\.preventDefault\(\);[\s\S]*openMobileSearch\(\)/);
 });
 
 test("banner principal alterna automaticamente entre tres produtos sem antecipar o LCP", () => {

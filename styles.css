@@ -5604,8 +5604,8 @@ details p {
     height: 50px;
   }
 
-  .header-search,
-  .header-search button,
+  .header-search:not(.expanded):not(:focus-within),
+  .header-search:not(.expanded):not(:focus-within) button,
   .auth-controls,
   .cart-shell,
   .auth-login-button.account-icon-button,
@@ -5652,8 +5652,8 @@ details p {
     gap: 1px;
   }
 
-  .header-search,
-  .header-search button,
+  .header-search:not(.expanded):not(:focus-within),
+  .header-search:not(.expanded):not(:focus-within) button,
   .auth-controls,
   .cart-shell,
   .auth-login-button.account-icon-button,
@@ -5712,8 +5712,8 @@ details p {
     padding-inline: 6px;
   }
 
-  .header-search,
-  .header-search button,
+  .header-search:not(.expanded):not(:focus-within),
+  .header-search:not(.expanded):not(:focus-within) button,
   .auth-controls,
   .cart-shell,
   .auth-login-button.account-icon-button,
@@ -5981,8 +5981,8 @@ details p {
     height: 66px;
   }
 
-  .header-search,
-  .header-search button,
+  .header-search:not(.expanded):not(:focus-within),
+  .header-search:not(.expanded):not(:focus-within) button,
   .auth-controls,
   .cart-shell,
   .auth-login-button.account-icon-button,

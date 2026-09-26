@@ -32,7 +32,17 @@ const KEEP_FIELDS = [
   "prioridadeCuradoria"
 ];
 
+function productReleaseTime(product) {
+  const value = String(product.released || "").trim();
+  if (!value || value.toLowerCase() === "tbd") return Number.POSITIVE_INFINITY;
+  const time = /^\d{4}-\d{2}-\d{2}$/.test(value)
+    ? new Date(`${value}T00:00:00`).getTime()
+    : Date.parse(value);
+  return Number.isFinite(time) ? time : Number.POSITIVE_INFINITY;
+}
+
 function isKnownPreorder(product) {
+  if (productReleaseTime(product) <= Date.now()) return false;
   return /(^|\s)(ea sports\s*)?fc\s*27(\s|$)/i.test(String(product.nome || product.name || ""));
 }
 

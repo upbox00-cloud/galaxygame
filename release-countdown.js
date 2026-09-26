@@ -8,7 +8,15 @@
   let intervalId = null;
 
   function parseReleaseDate(value) {
-    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value || "").trim());
+    const source = String(value || "").trim();
+    if (!source) return null;
+
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(source)) {
+      const parsed = new Date(source);
+      return Number.isFinite(parsed.getTime()) ? parsed : null;
+    }
+
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(source);
     if (!match) return null;
 
     const year = Number(match[1]);

@@ -5,6 +5,7 @@ const fs = require("node:fs");
 const tca = require("../scripts/scrape-tca")._test;
 const merge = require("../scripts/merge-fornecedores")._test;
 const { validateCatalogUpdate } = require("../scripts/validate-catalog-update");
+const curadoria = require("../scripts/aplicar-curadoria")._test;
 
 function tcaProduct(overrides = {}) {
   return {
@@ -95,10 +96,46 @@ test("validação bloqueia queda perigosa e produtos duplicados", () => {
 
 test("automação diária usa a chave do YouTube sem exceder o orçamento de pesquisas", () => {
   const workflow = fs.readFileSync(".github/workflows/youtube-trailers.yml", "utf8");
+  const enrichYoutube = fs.readFileSync("scripts/enrich-youtube.js", "utf8");
+  const revalidateYoutube = fs.readFileSync("scripts/revalidar-trailers.js", "utf8");
   assert.match(workflow, /cron:\s*"20 5 \* \* \*"/);
   assert.match(workflow, /YOUTUBE_API_KEY:\s*\$\{\{ secrets\.YOUTUBE_API_KEY \}\}/);
+  assert.match(workflow, /GOOGLE_YOUTUBE_API_KEY:\s*\$\{\{ secrets\.GOOGLE_YOUTUBE_API_KEY \}\}/);
+  assert.match(workflow, /GOOGLE_API_KEY:\s*\$\{\{ secrets\.GOOGLE_API_KEY \}\}/);
   assert.match(workflow, /YOUTUBE_REVALIDATE_SEARCH_LIMIT:\s*20/);
   assert.match(workflow, /YOUTUBE_REQUEST_LIMIT:\s*70/);
+  assert.match(workflow, /YOUTUBE_API_KEY\$GOOGLE_YOUTUBE_API_KEY\$GOOGLE_API_KEY/);
+  assert.match(enrichYoutube, /process\.env\.YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_API_KEY/);
+  assert.match(revalidateYoutube, /process\.env\.YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_YOUTUBE_API_KEY \|\| process\.env\.GOOGLE_API_KEY/);
   assert.match(workflow, /Revalidar trailers existentes[\s\S]*continue-on-error:\s*true/);
   assert.match(workflow, /Procurar trailers ausentes[\s\S]*continue-on-error:\s*true/);
+});
+
+test("workflow de catalogo valida jogos novos sem correr a suite inteira", () => {
+  const workflow = fs.readFileSync(".github/workflows/catalog-sync.yml", "utf8");
+  const liteGenerator = fs.readFileSync("scripts/gerar-catalogo-lite.js", "utf8");
+  assert.match(workflow, /node scripts\/validate-catalog-update\.js \/tmp\/catalog-lite-before\.json/);
+  assert.match(workflow, /tests\/supplier-sync\.test\.js tests\/pricing\.test\.js tests\/price-overrides\.test\.js/);
+  assert.doesNotMatch(workflow, /\bnpm test\b/);
+  assert.match(liteGenerator, /forEach\(\(product\) => output\.push\(pickProduct\(product, platformKey\)\)\)/);
+  assert.match(liteGenerator, /filter\(\(product\) => !isExcludedProduct\(product\)\)/);
+});
+
+test("pre-venda sem data recebe data descoberta e depois pode sair de preorder", () => {
+  const product = {
+    id: "ea-sports-fc-27-ps5",
+    nome: "EA Sports FC 27 - PS5 Mídia Digital",
+    plataforma: "PlayStation 5",
+    preorder: true,
+    released: null
+  };
+  const match = curadoria.bestCuratedMatch(product);
+  assert.ok(match);
+  assert.equal(curadoria.applyCuratedReleaseDate(product, match), true);
+  assert.equal(product.released, "2026-09-25");
+  assert.ok(curadoria.productReleaseTime(product) < Date.now());
+
+  const alreadyDated = { ...product, released: "2026-10-01" };
+  assert.equal(curadoria.applyCuratedReleaseDate(alreadyDated, match), false);
+  assert.equal(alreadyDated.released, "2026-10-01");
 });

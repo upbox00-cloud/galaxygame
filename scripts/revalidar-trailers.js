@@ -7,9 +7,9 @@ const {
   normalizeName
 } = require("./common");
 
-const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
+const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY || process.env.GOOGLE_YOUTUBE_API_KEY || process.env.GOOGLE_API_KEY;
 if (!YOUTUBE_API_KEY) {
-  console.error("[revalidar-trailers] YOUTUBE_API_KEY em falta nas variaveis de ambiente");
+  console.error("[revalidar-trailers] YOUTUBE_API_KEY em falta nas variaveis de ambiente. Configure YOUTUBE_API_KEY, GOOGLE_YOUTUBE_API_KEY ou GOOGLE_API_KEY.");
   process.exit(1);
 }
 const YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search";
