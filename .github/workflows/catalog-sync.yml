@@ -45,6 +45,7 @@ jobs:
         run: |
           node scripts/validate-catalog-update.js /tmp/catalog-lite-before.json
           node --test tests/supplier-sync.test.js tests/pricing.test.js tests/price-overrides.test.js
+          npm run build:css
           npm run check:launch
 
       - name: Publicar alteracoes do catalogo
