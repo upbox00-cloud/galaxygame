@@ -8,7 +8,7 @@ const MAX_PRICE_EUR = 999.99;
 let storeFactory = () => getStore(STORE_NAME);
 
 function normalizePrice(value) {
-  const price = Number(value);
+  const price = Number(String(value ?? "").trim().replace(",", "."));
   if (!Number.isFinite(price) || price < MIN_PRICE_EUR || price > MAX_PRICE_EUR) return null;
   return Number(price.toFixed(2));
 }
@@ -30,7 +30,7 @@ function normalizeDocument(value) {
 
 async function readPriceOverrides({ strict = false } = {}) {
   try {
-    const stored = await storeFactory().get(STORE_KEY, { type: "json", consistency: "strong" });
+    const stored = await storeFactory().get(STORE_KEY, { type: "json" });
     return normalizeDocument(stored);
   } catch (error) {
     if (strict) throw error;

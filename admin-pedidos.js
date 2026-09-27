@@ -640,6 +640,7 @@
   async function saveCatalogPrice(form, reset = false) {
     const button = form.querySelector(reset ? "[data-admin-price-reset]" : 'button[type="submit"]');
     const input = form.elements.precoVendaEUR;
+    const price = String(input.value || "").trim().replace(",", ".");
     button.disabled = true;
     input.disabled = true;
     try {
@@ -647,7 +648,7 @@
         method: "POST",
         body: JSON.stringify({
           id: form.dataset.productId,
-          ...(reset ? { reset: true } : { precoVendaEUR: Number(input.value) })
+          ...(reset ? { reset: true } : { precoVendaEUR: price })
         })
       });
       const index = state.catalog.findIndex((product) => product.id === data.produto.id);

@@ -38,13 +38,38 @@ test("invalid manual prices are rejected", async () => {
   await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 1000), /invalid_price/);
 });
 
-test("admin catalog returns the persisted manual price after saving", async () => {
+test("manual price accepts comma decimal and does not request strong Blob consistency", async () => {
+  let getOptions = null;
   let savedDocument = null;
   priceOverrides._test.setStoreFactory(() => ({
-    async get() {
+    async get(_key, options) {
+      getOptions = options;
+      return savedDocument;
+    },
+    async setJSON(_key, value) {
+      savedDocument = structuredClone(value);
+    }
+  }));
+  try {
+    await priceOverrides.setPriceOverride("game-ps5", "48,99", "admin@example.com");
+    assert.equal(savedDocument.prices["game-ps5"].precoVendaEUR, 48.99);
+    assert.equal(getOptions.type, "json");
+    assert.equal(getOptions.consistency, undefined);
+  } finally {
+    priceOverrides._test.resetStoreFactory();
+  }
+});
+
+test("admin catalog returns the persisted manual price after saving", async () => {
+  let savedDocument = null;
+  const keys = [];
+  priceOverrides._test.setStoreFactory(() => ({
+    async get(key) {
+      keys.push(["get", key]);
       return savedDocument;
     },
     async setJSON(key, value) {
+      keys.push(["setJSON", key]);
       savedDocument = structuredClone(value);
     }
   }));
@@ -53,7 +78,7 @@ test("admin catalog returns the persisted manual price after saving", async () =
     const product = publicCatalog[0];
     const response = await adminCatalog.handler({
       httpMethod: "POST",
-      body: JSON.stringify({ id: product.id, precoVendaEUR: 31.95 })
+      body: JSON.stringify({ id: product.id, precoVendaEUR: "31,95" })
     }, {
       clientContext: {
         user: {
@@ -66,6 +91,10 @@ test("admin catalog returns the persisted manual price after saving", async () =
 
     assert.equal(response.statusCode, 200);
     assert.equal(savedDocument.prices[product.id].precoVendaEUR, 31.95);
+    assert.deepEqual(keys.slice(0, 2), [
+      ["get", "catalog/price-overrides-v1.json"],
+      ["setJSON", "catalog/price-overrides-v1.json"]
+    ]);
     assert.equal(body.produto.id, product.id);
     assert.equal(body.produto.precoVendaEUR, 31.95);
     assert.equal(body.produto.precoManual, true);
