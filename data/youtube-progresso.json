@@ -1292,7 +1292,10 @@
     "pacote triplo crash spyro": {
       "trailer": null,
       "status": "not-found",
-      "source": "catalogo"
+      "query": "pacote triplo crash spyro PS5 trailer oficial",
+      "attempts": 1,
+      "processedAt": "2026-09-27T10:37:10.984Z",
+      "nextRetryAt": "2026-10-04T10:37:10.984Z"
     },
     "bob esponja titas da mare": {
       "trailer": "https://www.youtube.com/embed/wcDpp_9G6V0",
@@ -2671,12 +2674,12 @@
       "validatedAt": "2026-09-26T20:46:06.626Z"
     },
     "nba 2k26": {
-      "trailer": null,
-      "status": "invalid-embed",
-      "source": "catalogo",
-      "videoTitle": "NBA 2K26 | Official Gameplay Trailer",
+      "trailer": "https://www.youtube.com/embed/vQ2jNNbh1TU",
+      "status": "found",
+      "query": "nba 2k26 trailer oficial",
+      "videoTitle": "NBA 2K27: Official Gameplay Trailer",
       "channelTitle": "NBA 2K",
-      "validatedAt": "2026-08-04T16:08:44.866Z"
+      "processedAt": "2026-09-27T10:37:10.408Z"
     },
     "nba bounce": {
       "trailer": "https://www.youtube.com/embed/yzakNxb0c9E",
@@ -4821,6 +4824,550 @@
       "videoTitle": "Sekiro: Shadows Die Twice - Official Launch Trailer | PS4",
       "channelTitle": "PlayStation",
       "processedAt": "2026-09-26T20:46:38.049Z"
+    },
+    "call of duty black ops cold war": {
+      "trailer": "https://www.youtube.com/embed/aTS9n_m7TW0",
+      "status": "found",
+      "query": "call of duty black ops cold war PS5 trailer oficial",
+      "videoTitle": "Reveal Trailer | Call of Duty: Black Ops Cold War",
+      "channelTitle": "Call of Duty",
+      "processedAt": "2026-09-27T10:36:50.974Z"
+    },
+    "saints row": {
+      "trailer": "https://www.youtube.com/embed/YgjzDJA1o1E",
+      "status": "found",
+      "query": "saints row PS5 trailer oficial",
+      "videoTitle": "SAINTS ROW Official Announce Trailer",
+      "channelTitle": "Saints Row",
+      "processedAt": "2026-09-27T10:36:51.652Z"
+    },
+    "assassin s creed mythology pack": {
+      "trailer": "https://www.youtube.com/embed/tIqRcsuZxbg",
+      "status": "found",
+      "query": "assassin s creed mythology pack trailer oficial",
+      "videoTitle": "Assassin's Creed Mythology pack PS4 PS5 XBOX ONE XBOS SERIES X|S STEAM",
+      "channelTitle": "LUCAS_VS_BATMAN DESAFIOS INVENTADOS POR MIM PS4 ",
+      "processedAt": "2026-09-27T10:36:52.347Z"
+    },
+    "assassin s creed valhalla watch dogs legion": {
+      "trailer": "https://www.youtube.com/embed/7YpxeHcyFTc",
+      "status": "found",
+      "query": "assassin s creed valhalla watch dogs legion PlayStation trailer oficial",
+      "videoTitle": "Watch Dogs: Legion – Assassin’s Creed Crossover Trailer",
+      "channelTitle": "Assassin's Creed",
+      "processedAt": "2026-09-27T10:36:53.003Z"
+    },
+    "bundle assassin s creed valhalla watch dogs legion": {
+      "trailer": "https://www.youtube.com/embed/7YpxeHcyFTc",
+      "status": "found",
+      "query": "bundle assassin s creed valhalla watch dogs legion PS5 trailer oficial",
+      "videoTitle": "Watch Dogs: Legion – Assassin’s Creed Crossover Trailer",
+      "channelTitle": "Assassin's Creed",
+      "processedAt": "2026-09-27T10:36:53.692Z"
+    },
+    "pacote assassin s creed valhalla immortals fenyx rising": {
+      "trailer": "https://www.youtube.com/embed/7bGiSDdrD0A",
+      "status": "found",
+      "query": "pacote assassin s creed valhalla immortals fenyx rising PS5 trailer oficial",
+      "videoTitle": "Assassin's Creed Valhalla vale a pena?",
+      "channelTitle": "Órbita V Games",
+      "processedAt": "2026-09-27T10:36:54.326Z"
+    },
+    "ea sports pga tour": {
+      "trailer": "https://www.youtube.com/embed/g_i846kDUfI",
+      "status": "found",
+      "query": "ea sports pga tour PS5 trailer oficial",
+      "videoTitle": "EA Sports PGA Tour - Course Reveal Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:36:54.927Z"
+    },
+    "battlefield 1 e titanfall 2 conjunto": {
+      "trailer": "https://www.youtube.com/embed/DWiO7PD-AzE",
+      "status": "found",
+      "query": "battlefield 1 e titanfall 2 conjunto PS5 trailer oficial",
+      "videoTitle": "BATTLEFIELD 2042 | REAGINDO AO ANÚNCIO e TRAILER | Taverna do Oc",
+      "channelTitle": "GetGames Club",
+      "processedAt": "2026-09-27T10:36:55.490Z"
+    },
+    "ea sports college football 26": {
+      "trailer": "https://www.youtube.com/embed/sMGIfmAcNwA",
+      "status": "found",
+      "query": "ea sports college football 26 PS5 trailer oficial",
+      "videoTitle": "College Football 26 Official Reveal Trailer",
+      "channelTitle": "EA SPORTS College",
+      "processedAt": "2026-09-27T10:36:56.133Z"
+    },
+    "assassin s creed mirage assassin s creed valhalla": {
+      "trailer": "https://www.youtube.com/embed/rKjUAWlbTJk",
+      "status": "found",
+      "query": "assassin s creed mirage assassin s creed valhalla Xbox trailer oficial",
+      "videoTitle": "Assassin’s Creed Valhalla: Cinematic World Premiere Trailer",
+      "channelTitle": "Assassin's Creed",
+      "processedAt": "2026-09-27T10:36:56.755Z"
+    },
+    "efootball pes 21": {
+      "trailer": "https://www.youtube.com/embed/GSXViWOyEO4",
+      "status": "found",
+      "query": "efootball pes 21 PlayStation trailer oficial",
+      "videoTitle": "eFootball PES 2021 SEASON UPDATE - OFFICIAL LAUNCH TRAILER",
+      "channelTitle": "eFootball",
+      "processedAt": "2026-09-27T10:36:57.374Z"
+    },
+    "ea sports madden nfl 26": {
+      "trailer": "https://www.youtube.com/embed/EZrgXXHSaBQ",
+      "status": "found",
+      "query": "ea sports madden nfl 26 PS5 trailer oficial",
+      "videoTitle": "Madden 26 Official Reveal Trailer",
+      "channelTitle": "EA SPORTS MADDEN NFL",
+      "processedAt": "2026-09-27T10:36:57.976Z"
+    },
+    "ea sports madden nfl 27": {
+      "trailer": "https://www.youtube.com/embed/urQRwpe0D9Q",
+      "status": "found",
+      "query": "ea sports madden nfl 27 PS5 trailer oficial",
+      "videoTitle": "EA Sports Madden NFL 27 - Official What's New in Madden 27 Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:36:58.643Z"
+    },
+    "far cry new dawn complete": {
+      "trailer": "https://www.youtube.com/embed/6eLHk2Eug78",
+      "status": "found",
+      "query": "far cry new dawn complete PS5 trailer oficial",
+      "videoTitle": "Far Cry New Dawn: Official World Premiere Gameplay Trailer | Ubisoft [NA]",
+      "channelTitle": "Ubisoft",
+      "processedAt": "2026-09-27T10:36:59.318Z"
+    },
+    "marvel tokon fighting souls": {
+      "trailer": "https://www.youtube.com/embed/hzoWfRb2ZYI",
+      "status": "found",
+      "query": "marvel tokon fighting souls PS5 trailer oficial",
+      "videoTitle": "MARVEL Tōkon: Fighting Souls | Launch Trailer",
+      "channelTitle": "Marvel Entertainment",
+      "processedAt": "2026-09-27T10:36:59.975Z"
+    },
+    "cargo bundle": {
+      "trailer": "https://www.youtube.com/embed/_fG67xBY2a4",
+      "status": "found",
+      "query": "cargo bundle PS5 trailer oficial",
+      "videoTitle": "orbit.industries - Launch Trailer | PS5, PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:00.623Z"
+    },
+    "lego batman o legado do cavaleiro das trevas": {
+      "trailer": "https://www.youtube.com/embed/DfJaUpW_P00",
+      "status": "found",
+      "query": "lego batman o legado do cavaleiro das trevas PS5 trailer oficial",
+      "videoTitle": "LEGO® Batman™: Legacy of the Dark Knight – Official Launch Trailer",
+      "channelTitle": "Warner Bros. Games",
+      "processedAt": "2026-09-27T10:37:01.195Z"
+    },
+    "dark souls iii": {
+      "trailer": "https://www.youtube.com/embed/0RAlGv-IW4g",
+      "status": "found",
+      "query": "dark souls III trailer oficial",
+      "videoTitle": "Dark Souls III - Announcement Trailer",
+      "channelTitle": "Bandai Namco Entertainment America",
+      "processedAt": "2026-09-27T10:37:01.825Z"
+    },
+    "diablo iv age of hatred collection": {
+      "trailer": "https://www.youtube.com/embed/7Okk8hzsyb8",
+      "status": "found",
+      "query": "diablo IV age of hatred collection PS5 trailer oficial",
+      "videoTitle": "Diablo 4: Lord of Hatred - Official Launch Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:02.456Z"
+    },
+    "final fantasy tactics the ivalice chronicles": {
+      "trailer": "https://www.youtube.com/embed/sSC0eQdzM20",
+      "status": "found",
+      "query": "final fantasy tactics the ivalice chronicles PS5 trailer oficial",
+      "videoTitle": "Final Fantasy Tactics - The Ivalice Chronicles - Announcement Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:03.094Z"
+    },
+    "final fantasy resonance": {
+      "trailer": "https://www.youtube.com/embed/oN1sYgr1Drs",
+      "status": "found",
+      "query": "final fantasy resonance PS5 trailer oficial",
+      "videoTitle": "Final Fantasy Resonance - Announce Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:03.692Z"
+    },
+    "stellar blade": {
+      "trailer": "https://www.youtube.com/embed/DSznLWimMlU",
+      "status": "found",
+      "query": "stellar blade PS5 trailer oficial",
+      "videoTitle": "Stellar Blade - Launch Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:04.338Z"
+    },
+    "dark souls ii scholar of the first sin": {
+      "trailer": "https://www.youtube.com/embed/U6uyuIQYlfY",
+      "status": "found",
+      "query": "dark souls II scholar of the first sin PS5 trailer oficial",
+      "videoTitle": "Dark Souls 2 Announcement Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:04.949Z"
+    },
+    "wuchang fallen feathers": {
+      "trailer": "https://www.youtube.com/embed/tZ_JjhLdlwk",
+      "status": "found",
+      "query": "wuchang fallen feathers PS5 trailer oficial",
+      "videoTitle": "Wuchang: Fallen Feathers - Official Gameplay Trailer | Summer Game Fest 2025",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:05.539Z"
+    },
+    "sonic x shadow generations": {
+      "trailer": "https://www.youtube.com/embed/ihUiNzrcG4Q",
+      "status": "found",
+      "query": "sonic X shadow generations PS5 trailer oficial",
+      "videoTitle": "Sonic X Shadow Generations - Announce Trailer | PS5 & PS4 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:06.131Z"
+    },
+    "avatar the last airbender quest for balance": {
+      "trailer": "https://www.youtube.com/embed/1WsMzwqnqgc",
+      "status": "found",
+      "query": "avatar the last airbender quest for balance trailer oficial",
+      "videoTitle": "Avatar: The Last Airbender: Quest for Balance – Official Reveal Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:06.812Z"
+    },
+    "borderlands legendary collection": {
+      "trailer": "https://www.youtube.com/embed/xQa-zawmRGs",
+      "status": "found",
+      "query": "borderlands legendary collection PS5 trailer oficial",
+      "videoTitle": "Borderlands Legendary Collection | Launch Trailer",
+      "channelTitle": "GAME Trailers",
+      "processedAt": "2026-09-27T10:37:07.474Z"
+    },
+    "ea sports wrc 24": {
+      "trailer": "https://www.youtube.com/embed/cBbT39nq32E",
+      "status": "found",
+      "query": "ea sports wrc 24 PS5 trailer oficial",
+      "videoTitle": "EA Sports WRC - Launch Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:08.056Z"
+    },
+    "dragons dogma 2": {
+      "trailer": "https://www.youtube.com/embed/XmKyRay8hGc",
+      "status": "found",
+      "query": "dragons dogma 2 Xbox trailer oficial",
+      "videoTitle": "Dragon's Dogma 2: Dark Arisen - Main Trailer",
+      "channelTitle": "Capcom USA",
+      "processedAt": "2026-09-27T10:37:08.635Z"
+    },
+    "death stranding": {
+      "trailer": "https://www.youtube.com/embed/QlLEmu8c-Vk",
+      "status": "found",
+      "query": "death stranding PS5 trailer oficial",
+      "videoTitle": "Death Stranding Director's Cut - Final Trailer | PS5",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:09.207Z"
+    },
+    "borderlands the handsome collection": {
+      "trailer": "https://www.youtube.com/embed/ot9-o9RA3ds",
+      "status": "found",
+      "query": "borderlands the handsome collection PS5 trailer oficial",
+      "videoTitle": "Borderlands: The Handsome Collection Announcement Trailer",
+      "channelTitle": "Borderlands",
+      "processedAt": "2026-09-27T10:37:09.791Z"
+    },
+    "ratchet clank em outra dimensao": {
+      "trailer": "https://www.youtube.com/embed/ai3o0XtrnM8",
+      "status": "found",
+      "query": "ratchet clank em outra dimensao PS5 trailer oficial",
+      "videoTitle": "Ratchet & Clank: Rift Apart - Announcement Trailer | PS5",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:11.548Z"
+    },
+    "armored core 6 fires of rubicon": {
+      "trailer": "https://www.youtube.com/embed/Vs2piSWfofQ",
+      "status": "found",
+      "query": "armored core 6 fires of rubicon PS5 trailer oficial",
+      "videoTitle": "ARMORED CORE VI FIRES OF RUBICON — Story Trailer",
+      "channelTitle": "Bandai Namco Entertainment America",
+      "processedAt": "2026-09-27T10:37:12.179Z"
+    },
+    "contra rogue corps": {
+      "trailer": "https://www.youtube.com/embed/RInYDl8HsQU",
+      "status": "found",
+      "query": "contra rogue corps PS5 trailer oficial",
+      "videoTitle": "Contra Rogue Corps - Official Red Band Premiere Trailer | E3 2019",
+      "channelTitle": "GameSpot Trailers",
+      "processedAt": "2026-09-27T10:37:12.816Z"
+    },
+    "dmc devil may cry definitive": {
+      "trailer": "https://www.youtube.com/embed/t8Fv9dh8Jfk",
+      "status": "found",
+      "query": "dmc devil may cry definitive PS5 trailer oficial",
+      "videoTitle": "DmC Devil May Cry Definitive Edition -- Launch Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:13.502Z"
+    },
+    "uncharted 4 a thief s end e uncharted the lost legacy pacote": {
+      "trailer": "https://www.youtube.com/embed/ZUJCTefuBJc",
+      "status": "found",
+      "query": "uncharted 4 a thief s end e uncharted the lost legacy pacote PS5 trailer oficial",
+      "videoTitle": "Pacote digital com UNCHARTED 4: A Thief's End e UNCHARTED: The Lost Legacy PS4 PS5 STEAM",
+      "channelTitle": "LUCAS_VS_BATMAN DESAFIOS INVENTADOS POR MIM PS4 ",
+      "processedAt": "2026-09-27T10:37:14.150Z"
+    },
+    "the sinking city 2": {
+      "trailer": "https://www.youtube.com/embed/nKhKpwGZNcs",
+      "status": "found",
+      "query": "the sinking city 2 PS5 trailer oficial",
+      "videoTitle": "The Sinking City 2 - Official Launch Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:14.737Z"
+    },
+    "ghost of tsushima versao do diretor": {
+      "trailer": "https://www.youtube.com/embed/LZnD-mbXAhI",
+      "status": "found",
+      "query": "ghost of tsushima versao do diretor PS5 trailer oficial",
+      "videoTitle": "Ghost of Tsushima Versão do Diretor - Trailer da História de Iki | PS5, PS4",
+      "channelTitle": "PlayStation Brasil",
+      "processedAt": "2026-09-27T10:37:15.418Z"
+    },
+    "gta the trilogy the definitive": {
+      "trailer": "https://www.youtube.com/embed/mtyOXKB0M5o",
+      "status": "found",
+      "query": "gta the trilogy the definitive PS5 trailer oficial",
+      "videoTitle": "Grand Theft Auto: The Trilogy – The Definitive Edition Trailer",
+      "channelTitle": "GameSpot",
+      "processedAt": "2026-09-27T10:37:16.078Z"
+    },
+    "death stranding director s cut": {
+      "trailer": "https://www.youtube.com/embed/s2GUQcbz_8Q",
+      "status": "found",
+      "query": "death stranding director s cut trailer oficial",
+      "videoTitle": "DEATH STRANDING DIRECTOR'S CUT PC - Launch Trailer - [ESRB] 4K",
+      "channelTitle": "KOJIMA PRODUCTIONS",
+      "processedAt": "2026-09-27T10:37:16.714Z"
+    },
+    "dmc4se demon hunter bundle": {
+      "trailer": "https://www.youtube.com/embed/Uz58uS7FZ28",
+      "status": "found",
+      "query": "dmc4se demon hunter bundle PS5 trailer oficial",
+      "videoTitle": "Devil May Cry 4 Special Edition -- Launch Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:17.299Z"
+    },
+    "on the road the truck simulator": {
+      "trailer": "https://www.youtube.com/embed/M3Z4SGJLbE8",
+      "status": "found",
+      "query": "on the road the truck simulator PS5 trailer oficial",
+      "videoTitle": "On The Road - Truck Simulator (PlayStation / Xbox) | Official Trailer | Aerosoft",
+      "channelTitle": "Aerosoft Flight",
+      "processedAt": "2026-09-27T10:37:17.982Z"
+    },
+    "avatar legends the fighting game": {
+      "trailer": "https://www.youtube.com/embed/nboz6eLKoaQ",
+      "status": "found",
+      "query": "avatar legends the fighting game trailer oficial",
+      "videoTitle": "Avatar Legends: The Fighting Game - Official Announcement Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:18.564Z"
+    },
+    "ancestors legacy": {
+      "trailer": "https://www.youtube.com/embed/zCmyeSI6s0s",
+      "status": "found",
+      "query": "ancestors legacy trailer oficial",
+      "videoTitle": "Ancestors Legacy - Official Launch Trailer",
+      "channelTitle": "GameTrailers",
+      "processedAt": "2026-09-27T10:37:19.285Z"
+    },
+    "call of duty black ops": {
+      "trailer": "https://www.youtube.com/embed/65Yrv8Q2bco",
+      "status": "found",
+      "query": "call of duty black ops PS5 trailer oficial",
+      "videoTitle": "Call of Duty: Black Ops 7 - Launch Trailer | PS5 & PS4 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:19.949Z"
+    },
+    "call of duty black ops ii": {
+      "trailer": "https://www.youtube.com/embed/x3tedlWs1XY",
+      "status": "found",
+      "query": "call of duty black ops II PS5 trailer oficial",
+      "videoTitle": "Official Reveal Trailer | Call of Duty: Black Ops 2",
+      "channelTitle": "Call of Duty",
+      "processedAt": "2026-09-27T10:37:20.576Z"
+    },
+    "forza 5": {
+      "trailer": "https://www.youtube.com/embed/W-SpP-Z0Uu8",
+      "status": "found",
+      "query": "forza 5 PS5 trailer oficial",
+      "videoTitle": "Forza Horizon 5 - Launch Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:21.190Z"
+    },
+    "mlb the show 26": {
+      "trailer": "https://www.youtube.com/embed/5wBQfm6RxLo",
+      "status": "found",
+      "query": "mlb the show 26 Xbox trailer oficial",
+      "videoTitle": "MLB The Show 26 Gameplay Trailer",
+      "channelTitle": "Sony San Diego",
+      "processedAt": "2026-09-27T10:37:21.794Z"
+    },
+    "borderlands game of the year": {
+      "trailer": "https://www.youtube.com/embed/UKzMC90kaRw",
+      "status": "found",
+      "query": "borderlands game of the year PS5 trailer oficial",
+      "videoTitle": "Borderlands: Game of the Year Official Trailer",
+      "channelTitle": "Borderlands",
+      "processedAt": "2026-09-27T10:37:22.428Z"
+    },
+    "esquadrao suicida mate a liga da justica": {
+      "trailer": "https://www.youtube.com/embed/E2ZU9rSx8RY",
+      "status": "found",
+      "query": "esquadrao suicida mate a liga da justica PS5 trailer oficial",
+      "videoTitle": "Suicide Squad: Mate a Liga da Justiça - Trailer Oficial da Liga da Justiça | PS5",
+      "channelTitle": "PlayStation Brasil",
+      "processedAt": "2026-09-27T10:37:23.038Z"
+    },
+    "red dead redemption 1 e 2": {
+      "trailer": "https://www.youtube.com/embed/-o7rES_3ymA",
+      "status": "found",
+      "query": "red dead redemption 1 e 2 Xbox trailer oficial",
+      "videoTitle": "Red Dead Redemption Official Launch Trailer",
+      "channelTitle": "Rockstar Games",
+      "processedAt": "2026-09-27T10:37:23.613Z"
+    },
+    "dissidia final fantasy nt": {
+      "trailer": "https://www.youtube.com/embed/M0oTJiy6j8g",
+      "status": "found",
+      "query": "dissidia final fantasy nt PS5 trailer oficial",
+      "videoTitle": "【DISSIDIA FINAL FANTASY】11.26 稼働告知 TRAILER",
+      "channelTitle": "スクウェア・エニックス",
+      "processedAt": "2026-09-27T10:37:24.205Z"
+    },
+    "age of empires ii definitive": {
+      "trailer": "https://www.youtube.com/embed/rSjW3DouXes",
+      "status": "found",
+      "query": "age of empires II definitive trailer oficial",
+      "videoTitle": "Age of Empires II: Definitive Edition - The Viking Sagas | Launch Trailer",
+      "channelTitle": "Age of Empires",
+      "processedAt": "2026-09-27T10:37:24.831Z"
+    },
+    "assassin s creed valhalla immortals fenyx rising": {
+      "trailer": "https://www.youtube.com/embed/Knor3qDwfsg",
+      "status": "found",
+      "query": "assassin s creed valhalla immortals fenyx rising Xbox trailer oficial",
+      "videoTitle": "Immortals Fenyx Rising: Official World Premiere Trailer | Ubisoft Forward 2020 | Ubisoft [NA]",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-09-27T10:37:25.424Z"
+    },
+    "assassin s creed valhalla watch dogs legion bundle": {
+      "trailer": "https://www.youtube.com/embed/OcGDnmzr7B4",
+      "status": "found",
+      "query": "assassin s creed valhalla watch dogs legion bundle Xbox trailer oficial",
+      "videoTitle": "Watch Dogs: Legion - Official Assassin's Creed Crossover & DLC Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:26.095Z"
+    },
+    "call of duty cold war e": {
+      "trailer": "https://www.youtube.com/embed/k7Um0RShjio",
+      "status": "found",
+      "query": "call of duty cold war e Xbox trailer oficial",
+      "videoTitle": "Call of Duty®: Black Ops Cold War - Multiplayer Reveal Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-09-27T10:37:26.698Z"
+    },
+    "cup head the delicious last course": {
+      "trailer": "https://www.youtube.com/embed/gA2kRDKnhps",
+      "status": "found",
+      "query": "cup head the delicious last course PS5 trailer oficial",
+      "videoTitle": "Cuphead: The Delicious Last Course - Official Launch Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-27T10:37:27.286Z"
+    },
+    "doom 64": {
+      "trailer": "https://www.youtube.com/embed/mtvHGrPyJw8",
+      "status": "found",
+      "query": "doom 64 PS5 trailer oficial",
+      "videoTitle": "DOOM 64 – Official Announce Trailer",
+      "channelTitle": "Bethesda Softworks",
+      "processedAt": "2026-09-27T10:37:27.893Z"
+    },
+    "dragon s dogma dark arisen": {
+      "trailer": "https://www.youtube.com/embed/V2YmTZCsBUU",
+      "status": "found",
+      "query": "dragon s dogma dark arisen PS5 trailer oficial",
+      "videoTitle": "Dragon's Dogma 2 - Dark Arisen Main Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:28.524Z"
+    },
+    "darksiders warmastered": {
+      "trailer": "https://www.youtube.com/embed/ohoM1NB6BTk",
+      "status": "found",
+      "query": "darksiders warmastered PS5 trailer oficial",
+      "videoTitle": "Darksiders Warmastered Edition - PS5 Release Trailer | PS5 & PS4 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:29.144Z"
+    },
+    "f1 2023 ed campeoes": {
+      "trailer": "https://www.youtube.com/embed/NnyCWsA6KSI",
+      "status": "found",
+      "query": "f1 2023 ed campeoes PlayStation trailer oficial",
+      "videoTitle": "F1 24 Official Reveal Trailer",
+      "channelTitle": "EA SPORTS F1",
+      "processedAt": "2026-09-27T10:37:29.734Z"
+    },
+    "heavy cargo the truck simulator": {
+      "trailer": "https://www.youtube.com/embed/vtnH73KcQm8",
+      "status": "found",
+      "query": "heavy cargo the truck simulator PS5 trailer oficial",
+      "videoTitle": "Heavy Cargo: The Truck Simulator - Official Release Date Trailer",
+      "channelTitle": "GameTrailers",
+      "processedAt": "2026-09-27T10:37:30.357Z"
+    },
+    "mortal shell ii": {
+      "trailer": "https://www.youtube.com/embed/KJWAUJhInH0",
+      "status": "found",
+      "query": "mortal shell II PS5 trailer oficial",
+      "videoTitle": "Mortal Shell II - Announcement Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:30.961Z"
+    },
+    "uncharted colecao legado dos ladroes": {
+      "trailer": "https://www.youtube.com/embed/lFfVZ13ohKs",
+      "status": "found",
+      "query": "uncharted colecao legado dos ladroes PS5 trailer oficial",
+      "videoTitle": "UNCHARTED: Coleção Legado dos Ladrões – Trailer de Lançamento | PS5",
+      "channelTitle": "PlayStation Brasil",
+      "processedAt": "2026-09-27T10:37:31.523Z"
+    },
+    "arc riders": {
+      "trailer": "https://www.youtube.com/embed/U0jK145mxec",
+      "status": "found",
+      "query": "arc riders PS5 trailer oficial",
+      "videoTitle": "ARC Raiders - Launch Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:32.087Z"
+    },
+    "f1 23 ed campeoes": {
+      "trailer": "https://www.youtube.com/embed/NnyCWsA6KSI",
+      "status": "found",
+      "query": "f1 23 ed campeoes PS5 trailer oficial",
+      "videoTitle": "F1 24 Official Reveal Trailer",
+      "channelTitle": "EA SPORTS F1",
+      "processedAt": "2026-09-27T10:37:32.677Z"
+    },
+    "spider man miles morales": {
+      "trailer": "https://www.youtube.com/embed/3wHL2VIaFcs",
+      "status": "found",
+      "query": "spider man miles morales PS5 trailer oficial",
+      "videoTitle": "Marvel’s Spider-Man: Miles Morales - Launch Trailer | PS4, PS5",
+      "channelTitle": "PlayStation Asia",
+      "processedAt": "2026-09-27T10:37:33.303Z"
+    },
+    "construction professional the simulation": {
+      "trailer": "https://www.youtube.com/embed/EmQENu6hiUI",
+      "status": "found",
+      "query": "construction professional the simulation PS5 trailer oficial",
+      "videoTitle": "Construction Simulator - Announcement Trailer | PS5 & PS4 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-27T10:37:33.941Z"
     }
   },
   "runs": [
@@ -4983,7 +5530,22 @@
       "networkErrors": 37,
       "validationCalls": 11,
       "invalidEmbeds": 2
+    },
+    {
+      "date": "2026-09-27T10:36:50.545Z",
+      "requests": 70,
+      "analyzed": 70,
+      "found": 69,
+      "notFound": 1,
+      "alreadyHadTrailer": 576,
+      "cooldownSkipped": 0,
+      "remainingWithoutTrailer": 273,
+      "rateLimited": false,
+      "interruptionReason": "limite-de-buscas",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-09-26T20:46:40.136Z"
+  "updatedAt": "2026-09-27T10:37:34.227Z"
 }
