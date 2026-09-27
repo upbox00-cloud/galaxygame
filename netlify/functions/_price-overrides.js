@@ -28,11 +28,12 @@ function normalizeDocument(value) {
   return { version: 1, prices };
 }
 
-async function readPriceOverrides() {
+async function readPriceOverrides({ strict = false } = {}) {
   try {
     const stored = await storeFactory().get(STORE_KEY, { type: "json", consistency: "strong" });
     return normalizeDocument(stored);
   } catch (error) {
+    if (strict) throw error;
     console.warn("[price-overrides:read]", { message: error.message });
     return normalizeDocument(null);
   }
@@ -46,21 +47,33 @@ async function setPriceOverride(productId, price, updatedBy = "") {
     error.code = "invalid_price";
     throw error;
   }
-  const document = await readPriceOverrides();
+  const document = await readPriceOverrides({ strict: true });
   document.prices[id] = {
     precoVendaEUR: normalizedPrice,
     updatedAt: new Date().toISOString(),
     updatedBy: String(updatedBy || "").slice(0, 254)
   };
   await storeFactory().setJSON(STORE_KEY, document);
+  const saved = await readPriceOverrides({ strict: true });
+  if (saved.prices[id]?.precoVendaEUR !== normalizedPrice) {
+    const error = new Error("price_update_not_confirmed");
+    error.code = "price_update_not_confirmed";
+    throw error;
+  }
   return document.prices[id];
 }
 
 async function removePriceOverride(productId) {
   const id = String(productId || "").trim();
-  const document = await readPriceOverrides();
+  const document = await readPriceOverrides({ strict: true });
   delete document.prices[id];
   await storeFactory().setJSON(STORE_KEY, document);
+  const saved = await readPriceOverrides({ strict: true });
+  if (saved.prices[id]) {
+    const error = new Error("price_update_not_confirmed");
+    error.code = "price_update_not_confirmed";
+    throw error;
+  }
 }
 
 function applyPriceOverrides(products, document) {

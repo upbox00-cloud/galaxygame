@@ -35,3 +35,29 @@ test("invalid manual prices are rejected", async () => {
   await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 0.5), /invalid_price/);
   await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 1000), /invalid_price/);
 });
+
+test("price update is not confirmed when Blob cannot be read back", async () => {
+  let writes = 0;
+  priceOverrides._test.setStoreFactory(() => ({
+    async get() { throw new Error("Blob unavailable"); },
+    async setJSON() { writes += 1; }
+  }));
+  try {
+    await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 29.95), /Blob unavailable/);
+    assert.equal(writes, 0);
+  } finally {
+    priceOverrides._test.resetStoreFactory();
+  }
+});
+
+test("price update rejects a write that is not persisted", async () => {
+  priceOverrides._test.setStoreFactory(() => ({
+    async get() { return null; },
+    async setJSON() {}
+  }));
+  try {
+    await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 29.95), /price_update_not_confirmed/);
+  } finally {
+    priceOverrides._test.resetStoreFactory();
+  }
+});
