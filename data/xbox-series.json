@@ -630,10 +630,7 @@
     "steamGridMatchedName": "Assassin's Creed Black Flag Resynced",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-black-flag-resynced-xbox-series-s-x-midia-digital-tke5n/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "assassin-s-creed-chronicles-china-xbox-series",
@@ -916,10 +913,7 @@
     "steamGridMatchedName": "Assassin's Creed Odyssey",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-series",
@@ -985,9 +979,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-shadows-xbox-series-s-x-midia-digital-llhs1/",
     "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 14
   },
@@ -1377,10 +1368,7 @@
     "steamGridMatchedName": "Batman: Arkham Origins",
     "steamGridMatchScore": 0.632,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "batman-arkham-knight-xbox-series",
@@ -1622,7 +1610,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1276031470,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 35.99,
+    "precoOriginalEUR": 34.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_4814-ad78a89a8e0fdab54b17600395503485-1024-1024.webp"

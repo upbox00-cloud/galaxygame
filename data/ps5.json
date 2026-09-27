@@ -681,10 +681,7 @@
     "steamGridMatchedName": "Assassin's Creed III Remastered",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-3-remastered-ps5-midia-digital-1ek83/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "assassin-s-creed-mirage-ps5",
@@ -1501,7 +1498,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1549567678,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 11.99,
+    "precoOriginalEUR": 10.99,
     "trailer": "https://www.youtube.com/embed/wsf78BS9VE0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1ed/1ed7f33789fdb79dbe7ae346f7b24fdf.jpg",
@@ -2173,7 +2170,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1578511062,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 29.99,
     "trailer": "",
     "screenshots": [
@@ -4392,7 +4389,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276638243,
-    "precoVendaEUR": 46.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 70.99,
     "trailer": "https://www.youtube.com/embed/etOOO9Sq7u8",
     "screenshots": [
@@ -4677,7 +4674,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1517187481,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 29.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/gFj8qt9HiZg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/bbf/bbf08acda891af4c698f13707d8774a6.jpg",
@@ -5281,7 +5278,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276063955,
-    "precoVendaEUR": 46.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/NdtmtuzICOI",
     "screenshots": [
@@ -6144,7 +6141,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1538486584,
     "precoVendaEUR": 10.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/0HjdiohVOik",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/752/7528971d20345460245e11f86388ea86.jpg",
@@ -6176,7 +6173,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1572258070,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000362024-94d9032051032339b217860421088802-1024-1024.webp"
@@ -6329,7 +6326,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1590182235,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367312-96e10751ebfeca7af817884649485049-1024-1024.webp"
@@ -6512,7 +6509,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550670659,
     "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 29.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/6eLHk2Eug78",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2e1/2e156eb23b4c2e7e2cb3640ce344ab08.jpg",
@@ -6606,7 +6603,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550671407,
     "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/oJ-2Iu8bibM",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351368-c068426da2bb112c2017826177145886-1024-1024.webp"
@@ -8412,10 +8409,7 @@
     "steamGridMatchedName": "Hades",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hades-ps5-midia-digital-1sn3u/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "hades-ii-ps5",
@@ -8450,10 +8444,7 @@
     "steamGridMatchedName": "Hades II",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hades-ii-ps5-midia-digital-oqwpp/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "halloween-the-game-ps5",
@@ -9319,7 +9310,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1553076112,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/T_YP3D_h1Pc",
     "screenshots": [
@@ -9753,7 +9744,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1519299279,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 31.99,
     "trailer": "https://www.youtube.com/embed/HjaQ-HRumuk",
     "screenshots": [
@@ -10566,7 +10557,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1463964764,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 29.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/ckI_m8bbXfw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/f8d/f8d59bfc7d4afbecabe31d7adfdefd22.jpg",
@@ -11384,7 +11375,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1352655360,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 29.99,
     "trailer": "https://www.youtube.com/embed/GjadaEcZay8",
     "screenshots": [
@@ -12662,7 +12653,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550299409,
     "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/aU4RKpn5o94",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351265-cb41b7bb5e94d31abe17825257737692-1024-1024.webp"
@@ -13320,10 +13311,7 @@
     "steamGridMatchedName": "Ratchet & Clank",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ratchet-clank-ps5-midia-digital-19ic8/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "ratchet-e-clank-em-outra-dimensao-ps5",
@@ -13349,10 +13337,7 @@
     "steamGridMatchedName": "Ratchet & Clank: Up Your Arsenal",
     "steamGridMatchScore": 0.506,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ratchet-clank-em-outra-dimensao-ps5-midia-digital-p8jgv/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "ratchet-e-clank-size-matters-ps5",
@@ -13386,10 +13371,7 @@
     "steamGridMatchedName": "Ratchet & Clank: Size Matters",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ratchet-clank-size-matters-ps5-midia-digital-hdnfa/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "rayman-legends-ps5",
@@ -17117,7 +17099,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1287828961,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/2S-A3z866YI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/89d/89d22db26c45627718564abd573cb2ba.jpg",
@@ -17401,7 +17383,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1568913294,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 29.99,
     "trailer": "https://www.youtube.com/embed/l81DPSY1e4Y",
     "screenshots": [
@@ -17690,7 +17672,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1371681137,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 29.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/XHrskkHf958",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1ac/1ac19f31974314855ad7be266adeb500.jpg",

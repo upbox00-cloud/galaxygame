@@ -386,10 +386,7 @@
     "steamGridMatchedName": "Assassin's Creed III Remastered",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-3-remastered-ps4-midia-digital-1w468/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "assassin-s-creed-mirage-ps4",
@@ -861,9 +858,6 @@
     "steamGridMatchScore": 0.579,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/bundle-assassins-creed-valhalla-watch-dogs-legion-ps4-midia-digital-obc2x/",
     "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 14
   },
@@ -1112,7 +1106,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1549566296,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 11.99,
+    "precoOriginalEUR": 10.99,
     "trailer": "https://www.youtube.com/embed/wsf78BS9VE0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1ed/1ed7f33789fdb79dbe7ae346f7b24fdf.jpg",
@@ -1727,7 +1721,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1578509666,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 29.99,
     "trailer": "",
     "screenshots": [
@@ -4868,7 +4862,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1590181088,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367310-7120cbba9b955b93cf17884648758816-1024-1024.webp"
@@ -5051,7 +5045,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550670553,
     "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 29.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/6eLHk2Eug78",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2e1/2e156eb23b4c2e7e2cb3640ce344ab08.jpg",
@@ -5145,7 +5139,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550671362,
     "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/oJ-2Iu8bibM",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351370-83b1b55fdc786175a517826176786988-1024-1024.webp"
@@ -6517,10 +6511,7 @@
     "steamGridMatchedName": "Hades",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hades-ps4-midia-digital-c8voh/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "hitman-go-definitive-edition-ps4",
@@ -7045,7 +7036,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1553075396,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/T_YP3D_h1Pc",
     "screenshots": [
@@ -7446,7 +7437,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1519300327,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 31.99,
     "trailer": "https://www.youtube.com/embed/HjaQ-HRumuk",
     "screenshots": [
@@ -8128,7 +8119,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1553797447,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 29.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/s2lGEhSlOTY",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5f3/5f366a57ed0337c78dca355add200f58.jpg",
@@ -8699,7 +8690,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1352655197,
-    "precoVendaEUR": 25.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 29.99,
     "trailer": "https://www.youtube.com/embed/GjadaEcZay8",
     "screenshots": [
@@ -9824,7 +9815,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550298861,
     "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/aU4RKpn5o94",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351267-0a1d2312887194d8c917825257039473-1024-1024.webp"
@@ -10381,10 +10372,7 @@
     "steamGridMatchedName": "Ratchet & Clank: Size Matters",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ratchet-clank-size-matters-ps4-midia-digital-a42pz/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "rayman-legends-ps4",
@@ -11735,8 +11723,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1584510511,
-    "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 29.99,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 33.99,
     "trailer": "",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/65f/65fe77cdb04435d697b034d6d2c889f8.jpg",
@@ -13346,7 +13334,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1287831746,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/2S-A3z866YI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/89d/89d22db26c45627718564abd573cb2ba.jpg",
@@ -13762,7 +13750,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1371680441,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 29.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/XHrskkHf958",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1ac/1ac19f31974314855ad7be266adeb500.jpg",
