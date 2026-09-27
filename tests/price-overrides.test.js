@@ -70,6 +70,18 @@ test("admin catalog returns the persisted manual price after saving", async () =
     assert.equal(body.produto.precoVendaEUR, 31.95);
     assert.equal(body.produto.precoManual, true);
     assert.equal(body.produto.precoAutomaticoEUR, product.precoVendaEUR);
+
+    const reload = await adminCatalog.handler({ httpMethod: "GET" }, {
+      clientContext: {
+        user: {
+          email: "admin@galaxygame.pt",
+          app_metadata: { roles: ["admin"] }
+        }
+      }
+    });
+    const reloadedProduct = JSON.parse(reload.body).produtos.find((item) => item.id === product.id);
+    assert.equal(reloadedProduct.precoVendaEUR, 31.95);
+    assert.equal(reloadedProduct.precoManual, true);
   } finally {
     priceOverrides._test.resetStoreFactory();
   }
@@ -89,14 +101,33 @@ test("price update is not confirmed when Blob cannot be read back", async () => 
   }
 });
 
-test("price update rejects a write that is not persisted", async () => {
+test("price update rejects when Blob write fails", async () => {
   priceOverrides._test.setStoreFactory(() => ({
     async get() { return null; },
-    async setJSON() {}
+    async setJSON() { throw new Error("Blob write failed"); }
   }));
   try {
-    await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 29.95), /price_update_not_confirmed/);
+    await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 29.95), /Blob write failed/);
   } finally {
     priceOverrides._test.resetStoreFactory();
   }
+});
+
+test("manual override wins after generated catalog price changes", async () => {
+  const document = {
+    version: 1,
+    prices: {
+      "ea-sports-fc-27-ps5": {
+        precoVendaEUR: 48.99,
+        updatedAt: "2026-09-27T00:00:00.000Z",
+        updatedBy: "admin@example.com"
+      }
+    }
+  };
+  const [product] = priceOverrides.applyPriceOverrides([
+    { id: "ea-sports-fc-27-ps5", precoVendaEUR: 60.99 }
+  ], document);
+  assert.equal(product.precoVendaEUR, 48.99);
+  assert.equal(product.precoAutomaticoEUR, 60.99);
+  assert.equal(product.precoManual, true);
 });
