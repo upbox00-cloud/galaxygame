@@ -24,9 +24,19 @@ exports.handler = async (event, context) => {
   if (!product) return json(404, { error: "product_not_found" });
 
   try {
-    if (body.reset === true) await removePriceOverride(product.id);
-    else await setPriceOverride(product.id, body.precoVendaEUR, getUserEmail(context));
-    const updated = (await productsWithCurrentPrices()).find((item) => item.id === product.id);
+    let updated = product;
+    if (body.reset === true) {
+      await removePriceOverride(product.id);
+    } else {
+      const override = await setPriceOverride(product.id, body.precoVendaEUR, getUserEmail(context));
+      updated = {
+        ...product,
+        precoVendaEUR: override.precoVendaEUR,
+        precoManual: true,
+        precoAutomaticoEUR: Number(product.precoVendaEUR || 0),
+        precoManualAtualizadoEm: override.updatedAt
+      };
+    }
     return json(200, { produto: updated });
   } catch (error) {
     if (error.code === "invalid_price") return json(400, { error: "invalid_price" });

@@ -2,6 +2,8 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 const priceOverrides = require("../netlify/functions/_price-overrides");
+const adminCatalog = require("../netlify/functions/admin-catalogo");
+const publicCatalog = require("../data/catalog-lite.json");
 
 function memoryStore() {
   const values = new Map();
@@ -34,6 +36,43 @@ test("manual price overrides are persisted and applied to the catalog", async ()
 test("invalid manual prices are rejected", async () => {
   await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 0.5), /invalid_price/);
   await assert.rejects(() => priceOverrides.setPriceOverride("game-ps5", 1000), /invalid_price/);
+});
+
+test("admin catalog returns the persisted manual price after saving", async () => {
+  let savedDocument = null;
+  priceOverrides._test.setStoreFactory(() => ({
+    async get() {
+      return savedDocument;
+    },
+    async setJSON(key, value) {
+      savedDocument = structuredClone(value);
+    }
+  }));
+
+  try {
+    const product = publicCatalog[0];
+    const response = await adminCatalog.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ id: product.id, precoVendaEUR: 31.95 })
+    }, {
+      clientContext: {
+        user: {
+          email: "admin@galaxygame.pt",
+          app_metadata: { roles: ["admin"] }
+        }
+      }
+    });
+    const body = JSON.parse(response.body);
+
+    assert.equal(response.statusCode, 200);
+    assert.equal(savedDocument.prices[product.id].precoVendaEUR, 31.95);
+    assert.equal(body.produto.id, product.id);
+    assert.equal(body.produto.precoVendaEUR, 31.95);
+    assert.equal(body.produto.precoManual, true);
+    assert.equal(body.produto.precoAutomaticoEUR, product.precoVendaEUR);
+  } finally {
+    priceOverrides._test.resetStoreFactory();
+  }
 });
 
 test("price update is not confirmed when Blob cannot be read back", async () => {
