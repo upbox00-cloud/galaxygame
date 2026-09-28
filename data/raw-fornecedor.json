@@ -36914,13 +36914,6 @@
           "custoPixBRL": 92.91,
           "custoSemPixBRL": 99.9,
           "url": "https://www.alphagames.com.br/produtos/mafia-iii-definitive-edition-xbox-one-series-s-x-midia-digital-9j523/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 18.9,
-          "custoSemPixBRL": 19.9,
-          "url": "https://www.lojatcagames.com.br/products/mafia-iii-definitive-edition-xbox-one"
         }
       ]
     },
@@ -40051,11 +40044,11 @@
     {
       "id": "ea-sports-fc-27-xbox-one",
       "nome": "EA Sports FC 27 - Xbox One Mídia Digital",
-      "precoAtualBRL": 208.9,
-      "precoPixBRL": 208.9,
-      "precoSemPixBRL": 219.9,
+      "precoAtualBRL": 199.4,
+      "precoPixBRL": 199.4,
+      "precoSemPixBRL": 209.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 219.9,
+      "precoOriginalBRL": 209.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/ea-sports-fc-27-xbox-one",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/FC27XboxOne.jpg?v=1788471665",
@@ -40069,8 +40062,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 208.9,
-          "custoSemPixBRL": 219.9,
+          "custoPixBRL": 199.4,
+          "custoSemPixBRL": 209.9,
           "url": "https://www.lojatcagames.com.br/products/ea-sports-fc-27-xbox-one"
         }
       ]
@@ -40234,33 +40227,6 @@
           "custoPixBRL": 14.15,
           "custoSemPixBRL": 14.9,
           "url": "https://www.lojatcagames.com.br/products/far-cry-4-xbox-one"
-        }
-      ]
-    },
-    {
-      "id": "far-cry-5-xbox-one",
-      "nome": "Far Cry 5 Xbox One Mídia Digital",
-      "precoAtualBRL": 28.4,
-      "precoPixBRL": 28.4,
-      "precoSemPixBRL": 29.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 29.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/far-cry-5-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/FarCry5_b6ff09a9-03a2-4833-9e51-60efd123d995.jpg?v=1786233657",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762821447778",
-      "varianteFornecedorId": "43190163538018",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.lojatcagames.com.br/products/far-cry-5-xbox-one"
         }
       ]
     },
@@ -49549,11 +49515,11 @@
     {
       "id": "ea-sports-fc-27-xbox-series",
       "nome": "EA Sports FC 27 - Xbox Series Mídia Digital",
-      "precoAtualBRL": 208.9,
-      "precoPixBRL": 208.9,
-      "precoSemPixBRL": 219.9,
+      "precoAtualBRL": 199.4,
+      "precoPixBRL": 199.4,
+      "precoSemPixBRL": 209.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 219.9,
+      "precoOriginalBRL": 209.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/ea-sports-fc-27-xbox-series",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/FC27XboxSeries_74f6f71d-8d15-4dca-a6cc-f6d78594df5f.jpg?v=1788471724",
@@ -49567,8 +49533,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 208.9,
-          "custoSemPixBRL": 219.9,
+          "custoPixBRL": 199.4,
+          "custoSemPixBRL": 209.9,
           "url": "https://www.lojatcagames.com.br/products/ea-sports-fc-27-xbox-series"
         }
       ]

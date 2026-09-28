@@ -14984,18 +14984,6 @@
     "candidatos": []
   },
   {
-    "id": "far-cry-5-xbox-one",
-    "nome": "Far Cry 5 Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-27T09:35:30.161Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "far-cry-6-xbox-one",
     "nome": "Far Cry 6 Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -15265,9 +15253,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:20.388Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-jurassic-world-o-mundo-dos-dinossauros-digital-xbox-one",
@@ -15275,9 +15265,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:22.776Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-marvel-collection-xbox-one",
@@ -15285,9 +15277,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:25.548Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-marvel-super-heroes-2-xbox-one",
@@ -15295,9 +15289,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:28.502Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-marvel-super-heroes-xbox-one",
@@ -15305,9 +15301,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:30.667Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-marvel-vingadores-xbox-one",
@@ -15315,9 +15313,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:34.137Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-movie-videogame-xbox-one",
@@ -15325,9 +15325,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:36.712Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-ninjago-xbox-one",
@@ -15335,9 +15337,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:38.941Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-o-hobbit-xbox-one",
@@ -15345,9 +15349,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:41.432Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-os-incriveis-xbox-one",
@@ -15355,9 +15361,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:44.355Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-star-wars-a-saga-skywalker-xbox-one",
@@ -15365,9 +15373,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:47.417Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "lego-worlds-xbox-one",
@@ -15375,9 +15385,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:51.326Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "mafia-definitive-edition-xbox-one",
@@ -15385,9 +15397,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:54.241Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "mafia-trilogia-xbox-one",
@@ -15395,9 +15409,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:56.421Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "maneater-xbox-one",
@@ -15405,9 +15421,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:58.987Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "marvel-vs-capcom-3-ultimate-xbox-one",
@@ -15415,9 +15433,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:01.034Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "marvel-vs-capcom-infinite-xbox-one",
@@ -15425,9 +15445,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:03.514Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "metal-gear-solid-v-phantom-pain-xbox-one",
@@ -15435,9 +15457,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:06.328Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "metro-saga-bundle-xbox-one",
@@ -15445,9 +15469,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:08.741Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "monster-energy-supercross-3-xbox-one",
@@ -15455,9 +15481,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:11.274Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "monster-energy-supercross-4-xbox-one",
@@ -15465,9 +15493,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:13.471Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "monster-energy-supercross-5-xbox-one",
@@ -15475,9 +15505,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:16.018Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "monster-truck-championship-xbox-one",
@@ -15485,9 +15517,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:19.030Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "mortal-kombat-11-ultimate-injustice-2-edicao-lendaria-xbox-one",
@@ -15495,9 +15529,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:21.267Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "mortal-kombat-11-ultimate-xbox-one",
@@ -15505,9 +15541,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:24.267Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "mortal-kombat-xl-xbox-one",
@@ -15515,9 +15553,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:26.606Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "mxgp3-xbox-one",
@@ -15525,9 +15565,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:29.892Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "naruto-shippuden-ultimate-ninja-storm-4-road-to-boruto-xbox-one",
@@ -15535,9 +15577,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:32.162Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "naruto-shippuden-ultimate-ninja-storm-legacy-xbox-one",
@@ -15545,9 +15589,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:34.982Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "naruto-to-boruto-shinobi-striker-xbox-one",
@@ -15555,9 +15601,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:37.653Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "nba-2k24-xbox-one",
@@ -15565,9 +15613,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:39.922Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "need-for-speed-heat-edicao-deluxe-xbox-one",
@@ -15575,9 +15625,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:42.099Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "need-for-speed-hot-pursuit-remastered-xbox-one",
@@ -15585,9 +15637,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:44.675Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "need-for-speed-rivals-xbox-one",
@@ -15595,9 +15649,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:48.138Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "new-super-lucky-s-tale-xbox-one",
@@ -15605,9 +15661,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:50.304Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "nickelodeon-kart-racers-2-grand-prix-xbox-one",
@@ -15615,9 +15673,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:53.896Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "nickelodeon-kart-racers-xbox-one",
@@ -15625,9 +15685,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:56.360Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "one-piece-burning-blood-xbox-one",
@@ -15635,9 +15697,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:59.192Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "one-piece-pirate-warriors-4-xbox-one",
@@ -15645,9 +15709,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:01.344Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "one-piece-world-seeker-xbox-one",
@@ -15655,9 +15721,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:04.381Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "os-smurfs-missao-florrorosa-xbox-one",
@@ -15665,9 +15733,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:07.324Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "outlast-xbox-one",
@@ -15675,9 +15745,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:09.986Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "pacote-familiar-ea-xbox-one",
@@ -15685,9 +15757,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:12.373Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "patrulha-canina-o-filme-a-cidade-da-aventura-esta-chamando-xbox-one",
@@ -15695,9 +15769,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:15.100Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "patrulha-canina-xbox-one",
@@ -15705,9 +15781,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:18.626Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "plants-vs-zombies-batalha-por-neighborville-xbox-one",
@@ -15715,9 +15793,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:21.293Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "plants-vs-zombies-garden-warfare-2-xbox-one",
@@ -15725,9 +15805,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:23.819Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "prince-of-persia-the-lost-crown-xbox-one",
@@ -15735,9 +15817,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:26.864Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "rage-2-xbox-one",
@@ -15745,9 +15829,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:29.850Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "rayman-legends-xbox-one",
@@ -15755,9 +15841,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:32.830Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "red-dead-redemption-1-e-2-digital-xbox-one",
@@ -15765,9 +15853,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:35.503Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "red-dead-redemption-2-digital-xbox-one",
@@ -15775,9 +15865,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:37.991Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "resident-evil-4-xbox-one",
@@ -15785,9 +15877,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:40.560Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "resident-evil-7-biohazard-midia-xbox-one",
@@ -15795,9 +15889,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:43.225Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "resident-evil-pacote-triplo-xbox-one",
@@ -15805,9 +15901,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:46.164Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "resident-evil-revelations-xbox-one",
@@ -15815,9 +15913,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:48.232Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "resident-evil-revelations-2-edicao-de-luxo-digital-xbox-one",
@@ -15825,9 +15925,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:50.402Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "resident-evil-deluxe-origins-bundle-xbox-one",
@@ -15835,9 +15937,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:52.415Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ride-3-xbox-one",
@@ -15845,9 +15949,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:55.392Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ride-4-xbox-one",
@@ -15855,9 +15961,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:11:58.198Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "rise-of-the-tomb-raider-xbox-one",
@@ -15865,9 +15973,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:00.646Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "rust-console-edition-xbox-one",
@@ -15875,9 +15985,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:03.665Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ryse-edicao-lendaria-xbox-one",
@@ -15885,9 +15997,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:06.017Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "sekiro-shadows-die-twice-xbox-one",
@@ -15895,9 +16009,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:08.169Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "sniper-elite-4-xbox-one",
@@ -15905,9 +16021,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:10.678Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "sniper-elite-5-xbox-one",
@@ -15915,9 +16033,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:13.019Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "sniper-ghost-warrior-3-xbox-one",
@@ -15925,9 +16045,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:15.584Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "sniper-ghost-warrior-contracts-xbox-one",
@@ -15935,9 +16057,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:17.824Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "snowrunner-xbox-one",
@@ -15945,19 +16069,39 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:20.465Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "sonic-colors-ultimate-xbox-one",
     "nome": "Sonic Colors Ultimate – Xbox One Mídia Digital",
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "sem_referencia": false,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:24.003Z",
+    "precoConcorrenteEUR": 14.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo.png\" alt=\"RESIDENT EVIL 7 | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo.png\" alt=\"RESIDENT EVIL 7 | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2024/05/resident-evil-7-biohazard-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 14.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo.png\" alt=\"ARK: Survival Evolved | Xbox One\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 14.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png\" alt=\"Diablo III: Reaper of Souls – Ultimate Evil Edition | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 37.99,
+        "score": 4
+      }
+    ]
   },
   {
     "id": "sonic-forces-xbox-one",
@@ -15965,9 +16109,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:27.387Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "spyro-reignited-trilogy-xbox-one",
@@ -15975,9 +16121,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:30.048Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "star-wars-battlefront-ii-xbox-one",
@@ -15985,9 +16133,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:32.783Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "star-wars-squadrons-xbox-one",
@@ -15995,29 +16145,67 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:35.154Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "steep-xbox-one",
     "nome": "Steep - Xbox One Mídia Digital",
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "sem_referencia": false,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:37.358Z",
+    "precoConcorrenteEUR": 7.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo.png\" alt=\"FAR CRY 5 | Xbox One\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo.png\" alt=\"FAR CRY 5 | Xbox One\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2017/06/far-cry-5-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 7.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Unity |  XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 7.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo.png\" alt=\"ARK: Survival Evolved | Xbox One\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/12/ark-survival-evolved-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 14.99,
+        "score": 3
+      }
+    ]
   },
   {
     "id": "stranded-deep-xbox-one",
     "nome": "Stranded Deep - Xbox One Mídia Digital",
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "sem_referencia": false,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:41.125Z",
+    "precoConcorrenteEUR": 7.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Unity |  XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Unity |  XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 7.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo.png\" alt=\"MAFIA III | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 24.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png\" alt=\"Diablo III: Reaper of Souls – Ultimate Evil Edition | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 37.99,
+        "score": 3
+      }
+    ]
   },
   {
     "id": "street-fighter-30th-anniversary-collection-xbox-one",
@@ -16025,9 +16213,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:43.392Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "streets-of-rage-4-xbox-one",
@@ -16035,9 +16225,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:45.483Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "team-sonic-racing-xbox-one",
@@ -16045,9 +16237,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:48.312Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "teenage-mutant-ninja-turtles-shredder-s-revenge-xbox-one",
@@ -16055,9 +16249,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:50.527Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "tekken-7-xbox-one",

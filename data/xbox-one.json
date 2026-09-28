@@ -3049,7 +3049,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468665936,
-    "precoVendaEUR": 5.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 26.99,
     "trailer": "https://www.youtube.com/embed/kmKOLvnullE",
     "screenshots": [
@@ -6581,8 +6581,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43286610575458",
-    "precoVendaEUR": 53.99,
-    "precoOriginalEUR": 53.99,
+    "precoVendaEUR": 50.99,
+    "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/MOclJJ7IpSY",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/8a3/8a362da6053e94416327b211eac26daa.jpg",
@@ -6796,39 +6796,6 @@
     "steamGridMatchedName": "Far Cry 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/far-cry-4-xbox-one",
-    "enriquecido": true
-  },
-  {
-    "id": "far-cry-5-xbox-one",
-    "nome": "Far Cry 5 Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190163538018",
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
-    "trailer": "https://www.youtube.com/embed/Kdaoe4hbMso",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/5cf/5cf8e7fd61723cdd8f2673be38fa96d7.jpg",
-      "https://media.rawg.io/media/screenshots/f10/f103b8facce20a692c632e92d75cb7dc.jpg",
-      "https://media.rawg.io/media/screenshots/a75/a7559b87154002909f338f36ae4cf584.jpg",
-      "https://media.rawg.io/media/screenshots/954/9543c597ffd856a12d9b0bd82733a370.jpg",
-      "https://media.rawg.io/media/screenshots/406/40613f69f9f3b7ed28cf46cc55a9b06a.jpg"
-    ],
-    "descricao": "Far Cry 5 is an open-world adventure first-person shooter developed by Ubisoft Montreal. It is the fifth main installment in the series. Welcome to Hope County, Montana, where a violent religious doomsday cult appeared. You play as a junior deputy sheriff who gets trapped in the Hope County as al...",
-    "imagemFallback": "https://media.rawg.io/media/games/bce/bce62fbc7cf74bf6a1a37340993ec148.jpg",
-    "released": "2018-03-27",
-    "rating": 3.72,
-    "ratings_count": 2195,
-    "added": 8546,
-    "genres": [
-      "Action",
-      "Shooter"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/c60b6031ae9ebbef03aa963a21ab7ef9.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Far Cry 5",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/far-cry-5-xbox-one",
     "enriquecido": true
   },
   {
@@ -9655,8 +9622,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43190257778786",
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
     "trailer": "https://www.youtube.com/embed/-kvlU5JZQrk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9d9/9d9373ed34b7f43c6e735c56152d839d.jpg",
@@ -9821,8 +9788,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43190252634210",
-    "precoVendaEUR": 3.99,
-    "precoOriginalEUR": 3.99,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 7.99,
     "trailer": "",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/25a/25a00a852da899d82bbac47eedf72df1.jpg",
