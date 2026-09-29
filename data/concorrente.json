@@ -72,15 +72,6 @@
     "candidatos": []
   },
   {
-    "id": "assassin-s-creed-4-black-flag-ps4",
-    "nome": "ASSASSIN'S CREED 4 BLACK FLAG - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "assassin-s-creed-chronicles-trilogy-ps4",
     "nome": "ASSASSIN'S CREED CHRONICLES TRILOGY - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -106,6 +97,18 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-26T22:07:25.838Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-iv-black-flag-ps4",
+    "nome": "ASSASSIN'S CREED IV BLACK FLAG - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "plataformaKey": "ps4",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:10:43.555Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -296,15 +299,6 @@
   {
     "id": "baldur-s-gate-dark-aliance-ii-ps4",
     "nome": "BALDUR'S GATE: DARK ALIANCE II - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "batman-shadows-edition-the-telltale-ps4",
-    "nome": "BATMAN SHADOWS EDITION THE TELLTALE - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -4139,6 +4133,18 @@
     "candidatos": []
   },
   {
+    "id": "the-talltale-batman-shadows-edition-ps4",
+    "nome": "THE TALLTALE BATMAN SHADOWS EDITION - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "plataformaKey": "ps4",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:10:45.984Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "the-witcher-3-wild-hunt-ps4",
     "nome": "THE WITCHER 3: WILD HUNT - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -6212,15 +6218,6 @@
     "candidatos": []
   },
   {
-    "id": "assassin-s-creed-4-black-flag-ps5",
-    "nome": "ASSASSIN'S CREED 4 BLACK FLAG - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "assassin-s-creed-black-flag-resynced-ps5",
     "nome": "ASSASSIN'S CREED BLACK FLAG RESYNCED - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -6258,6 +6255,18 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-26T22:07:58.438Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "assassin-s-creed-iv-black-flag-ps5",
+    "nome": "ASSASSIN'S CREED IV BLACK FLAG - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:10:48.601Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -6472,15 +6481,6 @@
   {
     "id": "baldur-s-gate-dark-aliance-ii-ps5",
     "nome": "BALDUR'S GATE: DARK ALIANCE II - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "sem_referencia": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "batman-shadows-edition-the-telltale-ps5",
-    "nome": "BATMAN SHADOWS EDITION THE TELLTALE - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
     "precoConcorrenteEUR": 0,
@@ -11438,6 +11438,18 @@
     "candidatos": []
   },
   {
+    "id": "the-talltale-batman-shadows-edition-ps5",
+    "nome": "THE TALLTALE BATMAN SHADOWS EDITION - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:10:51.341Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "the-witcher-3-wild-hunt-ps5",
     "nome": "THE WITCHER 3: WILD HUNT - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -13121,6 +13133,30 @@
     "candidatos": []
   },
   {
+    "id": "biomutant-xbox-one",
+    "nome": "BIOMUTANT - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-27T09:33:47.357Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "borderlands-3-xbox-one",
+    "nome": "BORDERLANDS 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-27T09:33:57.879Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "call-of-duty-modern-warfare-ii-xbox-one",
     "nome": "CALL OF DUTY: MODERN WARFARE II - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13247,6 +13283,42 @@
     "candidatos": []
   },
   {
+    "id": "construction-simulator-xbox-one",
+    "nome": "CONSTRUCTION SIMULATOR - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:10:53.602Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "construction-simulator-2-xbox-one",
+    "nome": "CONSTRUCTION SIMULATOR 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:10:57.084Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "construction-simulator-3-xbox-one",
+    "nome": "CONSTRUCTION SIMULATOR 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:10:59.374Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "crash-bandicoot-4-xbox-one",
     "nome": "CRASH BANDICOOT 4 - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13278,6 +13350,18 @@
     "nome": "CRASH TRILOGY - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "cyberpunk-2077-xbox-one",
+    "nome": "CYBERPUNK 2077 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:01.815Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -13359,6 +13443,18 @@
     "nome": "DIABLO IV - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "dragon-ball-xenoverse-xbox-one",
+    "nome": "DRAGON BALL XENOVERSE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-27T09:35:02.709Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -13457,6 +13553,30 @@
     "candidatos": []
   },
   {
+    "id": "f1-24-xbox-one",
+    "nome": "F1 24 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-27T09:35:22.481Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "far-cry-4-far-cry-primal-bundle-xbox-one",
+    "nome": "FAR CRY 4 + FAR CRY PRIMAL BUNDLE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:04.691Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "farm-manager-2022-xbox-one",
     "nome": "FARM MANAGER 2022 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13505,6 +13625,18 @@
     "candidatos": []
   },
   {
+    "id": "final-fantasy-ix-xbox-one",
+    "nome": "FINAL FANTASY IX - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:07.814Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "final-fantasy-vii-xbox-one",
     "nome": "FINAL FANTASY VII - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13512,6 +13644,66 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-26T22:10:24.339Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "final-fantasy-xii-xbox-one",
+    "nome": "FINAL FANTASY XII - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:10.939Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "final-fantasy-xv-xbox-one",
+    "nome": "FINAL FANTASY XV - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:13.443Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "five-nights-at-freddy-s-2-xbox-one",
+    "nome": "FIVE NIGHTS AT FREDDY`S 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:16.625Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "five-nights-at-freddy-s-3-xbox-one",
+    "nome": "FIVE NIGHTS AT FREDDY`S 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:19.167Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "five-nights-at-freddy-s-4-xbox-one",
+    "nome": "FIVE NIGHTS AT FREDDY`S 4 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:21.937Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -13574,6 +13766,30 @@
     "candidatos": []
   },
   {
+    "id": "guardioes-da-galaxia-da-marvel-xbox-one",
+    "nome": "GUARDIÕES DA GALÁXIA DA MARVEL - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:24.371Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "hitman-world-of-assassinations-xbox-one",
+    "nome": "HITMAN WORLD OF ASSASSINATIONS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:27.481Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "hogwarts-legacy-xbox-one",
     "nome": "HOGWARTS LEGACY - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13610,6 +13826,18 @@
     "candidatos": []
   },
   {
+    "id": "inside-e-limbo-xbox-one",
+    "nome": "INSIDE E LIMBO - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:29.565Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "it-takes-two-xbox-one",
     "nome": "IT TAKES TWO - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13628,10 +13856,34 @@
     "candidatos": []
   },
   {
+    "id": "lego-marvel-super-heroes-2-xbox-one",
+    "nome": "LEGO MARVEL SUPER HEROES 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:09:28.502Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "lego-marvel-s-avengers-xbox-one",
     "nome": "LEGO MARVEL`S AVENGERS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "lego-star-wars-the-skywalker-saga-xbox-one",
+    "nome": "LEGO STAR WARS THE SKYWALKER SAGA - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:32.531Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -13650,6 +13902,18 @@
     "nome": "LITTLE NIGHTMARES II - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "little-nightmares-iii-xbox-one",
+    "nome": "LITTLE NIGHTMARES III - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:34.662Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -13770,6 +14034,78 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-26T22:10:29.822Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "mortal-kombat-xl-xbox-one",
+    "nome": "MORTAL KOMBAT Xl - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:10:26.606Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "mxgp-2-the-official-motocross-videogame-xbox-one",
+    "nome": "MXGP 2 - THE OFFICIAL MOTOCROSS VIDEOGAME - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:36.847Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "mxgp-2019-xbox-one",
+    "nome": "MXGP 2019 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:39.423Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "mxgp-2020-xbox-one",
+    "nome": "MXGP 2020 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:42.347Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "mxgp-2026-xbox-one",
+    "nome": "MXGP 2026 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:44.947Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "mxgp-pro-xbox-one",
+    "nome": "MXGP PRO - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:47.962Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -13905,6 +14241,18 @@
     "nome": "PAYDAY 2 CRIMEWAVE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "poppy-playtime-1-xbox-one",
+    "nome": "POPPY PLAYTIME 1 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:51.522Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14096,6 +14444,42 @@
     "candidatos": []
   },
   {
+    "id": "robocop-xbox-one",
+    "nome": "ROBOCOP - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:54.516Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "rooftops-e-alleys-xbox-one",
+    "nome": "ROOFTOPS & ALLEYS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:56.986Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "rust-console-edition-xbox-one",
+    "nome": "RUST CONSOLE EDITION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:03.665Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "ryse-son-of-rome-xbox-one",
     "nome": "RYSE: SON OF ROME - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -14103,6 +14487,18 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-26T22:10:54.488Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "saints-row-gold-xbox-one",
+    "nome": "SAINTS ROW GOLD - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:11:59.909Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14126,6 +14522,42 @@
     "candidatos": []
   },
   {
+    "id": "sniper-elite-3-xbox-one",
+    "nome": "SNIPER ELITE 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:02.615Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "sniper-elite-4-xbox-one",
+    "nome": "SNIPER ELITE 4 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:10.678Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "sniper-ghost-warrior-contracts-xbox-one",
+    "nome": "SNIPER GHOST WARRIOR CONTRACTS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:17.824Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "sniper-ghost-warrior-contracts-2-xbox-one",
     "nome": "SNIPER GHOST WARRIOR CONTRACTS 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -14133,6 +14565,18 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-26T22:10:57.553Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "snowrunner-1-xbox-one",
+    "nome": "SNOWRUNNER 1 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:05.374Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14183,10 +14627,62 @@
     "candidatos": []
   },
   {
+    "id": "spyro-xbox-one",
+    "nome": "SPYRO - XBOX ONE - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:07.775Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "star-wars-jedi-fallen-order-xbox-one",
     "nome": "STAR WARS JEDI: FALLEN ORDER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "stranded-deep-xbox-one",
+    "nome": "STRANDED DEEP - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": false,
+    "pendente": false,
+    "consultadoEm": "2026-09-28T10:12:41.125Z",
+    "precoConcorrenteEUR": 7.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Unity |  XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Unity |  XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 7.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo.png\" alt=\"MAFIA III | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 24.99,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png\" alt=\"Diablo III: Reaper of Souls – Ultimate Evil Edition | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 37.99,
+        "score": 3
+      }
+    ]
+  },
+  {
+    "id": "stray-xbox-one",
+    "nome": "STRAY - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:10.625Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14201,10 +14697,94 @@
     "candidatos": []
   },
   {
+    "id": "tekken-7-xbox-one",
+    "nome": "TEKKEN 7 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL -",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:13.183Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "terminator-resistance-xbox-one",
+    "nome": "TERMINATOR RESISTANCE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:16.530Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "terraria-xbox-one",
+    "nome": "TERRARIA - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:20.026Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "the-crew-2-xbox-one",
+    "nome": "THE CREW 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:22.285Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "the-crew-motorfest-xbox-one",
+    "nome": "THE CREW MOTORFEST - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:24.957Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "the-division-2-xbox-one",
     "nome": "THE DIVISION 2 - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "the-king-of-fighters-95-xbox-one",
+    "nome": "THE KING OF FIGHTERS 95 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:27.622Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "the-king-of-fighters-97-xbox-one",
+    "nome": "THE KING OF FIGHTERS 97 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:29.864Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14246,6 +14826,18 @@
     "candidatos": []
   },
   {
+    "id": "tom-clancy-s-the-division-2-xbox-one",
+    "nome": "TOM CLANCY´S THE DIVISION 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:32.943Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "tomb-raider-definitive-edition-xbox-one",
     "nome": "TOMB RAIDER: DEFINITIVE EDITION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -14271,6 +14863,30 @@
     "nome": "TONY HAWK'S PRO SKATER 1+2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "tony-hawks-skater-1-2-xbox-one",
+    "nome": "TONY HAWKS SKATER 1+2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:35.225Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "top-racer-collection-xbox-one",
+    "nome": "TOP RACER COLLECTION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:37.915Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14343,6 +14959,30 @@
     "nome": "WATCH DOGS LEGION- XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "world-war-z-xbox-one",
+    "nome": "WORLD WAR Z - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:40.756Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "wuchang-xbox-one",
+    "nome": "WUCHANG - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:43.449Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14504,18 +15144,6 @@
     "candidatos": []
   },
   {
-    "id": "biomutant-xbox-one",
-    "nome": "Biomutant – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-27T09:33:47.357Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "bob-esponja-battle-for-bikini-bottom-xbox-one",
     "nome": "Bob Esponja Battle for Bikini Bottom – Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -14547,18 +15175,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-27T09:33:55.072Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "borderlands-3-xbox-one",
-    "nome": "Borderlands 3 – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-27T09:33:57.879Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -14852,18 +15468,6 @@
     "candidatos": []
   },
   {
-    "id": "dragon-ball-xenoverse-xbox-one",
-    "nome": "Dragon Ball Xenoverse - Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-27T09:35:02.709Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "dragon-ball-xenoverse-super-bundle-digital-xbox-one",
     "nome": "Dragon Ball Xenoverse Super Bundle - Xbox One Digital",
     "plataforma": "Xbox One",
@@ -14943,18 +15547,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-27T09:35:20.184Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "f1-24-xbox-one",
-    "nome": "F1 24 - Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-27T09:35:22.481Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -15284,18 +15876,6 @@
     "candidatos": []
   },
   {
-    "id": "lego-marvel-super-heroes-2-xbox-one",
-    "nome": "Lego Marvel Super Heroes 2 – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-28T10:09:28.502Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "lego-marvel-super-heroes-xbox-one",
     "nome": "Lego Marvel Super Heroes – Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -15543,18 +16123,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-28T10:10:24.267Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "mortal-kombat-xl-xbox-one",
-    "nome": "Mortal Kombat XL – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-28T10:10:26.606Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -15980,18 +16548,6 @@
     "candidatos": []
   },
   {
-    "id": "rust-console-edition-xbox-one",
-    "nome": "Rust Console Edition – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-28T10:12:03.665Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "ryse-edicao-lendaria-xbox-one",
     "nome": "Ryse: Edição Lendária – Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -16016,18 +16572,6 @@
     "candidatos": []
   },
   {
-    "id": "sniper-elite-4-xbox-one",
-    "nome": "Sniper Elite 4 – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-28T10:12:10.678Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "sniper-elite-5-xbox-one",
     "nome": "Sniper Elite 5 – Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -16047,18 +16591,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-28T10:12:15.584Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "sniper-ghost-warrior-contracts-xbox-one",
-    "nome": "Sniper Ghost Warrior Contracts – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-28T10:12:17.824Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -16180,34 +16712,6 @@
     ]
   },
   {
-    "id": "stranded-deep-xbox-one",
-    "nome": "Stranded Deep - Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": false,
-    "pendente": false,
-    "consultadoEm": "2026-09-28T10:12:41.125Z",
-    "precoConcorrenteEUR": 7.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Unity |  XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-    "candidatos": [
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png\" alt=\"Assassin&#039;s Creed Unity |  XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2018/09/assassins-creed-unity-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 7.99,
-        "score": 3
-      },
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo.png\" alt=\"MAFIA III | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/07/mafia-iii-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 24.99,
-        "score": 3
-      },
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png\" alt=\"Diablo III: Reaper of Souls – Ultimate Evil Edition | XBOX ONE\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/07/diablo-III-reaper-of-souls-ultimate-edition-xbox-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 37.99,
-        "score": 3
-      }
-    ]
-  },
-  {
     "id": "street-fighter-30th-anniversary-collection-xbox-one",
     "nome": "Street Fighter 30th Anniversary Collection – Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -16256,24 +16760,16 @@
     "candidatos": []
   },
   {
-    "id": "tekken-7-xbox-one",
-    "nome": "Tekken 7 Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
-  },
-  {
     "id": "terra-media-sombras-da-guerra-xbox-one",
     "nome": "Terra média Sombras da Guerra – Xbox One Mídia Digital",
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:47.477Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "the-callisto-protocol-xbox-one",
@@ -16281,29 +16777,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:50.175Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
-  },
-  {
-    "id": "the-crew-2-xbox-one",
-    "nome": "The Crew 2 – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
-  },
-  {
-    "id": "the-crew-motorfest-xbox-one",
-    "nome": "The Crew Motorfest - Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "the-evil-within-xbox-one",
@@ -16311,9 +16789,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:53.133Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "the-evil-within-2-xbox-one",
@@ -16321,9 +16801,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:56.526Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "the-sims-4-ed-festa-deluxe-xbox-one",
@@ -16331,9 +16813,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:12:59.577Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "the-witcher-3-xbox-one",
@@ -16341,9 +16825,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:01.966Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "titanfall-2-ed-ultimate-xbox-one",
@@ -16351,9 +16837,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:04.951Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "tom-clancy-s-rainbow-six-extraction-xbox-one",
@@ -16361,9 +16849,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:07.973Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "truck-driver-xbox-one",
@@ -16371,9 +16861,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:10.616Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "uma-aventura-lego-2-videogame-xbox-one",
@@ -16381,9 +16873,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:13.594Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "watch-dogs-2-xbox-one",
@@ -16391,9 +16885,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:16.219Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "wolfenstein-ii-the-new-colossus-xbox-one",
@@ -16401,19 +16897,11 @@
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:19.645Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
-  },
-  {
-    "id": "world-war-z-xbox-one",
-    "nome": "World War Z – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "007-first-light-xbox-series",
@@ -16448,9 +16936,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:23.371Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ace-combat-8-wings-of-theve-xbox-series",
@@ -16467,9 +16957,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:25.746Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "age-of-empires-iv-anniversary-edition-xbox-series",
@@ -16477,9 +16969,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:28.434Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "age-of-mythology-retold-xbox-series",
@@ -16487,9 +16981,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:30.948Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "alan-wake-2-xbox-series",
@@ -16515,9 +17011,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:33.602Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ancestors-legacy-xbox-series",
@@ -16525,9 +17023,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:37.261Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ancestors-the-humankind-odyssey-xbox-series",
@@ -16535,9 +17035,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:40.847Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ao-internacional-tennis-xbox-series",
@@ -16545,9 +17047,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:43.330Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "arc-raiders-xbox-series",
@@ -16564,9 +17068,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:45.618Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ark-survival-ascended-xbox-series",
@@ -16574,9 +17080,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:48.399Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "ark-survival-evolved-xbox-series",
@@ -16584,9 +17092,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:51.187Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-xbox-series",
@@ -16594,9 +17104,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:53.720Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-black-flag-resynced-xbox-series",
@@ -16604,9 +17116,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:13:56.571Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-chronicles-china-xbox-series",
@@ -16614,9 +17128,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:00.345Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-chronicles-russia-xbox-series",
@@ -16624,9 +17140,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:02.942Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-ii-xbox-series",
@@ -16634,9 +17152,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:05.857Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-iii-remastered-xbox-series",
@@ -16644,9 +17164,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:08.937Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-iv-black-flag-xbox-series",
@@ -16654,9 +17176,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:11.435Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-mirage-assassin-s-creed-valhalla-xbox-series",
@@ -16664,9 +17188,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:14.111Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-mirage-xbox-series",
@@ -16674,9 +17200,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:17.360Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-mythology-pack-xbox-series",
@@ -16684,9 +17212,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:19.796Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-odyssey-xbox-series",
@@ -16694,9 +17224,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:22.336Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-series",
@@ -16704,9 +17236,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-29T10:14:25.628Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "assassin-s-creed-shadows-xbox-series",
@@ -16904,6 +17438,26 @@
     "candidatos": []
   },
   {
+    "id": "biomutant-xbox-series",
+    "nome": "BIOMUTANT - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "borderlands-3-xbox-series",
+    "nome": "BORDERLANDS 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "borderlands-4-xbox-series",
     "nome": "BORDERLANDS 4 - XBOX SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17040,6 +17594,36 @@
     "candidatos": []
   },
   {
+    "id": "construction-simulator-xbox-series",
+    "nome": "CONSTRUCTION SIMULATOR - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "construction-simulator-2-xbox-series",
+    "nome": "CONSTRUCTION SIMULATOR 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "construction-simulator-3-xbox-series",
+    "nome": "CONSTRUCTION SIMULATOR 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "control-resonant-xbox-series",
     "nome": "CONTROL RESONANT - XBOX SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17076,6 +17660,16 @@
     "candidatos": []
   },
   {
+    "id": "crime-boss-rockay-city-xbox-series",
+    "nome": "CRIME BOSS: ROCKAY CITY - XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "crimson-desert-xbox-series",
     "nome": "CRIMSON DESERT - XBOX SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17083,6 +17677,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "cyberpunk-2077-xbox-series",
+    "nome": "CYBERPUNK 2077 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "dark-souls-ii-xbox-series",
@@ -17194,6 +17798,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "dragon-ball-xenoverse-xbox-series",
+    "nome": "DRAGON BALL XENOVERSE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "dragon-ball-xenoverse-2-xbox-series",
@@ -17309,6 +17923,16 @@
     "candidatos": []
   },
   {
+    "id": "f1-24-xbox-series",
+    "nome": "F1 24 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "fable-xbox-series",
     "nome": "FABLE - XBOX SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17316,6 +17940,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "far-cry-4-far-cry-primal-bundle-xbox-series",
+    "nome": "FAR CRY 4 + FAR CRY PRIMAL BUNDLE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "farm-manager-2022-xbox-series",
@@ -17355,6 +17989,16 @@
     "candidatos": []
   },
   {
+    "id": "final-fantasy-ix-xbox-series",
+    "nome": "FINAL FANTASY IX - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "final-fantasy-vii-xbox-series",
     "nome": "FINAL FANTASY VII - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17365,8 +18009,58 @@
     "nomeConcorrente": ""
   },
   {
+    "id": "final-fantasy-xii-xbox-series",
+    "nome": "FINAL FANTASY XII - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "final-fantasy-xv-xbox-series",
+    "nome": "FINAL FANTASY XV - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "final-fantasy-xvi-xbox-series",
     "nome": "FINAL FANTASY XVI - XBOX SERIES S/X - MIDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "five-nights-at-freddy-s-2-xbox-series",
+    "nome": "FIVE NIGHTS AT FREDDY`S 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "five-nights-at-freddy-s-3-xbox-series",
+    "nome": "FIVE NIGHTS AT FREDDY`S 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "five-nights-at-freddy-s-4-xbox-series",
+    "nome": "FIVE NIGHTS AT FREDDY`S 4 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
@@ -17458,6 +18152,16 @@
     "nomeConcorrente": ""
   },
   {
+    "id": "guardioes-da-galaxia-da-marvel-xbox-series",
+    "nome": "GUARDIÕES DA GALÁXIA DA MARVEL - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "halloween-the-game-xbox-series",
     "nome": "HALLOWEEN: THE GAME - XBOX SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17483,6 +18187,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "hitman-world-of-assassinations-xbox-series",
+    "nome": "HITMAN WORLD OF ASSASSINATIONS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "hogwarts-legacy-xbox-series",
@@ -17519,6 +18233,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "inside-e-limbo-xbox-series",
+    "nome": "INSIDE E LIMBO - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "invincible-vs-xbox-series",
@@ -17567,6 +18291,16 @@
     "candidatos": []
   },
   {
+    "id": "lego-marvel-super-heroes-2-xbox-series",
+    "nome": "LEGO MARVEL SUPER HEROES 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "lego-marvel-s-avengers-xbox-series",
     "nome": "LEGO MARVEL`S AVENGERS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17574,6 +18308,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "lego-star-wars-the-skywalker-saga-xbox-series",
+    "nome": "LEGO STAR WARS THE SKYWALKER SAGA - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "little-nightmares-xbox-series",
@@ -17592,6 +18336,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "little-nightmares-iii-xbox-series",
+    "nome": "LITTLE NIGHTMARES III - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "mad-max-xbox-series",
@@ -17770,6 +18524,66 @@
     "nomeConcorrente": ""
   },
   {
+    "id": "mortal-kombat-xl-xbox-series",
+    "nome": "MORTAL KOMBAT Xl - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "mxgp-2-the-official-motocross-videogame-xbox-series",
+    "nome": "MXGP 2 - THE OFFICIAL MOTOCROSS VIDEOGAME - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "mxgp-2019-xbox-series",
+    "nome": "MXGP 2019 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "mxgp-2020-xbox-series",
+    "nome": "MXGP 2020 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "mxgp-2026-xbox-series",
+    "nome": "MXGP 2026 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "mxgp-pro-xbox-series",
+    "nome": "MXGP PRO - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "naruto-shippuden-ultimate-ninja-storm-4-xbox-series",
     "nome": "NARUTO SHIPPUDEN: ULTIMATE NINJA STORM 4 - XBOX ONE & SERIES S/X",
     "plataforma": "Xbox Series X|S",
@@ -17925,6 +18739,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "poppy-playtime-1-xbox-series",
+    "nome": "POPPY PLAYTIME 1 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "poppy-playtime-capitulo-2-xbox-series",
@@ -18179,6 +19003,36 @@
     "candidatos": []
   },
   {
+    "id": "robocop-xbox-series",
+    "nome": "ROBOCOP - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "rooftops-e-alleys-xbox-series",
+    "nome": "ROOFTOPS & ALLEYS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "rust-console-edition-xbox-series",
+    "nome": "RUST CONSOLE EDITION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "ryse-son-of-rome-xbox-series",
     "nome": "RYSE: SON OF ROME - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -18191,6 +19045,16 @@
   {
     "id": "sainsts-row-remastered-xbox-series",
     "nome": "SAINSTS ROW REMASTERED - XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "saints-row-gold-xbox-series",
+    "nome": "SAINTS ROW GOLD - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
@@ -18245,8 +19109,48 @@
     "candidatos": []
   },
   {
+    "id": "sniper-elite-3-xbox-series",
+    "nome": "SNIPER ELITE 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "sniper-elite-4-xbox-series",
+    "nome": "SNIPER ELITE 4 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "sniper-ghost-warrior-contracts-xbox-series",
+    "nome": "SNIPER GHOST WARRIOR CONTRACTS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "sniper-ghost-warrior-contracts-2-xbox-series",
     "nome": "SNIPER GHOST WARRIOR CONTRACTS 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "snowrunner-1-xbox-series",
+    "nome": "SNOWRUNNER 1 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
@@ -18340,6 +19244,26 @@
     "candidatos": []
   },
   {
+    "id": "stranded-deep-xbox-series",
+    "nome": "STRANDED DEEP - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "stray-xbox-series",
+    "nome": "STRAY - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "street-fighter-6-xbox-series",
     "nome": "STREET FIGHTER 6 - XBOX SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -18368,6 +19292,16 @@
     "nomeConcorrente": ""
   },
   {
+    "id": "tekken-7-xbox-series",
+    "nome": "TEKKEN 7 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL -",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "tekken-8-xbox-series",
     "nome": "TEKKEN 8 - XBOX SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -18377,8 +19311,48 @@
     "candidatos": []
   },
   {
+    "id": "terminator-resistance-xbox-series",
+    "nome": "TERMINATOR RESISTANCE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "terraria-xbox-series",
+    "nome": "TERRARIA - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "the-blood-of-dawnwalker-xbox-series",
     "nome": "THE BLOOD OF DAWNWALKER - XBOX SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "the-crew-2-xbox-series",
+    "nome": "THE CREW 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "the-crew-motorfest-xbox-series",
+    "nome": "THE CREW MOTORFEST - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
@@ -18396,6 +19370,36 @@
     "candidatos": []
   },
   {
+    "id": "the-first-berserker-xbox-series",
+    "nome": "THE FIRST BERSERKER - XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "the-king-of-fighters-95-xbox-series",
+    "nome": "THE KING OF FIGHTERS 95 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "the-king-of-fighters-97-xbox-series",
+    "nome": "THE KING OF FIGHTERS 97 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "the-quarry-xbox-series",
     "nome": "THE QUARRY - XBOX SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -18403,6 +19407,16 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "the-sinking-city-2-xbox-series",
+    "nome": "THE SINKING CITY 2 - XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "the-witcher-3-wild-hunt-xbox-series",
@@ -18441,6 +19455,16 @@
     "candidatos": []
   },
   {
+    "id": "tom-clancy-s-the-division-2-xbox-series",
+    "nome": "TOM CLANCY´S THE DIVISION 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
     "id": "tomb-raider-definitive-edition-xbox-series",
     "nome": "TOMB RAIDER: DEFINITIVE EDITION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -18476,6 +19500,26 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "tony-hawks-skater-1-2-xbox-series",
+    "nome": "TONY HAWKS SKATER 1+2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "top-racer-collection-xbox-series",
+    "nome": "TOP RACER COLLECTION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "truck-simulator-cargo-driver-2025-euro-xbox-series",
@@ -18548,6 +19592,26 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "world-war-z-xbox-series",
+    "nome": "WORLD WAR Z - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
+  },
+  {
+    "id": "wuchang-xbox-series",
+    "nome": "WUCHANG - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": ""
   },
   {
     "id": "wukong-xbox-series",
@@ -18668,16 +19732,6 @@
     "nomeConcorrente": ""
   },
   {
-    "id": "f1-24-xbox-series",
-    "nome": "F1 24 - Xbox Series Mídia Digital",
-    "plataforma": "Xbox Series X|S",
-    "plataformaKey": "xbox-series",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
-  },
-  {
     "id": "f1-25-xbox-series",
     "nome": "F1 25 - Xbox Series Mídia Digital",
     "plataforma": "Xbox Series X|S",
@@ -18770,16 +19824,6 @@
   {
     "id": "the-callisto-protocol-xbox-series",
     "nome": "The Callisto Protocol – Xbox Series X|S Mídia Digital",
-    "plataforma": "Xbox Series X|S",
-    "plataformaKey": "xbox-series",
-    "sem_referencia": true,
-    "pendente": true,
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
-  },
-  {
-    "id": "the-crew-motorfest-xbox-series",
-    "nome": "The Crew Motorfest - Xbox Series Mídia Digital",
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,

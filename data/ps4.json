@@ -270,32 +270,6 @@
     "enriquecido": true
   },
   {
-    "id": "assassin-s-creed-4-black-flag-ps4",
-    "nome": "ASSASSIN'S CREED 4 BLACK FLAG - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1549524126,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 17.99,
-    "trailer": "https://www.youtube.com/embed/axWp51A_oKE",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351128-44fbbbf3b2ee3cd6c617824155272248-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351128-44fbbbf3b2ee3cd6c617824155272248-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed IV: Black Flag",
-    "steamGridMatchScore": 0.846,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-4-black-flag-ps4-midia-digital-eyukb/",
-    "enriquecido": false
-  },
-  {
     "id": "assassin-s-creed-chronicles-trilogy-ps4",
     "nome": "ASSASSIN'S CREED CHRONICLES TRILOGY - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -387,6 +361,41 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-3-remastered-ps4-midia-digital-1w468/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-iv-black-flag-ps4",
+    "nome": "ASSASSIN'S CREED IV BLACK FLAG - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1549524126,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 17.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/46d/46de97777c05efb26597b215735dcd84.jpg",
+      "https://media.rawg.io/media/screenshots/162/162503bb903edd7cfddf2a49ecdf5b7d.jpg",
+      "https://media.rawg.io/media/screenshots/9ad/9ad8aa17d3f2be9545273f895e481280.jpg",
+      "https://media.rawg.io/media/screenshots/b02/b02b168d04889304aac23e47f5314721.jpg",
+      "https://media.rawg.io/media/screenshots/ad8/ad8439bc9ed7d2f88deb836c9cff23d2.jpg"
+    ],
+    "descricao": "Assasin's Creed IV: Black Flag is a pirate game. Being the fourth “numbered” instalment in the series, the story follows a new protagonist, Edward Kenway, who tries to build his Pirate Republic. Help legendary pirates like \"Blackbeard\", Charles Vane and other well-known pirates establish their em...",
+    "imagemFallback": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg",
+    "released": "2013-10-29",
+    "rating": 4.16,
+    "ratings_count": 2669,
+    "added": 9839,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/73273bfc99cf06ef1cbde5663b73704b.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed IV: Black Flag",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-4-black-flag-ps4-midia-digital-eyukb/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-mirage-ps4",
@@ -998,7 +1007,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577830628,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 36.99,
+    "precoOriginalEUR": 35.99,
     "trailer": "https://www.youtube.com/embed/93XmwRQ-X9k",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364002-6e9149a00525cef46d17868389165274-1024-1024.webp"
@@ -1041,32 +1050,6 @@
     "steamGridMatchedName": "Baldur's Gate: Dark Alliance II",
     "steamGridMatchScore": 0.866,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-dark-aliance-ii-ps4-midia-digital-1yl40/",
-    "enriquecido": false
-  },
-  {
-    "id": "batman-shadows-edition-the-telltale-ps4",
-    "nome": "BATMAN SHADOWS EDITION THE TELLTALE - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577847109,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 28.99,
-    "trailer": "",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364015-f09a94dcc1ad77d1dd17868419042655-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364015-f09a94dcc1ad77d1dd17868419042655-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Batman: Arkham Asylum - Game of the Year Edition",
-    "steamGridMatchScore": 0.332,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-shadows-edition-the-telltale-ps4-midia-digital-nlfcp/",
     "enriquecido": false
   },
   {
@@ -1239,7 +1222,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577855348,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/DWiO7PD-AzE",
     "screenshots": [
@@ -2105,7 +2088,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1275968319,
-    "precoVendaEUR": 8.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/aTS9n_m7TW0",
     "screenshots": [
@@ -2966,7 +2949,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276164015,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 40.99,
     "trailer": "https://www.youtube.com/embed/4fbO2-egZ3U",
     "screenshots": [
@@ -3052,7 +3035,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550284339,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 65.99,
+    "precoOriginalEUR": 64.99,
     "trailer": "https://www.youtube.com/embed/U1qGQqOkZI8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351245-4f95a314725a08010717825223945636-1024-1024.webp"
@@ -4244,7 +4227,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1581812438,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 64.99,
     "trailer": "https://www.youtube.com/embed/EErzNnVsFkA",
     "screenshots": [
@@ -4647,7 +4630,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276658261,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/TSi0iJYSQ24",
     "screenshots": [
@@ -4835,7 +4818,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550669800,
-    "precoVendaEUR": 78.99,
+    "precoVendaEUR": 77.99,
     "precoOriginalEUR": 96.99,
     "trailer": "https://www.youtube.com/embed/0al9X3Xi4rk",
     "screenshots": [
@@ -4862,7 +4845,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1590181088,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367310-7120cbba9b955b93cf17884648758816-1024-1024.webp"
@@ -5138,8 +5121,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550671362,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 58.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/oJ-2Iu8bibM",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351370-83b1b55fdc786175a517826176786988-1024-1024.webp"
@@ -6552,7 +6535,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1552329724,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/DD82-gqZYdg",
     "screenshots": [
@@ -8246,7 +8229,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1554749672,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/Ripgh8W2PMg",
     "screenshots": [
@@ -9815,7 +9798,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550298861,
     "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/aU4RKpn5o94",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351267-0a1d2312887194d8c917825257039473-1024-1024.webp"
@@ -9840,7 +9823,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1557533965,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/qLFCbMmNwIY",
     "screenshots": [
@@ -10968,7 +10951,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1472773483,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/SJPu1spHqfk",
     "screenshots": [
@@ -12704,7 +12687,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1568851486,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/sjkpPqATrYY",
     "screenshots": [
@@ -13334,7 +13317,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1287831746,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/2S-A3z866YI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/89d/89d22db26c45627718564abd573cb2ba.jpg",
@@ -13744,6 +13727,35 @@
     "enriquecido": true
   },
   {
+    "id": "the-talltale-batman-shadows-edition-ps4",
+    "nome": "THE TALLTALE BATMAN SHADOWS EDITION - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577847109,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 28.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364015-f09a94dcc1ad77d1dd17868419042655-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364015-f09a94dcc1ad77d1dd17868419042655-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Batman: The Telltale Series",
+    "steamGridMatchScore": 0.289,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-shadows-edition-the-telltale-ps4-midia-digital-nlfcp/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
     "id": "the-witcher-3-wild-hunt-ps4",
     "nome": "THE WITCHER 3: WILD HUNT - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -14093,7 +14105,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1571590376,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/f-HA6i6t3yQ",
     "screenshots": [
@@ -14613,7 +14625,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1468130695,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/U2ykGILfXcg",
     "screenshots": [

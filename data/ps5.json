@@ -446,7 +446,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577132225,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/xGcIGRKarug",
     "screenshots": [
@@ -537,32 +537,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/ark-survival-evolved-ps5-midia-digital-5f5ir/",
     "enriquecido": true
-  },
-  {
-    "id": "assassin-s-creed-4-black-flag-ps5",
-    "nome": "ASSASSIN'S CREED 4 BLACK FLAG - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1549525055,
-    "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 17.99,
-    "trailer": "https://www.youtube.com/embed/axWp51A_oKE",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351126-f18ffc5a5d78a30d2d17824155707977-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351126-f18ffc5a5d78a30d2d17824155707977-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed IV: Black Flag",
-    "steamGridMatchScore": 0.846,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-4-black-flag-ps5-midia-digital-wkdr6/",
-    "enriquecido": false
   },
   {
     "id": "assassin-s-creed-black-flag-resynced-ps5",
@@ -682,6 +656,41 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-3-remastered-ps5-midia-digital-1ek83/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-iv-black-flag-ps5",
+    "nome": "ASSASSIN'S CREED IV BLACK FLAG - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1549525055,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 17.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/46d/46de97777c05efb26597b215735dcd84.jpg",
+      "https://media.rawg.io/media/screenshots/162/162503bb903edd7cfddf2a49ecdf5b7d.jpg",
+      "https://media.rawg.io/media/screenshots/9ad/9ad8aa17d3f2be9545273f895e481280.jpg",
+      "https://media.rawg.io/media/screenshots/b02/b02b168d04889304aac23e47f5314721.jpg",
+      "https://media.rawg.io/media/screenshots/ad8/ad8439bc9ed7d2f88deb836c9cff23d2.jpg"
+    ],
+    "descricao": "Assasin's Creed IV: Black Flag is a pirate game. Being the fourth “numbered” instalment in the series, the story follows a new protagonist, Edward Kenway, who tries to build his Pirate Republic. Help legendary pirates like \"Blackbeard\", Charles Vane and other well-known pirates establish their em...",
+    "imagemFallback": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg",
+    "released": "2013-10-29",
+    "rating": 4.16,
+    "ratings_count": 2669,
+    "added": 9839,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/73273bfc99cf06ef1cbde5663b73704b.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed IV: Black Flag",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-4-black-flag-ps5-midia-digital-wkdr6/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-mirage-ps5",
@@ -1390,7 +1399,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577830843,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 36.99,
+    "precoOriginalEUR": 35.99,
     "trailer": "https://www.youtube.com/embed/93XmwRQ-X9k",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364004-abce0812a4da60239517868389810494-1024-1024.webp"
@@ -1433,32 +1442,6 @@
     "steamGridMatchedName": "Baldur's Gate: Dark Alliance II",
     "steamGridMatchScore": 0.866,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-dark-aliance-ii-ps5-midia-digital-1q7is/",
-    "enriquecido": false
-  },
-  {
-    "id": "batman-shadows-edition-the-telltale-ps5",
-    "nome": "BATMAN SHADOWS EDITION THE TELLTALE - PS5 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 5",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577847464,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 28.99,
-    "trailer": "",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364013-ef235a84d99b6c8a3017868419473847-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364013-ef235a84d99b6c8a3017868419473847-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Batman: Arkham Asylum - Game of the Year Edition",
-    "steamGridMatchScore": 0.332,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-shadows-edition-the-telltale-ps5-midia-digital-drlru/",
     "enriquecido": false
   },
   {
@@ -1597,7 +1580,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577855612,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/DWiO7PD-AzE",
     "screenshots": [
@@ -2582,7 +2565,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1275963431,
-    "precoVendaEUR": 21.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/aTS9n_m7TW0",
     "screenshots": [
@@ -2961,7 +2944,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1544954113,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/DtgoZFRvaSs",
     "screenshots": [
@@ -3602,7 +3585,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276164740,
-    "precoVendaEUR": 9.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 40.99,
     "trailer": "https://www.youtube.com/embed/4fbO2-egZ3U",
     "screenshots": [
@@ -3695,7 +3678,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550285209,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 65.99,
+    "precoOriginalEUR": 64.99,
     "trailer": "https://www.youtube.com/embed/U1qGQqOkZI8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351247-1a8f284422db9cfcce17825225369524-1024-1024.webp"
@@ -4323,7 +4306,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1581314841,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/ctQl9wa3ydE",
     "screenshots": [
@@ -5153,7 +5136,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1581812672,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 64.99,
     "trailer": "https://www.youtube.com/embed/EErzNnVsFkA",
     "screenshots": [
@@ -5212,7 +5195,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276157069,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/4tk8lkmYGWQ",
     "screenshots": [
@@ -5714,7 +5697,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1583301795,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/sMGIfmAcNwA",
     "screenshots": [
@@ -5740,7 +5723,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1544409971,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/a-JpwwMa5aM",
     "screenshots": [
@@ -5836,7 +5819,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1583306780,
-    "precoVendaEUR": 66.99,
+    "precoVendaEUR": 82.99,
     "precoOriginalEUR": 87.99,
     "trailer": "https://www.youtube.com/embed/grMWpip8W-s",
     "screenshots": [
@@ -6141,7 +6124,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1538486584,
     "precoVendaEUR": 10.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/0HjdiohVOik",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/752/7528971d20345460245e11f86388ea86.jpg",
@@ -6173,7 +6156,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1572258070,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000362024-94d9032051032339b217860421088802-1024-1024.webp"
@@ -6266,7 +6249,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1543721969,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/_4zJJSEm1ag",
     "screenshots": [
@@ -6299,7 +6282,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550670188,
-    "precoVendaEUR": 78.99,
+    "precoVendaEUR": 77.99,
     "precoOriginalEUR": 96.99,
     "trailer": "https://www.youtube.com/embed/0al9X3Xi4rk",
     "screenshots": [
@@ -6326,7 +6309,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1590182235,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 13.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367312-96e10751ebfeca7af817884649485049-1024-1024.webp"
@@ -6602,8 +6585,8 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550671407,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 58.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/oJ-2Iu8bibM",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351368-c068426da2bb112c2017826177145886-1024-1024.webp"
@@ -8642,7 +8625,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1552330430,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/DD82-gqZYdg",
     "screenshots": [
@@ -8960,7 +8943,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276085766,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/sq97d1RkdRM",
     "screenshots": [
@@ -9718,7 +9701,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1553122249,
-    "precoVendaEUR": 6.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/A3UGkY29DJQ",
     "screenshots": [
@@ -10681,7 +10664,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1554750915,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/Ripgh8W2PMg",
     "screenshots": [
@@ -11631,7 +11614,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1554835702,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/oCBlLmNdXgM",
     "screenshots": [
@@ -12377,7 +12360,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1540238447,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/LNq35HHUtNc",
     "screenshots": [
@@ -12653,7 +12636,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550299409,
     "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/aU4RKpn5o94",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351265-cb41b7bb5e94d31abe17825257737692-1024-1024.webp"
@@ -12678,7 +12661,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1557535914,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/qLFCbMmNwIY",
     "screenshots": [
@@ -14090,7 +14073,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1472768244,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/SJPu1spHqfk",
     "screenshots": [
@@ -14275,8 +14258,8 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1587730973,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 45.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/z1CWk2Ft884",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/171/171a424156664bfeef6c790e59809e3a.jpg",
@@ -14889,7 +14872,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1540342392,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/CvN3dP92wxU",
     "screenshots": [
@@ -16043,7 +16026,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1558886593,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/WxLUZ1omFA8",
     "screenshots": [
@@ -16199,7 +16182,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1558951718,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/Je9SLyqRtc0",
     "screenshots": [
@@ -16285,7 +16268,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1568852486,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/sjkpPqATrYY",
     "screenshots": [
@@ -16566,7 +16549,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276070059,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/3QHZxzTPsco",
     "screenshots": [
@@ -17099,7 +17082,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1287828961,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 58.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/2S-A3z866YI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/89d/89d22db26c45627718564abd573cb2ba.jpg",
@@ -17480,7 +17463,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1569399816,
-    "precoVendaEUR": 78.99,
+    "precoVendaEUR": 89.99,
     "precoOriginalEUR": 100.99,
     "trailer": "https://www.youtube.com/embed/uLtkt8BonwM",
     "screenshots": [
@@ -17664,6 +17647,35 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-sinking-city-2-ps5-midia-digital-19f0x/",
     "enriquecido": true
+  },
+  {
+    "id": "the-talltale-batman-shadows-edition-ps5",
+    "nome": "THE TALLTALE BATMAN SHADOWS EDITION - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577847464,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 28.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364013-ef235a84d99b6c8a3017868419473847-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364013-ef235a84d99b6c8a3017868419473847-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Batman: The Telltale Series",
+    "steamGridMatchScore": 0.289,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-shadows-edition-the-telltale-ps5-midia-digital-drlru/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-witcher-3-wild-hunt-ps5",
@@ -17982,7 +17994,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1544420858,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/n6JxVxSHjqE",
     "screenshots": [
@@ -18043,7 +18055,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1571591138,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/f-HA6i6t3yQ",
     "screenshots": [
@@ -18552,7 +18564,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1541853897,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/T2MP_T2e-aU",
     "screenshots": [
@@ -18748,7 +18760,7 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1468131839,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/U2ykGILfXcg",
     "screenshots": [
@@ -20157,8 +20169,8 @@
     "plataforma": "PlayStation 5",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": "43190157967458",
-    "precoVendaEUR": 58.99,
-    "precoOriginalEUR": 58.99,
+    "precoVendaEUR": 57.99,
+    "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/s3pDMUWlA6I",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/c9e/c9eea0e69ff36cd56423d5f0a0edcbb3.jpg",
