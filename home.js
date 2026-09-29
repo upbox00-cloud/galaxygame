@@ -1101,6 +1101,28 @@ function bindTrendPlatformFilters() {
   });
 }
 
+function updateHeroPrices() {
+  const products = new Map(allCatalogProducts().map((product) => [product.id, product]));
+  document.querySelectorAll("[data-hero-slide]").forEach((slide) => {
+    const link = slide.querySelector(".hero-product-link");
+    const id = new URL(link?.getAttribute("href") || "", window.location.href).searchParams.get("id") || "";
+    const product = products.get(id);
+    if (!product) return;
+    const sale = Number(product.precoVendaEUR || 0);
+    const original = Number(product.precoOriginalEUR || 0);
+    const price = slide.querySelector(".hero-buy strong");
+    const discount = slide.querySelector(".hero-buy .discount");
+    if (price && sale > 0) price.textContent = formatCatalogEUR(sale);
+    if (!discount) return;
+    if (original > sale) {
+      discount.hidden = false;
+      discount.textContent = `-${Math.max(0, Math.round((1 - sale / original) * 100))}%`;
+    } else {
+      discount.hidden = true;
+    }
+  });
+}
+
 function bindHeroCarousel() {
   const carousel = document.querySelector("[data-hero-carousel]");
   if (!carousel || carousel.dataset.heroReady === "true") return;
@@ -1234,6 +1256,7 @@ async function initCatalogHome() {
     await loadCatalogs();
     bindHeroPlatformBar();
     bindTrendPlatformFilters();
+    updateHeroPrices();
     renderHomeHighlights();
     observeRevealTargets();
     if (catalogGrid) {

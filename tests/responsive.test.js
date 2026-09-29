@@ -105,6 +105,13 @@ test("banner principal alterna automaticamente entre tres produtos sem antecipar
   assert.match(siteStyles, /\.hero-slide\s*\{[^}]*flex:\s*0 0 100%/s);
 });
 
+test("home atualiza preços do hero com o catálogo efetivo", () => {
+  assert.match(homeScript, /function updateHeroPrices\(\)/);
+  assert.match(homeScript, /const products = new Map\(allCatalogProducts\(\)\.map/);
+  assert.match(homeScript, /price\.textContent = formatCatalogEUR\(sale\)/);
+  assert.ok(homeScript.indexOf("await loadCatalogs();") < homeScript.indexOf("updateHeroPrices();"));
+});
+
 test("catalogo publico usa cache rapido com revalidacao em segundo plano", () => {
   const headers = fs.readFileSync("_headers", "utf8");
   assert.match(headers, /\/data\/\*\.json[\s\S]*max-age=3600, stale-while-revalidate=86400/);
