@@ -14,6 +14,7 @@ const customerOrders = require("../netlify/functions/meus-pedidos");
 const sitePresence = require("../netlify/functions/site-presence");
 const confirmPurchase = require("../netlify/functions/confirmar-compra");
 const recoverOrder = require("../netlify/functions/admin-recuperar-pedido");
+const priceOverrides = require("../netlify/functions/_price-overrides");
 
 function signedEvent(body, secret, timestamp = Math.floor(Date.now() / 1000)) {
   const signature = crypto.createHmac("sha256", secret).update(`${timestamp}.${body}`).digest("hex");
@@ -59,7 +60,8 @@ test("rotas de pedidos inicializam Netlify Blobs no modo Lambda", () => {
     "atualizar-pedido-status.js",
     "admin-pedidos.js",
     "admin-pedidos-fallback.js",
-    "admin-recuperar-pedido.js"
+    "admin-recuperar-pedido.js",
+    "criar-checkout.js"
   ];
   entries.forEach((entry) => {
     const source = fs.readFileSync(path.join(__dirname, "..", "netlify", "functions", entry), "utf8");
@@ -436,6 +438,85 @@ test("checkout cobra apenas em euros e pede meios de pagamento portugueses", asy
     else process.env.STRIPE_SECRET_KEY = previousSecret;
     if (previousMethods === undefined) delete process.env.STRIPE_PAYMENT_METHOD_TYPES;
     else process.env.STRIPE_PAYMENT_METHOD_TYPES = previousMethods;
+  }
+});
+
+test("checkout Stripe usa override manual como preco efetivo no servidor", async () => {
+  const previousSecret = process.env.STRIPE_SECRET_KEY;
+  const originalFetch = global.fetch;
+  let stripeParams;
+  process.env.STRIPE_SECRET_KEY = "sk_test_only";
+  global.fetch = async (_url, options) => {
+    stripeParams = new URLSearchParams(options.body);
+    return new Response(JSON.stringify({ id: "cs_test_override", url: "https://checkout.stripe.test/override" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+  priceOverrides._test.setStoreFactory(() => ({
+    async get() {
+      return {
+        version: 1,
+        prices: {
+          "ea-sports-fc-27-ps5": {
+            precoVendaEUR: 48.99,
+            updatedAt: "2026-09-29T00:00:00.000Z",
+            updatedBy: "admin@example.com"
+          }
+        }
+      };
+    }
+  }));
+
+  try {
+    const response = await checkout.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ items: [{ id: "ea-sports-fc-27-ps5" }] })
+    }, {});
+    const result = JSON.parse(response.body);
+
+    assert.equal(response.statusCode, 200);
+    assert.equal(result.checkoutValue, 48.99);
+    assert.equal(stripeParams.get("line_items[0][price_data][unit_amount]"), "4899");
+  } finally {
+    priceOverrides._test.resetStoreFactory();
+    global.fetch = originalFetch;
+    if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousSecret;
+  }
+});
+
+test("checkout Stripe usa preco do catalogo quando nao existe override manual", async () => {
+  const previousSecret = process.env.STRIPE_SECRET_KEY;
+  const originalFetch = global.fetch;
+  let stripeParams;
+  process.env.STRIPE_SECRET_KEY = "sk_test_only";
+  global.fetch = async (_url, options) => {
+    stripeParams = new URLSearchParams(options.body);
+    return new Response(JSON.stringify({ id: "cs_test_catalog", url: "https://checkout.stripe.test/catalog" }), {
+      status: 200,
+      headers: { "content-type": "application/json" }
+    });
+  };
+  priceOverrides._test.setStoreFactory(() => ({
+    async get() { return null; }
+  }));
+
+  try {
+    const response = await checkout.handler({
+      httpMethod: "POST",
+      body: JSON.stringify({ items: [{ id: "ea-sports-fc-27-ps5" }] })
+    }, {});
+    const result = JSON.parse(response.body);
+
+    assert.equal(response.statusCode, 200);
+    assert.equal(result.checkoutValue, 60.99);
+    assert.equal(stripeParams.get("line_items[0][price_data][unit_amount]"), "6099");
+  } finally {
+    priceOverrides._test.resetStoreFactory();
+    global.fetch = originalFetch;
+    if (previousSecret === undefined) delete process.env.STRIPE_SECRET_KEY;
+    else process.env.STRIPE_SECRET_KEY = previousSecret;
   }
 });
 

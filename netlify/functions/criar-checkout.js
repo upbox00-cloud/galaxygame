@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { connectLambda } = require("@netlify/blobs");
 const { json, getUserEmail, getUserName, sendOperationalAlert } = require("./_orders");
 const commercialCatalog = require("./_data/catalogo-comercial.json");
 const { readPriceOverrides, applyPriceOverrides } = require("./_price-overrides");
@@ -193,6 +194,7 @@ async function createStripeCheckout(products, customer, cancelPath) {
 }
 
 exports.handler = async (event, context) => {
+  if (event?.blobs) connectLambda(event);
   if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
 
   let body;
