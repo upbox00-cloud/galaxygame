@@ -3482,12 +3482,12 @@
       "validatedAt": "2026-09-26T20:46:06.855Z"
     },
     "resident evil": {
-      "trailer": null,
-      "status": "invalid-embed",
-      "source": "catalogo",
-      "videoTitle": "Resident Evil Movie Trailer",
-      "channelTitle": "PlayStation",
-      "validatedAt": "2026-09-26T20:46:07.110Z"
+      "trailer": "https://www.youtube.com/embed/mNd1gb19A-c",
+      "status": "found",
+      "query": "resident evil PS5 trailer oficial",
+      "videoTitle": "RESIDENT EVIL – Official Trailer (4K)",
+      "channelTitle": "Sony Pictures Entertainment",
+      "processedAt": "2026-09-29T11:26:27.974Z"
     },
     "resident evil 0": {
       "trailer": "https://www.youtube.com/embed/8i23-QWPIzs",
@@ -5920,6 +5920,558 @@
       "videoTitle": "Marvel vs. Capcom: Infinite Teaser",
       "channelTitle": "Marvel Entertainment",
       "processedAt": "2026-09-28T11:48:11.724Z"
+    },
+    "wuchang": {
+      "trailer": "https://www.youtube.com/embed/tZ_JjhLdlwk",
+      "status": "found",
+      "query": "wuchang Xbox trailer oficial",
+      "videoTitle": "Wuchang: Fallen Feathers - Official Gameplay Trailer | Summer Game Fest 2025",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-29T11:26:01.665Z"
+    },
+    "the first berserker": {
+      "trailer": "https://www.youtube.com/embed/R3uCXzxGGRo",
+      "status": "found",
+      "query": "the first berserker Xbox trailer oficial",
+      "videoTitle": "The First Berserker: Khazan | Accolades Trailer",
+      "channelTitle": "The First Berserker: Khazan",
+      "processedAt": "2026-09-29T11:26:02.287Z"
+    },
+    "hitman world of assassinations": {
+      "trailer": "https://www.youtube.com/embed/K4-HkFIfV2A",
+      "status": "found",
+      "query": "hitman world of assassinations Xbox trailer oficial",
+      "videoTitle": "HITMAN World of Assassination - Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-09-29T11:26:02.882Z"
+    },
+    "snowrunner 1": {
+      "trailer": "https://www.youtube.com/embed/hcFSFjJ2b6o",
+      "status": "found",
+      "query": "snowrunner 1 Xbox trailer oficial",
+      "videoTitle": "SnowRunner - Launch Trailer",
+      "channelTitle": "Focus Entertainment",
+      "processedAt": "2026-09-29T11:26:03.522Z"
+    },
+    "rooftops alleys": {
+      "trailer": "https://www.youtube.com/embed/f0Yc-7ZP_YU",
+      "status": "found",
+      "query": "rooftops alleys Xbox trailer oficial",
+      "videoTitle": "Rooftops & Alleys: The Parkour Game - Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-09-29T11:26:04.157Z"
+    },
+    "lego star wars the skywalker saga": {
+      "trailer": "https://www.youtube.com/embed/n49TsZAwFEs",
+      "status": "found",
+      "query": "lego star wars the skywalker saga Xbox trailer oficial",
+      "videoTitle": "LEGO® Star Wars™: The Skywalker Saga - Launch Trailer",
+      "channelTitle": "Warner Bros. Games",
+      "processedAt": "2026-09-29T11:26:04.862Z"
+    },
+    "top racer collection": {
+      "trailer": "https://www.youtube.com/embed/8V8sLlqJB2w",
+      "status": "found",
+      "query": "top racer collection trailer oficial",
+      "videoTitle": "Speed Racer (2008) Official Trailer - Emile Hirsch, Susan Sarandon Movie HD",
+      "channelTitle": "Rotten Tomatoes Classic Trailers",
+      "processedAt": "2026-09-29T11:26:05.569Z"
+    },
+    "tony hawks skater 1 2": {
+      "trailer": "https://www.youtube.com/embed/N8XxHx8qd6U",
+      "status": "found",
+      "query": "tony hawks skater 1 2 Xbox trailer oficial",
+      "videoTitle": "Tony Hawk’s™ Pro Skater™ 1 and 2 Xbox Series X|S Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-09-29T11:26:06.233Z"
+    },
+    "assassin s creed iv black flag": {
+      "trailer": "https://www.youtube.com/embed/axWp51A_oKE",
+      "status": "found",
+      "query": "assassin s creed IV black flag trailer oficial",
+      "videoTitle": "Assassin's Creed 4 Black Flag announcement trailer",
+      "channelTitle": "Digic Pictures",
+      "processedAt": "2026-09-29T11:26:06.899Z"
+    },
+    "final fantasy xii": {
+      "trailer": "https://www.youtube.com/embed/OZy0m_A3f0E",
+      "status": "found",
+      "query": "final fantasy xii Xbox trailer oficial",
+      "videoTitle": "Final Fantasy XII - Trailer",
+      "channelTitle": "UltimeciaFFB",
+      "processedAt": "2026-09-29T11:26:07.592Z"
+    },
+    "final fantasy xv": {
+      "trailer": "https://www.youtube.com/embed/O9QuuL78R8w",
+      "status": "found",
+      "query": "final fantasy xv Xbox trailer oficial",
+      "videoTitle": "FINAL FANTASY XV WINDOWS EDITION | Launch Trailer",
+      "channelTitle": "FINAL FANTASY XV",
+      "processedAt": "2026-09-29T11:26:08.240Z"
+    },
+    "saints row gold": {
+      "trailer": "https://www.youtube.com/embed/YgjzDJA1o1E",
+      "status": "found",
+      "query": "saints row gold Xbox trailer oficial",
+      "videoTitle": "SAINTS ROW Official Announce Trailer",
+      "channelTitle": "Saints Row",
+      "processedAt": "2026-09-29T11:26:08.935Z"
+    },
+    "mortal kombat 11 injustice 2 legendary": {
+      "trailer": "https://www.youtube.com/embed/QOEjFbvrF7w",
+      "status": "found",
+      "query": "mortal kombat 11 injustice 2 legendary PS5 trailer oficial",
+      "videoTitle": "Injustice 2 Legendary Edition Gameplay Trailer (4K Ultra HD)",
+      "channelTitle": "Apsa Games ™",
+      "processedAt": "2026-09-29T11:26:09.612Z"
+    },
+    "moto gp 22": {
+      "trailer": "https://www.youtube.com/embed/aMrTwlibXdE",
+      "status": "found",
+      "query": "moto gp 22 PS5 trailer oficial",
+      "videoTitle": "MotoGP 22 - Announcement Trailer | PS5, PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:10.336Z"
+    },
+    "naruto shippuden ninja storm 4 road to boruto": {
+      "trailer": "https://www.youtube.com/embed/briRubbkA60",
+      "status": "found",
+      "query": "naruto shippuden ninja storm 4 road to boruto trailer oficial",
+      "videoTitle": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4 ROAD TO BORUTO – Launch Trailer - Nintendo Switch",
+      "channelTitle": "Nintendo of America",
+      "processedAt": "2026-09-29T11:26:10.975Z"
+    },
+    "nhl 21": {
+      "trailer": "https://www.youtube.com/embed/eTjj-T-l7go",
+      "status": "found",
+      "query": "nhl 21 PlayStation trailer oficial",
+      "videoTitle": "NHL 21 - Official Worldwide Launch Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:11.745Z"
+    },
+    "one piece world seeker": {
+      "trailer": "https://www.youtube.com/embed/jKAly6teEK0",
+      "status": "found",
+      "query": "one piece world seeker trailer oficial",
+      "videoTitle": "One Piece World Seeker - Official Trailer (English)",
+      "channelTitle": "BANDAI NAMCO Europe",
+      "processedAt": "2026-09-29T11:26:12.481Z"
+    },
+    "resident evil 4": {
+      "trailer": "https://www.youtube.com/embed/Id2EaldBaWw",
+      "status": "found",
+      "query": "resident evil 4 trailer oficial",
+      "videoTitle": "Resident Evil 4 - 3rd Trailer",
+      "channelTitle": "Resident Evil",
+      "processedAt": "2026-09-29T11:26:13.091Z"
+    },
+    "ride 4": {
+      "trailer": "https://www.youtube.com/embed/FVZ-ZqdtsOQ",
+      "status": "found",
+      "query": "ride 4 trailer oficial",
+      "videoTitle": "RIDE 4 | Announcement Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-09-29T11:26:13.680Z"
+    },
+    "scarlet nexus": {
+      "trailer": "https://www.youtube.com/embed/wdWzjJbc-78",
+      "status": "found",
+      "query": "scarlet nexus PS5 trailer oficial",
+      "videoTitle": "SCARLET NEXUS – Launch Trailer",
+      "channelTitle": "Bandai Namco Entertainment America",
+      "processedAt": "2026-09-29T11:26:14.332Z"
+    },
+    "shadow of the tomb raider definitive ed": {
+      "trailer": "https://www.youtube.com/embed/b1FvYc3c64w",
+      "status": "found",
+      "query": "shadow of the tomb raider definitive ed PlayStation trailer oficial",
+      "videoTitle": "Shadow of the Tomb Raider: Definitive Edition - Launch Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:15.068Z"
+    },
+    "car mechanic simulator 2021": {
+      "trailer": "https://www.youtube.com/embed/z4G7sPiMh5E",
+      "status": "found",
+      "query": "car mechanic simulator 2021 PS5 trailer oficial",
+      "videoTitle": "Car Mechanic Simulator 2021 - Launch Trailer",
+      "channelTitle": "ID@XBOX",
+      "processedAt": "2026-09-29T11:26:15.781Z"
+    },
+    "deathloop": {
+      "trailer": "https://www.youtube.com/embed/mc2hz3LJhTY",
+      "status": "found",
+      "query": "deathloop PS5 trailer oficial",
+      "videoTitle": "DEATHLOOP - Official Gameplay Reveal Trailer | PS5",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:16.443Z"
+    },
+    "nba 2k24": {
+      "trailer": "https://www.youtube.com/embed/BZvwJpvEjWE",
+      "status": "found",
+      "query": "nba 2k24 trailer oficial",
+      "videoTitle": "NBA 2K24 | Official Launch Trailer",
+      "channelTitle": "NBA 2K",
+      "processedAt": "2026-09-29T11:26:17.049Z"
+    },
+    "construction simulator 3": {
+      "trailer": "https://www.youtube.com/embed/yaSlpWQkakk",
+      "status": "found",
+      "query": "construction simulator 3 Xbox trailer oficial",
+      "videoTitle": "Construction Simulator 3: Welcome to Illertal",
+      "channelTitle": "astragon",
+      "processedAt": "2026-09-29T11:26:17.724Z"
+    },
+    "robocop": {
+      "trailer": "https://www.youtube.com/embed/tbNbU3HE7UE",
+      "status": "found",
+      "query": "robocop Xbox trailer oficial",
+      "videoTitle": "RoboCop: Rogue City - Official Story Trailer | Xbox Partner Preview",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-29T11:26:18.457Z"
+    },
+    "call of duty black ops iii": {
+      "trailer": "https://www.youtube.com/embed/Bfr053KdD6w",
+      "status": "found",
+      "query": "call of duty black ops III Xbox trailer oficial",
+      "videoTitle": "Official Call of Duty®: Black Ops III \"Ember\" Tease",
+      "channelTitle": "Call of Duty",
+      "processedAt": "2026-09-29T11:26:19.126Z"
+    },
+    "call of duty wwii ouro": {
+      "trailer": "https://www.youtube.com/embed/WpUSL5rAP8Y",
+      "status": "found",
+      "query": "call of duty wwii ouro Xbox trailer oficial",
+      "videoTitle": "Call of Duty: WWII Official Reveal Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-29T11:26:19.755Z"
+    },
+    "mortal kombat 11 injustice 2 lendaria": {
+      "trailer": "https://www.youtube.com/embed/2FxXC4r-m2I",
+      "status": "found",
+      "query": "mortal kombat 11 injustice 2 lendaria Xbox trailer oficial",
+      "videoTitle": "MORTAL KOMBAT 11 + INJUSTICE 2 | CONFIGURACIÓN MÁXIMA / MAX SETTINGS | 1440p",
+      "channelTitle": "NanoUltimate",
+      "processedAt": "2026-09-29T11:26:20.422Z"
+    },
+    "patrulha canina o filme a cidade da aventura esta chamando": {
+      "trailer": "https://www.youtube.com/embed/IV3p_UdcBFA",
+      "status": "found",
+      "query": "patrulha canina o filme a cidade da aventura esta chamando Xbox trailer oficial",
+      "videoTitle": "Patrulha Canina: O Filme A Cidade da Aventura está chamando. Em português. Trailer.",
+      "channelTitle": "Aprender Brincando",
+      "processedAt": "2026-09-29T11:26:21.008Z"
+    },
+    "the callisto protocol": {
+      "trailer": "https://www.youtube.com/embed/NsYdSNtsHkY",
+      "status": "found",
+      "query": "the callisto protocol Xbox trailer oficial",
+      "videoTitle": "The Callisto Protocol - Official Launch Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-29T11:26:21.704Z"
+    },
+    "sonic x shadow generation": {
+      "trailer": "https://www.youtube.com/embed/Wu7Ek-pQmXU",
+      "status": "found",
+      "query": "sonic X shadow generation Xbox trailer oficial",
+      "videoTitle": "SONIC X SHADOW GENERATIONS - Announce Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-09-29T11:26:22.268Z"
+    },
+    "marvel vs capcom 3": {
+      "trailer": "https://www.youtube.com/embed/7WZdQD2kEk4",
+      "status": "found",
+      "query": "marvel vs capcom 3 trailer oficial",
+      "videoTitle": "Episode 1 Trailer - MARVEL VS. CAPCOM 3",
+      "channelTitle": "Marvel vs Capcom",
+      "processedAt": "2026-09-29T11:26:22.853Z"
+    },
+    "syphon filter": {
+      "trailer": "https://www.youtube.com/embed/AUOagQyIxns",
+      "status": "found",
+      "query": "syphon filter PS5 trailer oficial",
+      "videoTitle": "Syphon Filter - Official Trailer",
+      "channelTitle": "Syphon Filter Universe",
+      "processedAt": "2026-09-29T11:26:23.484Z"
+    },
+    "zombie army trilogy": {
+      "trailer": "https://www.youtube.com/embed/F7pl_XYOBzs",
+      "status": "found",
+      "query": "zombie army trilogy PlayStation trailer oficial",
+      "videoTitle": "Zombie Army Trilogy - Launch Trailer",
+      "channelTitle": "GameSpot Trailers",
+      "processedAt": "2026-09-29T11:26:24.091Z"
+    },
+    "one piece burning blood": {
+      "trailer": "https://www.youtube.com/embed/_ivKlZ9HtGM",
+      "status": "found",
+      "query": "one piece burning blood Xbox trailer oficial",
+      "videoTitle": "One Piece: Burning Blood - Official Trailer",
+      "channelTitle": "GameSpot",
+      "processedAt": "2026-09-29T11:26:24.776Z"
+    },
+    "patrulha canina": {
+      "trailer": "https://www.youtube.com/embed/tHlTaJSK5_s",
+      "status": "found",
+      "query": "patrulha canina Xbox trailer oficial",
+      "videoTitle": "PAW Patrol Mighty Pups Save Adventure Bay - Trailer de anúncio - Xbox One",
+      "channelTitle": "WElton Silva Gamer",
+      "processedAt": "2026-09-29T11:26:25.401Z"
+    },
+    "assassin s creed freedom cry": {
+      "trailer": "https://www.youtube.com/embed/FLayHHZ0hLQ",
+      "status": "found",
+      "query": "assassin s creed freedom cry PS5 trailer oficial",
+      "videoTitle": "Assassin's Creed Freedom Cry: Stand-Alone Trailer",
+      "channelTitle": "GameSpot",
+      "processedAt": "2026-09-29T11:26:26.061Z"
+    },
+    "construction simulator 3 console": {
+      "trailer": "https://www.youtube.com/embed/1Yh_WipTRsA",
+      "status": "found",
+      "query": "construction simulator 3 console PS5 trailer oficial",
+      "videoTitle": "Construction Simulator 2022 Trailer",
+      "channelTitle": "sim gamer HQ",
+      "processedAt": "2026-09-29T11:26:26.713Z"
+    },
+    "final fantasy type 0 hd": {
+      "trailer": "https://www.youtube.com/embed/20zWnMBOlm4",
+      "status": "found",
+      "query": "final fantasy type 0 hd PS5 trailer oficial",
+      "videoTitle": "Final Fantasy Type -0 HD Trailer - PAX East 2015",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-29T11:26:27.392Z"
+    },
+    "assassin s creed ii": {
+      "trailer": "https://www.youtube.com/embed/mb7Xzl2-lr0",
+      "status": "found",
+      "query": "assassin s creed II Xbox trailer oficial",
+      "videoTitle": "Assassin's Creed 2 - Official Trailer (4K 60FPS)",
+      "channelTitle": "WildGamerSK",
+      "processedAt": "2026-09-29T11:26:28.627Z"
+    },
+    "assassin s creed iii remastered": {
+      "trailer": "https://www.youtube.com/embed/hWsaltnSDy8",
+      "status": "found",
+      "query": "assassin s creed III remastered trailer oficial",
+      "videoTitle": "Assassin's Creed III E3 Cinematic Trailer",
+      "channelTitle": "EB Games Australia",
+      "processedAt": "2026-09-29T11:26:29.254Z"
+    },
+    "bloodborne complete bundle": {
+      "trailer": "https://www.youtube.com/embed/G203e1HhixY",
+      "status": "found",
+      "query": "bloodborne complete bundle PS5 trailer oficial",
+      "videoTitle": "Bloodborne Debut Trailer | Face Your Fears | PlayStation 4 Action RPG",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:29.850Z"
+    },
+    "borderlands 2 vr": {
+      "trailer": "https://www.youtube.com/embed/LUhJ1j0O_4c",
+      "status": "found",
+      "query": "borderlands 2 vr PlayStation trailer oficial",
+      "videoTitle": "Borderlands 2 VR – Announce Trailer | PS VR",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:30.505Z"
+    },
+    "construction sim city and road builder": {
+      "trailer": "https://www.youtube.com/embed/O3tJsfnHVCg",
+      "status": "found",
+      "query": "construction sim city and road builder PS5 trailer oficial",
+      "videoTitle": "City Builder - Trailer",
+      "channelTitle": "ExcaliburPubVideos",
+      "processedAt": "2026-09-29T11:26:31.216Z"
+    },
+    "doom": {
+      "trailer": "https://www.youtube.com/embed/jGVt6zaTXAw",
+      "status": "found",
+      "query": "doom PS5 trailer oficial",
+      "videoTitle": "DOOM: The Dark Ages - Official Trailer 1 | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:31.852Z"
+    },
+    "euro truck sim driver simulator 24 garbage": {
+      "trailer": "https://www.youtube.com/embed/PwLc5bF6Vxg",
+      "status": "found",
+      "query": "euro truck sim driver simulator 24 garbage PS5 trailer oficial",
+      "videoTitle": "Garbage Truck Simulator 2023",
+      "channelTitle": "MrMalzahn",
+      "processedAt": "2026-09-29T11:26:32.478Z"
+    },
+    "farm manager 2022": {
+      "trailer": "https://www.youtube.com/embed/gHzgVWlzTb4",
+      "status": "found",
+      "query": "farm manager 2022 trailer oficial",
+      "videoTitle": "Farm Manager World - Official Trailer",
+      "channelTitle": "GameTrailers",
+      "processedAt": "2026-09-29T11:26:33.102Z"
+    },
+    "the talltale batman shadows": {
+      "trailer": "https://www.youtube.com/embed/HrFACS4QRuc",
+      "status": "found",
+      "query": "the talltale batman shadows PS5 trailer oficial",
+      "videoTitle": "Batman Shadows Edition - A Telltale Bundle Official Launch Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-29T11:26:33.690Z"
+    },
+    "truck driver": {
+      "trailer": "https://www.youtube.com/embed/1b6akjCiOVY",
+      "status": "found",
+      "query": "truck driver trailer oficial",
+      "videoTitle": "TRUCK DRIVER-BHOJPURI FILM TRAILOR (PAWAN SINGH)",
+      "channelTitle": "Bhojpuriya Deewana",
+      "processedAt": "2026-09-29T11:26:34.401Z"
+    },
+    "a plague tale innocence": {
+      "trailer": "https://www.youtube.com/embed/CtP6mNeN6yE",
+      "status": "found",
+      "query": "a plague tale innocence PlayStation trailer oficial",
+      "videoTitle": "A Plague Tale: Innocence - Launch Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:35.014Z"
+    },
+    "back 4 blood": {
+      "trailer": "https://www.youtube.com/embed/kyBbYndoyTE",
+      "status": "found",
+      "query": "back 4 blood PS5 trailer oficial",
+      "videoTitle": "BACK 4 BLOOD Official Trailer (2021) Zombie Game HD",
+      "channelTitle": "ONE Media",
+      "processedAt": "2026-09-29T11:26:35.630Z"
+    },
+    "carros 3 correndo para vencer": {
+      "trailer": "https://www.youtube.com/embed/vZf01m1vIFc",
+      "status": "found",
+      "query": "carros 3 correndo para vencer trailer oficial",
+      "videoTitle": "Carros 3 - Teaser Trailer",
+      "channelTitle": "Walt Disney Studios BR",
+      "processedAt": "2026-09-29T11:26:36.284Z"
+    },
+    "dead by daylight": {
+      "trailer": "https://www.youtube.com/embed/JGhIXLO3ul8",
+      "status": "found",
+      "query": "dead by daylight PS5 trailer oficial",
+      "videoTitle": "Dead by Daylight | Launch Trailer",
+      "channelTitle": "Dead by Daylight",
+      "processedAt": "2026-09-29T11:26:36.812Z"
+    },
+    "ea sports fc 24": {
+      "trailer": "https://www.youtube.com/embed/XhP3Xh4LMA8",
+      "status": "found",
+      "query": "ea sports fc 24 PS5 trailer oficial",
+      "videoTitle": "EA SPORTS FC 24 | Official Gameplay Trailer",
+      "channelTitle": "EA SPORTS FC",
+      "processedAt": "2026-09-29T11:26:37.413Z"
+    },
+    "f1 22": {
+      "trailer": "https://www.youtube.com/embed/Nx9NgXi8nP8",
+      "status": "found",
+      "query": "f1 22 trailer oficial",
+      "videoTitle": "F1® 22 | Launch Trailer",
+      "channelTitle": "EA SPORTS F1",
+      "processedAt": "2026-09-29T11:26:38.046Z"
+    },
+    "fifa 22": {
+      "trailer": "https://www.youtube.com/embed/o1igaMv46SY",
+      "status": "found",
+      "query": "fifa 22 trailer oficial",
+      "videoTitle": "FIFA 22 | Official Reveal Trailer",
+      "channelTitle": "EA SPORTS FC",
+      "processedAt": "2026-09-29T11:26:38.671Z"
+    },
+    "ghostrunner": {
+      "trailer": "https://www.youtube.com/embed/b70uw0XxeLg",
+      "status": "found",
+      "query": "ghostrunner PS5 trailer oficial",
+      "videoTitle": "Ghostrunner - Official Preorder Trailer",
+      "channelTitle": "IGN",
+      "processedAt": "2026-09-29T11:26:39.398Z"
+    },
+    "god of war": {
+      "trailer": "https://www.youtube.com/embed/K0u_kAWLJOA",
+      "status": "found",
+      "query": "god of war PlayStation trailer oficial",
+      "videoTitle": "God of War – Story Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:40.134Z"
+    },
+    "immortals fenyx rising": {
+      "trailer": "https://www.youtube.com/embed/U4zb1yiFlQo",
+      "status": "found",
+      "query": "immortals fenyx rising trailer oficial",
+      "videoTitle": "Immortals Fenyx Rising: Launch Trailer | Ubisoft [NA]",
+      "channelTitle": "Ubisoft",
+      "processedAt": "2026-09-29T11:26:40.831Z"
+    },
+    "injustice 2 versao padrao": {
+      "trailer": "https://www.youtube.com/embed/LMdquCG5mak",
+      "status": "found",
+      "query": "injustice 2 versao padrao PlayStation trailer oficial",
+      "videoTitle": "[4K Ultra] Injustice 2 Review and a Full Graphical Comparison of All Platforms",
+      "channelTitle": "Ryan Kennedy’s Channel",
+      "processedAt": "2026-09-29T11:26:41.427Z"
+    },
+    "jurassic world evolution": {
+      "trailer": "https://www.youtube.com/embed/j0-WtQEHBFk",
+      "status": "found",
+      "query": "jurassic world evolution trailer oficial",
+      "videoTitle": "Jurassic World Evolution Official Game Trailer | Jurassic World",
+      "channelTitle": "Jurassic World",
+      "processedAt": "2026-09-29T11:26:42.039Z"
+    },
+    "just cause 4": {
+      "trailer": "https://www.youtube.com/embed/ijQFNimzu_Y",
+      "status": "found",
+      "query": "just cause 4 PlayStation trailer oficial",
+      "videoTitle": "Just Cause 4 - Launch Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:42.726Z"
+    },
+    "metal gear solid 5 phantom pain": {
+      "trailer": "https://www.youtube.com/embed/C19ap2M7DDE",
+      "status": "found",
+      "query": "metal gear solid 5 phantom pain PlayStation trailer oficial",
+      "videoTitle": "Metal Gear Solid V: The Phantom Pain | Gamescom Trailer | PS4",
+      "channelTitle": "PlayStation Europe",
+      "processedAt": "2026-09-29T11:26:43.363Z"
+    },
+    "metro exodus": {
+      "trailer": "https://www.youtube.com/embed/fbbqlvuovQ0",
+      "status": "found",
+      "query": "metro exodus trailer oficial",
+      "videoTitle": "Metro Exodus - E3 2017 Announce Gameplay Trailer [UK]",
+      "channelTitle": "metrovideogame",
+      "processedAt": "2026-09-29T11:26:43.958Z"
+    },
+    "metro redux": {
+      "trailer": "https://www.youtube.com/embed/rUOCBCTRNl0",
+      "status": "found",
+      "query": "metro redux PlayStation trailer oficial",
+      "videoTitle": "Metro Redux - Launch Trailer",
+      "channelTitle": "GameSpot",
+      "processedAt": "2026-09-29T11:26:44.540Z"
+    },
+    "monster energy supercross 5 the official videogame": {
+      "trailer": "https://www.youtube.com/embed/dKmRWw3sxcA",
+      "status": "found",
+      "query": "monster energy supercross 5 the official videogame PlayStation trailer oficial",
+      "videoTitle": "Monster Energy Supercross: The Official Videogame 5 - Gameplay Trailer | PS5, PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:45.255Z"
+    },
+    "motogp 20": {
+      "trailer": "https://www.youtube.com/embed/_PASHxMvz6A",
+      "status": "found",
+      "query": "motogp 20 PlayStation trailer oficial",
+      "videoTitle": "MotoGP 20 - Announcement Trailer | PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:45.856Z"
+    },
+    "nba 2k22": {
+      "trailer": "https://www.youtube.com/embed/y6zKCvwHoss",
+      "status": "found",
+      "query": "nba 2k22 PS5 trailer oficial",
+      "videoTitle": "NBA 2K22 - Gameplay Reveal | PS5, PS4",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-09-29T11:26:46.502Z"
     }
   },
   "runs": [
@@ -6112,7 +6664,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-09-29T11:26:01.257Z",
+      "requests": 70,
+      "analyzed": 70,
+      "found": 70,
+      "notFound": 0,
+      "alreadyHadTrailer": 714,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 156,
+      "rateLimited": false,
+      "interruptionReason": "limite-de-buscas",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-09-28T11:48:12.010Z"
+  "updatedAt": "2026-09-29T11:26:46.787Z"
 }
