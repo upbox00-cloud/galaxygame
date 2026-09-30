@@ -392,10 +392,7 @@
     "steamGridMatchedName": "Assassin's Creed IV: Black Flag",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-4-black-flag-ps4-midia-digital-eyukb/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "assassin-s-creed-mirage-ps4",
@@ -1007,7 +1004,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577830628,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 35.99,
+    "precoOriginalEUR": 36.99,
     "trailer": "https://www.youtube.com/embed/93XmwRQ-X9k",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000364002-6e9149a00525cef46d17868389165274-1024-1024.webp"
@@ -1222,7 +1219,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577855348,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/DWiO7PD-AzE",
     "screenshots": [
@@ -2278,7 +2275,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276053950,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/ztjfwecrY8E",
     "screenshots": [
@@ -2311,7 +2308,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276057467,
-    "precoVendaEUR": 19.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/mRLjrtX6Jes",
     "screenshots": [
@@ -2379,7 +2376,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1485551379,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/OQ1CwPhE8KQ",
     "screenshots": [
@@ -2949,7 +2946,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276164015,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 40.99,
     "trailer": "https://www.youtube.com/embed/4fbO2-egZ3U",
     "screenshots": [
@@ -3008,7 +3005,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1434246642,
-    "precoVendaEUR": 14.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 40.99,
     "trailer": "https://www.youtube.com/embed/dr2BCMRk_xc",
     "screenshots": [
@@ -3152,7 +3149,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1367948641,
-    "precoVendaEUR": 14.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 18.99,
     "trailer": "https://www.youtube.com/embed/bE6ZeClM6uI",
     "screenshots": [
@@ -3255,7 +3252,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276599989,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 21.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/0RAlGv-IW4g",
     "screenshots": [
@@ -3415,7 +3412,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1352584097,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 7.99,
     "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/Am8ET6CgJy8",
     "screenshots": [
@@ -3448,7 +3445,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550538526,
-    "precoVendaEUR": 6.99,
+    "precoVendaEUR": 5.99,
     "precoOriginalEUR": 21.99,
     "trailer": "https://www.youtube.com/embed/xUcPjwpKzqw",
     "screenshots": [
@@ -4227,7 +4224,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1581812438,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 64.99,
     "trailer": "https://www.youtube.com/embed/EErzNnVsFkA",
     "screenshots": [
@@ -4597,7 +4594,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550904783,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/pBM2xyco_Kg",
     "screenshots": [
@@ -4630,7 +4627,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276658261,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/TSi0iJYSQ24",
     "screenshots": [
@@ -5121,7 +5118,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550671362,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/oJ-2Iu8bibM",
     "screenshots": [
@@ -6535,7 +6532,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1552329724,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/DD82-gqZYdg",
     "screenshots": [
@@ -6622,7 +6619,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1275909179,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/1O6Qstncpnc",
     "screenshots": [
@@ -8229,7 +8226,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1554749672,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "trailer": "https://www.youtube.com/embed/Ripgh8W2PMg",
     "screenshots": [
@@ -9823,7 +9820,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1557533965,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/qLFCbMmNwIY",
     "screenshots": [
@@ -10951,7 +10948,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1472773483,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/SJPu1spHqfk",
     "screenshots": [
@@ -12687,7 +12684,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1568851486,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/sjkpPqATrYY",
     "screenshots": [
@@ -13750,10 +13747,7 @@
     "steamGridMatchedName": "Batman: The Telltale Series",
     "steamGridMatchScore": 0.289,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-shadows-edition-the-telltale-ps4-midia-digital-nlfcp/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "the-witcher-3-wild-hunt-ps4",
@@ -14105,7 +14099,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1571590376,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 57.99,
     "trailer": "https://www.youtube.com/embed/f-HA6i6t3yQ",
     "screenshots": [
@@ -14625,7 +14619,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1468130695,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/U2ykGILfXcg",
     "screenshots": [
@@ -15103,8 +15097,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": "43190165504098",
-    "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 14.99,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
     "trailer": "https://www.youtube.com/embed/updbuhkfz_c",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/528/528df0dae4b19fbe8989b9818c591152.jpg",
@@ -15170,8 +15164,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": "43190262202466",
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 9.99,
     "trailer": "",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/814/8144c4d5b5cb714f933c92dbecae0232.jpg",
@@ -15200,8 +15194,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": "43190226616418",
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 9.99,
+    "precoVendaEUR": 8.99,
+    "precoOriginalEUR": 8.99,
     "trailer": "https://www.youtube.com/embed/JGhIXLO3ul8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/8d6/8d6604993ff7b84a76eda8e32f6b786f.jpg",
@@ -15225,41 +15219,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/dead-by-daylighttm-ps4",
     "enriquecido": true
-  },
-  {
-    "id": "death-stranding-digital-deluxe-edition-ps4",
-    "nome": "Death Stranding Digital Deluxe Edition - PS4 Mídia Digital",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": "43190157574242",
-    "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 21.99,
-    "trailer": "https://www.youtube.com/embed/QlLEmu8c-Vk",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/9da/9da640f5aa62f6fc00a4d1d255460737.jpg",
-      "https://media.rawg.io/media/screenshots/3d2/3d2a4337cf7673b086a1623d9e5ed2f3.jpg",
-      "https://media.rawg.io/media/screenshots/5f3/5f3bc8289f9545db69a30fc414e94186.jpg",
-      "https://media.rawg.io/media/screenshots/2b7/2b731c32ebc308c30abe974cd1266648.jpg",
-      "https://media.rawg.io/media/screenshots/460/4606e5ba14266eb2292cea7444e4239b.jpg"
-    ],
-    "descricao": "Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the stranded remnants of the future in his hands, Sam embarks on a journey to reunite the shattered world one step at a time. What is the mystery of the Death Stranding? What will Sam discover on the road ahead? A...",
-    "imagemFallback": "https://media.rawg.io/media/games/2ad/2ad87a4a69b1104f02435c14c5196095.jpg",
-    "released": "2019-11-08",
-    "rating": 4.31,
-    "ratings_count": 2119,
-    "added": 9432,
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/b4bd0050a889379bcec828d6f03ad227.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Death Stranding",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/death-stranding-deluxe-edition-ps4",
-    "enriquecido": true,
-    "destaqueHome": true,
-    "prioridadeCuradoria": 39
   },
   {
     "id": "devil-may-cry-5-ps4",
@@ -15420,8 +15379,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": "43190260498530",
-    "precoVendaEUR": 43.99,
-    "precoOriginalEUR": 43.99,
+    "precoVendaEUR": 48.99,
+    "precoOriginalEUR": 48.99,
     "trailer": "https://www.youtube.com/embed/GSXViWOyEO4",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/pes-2021.jpg?v=1786234429"
@@ -15448,8 +15407,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": "43190211117154",
-    "precoVendaEUR": 60.99,
-    "precoOriginalEUR": 60.99,
+    "precoVendaEUR": 48.99,
+    "precoOriginalEUR": 48.99,
     "trailer": "https://www.youtube.com/embed/GSXViWOyEO4",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/PES21PS5.jpg?v=1786234210"

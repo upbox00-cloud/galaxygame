@@ -2008,8 +2008,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/call-of-duty-modern-warfare-ii-ps4"
         }
       ]
@@ -2040,8 +2040,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 75.9,
-          "custoSemPixBRL": 79.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/call-of-duty-modern-warfare-iii-ps4"
         }
       ]
@@ -2097,8 +2097,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 47.4,
-          "custoSemPixBRL": 49.9,
+          "custoPixBRL": 66.4,
+          "custoSemPixBRL": 69.9,
           "url": "https://www.lojatcagames.com.br/products/call-of-duty-vanguard-ps4"
         }
       ]
@@ -2586,8 +2586,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 47.4,
-          "custoSemPixBRL": 49.9,
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/crash-bandicoot-n-sane-trilogy-ps4"
         }
       ]
@@ -2643,8 +2643,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 56.9,
-          "custoSemPixBRL": 59.9,
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/crash-team-racing-nitro-fueled-ps4"
         }
       ]
@@ -2696,13 +2696,6 @@
           "custoPixBRL": 55.71,
           "custoSemPixBRL": 59.9,
           "url": "https://www.alphagames.com.br/produtos/crash-team-rumble-ps4-midia-digital-afiuj/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
-          "url": "https://www.lojatcagames.com.br/products/crash-team-rumble-ps4"
         }
       ]
     },
@@ -2778,6 +2771,13 @@
           "custoPixBRL": 55.71,
           "custoSemPixBRL": 59.9,
           "url": "https://www.alphagames.com.br/produtos/cuphead-ps4-midia-digital-mllpf/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.lojatcagames.com.br/products/cuphead-ps4"
         }
       ]
     },
@@ -2867,6 +2867,13 @@
           "custoPixBRL": 158.01,
           "custoSemPixBRL": 169.9,
           "url": "https://www.alphagames.com.br/produtos/dark-souls-iii-ps4-midia-digital-18ty5/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 85.4,
+          "custoSemPixBRL": 89.9,
+          "url": "https://www.lojatcagames.com.br/products/dark-souls-iii-ps4"
         }
       ]
     },
@@ -3003,8 +3010,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 47.4,
-          "custoSemPixBRL": 49.9,
+          "custoPixBRL": 28.4,
+          "custoSemPixBRL": 29.9,
           "url": "https://www.lojatcagames.com.br/products/dead-island-2-ps4"
         }
       ]
@@ -3035,8 +3042,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 23.65,
-          "custoSemPixBRL": 24.9,
+          "custoPixBRL": 18.9,
+          "custoSemPixBRL": 19.9,
           "url": "https://www.lojatcagames.com.br/products/dead-island-definitive-collection-ps4"
         }
       ]
@@ -4030,8 +4037,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/ea-sports-fc-25-ps4"
         }
       ]
@@ -5807,8 +5814,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/hogwarts-legacy-ps4"
         }
       ]
@@ -13156,11 +13163,11 @@
     {
       "id": "darksiders-iii-ps4",
       "nome": "Darksiders III - PS4 Mídia Digital",
-      "precoAtualBRL": 56.9,
-      "precoPixBRL": 56.9,
-      "precoSemPixBRL": 59.9,
+      "precoAtualBRL": 47.4,
+      "precoPixBRL": 47.4,
+      "precoSemPixBRL": 49.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
+      "precoOriginalBRL": 49.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/darksiders-iii-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Darksiders3.jpg?v=1786233695",
@@ -13174,8 +13181,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 56.9,
-          "custoSemPixBRL": 59.9,
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/darksiders-iii-ps4"
         }
       ]
@@ -13210,11 +13217,11 @@
     {
       "id": "darksiders-fury-s-collection-war-and-death-ps4",
       "nome": "Darksiders: Fury's Collection - War And Death - PS4 Mídia Digital",
-      "precoAtualBRL": 28.4,
-      "precoPixBRL": 28.4,
-      "precoSemPixBRL": 29.9,
+      "precoAtualBRL": 37.9,
+      "precoPixBRL": 37.9,
+      "precoSemPixBRL": 39.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 29.9,
+      "precoOriginalBRL": 39.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/darksiders-fury-s-collection-war-and-death-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Darksiders-FurysCollection-WarandDeath.jpg?v=1786234436",
@@ -13228,8 +13235,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/darksiders-fury-s-collection-war-and-death-ps4"
         }
       ]
@@ -13237,11 +13244,11 @@
     {
       "id": "dead-by-daylight-ps4",
       "nome": "Dead by Daylight™ - PS4 - Mídia Digital",
-      "precoAtualBRL": 37.9,
-      "precoPixBRL": 37.9,
-      "precoSemPixBRL": 39.9,
+      "precoAtualBRL": 33.15,
+      "precoPixBRL": 33.15,
+      "precoSemPixBRL": 34.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 39.9,
+      "precoOriginalBRL": 34.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/dead-by-daylighttm-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/DeadByDaylight.jpg?v=1786234278",
@@ -13255,36 +13262,9 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 37.9,
-          "custoSemPixBRL": 39.9,
+          "custoPixBRL": 33.15,
+          "custoSemPixBRL": 34.9,
           "url": "https://www.lojatcagames.com.br/products/dead-by-daylighttm-ps4"
-        }
-      ]
-    },
-    {
-      "id": "death-stranding-digital-deluxe-edition-ps4",
-      "nome": "Death Stranding Digital Deluxe Edition - PS4 Mídia Digital",
-      "precoAtualBRL": 85.4,
-      "precoPixBRL": 85.4,
-      "precoSemPixBRL": 89.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 89.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/death-stranding-deluxe-edition-ps4",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/3adbb464be4191383ff976d9e5c828c9.jpg?v=1786233535",
-      "plataforma": "PlayStation 4",
-      "plataformaKey": "ps4",
-      "fornecedorProductId": "7762817220706",
-      "varianteFornecedorId": "43190157574242",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 85.4,
-          "custoSemPixBRL": 89.9,
-          "url": "https://www.lojatcagames.com.br/products/death-stranding-deluxe-edition-ps4"
         }
       ]
     },
@@ -13426,11 +13406,11 @@
     {
       "id": "efootball-pes-21-ps4",
       "nome": "EFootball Pes 21 - PS4 Mídia Digital",
-      "precoAtualBRL": 170.9,
-      "precoPixBRL": 170.9,
-      "precoSemPixBRL": 179.9,
+      "precoAtualBRL": 189.9,
+      "precoPixBRL": 189.9,
+      "precoSemPixBRL": 199.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 179.9,
+      "precoOriginalBRL": 199.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/efootball-pes-21-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/pes-2021.jpg?v=1786234429",
@@ -13444,8 +13424,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 170.9,
-          "custoSemPixBRL": 179.9,
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
           "url": "https://www.lojatcagames.com.br/products/efootball-pes-21-ps4"
         }
       ]
@@ -13453,11 +13433,11 @@
     {
       "id": "efootball-pes-21-p-ps4",
       "nome": "EFootball Pes 21 - PS4 p/ PS5 Mídia Digital",
-      "precoAtualBRL": 237.4,
-      "precoPixBRL": 237.4,
-      "precoSemPixBRL": 249.9,
+      "precoAtualBRL": 189.9,
+      "precoPixBRL": 189.9,
+      "precoSemPixBRL": 199.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 249.9,
+      "precoOriginalBRL": 199.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/efootball-pes-21-ps4-p-ps5",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/PES21PS5.jpg?v=1786234210",
@@ -13471,8 +13451,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 237.4,
-          "custoSemPixBRL": 249.9,
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
           "url": "https://www.lojatcagames.com.br/products/efootball-pes-21-ps4-p-ps5"
         }
       ]
@@ -18772,8 +18752,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/call-of-duty-modern-warfare-ii-ps5"
         }
       ]
@@ -18804,8 +18784,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 75.9,
-          "custoSemPixBRL": 79.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/call-of-duty-modern-warfare-iii-ps5"
         }
       ]
@@ -18861,8 +18841,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 47.4,
-          "custoSemPixBRL": 49.9,
+          "custoPixBRL": 66.4,
+          "custoSemPixBRL": 69.9,
           "url": "https://www.lojatcagames.com.br/products/call-of-duty-vanguard-ps5"
         }
       ]
@@ -19339,6 +19319,13 @@
           "custoPixBRL": 158.01,
           "custoSemPixBRL": 169.9,
           "url": "https://www.alphagames.com.br/produtos/control-resonant-ps5-midia-digital-ewd65/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 142.4,
+          "custoSemPixBRL": 149.9,
+          "url": "https://www.lojatcagames.com.br/products/control-resonant-ps5"
         }
       ]
     },
@@ -19546,13 +19533,6 @@
           "custoPixBRL": 55.71,
           "custoSemPixBRL": 59.9,
           "url": "https://www.alphagames.com.br/produtos/crash-team-rumble-ps5-midia-digital-mjw3s/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
-          "url": "https://www.lojatcagames.com.br/products/crash-team-rumble-ps5"
         }
       ]
     },
@@ -19928,8 +19908,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 47.4,
-          "custoSemPixBRL": 49.9,
+          "custoPixBRL": 28.4,
+          "custoSemPixBRL": 29.9,
           "url": "https://www.lojatcagames.com.br/products/dead-island-2-ps5"
         }
       ]
@@ -20138,13 +20118,6 @@
           "custoPixBRL": 148.71,
           "custoSemPixBRL": 159.9,
           "url": "https://www.alphagames.com.br/produtos/death-stranding-directors-cut-ps5-midia-digital-3fx6c/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 113.9,
-          "custoSemPixBRL": 119.9,
-          "url": "https://www.lojatcagames.com.br/products/death-stranding-directo-s-cut-ps5"
         }
       ]
     },
@@ -21280,8 +21253,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 56.9,
-          "custoSemPixBRL": 59.9,
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/ea-sports-fc-25-ps5"
         }
       ]
@@ -23293,6 +23266,31 @@
       ]
     },
     {
+      "id": "god-of-war-laufey-ps5",
+      "nome": "GOD OF WAR LAUFEY - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 204.51,
+      "precoPixBRL": 204.51,
+      "precoSemPixBRL": 219.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 399.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/god-of-war-laufey-ps5-midia-digital-1duxi/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368455-1f21a43b3b001b5afc17907134934719-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "370776489",
+      "varianteFornecedorId": 1608331476,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 204.51,
+          "custoSemPixBRL": 219.9,
+          "url": "https://www.alphagames.com.br/produtos/god-of-war-laufey-ps5-midia-digital-1duxi/"
+        }
+      ]
+    },
+    {
       "id": "god-of-war-ragnarok-ps5",
       "nome": "GOD OF WAR RAGNAROK - PS5 - MIDIA DIGITAL",
       "precoAtualBRL": 167.31,
@@ -23839,8 +23837,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 75.9,
-          "custoSemPixBRL": 79.9,
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/hogwarts-legacy-ps5"
         }
       ]
@@ -32660,11 +32658,11 @@
     {
       "id": "dead-by-daylight-ps5",
       "nome": "Dead by Daylight - PS5 - Mídia Digital",
-      "precoAtualBRL": 37.9,
-      "precoPixBRL": 37.9,
-      "precoSemPixBRL": 39.9,
+      "precoAtualBRL": 33.15,
+      "precoPixBRL": 33.15,
+      "precoSemPixBRL": 34.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 39.9,
+      "precoOriginalBRL": 34.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/dead-by-daylight-ps5",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/DeadByDaylightPS5.jpg?v=1786233726",
@@ -32678,8 +32676,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 37.9,
-          "custoSemPixBRL": 39.9,
+          "custoPixBRL": 33.15,
+          "custoSemPixBRL": 34.9,
           "url": "https://www.lojatcagames.com.br/products/dead-by-daylight-ps5"
         }
       ]
@@ -34232,10 +34230,10 @@
       "precoPixBRL": 18.51,
       "precoSemPixBRL": 19.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
+      "precoOriginalBRL": 109.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/a-way-out-xbox-one-series-s-x-midia-digital-1l6pc/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000274038-9eb4ba7072cd4d32b717731733399046-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368444-a172242e752761bba217907059731410-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "330705899",
@@ -34264,7 +34262,7 @@
       "precoPixBRL": 83.61,
       "precoSemPixBRL": 89.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 129.9,
+      "precoOriginalBRL": 339.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/ace-combat-7-skies-unknown-xbox-one-xbox-series-s-x-midia-digital-1k60p/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/113519-45411c61d413a1757f17882047515711-1024-1024.webp",
@@ -34314,7 +34312,7 @@
       "precoPixBRL": 60.36,
       "precoSemPixBRL": 64.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 89.9,
+      "precoOriginalBRL": 99.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/age-of-empires-iv-anniversary-edition-xbox-one-series-s-x-midia-digital-r8d4h/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367806-35fecd23c82462395617893177528675-1024-1024.webp",
@@ -34339,7 +34337,7 @@
       "precoPixBRL": 18.51,
       "precoSemPixBRL": 19.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 39.9,
+      "precoOriginalBRL": 99.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/alan-wake-remastered-xbox-one-xbox-series-s-x-midia-digital-zzosl/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000273893-9707dbeeff2c7392f417731670847089-1024-1024.webp",
@@ -34459,15 +34457,15 @@
     },
     {
       "id": "ao-tennis-2-xbox-one",
-      "nome": "AO TENNIS 2 - XBOX ONE - MÍDIA DIGITAL",
+      "nome": "AO TENNIS 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 46.41,
       "precoPixBRL": 46.41,
       "precoSemPixBRL": 49.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 89.9,
+      "precoOriginalBRL": 114.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/ao-tennis-2-xbox-one-midia-digital-qvi3y/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/51630-447d4a6229cf5f346d17792047959354-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368446-d20b8fbc488d312d6f17907063629993-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "345077311",
@@ -34489,7 +34487,7 @@
       "precoPixBRL": 32.46,
       "precoSemPixBRL": 34.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
+      "precoOriginalBRL": 54.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/ark-survival-evolved-xbox-one-series-s-x-midia-digital-jbijg/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367813-5dc84e3e57ceca2a6b17893197969336-1024-1024.webp",
@@ -34535,11 +34533,11 @@
     {
       "id": "assassin-s-creed-chronicles-china-xbox-one",
       "nome": "ASSASSIN'S CREED CHRONICLES: CHINA- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
+      "precoAtualBRL": 13.86,
+      "precoPixBRL": 13.86,
+      "precoSemPixBRL": 14.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
+      "precoOriginalBRL": 29.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-china-xbox-one-series-s-x-midia-digital-1obb8/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367824-0841dde09810efbbaa17893236445304-1024-1024.webp",
@@ -34551,23 +34549,23 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 27.81,
-          "custoSemPixBRL": 29.9,
+          "custoPixBRL": 13.86,
+          "custoSemPixBRL": 14.9,
           "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-china-xbox-one-series-s-x-midia-digital-1obb8/"
         }
       ]
     },
     {
       "id": "assassin-s-creed-chronicles-india-xbox-one",
-      "nome": "ASSASSIN'S CREED CHRONICLES: INDIA - XBOX ONE - MÍDIA DIGITAL",
-      "precoAtualBRL": 18.51,
-      "precoPixBRL": 18.51,
-      "precoSemPixBRL": 19.9,
+      "nome": "ASSASSIN'S CREED CHRONICLES: INDIA - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 13.86,
+      "precoPixBRL": 13.86,
+      "precoSemPixBRL": 14.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
+      "precoOriginalBRL": 29.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-india-xbox-one-midia-digital-16dnx/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000273885-18775a9ef7469a06ec17731665839177-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368448-4d155373db7100c4bd17907099194680-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "330650981",
@@ -34576,8 +34574,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 18.51,
-          "custoSemPixBRL": 19.9,
+          "custoPixBRL": 13.86,
+          "custoSemPixBRL": 14.9,
           "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-india-xbox-one-midia-digital-16dnx/"
         }
       ]
@@ -34585,11 +34583,11 @@
     {
       "id": "assassin-s-creed-chronicles-russia-xbox-one",
       "nome": "ASSASSIN'S CREED CHRONICLES: RUSSIA - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
+      "precoAtualBRL": 13.86,
+      "precoPixBRL": 13.86,
+      "precoSemPixBRL": 14.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
+      "precoOriginalBRL": 29.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-xbox-one-series-s-x-midia-digital-ju8fm/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367826-28486503528810b3a117893239513222-1024-1024.webp",
@@ -34601,9 +34599,41 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
+          "custoPixBRL": 13.86,
+          "custoSemPixBRL": 14.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-xbox-one-series-s-x-midia-digital-ju8fm/"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-chronicles-trilogy-xbox-one",
+      "nome": "ASSASSIN'S CREED CHRONICLES: TRILOGY- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367823-05d7b12d4060df636f17893234552488-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "367162806",
+      "varianteFornecedorId": 1595950880,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-xbox-one-series-s-x-midia-digital-ju8fm/"
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 18.9,
+          "custoSemPixBRL": 19.9,
+          "url": "https://www.lojatcagames.com.br/products/assassin-s-creed-chronicles-trilogy-xbox-one"
         }
       ]
     },
@@ -34634,7 +34664,7 @@
     },
     {
       "id": "assassin-s-creed-iii-remastered-xbox-one",
-      "nome": "ASSASSIN'S CREED III: REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "nome": "ASSASSIN'S CREED III REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
       "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
@@ -34771,10 +34801,10 @@
       "precoPixBRL": 65.01,
       "precoSemPixBRL": 69.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 65.01,
+      "precoOriginalBRL": 199.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65610-bd0e11cbb00421306917813138915802-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368451-16b7dd09f0975908d717907123052084-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "350258688",
@@ -34793,6 +34823,31 @@
           "custoPixBRL": 23.65,
           "custoSemPixBRL": 24.9,
           "url": "https://www.lojatcagames.com.br/products/assassin-s-creed-odyssey-xbox-one"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-origins-xbox-one",
+      "nome": "ASSASSIN'S CREED ORIGINS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 55.71,
+      "precoPixBRL": 55.71,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 199.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368453-d86b76afed56dcf2a717907136069075-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "350259118",
+      "varianteFornecedorId": 1542729948,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 55.71,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/"
         }
       ]
     },
@@ -34835,7 +34890,7 @@
       "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 159.9,
+      "precoOriginalBRL": 89.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-syndicate-xbox-one-series-s-x-midia-digital-b52pu/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367822-698e7d9afad78c3c3017893232731466-1024-1024.webp",
@@ -34861,13 +34916,38 @@
       ]
     },
     {
+      "id": "assassin-s-creed-the-ezio-collection-xbox-one",
+      "nome": "ASSASSIN'S CREED THE EZIO COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 51.06,
+      "precoPixBRL": 51.06,
+      "precoSemPixBRL": 54.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 119.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367815-60e9ac386123704c1817893221663242-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "367161379",
+      "varianteFornecedorId": 1595947056,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 51.06,
+          "custoSemPixBRL": 54.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/"
+        }
+      ]
+    },
+    {
       "id": "assassin-s-creed-triple-pack-xbox-one",
       "nome": "ASSASSIN'S CREED TRIPLE PACK - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 27.81,
       "precoPixBRL": 27.81,
       "precoSemPixBRL": 29.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
+      "precoOriginalBRL": 59.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-triple-pack-xbox-one-series-s-x-13ifw/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349150-480bd58bbcf560d22617780994639109-1024-1024.webp",
@@ -34889,6 +34969,31 @@
           "custoPixBRL": 37.9,
           "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/assassin-s-creed-triple-pack-xbox-one"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-unity-e-series-x-xbox-one",
+      "nome": "ASSASSIN'S CREED UNITY - XBOX ONE & SERIES/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368458-f0c6d6576584b639fa17907139036087-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "307099961",
+      "varianteFornecedorId": 1364759249,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/"
         }
       ]
     },
@@ -34975,113 +35080,6 @@
       ]
     },
     {
-      "id": "assassin-s-creed-chronicles-trilogy-xbox-one",
-      "nome": "ASSASSIN'S CREED: CHRONICLES TRILOGY- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 139.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367823-05d7b12d4060df636f17893234552488-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "367162806",
-      "varianteFornecedorId": 1595950880,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 27.81,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 18.9,
-          "custoSemPixBRL": 19.9,
-          "url": "https://www.lojatcagames.com.br/products/assassin-s-creed-chronicles-trilogy-xbox-one"
-        }
-      ]
-    },
-    {
-      "id": "assassin-s-creed-the-ezio-collection-xbox-one",
-      "nome": "ASSASSIN'S CREED: THE EZIO COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 51.06,
-      "precoPixBRL": 51.06,
-      "precoSemPixBRL": 54.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 119.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367815-60e9ac386123704c1817893221663242-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "367161379",
-      "varianteFornecedorId": 1595947056,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 51.06,
-          "custoSemPixBRL": 54.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/"
-        }
-      ]
-    },
-    {
-      "id": "assassins-creed-origins-xbox-one",
-      "nome": "ASSASSINS CREED ORIGINS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 55.71,
-      "precoPixBRL": 55.71,
-      "precoSemPixBRL": 59.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 79.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65616-7a8eedb5f4be44f71217813140371967-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "350259118",
-      "varianteFornecedorId": 1542729948,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 55.71,
-          "custoSemPixBRL": 59.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/"
-        }
-      ]
-    },
-    {
-      "id": "assassins-creed-unity-xbox-one",
-      "nome": "ASSASSINS CREED UNITY - MIDIA DIGITAL",
-      "precoAtualBRL": 46.41,
-      "precoPixBRL": 46.41,
-      "precoSemPixBRL": 49.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_7720-11628a7d81021e919c17630549206203-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "307099961",
-      "varianteFornecedorId": 1364759249,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 46.41,
-          "custoSemPixBRL": 49.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/"
-        }
-      ]
-    },
-    {
       "id": "assetto-corsa-competizione-xbox-one",
       "nome": "ASSETTO CORSA COMPETIZIONE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 27.81,
@@ -35108,7 +35106,7 @@
     },
     {
       "id": "assetto-corsa-xbox-one",
-      "nome": "ASSETTO CORSA – XBOX ONE – MÍDIA DIGITAL",
+      "nome": "ASSETTO CORSA – XBOX ONE & SERIES S/X – MÍDIA DIGITAL",
       "precoAtualBRL": 27.81,
       "precoPixBRL": 27.81,
       "precoSemPixBRL": 29.9,
@@ -35312,10 +35310,10 @@
     {
       "id": "biomutant-xbox-one",
       "nome": "BIOMUTANT - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 39.9,
-      "precoPixBRL": 39.9,
+      "precoAtualBRL": 37.11,
+      "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
-      "descontoPixAplicado": false,
+      "descontoPixAplicado": true,
       "precoOriginalBRL": 59.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/guardioes-da-galaxia-da-marvel-xbox-one-xbox-series-s-x-midia-digital-copia-1rn05/",
@@ -35328,7 +35326,7 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 39.9,
+          "custoPixBRL": 37.11,
           "custoSemPixBRL": 39.9,
           "url": "https://www.alphagames.com.br/produtos/guardioes-da-galaxia-da-marvel-xbox-one-xbox-series-s-x-midia-digital-copia-1rn05/"
         },
@@ -35591,6 +35589,38 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/call-of-dutty-ghost-xbox-one-series-s-x-midia-digital-1p11e/"
+        }
+      ]
+    },
+    {
+      "id": "call-of-duty-infinite-warfare-xbox-one",
+      "nome": "CALL OF DUTY: INFINITE WARFARE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 74.31,
+      "precoPixBRL": 74.31,
+      "precoSemPixBRL": 79.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 99.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-evil-within-1-xbox-one-xbox-series-s-x-midia-digital-copia-1vh27/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/cod-infinite-warfare-c6e849f595c347125c17907037916611-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370712572",
+      "varianteFornecedorId": 1608114015,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 74.31,
+          "custoSemPixBRL": 79.9,
+          "url": "https://www.alphagames.com.br/produtos/the-evil-within-1-xbox-one-xbox-series-s-x-midia-digital-copia-1vh27/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 28.4,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.lojatcagames.com.br/products/call-of-duty-infinite-warfare-xbox-one"
         }
       ]
     },
@@ -35902,6 +35932,31 @@
       ]
     },
     {
+      "id": "crash-pack-quadrilogia-xbox-one",
+      "nome": "CRASH PACK QUADRILOGIA - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/pack-spyro-crash-trilogy-xbox-one-xbox-series-s-x-midia-digital-copia-jy28l/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/crash-pack-quadrilogia-53ad5a747023b6302c17907036127003-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370712071",
+      "varianteFornecedorId": 1608111663,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/pack-spyro-crash-trilogy-xbox-one-xbox-series-s-x-midia-digital-copia-jy28l/"
+        }
+      ]
+    },
+    {
       "id": "crash-trilogy-xbox-one",
       "nome": "CRASH TRILOGY - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
       "precoAtualBRL": 27.81,
@@ -36141,6 +36196,31 @@
       ]
     },
     {
+      "id": "death-stranding-diretor-cut-xbox-one",
+      "nome": "DEATH STRANDING DIRETOR CUT - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 89.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/death-stranding-diretor-cut-aa4adb6875239e49f217907034912946-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370711639",
+      "varianteFornecedorId": 1608110051,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
+          "url": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/"
+        }
+      ]
+    },
+    {
       "id": "diablo-iv-xbox-one",
       "nome": "DIABLO IV - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
       "precoAtualBRL": 92.91,
@@ -36162,6 +36242,31 @@
           "custoPixBRL": 92.91,
           "custoSemPixBRL": 99.9,
           "url": "https://www.alphagames.com.br/produtos/diablo-iv-xbox-one-series-s-x-midia-digital-19m3j/"
+        }
+      ]
+    },
+    {
+      "id": "dmc4se-demon-hunter-bundle-xbox-one",
+      "nome": "DMC4SE DEMON HUNTER BUNDLE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 55.71,
+      "precoPixBRL": 55.71,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/dmc4se-demon-hunter-bundle-c45258d745fa1c59ff17907040135078-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370713995",
+      "varianteFornecedorId": 1608118494,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 55.71,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/"
         }
       ]
     },
@@ -36508,6 +36613,38 @@
       ]
     },
     {
+      "id": "far-cry-4-xbox-one",
+      "nome": "FAR CRY 4 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/five-night-at-freddys-security-breach-xbox-one-xbox-series-s-x-midia-digital-copia-1b3k4/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/far-cry-4-b1015f7cebe419928d17907034436108-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370711447",
+      "varianteFornecedorId": 1608109403,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/five-night-at-freddys-security-breach-xbox-one-xbox-series-s-x-midia-digital-copia-1b3k4/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 14.15,
+          "custoSemPixBRL": 14.9,
+          "url": "https://www.lojatcagames.com.br/products/far-cry-4-xbox-one"
+        }
+      ]
+    },
+    {
       "id": "farm-manager-2022-xbox-one",
       "nome": "FARM MANAGER 2022 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
@@ -36743,6 +36880,31 @@
           "custoPixBRL": 55.71,
           "custoSemPixBRL": 59.9,
           "url": "https://www.alphagames.com.br/produtos/five-nights-at-freddys-3-xbox-one-xbox-series-s-x-midia-digital-copia-by6lz/"
+        }
+      ]
+    },
+    {
+      "id": "five-night-at-freddys-security-breach-xbox-one",
+      "nome": "FIVE NIGHT AT FREDDYS SECURITY BREACH - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 185.91,
+      "precoPixBRL": 185.91,
+      "precoSemPixBRL": 199.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 219.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370711244",
+      "varianteFornecedorId": 1608108595,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 185.91,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/"
         }
       ]
     },
@@ -37528,6 +37690,81 @@
       ]
     },
     {
+      "id": "mega-man-11-xbox-one",
+      "nome": "MEGA MAN 11 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 89.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-x-xbox-one-xbox-series-s-x-midia-digital-copia-23quy/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-11-f2f57bc39a5a22a2cd17907032645026-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370710719",
+      "varianteFornecedorId": 1608106799,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
+          "url": "https://www.alphagames.com.br/produtos/mega-man-x-xbox-one-xbox-series-s-x-midia-digital-copia-23quy/"
+        }
+      ]
+    },
+    {
+      "id": "mega-man-x-xbox-one",
+      "nome": "MEGA MAN X- XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 89.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-x-legacy-collection-8651b2a8192faf19dc17907032158411-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370710447",
+      "varianteFornecedorId": 1608105898,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
+          "url": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/"
+        }
+      ]
+    },
+    {
+      "id": "mega-man-zx-xbox-one",
+      "nome": "MEGA MAN ZX- XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/one-piece-burning-blood-xbox-one-xbox-series-s-x-midia-digital-copia-16q03/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-zerozx-legacy-collection-8917bf64a6055c980c17907031623411-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370710086",
+      "varianteFornecedorId": 1608104575,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/one-piece-burning-blood-xbox-one-xbox-series-s-x-midia-digital-copia-16q03/"
+        }
+      ]
+    },
+    {
       "id": "metro-exodus-xbox-one",
       "nome": "METRO EXODUS XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
       "precoAtualBRL": 27.81,
@@ -37663,6 +37900,31 @@
           "custoPixBRL": 33.15,
           "custoSemPixBRL": 34.9,
           "url": "https://www.lojatcagames.com.br/products/minecraft-legends-xbox-one"
+        }
+      ]
+    },
+    {
+      "id": "monster-hunter-wilds-xbox-one",
+      "nome": "MONSTER HUNTER WILDS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 111.51,
+      "precoPixBRL": 111.51,
+      "precoSemPixBRL": 119.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 149.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-infinite-warfare-xbox-one-xbox-series-s-x-midia-digital-copia-m82ei/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/monster-hunter-wilds-f10ef04f24248e6d4017907039053210-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370712908",
+      "varianteFornecedorId": 1608115363,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 111.51,
+          "custoSemPixBRL": 119.9,
+          "url": "https://www.alphagames.com.br/produtos/call-of-duty-infinite-warfare-xbox-one-xbox-series-s-x-midia-digital-copia-m82ei/"
         }
       ]
     },
@@ -37820,31 +38082,6 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/mxgp-2019-xbox-one-xbox-series-s-x-midia-digital-copia-1ia0u/"
-        }
-      ]
-    },
-    {
-      "id": "mxgp-2026-xbox-one",
-      "nome": "MXGP 2026 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/mxgp-pro-xbox-one-xbox-series-s-x-midia-digital-copia-19aop/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-15-1f6cd77b25b6a1061417906337454700-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "370558244",
-      "varianteFornecedorId": 1607599991,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 27.81,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.alphagames.com.br/produtos/mxgp-pro-xbox-one-xbox-series-s-x-midia-digital-copia-19aop/"
         }
       ]
     },
@@ -38166,6 +38403,70 @@
       ]
     },
     {
+      "id": "one-piece-burning-blood-xbox-one",
+      "nome": "ONE PIECE: BURNING BLOOD - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 18.51,
+      "precoPixBRL": 18.51,
+      "precoSemPixBRL": 19.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 39.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/one-piece-world-seeker-xbox-one-xbox-series-s-x-midia-digital-copia-1j8yn/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/one-piece-burning-blood-3c0377e6fbe8e38a3017907030855467-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370709657",
+      "varianteFornecedorId": 1608103024,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 18.51,
+          "custoSemPixBRL": 19.9,
+          "url": "https://www.alphagames.com.br/produtos/one-piece-world-seeker-xbox-one-xbox-series-s-x-midia-digital-copia-1j8yn/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 42.65,
+          "custoSemPixBRL": 44.9,
+          "url": "https://www.lojatcagames.com.br/products/one-piece-burning-blood-xbox-one"
+        }
+      ]
+    },
+    {
+      "id": "one-piece-world-seeker-xbox-one",
+      "nome": "ONE PIECE: WORLD SEEKER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/world-war-z-xbox-one-xbox-series-s-x-midia-digital-copia-wbq3i/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/one-piece-world-seeker-e829f253286bfcd93917907030048861-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370709228",
+      "varianteFornecedorId": 1608101172,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/world-war-z-xbox-one-xbox-series-s-x-midia-digital-copia-wbq3i/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 42.65,
+          "custoSemPixBRL": 44.9,
+          "url": "https://www.lojatcagames.com.br/products/one-piece-world-seeker-xbox-one"
+        }
+      ]
+    },
+    {
       "id": "outlast-2-xbox-one",
       "nome": "OUTLAST 2 - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
       "precoAtualBRL": 27.81,
@@ -38219,6 +38520,31 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/overcooked-1-2-xbox-one-xbox-series-s-x-midia-digital-15ji2/"
+        }
+      ]
+    },
+    {
+      "id": "pack-spyro-e-crash-trilogy-xbox-one",
+      "nome": "PACK SPYRO & CRASH TRILOGY - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/pack-spyro-crash-trilogy-924b783cc197d7a3ee17907035532554-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370711853",
+      "varianteFornecedorId": 1608110873,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/"
         }
       ]
     },
@@ -39321,6 +39647,31 @@
       ]
     },
     {
+      "id": "star-wars-bounty-hunter-xbox-one",
+      "nome": "STAR WARS: BOUNTY HUNTER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 102.21,
+      "precoPixBRL": 102.21,
+      "precoSemPixBRL": 109.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 129.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/monster-hunter-wilds-xbox-one-xbox-series-s-x-midia-digital-copia-187ln/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/star-wars-bounty-hunter-e8a7347b0245eb971617907039593923-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370713605",
+      "varianteFornecedorId": 1608117516,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 102.21,
+          "custoSemPixBRL": 109.9,
+          "url": "https://www.alphagames.com.br/produtos/monster-hunter-wilds-xbox-one-xbox-series-s-x-midia-digital-copia-187ln/"
+        }
+      ]
+    },
+    {
       "id": "stranded-deep-xbox-one",
       "nome": "STRANDED DEEP - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
       "precoAtualBRL": 92.91,
@@ -39485,6 +39836,31 @@
       ]
     },
     {
+      "id": "the-backrooms-1998-xbox-one",
+      "nome": "THE BACKROOMS 1998 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 55.71,
+      "precoPixBRL": 55.71,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-backrooms-1998-f8a0d50e16b879bc1317907033186239-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370710890",
+      "varianteFornecedorId": 1608107270,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 55.71,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/"
+        }
+      ]
+    },
+    {
       "id": "the-crew-2-xbox-one",
       "nome": "THE CREW 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
@@ -39570,6 +39946,63 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/the-division-2-xbox-one-series-s-x-midia-digital-16rra/"
+        }
+      ]
+    },
+    {
+      "id": "the-evil-within-1-xbox-one",
+      "nome": "THE EVIL WITHIN 1 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 37.11,
+      "precoPixBRL": 37.11,
+      "precoSemPixBRL": 39.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-1-f68618e2d1e575958417907037157259-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370712419",
+      "varianteFornecedorId": 1608113404,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 37.11,
+          "custoSemPixBRL": 39.9,
+          "url": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/"
+        }
+      ]
+    },
+    {
+      "id": "the-evil-within-2-xbox-one",
+      "nome": "THE EVIL WITHIN 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 37.11,
+      "precoPixBRL": 37.11,
+      "precoSemPixBRL": 39.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/crash-pack-quadrilogia-xbox-one-xbox-series-s-x-midia-digital-copia-x71o8/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-2-53aaaccab8a08ebb6017907036626676-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "370712252",
+      "varianteFornecedorId": 1608112480,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 37.11,
+          "custoSemPixBRL": 39.9,
+          "url": "https://www.alphagames.com.br/produtos/crash-pack-quadrilogia-xbox-one-xbox-series-s-x-midia-digital-copia-x71o8/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 18.9,
+          "custoSemPixBRL": 19.9,
+          "url": "https://www.lojatcagames.com.br/products/the-evil-within-2-xbox-one"
         }
       ]
     },
@@ -39734,31 +40167,6 @@
           "custoPixBRL": 37.9,
           "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/tom-clancys-ghost-recon-wildlands-xbox-one"
-        }
-      ]
-    },
-    {
-      "id": "tom-clancy-s-the-division-2-xbox-one",
-      "nome": "TOM CLANCY´S THE DIVISION 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 37.11,
-      "precoPixBRL": 37.11,
-      "precoSemPixBRL": 39.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/tony-hawks-skater-12-xbox-one-xbox-series-s-x-midia-digital-copia-14od9/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-3-aed021644c086626bc17906413424368-1024-1024.webp",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "370582888",
-      "varianteFornecedorId": 1607673432,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 37.11,
-          "custoSemPixBRL": 39.9,
-          "url": "https://www.alphagames.com.br/produtos/tony-hawks-skater-12-xbox-one-xbox-series-s-x-midia-digital-copia-14od9/"
         }
       ]
     },
@@ -40659,33 +41067,6 @@
       ]
     },
     {
-      "id": "call-of-duty-infinite-warfare-xbox-one",
-      "nome": "Call of Duty Infinite Warfare – Xbox One Mídia Digital",
-      "precoAtualBRL": 28.4,
-      "precoPixBRL": 28.4,
-      "precoSemPixBRL": 29.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 29.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/call-of-duty-infinite-warfare-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/CallOfDutyInfiniteWarfare.png?v=1786233995",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762833604706",
-      "varianteFornecedorId": "43190179266658",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.lojatcagames.com.br/products/call-of-duty-infinite-warfare-xbox-one"
-        }
-      ]
-    },
-    {
       "id": "call-of-duty-modern-warfare-remastered-xbox-one",
       "nome": "Call of Duty Modern Warfare Remastered – Xbox One",
       "precoAtualBRL": 33.15,
@@ -41465,33 +41846,6 @@
           "custoPixBRL": 18.9,
           "custoSemPixBRL": 19.9,
           "url": "https://www.lojatcagames.com.br/products/far-cry-3-classic-edition-xbox-one"
-        }
-      ]
-    },
-    {
-      "id": "far-cry-4-xbox-one",
-      "nome": "Far Cry 4 - Xbox One Mídia Digital",
-      "precoAtualBRL": 14.15,
-      "precoPixBRL": 14.15,
-      "precoSemPixBRL": 14.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 14.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/far-cry-4-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/FarCry4_26bb9bb3-cba4-4646-9a4f-885b6d36f2e3.jpg?v=1786233850",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762827903074",
-      "varianteFornecedorId": "43190172156002",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 14.15,
-          "custoSemPixBRL": 14.9,
-          "url": "https://www.lojatcagames.com.br/products/far-cry-4-xbox-one"
         }
       ]
     },
@@ -43035,33 +43389,6 @@
       ]
     },
     {
-      "id": "one-piece-burning-blood-xbox-one",
-      "nome": "One Piece Burning Blood – Xbox One Mídia Digital",
-      "precoAtualBRL": 42.65,
-      "precoPixBRL": 42.65,
-      "precoSemPixBRL": 44.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 44.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/one-piece-burning-blood-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/ONEPIECEBURNINGBLOOD.jpg?v=1786233816",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762826657890",
-      "varianteFornecedorId": "43190170746978",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 42.65,
-          "custoSemPixBRL": 44.9,
-          "url": "https://www.lojatcagames.com.br/products/one-piece-burning-blood-xbox-one"
-        }
-      ]
-    },
-    {
       "id": "one-piece-pirate-warriors-4-xbox-one",
       "nome": "One Piece Pirate Warriors 4 - Xbox One Mídia Digital",
       "precoAtualBRL": 56.9,
@@ -43085,33 +43412,6 @@
           "custoPixBRL": 56.9,
           "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/one-piece-pirate-warriors-4-xbox-one"
-        }
-      ]
-    },
-    {
-      "id": "one-piece-world-seeker-xbox-one",
-      "nome": "One Piece World Seeker – Xbox One Mídia Digital",
-      "precoAtualBRL": 42.65,
-      "precoPixBRL": 42.65,
-      "precoSemPixBRL": 44.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 44.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/one-piece-world-seeker-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/OnePiece-WorldSeeker.jpg?v=1786233763",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762825085026",
-      "varianteFornecedorId": "43190169174114",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 42.65,
-          "custoSemPixBRL": 44.9,
-          "url": "https://www.lojatcagames.com.br/products/one-piece-world-seeker-xbox-one"
         }
       ]
     },
@@ -44169,33 +44469,6 @@
       ]
     },
     {
-      "id": "the-evil-within-2-xbox-one",
-      "nome": "The Evil Within 2 Xbox One Mídia Digital",
-      "precoAtualBRL": 18.9,
-      "precoPixBRL": 18.9,
-      "precoSemPixBRL": 19.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 19.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/the-evil-within-2-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/TheEvilWithin2.jpg?v=1786234323",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762846089314",
-      "varianteFornecedorId": "43190237331554",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 18.9,
-          "custoSemPixBRL": 19.9,
-          "url": "https://www.lojatcagames.com.br/products/the-evil-within-2-xbox-one"
-        }
-      ]
-    },
-    {
       "id": "the-sims-4-ed-festa-deluxe-xbox-one",
       "nome": "The Sims 4 Ed. Festa Deluxe – Xbox One Mídia Digital",
       "precoAtualBRL": 28.4,
@@ -44470,10 +44743,10 @@
       "precoPixBRL": 18.51,
       "precoSemPixBRL": 19.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
+      "precoOriginalBRL": 109.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/a-way-out-xbox-one-series-s-x-midia-digital-1l6pc/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000274038-9eb4ba7072cd4d32b717731733399046-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368444-a172242e752761bba217907059731410-1024-1024.webp",
       "plataforma": "Xbox Series X|S",
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "330705899",
@@ -44495,7 +44768,7 @@
       "precoPixBRL": 83.61,
       "precoSemPixBRL": 89.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 129.9,
+      "precoOriginalBRL": 339.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/ace-combat-7-skies-unknown-xbox-one-xbox-series-s-x-midia-digital-1k60p/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/113519-45411c61d413a1757f17882047515711-1024-1024.webp",
@@ -44570,7 +44843,7 @@
       "precoPixBRL": 60.36,
       "precoSemPixBRL": 64.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 89.9,
+      "precoOriginalBRL": 99.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/age-of-empires-iv-anniversary-edition-xbox-one-series-s-x-midia-digital-r8d4h/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367806-35fecd23c82462395617893177528675-1024-1024.webp",
@@ -44645,7 +44918,7 @@
       "precoPixBRL": 18.51,
       "precoSemPixBRL": 19.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 39.9,
+      "precoOriginalBRL": 99.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/alan-wake-remastered-xbox-one-xbox-series-s-x-midia-digital-zzosl/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000273893-9707dbeeff2c7392f417731670847089-1024-1024.webp",
@@ -44764,6 +45037,31 @@
       ]
     },
     {
+      "id": "ao-tennis-2-xbox-series",
+      "nome": "AO TENNIS 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 114.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/ao-tennis-2-xbox-one-midia-digital-qvi3y/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368446-d20b8fbc488d312d6f17907063629993-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "345077311",
+      "varianteFornecedorId": 1527340984,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/ao-tennis-2-xbox-one-midia-digital-qvi3y/"
+        }
+      ]
+    },
+    {
       "id": "arc-raiders-xbox-series",
       "nome": "ARC RAIDERS - XBOX SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 111.51,
@@ -44845,7 +45143,7 @@
       "precoPixBRL": 32.46,
       "precoSemPixBRL": 34.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
+      "precoOriginalBRL": 54.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/ark-survival-evolved-xbox-one-series-s-x-midia-digital-jbijg/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367813-5dc84e3e57ceca2a6b17893197969336-1024-1024.webp",
@@ -44916,11 +45214,11 @@
     {
       "id": "assassin-s-creed-chronicles-china-xbox-series",
       "nome": "ASSASSIN'S CREED CHRONICLES: CHINA- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
+      "precoAtualBRL": 13.86,
+      "precoPixBRL": 13.86,
+      "precoSemPixBRL": 14.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
+      "precoOriginalBRL": 29.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-china-xbox-one-series-s-x-midia-digital-1obb8/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367824-0841dde09810efbbaa17893236445304-1024-1024.webp",
@@ -44932,20 +45230,45 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 27.81,
-          "custoSemPixBRL": 29.9,
+          "custoPixBRL": 13.86,
+          "custoSemPixBRL": 14.9,
           "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-china-xbox-one-series-s-x-midia-digital-1obb8/"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-chronicles-india-xbox-series",
+      "nome": "ASSASSIN'S CREED CHRONICLES: INDIA - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 13.86,
+      "precoPixBRL": 13.86,
+      "precoSemPixBRL": 14.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 29.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-india-xbox-one-midia-digital-16dnx/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368448-4d155373db7100c4bd17907099194680-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "330650981",
+      "varianteFornecedorId": 1471412101,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 13.86,
+          "custoSemPixBRL": 14.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-india-xbox-one-midia-digital-16dnx/"
         }
       ]
     },
     {
       "id": "assassin-s-creed-chronicles-russia-xbox-series",
       "nome": "ASSASSIN'S CREED CHRONICLES: RUSSIA - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
+      "precoAtualBRL": 13.86,
+      "precoPixBRL": 13.86,
+      "precoSemPixBRL": 14.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
+      "precoOriginalBRL": 29.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-xbox-one-series-s-x-midia-digital-ju8fm/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367826-28486503528810b3a117893239513222-1024-1024.webp",
@@ -44957,9 +45280,34 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
+          "custoPixBRL": 13.86,
+          "custoSemPixBRL": 14.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-xbox-one-series-s-x-midia-digital-ju8fm/"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-chronicles-trilogy-xbox-series",
+      "nome": "ASSASSIN'S CREED CHRONICLES: TRILOGY- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367823-05d7b12d4060df636f17893234552488-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "367162806",
+      "varianteFornecedorId": 1595950880,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-xbox-one-series-s-x-midia-digital-ju8fm/"
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/"
         }
       ]
     },
@@ -44990,7 +45338,7 @@
     },
     {
       "id": "assassin-s-creed-iii-remastered-xbox-series",
-      "nome": "ASSASSIN'S CREED III: REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "nome": "ASSASSIN'S CREED III REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
       "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
@@ -45127,10 +45475,10 @@
       "precoPixBRL": 65.01,
       "precoSemPixBRL": 69.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 65.01,
+      "precoOriginalBRL": 199.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65610-bd0e11cbb00421306917813138915802-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368451-16b7dd09f0975908d717907123052084-1024-1024.webp",
       "plataforma": "Xbox Series X|S",
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "350258688",
@@ -45142,6 +45490,31 @@
           "custoPixBRL": 65.01,
           "custoSemPixBRL": 69.9,
           "url": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-origins-xbox-series",
+      "nome": "ASSASSIN'S CREED ORIGINS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 55.71,
+      "precoPixBRL": 55.71,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 199.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368453-d86b76afed56dcf2a717907136069075-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "350259118",
+      "varianteFornecedorId": 1542729948,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 55.71,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/"
         }
       ]
     },
@@ -45202,7 +45575,7 @@
       "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 159.9,
+      "precoOriginalBRL": 89.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-syndicate-xbox-one-series-s-x-midia-digital-b52pu/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367822-698e7d9afad78c3c3017893232731466-1024-1024.webp",
@@ -45221,13 +45594,38 @@
       ]
     },
     {
+      "id": "assassin-s-creed-the-ezio-collection-xbox-series",
+      "nome": "ASSASSIN'S CREED THE EZIO COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 51.06,
+      "precoPixBRL": 51.06,
+      "precoSemPixBRL": 54.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 119.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367815-60e9ac386123704c1817893221663242-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "367161379",
+      "varianteFornecedorId": 1595947056,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 51.06,
+          "custoSemPixBRL": 54.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/"
+        }
+      ]
+    },
+    {
       "id": "assassin-s-creed-triple-pack-xbox-series",
       "nome": "ASSASSIN'S CREED TRIPLE PACK - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 27.81,
       "precoPixBRL": 27.81,
       "precoSemPixBRL": 29.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
+      "precoOriginalBRL": 59.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-triple-pack-xbox-one-series-s-x-13ifw/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349150-480bd58bbcf560d22617780994639109-1024-1024.webp",
@@ -45321,81 +45719,6 @@
       ]
     },
     {
-      "id": "assassin-s-creed-chronicles-trilogy-xbox-series",
-      "nome": "ASSASSIN'S CREED: CHRONICLES TRILOGY- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 139.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367823-05d7b12d4060df636f17893234552488-1024-1024.webp",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "367162806",
-      "varianteFornecedorId": 1595950880,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 27.81,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/"
-        }
-      ]
-    },
-    {
-      "id": "assassin-s-creed-the-ezio-collection-xbox-series",
-      "nome": "ASSASSIN'S CREED: THE EZIO COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 51.06,
-      "precoPixBRL": 51.06,
-      "precoSemPixBRL": 54.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 119.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367815-60e9ac386123704c1817893221663242-1024-1024.webp",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "367161379",
-      "varianteFornecedorId": 1595947056,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 51.06,
-          "custoSemPixBRL": 54.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/"
-        }
-      ]
-    },
-    {
-      "id": "assassins-creed-origins-xbox-series",
-      "nome": "ASSASSINS CREED ORIGINS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-      "precoAtualBRL": 55.71,
-      "precoPixBRL": 55.71,
-      "precoSemPixBRL": 59.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 79.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65616-7a8eedb5f4be44f71217813140371967-1024-1024.webp",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "350259118",
-      "varianteFornecedorId": 1542729948,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 55.71,
-          "custoSemPixBRL": 59.9,
-          "url": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/"
-        }
-      ]
-    },
-    {
       "id": "assetto-corsa-competizione-xbox-series",
       "nome": "ASSETTO CORSA COMPETIZIONE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 27.81,
@@ -45417,6 +45740,31 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/assetto-corsa-competizione-xbox-one-series-s-x-midia-digital-8au5v/"
+        }
+      ]
+    },
+    {
+      "id": "assetto-corsa-xbox-series",
+      "nome": "ASSETTO CORSA – XBOX ONE & SERIES S/X – MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assetto-corsa-xbox-one-midia-digital-1jh2i/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/corsa-d209ec44b1d3e4d8e117731664028739-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "330650149",
+      "varianteFornecedorId": 1471407317,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/assetto-corsa-xbox-one-midia-digital-1jh2i/"
         }
       ]
     },
@@ -45680,10 +46028,10 @@
     {
       "id": "biomutant-xbox-series",
       "nome": "BIOMUTANT - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 39.9,
-      "precoPixBRL": 39.9,
+      "precoAtualBRL": 37.11,
+      "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
-      "descontoPixAplicado": false,
+      "descontoPixAplicado": true,
       "precoOriginalBRL": 59.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/guardioes-da-galaxia-da-marvel-xbox-one-xbox-series-s-x-midia-digital-copia-1rn05/",
@@ -45696,7 +46044,7 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 39.9,
+          "custoPixBRL": 37.11,
           "custoSemPixBRL": 39.9,
           "url": "https://www.alphagames.com.br/produtos/guardioes-da-galaxia-da-marvel-xbox-one-xbox-series-s-x-midia-digital-copia-1rn05/"
         }
@@ -45956,6 +46304,31 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/call-of-dutty-ghost-xbox-one-series-s-x-midia-digital-1p11e/"
+        }
+      ]
+    },
+    {
+      "id": "call-of-duty-infinite-warfare-xbox-series",
+      "nome": "CALL OF DUTY: INFINITE WARFARE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 74.31,
+      "precoPixBRL": 74.31,
+      "precoSemPixBRL": 79.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 99.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-evil-within-1-xbox-one-xbox-series-s-x-midia-digital-copia-1vh27/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/cod-infinite-warfare-c6e849f595c347125c17907037916611-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370712572",
+      "varianteFornecedorId": 1608114015,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 74.31,
+          "custoSemPixBRL": 79.9,
+          "url": "https://www.alphagames.com.br/produtos/the-evil-within-1-xbox-one-xbox-series-s-x-midia-digital-copia-1vh27/"
         }
       ]
     },
@@ -46263,6 +46636,31 @@
           "custoPixBRL": 306.81,
           "custoSemPixBRL": 329.9,
           "url": "https://www.alphagames.com.br/produtos/crash-bandicoot-crashversary-bundle-xbox-one-series-s-x-midia-digital-zva3s/"
+        }
+      ]
+    },
+    {
+      "id": "crash-pack-quadrilogia-xbox-series",
+      "nome": "CRASH PACK QUADRILOGIA - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/pack-spyro-crash-trilogy-xbox-one-xbox-series-s-x-midia-digital-copia-jy28l/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/crash-pack-quadrilogia-53ad5a747023b6302c17907036127003-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370712071",
+      "varianteFornecedorId": 1608111663,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/pack-spyro-crash-trilogy-xbox-one-xbox-series-s-x-midia-digital-copia-jy28l/"
         }
       ]
     },
@@ -46588,6 +46986,31 @@
       ]
     },
     {
+      "id": "death-stranding-diretor-cut-xbox-series",
+      "nome": "DEATH STRANDING DIRETOR CUT - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 89.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/death-stranding-diretor-cut-aa4adb6875239e49f217907034912946-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370711639",
+      "varianteFornecedorId": 1608110051,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
+          "url": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/"
+        }
+      ]
+    },
+    {
       "id": "devil-may-cry-5-xbox-series",
       "nome": "DEVIL MAY CRY 5 - XBOX SERIES S/X- MÍDIA DIGITAL",
       "precoAtualBRL": 27.81,
@@ -46641,6 +47064,31 @@
           "custoPixBRL": 18.9,
           "custoSemPixBRL": 19.9,
           "url": "https://www.lojatcagames.com.br/products/diablo-iv-xbox-series"
+        }
+      ]
+    },
+    {
+      "id": "dmc4se-demon-hunter-bundle-xbox-series",
+      "nome": "DMC4SE DEMON HUNTER BUNDLE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 55.71,
+      "precoPixBRL": 55.71,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/dmc4se-demon-hunter-bundle-c45258d745fa1c59ff17907040135078-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370713995",
+      "varianteFornecedorId": 1608118494,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 55.71,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/"
         }
       ]
     },
@@ -47116,6 +47564,31 @@
       ]
     },
     {
+      "id": "far-cry-4-xbox-series",
+      "nome": "FAR CRY 4 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/five-night-at-freddys-security-breach-xbox-one-xbox-series-s-x-midia-digital-copia-1b3k4/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/far-cry-4-b1015f7cebe419928d17907034436108-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370711447",
+      "varianteFornecedorId": 1608109403,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/five-night-at-freddys-security-breach-xbox-one-xbox-series-s-x-midia-digital-copia-1b3k4/"
+        }
+      ]
+    },
+    {
       "id": "farm-manager-2022-xbox-series",
       "nome": "FARM MANAGER 2022 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
@@ -47344,6 +47817,31 @@
           "custoPixBRL": 130.11,
           "custoSemPixBRL": 139.9,
           "url": "https://www.alphagames.com.br/produtos/final-fantasy-xvi-deluxe-xbox-series-s-x-midia-digital-1fqp6/"
+        }
+      ]
+    },
+    {
+      "id": "five-night-at-freddys-security-breach-xbox-series",
+      "nome": "FIVE NIGHT AT FREDDYS SECURITY BREACH - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 185.91,
+      "precoPixBRL": 185.91,
+      "precoSemPixBRL": 199.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 219.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370711244",
+      "varianteFornecedorId": 1608108595,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 185.91,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/"
         }
       ]
     },
@@ -48376,6 +48874,81 @@
       ]
     },
     {
+      "id": "mega-man-11-xbox-series",
+      "nome": "MEGA MAN 11 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 89.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-x-xbox-one-xbox-series-s-x-midia-digital-copia-23quy/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-11-f2f57bc39a5a22a2cd17907032645026-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370710719",
+      "varianteFornecedorId": 1608106799,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
+          "url": "https://www.alphagames.com.br/produtos/mega-man-x-xbox-one-xbox-series-s-x-midia-digital-copia-23quy/"
+        }
+      ]
+    },
+    {
+      "id": "mega-man-x-xbox-series",
+      "nome": "MEGA MAN X- XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 89.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-x-legacy-collection-8651b2a8192faf19dc17907032158411-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370710447",
+      "varianteFornecedorId": 1608105898,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
+          "url": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/"
+        }
+      ]
+    },
+    {
+      "id": "mega-man-zx-xbox-series",
+      "nome": "MEGA MAN ZX- XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/one-piece-burning-blood-xbox-one-xbox-series-s-x-midia-digital-copia-16q03/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-zerozx-legacy-collection-8917bf64a6055c980c17907031623411-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370710086",
+      "varianteFornecedorId": 1608104575,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/one-piece-burning-blood-xbox-one-xbox-series-s-x-midia-digital-copia-16q03/"
+        }
+      ]
+    },
+    {
       "id": "metal-gear-solid-snake-eater-xbox-series",
       "nome": "METAL GEAR SOLID SNAKE EATER - XBOX SERIES S/X - MIDIA DIGITAL",
       "precoAtualBRL": 176.61,
@@ -48608,6 +49181,38 @@
       ]
     },
     {
+      "id": "monster-hunter-wilds-xbox-series",
+      "nome": "MONSTER HUNTER WILDS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 111.51,
+      "precoPixBRL": 111.51,
+      "precoSemPixBRL": 119.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 149.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-infinite-warfare-xbox-one-xbox-series-s-x-midia-digital-copia-m82ei/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/monster-hunter-wilds-f10ef04f24248e6d4017907039053210-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370712908",
+      "varianteFornecedorId": 1608115363,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 111.51,
+          "custoSemPixBRL": 119.9,
+          "url": "https://www.alphagames.com.br/produtos/call-of-duty-infinite-warfare-xbox-one-xbox-series-s-x-midia-digital-copia-m82ei/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 85.4,
+          "custoSemPixBRL": 89.9,
+          "url": "https://www.lojatcagames.com.br/products/monster-hunter-wilds-xbox-series"
+        }
+      ]
+    },
+    {
       "id": "mortal-kombat-1-xbox-series",
       "nome": "MORTAL KOMBAT 1 - XBOX SERIES S/X- MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
@@ -48786,31 +49391,6 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/mxgp-2019-xbox-one-xbox-series-s-x-midia-digital-copia-1ia0u/"
-        }
-      ]
-    },
-    {
-      "id": "mxgp-2026-xbox-series",
-      "nome": "MXGP 2026 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/mxgp-pro-xbox-one-xbox-series-s-x-midia-digital-copia-19aop/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-15-1f6cd77b25b6a1061417906337454700-1024-1024.webp",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "370558244",
-      "varianteFornecedorId": 1607599991,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 27.81,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.alphagames.com.br/produtos/mxgp-pro-xbox-one-xbox-series-s-x-midia-digital-copia-19aop/"
         }
       ]
     },
@@ -49157,6 +49737,56 @@
       ]
     },
     {
+      "id": "one-piece-burning-blood-xbox-series",
+      "nome": "ONE PIECE: BURNING BLOOD - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 18.51,
+      "precoPixBRL": 18.51,
+      "precoSemPixBRL": 19.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 39.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/one-piece-world-seeker-xbox-one-xbox-series-s-x-midia-digital-copia-1j8yn/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/one-piece-burning-blood-3c0377e6fbe8e38a3017907030855467-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370709657",
+      "varianteFornecedorId": 1608103024,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 18.51,
+          "custoSemPixBRL": 19.9,
+          "url": "https://www.alphagames.com.br/produtos/one-piece-world-seeker-xbox-one-xbox-series-s-x-midia-digital-copia-1j8yn/"
+        }
+      ]
+    },
+    {
+      "id": "one-piece-world-seeker-xbox-series",
+      "nome": "ONE PIECE: WORLD SEEKER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/world-war-z-xbox-one-xbox-series-s-x-midia-digital-copia-wbq3i/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/one-piece-world-seeker-e829f253286bfcd93917907030048861-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370709228",
+      "varianteFornecedorId": 1608101172,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/world-war-z-xbox-one-xbox-series-s-x-midia-digital-copia-wbq3i/"
+        }
+      ]
+    },
+    {
       "id": "onimusha-way-of-the-sword-xbox-series",
       "nome": "ONIMUSHA: WAY OF THE SWORD - XBOX SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 195.21,
@@ -49228,6 +49858,31 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/overcooked-1-2-xbox-one-xbox-series-s-x-midia-digital-15ji2/"
+        }
+      ]
+    },
+    {
+      "id": "pack-spyro-e-crash-trilogy-xbox-series",
+      "nome": "PACK SPYRO & CRASH TRILOGY - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/pack-spyro-crash-trilogy-924b783cc197d7a3ee17907035532554-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370711853",
+      "varianteFornecedorId": 1608110873,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/"
         }
       ]
     },
@@ -50614,6 +51269,31 @@
       ]
     },
     {
+      "id": "star-wars-bounty-hunter-xbox-series",
+      "nome": "STAR WARS: BOUNTY HUNTER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 102.21,
+      "precoPixBRL": 102.21,
+      "precoSemPixBRL": 109.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 129.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/monster-hunter-wilds-xbox-one-xbox-series-s-x-midia-digital-copia-187ln/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/star-wars-bounty-hunter-e8a7347b0245eb971617907039593923-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370713605",
+      "varianteFornecedorId": 1608117516,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 102.21,
+          "custoSemPixBRL": 109.9,
+          "url": "https://www.alphagames.com.br/produtos/monster-hunter-wilds-xbox-one-xbox-series-s-x-midia-digital-copia-187ln/"
+        }
+      ]
+    },
+    {
       "id": "starfield-xbox-series",
       "nome": "STARFIELD - XBOX SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 167.31,
@@ -50878,6 +51558,31 @@
       ]
     },
     {
+      "id": "the-backrooms-1998-xbox-series",
+      "nome": "THE BACKROOMS 1998 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 55.71,
+      "precoPixBRL": 55.71,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-backrooms-1998-f8a0d50e16b879bc1317907033186239-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370710890",
+      "varianteFornecedorId": 1608107270,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 55.71,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/"
+        }
+      ]
+    },
+    {
       "id": "the-blood-of-dawnwalker-xbox-series",
       "nome": "THE BLOOD OF DAWNWALKER - XBOX SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 260.31,
@@ -50981,6 +51686,56 @@
           "custoPixBRL": 27.81,
           "custoSemPixBRL": 29.9,
           "url": "https://www.alphagames.com.br/produtos/the-division-2-xbox-one-series-s-x-midia-digital-16rra/"
+        }
+      ]
+    },
+    {
+      "id": "the-evil-within-1-xbox-series",
+      "nome": "THE EVIL WITHIN 1 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 37.11,
+      "precoPixBRL": 37.11,
+      "precoSemPixBRL": 39.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-1-f68618e2d1e575958417907037157259-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370712419",
+      "varianteFornecedorId": 1608113404,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 37.11,
+          "custoSemPixBRL": 39.9,
+          "url": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/"
+        }
+      ]
+    },
+    {
+      "id": "the-evil-within-2-xbox-series",
+      "nome": "THE EVIL WITHIN 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 37.11,
+      "precoPixBRL": 37.11,
+      "precoSemPixBRL": 39.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/crash-pack-quadrilogia-xbox-one-xbox-series-s-x-midia-digital-copia-x71o8/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-2-53aaaccab8a08ebb6017907036626676-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "370712252",
+      "varianteFornecedorId": 1608112480,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 37.11,
+          "custoSemPixBRL": 39.9,
+          "url": "https://www.alphagames.com.br/produtos/crash-pack-quadrilogia-xbox-one-xbox-series-s-x-midia-digital-copia-x71o8/"
         }
       ]
     },
@@ -51206,31 +51961,6 @@
           "custoPixBRL": 46.41,
           "custoSemPixBRL": 49.9,
           "url": "https://www.alphagames.com.br/produtos/tom-clancys-ghost-recon-wildlands-xbox-one-series-s-x-midia-digital-17h5g/"
-        }
-      ]
-    },
-    {
-      "id": "tom-clancy-s-the-division-2-xbox-series",
-      "nome": "TOM CLANCY´S THE DIVISION 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 37.11,
-      "precoPixBRL": 37.11,
-      "precoSemPixBRL": 39.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 59.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/tony-hawks-skater-12-xbox-one-xbox-series-s-x-midia-digital-copia-14od9/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-3-aed021644c086626bc17906413424368-1024-1024.webp",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "370582888",
-      "varianteFornecedorId": 1607673432,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 37.11,
-          "custoSemPixBRL": 39.9,
-          "url": "https://www.alphagames.com.br/produtos/tony-hawks-skater-12-xbox-one-xbox-series-s-x-midia-digital-copia-14od9/"
         }
       ]
     },
@@ -52086,33 +52816,6 @@
           "custoPixBRL": 66.4,
           "custoSemPixBRL": 69.9,
           "url": "https://www.lojatcagames.com.br/products/grand-theft-auto-the-trilogy-xbox-series-x-s"
-        }
-      ]
-    },
-    {
-      "id": "monster-hunter-wilds-xbox-series",
-      "nome": "Monster Hunter Wilds - Xbox Series Mídia Digital",
-      "precoAtualBRL": 85.4,
-      "precoPixBRL": 85.4,
-      "precoSemPixBRL": 89.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 89.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/monster-hunter-wilds-xbox-series",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Capasite.jpg?v=1786233768",
-      "plataforma": "Xbox Series X|S",
-      "plataformaKey": "xbox-series",
-      "fornecedorProductId": "7762825248866",
-      "varianteFornecedorId": "43190169337954",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 85.4,
-          "custoSemPixBRL": 89.9,
-          "url": "https://www.lojatcagames.com.br/products/monster-hunter-wilds-xbox-series"
         }
       ]
     },

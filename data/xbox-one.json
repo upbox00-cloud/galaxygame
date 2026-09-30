@@ -6,7 +6,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471690212,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 8.99,
+    "precoOriginalEUR": 19.99,
     "trailer": "https://www.youtube.com/embed/yGZGSdgJVPM",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9ab/9abb12bf62c4bca53f5d098cee0191bd.jpg",
@@ -41,7 +41,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587681135,
     "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/KQCDj3emnHk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e18/e18619e819c7d54a3df317e259e7134f.jpg",
@@ -108,7 +108,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595931557,
     "precoVendaEUR": 15.99,
-    "precoOriginalEUR": 15.99,
+    "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/yn4hP2eL0K8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367806-35fecd23c82462395617893177528675-1024-1024.webp"
@@ -134,7 +134,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471424284,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 7.99,
+    "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/sSB4QcQMm6E",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/269/2690be2d2f7b0fddd9849788b6a9e1af.jpg",
@@ -232,7 +232,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595936180,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/4E1jVWUMQiA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/dfd/dfd6b6d5528778da86858f4a46edb0d5_c5tNIG2.jpg",
@@ -288,12 +288,12 @@
   },
   {
     "id": "ao-tennis-2-xbox-one",
-    "nome": "AO TENNIS 2 - XBOX ONE - MÍDIA DIGITAL",
+    "nome": "AO TENNIS 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1527340984,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 15.99,
+    "precoOriginalEUR": 20.99,
     "trailer": "https://www.youtube.com/embed/nUHosOmnaik",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d04/d042a25a3a038f79b1f86defc55b397c.jpg",
@@ -325,7 +325,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595938543,
     "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 10.99,
+    "precoOriginalEUR": 9.99,
     "trailer": "https://www.youtube.com/embed/FW9vsrPWujI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/660/660811527f1b41a42ae101148295d66b.jpg",
@@ -392,8 +392,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595951340,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 10.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "trailer": "",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/569/569454df51319779ee25b9ab986ddd36.jpg",
@@ -421,12 +421,12 @@
   },
   {
     "id": "assassin-s-creed-chronicles-india-xbox-one",
-    "nome": "ASSASSIN'S CREED CHRONICLES: INDIA - XBOX ONE - MÍDIA DIGITAL",
+    "nome": "ASSASSIN'S CREED CHRONICLES: INDIA - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471412101,
-    "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 8.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "trailer": "https://www.youtube.com/embed/Tqz6HxPunRw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/270/2705efbd0c3ff98bf61589a4418e2b8d.jpg",
@@ -458,8 +458,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595952457,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 10.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "trailer": "",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/565/56534595d4c19edb31ed6a56ecb43d03.jpg",
@@ -485,6 +485,32 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-xbox-one-series-s-x-midia-digital-ju8fm/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-chronicles-trilogy-xbox-one",
+    "nome": "ASSASSIN'S CREED CHRONICLES: TRILOGY- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1595950880,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 10.99,
+    "trailer": "https://www.youtube.com/embed/idosIQPtXdw",
+    "screenshots": [
+      "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/ASSASSINSCREEDCHRONICLESTRILOGY_6cd303fb-1fc3-47e3-b7c9-69e8d7e9d9bf.png?v=1786234135"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/ASSASSINSCREEDCHRONICLESTRILOGY_6cd303fb-1fc3-47e3-b7c9-69e8d7e9d9bf.png?v=1786234135",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Chronicles",
+    "steamGridMatchScore": 0.783,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/",
+    "enriquecido": false
   },
   {
     "id": "assassin-s-creed-ii-xbox-one",
@@ -520,7 +546,7 @@
   },
   {
     "id": "assassin-s-creed-iii-remastered-xbox-one",
-    "nome": "ASSASSIN'S CREED III: REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "nome": "ASSASSIN'S CREED III REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595949636,
@@ -589,7 +615,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595968747,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 82.99,
     "trailer": "https://www.youtube.com/embed/rKjUAWlbTJk",
     "screenshots": [
@@ -676,7 +702,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542729321,
     "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 11.99,
+    "precoOriginalEUR": 35.99,
     "trailer": "https://www.youtube.com/embed/6F8L3d_OIE0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/412/412b1dd5c880b80d8404451d3ff44360.jpg",
@@ -701,6 +727,42 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-odyssey-xbox-one-midia-digital-kal1g/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-origins-xbox-one",
+    "nome": "ASSASSIN'S CREED ORIGINS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1542729948,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 35.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/5c8/5c8c5889c81eb226b182e6df4018a29a.jpg",
+      "https://media.rawg.io/media/screenshots/0cf/0cf5ed35a3906f32967cb476c11c5d49.jpg",
+      "https://media.rawg.io/media/screenshots/313/3132876284966c4d055d752e7edc5509.jpg",
+      "https://media.rawg.io/media/screenshots/b3f/b3fe4ade2ed930cbd8253269ff38ba28.jpg",
+      "https://media.rawg.io/media/screenshots/2d7/2d7a5c1b08e5cc5bc7c371094376637c.jpg"
+    ],
+    "descricao": "Assassin's Creed Origins is an open-world action game developed by Ubisoft. It further continues the series after Assassin's Creed Syndicate. The story is set in two time periods simultaneously. In 2017, the order of Templars has recovered an ancient artifact that will allow them to seize control...",
+    "imagemFallback": "https://media.rawg.io/media/games/336/336c6bd63d83cf8e59937ab8895d1240.jpg",
+    "released": "2017-10-27",
+    "rating": 3.96,
+    "ratings_count": 2120,
+    "added": 8041,
+    "genres": [
+      "Action",
+      "RPG"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/92a5d56731582f082f64d5dbd367c3fc.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Origins",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-one",
@@ -741,7 +803,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595950403,
     "precoVendaEUR": 3.99,
-    "precoOriginalEUR": 28.99,
+    "precoOriginalEUR": 15.99,
     "trailer": "https://www.youtube.com/embed/USwkJtDkg2g",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/578/57836521fc9d7f0a5b743c5d3aabbac2.jpg",
@@ -767,13 +829,45 @@
     "enriquecido": true
   },
   {
+    "id": "assassin-s-creed-the-ezio-collection-xbox-one",
+    "nome": "ASSASSIN'S CREED THE EZIO COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1595947056,
+    "precoVendaEUR": 13.99,
+    "precoOriginalEUR": 21.99,
+    "trailer": "https://www.youtube.com/embed/lZPQ2ijCgVw",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/27f/27f621165b23ff6481715799eb36a32a.jpg",
+      "https://media.rawg.io/media/screenshots/e44/e44b226d40f2d1f65e87deb9b1e7b383.jpg",
+      "https://media.rawg.io/media/screenshots/cbd/cbdabe538b7de4b92321d48ea317ac60.jpg",
+      "https://media.rawg.io/media/screenshots/c61/c615b8d38593349a46567c4fc1cab16f.jpg",
+      "https://media.rawg.io/media/screenshots/04b/04be3d5adba2c4458c36b23ba82c8c5c.jpg"
+    ],
+    "descricao": "Make history as the legendary Master Assassin, Ezio Auditore da Firenze, in Assassin’s Creed® The Ezio Collection, which includes the acclaimed single-player campaigns and single-player add-on content* from three games: Assassin’s Creed® II, Assassin’s Creed® Brotherhood, and Assassin’s Creed® Re...",
+    "imagemFallback": "https://media.rawg.io/media/games/efd/efd50d3cf0ebe96aa77b81e29ea3540f.jpg",
+    "released": "2016-11-15",
+    "rating": 4.41,
+    "ratings_count": 153,
+    "added": 1106,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/19b3e1ae000c02ade1b4be887b588700.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed: The Ezio Collection",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/",
+    "enriquecido": true
+  },
+  {
     "id": "assassin-s-creed-triple-pack-xbox-one",
     "nome": "ASSASSIN'S CREED TRIPLE PACK - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1519547355,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 8.99,
+    "precoOriginalEUR": 10.99,
     "trailer": "https://www.youtube.com/embed/yTqGZtJ9ICU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349150-480bd58bbcf560d22617780994639109-1024-1024.webp"
@@ -791,6 +885,35 @@
     "steamGridMatchScore": 0.607,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-triple-pack-xbox-one-series-s-x-13ifw/",
     "enriquecido": false
+  },
+  {
+    "id": "assassin-s-creed-unity-e-series-x-xbox-one",
+    "nome": "ASSASSIN'S CREED UNITY - XBOX ONE & SERIES/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1364759249,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368458-f0c6d6576584b639fa17907139036087-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368458-f0c6d6576584b639fa17907139036087-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Unity",
+    "steamGridMatchScore": 0.87,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-valhalla-immortals-fenyx-rising-xbox-one",
@@ -885,116 +1008,6 @@
     "prioridadeCuradoria": 14
   },
   {
-    "id": "assassin-s-creed-chronicles-trilogy-xbox-one",
-    "nome": "ASSASSIN'S CREED: CHRONICLES TRILOGY- XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1595950880,
-    "precoVendaEUR": 5.99,
-    "precoOriginalEUR": 24.99,
-    "trailer": "https://www.youtube.com/embed/idosIQPtXdw",
-    "screenshots": [
-      "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/ASSASSINSCREEDCHRONICLESTRILOGY_6cd303fb-1fc3-47e3-b7c9-69e8d7e9d9bf.png?v=1786234135"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/ASSASSINSCREEDCHRONICLESTRILOGY_6cd303fb-1fc3-47e3-b7c9-69e8d7e9d9bf.png?v=1786234135",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Chronicles",
-    "steamGridMatchScore": 0.783,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-trilogy-xbox-one-series-s-x-midia-digital-hiof8/",
-    "enriquecido": false
-  },
-  {
-    "id": "assassin-s-creed-the-ezio-collection-xbox-one",
-    "nome": "ASSASSIN'S CREED: THE EZIO COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1595947056,
-    "precoVendaEUR": 13.99,
-    "precoOriginalEUR": 21.99,
-    "trailer": "https://www.youtube.com/embed/lZPQ2ijCgVw",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/27f/27f621165b23ff6481715799eb36a32a.jpg",
-      "https://media.rawg.io/media/screenshots/e44/e44b226d40f2d1f65e87deb9b1e7b383.jpg",
-      "https://media.rawg.io/media/screenshots/cbd/cbdabe538b7de4b92321d48ea317ac60.jpg",
-      "https://media.rawg.io/media/screenshots/c61/c615b8d38593349a46567c4fc1cab16f.jpg",
-      "https://media.rawg.io/media/screenshots/04b/04be3d5adba2c4458c36b23ba82c8c5c.jpg"
-    ],
-    "descricao": "Make history as the legendary Master Assassin, Ezio Auditore da Firenze, in Assassin’s Creed® The Ezio Collection, which includes the acclaimed single-player campaigns and single-player add-on content* from three games: Assassin’s Creed® II, Assassin’s Creed® Brotherhood, and Assassin’s Creed® Re...",
-    "imagemFallback": "https://media.rawg.io/media/games/efd/efd50d3cf0ebe96aa77b81e29ea3540f.jpg",
-    "released": "2016-11-15",
-    "rating": 4.41,
-    "ratings_count": 153,
-    "added": 1106,
-    "genres": [
-      "Action"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/19b3e1ae000c02ade1b4be887b588700.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed: The Ezio Collection",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-the-ezio-collection-xbox-one-series-s-x-midia-digital-pa3ux/",
-    "enriquecido": true
-  },
-  {
-    "id": "assassins-creed-origins-xbox-one",
-    "nome": "ASSASSINS CREED ORIGINS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1542729948,
-    "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 14.99,
-    "trailer": "https://www.youtube.com/embed/cK4iAjzAoas",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65616-7a8eedb5f4be44f71217813140371967-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65616-7a8eedb5f4be44f71217813140371967-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Origins",
-    "steamGridMatchScore": 0.735,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
-    "enriquecido": false
-  },
-  {
-    "id": "assassins-creed-unity-xbox-one",
-    "nome": "ASSASSINS CREED UNITY - MIDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1364759249,
-    "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 12.99,
-    "trailer": "https://www.youtube.com/embed/UL11MyWoP0U",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_7720-11628a7d81021e919c17630549206203-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_7720-11628a7d81021e919c17630549206203-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Unity",
-    "steamGridMatchScore": 0.733,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/",
-    "enriquecido": false
-  },
-  {
     "id": "assetto-corsa-competizione-xbox-one",
     "nome": "ASSETTO CORSA COMPETIZIONE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -1030,7 +1043,7 @@
   },
   {
     "id": "assetto-corsa-xbox-one",
-    "nome": "ASSETTO CORSA – XBOX ONE – MÍDIA DIGITAL",
+    "nome": "ASSETTO CORSA – XBOX ONE & SERIES S/X – MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471407317,
@@ -1569,6 +1582,39 @@
     "enriquecido": false
   },
   {
+    "id": "call-of-duty-infinite-warfare-xbox-one",
+    "nome": "CALL OF DUTY: INFINITE WARFARE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608114015,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 17.99,
+    "trailer": "https://www.youtube.com/embed/EeF3UTkCoxY",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/705/705820f9bb91e024283d5aa8914202cf.jpg",
+      "https://media.rawg.io/media/screenshots/186/18603afec3ad01e5e4de172d32b4fec4.jpg",
+      "https://media.rawg.io/media/screenshots/2e3/2e3f560b468653963f6656502981364e.jpg",
+      "https://media.rawg.io/media/screenshots/aca/aca85da5bb9d8044a9c9446e9bc888b8.jpg",
+      "https://media.rawg.io/media/screenshots/6ec/6ec95514271c8be2d3d499e4cffba8b9.jpg"
+    ],
+    "descricao": "Thirteenth in a row the main game of the series Call of Duty The single player campaign of this game takes action far beyond our planet. Earthlings do not have enough resources, they go after them to other planets, organize colonies, but at some point the inhabitants of the colony on Mars begin t...",
+    "imagemFallback": "https://media.rawg.io/media/games/6f7/6f7341dd656910be2c2cda39193a7ec9.jpg",
+    "released": "2016-11-04",
+    "rating": 3.58,
+    "ratings_count": 632,
+    "added": 3307,
+    "genres": [
+      "Action",
+      "Shooter"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/46c07dce83da31aba27b076ebb36863e.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Call of Duty: Infinite Warfare",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/the-evil-within-1-xbox-one-xbox-series-s-x-midia-digital-copia-1vh27/",
+    "enriquecido": true
+  },
+  {
     "id": "call-of-duty-modern-warfare-xbox-one",
     "nome": "CALL OF DUTY: MODERN WARFARE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -1777,10 +1823,7 @@
     "steamGridMatchedName": "Construction Simulator",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/little-nightmares-iii-xbox-one-xbox-series-s-x-midia-digital-copia-xyj32/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "construction-simulator-2-xbox-one",
@@ -1806,10 +1849,7 @@
     "steamGridMatchedName": "Construction Simulator",
     "steamGridMatchScore": 0.817,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/construction-simulator-3-xbox-one-xbox-series-s-x-midia-digital-copia-lq24p/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "construction-simulator-3-xbox-one",
@@ -1835,10 +1875,7 @@
     "steamGridMatchedName": "Construction Simulator 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/construction-simulator-xbox-one-xbox-series-s-x-midia-digital-copia-c8ezn/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "crash-bandicoot-4-xbox-one",
@@ -1919,6 +1956,35 @@
     "enriquecido": false
   },
   {
+    "id": "crash-pack-quadrilogia-xbox-one",
+    "nome": "CRASH PACK QUADRILOGIA - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608111663,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/crash-pack-quadrilogia-53ad5a747023b6302c17907036127003-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/crash-pack-quadrilogia-53ad5a747023b6302c17907036127003-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Crash Time III",
+    "steamGridMatchScore": 0.325,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/pack-spyro-crash-trilogy-xbox-one-xbox-series-s-x-midia-digital-copia-jy28l/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
     "id": "crash-trilogy-xbox-one",
     "nome": "CRASH TRILOGY - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -1977,9 +2043,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/sniper-elite-4-xbox-one-xbox-series-s-x-midia-digital-copia-fz5hz/",
     "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 13
   },
@@ -2201,6 +2264,37 @@
     "enriquecido": false
   },
   {
+    "id": "death-stranding-diretor-cut-xbox-one",
+    "nome": "DEATH STRANDING DIRETOR CUT - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608110051,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/death-stranding-diretor-cut-aa4adb6875239e49f217907034912946-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/death-stranding-diretor-cut-aa4adb6875239e49f217907034912946-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Death Stranding Director's Cut",
+    "steamGridMatchScore": 0.74,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 39
+  },
+  {
     "id": "diablo-iv-xbox-one",
     "nome": "DIABLO IV - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -2234,6 +2328,35 @@
     "enriquecido": true,
     "destaqueHome": true,
     "prioridadeCuradoria": 18
+  },
+  {
+    "id": "dmc4se-demon-hunter-bundle-xbox-one",
+    "nome": "DMC4SE DEMON HUNTER BUNDLE - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608118494,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/dmc4se-demon-hunter-bundle-c45258d745fa1c59ff17907040135078-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/dmc4se-demon-hunter-bundle-c45258d745fa1c59ff17907040135078-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": null,
+    "steamGridMatchScore": 0,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "dragon-ball-xenoverse-xbox-one",
@@ -2620,10 +2743,39 @@
     "steamGridMatchedName": "Far Cry Primal",
     "steamGridMatchScore": 0.511,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/biomutant-xbox-one-xbox-series-s-x-midia-digital-copia-14wj4/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
+  },
+  {
+    "id": "far-cry-4-xbox-one",
+    "nome": "FAR CRY 4 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608109403,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 8.99,
+    "trailer": "https://www.youtube.com/embed/xI6uV47jKME",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/62c/62c6f076bfb258f12e925ff12e56dad4.jpg",
+      "https://media.rawg.io/media/screenshots/a6e/a6e31bb99bdd48ee3e6cef291a053e6a.jpg",
+      "https://media.rawg.io/media/screenshots/8a1/8a160808e4bc188df008a6a6ac12ce22.jpg",
+      "https://media.rawg.io/media/screenshots/f83/f8382bf9f3c4777f6883f0b1fff3f43a.jpg",
+      "https://media.rawg.io/media/screenshots/796/7969e6a5c9c626960eb380de01a9c2ae.jpg"
+    ],
+    "descricao": "Far Cry 4 is a first-person shooter, which inherits traditions of the original Far Cry franchise. However, the plot of the fourth chapter is unique and has no direct references to the previous games of the series. The story is now set in the Far East, where the new main character Ajay Gale joins...",
+    "imagemFallback": "https://media.rawg.io/media/games/b39/b396dac1f3e0f538841aa0355dd066d3.jpg",
+    "released": "2014-11-18",
+    "rating": 3.82,
+    "ratings_count": 1950,
+    "added": 7779,
+    "genres": [
+      "Shooter"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/19e8eca3844064c94a2f9c838df1541d.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Far Cry 4",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/five-night-at-freddys-security-breach-xbox-one-xbox-series-s-x-midia-digital-copia-1b3k4/",
+    "enriquecido": true
   },
   {
     "id": "farm-manager-2022-xbox-one",
@@ -2797,10 +2949,7 @@
     "steamGridMatchedName": "Final Fantasy IX",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dragon-ball-xenoverse-xbox-one-xbox-series-s-x-midia-digital-copia-8ty3y/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "final-fantasy-vii-xbox-one",
@@ -2860,10 +3009,7 @@
     "steamGridMatchedName": "Final Fantasy XII",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/final-fantasy-xv-xbox-one-xbox-series-s-x-midia-digital-copia-12h9i/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "final-fantasy-xv-xbox-one",
@@ -2889,9 +3035,35 @@
     "steamGridMatchedName": "Final Fantasy XV",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/five-nights-at-freddys-3-xbox-one-xbox-series-s-x-midia-digital-copia-by6lz/",
+    "enriquecido": false
+  },
+  {
+    "id": "five-night-at-freddys-security-breach-xbox-one",
+    "nome": "FIVE NIGHT AT FREDDYS SECURITY BREACH - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608108595,
+    "precoVendaEUR": 47.99,
+    "precoOriginalEUR": 47.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Five Nights at Freddy's: Security Breach",
+    "steamGridMatchScore": 0.747,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/",
     "enriquecido": false,
     "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
+    "steamGridGridStyle": null,
     "steamGridNeedsReview": false
   },
   {
@@ -2926,10 +3098,7 @@
     "steamGridMatchedName": "Five Nights at Freddy's 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/final-fantasy-ix-xbox-one-xbox-series-s-x-midia-digital-copia-11olr/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "five-nights-at-freddy-s-3-xbox-one",
@@ -2963,10 +3132,7 @@
     "steamGridMatchedName": "Five Nights at Freddy's 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/five-nights-at-freddys-4-xbox-one-xbox-series-s-x-midia-digital-copia-1mjz5/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "five-nights-at-freddy-s-4-xbox-one",
@@ -3000,10 +3166,7 @@
     "steamGridMatchedName": "Five Nights at Freddy's 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/five-nights-at-freddys-2-xbox-one-xbox-series-s-x-midia-digital-copia-1xyvp/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "fobia-st-dinfna-hotel-xbox-one",
@@ -3211,10 +3374,7 @@
     "steamGridMatchedName": "Guardians of Graxia",
     "steamGridMatchScore": 0.28,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/cyberpunk-2077-xbox-one-xbox-series-s-x-midia-digital-copia-1h43y/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "hitman-world-of-assassinations-xbox-one",
@@ -3240,10 +3400,7 @@
     "steamGridMatchedName": "Hitman: World of Assassination",
     "steamGridMatchScore": 0.82,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mxgp-2-the-official-motocross-videogame-xbox-one-xbox-series-s-x-midia-digital-copia-9ccee/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "hogwarts-legacy-xbox-one",
@@ -3397,10 +3554,7 @@
     "steamGridMatchedName": "Inside Me",
     "steamGridMatchScore": 0.533,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mxgp-2020-xbox-one-xbox-series-s-x-midia-digital-copia-1wngl/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "it-takes-two-xbox-one",
@@ -3570,10 +3724,7 @@
     "steamGridMatchedName": "LEGO Star Wars: The Skywalker Saga",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/borderlands-3-xbox-one-xbox-series-s-x-midia-digital-copia-v70v5/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "little-nightmares-xbox-one",
@@ -3673,10 +3824,7 @@
     "steamGridMatchedName": "Little Nightmares III",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/inside-e-limbo-xbox-one-xbox-series-s-x-midia-digital-copia-1ialp/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "mad-max-xbox-one",
@@ -3827,6 +3975,107 @@
     "steamGridMatchScore": 0.833,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/marvel-vs-capcom-xbox-one-xbox-series-s-x-midia-digital-1q6de/",
     "enriquecido": true
+  },
+  {
+    "id": "mega-man-11-xbox-one",
+    "nome": "MEGA MAN 11 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608106799,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/a7d/a7d47833ef6d71117a8085ebb229aaac.jpeg",
+      "https://media.rawg.io/media/screenshots/e36/e36d92993a67f6d29f4ad532c4627354.jpg",
+      "https://media.rawg.io/media/screenshots/32f/32f17a28b67ca25d331e50b233bfc2ad.jpg",
+      "https://media.rawg.io/media/screenshots/cf8/cf867676f841ab88b926aa9ad70da76c.jpg",
+      "https://media.rawg.io/media/screenshots/586/586b94ab17592681c8e39c9fd8b76544.jpeg"
+    ],
+    "descricao": "Mega Man 11 is the eleventh game in the main series of Mega Man franchise. It is designed n the vein of classic 16-bit 2D platformers. ###Plot Long ago, Dr. Wily, a would-be mad scientist, created a device called the Double Gear System that could increase the powers of robots by pushing them to t...",
+    "imagemFallback": "https://media.rawg.io/media/games/f75/f751a9a43abb507bf95f9b96cc79feac.jpg",
+    "released": "2018-10-02",
+    "rating": 3.73,
+    "ratings_count": 90,
+    "added": 769,
+    "genres": [
+      "Action",
+      "Platformer"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/500d31031848afb093d714c7c569bfdc.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man 11",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-x-xbox-one-xbox-series-s-x-midia-digital-copia-23quy/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "mega-man-x-xbox-one",
+    "nome": "MEGA MAN X- XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608105898,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-x-legacy-collection-8651b2a8192faf19dc17907032158411-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-x-legacy-collection-8651b2a8192faf19dc17907032158411-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e24927b595bdddebb71671d11f76f067.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man X",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "mega-man-zx-xbox-one",
+    "nome": "MEGA MAN ZX- XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608104575,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/81c/81c34938d07bdcac724198582acc3984.jpg",
+      "https://media.rawg.io/media/screenshots/71d/71dff89fff9ee7ccc22f5cae728e7470.jpg",
+      "https://media.rawg.io/media/screenshots/0f8/0f8beafa7b72ca3dbf11e3e34cab71f2.jpg",
+      "https://media.rawg.io/media/screenshots/735/7353393d7154a3a136cd8b688f02249d.jpg",
+      "https://media.rawg.io/media/screenshots/db5/db526f82e4e58bb7b2dadceb1ddec2cd.jpg"
+    ],
+    "descricao": "Leap into the future! A dynamic Biometal system plays the central role and gives you the ability to transform into different Model types with cool powers. Two playable characters to choose from with unique abilities for incredible action gameplay.",
+    "imagemFallback": "https://media.rawg.io/media/games/c54/c543e5089568ca7aa49af44d1f8158bd.jpg",
+    "released": "2006-09-12",
+    "rating": 3.5,
+    "ratings_count": 11,
+    "added": 45,
+    "genres": [
+      "Action",
+      "Platformer"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/848115676618836e7959dd6909273d4d.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man ZX",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/one-piece-burning-blood-xbox-one-xbox-series-s-x-midia-digital-copia-16q03/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "metro-exodus-xbox-one",
@@ -3991,6 +4240,45 @@
     "enriquecido": true
   },
   {
+    "id": "monster-hunter-wilds-xbox-one",
+    "nome": "MONSTER HUNTER WILDS - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608115363,
+    "precoVendaEUR": 28.99,
+    "precoOriginalEUR": 28.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/ec9/ec90763ad76a7cd2e5ab9eefb418af60.jpg",
+      "https://media.rawg.io/media/screenshots/546/546ef773017e74dc4b245d3d60a0710c.jpg",
+      "https://media.rawg.io/media/screenshots/1f7/1f7d5735774b1e1af0d0dc0a13cfde18.jpg",
+      "https://media.rawg.io/media/screenshots/abd/abdc1c59c9dcabdb1755207fe65957a9.jpg",
+      "https://media.rawg.io/media/screenshots/3f4/3f474a88f4ee5134d772171501008c02.jpg"
+    ],
+    "descricao": "Monster Hunter Wilds. The next generation in the genre defining series. Launching in 2025 on PS5, Xbox Series X|S, and PC/Steam.",
+    "imagemFallback": "https://media.rawg.io/media/games/91b/91b4edd8fecf88b2b5ca0752321382ee.jpg",
+    "released": "2025-02-27",
+    "rating": 4.14,
+    "ratings_count": 40,
+    "added": 287,
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6f3171a0d40d400b4543cdd06ca0de3c.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Monster Hunter Wilds",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-infinite-warfare-xbox-one-xbox-series-s-x-midia-digital-copia-m82ei/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 48
+  },
+  {
     "id": "mortal-kombat-11-xbox-one",
     "nome": "MORTAL KOMBAT 11 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -4107,10 +4395,7 @@
     "steamGridMatchedName": "MXGP - The Official Motocross Videogame",
     "steamGridMatchScore": 0.903,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/f1-24-xbox-one-xbox-series-s-x-midia-digital-copia-110td/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "mxgp-2019-xbox-one",
@@ -4136,10 +4421,7 @@
     "steamGridMatchedName": "MXGP PRO",
     "steamGridMatchScore": 0.467,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mxgp-2026-xbox-one-xbox-series-s-x-midia-digital-copia-x5mix/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "mxgp-2020-xbox-one",
@@ -4165,39 +4447,7 @@
     "steamGridMatchedName": "MXGP PRO",
     "steamGridMatchScore": 0.467,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mxgp-2019-xbox-one-xbox-series-s-x-midia-digital-copia-1ia0u/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
-  },
-  {
-    "id": "mxgp-2026-xbox-one",
-    "nome": "MXGP 2026 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1607599991,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 8.99,
-    "trailer": "",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-15-1f6cd77b25b6a1061417906337454700-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-15-1f6cd77b25b6a1061417906337454700-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "MXGP PRO",
-    "steamGridMatchScore": 0.467,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/mxgp-pro-xbox-one-xbox-series-s-x-midia-digital-copia-19aop/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "mxgp-pro-xbox-one",
@@ -4231,10 +4481,7 @@
     "steamGridMatchedName": "MXGP PRO",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tekken-7-xbox-one-xbox-series-s-x-midia-digital-copia-13yko/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "naruto-shippuden-ultimate-ninja-storm-4-xbox-one",
@@ -4544,6 +4791,73 @@
     "enriquecido": true
   },
   {
+    "id": "one-piece-burning-blood-xbox-one",
+    "nome": "ONE PIECE: BURNING BLOOD - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608103024,
+    "precoVendaEUR": 4.99,
+    "precoOriginalEUR": 7.99,
+    "trailer": "https://www.youtube.com/embed/_ivKlZ9HtGM",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/0fc/0fc7b5c5d49a24a00a22915e606adc51.jpg",
+      "https://media.rawg.io/media/screenshots/d1f/d1f67c5507ae948f8a5a07cc37a06dfc.jpg",
+      "https://media.rawg.io/media/screenshots/19c/19cd0f70378bd8515a51a98424a12291.jpg",
+      "https://media.rawg.io/media/screenshots/6b5/6b599b30eb3357aa7e66da40b725a838.jpg",
+      "https://media.rawg.io/media/screenshots/023/0230b308e597c2f1c696e3f707408dd0.jpg"
+    ],
+    "descricao": "Set sail with the Straw Hat Crew and collect your bounty in One Piece: Burning Blood, the most epic anime fighter this side of the Grand Line! Features – King of the Pirates - Take to the sea in this dynamic fighter staring the world’s favorite pirate crew. Use Devil Fruit, Haki techniques, and p...",
+    "imagemFallback": "https://media.rawg.io/media/screenshots/520/520ed5686073be29438e995febc4426d.jpg",
+    "released": "2016-04-21",
+    "rating": 3.16,
+    "ratings_count": 66,
+    "added": 1012,
+    "genres": [
+      "Action",
+      "Arcade",
+      "Fighting"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/52a010213f98c7aac7b767ef262d2ba4.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "One Piece: Burning Blood",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/one-piece-world-seeker-xbox-one-xbox-series-s-x-midia-digital-copia-1j8yn/",
+    "enriquecido": true
+  },
+  {
+    "id": "one-piece-world-seeker-xbox-one",
+    "nome": "ONE PIECE: WORLD SEEKER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608101172,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "trailer": "https://www.youtube.com/embed/jKAly6teEK0",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/284/28440b38b5febaf91f226da7b14a2550.jpg",
+      "https://media.rawg.io/media/screenshots/368/368741fa2f7bc64f0350181a02ca0109.jpg",
+      "https://media.rawg.io/media/screenshots/d49/d497ccac5d4a52ca03d3929f910b4486.jpg",
+      "https://media.rawg.io/media/screenshots/07c/07c78ae4873b30947ad9b5aa28d06d37.jpg",
+      "https://media.rawg.io/media/screenshots/915/9152977b003538a425840a6e3d2ec13f.jpg"
+    ],
+    "descricao": "Pre-Purchase Offer Pre-Order this edition and get the following content: • Bathing Suit Outfit • Battle Outfit • Island Exploration Mission Digital Deluxe Edition The ONE PIECE World Seeker Deluxe Edition includes the game and the Episode Pass, which contains 3 additional episode packs and bonus...",
+    "imagemFallback": "https://media.rawg.io/media/games/d5b/d5b20d49c2b0588ac9484d2c7756f846.jpg",
+    "released": "2019-03-14",
+    "rating": 2.87,
+    "ratings_count": 45,
+    "added": 398,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cb6a8c67f75c15d2a1322a7837e07005.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "One Piece: World Seeker",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/world-war-z-xbox-one-xbox-series-s-x-midia-digital-copia-wbq3i/",
+    "enriquecido": true
+  },
+  {
     "id": "outlast-2-xbox-one",
     "nome": "OUTLAST 2 - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -4602,6 +4916,35 @@
     "steamGridMatchScore": 0.781,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/overcooked-1-2-xbox-one-xbox-series-s-x-midia-digital-15ji2/",
     "enriquecido": false
+  },
+  {
+    "id": "pack-spyro-e-crash-trilogy-xbox-one",
+    "nome": "PACK SPYRO & CRASH TRILOGY - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608110873,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 14.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/pack-spyro-crash-trilogy-924b783cc197d7a3ee17907035532554-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/pack-spyro-crash-trilogy-924b783cc197d7a3ee17907035532554-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Pack Man in Rio",
+    "steamGridMatchScore": 0.307,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "palworld-xbox-one",
@@ -4688,10 +5031,7 @@
     "steamGridMatchedName": "Poppy Playtime",
     "steamGridMatchScore": 0.792,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/final-fantasy-vii-xbox-one-xbox-series-s-x-midia-digital-copia-1i28k/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "poppy-playtime-capitulo-2-xbox-one",
@@ -5284,10 +5624,7 @@
     "steamGridMatchedName": "RoboCop",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tom-clancys-the-division-2-xbox-one-xbox-series-s-x-midia-digital-copia-hflpt/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "rooftops-e-alleys-xbox-one",
@@ -5313,10 +5650,7 @@
     "steamGridMatchedName": "Rooftops & Alleys: The Parkour Game",
     "steamGridMatchScore": 0.441,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/far-cry-4-far-cry-primal-bundle-xbox-one-xbox-series-s-x-midia-digital-copia-1putu/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "rust-console-edition-xbox-one",
@@ -5405,10 +5739,7 @@
     "steamGridMatchedName": "Saints Row",
     "steamGridMatchScore": 0.667,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/rust-console-edition-xbox-one-xbox-series-s-x-midia-digital-copia-4apps/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "sekiro-xbox-one",
@@ -5501,10 +5832,7 @@
     "steamGridMatchedName": "Sniper Elite 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-crew-2-xbox-one-xbox-series-s-x-midia-digital-copia-1ttc8/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "sniper-elite-4-xbox-one",
@@ -5630,10 +5958,7 @@
     "steamGridMatchedName": "SnowRunner",
     "steamGridMatchScore": 0.7,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/saints-row-gold-xbox-one-xbox-series-s-x-midia-digital-copia-10o6o/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "sonic-frontiers-xbox-one",
@@ -5794,10 +6119,7 @@
     "steamGridMatchedName": "Spyro Superpack",
     "steamGridMatchScore": 0.4,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/tony-hawks-skater-12-xbox-one-xbox-series-s-x-midia-digital-copia-z6gqs/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "star-wars-jedi-fallen-order-xbox-one",
@@ -5833,6 +6155,43 @@
     "enriquecido": true,
     "destaqueHome": true,
     "prioridadeCuradoria": 22
+  },
+  {
+    "id": "star-wars-bounty-hunter-xbox-one",
+    "nome": "STAR WARS: BOUNTY HUNTER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608117516,
+    "precoVendaEUR": 26.99,
+    "precoOriginalEUR": 26.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/e24/e241a1ea2fd319113bc5576d50e437aa.jpg",
+      "https://media.rawg.io/media/screenshots/015/015038a61e32ecf6ca4a1025f37c83d4.jpg",
+      "https://media.rawg.io/media/screenshots/a77/a77d47da20353d1c48b5ec4f0a5f4502.jpg",
+      "https://media.rawg.io/media/screenshots/0df/0dfd38320546690db542387d364970df.jpg",
+      "https://media.rawg.io/media/screenshots/4d9/4d9c601ffcacd01e0bb4768ecba89885.jpg"
+    ],
+    "descricao": "Bring In Your Bounty, Dead or Alive Let the Hunt Begin In this classic third-person action-adventure, you'll become Jango Fett, Prime Clone of the Grand Army of the Republic, hired to capture a deranged Dark Jedi. Relive the Timeless Tale Experience the legendary Bounty Hunter fantasy set before...",
+    "imagemFallback": "https://media.rawg.io/media/screenshots/3fe/3fe7e18172056da6734e327f84cf74ae.jpg",
+    "released": "2002-11-19",
+    "rating": 3.51,
+    "ratings_count": 56,
+    "added": 617,
+    "genres": [
+      "Action",
+      "Shooter",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ca9fb1d01fb6c899ef4095abc2d3ea13.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Star Wars: Bounty Hunter",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/monster-hunter-wilds-xbox-one-xbox-series-s-x-midia-digital-copia-187ln/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "stranded-deep-xbox-one",
@@ -5900,10 +6259,7 @@
     "steamGridMatchedName": "Stray",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/stranded-deep-xbox-one-xbox-series-s-x-midia-digital-copia-ca3m9/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "stumble-guys-xbox-one",
@@ -6001,10 +6357,7 @@
     "steamGridMatchedName": "Terminator: Resistance",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/stray-xbox-one-xbox-series-s-x-midia-digital-copia-chk05/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "terraria-xbox-one",
@@ -6039,11 +6392,37 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/terminator-resistance-xbox-one-xbox-series-s-x-midia-digital-copia-w1i24/",
     "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 29
+  },
+  {
+    "id": "the-backrooms-1998-xbox-one",
+    "nome": "THE BACKROOMS 1998 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608107270,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-backrooms-1998-f8a0d50e16b879bc1317907033186239-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-backrooms-1998-f8a0d50e16b879bc1317907033186239-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Backrooms",
+    "steamGridMatchScore": 0.7,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-crew-2-xbox-one",
@@ -6138,6 +6517,69 @@
     "enriquecido": false
   },
   {
+    "id": "the-evil-within-1-xbox-one",
+    "nome": "THE EVIL WITHIN 1 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608113404,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 10.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-1-f68618e2d1e575958417907037157259-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-1-f68618e2d1e575958417907037157259-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Evil Within",
+    "steamGridMatchScore": 0.829,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "the-evil-within-2-xbox-one",
+    "nome": "THE EVIL WITHIN 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1608112480,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 10.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/540/54002d97419f093d6a06f2424f95ead6.jpg",
+      "https://media.rawg.io/media/screenshots/291/291aa4c9e9502d0523f290f16547ba0b.jpg",
+      "https://media.rawg.io/media/screenshots/006/006560ea60c6c9e978a8fe4a58c964e7.jpg",
+      "https://media.rawg.io/media/screenshots/7a5/7a5c7da8a56ae1f80c2d88ca8ca4ab4f.jpg",
+      "https://media.rawg.io/media/screenshots/bf5/bf5cf2a8ce47968057a953cde5696776.jpg"
+    ],
+    "descricao": "The Evil Within 2 is survival horror game with an accent to the cinematic gameplay and crafting mechanics. This is the second title in the series by Tango Gameworks. ###Gameplay The game is experienced in the third person, \"behind-the-shoulder\" view. One of the title's main attractions is the aut...",
+    "imagemFallback": "https://media.rawg.io/media/games/d5f/d5fd2f970f48d0877a53aec98825faba.jpg",
+    "released": "2017-10-11",
+    "rating": 4.14,
+    "ratings_count": 830,
+    "added": 4491,
+    "genres": [
+      "Action",
+      "Shooter",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/231a171b205742febf998a329042ba9c.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Evil Within 2",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/crash-pack-quadrilogia-xbox-one-xbox-series-s-x-midia-digital-copia-x71o8/",
+    "enriquecido": true
+  },
+  {
     "id": "the-king-of-fighters-95-xbox-one",
     "nome": "THE KING OF FIGHTERS 95 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -6167,10 +6609,7 @@
     "steamGridMatchedName": "The King of Fighters '95",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/top-racer-collection-xbox-one-xbox-series-s-x-midia-digital-copia-t9bkg/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "the-king-of-fighters-97-xbox-one",
@@ -6205,10 +6644,7 @@
     "steamGridMatchedName": "The King of Fighters '97",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-king-of-fighters-95-xbox-one-xbox-series-s-x-midia-digital-copia-1umfi/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "the-witcher-3-wild-hunt-xbox-one",
@@ -6347,44 +6783,6 @@
     "enriquecido": true
   },
   {
-    "id": "tom-clancy-s-the-division-2-xbox-one",
-    "nome": "TOM CLANCY´S THE DIVISION 2 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": 1607673432,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 10.99,
-    "trailer": "",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/0ce/0ced27ee19b2e4d1973fb2a2bb3b430b.jpg",
-      "https://media.rawg.io/media/screenshots/e8b/e8bba37f26a35afbac30a1a5acf3c06c.jpg",
-      "https://media.rawg.io/media/screenshots/9d0/9d0e70e7c4553e144ca104328af4bd72.jpg",
-      "https://media.rawg.io/media/screenshots/4fe/4fe34cf6ef1ac6995c8c69c587cf5f16.jpg",
-      "https://media.rawg.io/media/screenshots/43f/43f25bf2aee2502929d63b23f9c9d969.jpg"
-    ],
-    "descricao": "Tom Clancy's The Division 2 is the sequel to the 2016 Tom Clancy's The Division. The game is inspired by the Tom Clancy political thriller books. ###Plot The game is set in the ruins of Washington D.C. in the near future, some seven months after the events of the original game. The smallpox epide...",
-    "imagemFallback": "https://media.rawg.io/media/games/0e5/0e5e869f2e8f496b3f09e00187ea94fc.jpg",
-    "released": "2019-03-15",
-    "rating": 3.74,
-    "ratings_count": 777,
-    "added": 3298,
-    "genres": [
-      "Action",
-      "Shooter",
-      "Adventure",
-      "RPG"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/b5706dc9508d67a01718c142ca80b8b4.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Tom Clancy’s The Division 2",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/tony-hawks-skater-12-xbox-one-xbox-series-s-x-midia-digital-copia-14od9/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
-  },
-  {
     "id": "tomb-raider-definitive-edition-xbox-one",
     "nome": "TOMB RAIDER: DEFINITIVE EDITION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -6504,10 +6902,7 @@
     "steamGridMatchedName": "Tony Hawk's Pro Skater 1 + 2",
     "steamGridMatchScore": 0.685,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/hitman-world-of-assassinations-xbox-one-xbox-series-s-x-midia-digital-copia-31fmh/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "top-racer-collection-xbox-one",
@@ -6542,10 +6937,7 @@
     "steamGridMatchedName": "Top Racer Collection",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/final-fantasy-xii-xbox-one-xbox-series-s-x-midia-digital-copia-1cilh/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "truck-simulator-cargo-driver-2025-euro-xbox-one",
@@ -6852,10 +7244,7 @@
     "steamGridMatchedName": "Wuchang: Fallen Feathers",
     "steamGridMatchScore": 0.316,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/lego-star-wars-the-skywalker-saga-xbox-one-xbox-series-s-x-midia-digital-copia-1y5gg/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "a-plague-tale-innocence-miidia-digital-xbox-one",
@@ -7370,39 +7759,6 @@
     "steamGridMatchedName": "Call of Duty: Ghosts",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/call-of-duty-ghosts-xbox-one",
-    "enriquecido": true
-  },
-  {
-    "id": "call-of-duty-infinite-warfare-xbox-one",
-    "nome": "Call of Duty Infinite Warfare – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190179266658",
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
-    "trailer": "https://www.youtube.com/embed/EeF3UTkCoxY",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/705/705820f9bb91e024283d5aa8914202cf.jpg",
-      "https://media.rawg.io/media/screenshots/186/18603afec3ad01e5e4de172d32b4fec4.jpg",
-      "https://media.rawg.io/media/screenshots/2e3/2e3f560b468653963f6656502981364e.jpg",
-      "https://media.rawg.io/media/screenshots/aca/aca85da5bb9d8044a9c9446e9bc888b8.jpg",
-      "https://media.rawg.io/media/screenshots/6ec/6ec95514271c8be2d3d499e4cffba8b9.jpg"
-    ],
-    "descricao": "Thirteenth in a row the main game of the series Call of Duty The single player campaign of this game takes action far beyond our planet. Earthlings do not have enough resources, they go after them to other planets, organize colonies, but at some point the inhabitants of the colony on Mars begin t...",
-    "imagemFallback": "https://media.rawg.io/media/games/6f7/6f7341dd656910be2c2cda39193a7ec9.jpg",
-    "released": "2016-11-04",
-    "rating": 3.58,
-    "ratings_count": 632,
-    "added": 3307,
-    "genres": [
-      "Action",
-      "Shooter"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/46c07dce83da31aba27b076ebb36863e.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Call of Duty: Infinite Warfare",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/call-of-duty-infinite-warfare-xbox-one",
     "enriquecido": true
   },
   {
@@ -8303,38 +8659,6 @@
     "steamGridMatchedName": "Far Cry 3",
     "steamGridMatchScore": 0.618,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/far-cry-3-classic-edition-xbox-one",
-    "enriquecido": true
-  },
-  {
-    "id": "far-cry-4-xbox-one",
-    "nome": "Far Cry 4 - Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190172156002",
-    "precoVendaEUR": 3.99,
-    "precoOriginalEUR": 3.99,
-    "trailer": "https://www.youtube.com/embed/xI6uV47jKME",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/62c/62c6f076bfb258f12e925ff12e56dad4.jpg",
-      "https://media.rawg.io/media/screenshots/a6e/a6e31bb99bdd48ee3e6cef291a053e6a.jpg",
-      "https://media.rawg.io/media/screenshots/8a1/8a160808e4bc188df008a6a6ac12ce22.jpg",
-      "https://media.rawg.io/media/screenshots/f83/f8382bf9f3c4777f6883f0b1fff3f43a.jpg",
-      "https://media.rawg.io/media/screenshots/796/7969e6a5c9c626960eb380de01a9c2ae.jpg"
-    ],
-    "descricao": "Far Cry 4 is a first-person shooter, which inherits traditions of the original Far Cry franchise. However, the plot of the fourth chapter is unique and has no direct references to the previous games of the series. The story is now set in the Far East, where the new main character Ajay Gale joins...",
-    "imagemFallback": "https://media.rawg.io/media/games/b39/b396dac1f3e0f538841aa0355dd066d3.jpg",
-    "released": "2014-11-18",
-    "rating": 3.82,
-    "ratings_count": 1950,
-    "added": 7779,
-    "genres": [
-      "Shooter"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/19e8eca3844064c94a2f9c838df1541d.jpg",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Far Cry 4",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/far-cry-4-xbox-one",
     "enriquecido": true
   },
   {
@@ -10110,40 +10434,6 @@
     "enriquecido": true
   },
   {
-    "id": "one-piece-burning-blood-xbox-one",
-    "nome": "One Piece Burning Blood – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190170746978",
-    "precoVendaEUR": 11.99,
-    "precoOriginalEUR": 11.99,
-    "trailer": "https://www.youtube.com/embed/_ivKlZ9HtGM",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/0fc/0fc7b5c5d49a24a00a22915e606adc51.jpg",
-      "https://media.rawg.io/media/screenshots/d1f/d1f67c5507ae948f8a5a07cc37a06dfc.jpg",
-      "https://media.rawg.io/media/screenshots/19c/19cd0f70378bd8515a51a98424a12291.jpg",
-      "https://media.rawg.io/media/screenshots/6b5/6b599b30eb3357aa7e66da40b725a838.jpg",
-      "https://media.rawg.io/media/screenshots/023/0230b308e597c2f1c696e3f707408dd0.jpg"
-    ],
-    "descricao": "Set sail with the Straw Hat Crew and collect your bounty in One Piece: Burning Blood, the most epic anime fighter this side of the Grand Line! Features – King of the Pirates - Take to the sea in this dynamic fighter staring the world’s favorite pirate crew. Use Devil Fruit, Haki techniques, and p...",
-    "imagemFallback": "https://media.rawg.io/media/screenshots/520/520ed5686073be29438e995febc4426d.jpg",
-    "released": "2016-04-21",
-    "rating": 3.16,
-    "ratings_count": 66,
-    "added": 1012,
-    "genres": [
-      "Action",
-      "Arcade",
-      "Fighting"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/52a010213f98c7aac7b767ef262d2ba4.jpg",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "One Piece: Burning Blood",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/one-piece-burning-blood-xbox-one",
-    "enriquecido": true
-  },
-  {
     "id": "one-piece-pirate-warriors-4-xbox-one",
     "nome": "One Piece Pirate Warriors 4 - Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -10173,39 +10463,6 @@
     "steamGridMatchedName": "One Piece: Pirate Warriors 4",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/one-piece-pirate-warriors-4-xbox-one",
-    "enriquecido": true
-  },
-  {
-    "id": "one-piece-world-seeker-xbox-one",
-    "nome": "One Piece World Seeker – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190169174114",
-    "precoVendaEUR": 11.99,
-    "precoOriginalEUR": 11.99,
-    "trailer": "https://www.youtube.com/embed/jKAly6teEK0",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/284/28440b38b5febaf91f226da7b14a2550.jpg",
-      "https://media.rawg.io/media/screenshots/368/368741fa2f7bc64f0350181a02ca0109.jpg",
-      "https://media.rawg.io/media/screenshots/d49/d497ccac5d4a52ca03d3929f910b4486.jpg",
-      "https://media.rawg.io/media/screenshots/07c/07c78ae4873b30947ad9b5aa28d06d37.jpg",
-      "https://media.rawg.io/media/screenshots/915/9152977b003538a425840a6e3d2ec13f.jpg"
-    ],
-    "descricao": "Pre-Purchase Offer Pre-Order this edition and get the following content: • Bathing Suit Outfit • Battle Outfit • Island Exploration Mission Digital Deluxe Edition The ONE PIECE World Seeker Deluxe Edition includes the game and the Episode Pass, which contains 3 additional episode packs and bonus...",
-    "imagemFallback": "https://media.rawg.io/media/games/d5b/d5b20d49c2b0588ac9484d2c7756f846.jpg",
-    "released": "2019-03-14",
-    "rating": 2.87,
-    "ratings_count": 45,
-    "added": 398,
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cb6a8c67f75c15d2a1322a7837e07005.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "One Piece: World Seeker",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/one-piece-world-seeker-xbox-one",
     "enriquecido": true
   },
   {
@@ -11427,40 +11684,6 @@
     "steamGridMatchedName": "The Evil Within",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/the-evil-within-xbox-one",
-    "enriquecido": true
-  },
-  {
-    "id": "the-evil-within-2-xbox-one",
-    "nome": "The Evil Within 2 Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190237331554",
-    "precoVendaEUR": 5.99,
-    "precoOriginalEUR": 5.99,
-    "trailer": "",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/540/54002d97419f093d6a06f2424f95ead6.jpg",
-      "https://media.rawg.io/media/screenshots/291/291aa4c9e9502d0523f290f16547ba0b.jpg",
-      "https://media.rawg.io/media/screenshots/006/006560ea60c6c9e978a8fe4a58c964e7.jpg",
-      "https://media.rawg.io/media/screenshots/7a5/7a5c7da8a56ae1f80c2d88ca8ca4ab4f.jpg",
-      "https://media.rawg.io/media/screenshots/bf5/bf5cf2a8ce47968057a953cde5696776.jpg"
-    ],
-    "descricao": "The Evil Within 2 is survival horror game with an accent to the cinematic gameplay and crafting mechanics. This is the second title in the series by Tango Gameworks. ###Gameplay The game is experienced in the third person, \"behind-the-shoulder\" view. One of the title's main attractions is the aut...",
-    "imagemFallback": "https://media.rawg.io/media/games/d5f/d5fd2f970f48d0877a53aec98825faba.jpg",
-    "released": "2017-10-11",
-    "rating": 4.14,
-    "ratings_count": 830,
-    "added": 4491,
-    "genres": [
-      "Action",
-      "Shooter",
-      "Adventure"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/231a171b205742febf998a329042ba9c.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "The Evil Within 2",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/the-evil-within-2-xbox-one",
     "enriquecido": true
   },
   {
