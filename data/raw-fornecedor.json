@@ -1812,8 +1812,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 94.9,
-          "custoSemPixBRL": 99.9,
+          "custoPixBRL": 85.4,
+          "custoSemPixBRL": 89.9,
           "url": "https://www.lojatcagames.com.br/products/call-of-duty-black-ops-7-ps4"
         }
       ]
@@ -8000,8 +8000,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 123.4,
-          "custoSemPixBRL": 129.9,
+          "custoPixBRL": 94.9,
+          "custoSemPixBRL": 99.9,
           "url": "https://www.lojatcagames.com.br/products/naruto-x-boruto-ultimate-ninja-storm-connections-ps4"
         }
       ]
@@ -10214,8 +10214,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 113.9,
-          "custoSemPixBRL": 119.9,
+          "custoPixBRL": 75.9,
+          "custoSemPixBRL": 79.9,
           "url": "https://www.lojatcagames.com.br/products/sniper-elite-resistance-ps4"
         }
       ]
@@ -10385,8 +10385,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/sonic-frontiers-ps4"
         }
       ]
@@ -15242,11 +15242,11 @@
     {
       "id": "prince-of-persia-the-lost-crown-ps4",
       "nome": "Prince of Persia The Lost Crown - PS4 Mídia Digital",
-      "precoAtualBRL": 61.65,
-      "precoPixBRL": 61.65,
-      "precoSemPixBRL": 64.9,
+      "precoAtualBRL": 47.4,
+      "precoPixBRL": 47.4,
+      "precoSemPixBRL": 49.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 64.9,
+      "precoOriginalBRL": 49.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/PrinceofPersia.jpg?v=1786233972",
@@ -15260,8 +15260,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 61.65,
-          "custoSemPixBRL": 64.9,
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps4"
         }
       ]
@@ -15344,33 +15344,6 @@
           "custoPixBRL": 37.9,
           "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/resident-evil-hd-remastered-ps4"
-        }
-      ]
-    },
-    {
-      "id": "resident-evil-pacote-triplo-ps4",
-      "nome": "Resident Evil Pacote Triplo PS4 Mídia Digital",
-      "precoAtualBRL": 66.4,
-      "precoPixBRL": 66.4,
-      "precoSemPixBRL": 69.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 69.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/resident-evil-pacote-triplo-ps4",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/RE_Triple_Pack_c160a885-ca73-41ba-a988-c818fad1f242.jpg?v=1786233611",
-      "plataforma": "PlayStation 4",
-      "plataformaKey": "ps4",
-      "fornecedorProductId": "7762819514466",
-      "varianteFornecedorId": "43190160883810",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
-          "url": "https://www.lojatcagames.com.br/products/resident-evil-pacote-triplo-ps4"
         }
       ]
     },
@@ -16160,11 +16133,11 @@
     {
       "id": "tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps4",
       "nome": "Tomb Raider I-II-III Remastered Starring Lara Croft – PS4 Mídia Digital",
-      "precoAtualBRL": 75.9,
-      "precoPixBRL": 75.9,
-      "precoSemPixBRL": 79.9,
+      "precoAtualBRL": 56.9,
+      "precoPixBRL": 56.9,
+      "precoSemPixBRL": 59.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 79.9,
+      "precoOriginalBRL": 59.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/TombRaiderI-IIIRemasteredPS4.jpg?v=1786234192",
@@ -16178,8 +16151,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 75.9,
-          "custoSemPixBRL": 79.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps4"
         }
       ]
@@ -16433,8 +16406,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 94.9,
-          "custoSemPixBRL": 99.9,
+          "custoPixBRL": 75.9,
+          "custoSemPixBRL": 79.9,
           "url": "https://www.lojatcagames.com.br/products/a-ascensao-do-ronin-ps5"
         }
       ]
@@ -17803,8 +17776,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 161.4,
-          "custoSemPixBRL": 169.9,
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
           "url": "https://www.lojatcagames.com.br/products/battlefield-6-ps5"
         }
       ]
@@ -18095,13 +18068,6 @@
           "custoPixBRL": 60.36,
           "custoSemPixBRL": 64.9,
           "url": "https://www.alphagames.com.br/produtos/bob-esponja-the-cosmic-shake-ps5-midia-digital-vxuc8/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 85.4,
-          "custoSemPixBRL": 89.9,
-          "url": "https://www.lojatcagames.com.br/products/bob-esponja-the-cosmic-shake-ps5"
         }
       ]
     },
@@ -20818,8 +20784,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 180.4,
-          "custoSemPixBRL": 189.9,
+          "custoPixBRL": 132.9,
+          "custoSemPixBRL": 139.9,
           "url": "https://www.lojatcagames.com.br/products/dragon-age-the-veilguard-ps5"
         }
       ]
@@ -21014,8 +20980,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 189.9,
-          "custoSemPixBRL": 199.9,
+          "custoPixBRL": 142.4,
+          "custoSemPixBRL": 149.9,
           "url": "https://www.lojatcagames.com.br/products/dragon-s-dogma-2-ps5"
         }
       ]
@@ -22188,8 +22154,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 94.9,
-          "custoSemPixBRL": 99.9,
+          "custoPixBRL": 85.4,
+          "custoSemPixBRL": 89.9,
           "url": "https://www.lojatcagames.com.br/products/farming-simulator-25-ps5"
         }
       ]
@@ -23209,8 +23175,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 189.9,
-          "custoSemPixBRL": 199.9,
+          "custoPixBRL": 151.9,
+          "custoSemPixBRL": 159.9,
           "url": "https://www.lojatcagames.com.br/products/ghost-of-yotei-ps5"
         }
       ]
@@ -23262,31 +23228,6 @@
           "custoPixBRL": 51.06,
           "custoSemPixBRL": 54.9,
           "url": "https://www.alphagames.com.br/produtos/god-of-war-iii-remastered-ps5-midia-digital-gh374/"
-        }
-      ]
-    },
-    {
-      "id": "god-of-war-laufey-ps5",
-      "nome": "GOD OF WAR LAUFEY - PS5 - MÍDIA DIGITAL",
-      "precoAtualBRL": 204.51,
-      "precoPixBRL": 204.51,
-      "precoSemPixBRL": 219.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 399.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/god-of-war-laufey-ps5-midia-digital-1duxi/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368455-1f21a43b3b001b5afc17907134934719-1024-1024.webp",
-      "plataforma": "PlayStation 5",
-      "plataformaKey": "ps5",
-      "fornecedorProductId": "370776489",
-      "varianteFornecedorId": 1608331476,
-      "fornecedores": [
-        {
-          "id": "alpha",
-          "nome": "Alpha Games",
-          "custoPixBRL": 204.51,
-          "custoSemPixBRL": 219.9,
-          "url": "https://www.alphagames.com.br/produtos/god-of-war-laufey-ps5-midia-digital-1duxi/"
         }
       ]
     },
@@ -25735,6 +25676,13 @@
           "custoPixBRL": 83.61,
           "custoSemPixBRL": 89.9,
           "url": "https://www.alphagames.com.br/produtos/minecraft-dungeouns-2-ps5-midia-digital-soqyl/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 94.9,
+          "custoSemPixBRL": 99.9,
+          "url": "https://www.lojatcagames.com.br/products/minecraft-dungeons-ii-ps5"
         }
       ]
     },
@@ -25796,8 +25744,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 151.9,
-          "custoSemPixBRL": 159.9,
+          "custoPixBRL": 113.9,
+          "custoSemPixBRL": 119.9,
           "url": "https://www.lojatcagames.com.br/products/monster-hunter-wilds-ps5"
         }
       ]
@@ -26467,8 +26415,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 123.4,
-          "custoSemPixBRL": 129.9,
+          "custoPixBRL": 94.9,
+          "custoSemPixBRL": 99.9,
           "url": "https://www.lojatcagames.com.br/products/naruto-x-boruto-ultimate-ninja-storm-connections-ps5"
         }
       ]
@@ -29225,8 +29173,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 113.9,
-          "custoSemPixBRL": 119.9,
+          "custoPixBRL": 94.9,
+          "custoSemPixBRL": 99.9,
           "url": "https://www.lojatcagames.com.br/products/sniper-elite-resistance-ps5"
         }
       ]
@@ -29357,8 +29305,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 66.4,
-          "custoSemPixBRL": 69.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/sonic-frontiers-ps5"
         }
       ]
@@ -29835,8 +29783,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 85.4,
-          "custoSemPixBRL": 89.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/star-wars-outlaws-ps5"
         }
       ]
@@ -32602,33 +32550,6 @@
       ]
     },
     {
-      "id": "car-mechanic-simulator-2021-ps5",
-      "nome": "Car Mechanic Simulator 2021 - PS5 Mídia Digital",
-      "precoAtualBRL": 47.4,
-      "precoPixBRL": 47.4,
-      "precoSemPixBRL": 49.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 49.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/car-mechanic-simulator-2021-ps5",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/CarMechanicSimulator2021PS5.jpg?v=1786234197",
-      "plataforma": "PlayStation 5",
-      "plataformaKey": "ps5",
-      "fornecedorProductId": "7762841567330",
-      "varianteFornecedorId": "43190208266338",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 47.4,
-          "custoSemPixBRL": 49.9,
-          "url": "https://www.lojatcagames.com.br/products/car-mechanic-simulator-2021-ps5"
-        }
-      ]
-    },
-    {
       "id": "darksiders-warmastered-ps5",
       "nome": "Darksiders Warmastered - PS5 Mídia Digital",
       "precoAtualBRL": 75.9,
@@ -33036,11 +32957,11 @@
     {
       "id": "forza-5-ps5",
       "nome": "Forza 5 - PS5 Mídia Digital",
-      "precoAtualBRL": 104.4,
-      "precoPixBRL": 104.4,
-      "precoSemPixBRL": 109.9,
+      "precoAtualBRL": 85.4,
+      "precoPixBRL": 85.4,
+      "precoSemPixBRL": 89.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 109.9,
+      "precoOriginalBRL": 89.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/forza-5-ps5",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Forza5PS5.jpg?v=1786233736",
@@ -33054,8 +32975,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 104.4,
-          "custoSemPixBRL": 109.9,
+          "custoPixBRL": 85.4,
+          "custoSemPixBRL": 89.9,
           "url": "https://www.lojatcagames.com.br/products/forza-5-ps5"
         }
       ]
@@ -33765,11 +33686,11 @@
     {
       "id": "prince-of-persia-the-lost-crown-ps5",
       "nome": "Prince of Persia The Lost Crown - PS5 Mídia Digital",
-      "precoAtualBRL": 61.65,
-      "precoPixBRL": 61.65,
-      "precoSemPixBRL": 64.9,
+      "precoAtualBRL": 47.4,
+      "precoPixBRL": 47.4,
+      "precoSemPixBRL": 49.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 64.9,
+      "precoOriginalBRL": 49.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps5",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/PrinceofPersiaPS5.jpg?v=1786233974",
@@ -33783,8 +33704,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 61.65,
-          "custoSemPixBRL": 64.9,
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps5"
         }
       ]
@@ -35237,8 +35158,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 18.9,
-          "custoSemPixBRL": 19.9,
+          "custoPixBRL": 28.4,
+          "custoSemPixBRL": 29.9,
           "url": "https://www.lojatcagames.com.br/products/battlefield-1-xbox-one"
         }
       ]
@@ -37636,6 +37557,13 @@
           "custoPixBRL": 92.91,
           "custoSemPixBRL": 99.9,
           "url": "https://www.alphagames.com.br/produtos/mafia-iii-definitive-edition-xbox-one-series-s-x-midia-digital-9j523/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
+          "url": "https://www.lojatcagames.com.br/products/mafia-iii-definitive-edition-xbox-one"
         }
       ]
     },
@@ -39193,11 +39121,11 @@
     {
       "id": "rust-console-edition-xbox-one",
       "nome": "RUST CONSOLE EDITION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 120.81,
-      "precoPixBRL": 120.81,
-      "precoSemPixBRL": 129.9,
+      "precoAtualBRL": 130.11,
+      "precoPixBRL": 130.11,
+      "precoSemPixBRL": 139.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 149.9,
+      "precoOriginalBRL": 159.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-14-bbbee934bfb7ed6e5117906380985243-1024-1024.webp",
@@ -39209,8 +39137,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 120.81,
-          "custoSemPixBRL": 129.9,
+          "custoPixBRL": 130.11,
+          "custoSemPixBRL": 139.9,
           "url": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/"
         },
         {
@@ -40772,11 +40700,11 @@
     {
       "id": "battlefield-1-revolution-xbox-one",
       "nome": "Battlefield 1 Revolution Xbox One Mídia Digital",
-      "precoAtualBRL": 23.65,
-      "precoPixBRL": 23.65,
-      "precoSemPixBRL": 24.9,
+      "precoAtualBRL": 33.15,
+      "precoPixBRL": 33.15,
+      "precoSemPixBRL": 34.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 24.9,
+      "precoOriginalBRL": 34.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/battlefield-1-revolution-xbox-one",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Battlefield1Revolution.jpg?v=1786233941",
@@ -40790,8 +40718,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 23.65,
-          "custoSemPixBRL": 24.9,
+          "custoPixBRL": 33.15,
+          "custoSemPixBRL": 34.9,
           "url": "https://www.lojatcagames.com.br/products/battlefield-1-revolution-xbox-one"
         }
       ]
@@ -48017,6 +47945,13 @@
           "custoPixBRL": 176.61,
           "custoSemPixBRL": 189.9,
           "url": "https://www.alphagames.com.br/produtos/forza-horizon-6-xbox-series-s-x-midia-digital-93gw6/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 170.9,
+          "custoSemPixBRL": 179.9,
+          "url": "https://www.lojatcagames.com.br/products/forza-horizon-6-xbox-series"
         }
       ]
     },
@@ -50721,11 +50656,11 @@
     {
       "id": "rust-console-edition-xbox-series",
       "nome": "RUST CONSOLE EDITION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-      "precoAtualBRL": 120.81,
-      "precoPixBRL": 120.81,
-      "precoSemPixBRL": 129.9,
+      "precoAtualBRL": 130.11,
+      "precoPixBRL": 130.11,
+      "precoSemPixBRL": 139.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 149.9,
+      "precoOriginalBRL": 159.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/",
       "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-14-bbbee934bfb7ed6e5117906380985243-1024-1024.webp",
@@ -50737,8 +50672,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 120.81,
-          "custoSemPixBRL": 129.9,
+          "custoPixBRL": 130.11,
+          "custoSemPixBRL": 139.9,
           "url": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/"
         }
       ]

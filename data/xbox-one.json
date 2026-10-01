@@ -200,7 +200,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595936637,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 25.99,
+    "precoOriginalEUR": 26.99,
     "trailer": "https://www.youtube.com/embed/zCmyeSI6s0s",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/3d0/3d0e368a0f236adbdce82a27a9621251.jpg",
@@ -676,7 +676,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595966950,
     "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 116.99,
+    "precoOriginalEUR": 117.99,
     "trailer": "https://www.youtube.com/embed/tIqRcsuZxbg",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367830-cd34a4c16a708f7e5617893261932008-1024-1024.webp"
@@ -759,10 +759,7 @@
     "steamGridMatchedName": "Assassin's Creed Origins",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-one",
@@ -910,10 +907,7 @@
     "steamGridMatchedName": "Assassin's Creed Unity",
     "steamGridMatchScore": 0.87,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "assassin-s-creed-valhalla-immortals-fenyx-rising-xbox-one",
@@ -950,7 +944,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595965447,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 87.99,
+    "precoOriginalEUR": 88.99,
     "trailer": "https://www.youtube.com/embed/OcGDnmzr7B4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367829-21b9b469c4a8c5331b17893258431690-1024-1024.webp"
@@ -1118,7 +1112,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1606555733,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 43.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/lVMNvvaXJ2s",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp"
@@ -1935,8 +1929,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1471369848,
-    "precoVendaEUR": 77.99,
-    "precoOriginalEUR": 87.99,
+    "precoVendaEUR": 78.99,
+    "precoOriginalEUR": 88.99,
     "trailer": "https://www.youtube.com/embed/4fbO2-egZ3U",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/crash-bundle-xbox-df3a37ba1aaf10d11717731647980182-1024-1024.webp"
@@ -1979,10 +1973,7 @@
     "steamGridMatchedName": "Crash Time III",
     "steamGridMatchScore": 0.325,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/pack-spyro-crash-trilogy-xbox-one-xbox-series-s-x-midia-digital-copia-jy28l/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "crash-trilogy-xbox-one",
@@ -2288,9 +2279,6 @@
     "steamGridMatchScore": 0.74,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/",
     "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 39
   },
@@ -2353,10 +2341,7 @@
     "steamGridMatchedName": null,
     "steamGridMatchScore": 0,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "dragon-ball-xenoverse-xbox-one",
@@ -2589,8 +2574,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463377044,
-    "precoVendaEUR": 63.99,
-    "precoOriginalEUR": 63.99,
+    "precoVendaEUR": 64.99,
+    "precoOriginalEUR": 64.99,
     "trailer": "https://www.youtube.com/embed/qLZenOn7WUo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ba6/ba6675855ee539784357aed3ca095ce2.jpg",
@@ -3061,10 +3046,7 @@
     "steamGridMatchedName": "Five Nights at Freddy's: Security Breach",
     "steamGridMatchScore": 0.747,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "five-nights-at-freddy-s-2-xbox-one",
@@ -3240,7 +3222,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462796888,
     "precoVendaEUR": 28.99,
-    "precoOriginalEUR": 43.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/FYH9n37B7Yw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5e2/5e2e7ccb084034da25d0b21b7c03c273.jpg",
@@ -3891,7 +3873,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468665936,
-    "precoVendaEUR": 23.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 26.99,
     "trailer": "https://www.youtube.com/embed/kmKOLvnullE",
     "screenshots": [
@@ -4007,10 +3989,7 @@
     "steamGridMatchedName": "Mega Man 11",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-x-xbox-one-xbox-series-s-x-midia-digital-copia-23quy/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "mega-man-x-xbox-one",
@@ -4036,10 +4015,7 @@
     "steamGridMatchedName": "Mega Man X",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "mega-man-zx-xbox-one",
@@ -4072,10 +4048,7 @@
     "steamGridMatchedName": "Mega Man ZX",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/one-piece-burning-blood-xbox-one-xbox-series-s-x-midia-digital-copia-16q03/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "metro-exodus-xbox-one",
@@ -4272,9 +4245,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/call-of-duty-infinite-warfare-xbox-one-xbox-series-s-x-midia-digital-copia-m82ei/",
     "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 48
   },
@@ -4941,10 +4911,7 @@
     "steamGridMatchedName": "Pack Man in Rio",
     "steamGridMatchScore": 0.307,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "palworld-xbox-one",
@@ -5659,7 +5626,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1607641455,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 26.99,
+    "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/D6c3JgpXY7A",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a7f/a7fb9ae44973963e019a2ba185da5b65.jpg",
@@ -6188,10 +6155,7 @@
     "steamGridMatchedName": "Star Wars: Bounty Hunter",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/monster-hunter-wilds-xbox-one-xbox-series-s-x-midia-digital-copia-187ln/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "stranded-deep-xbox-one",
@@ -6419,10 +6383,7 @@
     "steamGridMatchedName": "The Backrooms",
     "steamGridMatchScore": 0.7,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "the-crew-2-xbox-one",
@@ -6540,10 +6501,7 @@
     "steamGridMatchedName": "The Evil Within",
     "steamGridMatchScore": 0.829,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "the-evil-within-2-xbox-one",
@@ -7445,8 +7403,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43190176448610",
-    "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 6.99,
+    "precoVendaEUR": 8.99,
+    "precoOriginalEUR": 8.99,
     "trailer": "",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/76f/76f015547bcf07c964abbdc097267893_OK2J5Pu.jpg",

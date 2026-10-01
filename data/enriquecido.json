@@ -571,7 +571,7 @@
     "varianteFornecedorId": 1577775791,
     "rawgId": 19338,
     "rawgSlug": "assassins-creed-chronicles-russia-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/idosIQPtXdw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/565/56534595d4c19edb31ed6a56ecb43d03.jpg",
       "https://media.rawg.io/media/screenshots/8aa/8aab0c89fe3a7ddd6798db0ac7ef1275.jpg",
@@ -1309,7 +1309,7 @@
     "varianteFornecedorId": 1577753987,
     "rawgId": 20180,
     "rawgSlug": "assassins-creed-chronicles-china-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/2W8_-SaDWSE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/569/569454df51319779ee25b9ab986ddd36.jpg",
       "https://media.rawg.io/media/screenshots/801/801969642a499f6d7f547dd6a94a2106.jpg",
@@ -1542,7 +1542,7 @@
     "varianteFornecedorId": 1577770930,
     "rawgId": 8146,
     "rawgSlug": "assassins-creed-unity-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/UL11MyWoP0U",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/bd3/bd3302a08d8c9ffbb73ffd4cd40714aa.jpg",
       "https://media.rawg.io/media/screenshots/bd8/bd84c249c0629a21eb100e9f85741af4.jpg",
@@ -1903,7 +1903,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 35.99,
+    "precoOriginalEUR": 36.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Baldur's Gate: Dark Alliance",
@@ -2315,7 +2315,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -3909,8 +3909,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 94.9,
-        "custoSemPixBRL": 99.9,
+        "custoPixBRL": 85.4,
+        "custoSemPixBRL": 89.9,
         "url": "https://www.lojatcagames.com.br/products/call-of-duty-black-ops-7-ps4"
       }
     ]
@@ -4312,7 +4312,7 @@
     "rawgMatchedName": "Call of Duty: Modern Warfare II",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 56.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/5cef43602bc7486da26ba5fbf4483f43.png",
     "steamGridMatchValidated": true,
@@ -4378,7 +4378,7 @@
     "rawgMatchedName": "Call of Duty: Modern Warfare III",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 19.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2d5cc87642543b37adc1c39cf44bf811.png",
     "steamGridMatchValidated": true,
@@ -4499,7 +4499,7 @@
     "rawgMatchedName": "Call of Duty: Vanguard",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 56.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6733a6cfa952e637e886d8041fba79ce.jpg",
     "steamGridMatchValidated": true,
@@ -5554,7 +5554,7 @@
     "rawgMatchedName": "Crash Bandicoot N. Sane Trilogy",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 40.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2cf5c3d95232cb5023f68b36243f83d2.png",
     "steamGridMatchValidated": true,
@@ -5659,7 +5659,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 14.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 40.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -5939,7 +5939,7 @@
     "rawgMatchedName": "Cuphead",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 14.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/25dcf1554f13c36b512dfe907acc77d3.png",
     "steamGridMatchValidated": true,
@@ -6145,7 +6145,7 @@
     "rawgMatchedName": "Dark Souls III",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 21.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/9085f5ef67f2f7f0f38e869ffb5016a1.png",
     "steamGridMatchValidated": true,
@@ -6441,7 +6441,7 @@
     "rawgMatchedName": "Dead Island 2",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 7.99,
     "precoOriginalEUR": 43.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ad83d8530fdc4b8255bff5a4f3c5ca66.jpg",
     "steamGridMatchValidated": true,
@@ -6497,7 +6497,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 6.99,
+    "precoVendaEUR": 5.99,
     "precoOriginalEUR": 21.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -7638,7 +7638,7 @@
     "varianteFornecedorId": 1581809098,
     "rawgId": 17975,
     "rawgSlug": "doom-ii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/EErzNnVsFkA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/253/2538b3e7998a43847cb29526dbb448d6.jpg",
       "https://media.rawg.io/media/screenshots/aba/aba0bf8a337aa63b4af2aebb11acd4fd.jpg",
@@ -7756,7 +7756,7 @@
     "varianteFornecedorId": 1581810022,
     "rawgId": 19458,
     "rawgSlug": "doom-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Eo69OsqA3Wc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/fb3/fb3bde2efb632c9b493bc01f51f0a446.jpg",
       "https://media.rawg.io/media/screenshots/f84/f846728c249d825609dcc09a28501f81.jpg",
@@ -7941,7 +7941,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 64.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -7977,7 +7977,7 @@
     "varianteFornecedorId": 1581813191,
     "rawgId": 58777,
     "rawgSlug": "doom-eternal",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/_UuktemkCFI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e60/e605ef79d45fcde4afcdbbe8783b7755.jpg",
       "https://media.rawg.io/media/screenshots/65d/65db880d23d8d9afe59da1a0f4fbc9d1_s0rkn1r.jpg",
@@ -8043,7 +8043,7 @@
     "varianteFornecedorId": 1581817914,
     "rawgId": 28559,
     "rawgSlug": "dragon-age-inquisition",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/jJqxfkgSUog",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/458/458299dc93962089bd270de1f20625ee.jpg",
       "https://media.rawg.io/media/screenshots/b90/b90787dcc1d8b4d8456f9957cbcaae4b.jpg",
@@ -8655,7 +8655,7 @@
     "rawgMatchedName": "EA SPORTS FC 25",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d5af34b7d30bbb2974666e95bedc3388.png",
     "steamGridMatchValidated": true,
@@ -8720,7 +8720,7 @@
     "rawgMatchedName": "EA SPORTS FC 26",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/8d6927f9e4c3dd1842bbd5110937d2ec.png",
     "steamGridMatchValidated": true,
@@ -8890,7 +8890,7 @@
         "url": "https://www.alphagames.com.br/produtos/escape-backrooms-horror-ps4-midia-digital-zczqn/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/6xbnqo48K2c",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000366250-520f1bb54ae0d8b44e17878590467484-1024-1024.webp"
     ],
@@ -9623,7 +9623,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 57.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -10552,7 +10552,7 @@
     ],
     "rawgId": 313733,
     "rawgSlug": "final-fantasy-crystal-chronicles-remastered-editio",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/rG66WL0sKXM",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/11a/11a415c04c6238d91c732de452a06053.jpg",
       "https://media.rawg.io/media/screenshots/825/8252cef59addfc9eb57eb0b3efd81b83.jpg",
@@ -11537,7 +11537,7 @@
     "plataformaKey": "ps4",
     "fornecedorProductId": "359662327",
     "varianteFornecedorId": 1572252566,
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Kp4OzTkeyOw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000362029-81a8bbcf8eb095bb5617860418031323-1024-1024.webp"
     ],
@@ -12234,7 +12234,7 @@
     "rawgMatchedName": "Hitman HD Enhanced Collection",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -12393,7 +12393,7 @@
     "rawgMatchedName": "Hogwarts Legacy",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/43db2b7df1cff247f7efaa0e7e8d7e3c.png",
     "steamGridMatchValidated": true,
@@ -15396,7 +15396,7 @@
     "rawgMatchedName": "Marvel's Midnight Suns",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d071d9b938d39ceecb353c1631c17d8c.png",
     "steamGridMatchValidated": true,
@@ -17205,8 +17205,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 123.4,
-        "custoSemPixBRL": 129.9,
+        "custoPixBRL": 94.9,
+        "custoSemPixBRL": 99.9,
         "url": "https://www.lojatcagames.com.br/products/naruto-x-boruto-ultimate-ninja-storm-connections-ps4"
       }
     ]
@@ -18373,7 +18373,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 56.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -19320,7 +19320,7 @@
     ],
     "rawgId": 39964,
     "rawgSlug": "ratchet-clank-size-matters",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/ysoLtAy_tcQ",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/20d/20dd867adafa010890d68d4962ae80de.jpg",
       "https://media.rawg.io/media/screenshots/948/948d0ff91402e06bcee3941a490eef10.jpg",
@@ -20503,7 +20503,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -21847,8 +21847,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 113.9,
-        "custoSemPixBRL": 119.9,
+        "custoPixBRL": 75.9,
+        "custoSemPixBRL": 79.9,
         "url": "https://www.lojatcagames.com.br/products/sniper-elite-resistance-ps4"
       }
     ]
@@ -22209,8 +22209,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 66.4,
-        "custoSemPixBRL": 69.9,
+        "custoPixBRL": 56.9,
+        "custoSemPixBRL": 59.9,
         "url": "https://www.lojatcagames.com.br/products/sonic-frontiers-ps4"
       }
     ]
@@ -23727,7 +23727,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -26387,7 +26387,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 57.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -26884,7 +26884,7 @@
     "varianteFornecedorId": 1572271868,
     "rawgId": 5477,
     "rawgSlug": "twisted-metal-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/SFMG1gBtOtI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/779/7797057beb9c4e91659bcb5a40c3333f.jpg",
       "https://media.rawg.io/media/screenshots/a15/a15879f45a4cfcd2c93c049c1a628275.jpg",
@@ -26944,7 +26944,7 @@
     "varianteFornecedorId": 1572281556,
     "rawgId": 57938,
     "rawgSlug": "twisted-metal-4",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/wZLK4NSahIs",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9f2/9f2acd3572748122cd75f0c17f205de7.jpg",
       "https://media.rawg.io/media/screenshots/459/459a046b1173ca12ac0cfc6a204b9412.jpg",
@@ -26999,7 +26999,7 @@
     "varianteFornecedorId": 1572274180,
     "rawgId": 57937,
     "rawgSlug": "twisted-metal-iii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/woTSZ2OjH6k",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/848/8486ff75c08ad8737088f5b921c046ae.jpg",
       "https://media.rawg.io/media/screenshots/ceb/ceb6bfe6c6b0f7ec45270e95a9f45970.jpg",
@@ -27355,7 +27355,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -27716,7 +27716,7 @@
     ],
     "rawgId": 3556,
     "rawgSlug": "alien-isolation",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/meNE4CPtnCo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/df3/df311b578fbaa587c8ba2d768bcf18d7.jpg",
       "https://media.rawg.io/media/screenshots/b46/b46d5ddcbf7650df4d7eedf1e886bcdb.jpg",
@@ -28237,8 +28237,8 @@
     "rawgMatchedName": "Darksiders III",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 14.99,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a55619a75158ea19764a865675c6ec9c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Darksiders III",
@@ -28333,7 +28333,7 @@
     ],
     "rawgId": 22568,
     "rawgSlug": "darksiders-furys-collection-war-and-death-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/33ltYoAFoW8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/814/8144c4d5b5cb714f933c92dbecae0232.jpg",
       "https://media.rawg.io/media/screenshots/237/237c82a63a8c2ce5b376256df920cf3e.jpg",
@@ -28353,8 +28353,8 @@
     "rawgMatchedName": "Darksiders Fury's Collection - War and Death",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 9.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e67e2c75c68e096c10d2132d327fd19e.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Darksiders: Fury's Collection - War and Death",
@@ -28410,8 +28410,8 @@
     "rawgMatchedName": "Dead by Daylight",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 9.99,
+    "precoVendaEUR": 8.99,
+    "precoOriginalEUR": 8.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e094a58c3495647287f75da5f6a7f6f3.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dead by Daylight",
@@ -28737,8 +28737,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 43.99,
-    "precoOriginalEUR": 43.99,
+    "precoVendaEUR": 48.99,
+    "precoOriginalEUR": 48.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "eFootball PES 2021",
@@ -28787,8 +28787,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 60.99,
-    "precoOriginalEUR": 60.99,
+    "precoVendaEUR": 48.99,
+    "precoOriginalEUR": 48.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "eFootball PES 2020",
@@ -28883,7 +28883,7 @@
     ],
     "rawgId": 428559,
     "rawgSlug": "f1-2020",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/wF0vF1uXXYU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9f4/9f48d6a4a287277e07d7de37751d45d7.jpg",
       "https://media.rawg.io/media/screenshots/a55/a5551e31a17bf10b99f930f89fdb605d.jpg",
@@ -30825,7 +30825,7 @@
         "url": "https://www.lojatcagames.com.br/products/lego-jurassic-world-o-mundo-dos-dinossauros-ps4"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/V3s9s5tQZ_Q",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/LegoJurassicWorld.jpg?v=1786234051"
     ],
@@ -32471,11 +32471,11 @@
   {
     "id": "prince-of-persia-the-lost-crown-ps4",
     "nome": "Prince of Persia The Lost Crown - PS4 Mídia Digital",
-    "precoAtualBRL": 61.65,
-    "precoPixBRL": 61.65,
-    "precoSemPixBRL": 64.9,
+    "precoAtualBRL": 47.4,
+    "precoPixBRL": 47.4,
+    "precoSemPixBRL": 49.9,
     "descontoPixAplicado": true,
-    "precoOriginalBRL": 64.9,
+    "precoOriginalBRL": 49.9,
     "tipoMidia": "Primaria",
     "linkFornecedor": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps4",
     "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/PrinceofPersia.jpg?v=1786233972",
@@ -32489,8 +32489,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 61.65,
-        "custoSemPixBRL": 64.9,
+        "custoPixBRL": 47.4,
+        "custoSemPixBRL": 49.9,
         "url": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps4"
       }
     ],
@@ -32557,7 +32557,7 @@
     ],
     "rawgId": 47560,
     "rawgSlug": "professional-farmer-american-dream",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/spQdr1-eDvo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/322/32233784e62ab43e5a1f8cbebc657377.jpg",
       "https://media.rawg.io/media/screenshots/99e/99e94d6db85f7d092113e467b3e065b8.jpg",
@@ -32678,7 +32678,7 @@
         "url": "https://www.lojatcagames.com.br/products/resident-evil-hd-remastered-ps4"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/j_6Tr67e0Bo",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/ResidentEvil1Remaster.png?v=1786233830"
     ],
@@ -32699,57 +32699,6 @@
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil: Revelations",
     "steamGridMatchScore": 0.538,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
-  },
-  {
-    "id": "resident-evil-pacote-triplo-ps4",
-    "nome": "Resident Evil Pacote Triplo PS4 Mídia Digital",
-    "precoAtualBRL": 66.4,
-    "precoPixBRL": 66.4,
-    "precoSemPixBRL": 69.9,
-    "descontoPixAplicado": true,
-    "precoOriginalBRL": 69.9,
-    "tipoMidia": "Primaria",
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/resident-evil-pacote-triplo-ps4",
-    "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/RE_Triple_Pack_c160a885-ca73-41ba-a988-c818fad1f242.jpg?v=1786233611",
-    "plataforma": "PlayStation 4",
-    "plataformaKey": "ps4",
-    "fornecedorProductId": "7762819514466",
-    "varianteFornecedorId": "43190160883810",
-    "fornecedorId": "tca",
-    "fornecedorNome": "TCA Games",
-    "fornecedores": [
-      {
-        "id": "tca",
-        "nome": "TCA Games",
-        "custoPixBRL": 66.4,
-        "custoSemPixBRL": 69.9,
-        "url": "https://www.lojatcagames.com.br/products/resident-evil-pacote-triplo-ps4"
-      }
-    ],
-    "trailer": "https://www.youtube.com/embed/zOQE-o6kpBY",
-    "screenshots": [
-      "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/RE_Triple_Pack_c160a885-ca73-41ba-a988-c818fad1f242.jpg?v=1786233611"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/RE_Triple_Pack_c160a885-ca73-41ba-a988-c818fad1f242.jpg?v=1786233611",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "rawgMatchValidated": true,
-    "rawgMatchVersion": 3,
-    "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Resident Evil: Revelations",
-    "steamGridMatchScore": 0.516,
     "steamGridGridScore": 0,
     "steamGridGridStyle": null,
     "steamGridNeedsReview": false
@@ -32830,7 +32779,7 @@
     ],
     "rawgId": 244802,
     "rawgSlug": "ride-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/t_WKM_f764I",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5fb/5fbca78f88f1ddcacfc9aba76674d2cd.jpg",
       "https://media.rawg.io/media/screenshots/437/4370065b6423fc068a64f8ef23fd11cd.jpg",
@@ -33014,7 +32963,7 @@
     ],
     "rawgId": 797882,
     "rawgSlug": "rollerdrome",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/4oxlPLIoGAs",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/c0e/c0e5161f2b762730cbe26841a49bd02c.jpg",
       "https://media.rawg.io/media/screenshots/0a6/0a6dec4e019924f113b9a1179e03229f.jpg",
@@ -33363,7 +33312,7 @@
     ],
     "rawgId": 50736,
     "rawgSlug": "soulcalibur-vi",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/kOq5dVigDGU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2e2/2e2569a23df75c254e2ca9c4ac000dfd.jpg",
       "https://media.rawg.io/media/screenshots/a5d/a5de2d381046831172906ef957c41d7d.jpg",
@@ -33485,7 +33434,7 @@
     ],
     "rawgId": 715,
     "rawgSlug": "steep",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/XznTHeUkGXA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/25a/25a00a852da899d82bbac47eedf72df1.jpg",
       "https://media.rawg.io/media/screenshots/b8e/b8e7e7bf0ded951fe7fb889d89159548.jpg",
@@ -33729,7 +33678,7 @@
     ],
     "rawgId": 51330,
     "rawgSlug": "tennis-world-tour",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/qVkgMagFPvQ",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/63e/63e8a8509f307c2206239c9a1c276330.jpg",
       "https://media.rawg.io/media/screenshots/cc1/cc12d2dfcce129d33ea2acc5d37f84b3.jpg",
@@ -33788,7 +33737,7 @@
         "url": "https://www.lojatcagames.com.br/products/terra-media-sombras-da-guerra-ps4"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/QM5orsU0yVI",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Terra_Media_-_Sombras_da_Guerra_5473979b-578e-44a4-af90-4707275af1d8.jpg?v=1786233588"
     ],
@@ -33892,7 +33841,7 @@
     ],
     "rawgId": 29171,
     "rawgSlug": "the-evil-within-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/f7JbFBq4NAo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/540/54002d97419f093d6a06f2424f95ead6.jpg",
       "https://media.rawg.io/media/screenshots/291/291aa4c9e9502d0523f290f16547ba0b.jpg",
@@ -34016,7 +33965,7 @@
     ],
     "rawgId": 7450,
     "rawgSlug": "the-king-of-fighters-97",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/-x53X0d3YMo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/de1/de1d00150a5e7826f325564a8a6c755a.jpg",
       "https://media.rawg.io/media/screenshots/0ea/0eabcbc1c670f25d0909e5a3a35c1151.jpg",
@@ -34079,7 +34028,7 @@
     ],
     "rawgId": 6674,
     "rawgSlug": "the-king-of-fighters-98",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/yKbvR_6P7PU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5de/5dea28f4b8c68197879c6f752b2a211b.jpg",
       "https://media.rawg.io/media/screenshots/0ac/0ac4576090042877d5a499e83b4be3c2_0xYdJjK.jpg",
@@ -34140,7 +34089,7 @@
         "url": "https://www.lojatcagames.com.br/products/the-king-of-fighters-collection-94-a-98-ps4"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/infHW013PH0",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/The_King_Of_Fighters_Collection_The_Orochi_f2db983e-1f0d-484c-b1aa-17ff017a6f26.jpg?v=1786233575"
     ],
@@ -34193,7 +34142,7 @@
     ],
     "rawgId": 42187,
     "rawgSlug": "the-sims-4",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/0D5bRyZV_Dw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/72c/72c690315354c314ed292aac71aeb231.jpg",
       "https://media.rawg.io/media/screenshots/5da/5da8b4ed0c50a84db6aa8a6504854d14.jpg",
@@ -34469,11 +34418,11 @@
   {
     "id": "tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps4",
     "nome": "Tomb Raider I-II-III Remastered Starring Lara Croft – PS4 Mídia Digital",
-    "precoAtualBRL": 75.9,
-    "precoPixBRL": 75.9,
-    "precoSemPixBRL": 79.9,
+    "precoAtualBRL": 56.9,
+    "precoPixBRL": 56.9,
+    "precoSemPixBRL": 59.9,
     "descontoPixAplicado": true,
-    "precoOriginalBRL": 79.9,
+    "precoOriginalBRL": 59.9,
     "tipoMidia": "Primaria",
     "linkFornecedor": "https://www.lojatcagames.com.br/products/tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps4",
     "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/TombRaiderI-IIIRemasteredPS4.jpg?v=1786234192",
@@ -34487,8 +34436,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 75.9,
-        "custoSemPixBRL": 79.9,
+        "custoPixBRL": 56.9,
+        "custoSemPixBRL": 59.9,
         "url": "https://www.lojatcagames.com.br/products/tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps4"
       }
     ],
@@ -34664,7 +34613,7 @@
         "url": "https://www.lojatcagames.com.br/products/wrc-10-ps4"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/RWzzZwNSLzM",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/WRC10.jpg?v=1786234414"
     ],
@@ -35049,8 +34998,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 94.9,
-        "custoSemPixBRL": 99.9,
+        "custoPixBRL": 75.9,
+        "custoSemPixBRL": 79.9,
         "url": "https://www.lojatcagames.com.br/products/a-ascensao-do-ronin-ps5"
       }
     ]
@@ -35791,7 +35740,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -36058,7 +36007,7 @@
     "varianteFornecedorId": 1577775944,
     "rawgId": 19338,
     "rawgSlug": "assassins-creed-chronicles-russia-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/idosIQPtXdw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/565/56534595d4c19edb31ed6a56ecb43d03.jpg",
       "https://media.rawg.io/media/screenshots/8aa/8aab0c89fe3a7ddd6798db0ac7ef1275.jpg",
@@ -36829,7 +36778,7 @@
     "varianteFornecedorId": 1577754372,
     "rawgId": 20180,
     "rawgSlug": "assassins-creed-chronicles-china-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/2W8_-SaDWSE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/569/569454df51319779ee25b9ab986ddd36.jpg",
       "https://media.rawg.io/media/screenshots/801/801969642a499f6d7f547dd6a94a2106.jpg",
@@ -37055,7 +37004,7 @@
     "varianteFornecedorId": 1577771297,
     "rawgId": 8146,
     "rawgSlug": "assassins-creed-unity-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/UL11MyWoP0U",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/bd3/bd3302a08d8c9ffbb73ffd4cd40714aa.jpg",
       "https://media.rawg.io/media/screenshots/bd8/bd84c249c0629a21eb100e9f85741af4.jpg",
@@ -37544,7 +37493,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 35.99,
+    "precoOriginalEUR": 36.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Baldur's Gate: Dark Alliance",
@@ -37875,7 +37824,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -38080,8 +38029,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 161.4,
-        "custoSemPixBRL": 169.9,
+        "custoPixBRL": 189.9,
+        "custoSemPixBRL": 199.9,
         "url": "https://www.lojatcagames.com.br/products/battlefield-6-ps5"
       }
     ]
@@ -38688,13 +38637,6 @@
         "custoPixBRL": 60.36,
         "custoSemPixBRL": 64.9,
         "url": "https://www.alphagames.com.br/produtos/bob-esponja-the-cosmic-shake-ps5-midia-digital-vxuc8/"
-      },
-      {
-        "id": "tca",
-        "nome": "TCA Games",
-        "custoPixBRL": 85.4,
-        "custoSemPixBRL": 89.9,
-        "url": "https://www.lojatcagames.com.br/products/bob-esponja-the-cosmic-shake-ps5"
       }
     ]
   },
@@ -40124,7 +40066,7 @@
     "rawgMatchedName": "Call of Duty: Modern Warfare II",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 56.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/5cef43602bc7486da26ba5fbf4483f43.png",
     "steamGridMatchValidated": true,
@@ -40190,7 +40132,7 @@
     "rawgMatchedName": "Call of Duty: Modern Warfare III",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 19.99,
+    "precoVendaEUR": 14.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2d5cc87642543b37adc1c39cf44bf811.png",
     "steamGridMatchValidated": true,
@@ -40311,7 +40253,7 @@
     "rawgMatchedName": "Call of Duty: Vanguard",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 16.99,
     "precoOriginalEUR": 56.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6733a6cfa952e637e886d8041fba79ce.jpg",
     "steamGridMatchValidated": true,
@@ -40416,7 +40358,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -41365,7 +41307,7 @@
     "rawgMatchedName": "Control Resonant",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 40.99,
+    "precoVendaEUR": 36.99,
     "precoOriginalEUR": 40.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d7d5d27ed9b44f4646def6eccd765991.png",
     "steamGridMatchValidated": true,
@@ -42642,7 +42584,7 @@
     "rawgMatchedName": "Dead Island 2",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 12.99,
+    "precoVendaEUR": 7.99,
     "precoOriginalEUR": 43.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ad83d8530fdc4b8255bff5a4f3c5ca66.jpg",
     "steamGridMatchValidated": true,
@@ -42930,7 +42872,7 @@
     "rawgMatchedName": "Dead Space",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/26203c6ab63ff66fef12bbc3b8dad1c0.png",
     "steamGridMatchValidated": true,
@@ -43123,7 +43065,7 @@
     "rawgMatchedName": "Death Stranding Director's Cut",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 29.99,
+    "precoVendaEUR": 37.99,
     "precoOriginalEUR": 43.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/34042c360d640bc6a90e04a4a329c906.png",
     "steamGridMatchValidated": true,
@@ -44190,7 +44132,7 @@
     "varianteFornecedorId": 1581809408,
     "rawgId": 17975,
     "rawgSlug": "doom-ii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/EErzNnVsFkA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/253/2538b3e7998a43847cb29526dbb448d6.jpg",
       "https://media.rawg.io/media/screenshots/aba/aba0bf8a337aa63b4af2aebb11acd4fd.jpg",
@@ -44308,7 +44250,7 @@
     "varianteFornecedorId": 1581810284,
     "rawgId": 19458,
     "rawgSlug": "doom-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Eo69OsqA3Wc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/fb3/fb3bde2efb632c9b493bc01f51f0a446.jpg",
       "https://media.rawg.io/media/screenshots/f84/f846728c249d825609dcc09a28501f81.jpg",
@@ -44439,7 +44381,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 64.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -44475,7 +44417,7 @@
     "varianteFornecedorId": 1581813473,
     "rawgId": 58777,
     "rawgSlug": "doom-eternal",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/_UuktemkCFI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e60/e605ef79d45fcde4afcdbbe8783b7755.jpg",
       "https://media.rawg.io/media/screenshots/65d/65db880d23d8d9afe59da1a0f4fbc9d1_s0rkn1r.jpg",
@@ -44558,7 +44500,7 @@
     "rawgMatchedName": "Doom: The Dark Ages",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/8ea0329e385f393ba78cf71a82c031d9.png",
     "steamGridMatchValidated": true,
@@ -44599,7 +44541,7 @@
     "varianteFornecedorId": 1581818203,
     "rawgId": 28559,
     "rawgSlug": "dragon-age-inquisition",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/jJqxfkgSUog",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/458/458299dc93962089bd270de1f20625ee.jpg",
       "https://media.rawg.io/media/screenshots/b90/b90787dcc1d8b4d8456f9957cbcaae4b.jpg",
@@ -44700,8 +44642,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 180.4,
-        "custoSemPixBRL": 189.9,
+        "custoPixBRL": 132.9,
+        "custoSemPixBRL": 139.9,
         "url": "https://www.lojatcagames.com.br/products/dragon-age-the-veilguard-ps5"
       }
     ]
@@ -45119,8 +45061,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 189.9,
-        "custoSemPixBRL": 199.9,
+        "custoPixBRL": 142.4,
+        "custoSemPixBRL": 149.9,
         "url": "https://www.lojatcagames.com.br/products/dragon-s-dogma-2-ps5"
       }
     ]
@@ -45501,7 +45443,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -45542,7 +45484,7 @@
     "rawgMatchedName": "EA SPORTS College Football 27",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -45601,7 +45543,7 @@
     "rawgMatchedName": "EA SPORTS FC 25",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 14.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d5af34b7d30bbb2974666e95bedc3388.png",
     "steamGridMatchValidated": true,
@@ -46226,7 +46168,7 @@
         "url": "https://www.alphagames.com.br/produtos/escape-backrooms-horror-ps5-midia-digital-19245/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/6xbnqo48K2c",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000366252-765801aee6eeed396917878591393761-1024-1024.webp"
     ],
@@ -46514,7 +46456,7 @@
     "rawgMatchedName": "Fable",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a66cde92a4319185223bab01e9dfe302.png",
     "steamGridMatchValidated": true,
@@ -47115,7 +47057,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 57.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -47635,8 +47577,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 94.9,
-        "custoSemPixBRL": 99.9,
+        "custoPixBRL": 85.4,
+        "custoSemPixBRL": 89.9,
         "url": "https://www.lojatcagames.com.br/products/farming-simulator-25-ps5"
       }
     ]
@@ -48311,7 +48253,7 @@
     ],
     "rawgId": 313733,
     "rawgSlug": "final-fantasy-crystal-chronicles-remastered-editio",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/rG66WL0sKXM",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/11a/11a415c04c6238d91c732de452a06053.jpg",
       "https://media.rawg.io/media/screenshots/825/8252cef59addfc9eb57eb0b3efd81b83.jpg",
@@ -49569,7 +49511,7 @@
     "plataformaKey": "ps5",
     "fornecedorProductId": "359662615",
     "varianteFornecedorId": 1572254281,
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Kp4OzTkeyOw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000362031-9d75b17ee46edbf8be17860418591647-1024-1024.webp"
     ],
@@ -49773,8 +49715,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 189.9,
-        "custoSemPixBRL": 199.9,
+        "custoPixBRL": 151.9,
+        "custoSemPixBRL": 159.9,
         "url": "https://www.lojatcagames.com.br/products/ghost-of-yotei-ps5"
       }
     ]
@@ -49886,46 +49828,6 @@
         "url": "https://www.alphagames.com.br/produtos/god-of-war-iii-remastered-ps5-midia-digital-gh374/"
       }
     ]
-  },
-  {
-    "id": "god-of-war-laufey-ps5",
-    "nome": "GOD OF WAR LAUFEY - PS5 - MÍDIA DIGITAL",
-    "precoAtualBRL": 204.51,
-    "precoPixBRL": 204.51,
-    "precoSemPixBRL": 219.9,
-    "descontoPixAplicado": true,
-    "precoOriginalBRL": 399.9,
-    "tipoMidia": "Primaria",
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/god-of-war-laufey-ps5-midia-digital-1duxi/",
-    "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368455-1f21a43b3b001b5afc17907134934719-1024-1024.webp",
-    "plataforma": "PlayStation 5",
-    "plataformaKey": "ps5",
-    "fornecedorProductId": "370776489",
-    "varianteFornecedorId": 1608331476,
-    "fornecedores": [
-      {
-        "id": "alpha",
-        "nome": "Alpha Games",
-        "custoPixBRL": 204.51,
-        "custoSemPixBRL": 219.9,
-        "url": "https://www.alphagames.com.br/produtos/god-of-war-laufey-ps5-midia-digital-1duxi/"
-      }
-    ],
-    "trailer": "",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368455-1f21a43b3b001b5afc17907134934719-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368455-1f21a43b3b001b5afc17907134934719-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "rawgMatchValidated": true,
-    "rawgMatchVersion": 3,
-    "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
   },
   {
     "id": "god-of-war-ragnarok-ps5",
@@ -50503,7 +50405,7 @@
     ],
     "rawgId": 891238,
     "rawgSlug": "hades-ii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/MawBCULz4vE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/59e/59e9ba1215b11e43ad64f363bfb7f65b.jpg",
       "https://media.rawg.io/media/screenshots/e93/e93aa58a1bf6f628507121a206ef856d.jpg",
@@ -50923,7 +50825,7 @@
     "rawgMatchedName": "Hitman HD Enhanced Collection",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -51082,7 +50984,7 @@
     "rawgMatchedName": "Hogwarts Legacy",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 19.99,
+    "precoVendaEUR": 12.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/43db2b7df1cff247f7efaa0e7e8d7e3c.png",
     "steamGridMatchValidated": true,
@@ -51503,7 +51405,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -52871,7 +52773,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -54651,7 +54553,7 @@
     "rawgMatchedName": "Marvel's Midnight Suns",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d071d9b938d39ceecb353c1631c17d8c.png",
     "steamGridMatchValidated": true,
@@ -55296,6 +55198,13 @@
         "custoPixBRL": 83.61,
         "custoSemPixBRL": 89.9,
         "url": "https://www.alphagames.com.br/produtos/minecraft-dungeouns-2-ps5-midia-digital-soqyl/"
+      },
+      {
+        "id": "tca",
+        "nome": "TCA Games",
+        "custoPixBRL": 94.9,
+        "custoSemPixBRL": 99.9,
+        "url": "https://www.lojatcagames.com.br/products/minecraft-dungeons-ii-ps5"
       }
     ],
     "trailer": "https://www.youtube.com/embed/VyZKYhM0Kv4",
@@ -55448,8 +55357,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 151.9,
-        "custoSemPixBRL": 159.9,
+        "custoPixBRL": 113.9,
+        "custoSemPixBRL": 119.9,
         "url": "https://www.lojatcagames.com.br/products/monster-hunter-wilds-ps5"
       }
     ]
@@ -56406,7 +56315,7 @@
     "rawgMatchedName": "MXGP 24: The Official Game",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e0fc74fef84b1cac6e08b6f5cf5f0368.png",
     "steamGridMatchValidated": true,
@@ -56965,8 +56874,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 123.4,
-        "custoSemPixBRL": 129.9,
+        "custoPixBRL": 94.9,
+        "custoSemPixBRL": 99.9,
         "url": "https://www.lojatcagames.com.br/products/naruto-x-boruto-ultimate-ninja-storm-connections-ps5"
       }
     ]
@@ -57790,7 +57699,7 @@
     "rawgMatchedName": "Onimusha: Way Of The Sword",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a3962c0ca7ca8033daaa9fac886e90b8.jpg",
     "steamGridMatchValidated": true,
@@ -58340,7 +58249,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 56.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -59554,7 +59463,7 @@
     ],
     "rawgId": 39964,
     "rawgSlug": "ratchet-clank-size-matters",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/ysoLtAy_tcQ",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/20d/20dd867adafa010890d68d4962ae80de.jpg",
       "https://media.rawg.io/media/screenshots/948/948d0ff91402e06bcee3941a490eef10.jpg",
@@ -60926,7 +60835,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -61299,8 +61208,8 @@
     "rawgMatchedName": "Resonance",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 44.99,
+    "precoVendaEUR": 45.99,
+    "precoOriginalEUR": 45.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/86dca97feed370ca40f5c9e5b66e354c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resonance",
@@ -62924,8 +62833,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 113.9,
-        "custoSemPixBRL": 119.9,
+        "custoPixBRL": 94.9,
+        "custoSemPixBRL": 99.9,
         "url": "https://www.lojatcagames.com.br/products/sniper-elite-resistance-ps5"
       }
     ]
@@ -63216,8 +63125,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 66.4,
-        "custoSemPixBRL": 69.9,
+        "custoPixBRL": 56.9,
+        "custoSemPixBRL": 59.9,
         "url": "https://www.lojatcagames.com.br/products/sonic-frontiers-ps5"
       }
     ]
@@ -64278,8 +64187,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 85.4,
-        "custoSemPixBRL": 89.9,
+        "custoPixBRL": 56.9,
+        "custoSemPixBRL": 59.9,
         "url": "https://www.lojatcagames.com.br/products/star-wars-outlaws-ps5"
       }
     ]
@@ -64543,7 +64452,7 @@
     "rawgMatchedName": "Star Wars Zero Company",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/75d8e84292296f1d00ba61471c8a7e5d.png",
     "steamGridMatchValidated": true,
@@ -64822,7 +64731,7 @@
     "rawgMatchedName": "Star Wars: Galactic Racer",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a592d9fe5ade10553913fb1b94f1175c.png",
     "steamGridMatchValidated": true,
@@ -64980,7 +64889,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -65507,7 +65416,7 @@
     "rawgMatchedName": "Suicide Squad: Kill The Justice League",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/28e2ba809827a093a6e7df960c5b227a.jpg",
     "steamGridMatchValidated": true,
@@ -68147,7 +68056,7 @@
     "rawgMatchedName": "Tomb Raider: Legacy of Atlantis",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2437ae37be2104e7f4c1e0d468d2f588.png",
     "steamGridMatchValidated": true,
@@ -68260,7 +68169,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 57.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -68793,7 +68702,7 @@
     "plataformaKey": "ps5",
     "fornecedorProductId": "359477430",
     "varianteFornecedorId": 1571605860,
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/KuDpSl-hlqg",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000361952-d9f58053d84606b3e217859573767623-1024-1024.webp"
     ],
@@ -68904,7 +68813,7 @@
     "varianteFornecedorId": 1572273102,
     "rawgId": 5477,
     "rawgSlug": "twisted-metal-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/SFMG1gBtOtI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/779/7797057beb9c4e91659bcb5a40c3333f.jpg",
       "https://media.rawg.io/media/screenshots/a15/a15879f45a4cfcd2c93c049c1a628275.jpg",
@@ -68964,7 +68873,7 @@
     "varianteFornecedorId": 1572281951,
     "rawgId": 57938,
     "rawgSlug": "twisted-metal-4",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/wZLK4NSahIs",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9f2/9f2acd3572748122cd75f0c17f205de7.jpg",
       "https://media.rawg.io/media/screenshots/459/459a046b1173ca12ac0cfc6a204b9412.jpg",
@@ -69019,7 +68928,7 @@
     "varianteFornecedorId": 1572275423,
     "rawgId": 57937,
     "rawgSlug": "twisted-metal-iii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/woTSZ2OjH6k",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/848/8486ff75c08ad8737088f5b921c046ae.jpg",
       "https://media.rawg.io/media/screenshots/ceb/ceb6bfe6c6b0f7ec45270e95a9f45970.jpg",
@@ -69207,7 +69116,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -69584,7 +69493,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -69949,7 +69858,7 @@
         "url": "https://www.lojatcagames.com.br/products/a-plague-tale-innocence-ps5"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/H4FOb16Nenk",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/APlagueTaleInocencePS5.jpg?v=1786233749"
     ],
@@ -70243,68 +70152,6 @@
     "steamGridMatchScore": 0.752
   },
   {
-    "id": "car-mechanic-simulator-2021-ps5",
-    "nome": "Car Mechanic Simulator 2021 - PS5 Mídia Digital",
-    "precoAtualBRL": 47.4,
-    "precoPixBRL": 47.4,
-    "precoSemPixBRL": 49.9,
-    "descontoPixAplicado": true,
-    "precoOriginalBRL": 49.9,
-    "tipoMidia": "Primaria",
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/car-mechanic-simulator-2021-ps5",
-    "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/CarMechanicSimulator2021PS5.jpg?v=1786234197",
-    "plataforma": "PlayStation 5",
-    "plataformaKey": "ps5",
-    "fornecedorProductId": "7762841567330",
-    "varianteFornecedorId": "43190208266338",
-    "fornecedorId": "tca",
-    "fornecedorNome": "TCA Games",
-    "fornecedores": [
-      {
-        "id": "tca",
-        "nome": "TCA Games",
-        "custoPixBRL": 47.4,
-        "custoSemPixBRL": 49.9,
-        "url": "https://www.lojatcagames.com.br/products/car-mechanic-simulator-2021-ps5"
-      }
-    ],
-    "rawgId": 647625,
-    "rawgSlug": "car-mechanic-simulator-2021",
-    "trailer": "https://www.youtube.com/embed/z4G7sPiMh5E",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/add/add87fb9881f6fad590b6fe8c7375db6.jpg",
-      "https://media.rawg.io/media/screenshots/373/3735939fcaec8d4247d5255c16231baa.jpg",
-      "https://media.rawg.io/media/screenshots/7f2/7f29929d4c7bdef3ffd3cda7368a539f.jpg",
-      "https://media.rawg.io/media/screenshots/30c/30c419fd23c2e069c29af2725ba04a71.jpg",
-      "https://media.rawg.io/media/screenshots/871/8719795887883436607bc0e9550e7eb1.jpg"
-    ],
-    "descricao": "Check out more gameshttps://store.steampowered.com/app/1078760/Motorcycle_Mechanic_Simulator_2021/ https://store.steampowered.com/app/1088770/Car_Mechanic_Simulator_VR/ https://store.steampowered.com/app/407130/Tank_Mechanic_Simulator/ More VR simulatorshttps://store.steampowered.com/app/1019550/...",
-    "imagemFallback": "https://media.rawg.io/media/screenshots/74a/74ae7748e2d93fc5f9ac68f5d5fef282.jpg",
-    "released": "2021-08-11",
-    "rating": 3.74,
-    "ratings_count": 58,
-    "added": 390,
-    "genres": [
-      "Simulation",
-      "Racing",
-      "Indie"
-    ],
-    "rawgMatchValidated": true,
-    "rawgMatchVersion": 3,
-    "rawgMatchedName": "Car Mechanic Simulator 2021",
-    "rawgMatchScore": 1,
-    "enriquecido": true,
-    "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 12.99,
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/329e4840862fb61575d47eb64f231413.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Car Mechanic Simulator 2021",
-    "steamGridMatchScore": 1,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
-  },
-  {
     "id": "darksiders-warmastered-ps5",
     "nome": "Darksiders Warmastered - PS5 Mídia Digital",
     "precoAtualBRL": 75.9,
@@ -70412,8 +70259,8 @@
     "rawgMatchedName": "Dead by Daylight",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 9.99,
+    "precoVendaEUR": 8.99,
+    "precoOriginalEUR": 8.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e094a58c3495647287f75da5f6a7f6f3.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dead by Daylight",
@@ -71165,11 +71012,11 @@
   {
     "id": "forza-5-ps5",
     "nome": "Forza 5 - PS5 Mídia Digital",
-    "precoAtualBRL": 104.4,
-    "precoPixBRL": 104.4,
-    "precoSemPixBRL": 109.9,
+    "precoAtualBRL": 85.4,
+    "precoPixBRL": 85.4,
+    "precoSemPixBRL": 89.9,
     "descontoPixAplicado": true,
-    "precoOriginalBRL": 109.9,
+    "precoOriginalBRL": 89.9,
     "tipoMidia": "Primaria",
     "linkFornecedor": "https://www.lojatcagames.com.br/products/forza-5-ps5",
     "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Forza5PS5.jpg?v=1786233736",
@@ -71183,8 +71030,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 104.4,
-        "custoSemPixBRL": 109.9,
+        "custoPixBRL": 85.4,
+        "custoSemPixBRL": 89.9,
         "url": "https://www.lojatcagames.com.br/products/forza-5-ps5"
       }
     ],
@@ -72683,11 +72530,11 @@
   {
     "id": "prince-of-persia-the-lost-crown-ps5",
     "nome": "Prince of Persia The Lost Crown - PS5 Mídia Digital",
-    "precoAtualBRL": 61.65,
-    "precoPixBRL": 61.65,
-    "precoSemPixBRL": 64.9,
+    "precoAtualBRL": 47.4,
+    "precoPixBRL": 47.4,
+    "precoSemPixBRL": 49.9,
     "descontoPixAplicado": true,
-    "precoOriginalBRL": 64.9,
+    "precoOriginalBRL": 49.9,
     "tipoMidia": "Primaria",
     "linkFornecedor": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps5",
     "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/PrinceofPersiaPS5.jpg?v=1786233974",
@@ -72701,8 +72548,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 61.65,
-        "custoSemPixBRL": 64.9,
+        "custoPixBRL": 47.4,
+        "custoSemPixBRL": 49.9,
         "url": "https://www.lojatcagames.com.br/products/prince-of-persia-the-lost-crown-ps5"
       }
     ],
@@ -72879,7 +72726,7 @@
     ],
     "rawgId": 797882,
     "rawgSlug": "rollerdrome",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/4oxlPLIoGAs",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/c0e/c0e5161f2b762730cbe26841a49bd02c.jpg",
       "https://media.rawg.io/media/screenshots/0a6/0a6dec4e019924f113b9a1179e03229f.jpg",
@@ -73297,7 +73144,7 @@
     ],
     "rawgId": 12447,
     "rawgSlug": "the-elder-scrolls-v-skyrim-special-edition",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/t-_56Ouy8II",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e38/e387d8f781c00520eccb5934b95f1720.jpg",
       "https://media.rawg.io/media/screenshots/d48/d48ce46dd0dfd32c374c4e8c09dd370c.jpg",
@@ -73720,7 +73567,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 8.99,
+    "precoOriginalEUR": 19.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/f933d5c2b1cf9fd42ec839ef9648bf46.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "A Way Out",
@@ -73804,7 +73651,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/b6582fed3f0ae38131d466b3f286d1a4.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Ace Combat 7: Skies Unknown",
@@ -73905,7 +73752,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 15.99,
-    "precoOriginalEUR": 15.99,
+    "precoOriginalEUR": 17.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Age of Empires IV",
@@ -73947,7 +73794,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 7.99,
+    "precoOriginalEUR": 17.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/f25f7b9e7ee973a3720e1261cf3a30c8.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Alan Wake Remastered",
@@ -74133,7 +73980,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ace9a63cc0e5d80e2292a08f494c778a.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Ancestors: The Humankind Odyssey ",
@@ -74220,7 +74067,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 15.99,
+    "precoOriginalEUR": 20.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d67bff5f5cfe9e3c1177b4f488538e8c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "AO Tennis 2",
@@ -74296,7 +74143,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 10.99,
+    "precoOriginalEUR": 9.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2fb88ee97a699cbd93cb7f3859951f69.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "ARK: Survival Evolved",
@@ -74328,7 +74175,7 @@
     ],
     "rawgId": 4729,
     "rawgSlug": "assassins-creed",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/RjQ6ZtyXoA0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/0dc/0dc9daa10241d1e05bf29d4c34bf87c3.jpg",
       "https://media.rawg.io/media/screenshots/35b/35bc2e90473975c2125a519e008dbe92.jpg",
@@ -74383,7 +74230,7 @@
     ],
     "rawgId": 20180,
     "rawgSlug": "assassins-creed-chronicles-china-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/2W8_-SaDWSE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/569/569454df51319779ee25b9ab986ddd36.jpg",
       "https://media.rawg.io/media/screenshots/801/801969642a499f6d7f547dd6a94a2106.jpg",
@@ -74406,8 +74253,8 @@
     "rawgMatchedName": "Assassin’s Creed Chronicles: China",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 10.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/38a9dbfce0500ac32fa4092cf609e572.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin’s Creed Chronicles: China",
@@ -74448,8 +74295,8 @@
     "rawgMatchedName": "Assassin’s Creed Chronicles: India",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 8.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/05761d7cd3d824ac6da56e12eb7c8c6f.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin’s Creed Chronicles: India",
@@ -74498,7 +74345,7 @@
     ],
     "rawgId": 19338,
     "rawgSlug": "assassins-creed-chronicles-russia-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/idosIQPtXdw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/565/56534595d4c19edb31ed6a56ecb43d03.jpg",
       "https://media.rawg.io/media/screenshots/8aa/8aab0c89fe3a7ddd6798db0ac7ef1275.jpg",
@@ -74522,8 +74369,8 @@
     "rawgMatchedName": "Assassin’s Creed Chronicles: Russia",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 10.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/07ca1fa3752c82926902fc1e800da282.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin’s Creed Chronicles: Russia",
@@ -74578,7 +74425,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 5.99,
-    "precoOriginalEUR": 24.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Chronicles",
@@ -74789,7 +74636,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 82.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -74967,7 +74814,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 11.99,
+    "precoOriginalEUR": 35.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/132d16811e7db45a5c501541c275851c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Odyssey",
@@ -74999,7 +74846,7 @@
     ],
     "rawgId": 28153,
     "rawgSlug": "assassins-creed-origins",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/cK4iAjzAoas",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5c8/5c8c5889c81eb226b182e6df4018a29a.jpg",
       "https://media.rawg.io/media/screenshots/0cf/0cf5ed35a3906f32967cb476c11c5d49.jpg",
@@ -75021,7 +74868,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Assassin's Creed Origins",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 35.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/92a5d56731582f082f64d5dbd367c3fc.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Origins",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-one",
@@ -75145,7 +75001,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 3.99,
-    "precoOriginalEUR": 28.99,
+    "precoOriginalEUR": 15.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/742107eae660cba08fc8a4c04b854254.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Syndicate",
@@ -75232,7 +75088,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 8.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Rogue",
@@ -75286,7 +75142,7 @@
         "url": "https://www.alphagames.com.br/produtos/assassins-creed-unity-midia-digital-rv8k8/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/kBhk9ci1nm4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368458-f0c6d6576584b639fa17907139036087-1024-1024.webp"
     ],
@@ -75300,7 +75156,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Unity",
+    "steamGridMatchScore": 0.87,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-valhalla-immortals-fenyx-rising-xbox-one",
@@ -75666,7 +75531,7 @@
         "url": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/lVMNvvaXJ2s",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp"
     ],
@@ -75784,8 +75649,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 18.9,
-        "custoSemPixBRL": 19.9,
+        "custoPixBRL": 28.4,
+        "custoSemPixBRL": 29.9,
         "url": "https://www.lojatcagames.com.br/products/battlefield-1-xbox-one"
       }
     ],
@@ -76606,7 +76471,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
+    "precoOriginalEUR": 17.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/46c07dce83da31aba27b076ebb36863e.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Infinite Warfare",
@@ -77027,7 +76892,7 @@
         "url": "https://www.alphagames.com.br/produtos/construction-simulator-3-xbox-one-xbox-series-s-x-midia-digital-copia-lq24p/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/W0bKMOS7Clo",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-3-12706fbb0f320d75f617906348849225-1024-1024.webp"
     ],
@@ -77286,7 +77151,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Crash Time III",
+    "steamGridMatchScore": 0.325,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "crash-trilogy-xbox-one",
@@ -77823,7 +77697,7 @@
         "url": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Mpn-MC2B6Zc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/death-stranding-diretor-cut-aa4adb6875239e49f217907034912946-1024-1024.webp"
     ],
@@ -77837,7 +77711,18 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Death Stranding Director's Cut",
+    "steamGridMatchScore": 0.74,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 39
   },
   {
     "id": "diablo-iv-xbox-one",
@@ -77924,7 +77809,7 @@
         "url": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Uz58uS7FZ28",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/dmc4se-demon-hunter-bundle-c45258d745fa1c59ff17907040135078-1024-1024.webp"
     ],
@@ -77938,7 +77823,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": null,
+    "steamGridMatchScore": 0,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "dragon-ball-xenoverse-xbox-one",
@@ -78716,7 +78610,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 3.99,
-    "precoOriginalEUR": 3.99,
+    "precoOriginalEUR": 8.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/19e8eca3844064c94a2f9c838df1541d.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Far Cry 4",
@@ -79230,7 +79124,7 @@
         "url": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/hzkit_4glmc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp"
     ],
@@ -79244,7 +79138,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 47.99,
+    "precoOriginalEUR": 47.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Five Nights at Freddy's: Security Breach",
+    "steamGridMatchScore": 0.747,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "five-nights-at-freddy-s-2-xbox-one",
@@ -80117,7 +80020,7 @@
         "url": "https://www.alphagames.com.br/produtos/mxgp-2020-xbox-one-xbox-series-s-x-midia-digital-copia-1wngl/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/9YPb1HhbsFU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-18-b95e2cb2a287ac041717906340359685-1024-1024.webp"
     ],
@@ -80815,6 +80718,13 @@
         "custoPixBRL": 92.91,
         "custoSemPixBRL": 99.9,
         "url": "https://www.alphagames.com.br/produtos/mafia-iii-definitive-edition-xbox-one-series-s-x-midia-digital-9j523/"
+      },
+      {
+        "id": "tca",
+        "nome": "TCA Games",
+        "custoPixBRL": 37.9,
+        "custoSemPixBRL": 39.9,
+        "url": "https://www.lojatcagames.com.br/products/mafia-iii-definitive-edition-xbox-one"
       }
     ]
   },
@@ -80903,7 +80813,7 @@
     ],
     "rawgId": 713,
     "rawgSlug": "ultimate-marvel-vs-capcom-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/swzdnvSo3X8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/fb0/fb0052bdad28047c8365a5021d11b429.jpg",
       "https://media.rawg.io/media/screenshots/52e/52e6bbbe312479d9020dfd2a1db7278f.jpg",
@@ -80958,7 +80868,7 @@
     ],
     "rawgId": 51327,
     "rawgSlug": "mega-man-11",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3aSC5A726f0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a7d/a7d47833ef6d71117a8085ebb229aaac.jpeg",
       "https://media.rawg.io/media/screenshots/e36/e36d92993a67f6d29f4ad532c4627354.jpg",
@@ -80980,7 +80890,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Mega Man 11",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/500d31031848afb093d714c7c569bfdc.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man 11",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "mega-man-x-xbox-one",
@@ -81006,7 +80925,7 @@
         "url": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Usis7p46Vxs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-x-legacy-collection-8651b2a8192faf19dc17907032158411-1024-1024.webp"
     ],
@@ -81020,7 +80939,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e24927b595bdddebb71671d11f76f067.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man X",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "mega-man-zx-xbox-one",
@@ -81070,7 +80998,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Mega Man ZX",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/848115676618836e7959dd6909273d4d.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man ZX",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "metro-exodus-xbox-one",
@@ -81152,7 +81089,7 @@
         "url": "https://www.alphagames.com.br/produtos/metro-saga-budle-xbox-one-xbox-series-s-x-midia-digital-1rsr1/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/MSdghdelbAw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/metro-saga-bundle-xbox-one-midia-digital-0136f5b18b9823b5af17884622149893-1024-1024.webp"
     ],
@@ -81395,7 +81332,7 @@
     ],
     "rawgId": 973391,
     "rawgSlug": "monster-hunter-wilds",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/a_wNFT4j6qI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ec9/ec90763ad76a7cd2e5ab9eefb418af60.jpg",
       "https://media.rawg.io/media/screenshots/546/546ef773017e74dc4b245d3d60a0710c.jpg",
@@ -81418,7 +81355,18 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Monster Hunter Wilds",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 28.99,
+    "precoOriginalEUR": 28.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6f3171a0d40d400b4543cdd06ca0de3c.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Monster Hunter Wilds",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 48
   },
   {
     "id": "mortal-kombat-11-xbox-one",
@@ -81615,7 +81563,7 @@
         "url": "https://www.alphagames.com.br/produtos/f1-24-xbox-one-xbox-series-s-x-midia-digital-copia-110td/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/ZEU8oGvgSTA",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-29-4784ec63a7c5048a3717906403471005-1024-1024.webp"
     ],
@@ -82451,8 +82399,8 @@
     "rawgMatchedName": "One Piece: Burning Blood",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 11.99,
-    "precoOriginalEUR": 11.99,
+    "precoVendaEUR": 4.99,
+    "precoOriginalEUR": 7.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/52a010213f98c7aac7b767ef262d2ba4.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "One Piece: Burning Blood",
@@ -82516,8 +82464,8 @@
     "rawgMatchedName": "ONE PIECE World Seeker",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 11.99,
-    "precoOriginalEUR": 11.99,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cb6a8c67f75c15d2a1322a7837e07005.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "One Piece: World Seeker",
@@ -82663,7 +82611,7 @@
         "url": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/LgDEpBoQ1VQ",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/pack-spyro-crash-trilogy-924b783cc197d7a3ee17907035532554-1024-1024.webp"
     ],
@@ -82677,7 +82625,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 14.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Pack Man in Rio",
+    "steamGridMatchScore": 0.307,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "palworld-xbox-one",
@@ -82813,7 +82770,7 @@
         "url": "https://www.alphagames.com.br/produtos/final-fantasy-vii-xbox-one-xbox-series-s-x-midia-digital-copia-1i28k/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/xMQm8ubM-Cw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/poppy-playtime-1-3bbc661e525116707517906300804754-1024-1024.webp"
     ],
@@ -83638,7 +83595,7 @@
         "url": "https://www.alphagames.com.br/produtos/resident-evil-triplo-pack-xbox-one-xbox-series-s-x-midia-digital-38ya3/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/zOQE-o6kpBY",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/111958-7af4e74534556996f317879666955915-1024-1024.webp"
     ],
@@ -84000,11 +83957,11 @@
   {
     "id": "rust-console-edition-xbox-one",
     "nome": "RUST CONSOLE EDITION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-    "precoAtualBRL": 120.81,
-    "precoPixBRL": 120.81,
-    "precoSemPixBRL": 129.9,
+    "precoAtualBRL": 130.11,
+    "precoPixBRL": 130.11,
+    "precoSemPixBRL": 139.9,
     "descontoPixAplicado": true,
-    "precoOriginalBRL": 149.9,
+    "precoOriginalBRL": 159.9,
     "tipoMidia": "unica",
     "linkFornecedor": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/",
     "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-14-bbbee934bfb7ed6e5117906380985243-1024-1024.webp",
@@ -84018,8 +83975,8 @@
       {
         "id": "alpha",
         "nome": "Alpha Games",
-        "custoPixBRL": 120.81,
-        "custoSemPixBRL": 129.9,
+        "custoPixBRL": 130.11,
+        "custoSemPixBRL": 139.9,
         "url": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/"
       },
       {
@@ -84858,7 +84815,7 @@
         "url": "https://www.alphagames.com.br/produtos/tony-hawks-skater-12-xbox-one-xbox-series-s-x-midia-digital-copia-z6gqs/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/pQlenskhoxI",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-2-107f96010aff6e4bcb17906412323854-1024-1024.webp"
     ],
@@ -84977,7 +84934,7 @@
     ],
     "rawgId": 2900,
     "rawgSlug": "star-wars-bounty-hunter",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/q8zh1HUcqBk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e24/e241a1ea2fd319113bc5576d50e437aa.jpg",
       "https://media.rawg.io/media/screenshots/015/015038a61e32ecf6ca4a1025f37c83d4.jpg",
@@ -85000,7 +84957,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Star Wars Bounty Hunter",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 26.99,
+    "precoOriginalEUR": 26.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ca9fb1d01fb6c899ef4095abc2d3ea13.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Star Wars: Bounty Hunter",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "stranded-deep-xbox-one",
@@ -85396,7 +85362,7 @@
         "url": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/1wA1VLDJMQI",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-backrooms-1998-f8a0d50e16b879bc1317907033186239-1024-1024.webp"
     ],
@@ -85410,7 +85376,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Backrooms",
+    "steamGridMatchScore": 0.7,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-crew-2-xbox-one",
@@ -85615,7 +85590,7 @@
         "url": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/N1m7hTS27hE",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-1-f68618e2d1e575958417907037157259-1024-1024.webp"
     ],
@@ -85629,7 +85604,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 10.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Evil Within",
+    "steamGridMatchScore": 0.829,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-evil-within-2-xbox-one",
@@ -85666,7 +85650,7 @@
     ],
     "rawgId": 29171,
     "rawgSlug": "the-evil-within-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/f7JbFBq4NAo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/540/54002d97419f093d6a06f2424f95ead6.jpg",
       "https://media.rawg.io/media/screenshots/291/291aa4c9e9502d0523f290f16547ba0b.jpg",
@@ -85691,7 +85675,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 5.99,
-    "precoOriginalEUR": 5.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/231a171b205742febf998a329042ba9c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "The Evil Within 2",
@@ -85726,7 +85710,7 @@
     ],
     "rawgId": 24412,
     "rawgSlug": "the-king-of-fighters-95",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/_d1vOBqbejA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/99d/99d76a753bb34b0c928d7c44ab587c18.jpg",
       "https://media.rawg.io/media/screenshots/7c0/7c0537e30b3339c3a5da1b048783efb6.jpg",
@@ -85784,7 +85768,7 @@
     ],
     "rawgId": 7450,
     "rawgSlug": "the-king-of-fighters-97",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/-x53X0d3YMo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/de1/de1d00150a5e7826f325564a8a6c755a.jpg",
       "https://media.rawg.io/media/screenshots/0ea/0eabcbc1c670f25d0909e5a3a35c1151.jpg",
@@ -86972,7 +86956,7 @@
         "url": "https://www.lojatcagames.com.br/products/a-plague-tale-innocence-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/H4FOb16Nenk",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/APLAGUETALEINNOCENCE.png?v=1786233787"
     ],
@@ -87071,7 +87055,7 @@
         "url": "https://www.lojatcagames.com.br/products/aliens-fireteam-elit-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/bBjhTjTX52s",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/81zie818QwS._AC_UF1000_1000_QL80.jpg?v=1786233669"
     ],
@@ -87305,11 +87289,11 @@
   {
     "id": "battlefield-1-revolution-xbox-one",
     "nome": "Battlefield 1 Revolution Xbox One Mídia Digital",
-    "precoAtualBRL": 23.65,
-    "precoPixBRL": 23.65,
-    "precoSemPixBRL": 24.9,
+    "precoAtualBRL": 33.15,
+    "precoPixBRL": 33.15,
+    "precoSemPixBRL": 34.9,
     "descontoPixAplicado": true,
-    "precoOriginalBRL": 24.9,
+    "precoOriginalBRL": 34.9,
     "tipoMidia": "unica",
     "linkFornecedor": "https://www.lojatcagames.com.br/products/battlefield-1-revolution-xbox-one",
     "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Battlefield1Revolution.jpg?v=1786233941",
@@ -87323,8 +87307,8 @@
       {
         "id": "tca",
         "nome": "TCA Games",
-        "custoPixBRL": 23.65,
-        "custoSemPixBRL": 24.9,
+        "custoPixBRL": 33.15,
+        "custoSemPixBRL": 34.9,
         "url": "https://www.lojatcagames.com.br/products/battlefield-1-revolution-xbox-one"
       }
     ],
@@ -87743,7 +87727,7 @@
         "url": "https://www.lojatcagames.com.br/products/bomberman-r-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/m1OLeKKskSg",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/BomberMan.jpg?v=1786234314"
     ],
@@ -88458,7 +88442,7 @@
     ],
     "rawgId": 22568,
     "rawgSlug": "darksiders-furys-collection-war-and-death-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/33ltYoAFoW8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/814/8144c4d5b5cb714f933c92dbecae0232.jpg",
       "https://media.rawg.io/media/screenshots/237/237c82a63a8c2ce5b376256df920cf3e.jpg",
@@ -88897,7 +88881,7 @@
     ],
     "rawgId": 58777,
     "rawgSlug": "doom-eternal",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/_UuktemkCFI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e60/e605ef79d45fcde4afcdbbe8783b7755.jpg",
       "https://media.rawg.io/media/screenshots/65d/65db880d23d8d9afe59da1a0f4fbc9d1_s0rkn1r.jpg",
@@ -88955,7 +88939,7 @@
     ],
     "rawgId": 49225,
     "rawgSlug": "dragon-ball-fighterz",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/qTfxD54fMHs",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/0df/0df1f4c22cff98e978ae2fd946e07444.jpg",
       "https://media.rawg.io/media/screenshots/279/2794b4ad4f479fe460f15ae056de181e.jpg",
@@ -90320,7 +90304,7 @@
     ],
     "rawgId": 325037,
     "rawgSlug": "jumanji-the-video-game",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/hciK0kifbZQ",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/b78/b78fc397e07a853dc3991846f77ecad7.jpg",
       "https://media.rawg.io/media/screenshots/975/9750aac408b6ae6cdf599e3db53aae06.jpg",
@@ -90818,7 +90802,7 @@
         "url": "https://www.lojatcagames.com.br/products/lego-jurassic-world-o-mundo-dos-dinossauros-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/V3s9s5tQZ_Q",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/LegoJurassic.png?v=1786234052"
     ],
@@ -90868,7 +90852,7 @@
     ],
     "rawgId": 301638,
     "rawgSlug": "lego-marvel-collection",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/bggEz4o-Fus",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/37f/37fee7b4fef047ff9951a70dba96a0ac.jpg",
       "https://media.rawg.io/media/screenshots/c81/c814f3610fe64229a255c7136773b4d0.jpg",
@@ -90980,7 +90964,7 @@
         "url": "https://www.lojatcagames.com.br/products/lego-marvel-vingadores-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/JCyJ-fotjuk",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/LegoVingadores.jpg?v=1786234048"
     ],
@@ -91087,7 +91071,7 @@
         "url": "https://www.lojatcagames.com.br/products/lego-ninjago-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/l33IYMlyOOA",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/LEGONINJAG.jpg?v=1786233785"
     ],
@@ -91394,7 +91378,7 @@
         "url": "https://www.lojatcagames.com.br/products/mafia-trilogia-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/D3PHVzRSBh8",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/MafiaTrilogia.jpg?v=1786587367"
     ],
@@ -91619,7 +91603,7 @@
     ],
     "rawgId": 3192,
     "rawgSlug": "metal-gear-solid-v-the-phantom-pain",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Krc1t4HU8GI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/fa0/fa0cb095629729fb990079d0ec135dae.jpg",
       "https://media.rawg.io/media/screenshots/768/768087f6fbfae3b1fa7533c38bda35a0.jpg",
@@ -91771,7 +91755,7 @@
         "url": "https://www.lojatcagames.com.br/products/monster-energy-supercross-4-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/agMDEN6VSvM",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/MONSTERENERGYSUPERCROSS4.jpg?v=1786234381"
     ],
@@ -92726,7 +92710,7 @@
         "url": "https://www.lojatcagames.com.br/products/os-smurfs-missao-florrorosa-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/XK_krWGVkgg",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/OSSMURFS.png?v=1786234384"
     ],
@@ -93693,7 +93677,7 @@
     ],
     "rawgId": 244802,
     "rawgSlug": "ride-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/t_WKM_f764I",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5fb/5fbca78f88f1ddcacfc9aba76674d2cd.jpg",
       "https://media.rawg.io/media/screenshots/437/4370065b6423fc068a64f8ef23fd11cd.jpg",
@@ -93875,7 +93859,7 @@
         "url": "https://www.lojatcagames.com.br/products/ryse-edicao-lendaria-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/osORSNGxAsA",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Capa_4921878e-a815-4543-b1b0-32b6145cb699.jpg?v=1786234229"
     ],
@@ -94042,7 +94026,7 @@
     ],
     "rawgId": 42151,
     "rawgSlug": "sniper-ghost-warrior-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/kG7g4XcMokw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/879/8794d934eb14afcc908db78fb77ba5a7.jpg",
       "https://media.rawg.io/media/screenshots/8d6/8d6d02cf132acbd93415282e09f5c629.jpg",
@@ -94451,7 +94435,7 @@
     ],
     "rawgId": 715,
     "rawgSlug": "steep",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/XznTHeUkGXA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/25a/25a00a852da899d82bbac47eedf72df1.jpg",
       "https://media.rawg.io/media/screenshots/b8e/b8e7e7bf0ded951fe7fb889d89159548.jpg",
@@ -94751,7 +94735,7 @@
         "url": "https://www.lojatcagames.com.br/products/terra-media-sombras-da-guerra-xbox-one"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/QM5orsU0yVI",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/TerraMedia-SombrasdaGuerra.jpg?v=1786234338"
     ],
@@ -95468,7 +95452,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 8.99,
+    "precoOriginalEUR": 19.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/f933d5c2b1cf9fd42ec839ef9648bf46.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "A Way Out",
@@ -95545,7 +95529,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/b6582fed3f0ae38131d466b3f286d1a4.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Ace Combat 7: Skies Unknown",
@@ -95701,7 +95685,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 15.99,
-    "precoOriginalEUR": 15.99,
+    "precoOriginalEUR": 17.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Age of Empires IV",
@@ -95858,7 +95842,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 7.99,
+    "precoOriginalEUR": 17.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/f25f7b9e7ee973a3720e1261cf3a30c8.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Alan Wake Remastered",
@@ -96044,7 +96028,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ace9a63cc0e5d80e2292a08f494c778a.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Ancestors: The Humankind Odyssey ",
@@ -96122,7 +96106,7 @@
     ],
     "rawgId": 403043,
     "rawgSlug": "ao-tennis-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/nUHosOmnaik",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d04/d042a25a3a038f79b1f86defc55b397c.jpg",
       "https://media.rawg.io/media/screenshots/f5b/f5b631d5648a487cf686d30de9eb4ad8.jpg",
@@ -96143,7 +96127,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "AO Tennis 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 20.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d67bff5f5cfe9e3c1177b4f488538e8c.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "AO Tennis 2",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "arc-raiders-xbox-series",
@@ -96361,7 +96354,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 10.99,
+    "precoOriginalEUR": 9.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2fb88ee97a699cbd93cb7f3859951f69.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "ARK: Survival Evolved",
@@ -96393,7 +96386,7 @@
     ],
     "rawgId": 4729,
     "rawgSlug": "assassins-creed",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/RjQ6ZtyXoA0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/0dc/0dc9daa10241d1e05bf29d4c34bf87c3.jpg",
       "https://media.rawg.io/media/screenshots/35b/35bc2e90473975c2125a519e008dbe92.jpg",
@@ -96461,7 +96454,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a9f7e2af063303f02fd5d479c8816c79.png",
     "steamGridMatchValidated": true,
@@ -96497,7 +96490,7 @@
     ],
     "rawgId": 20180,
     "rawgSlug": "assassins-creed-chronicles-china-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/2W8_-SaDWSE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/569/569454df51319779ee25b9ab986ddd36.jpg",
       "https://media.rawg.io/media/screenshots/801/801969642a499f6d7f547dd6a94a2106.jpg",
@@ -96520,8 +96513,8 @@
     "rawgMatchedName": "Assassin’s Creed Chronicles: China",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 10.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/38a9dbfce0500ac32fa4092cf609e572.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin’s Creed Chronicles: China",
@@ -96553,7 +96546,7 @@
     ],
     "rawgId": 19274,
     "rawgSlug": "assassins-creed-chronicles-india-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Tqz6HxPunRw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/270/2705efbd0c3ff98bf61589a4418e2b8d.jpg",
       "https://media.rawg.io/media/screenshots/000/00042367dff2429b53975165cf2b2e2e.jpg",
@@ -96575,7 +96568,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Assassin’s Creed Chronicles: India",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/05761d7cd3d824ac6da56e12eb7c8c6f.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin’s Creed Chronicles: India",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-chronicles-russia-xbox-series",
@@ -96603,7 +96605,7 @@
     ],
     "rawgId": 19338,
     "rawgSlug": "assassins-creed-chronicles-russia-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/idosIQPtXdw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/565/56534595d4c19edb31ed6a56ecb43d03.jpg",
       "https://media.rawg.io/media/screenshots/8aa/8aab0c89fe3a7ddd6798db0ac7ef1275.jpg",
@@ -96627,8 +96629,8 @@
     "rawgMatchedName": "Assassin’s Creed Chronicles: Russia",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 10.99,
+    "precoVendaEUR": 3.99,
+    "precoOriginalEUR": 5.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/07ca1fa3752c82926902fc1e800da282.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin’s Creed Chronicles: Russia",
@@ -96674,7 +96676,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 24.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Chronicles",
@@ -96885,7 +96887,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 82.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -97054,7 +97056,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 16.99,
-    "precoOriginalEUR": 16.99,
+    "precoOriginalEUR": 35.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/132d16811e7db45a5c501541c275851c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Odyssey",
@@ -97089,7 +97091,7 @@
     ],
     "rawgId": 28153,
     "rawgSlug": "assassins-creed-origins",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/cK4iAjzAoas",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5c8/5c8c5889c81eb226b182e6df4018a29a.jpg",
       "https://media.rawg.io/media/screenshots/0cf/0cf5ed35a3906f32967cb476c11c5d49.jpg",
@@ -97111,7 +97113,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Assassin's Creed Origins",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 35.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/92a5d56731582f082f64d5dbd367c3fc.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Origins",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-series",
@@ -97278,7 +97289,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 28.99,
+    "precoOriginalEUR": 15.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/742107eae660cba08fc8a4c04b854254.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Syndicate",
@@ -97365,7 +97376,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 8.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Rogue",
@@ -97626,7 +97637,7 @@
     ],
     "rawgId": 1391,
     "rawgSlug": "assetto-corsa",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/CYncAnd31Q8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/7d3/7d37f35bbe513adf7b31f41ad9d88aae.jpg",
       "https://media.rawg.io/media/screenshots/d23/d230059741c818178b9c22f6eb81a0be.jpg",
@@ -97650,7 +97661,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Assetto Corsa",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 10.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/542c851650c2c1962d8c852785477ae4.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assetto Corsa",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "avatar-legends-the-fighting-game-xbox-series",
@@ -97836,7 +97856,7 @@
         "url": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/lVMNvvaXJ2s",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp"
     ],
@@ -98270,7 +98290,7 @@
     "rawgMatchedName": "Biomutant",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 10.99,
+    "precoVendaEUR": 9.99,
     "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/65ef8f4998b8a5c48e5a2472dc138c69.png",
     "steamGridMatchValidated": true,
@@ -98860,7 +98880,7 @@
     ],
     "rawgId": 887,
     "rawgSlug": "call-of-duty-infinite-warfare",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/EeF3UTkCoxY",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/705/705820f9bb91e024283d5aa8914202cf.jpg",
       "https://media.rawg.io/media/screenshots/186/18603afec3ad01e5e4de172d32b4fec4.jpg",
@@ -98882,7 +98902,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Call of Duty: Infinite Warfare",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 19.99,
+    "precoOriginalEUR": 19.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/46c07dce83da31aba27b076ebb36863e.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Call of Duty: Infinite Warfare",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "call-of-duty-modern-warfare-xbox-series",
@@ -99150,7 +99179,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -99306,7 +99335,7 @@
         "url": "https://www.alphagames.com.br/produtos/construction-simulator-3-xbox-one-xbox-series-s-x-midia-digital-copia-lq24p/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/W0bKMOS7Clo",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-3-12706fbb0f320d75f617906348849225-1024-1024.webp"
     ],
@@ -99574,7 +99603,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Crash Time III",
+    "steamGridMatchScore": 0.325,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "crash-trilogy-xbox-series",
@@ -100295,7 +100333,7 @@
         "url": "https://www.alphagames.com.br/produtos/far-cry-4-xbox-one-xbox-series-s-x-midia-digital-copia-vuhis/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Mpn-MC2B6Zc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/death-stranding-diretor-cut-aa4adb6875239e49f217907034912946-1024-1024.webp"
     ],
@@ -100309,7 +100347,18 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Death Stranding Director's Cut",
+    "steamGridMatchScore": 0.74,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 39
   },
   {
     "id": "devil-may-cry-5-xbox-series",
@@ -100461,7 +100510,7 @@
         "url": "https://www.alphagames.com.br/produtos/star-wars-bounty-hunter-xbox-one-xbox-series-s-x-midia-digital-copia-1x2t2/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Uz58uS7FZ28",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/dmc4se-demon-hunter-bundle-c45258d745fa1c59ff17907040135078-1024-1024.webp"
     ],
@@ -100475,7 +100524,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": null,
+    "steamGridMatchScore": 0,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "dragon-age-the-veilguard-xbox-series",
@@ -101073,7 +101131,7 @@
     "rawgMatchedName": "EA SPORTS College Football 27",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -101436,7 +101494,7 @@
     "rawgMatchedName": "Fable",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a66cde92a4319185223bab01e9dfe302.png",
     "steamGridMatchValidated": true,
@@ -101535,7 +101593,7 @@
     ],
     "rawgId": 3497,
     "rawgSlug": "far-cry-4",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/xI6uV47jKME",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/62c/62c6f076bfb258f12e925ff12e56dad4.jpg",
       "https://media.rawg.io/media/screenshots/a6e/a6e31bb99bdd48ee3e6cef291a053e6a.jpg",
@@ -101556,7 +101614,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Far Cry 4",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/19e8eca3844064c94a2f9c838df1541d.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Far Cry 4",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "farm-manager-2022-xbox-series",
@@ -102044,7 +102111,7 @@
         "url": "https://www.alphagames.com.br/produtos/the-backrooms-1998-xbox-one-xbox-series-s-x-midia-digital-copia-1vz8r/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/hzkit_4glmc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp"
     ],
@@ -102058,7 +102125,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 47.99,
+    "precoOriginalEUR": 47.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Five Nights at Freddy's: Security Breach",
+    "steamGridMatchScore": 0.747,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "five-nights-at-freddy-s-2-xbox-series",
@@ -102452,7 +102528,7 @@
     "rawgMatchedName": "Forza Horizon 6",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/5b8613b547316cf7808db044637edb1c.png",
     "steamGridMatchValidated": true,
@@ -102475,6 +102551,13 @@
         "custoPixBRL": 176.61,
         "custoSemPixBRL": 189.9,
         "url": "https://www.alphagames.com.br/produtos/forza-horizon-6-xbox-series-s-x-midia-digital-93gw6/"
+      },
+      {
+        "id": "tca",
+        "nome": "TCA Games",
+        "custoPixBRL": 170.9,
+        "custoSemPixBRL": 179.9,
+        "url": "https://www.lojatcagames.com.br/products/forza-horizon-6-xbox-series"
       }
     ]
   },
@@ -103287,7 +103370,7 @@
         "url": "https://www.alphagames.com.br/produtos/mxgp-2020-xbox-one-xbox-series-s-x-midia-digital-copia-1wngl/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/9YPb1HhbsFU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-18-b95e2cb2a287ac041717906340359685-1024-1024.webp"
     ],
@@ -104314,7 +104397,7 @@
     ],
     "rawgId": 713,
     "rawgSlug": "ultimate-marvel-vs-capcom-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/swzdnvSo3X8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/fb0/fb0052bdad28047c8365a5021d11b429.jpg",
       "https://media.rawg.io/media/screenshots/52e/52e6bbbe312479d9020dfd2a1db7278f.jpg",
@@ -104369,7 +104452,7 @@
     ],
     "rawgId": 51327,
     "rawgSlug": "mega-man-11",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3aSC5A726f0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a7d/a7d47833ef6d71117a8085ebb229aaac.jpeg",
       "https://media.rawg.io/media/screenshots/e36/e36d92993a67f6d29f4ad532c4627354.jpg",
@@ -104391,7 +104474,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Mega Man 11",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/500d31031848afb093d714c7c569bfdc.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man 11",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "mega-man-x-xbox-series",
@@ -104417,7 +104509,7 @@
         "url": "https://www.alphagames.com.br/produtos/mega-man-zx-xbox-one-xbox-series-s-x-midia-digital-copia-3w4zz/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Usis7p46Vxs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/mega-man-x-legacy-collection-8651b2a8192faf19dc17907032158411-1024-1024.webp"
     ],
@@ -104431,7 +104523,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 16.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e24927b595bdddebb71671d11f76f067.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man X",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "mega-man-zx-xbox-series",
@@ -104481,7 +104582,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Mega Man ZX",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/848115676618836e7959dd6909273d4d.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Mega Man ZX",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "metal-gear-solid-snake-eater-xbox-series",
@@ -104518,7 +104628,7 @@
     "rawgMatchedName": "METAL GEAR SOLID Δ: SNAKE EATER",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 61.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e081a744d57449a7ea5b84935e1adb9c.png",
     "steamGridMatchValidated": true,
@@ -104622,7 +104732,7 @@
         "url": "https://www.alphagames.com.br/produtos/metro-saga-budle-xbox-one-xbox-series-s-x-midia-digital-1rsr1/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/MSdghdelbAw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/metro-saga-bundle-xbox-one-midia-digital-0136f5b18b9823b5af17884622149893-1024-1024.webp"
     ],
@@ -105045,7 +105155,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 21.99,
+    "precoOriginalEUR": 26.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6f3171a0d40d400b4543cdd06ca0de3c.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Monster Hunter Wilds",
@@ -105312,7 +105422,7 @@
         "url": "https://www.alphagames.com.br/produtos/f1-24-xbox-one-xbox-series-s-x-midia-digital-copia-110td/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/ZEU8oGvgSTA",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-29-4784ec63a7c5048a3717906403471005-1024-1024.webp"
     ],
@@ -106156,7 +106266,7 @@
     ],
     "rawgId": 2384,
     "rawgSlug": "one-piece-burning-blood",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/_ivKlZ9HtGM",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/0fc/0fc7b5c5d49a24a00a22915e606adc51.jpg",
       "https://media.rawg.io/media/screenshots/d1f/d1f67c5507ae948f8a5a07cc37a06dfc.jpg",
@@ -106179,7 +106289,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "One Piece: Burning Blood",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 4.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/52a010213f98c7aac7b767ef262d2ba4.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "One Piece: Burning Blood",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "one-piece-world-seeker-xbox-series",
@@ -106207,7 +106326,7 @@
     ],
     "rawgId": 295094,
     "rawgSlug": "one-piece-world-seeker",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/jKAly6teEK0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/284/28440b38b5febaf91f226da7b14a2550.jpg",
       "https://media.rawg.io/media/screenshots/368/368741fa2f7bc64f0350181a02ca0109.jpg",
@@ -106229,7 +106348,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ONE PIECE World Seeker",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 8.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cb6a8c67f75c15d2a1322a7837e07005.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "One Piece: World Seeker",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "onimusha-way-of-the-sword-xbox-series",
@@ -106420,7 +106548,7 @@
         "url": "https://www.alphagames.com.br/produtos/death-stranding-diretor-cut-xbox-one-xbox-series-s-x-midia-digital-copia-vsq8p/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/LgDEpBoQ1VQ",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/pack-spyro-crash-trilogy-924b783cc197d7a3ee17907035532554-1024-1024.webp"
     ],
@@ -106434,7 +106562,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 14.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Pack Man in Rio",
+    "steamGridMatchScore": 0.307,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "palworld-xbox-series",
@@ -106631,7 +106768,7 @@
         "url": "https://www.alphagames.com.br/produtos/final-fantasy-vii-xbox-one-xbox-series-s-x-midia-digital-copia-1i28k/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/xMQm8ubM-Cw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/poppy-playtime-1-3bbc661e525116707517906300804754-1024-1024.webp"
     ],
@@ -107728,8 +107865,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 44.99,
+    "precoVendaEUR": 45.99,
+    "precoOriginalEUR": 45.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil: Revelations",
@@ -107810,7 +107947,7 @@
         "url": "https://www.alphagames.com.br/produtos/resident-evil-triplo-pack-xbox-one-xbox-series-s-x-midia-digital-38ya3/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/zOQE-o6kpBY",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/111958-7af4e74534556996f317879666955915-1024-1024.webp"
     ],
@@ -108217,11 +108354,11 @@
   {
     "id": "rust-console-edition-xbox-series",
     "nome": "RUST CONSOLE EDITION - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
-    "precoAtualBRL": 120.81,
-    "precoPixBRL": 120.81,
-    "precoSemPixBRL": 129.9,
+    "precoAtualBRL": 130.11,
+    "precoPixBRL": 130.11,
+    "precoSemPixBRL": 139.9,
     "descontoPixAplicado": true,
-    "precoOriginalBRL": 149.9,
+    "precoOriginalBRL": 159.9,
     "tipoMidia": "unica",
     "linkFornecedor": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/",
     "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-14-bbbee934bfb7ed6e5117906380985243-1024-1024.webp",
@@ -108233,8 +108370,8 @@
       {
         "id": "alpha",
         "nome": "Alpha Games",
-        "custoPixBRL": 120.81,
-        "custoSemPixBRL": 129.9,
+        "custoPixBRL": 130.11,
+        "custoSemPixBRL": 139.9,
         "url": "https://www.alphagames.com.br/produtos/rooftops-alleys-xbox-one-xbox-series-s-x-midia-digital-copia-cd0q7/"
       }
     ],
@@ -109471,7 +109608,7 @@
     ],
     "rawgId": 2900,
     "rawgSlug": "star-wars-bounty-hunter",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/q8zh1HUcqBk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e24/e241a1ea2fd319113bc5576d50e437aa.jpg",
       "https://media.rawg.io/media/screenshots/015/015038a61e32ecf6ca4a1025f37c83d4.jpg",
@@ -109494,7 +109631,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Star Wars Bounty Hunter",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 26.99,
+    "precoOriginalEUR": 26.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ca9fb1d01fb6c899ef4095abc2d3ea13.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Star Wars: Bounty Hunter",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "starfield-xbox-series",
@@ -110133,7 +110279,7 @@
         "url": "https://www.alphagames.com.br/produtos/mega-man-11-xbox-one-xbox-series-s-x-midia-digital-copia-zhyl7/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/1wA1VLDJMQI",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-backrooms-1998-f8a0d50e16b879bc1317907033186239-1024-1024.webp"
     ],
@@ -110147,7 +110293,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 14.99,
+    "precoOriginalEUR": 14.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Backrooms",
+    "steamGridMatchScore": 0.7,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-blood-of-dawnwalker-xbox-series",
@@ -110401,7 +110556,7 @@
         "url": "https://www.alphagames.com.br/produtos/the-evil-within-2-xbox-one-xbox-series-s-x-midia-digital-copia-1oduf/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/N1m7hTS27hE",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/the-evil-within-1-f68618e2d1e575958417907037157259-1024-1024.webp"
     ],
@@ -110415,7 +110570,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 10.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Evil Within",
+    "steamGridMatchScore": 0.829,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-evil-within-2-xbox-series",
@@ -110443,7 +110607,7 @@
     ],
     "rawgId": 29171,
     "rawgSlug": "the-evil-within-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/f7JbFBq4NAo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/540/54002d97419f093d6a06f2424f95ead6.jpg",
       "https://media.rawg.io/media/screenshots/291/291aa4c9e9502d0523f290f16547ba0b.jpg",
@@ -110466,7 +110630,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "The Evil Within 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 9.99,
+    "precoOriginalEUR": 10.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/231a171b205742febf998a329042ba9c.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Evil Within 2",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-first-berserker-xbox-series",
@@ -110552,7 +110725,7 @@
     ],
     "rawgId": 24412,
     "rawgSlug": "the-king-of-fighters-95",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/_d1vOBqbejA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/99d/99d76a753bb34b0c928d7c44ab587c18.jpg",
       "https://media.rawg.io/media/screenshots/7c0/7c0537e30b3339c3a5da1b048783efb6.jpg",
@@ -110610,7 +110783,7 @@
     ],
     "rawgId": 7450,
     "rawgSlug": "the-king-of-fighters-97",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/-x53X0d3YMo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/de1/de1d00150a5e7826f325564a8a6c755a.jpg",
       "https://media.rawg.io/media/screenshots/0ea/0eabcbc1c670f25d0909e5a3a35c1151.jpg",
@@ -110680,7 +110853,7 @@
     "rawgMatchedName": "The Quarry",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6a7b43077358b536750fdc173f079d4f.png",
     "steamGridMatchValidated": true,
@@ -111573,8 +111746,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 44.99,
+    "precoVendaEUR": 45.99,
+    "precoOriginalEUR": 45.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "UFC 3",
@@ -111900,7 +112073,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 44.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -112001,7 +112174,7 @@
     ],
     "rawgId": 566454,
     "rawgSlug": "aliens-fireteam",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/bBjhTjTX52s",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a95/a95b42c00c3832bb3c8edbfc0590440b.jpg",
       "https://media.rawg.io/media/screenshots/f09/f0903a43a75b2d216a95b681ef207fec.jpg",
