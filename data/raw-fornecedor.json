@@ -3875,9 +3875,9 @@
     {
       "id": "dragon-ball-z-kakarot-ps4",
       "nome": "DRAGON BALL Z: KAKAROT - PS4 - MÍDIA DIGITAL",
-      "precoAtualBRL": 55.71,
-      "precoPixBRL": 55.71,
-      "precoSemPixBRL": 59.9,
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 114.9,
       "tipoMidia": "Primaria",
@@ -3891,8 +3891,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 55.71,
-          "custoSemPixBRL": 59.9,
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
           "url": "https://www.alphagames.com.br/produtos/dragon-ball-z-kakarot-ps4-midia-digital-5zo5d/"
         },
         {
@@ -8189,8 +8189,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 18.9,
-          "custoSemPixBRL": 19.9,
+          "custoPixBRL": 23.65,
+          "custoSemPixBRL": 24.9,
           "url": "https://www.lojatcagames.com.br/products/need-for-speed-heat-ps4"
         }
       ]
@@ -15064,7 +15064,7 @@
       "plataforma": "PlayStation 4",
       "plataformaKey": "ps4",
       "fornecedorProductId": "7762839404642",
-      "varianteFornecedorId": "43190196371554",
+      "varianteFornecedorId": "50585200164962",
       "fornecedorId": "tca",
       "fornecedorNome": "TCA Games",
       "fornecedores": [
@@ -16158,6 +16158,33 @@
       ]
     },
     {
+      "id": "tomb-raider-i-vi-remastered-ps4",
+      "nome": "Tomb Raider I-VI Remastered - PS4 Mídia Digital",
+      "precoAtualBRL": 56.9,
+      "precoPixBRL": 56.9,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/tomb-raider-i-vi-remastered-ps4",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/TombRaiderI-VIRemasteredStarringLaraCroft_PS4.jpg?v=1790889713",
+      "plataforma": "PlayStation 4",
+      "plataformaKey": "ps4",
+      "fornecedorProductId": "10324792868962",
+      "varianteFornecedorId": "50578701942882",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.lojatcagames.com.br/products/tomb-raider-i-vi-remastered-ps4"
+        }
+      ]
+    },
+    {
       "id": "unravel-two-ps4",
       "nome": "Unravel Two PS4 Mídia Digital",
       "precoAtualBRL": 28.4,
@@ -16827,8 +16854,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 180.4,
-          "custoSemPixBRL": 189.9,
+          "custoPixBRL": 161.4,
+          "custoSemPixBRL": 169.9,
           "url": "https://www.lojatcagames.com.br/products/assassin-s-creed-black-flag-resynced-ps5"
         }
       ]
@@ -18689,6 +18716,13 @@
           "custoPixBRL": 195.21,
           "custoSemPixBRL": 209.9,
           "url": "https://www.alphagames.com.br/produtos/call-of-duty-modern-warfare-4-ps5-midia-digital-jolbz/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 208.9,
+          "custoSemPixBRL": 219.9,
+          "url": "https://www.lojatcagames.com.br/products/call-of-duty-modern-warfare-4-ps5"
         }
       ]
     },
@@ -20925,9 +20959,9 @@
     {
       "id": "dragon-ball-z-kakarot-ps5",
       "nome": "DRAGON BALL Z: KAKAROT - PS5 - MIDIA DIGITAL",
-      "precoAtualBRL": 55.71,
-      "precoPixBRL": 55.71,
-      "precoSemPixBRL": 59.9,
+      "precoAtualBRL": 65.01,
+      "precoPixBRL": 65.01,
+      "precoSemPixBRL": 69.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 114.9,
       "tipoMidia": "Primaria",
@@ -20941,8 +20975,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 55.71,
-          "custoSemPixBRL": 59.9,
+          "custoPixBRL": 65.01,
+          "custoSemPixBRL": 69.9,
           "url": "https://www.alphagames.com.br/produtos/dragon-ball-kakarot-ps5-midia-digital-7z7hm/"
         },
         {
@@ -21329,6 +21363,13 @@
           "custoPixBRL": 176.61,
           "custoSemPixBRL": 189.9,
           "url": "https://www.alphagames.com.br/produtos/ea-sports-madden-nfl-27-ps5-midia-digital-1rf05/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.lojatcagames.com.br/products/madden-nfl-27-ps5"
         }
       ]
     },
@@ -26821,6 +26862,13 @@
           "custoPixBRL": 176.61,
           "custoSemPixBRL": 189.9,
           "url": "https://www.alphagames.com.br/produtos/onimusha-way-of-the-sword-ps5-midia-digital-u2tbl/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.lojatcagames.com.br/products/onimusha-way-of-the-sword-ps5"
         }
       ]
     },
@@ -28962,6 +29010,13 @@
           "custoPixBRL": 158.01,
           "custoSemPixBRL": 169.9,
           "url": "https://www.alphagames.com.br/produtos/silent-hill-townfall-ps5-midia-digital-ng1g2/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 170.9,
+          "custoSemPixBRL": 179.9,
+          "url": "https://www.lojatcagames.com.br/products/silent-hill-townfall-ps5"
         }
       ]
     },
@@ -31542,6 +31597,13 @@
           "custoPixBRL": 176.61,
           "custoSemPixBRL": 189.9,
           "url": "https://www.alphagames.com.br/produtos/tomb-raider-legacy-of-atlantis-ps5-midia-digital-1bh6f/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.lojatcagames.com.br/products/tomb-raider-legacy-of-atlantis-ps5"
         }
       ]
     },
@@ -32523,6 +32585,33 @@
       ]
     },
     {
+      "id": "beast-of-reincarnation-ps5",
+      "nome": "Beast of Reincarnation - PS5 Mídia Digital",
+      "precoAtualBRL": 161.4,
+      "precoPixBRL": 161.4,
+      "precoSemPixBRL": 169.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 169.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/beast-of-reincarnation-ps5",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Best_of_Reincarnation.jpg?v=1787602425",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "7777501085794",
+      "varianteFornecedorId": "43234675359842",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 161.4,
+          "custoSemPixBRL": 169.9,
+          "url": "https://www.lojatcagames.com.br/products/beast-of-reincarnation-ps5"
+        }
+      ]
+    },
+    {
       "id": "callisto-protocol-ps5",
       "nome": "Callisto Protocol - PS5 Mídia Digital",
       "precoAtualBRL": 75.9,
@@ -33036,6 +33125,33 @@
       ]
     },
     {
+      "id": "god-of-war-laufey-ps5",
+      "nome": "God of War Laufey - PS5 Mídia Digital",
+      "precoAtualBRL": 218.4,
+      "precoPixBRL": 218.4,
+      "precoSemPixBRL": 229.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 229.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/god-of-war-laufey-ps5",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/God_Of_War_Laufey_-_PS5.jpg?v=1790723598",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "10323728040034",
+      "varianteFornecedorId": "50572587761762",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 218.4,
+          "custoSemPixBRL": 229.9,
+          "url": "https://www.lojatcagames.com.br/products/god-of-war-laufey-ps5"
+        }
+      ]
+    },
+    {
       "id": "gotham-knights-ps5",
       "nome": "Gotham Knights – PS5 Mídia Digital",
       "precoAtualBRL": 66.4,
@@ -33086,6 +33202,33 @@
           "custoPixBRL": 56.9,
           "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/grand-theft-auto-v-gta-5-ps5"
+        }
+      ]
+    },
+    {
+      "id": "grand-theft-auto-vi-gta-6-ps5",
+      "nome": "Grand Theft Auto VI – GTA 6 – PS5 Mídia Digital",
+      "precoAtualBRL": 246.9,
+      "precoPixBRL": 246.9,
+      "precoSemPixBRL": 259.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 259.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/grand-theft-auto-vi-gta-6-ps5",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/GTA6LojaCapa.jpg?v=1786233632",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "7762820333666",
+      "varianteFornecedorId": "43190162194530",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 246.9,
+          "custoSemPixBRL": 259.9,
+          "url": "https://www.lojatcagames.com.br/products/grand-theft-auto-vi-gta-6-ps5"
         }
       ]
     },
@@ -33684,6 +33827,33 @@
       ]
     },
     {
+      "id": "phantom-blade-zero-ps5",
+      "nome": "Phantom Blade Zero - PS5 Mídia Digital",
+      "precoAtualBRL": 170.9,
+      "precoPixBRL": 170.9,
+      "precoSemPixBRL": 179.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 179.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/phantom-blade-zero-ps5",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/PhantomBlade0.jpg?v=1787600884",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "7777501347938",
+      "varianteFornecedorId": "43234675720290",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 170.9,
+          "custoSemPixBRL": 179.9,
+          "url": "https://www.lojatcagames.com.br/products/phantom-blade-zero-ps5"
+        }
+      ]
+    },
+    {
       "id": "prince-of-persia-the-lost-crown-ps5",
       "nome": "Prince of Persia The Lost Crown - PS5 Mídia Digital",
       "precoAtualBRL": 47.4,
@@ -34089,6 +34259,60 @@
       ]
     },
     {
+      "id": "tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps5",
+      "nome": "Tomb Raider I-II-III Remastered Starring Lara Croft - PS5 Mídia Digital",
+      "precoAtualBRL": 56.9,
+      "precoPixBRL": 56.9,
+      "precoSemPixBRL": 59.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 59.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps5",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/TombRaiderI-II-IIIRemasteredStarringLaraCroft_PS5.jpg?v=1790889729",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "10324793000034",
+      "varianteFornecedorId": "50578702073954",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
+          "url": "https://www.lojatcagames.com.br/products/tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps5"
+        }
+      ]
+    },
+    {
+      "id": "tomb-raider-i-vi-remastered-ps5",
+      "nome": "Tomb Raider I-VI Remastered - PS5 Mídia Digital",
+      "precoAtualBRL": 85.4,
+      "precoPixBRL": 85.4,
+      "precoSemPixBRL": 89.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 89.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/tomb-raider-i-vi-remastered-ps5",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/TombRaiderI-VIRemasteredStarringLaraCroft_PS5.jpg?v=1790889721",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "10324792967266",
+      "varianteFornecedorId": "50578702041186",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 85.4,
+          "custoSemPixBRL": 89.9,
+          "url": "https://www.lojatcagames.com.br/products/tomb-raider-i-vi-remastered-ps5"
+        }
+      ]
+    },
+    {
       "id": "wwe-2k22-ps5",
       "nome": "WWE 2K22 - PS5 Mídia Digital",
       "precoAtualBRL": 75.9,
@@ -34436,7 +34660,7 @@
       "precoOriginalBRL": 59.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-xbox-one-series-s-x-midia-digital-1443r/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367820-2a655a4f8ec20a89a517893227782984-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368466-2d45944d16a13977c617908828611716-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "367162102",
@@ -34568,7 +34792,7 @@
       "precoOriginalBRL": 69.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-ii-xbox-one-series-s-x-midia-digital-eivnz/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367834-77669a67699ba85e9017893266420831-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368467-83a2dea548201b797d17908828801862-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "367169236",
@@ -34769,6 +34993,31 @@
           "custoPixBRL": 55.71,
           "custoSemPixBRL": 59.9,
           "url": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-revelations-xbox-one",
+      "nome": "ASSASSIN'S CREED REVELATIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-revelations-xbox-one-series-s-x-midia-digital-1xgk9/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368461-753abcf1b8e04d396417908827659278-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "371282434",
+      "varianteFornecedorId": 1609952126,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-revelations-xbox-one-series-s-x-midia-digital-1xgk9/"
         }
       ]
     },
@@ -35051,6 +35300,56 @@
       ]
     },
     {
+      "id": "attack-on-titan-xbox-one",
+      "nome": "ATTACK ON TITAN - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 167.31,
+      "precoPixBRL": 167.31,
+      "precoSemPixBRL": 179.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 219.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/attack-on-titan-xbox-one-series-s-x-midia-digital-1qjhx/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368470-dbab5ba7128074852f17908839144406-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "371289545",
+      "varianteFornecedorId": 1609974311,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 167.31,
+          "custoSemPixBRL": 179.9,
+          "url": "https://www.alphagames.com.br/produtos/attack-on-titan-xbox-one-series-s-x-midia-digital-1qjhx/"
+        }
+      ]
+    },
+    {
+      "id": "attack-on-titan-2-xbox-one",
+      "nome": "ATTACK ON TITAN 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 167.31,
+      "precoPixBRL": 167.31,
+      "precoSemPixBRL": 179.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 219.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/attack-on-titan-2-xbox-one-series-s-x-midia-digital-1iksj/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368471-a6cc116ec83f6d464817908841639516-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "371292248",
+      "varianteFornecedorId": 1609984551,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 167.31,
+          "custoSemPixBRL": 179.9,
+          "url": "https://www.alphagames.com.br/produtos/attack-on-titan-2-xbox-one-series-s-x-midia-digital-1iksj/"
+        }
+      ]
+    },
+    {
       "id": "avatar-the-last-airbender-quest-for-balance-xbox-one",
       "nome": "AVATAR THE LAST AIRBENDER: QUEST FOR BALANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 65.01,
@@ -35076,8 +35375,58 @@
       ]
     },
     {
-      "id": "batman-arkham-collections-xbox-one",
-      "nome": "BATMAN ARKHAM COLLECTIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "id": "baldur-s-gate-and-baldur-s-gate-ii-enhanced-editions-xbox-one",
+      "nome": "BALDUR'S GATE AND BALDUR'S GATE II: ENHANCED EDITIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 194.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-and-baldurs-gate-ii-enhanced-editions-xbox-one-series-s-x-midia-digital-war2c/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368474-a6f5062ab3a9b826fb17908856161260-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "371299602",
+      "varianteFornecedorId": 1610013036,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/baldurs-gate-and-baldurs-gate-ii-enhanced-editions-xbox-one-series-s-x-midia-digital-war2c/"
+        }
+      ]
+    },
+    {
+      "id": "baldur-s-gate-dark-aliance-xbox-one",
+      "nome": "BALDUR'S GATE: DARK ALIANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 83.61,
+      "precoPixBRL": 83.61,
+      "precoSemPixBRL": 89.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 119.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-dark-aliance-xbox-one-series-s-x-midia-digital-3ljw8/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368475-042abe4453c6894ac017908857949385-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "371300554",
+      "varianteFornecedorId": 1610016525,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 83.61,
+          "custoSemPixBRL": 89.9,
+          "url": "https://www.alphagames.com.br/produtos/baldurs-gate-dark-aliance-xbox-one-series-s-x-midia-digital-3ljw8/"
+        }
+      ]
+    },
+    {
+      "id": "batman-arkham-collection-xbox-one",
+      "nome": "BATMAN ARKHAM COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
       "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
@@ -35085,7 +35434,7 @@
       "precoOriginalBRL": 250,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368477-e61575500928eaa30817908851197354-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "370176556",
@@ -35097,6 +35446,13 @@
           "custoPixBRL": 37.11,
           "custoSemPixBRL": 39.9,
           "url": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 28.4,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.lojatcagames.com.br/products/batman-arkham-collection-xbox-one"
         }
       ]
     },
@@ -35110,7 +35466,7 @@
       "precoOriginalBRL": 39.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-knight-xbox-one-series-s-x-midia-digital-otonm/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000273963-75caaf4dcc1a70b25b17731720914529-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368479-4e22187ee5c8a46c0717908861272555-1024-1024.webp",
       "plataforma": "Xbox One",
       "plataformaKey": "xbox-one",
       "fornecedorProductId": "330696040",
@@ -36422,9 +36778,9 @@
     {
       "id": "elden-ring-xbox-one",
       "nome": "ELDEN RING - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
-      "precoAtualBRL": 185.91,
-      "precoPixBRL": 185.91,
-      "precoSemPixBRL": 199.9,
+      "precoAtualBRL": 223.11,
+      "precoPixBRL": 223.11,
+      "precoSemPixBRL": 239.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 299.9,
       "tipoMidia": "unica",
@@ -36438,8 +36794,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 185.91,
-          "custoSemPixBRL": 199.9,
+          "custoPixBRL": 223.11,
+          "custoSemPixBRL": 239.9,
           "url": "https://www.alphagames.com.br/produtos/elden-ring-xbox-one-series-s-x-midia-digital-os1b0/"
         },
         {
@@ -40640,33 +40996,6 @@
           "custoPixBRL": 14.15,
           "custoSemPixBRL": 14.9,
           "url": "https://www.lojatcagames.com.br/products/assassin-s-creed-unity-xbox-one-diagital"
-        }
-      ]
-    },
-    {
-      "id": "batman-arkham-collection-xbox-one",
-      "nome": "Batman Arkham Collection – Xbox One Mídia Digital",
-      "precoAtualBRL": 28.4,
-      "precoPixBRL": 28.4,
-      "precoSemPixBRL": 29.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 29.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/batman-arkham-collection-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/BatmanArkhamCollection.jpg?v=1786234013",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762834522210",
-      "varianteFornecedorId": "43190180348002",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.lojatcagames.com.br/products/batman-arkham-collection-xbox-one"
         }
       ]
     },
@@ -45099,7 +45428,7 @@
       "precoOriginalBRL": 59.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-xbox-one-series-s-x-midia-digital-1443r/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367820-2a655a4f8ec20a89a517893227782984-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368466-2d45944d16a13977c617908828611716-1024-1024.webp",
       "plataforma": "Xbox Series X|S",
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "367162102",
@@ -45249,7 +45578,7 @@
       "precoOriginalBRL": 69.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-ii-xbox-one-series-s-x-midia-digital-eivnz/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367834-77669a67699ba85e9017893266420831-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368467-83a2dea548201b797d17908828801862-1024-1024.webp",
       "plataforma": "Xbox Series X|S",
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "367169236",
@@ -45443,6 +45772,31 @@
           "custoPixBRL": 55.71,
           "custoSemPixBRL": 59.9,
           "url": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/"
+        }
+      ]
+    },
+    {
+      "id": "assassin-s-creed-revelations-xbox-series",
+      "nome": "ASSASSIN'S CREED REVELATIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 79.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-revelations-xbox-one-series-s-x-midia-digital-1xgk9/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368461-753abcf1b8e04d396417908827659278-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "371282434",
+      "varianteFornecedorId": 1609952126,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/assassins-creed-revelations-xbox-one-series-s-x-midia-digital-1xgk9/"
         }
       ]
     },
@@ -45697,6 +46051,56 @@
       ]
     },
     {
+      "id": "attack-on-titan-xbox-series",
+      "nome": "ATTACK ON TITAN - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 167.31,
+      "precoPixBRL": 167.31,
+      "precoSemPixBRL": 179.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 219.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/attack-on-titan-xbox-one-series-s-x-midia-digital-1qjhx/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368470-dbab5ba7128074852f17908839144406-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "371289545",
+      "varianteFornecedorId": 1609974311,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 167.31,
+          "custoSemPixBRL": 179.9,
+          "url": "https://www.alphagames.com.br/produtos/attack-on-titan-xbox-one-series-s-x-midia-digital-1qjhx/"
+        }
+      ]
+    },
+    {
+      "id": "attack-on-titan-2-xbox-series",
+      "nome": "ATTACK ON TITAN 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 167.31,
+      "precoPixBRL": 167.31,
+      "precoSemPixBRL": 179.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 219.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/attack-on-titan-2-xbox-one-series-s-x-midia-digital-1iksj/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368471-a6cc116ec83f6d464817908841639516-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "371292248",
+      "varianteFornecedorId": 1609984551,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 167.31,
+          "custoSemPixBRL": 179.9,
+          "url": "https://www.alphagames.com.br/produtos/attack-on-titan-2-xbox-one-series-s-x-midia-digital-1iksj/"
+        }
+      ]
+    },
+    {
       "id": "avatar-legends-the-fighting-game-xbox-series",
       "nome": "AVATAR LEGENDS: THE FIGHTING GAME - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 102.21,
@@ -45772,8 +46176,58 @@
       ]
     },
     {
-      "id": "batman-arkham-collections-xbox-series",
-      "nome": "BATMAN ARKHAM COLLECTIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "id": "baldur-s-gate-and-baldur-s-gate-ii-enhanced-editions-xbox-series",
+      "nome": "BALDUR'S GATE AND BALDUR'S GATE II: ENHANCED EDITIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 46.41,
+      "precoPixBRL": 46.41,
+      "precoSemPixBRL": 49.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 194.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-and-baldurs-gate-ii-enhanced-editions-xbox-one-series-s-x-midia-digital-war2c/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368474-a6f5062ab3a9b826fb17908856161260-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "371299602",
+      "varianteFornecedorId": 1610013036,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 46.41,
+          "custoSemPixBRL": 49.9,
+          "url": "https://www.alphagames.com.br/produtos/baldurs-gate-and-baldurs-gate-ii-enhanced-editions-xbox-one-series-s-x-midia-digital-war2c/"
+        }
+      ]
+    },
+    {
+      "id": "baldur-s-gate-dark-aliance-xbox-series",
+      "nome": "BALDUR'S GATE: DARK ALIANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 83.61,
+      "precoPixBRL": 83.61,
+      "precoSemPixBRL": 89.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 119.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-dark-aliance-xbox-one-series-s-x-midia-digital-3ljw8/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368475-042abe4453c6894ac017908857949385-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "371300554",
+      "varianteFornecedorId": 1610016525,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 83.61,
+          "custoSemPixBRL": 89.9,
+          "url": "https://www.alphagames.com.br/produtos/baldurs-gate-dark-aliance-xbox-one-series-s-x-midia-digital-3ljw8/"
+        }
+      ]
+    },
+    {
+      "id": "batman-arkham-collection-xbox-series",
+      "nome": "BATMAN ARKHAM COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
       "precoAtualBRL": 37.11,
       "precoPixBRL": 37.11,
       "precoSemPixBRL": 39.9,
@@ -45781,7 +46235,7 @@
       "precoOriginalBRL": 250,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368477-e61575500928eaa30817908851197354-1024-1024.webp",
       "plataforma": "Xbox Series X|S",
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "370176556",
@@ -45806,7 +46260,7 @@
       "precoOriginalBRL": 39.9,
       "tipoMidia": "unica",
       "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-knight-xbox-one-series-s-x-midia-digital-otonm/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000273963-75caaf4dcc1a70b25b17731720914529-1024-1024.webp",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368479-4e22187ee5c8a46c0717908861272555-1024-1024.webp",
       "plataforma": "Xbox Series X|S",
       "plataformaKey": "xbox-series",
       "fornecedorProductId": "330696040",
@@ -46307,6 +46761,13 @@
           "custoPixBRL": 185.91,
           "custoSemPixBRL": 199.9,
           "url": "https://www.alphagames.com.br/produtos/call-of-duty-modern-warfare-4-xbox-series-s-x-midia-digital-1vmai/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 237.4,
+          "custoSemPixBRL": 249.9,
+          "url": "https://www.lojatcagames.com.br/products/call-of-duty-modern-warfare-4-xbox-series"
         }
       ]
     },
@@ -47337,9 +47798,9 @@
     {
       "id": "elden-ring-xbox-series",
       "nome": "ELDEN RING - XBOX ONE & SERIES S/X - MIDIA DIGITAL",
-      "precoAtualBRL": 185.91,
-      "precoPixBRL": 185.91,
-      "precoSemPixBRL": 199.9,
+      "precoAtualBRL": 223.11,
+      "precoPixBRL": 223.11,
+      "precoSemPixBRL": 239.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 299.9,
       "tipoMidia": "unica",
@@ -47353,8 +47814,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 185.91,
-          "custoSemPixBRL": 199.9,
+          "custoPixBRL": 223.11,
+          "custoSemPixBRL": 239.9,
           "url": "https://www.alphagames.com.br/produtos/elden-ring-xbox-one-series-s-x-midia-digital-os1b0/"
         }
       ]
@@ -52751,6 +53212,60 @@
           "custoPixBRL": 66.4,
           "custoSemPixBRL": 69.9,
           "url": "https://www.lojatcagames.com.br/products/grand-theft-auto-the-trilogy-xbox-series-x-s"
+        }
+      ]
+    },
+    {
+      "id": "grand-theft-auto-vi-gta-6-xbox-series",
+      "nome": "Grand Theft Auto VI - GTA 6 Xbox Series X|S Mídia Digital",
+      "precoAtualBRL": 246.9,
+      "precoPixBRL": 246.9,
+      "precoSemPixBRL": 259.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 259.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/grand-theft-auto-vi-gta-6-xbox-series-x-s",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Capasite_aadac03e-1162-4e42-a311-94ae2f811ad5.jpg?v=1786233631",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "7762820300898",
+      "varianteFornecedorId": "43190162128994",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 246.9,
+          "custoSemPixBRL": 259.9,
+          "url": "https://www.lojatcagames.com.br/products/grand-theft-auto-vi-gta-6-xbox-series-x-s"
+        }
+      ]
+    },
+    {
+      "id": "madden-nfl-27-xbox-series",
+      "nome": "Madden NFL 27 - Xbox Series Mídia Digital",
+      "precoAtualBRL": 189.9,
+      "precoPixBRL": 189.9,
+      "precoSemPixBRL": 199.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 199.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.lojatcagames.com.br/products/madden-nfl-27-xbox-series",
+      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Madden_27_Xbox.jpg?v=1788473356",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "7787944706146",
+      "varianteFornecedorId": "43286610837602",
+      "fornecedorId": "tca",
+      "fornecedorNome": "TCA Games",
+      "fornecedores": [
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.lojatcagames.com.br/products/madden-nfl-27-xbox-series"
         }
       ]
     },

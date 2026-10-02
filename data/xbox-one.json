@@ -41,7 +41,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587681135,
     "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 59.99,
+    "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/KQCDj3emnHk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e18/e18619e819c7d54a3df317e259e7134f.jpg",
@@ -551,7 +551,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595949636,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/hWsaltnSDy8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2de/2def9c49d2fd0ee5cef3e2fc93ece8f9.jpg",
@@ -616,7 +616,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595968747,
     "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 82.99,
+    "precoOriginalEUR": 83.99,
     "trailer": "https://www.youtube.com/embed/rKjUAWlbTJk",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367831-e9f2cdd13da0b624d717893265413854-1024-1024.webp"
@@ -760,6 +760,41 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-origins-xbox-one-midia-digital-13anr/",
     "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-revelations-xbox-one",
+    "nome": "ASSASSIN'S CREED REVELATIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1609952126,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 14.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/23d/23d919e7ca933bf608c2869f40480f27.jpg",
+      "https://media.rawg.io/media/screenshots/8a6/8a6239be63c8bebdb1abd817046ed610.jpg",
+      "https://media.rawg.io/media/screenshots/ba7/ba7a272b58309a621b16eee60b0a7c86.jpg",
+      "https://media.rawg.io/media/screenshots/474/474d379e5b5d7bd021cad5d7f965f3cc.jpg",
+      "https://media.rawg.io/media/screenshots/e4a/e4a628ce348f7531fad2e23ee6d2ce97.jpg"
+    ],
+    "descricao": "When a man has won all his battles and defeated his enemies; what is left for him to achieve? Ezio Auditore must leave his life behind in search of answers, In search of the truth. In Assassin’s Creed® Revelations, master assassin Ezio Auditore walks in the footsteps of the legendary mentor Altai...",
+    "imagemFallback": "https://media.rawg.io/media/games/193/19390fa5e75e9048b22c9a736cf9992f.jpg",
+    "released": "2011-11-15",
+    "rating": 3.99,
+    "ratings_count": 1476,
+    "added": 4972,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/105fb0578a9e90c458f69bad63c38709.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed: Revelations",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-revelations-xbox-one-series-s-x-midia-digital-1xgk9/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "assassin-s-creed-rogue-remastered-xbox-one",
@@ -915,7 +950,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595963594,
-    "precoVendaEUR": 23.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 79.99,
     "trailer": "https://www.youtube.com/embed/Knor3qDwfsg",
     "screenshots": [
@@ -943,7 +978,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595965447,
-    "precoVendaEUR": 23.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 88.99,
     "trailer": "https://www.youtube.com/embed/OcGDnmzr7B4",
     "screenshots": [
@@ -1071,6 +1106,76 @@
     "enriquecido": true
   },
   {
+    "id": "attack-on-titan-xbox-one",
+    "nome": "ATTACK ON TITAN - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1609974311,
+    "precoVendaEUR": 43.99,
+    "precoOriginalEUR": 43.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/36a/36a591df4dcc4956fd6324fbfb8edb16.jpg",
+      "https://media.rawg.io/media/screenshots/26f/26f7b64672666a4e00c4d2146ac09860.jpg",
+      "https://media.rawg.io/media/screenshots/c40/c40b0cf52af8e9c26da99b2211b84ebb.jpg",
+      "https://media.rawg.io/media/screenshots/2b6/2b61ea7f53f83a8ef362e7753f211cde.jpg",
+      "https://media.rawg.io/media/screenshots/1f2/1f223b793ea1d90bb658ef946284451a.jpg"
+    ],
+    "descricao": "Abandon all fear. Shingeki no Kyojin 2 is the gripping sequel to the action game based on the worldwide hit anime series \"Attack on Titan.\" Experience the immense story of the anime alongside Eren and his companions, as they fight to save humanity from the threat of the deadly human devouring Tit...",
+    "imagemFallback": "https://media.rawg.io/media/games/334/3347dd41a028675f97ba8484a8c29830.jpg",
+    "released": "2018-04-18",
+    "rating": 3.94,
+    "ratings_count": 61,
+    "added": 328,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cb07accc409bbb4c0adc6afb26cf351b.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Attack on Titan 2",
+    "steamGridMatchScore": 0.829,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/attack-on-titan-xbox-one-series-s-x-midia-digital-1qjhx/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "attack-on-titan-2-xbox-one",
+    "nome": "ATTACK ON TITAN 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1609984551,
+    "precoVendaEUR": 43.99,
+    "precoOriginalEUR": 43.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/36a/36a591df4dcc4956fd6324fbfb8edb16.jpg",
+      "https://media.rawg.io/media/screenshots/26f/26f7b64672666a4e00c4d2146ac09860.jpg",
+      "https://media.rawg.io/media/screenshots/c40/c40b0cf52af8e9c26da99b2211b84ebb.jpg",
+      "https://media.rawg.io/media/screenshots/2b6/2b61ea7f53f83a8ef362e7753f211cde.jpg",
+      "https://media.rawg.io/media/screenshots/1f2/1f223b793ea1d90bb658ef946284451a.jpg"
+    ],
+    "descricao": "Abandon all fear. Shingeki no Kyojin 2 is the gripping sequel to the action game based on the worldwide hit anime series \"Attack on Titan.\" Experience the immense story of the anime alongside Eren and his companions, as they fight to save humanity from the threat of the deadly human devouring Tit...",
+    "imagemFallback": "https://media.rawg.io/media/games/334/3347dd41a028675f97ba8484a8c29830.jpg",
+    "released": "2018-04-18",
+    "rating": 3.94,
+    "ratings_count": 61,
+    "added": 328,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cb07accc409bbb4c0adc6afb26cf351b.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Attack on Titan 2",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/attack-on-titan-2-xbox-one-series-s-x-midia-digital-1iksj/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
     "id": "avatar-the-last-airbender-quest-for-balance-xbox-one",
     "nome": "AVATAR THE LAST AIRBENDER: QUEST FOR BALANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -1106,19 +1211,50 @@
     "enriquecido": true
   },
   {
-    "id": "batman-arkham-collections-xbox-one",
-    "nome": "BATMAN ARKHAM COLLECTIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "id": "baldur-s-gate-and-baldur-s-gate-ii-enhanced-editions-xbox-one",
+    "nome": "BALDUR'S GATE AND BALDUR'S GATE II: ENHANCED EDITIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
-    "varianteFornecedorId": 1606555733,
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 44.99,
-    "trailer": "https://www.youtube.com/embed/lVMNvvaXJ2s",
+    "varianteFornecedorId": 1610013036,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 34.99,
+    "trailer": "",
     "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp"
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368474-a6f5062ab3a9b826fb17908856161260-1024-1024.webp"
+    ],
+    "descricao": "Forced to leave your home under mysterious circumstances, you find yourself drawn into a conflict that has the Sword Coast on the brink of war. Soon you discover there are other forces at work, far more sinister than you could ever imagine... Since its original release in 1998, Baldur’s Gate has...",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368474-a6f5062ab3a9b826fb17908856161260-1024-1024.webp",
+    "released": "2019-10-15",
+    "rating": 0,
+    "ratings_count": 4,
+    "added": 16,
+    "genres": [
+      "RPG"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/81d833c607b09d3e8d50e71e028c1afc.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Baldur's Gate and Baldur's Gate II: Enhanced Editions",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-and-baldurs-gate-ii-enhanced-editions-xbox-one-series-s-x-midia-digital-war2c/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "baldur-s-gate-dark-aliance-xbox-one",
+    "nome": "BALDUR'S GATE: DARK ALIANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1610016525,
+    "precoVendaEUR": 21.99,
+    "precoOriginalEUR": 21.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368475-042abe4453c6894ac017908857949385-1024-1024.webp"
     ],
     "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/apps-13992-66605680773719506-5b3e4fed-0747-483d-b407-2d6f4da8c3ba-3da1a5fc111d709da917904393821657-1024-1024.webp",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368475-042abe4453c6894ac017908857949385-1024-1024.webp",
     "released": null,
     "rating": 0,
     "ratings_count": 0,
@@ -1126,10 +1262,43 @@
     "genres": [],
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Baldur's Gate: Dark Alliance",
+    "steamGridMatchScore": 0.844,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/baldurs-gate-dark-aliance-xbox-one-series-s-x-midia-digital-3ljw8/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "batman-arkham-collection-xbox-one",
+    "nome": "BATMAN ARKHAM COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1606555733,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 44.99,
+    "trailer": "https://www.youtube.com/embed/lVMNvvaXJ2s",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/3c3/3c31911cd92fd38f1ac0483eb4f898ce.jpg",
+      "https://media.rawg.io/media/screenshots/d86/d86fc516df52fc3d0c76243d6a548ddf.jpg",
+      "https://media.rawg.io/media/screenshots/fd9/fd9eae438821129fa47d4498717fad33.jpg"
+    ],
+    "descricao": "Batman: Arkham Collection brings you the definitive versions of Rocksteady's Arkham Trilogy games, including all post-launch content, in one complete collection. Experience two of the most critically acclaimed titles of the last generation - Batman: Arkham Asylum and Batman: Arkham City, with ful...",
+    "imagemFallback": "https://media.rawg.io/media/screenshots/fd9/fd9eae438821129fa47d4498717fad33.jpg",
+    "released": "2019-09-06",
+    "rating": 4.26,
+    "ratings_count": 46,
+    "added": 175,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
     "steamGridMatchedName": "Batman: Arkham Origins",
-    "steamGridMatchScore": 0.632,
+    "steamGridMatchScore": 0.6,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/batman-arkham-collections-xbox-one-series-s-x-midia-digital-12be5/",
-    "enriquecido": false
+    "enriquecido": true
   },
   {
     "id": "batman-arkham-knight-xbox-one",
@@ -1237,7 +1406,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587695899,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/fb1MR85XFOc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1b2/1b27f03431c49e882b221e1b760f87ce.jpg",
@@ -1405,8 +1574,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561413649,
-    "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 59.99,
+    "precoVendaEUR": 43.99,
+    "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/EVBJ4O-w3m4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/89211-52a969d967d6934c2317844039046605-1024-1024.webp"
@@ -1431,8 +1600,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561244149,
-    "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 59.99,
+    "precoVendaEUR": 43.99,
+    "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/fCImNIUkpak",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/88946-ce646401ab81ebf1da17843828831767-1024-1024.webp"
@@ -1614,8 +1783,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463410716,
-    "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 23.99,
+    "precoVendaEUR": 24.99,
+    "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/bH1lHCirCGI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e8e/e8e92ec1aff7d7767662614d6b47e1c6.jpg",
@@ -1766,8 +1935,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542737288,
-    "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 23.99,
+    "precoVendaEUR": 24.99,
+    "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/9gKby5Glg_I",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65636-f4546e7a05d2a3b01417813148988968-1024-1024.webp"
@@ -2007,8 +2176,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1607616374,
-    "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 23.99,
+    "precoVendaEUR": 24.99,
+    "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/8X2kIfS6fb8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/814/814c25d6fd1fd34a4e6dade645a3bda7.jpg",
@@ -2070,7 +2239,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464453513,
     "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 52.99,
+    "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/0RAlGv-IW4g",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d7c/d7c05cdfb30ec07147bcd0d3985ec54c.jpg",
@@ -2170,7 +2339,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1604787908,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 36.99,
+    "precoOriginalEUR": 37.99,
     "trailer": "https://www.youtube.com/embed/Am8ET6CgJy8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2c6/2c60d574b9e1d1b30ce90e75b8be05e0.jpeg",
@@ -2203,7 +2372,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587685825,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/b6d/b6d58301ea443b2cde94fd1665181c3e.jpg",
@@ -2288,7 +2457,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464389635,
-    "precoVendaEUR": 23.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/Ro26B394ZBM",
     "screenshots": [
@@ -2384,7 +2553,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1588453668,
     "precoVendaEUR": 5.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/JnUbg-9v_bE",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9a9/9a9f062c0788e403c66e9470dffba26b.jpg",
@@ -2453,7 +2622,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587683674,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/113520-e4c374768679c46aba17882049843369-1024-1024.webp"
@@ -2479,7 +2648,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587691671,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/9_B0vR025wc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/0ff/0ff3e712e2a55077df5e4a424c7b598c.jpg",
@@ -2609,8 +2778,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463281391,
-    "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 52.99,
+    "precoVendaEUR": 22.99,
+    "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/E3Huy2cdih0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/36f/36f941f72e2b2a41629f5fb3bd448688.jpg",
@@ -2821,7 +2990,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463319280,
     "precoVendaEUR": 19.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/pBM2xyco_Kg",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000261116-6281845cdd6bd04d9617726497582105-1024-1024.webp"
@@ -2847,7 +3016,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462769203,
     "precoVendaEUR": 19.99,
-    "precoOriginalEUR": 45.99,
+    "precoOriginalEUR": 46.99,
     "trailer": "https://www.youtube.com/embed/TSi0iJYSQ24",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_7201-0566d03945233a20ee17724582746264-1024-1024.webp"
@@ -4057,7 +4226,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587704961,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/fbbqlvuovQ0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/90e/90ec2c2aadeb403083788066224fa9c7.jpg",
@@ -4090,7 +4259,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1590138434,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/MSdghdelbAw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/metro-saga-bundle-xbox-one-midia-digital-0136f5b18b9823b5af17884622149893-1024-1024.webp"
@@ -4522,7 +4691,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1483316542,
-    "precoVendaEUR": 23.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 28.99,
     "trailer": "https://www.youtube.com/embed/UwwySDPim5g",
     "screenshots": [
@@ -4639,7 +4808,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587693749,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/u3wtVI-aJuw",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/113527-bcb1b8d762095a7dc217882057221997-1024-1024.webp"
@@ -4730,7 +4899,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1590145447,
     "precoVendaEUR": 16.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/GqPTCrIl2BU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/34a/34a9f8a7a487e90c51d0ed1782a122f8.jpg",
@@ -5058,7 +5227,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1505030216,
-    "precoVendaEUR": 23.99,
+    "precoVendaEUR": 24.99,
     "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/tych99G3-P0",
     "screenshots": [
@@ -5362,7 +5531,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1462806198,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/Ivy0efXO6Hk",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/resident-evil-7-36408e10a5bacafad917724611293272-1024-1024.webp"
@@ -5506,7 +5675,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587718303,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/pgSF2aY9MtM",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/xt6vpoxhctrclr_mzagukezmte0w8mlpmlzif81a14q-11f4c8b9ca1223841a17882073387639-1024-1024.webp"
@@ -5599,8 +5768,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1607640825,
-    "precoVendaEUR": 30.99,
-    "precoOriginalEUR": 30.99,
+    "precoVendaEUR": 31.99,
+    "precoOriginalEUR": 31.99,
     "trailer": "https://www.youtube.com/embed/f0Yc-7ZP_YU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-13-c3539137ee439a32fb17906379845828-1024-1024.webp"
@@ -5656,7 +5825,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587721763,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/QNO9n9TthZg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/7f5/7f538d1c0936d887e6574ff898d67d67.jpg",
@@ -5741,7 +5910,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587692791,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/XYtyeqVQnRI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/167/16728aa54b1130772b06cdcac128e056.jpg",
@@ -5968,7 +6137,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587709556,
     "precoVendaEUR": 4.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/VYQNnrccbj8",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/40d/40dd1127a5ea6ed3a685043df6cd08a0.jpg",
@@ -6002,8 +6171,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587721922,
-    "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 23.99,
+    "precoVendaEUR": 24.99,
+    "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/lg591kVaGlc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/7b9/7b975a3e6ba26b9ae837359bfc7ec3fc.jpg",
@@ -6095,7 +6264,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587712969,
     "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/0GLbwkfhYZk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1c0/1c0016ec0441e86648bd7f751c8e5adf.jpg",
@@ -6929,8 +7098,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1542724481,
-    "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 23.99,
+    "precoVendaEUR": 24.99,
+    "precoOriginalEUR": 24.99,
     "trailer": "https://www.youtube.com/embed/Gx_6-zp9eis",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/65595-e9fc99c64b5b73901717813131993201-1024-1024.webp"
@@ -6956,7 +7125,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1479901335,
     "precoVendaEUR": 21.99,
-    "precoOriginalEUR": 22.99,
+    "precoOriginalEUR": 23.99,
     "trailer": "https://www.youtube.com/embed/GjugTk9ovcI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/4ee/4ee71f52249e90a9b40a3f75ff515a19.jpg",
@@ -7333,36 +7502,6 @@
     "steamGridMatchScore": 0.746,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/assassin-s-creed-unity-xbox-one-diagital",
     "enriquecido": false
-  },
-  {
-    "id": "batman-arkham-collection-xbox-one",
-    "nome": "Batman Arkham Collection – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190180348002",
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
-    "trailer": "https://www.youtube.com/embed/lVMNvvaXJ2s",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/3c3/3c31911cd92fd38f1ac0483eb4f898ce.jpg",
-      "https://media.rawg.io/media/screenshots/d86/d86fc516df52fc3d0c76243d6a548ddf.jpg",
-      "https://media.rawg.io/media/screenshots/fd9/fd9eae438821129fa47d4498717fad33.jpg"
-    ],
-    "descricao": "Batman: Arkham Collection brings you the definitive versions of Rocksteady's Arkham Trilogy games, including all post-launch content, in one complete collection. Experience two of the most critically acclaimed titles of the last generation - Batman: Arkham Asylum and Batman: Arkham City, with ful...",
-    "imagemFallback": "https://media.rawg.io/media/screenshots/fd9/fd9eae438821129fa47d4498717fad33.jpg",
-    "released": "2019-09-06",
-    "rating": 4.26,
-    "ratings_count": 46,
-    "added": 175,
-    "genres": [
-      "Action"
-    ],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Batman: Arkham Origins",
-    "steamGridMatchScore": 0.6,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/batman-arkham-collection-xbox-one",
-    "enriquecido": true
   },
   {
     "id": "batman-return-to-arkham-xbox-one",
@@ -8467,8 +8606,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43286610575458",
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 51.99,
+    "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/MOclJJ7IpSY",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/8a3/8a362da6053e94416327b211eac26daa.jpg",

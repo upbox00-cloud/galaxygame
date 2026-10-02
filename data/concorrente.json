@@ -5957,6 +5957,18 @@
     "candidatos": []
   },
   {
+    "id": "tomb-raider-i-vi-remastered-ps4",
+    "nome": "Tomb Raider I-VI Remastered - PS4 Mídia Digital",
+    "plataforma": "PlayStation 4",
+    "plataformaKey": "ps4",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:07:49.277Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "unravel-two-ps4",
     "nome": "Unravel Two PS4 Mídia Digital",
     "plataforma": "PlayStation 4",
@@ -11901,6 +11913,18 @@
     "candidatos": []
   },
   {
+    "id": "beast-of-reincarnation-ps5",
+    "nome": "Beast of Reincarnation - PS5 Mídia Digital",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:07:51.781Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "callisto-protocol-ps5",
     "nome": "Callisto Protocol - PS5 Mídia Digital",
     "plataforma": "PlayStation 5",
@@ -12142,6 +12166,18 @@
     "candidatos": []
   },
   {
+    "id": "god-of-war-laufey-ps5",
+    "nome": "God of War Laufey - PS5 Mídia Digital",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:07:54.153Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "gotham-knights-ps5",
     "nome": "Gotham Knights – PS5 Mídia Digital",
     "plataforma": "PlayStation 5",
@@ -12161,6 +12197,18 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-03T15:56:38.017Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "grand-theft-auto-vi-gta-6-ps5",
+    "nome": "Grand Theft Auto VI – GTA 6 – PS5 Mídia Digital",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:07:57.063Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -12427,6 +12475,18 @@
     "candidatos": []
   },
   {
+    "id": "phantom-blade-zero-ps5",
+    "nome": "Phantom Blade Zero - PS5 Mídia Digital",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:00.149Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "prince-of-persia-the-lost-crown-ps5",
     "nome": "Prince of Persia The Lost Crown - PS5 Mídia Digital",
     "plataforma": "PlayStation 5",
@@ -12602,6 +12662,30 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-03T15:58:06.464Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "tomb-raider-i-ii-iii-remastered-starring-lara-croft-ps5",
+    "nome": "Tomb Raider I-II-III Remastered Starring Lara Croft - PS5 Mídia Digital",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:02.625Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "tomb-raider-i-vi-remastered-ps5",
+    "nome": "Tomb Raider I-VI Remastered - PS5 Mídia Digital",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:05.491Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -12923,6 +13007,18 @@
     "candidatos": []
   },
   {
+    "id": "assassin-s-creed-revelations-xbox-one",
+    "nome": "ASSASSIN'S CREED REVELATIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:07.769Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "assassin-s-creed-rogue-remastered-xbox-one",
     "nome": "ASSASSIN'S CREED ROGUE REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13037,6 +13133,30 @@
     "candidatos": []
   },
   {
+    "id": "attack-on-titan-xbox-one",
+    "nome": "ATTACK ON TITAN - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:10.138Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "attack-on-titan-2-xbox-one",
+    "nome": "ATTACK ON TITAN 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:12.683Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "avatar-the-last-airbender-quest-for-balance-xbox-one",
     "nome": "AVATAR THE LAST AIRBENDER: QUEST FOR BALANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -13049,13 +13169,37 @@
     "candidatos": []
   },
   {
-    "id": "batman-arkham-collections-xbox-one",
-    "nome": "BATMAN ARKHAM COLLECTIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "id": "baldur-s-gate-and-baldur-s-gate-ii-enhanced-editions-xbox-one",
+    "nome": "BALDUR'S GATE AND BALDUR'S GATE II: ENHANCED EDITIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox One",
     "plataformaKey": "xbox-one",
     "sem_referencia": true,
     "pendente": false,
-    "consultadoEm": "2026-09-26T22:10:11.123Z",
+    "consultadoEm": "2026-10-02T10:08:15.152Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "baldur-s-gate-dark-aliance-xbox-one",
+    "nome": "BALDUR'S GATE: DARK ALIANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:17.342Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "batman-arkham-collection-xbox-one",
+    "nome": "BATMAN ARKHAM COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-27T09:33:26.351Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -15193,18 +15337,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-27T09:33:23.598Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "batman-arkham-collection-xbox-one",
-    "nome": "Batman Arkham Collection – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-27T09:33:26.351Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -17369,6 +17501,18 @@
     "candidatos": []
   },
   {
+    "id": "assassin-s-creed-revelations-xbox-series",
+    "nome": "ASSASSIN'S CREED REVELATIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:19.944Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "assassin-s-creed-rogue-remastered-xbox-series",
     "nome": "ASSASSIN'S CREED ROGUE REMASTERED - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17486,6 +17630,30 @@
     "candidatos": []
   },
   {
+    "id": "attack-on-titan-xbox-series",
+    "nome": "ATTACK ON TITAN - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:22.806Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "attack-on-titan-2-xbox-series",
+    "nome": "ATTACK ON TITAN 2 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:25.491Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "avatar-legends-the-fighting-game-xbox-series",
     "nome": "AVATAR LEGENDS: THE FIGHTING GAME - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17522,13 +17690,37 @@
     "candidatos": []
   },
   {
-    "id": "batman-arkham-collections-xbox-series",
-    "nome": "BATMAN ARKHAM COLLECTIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "id": "baldur-s-gate-and-baldur-s-gate-ii-enhanced-editions-xbox-series",
+    "nome": "BALDUR'S GATE AND BALDUR'S GATE II: ENHANCED EDITIONS - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
     "pendente": false,
-    "consultadoEm": "2026-09-30T10:04:18.408Z",
+    "consultadoEm": "2026-10-02T10:08:27.538Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "baldur-s-gate-dark-aliance-xbox-series",
+    "nome": "BALDUR'S GATE: DARK ALIANCE - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:30.410Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "batman-arkham-collection-xbox-series",
+    "nome": "BATMAN ARKHAM COLLECTION - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:33.561Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -20338,9 +20530,35 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:36.000Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "grand-theft-auto-vi-gta-6-xbox-series",
+    "nome": "Grand Theft Auto VI - GTA 6 Xbox Series X|S Mídia Digital",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:38.327Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "madden-nfl-27-xbox-series",
+    "nome": "Madden NFL 27 - Xbox Series Mídia Digital",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:41.521Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "nba-2k24-xbox-series",
@@ -20348,9 +20566,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:44.338Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "resident-evil-requiem-xbox-series",
@@ -20358,9 +20578,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:47.741Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "star-wars-jedi-survivor-xbox-series",
@@ -20368,9 +20590,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:50.456Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "the-callisto-protocol-xbox-series",
@@ -20378,9 +20602,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:53.399Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "the-king-of-fighters-xv-xbox-series",
@@ -20388,8 +20614,10 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:56.449Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   }
 ]
