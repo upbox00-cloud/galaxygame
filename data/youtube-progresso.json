@@ -7856,6 +7856,158 @@
       "videoTitle": "Resident Evil Revelations 2 - Live-action Trailer",
       "channelTitle": "GameSpot",
       "processedAt": "2026-10-02T11:10:44.658Z"
+    },
+    "yakuza 3 remastered": {
+      "trailer": "https://www.youtube.com/embed/AhtHDcNGvBc",
+      "status": "found",
+      "query": "yakuza 3 remastered Xbox trailer oficial",
+      "videoTitle": "Yakuza 3 Remastered Trailer",
+      "channelTitle": "Opium Pulses Trailers",
+      "processedAt": "2026-10-03T10:28:09.750Z"
+    },
+    "yakuza kiwami 2": {
+      "trailer": "https://www.youtube.com/embed/CCNHDdd8q54",
+      "status": "found",
+      "query": "yakuza kiwami 2 Xbox trailer oficial",
+      "videoTitle": "Yakuza Kiwami 2 | Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-03T10:28:10.452Z"
+    },
+    "jurassics world evolution 2": {
+      "trailer": "https://www.youtube.com/embed/4enSEtOw5Lc",
+      "status": "found",
+      "query": "jurassics world evolution 2 Xbox trailer oficial",
+      "videoTitle": "Jurassic World Evolution 2 | Launch Trailer",
+      "channelTitle": "Jurassic World",
+      "processedAt": "2026-10-03T10:28:11.099Z"
+    },
+    "amnesia rebirht": {
+      "trailer": "https://www.youtube.com/embed/uqrahIxQe7Q",
+      "status": "found",
+      "query": "amnesia rebirht Xbox trailer oficial",
+      "videoTitle": "Amnesia: Rebirth - Launch Trailer",
+      "channelTitle": "frictionalgames",
+      "processedAt": "2026-10-03T10:28:11.737Z"
+    },
+    "axis football 2026": {
+      "trailer": "https://www.youtube.com/embed/rUI-NcCRf1o",
+      "status": "found",
+      "query": "axis football 2026 Xbox trailer oficial",
+      "videoTitle": "Axis Football 2026 Release Trailer",
+      "channelTitle": "Axis Games",
+      "processedAt": "2026-10-03T10:28:12.375Z"
+    },
+    "amnesia the bunker": {
+      "trailer": "https://www.youtube.com/embed/OxLSsDmtj-U",
+      "status": "found",
+      "query": "amnesia the bunker Xbox trailer oficial",
+      "videoTitle": "Amnesia: The Bunker - Announcement Trailer",
+      "channelTitle": "frictionalgames",
+      "processedAt": "2026-10-03T10:28:12.959Z"
+    },
+    "axis football 2027": {
+      "trailer": "https://www.youtube.com/embed/qpUq_RisT8k",
+      "status": "found",
+      "query": "axis football 2027 Xbox trailer oficial",
+      "videoTitle": "Axis Football 2027 Trailer",
+      "channelTitle": "Axis Games",
+      "processedAt": "2026-10-03T10:28:13.569Z"
+    },
+    "yakuza 4 remastered": {
+      "trailer": "https://www.youtube.com/embed/SdM55hOwXFQ",
+      "status": "found",
+      "query": "yakuza 4 remastered Xbox trailer oficial",
+      "videoTitle": "The Yakuza Remastered Collection - Yakuza 4 Launch Trailer",
+      "channelTitle": "GameTrailers",
+      "processedAt": "2026-10-03T10:28:14.212Z"
+    },
+    "yakuza 5 remastered": {
+      "trailer": "https://www.youtube.com/embed/dhhZj6jIoVc",
+      "status": "found",
+      "query": "yakuza 5 remastered Xbox trailer oficial",
+      "videoTitle": "Yakuza 5 Remastered | Launch Trailer",
+      "channelTitle": "SEGA",
+      "processedAt": "2026-10-03T10:28:14.854Z"
+    },
+    "jurassics world evolution": {
+      "trailer": "https://www.youtube.com/embed/j0-WtQEHBFk",
+      "status": "found",
+      "query": "jurassics world evolution Xbox trailer oficial",
+      "videoTitle": "Jurassic World Evolution Official Game Trailer | Jurassic World",
+      "channelTitle": "Jurassic World",
+      "processedAt": "2026-10-03T10:28:15.471Z"
+    },
+    "lego jurassics world": {
+      "trailer": "https://www.youtube.com/embed/PaVbiSBdNDo",
+      "status": "found",
+      "query": "lego jurassics world Xbox trailer oficial",
+      "videoTitle": "LEGO Jurassic World Game - Official Launch Trailer",
+      "channelTitle": "Warner Bros. Games",
+      "processedAt": "2026-10-03T10:28:16.174Z"
+    },
+    "yakuza 6 the song of life": {
+      "trailer": "https://www.youtube.com/embed/1Tw5qn-QSG8",
+      "status": "found",
+      "query": "yakuza 6 the song of life Xbox trailer oficial",
+      "videoTitle": "Yakuza 6: The Song of Life | Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-03T10:28:16.800Z"
+    },
+    "amnesia collection": {
+      "trailer": "https://www.youtube.com/embed/FLLCfQ2teLA",
+      "status": "found",
+      "query": "amnesia collection Xbox trailer oficial",
+      "videoTitle": "Amnesia: Collection - Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-03T10:28:17.519Z"
+    },
+    "my hero ones justice 2": {
+      "trailer": "https://www.youtube.com/embed/E0h4ROGR-Gs",
+      "status": "found",
+      "query": "my hero ones justice 2 Xbox trailer oficial",
+      "videoTitle": "MY HERO ONE'S JUSTICE 2 | Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-03T10:28:18.152Z"
+    },
+    "south park the fractured but whole": {
+      "trailer": "https://www.youtube.com/embed/fiayfb1rrs0",
+      "status": "found",
+      "query": "south park the fractured but whole Xbox trailer oficial",
+      "videoTitle": "South Park: The Fractured But Whole Trailer – E3 2016 [NA]",
+      "channelTitle": "Ubisoft",
+      "processedAt": "2026-10-03T10:28:18.778Z"
+    },
+    "age of empires definitive": {
+      "trailer": "https://www.youtube.com/embed/fCcRNUlE7ek",
+      "status": "found",
+      "query": "age of empires definitive Xbox trailer oficial",
+      "videoTitle": "Age of Empires III: Definitive Edition - Announce Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-03T10:28:19.520Z"
+    },
+    "my hero ones justice": {
+      "trailer": "https://www.youtube.com/embed/BVIQXhEKAog",
+      "status": "found",
+      "query": "my hero ones justice Xbox trailer oficial",
+      "videoTitle": "My Hero: One’s Justice - Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-03T10:28:20.191Z"
+    },
+    "south park the stick of truth": {
+      "trailer": "https://www.youtube.com/embed/grE1IKVAIm8",
+      "status": "found",
+      "query": "south park the stick of truth Xbox trailer oficial",
+      "videoTitle": "South Park: The Stick of Truth: Xbox One Release Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-03T10:28:20.905Z"
+    },
+    "among us": {
+      "trailer": "https://www.youtube.com/embed/CermGp8bwFE",
+      "status": "found",
+      "query": "among us Xbox trailer oficial",
+      "videoTitle": "Among Us: Hide N Seek Official Trailer | The Game Awards 2022",
+      "channelTitle": "GameSpot",
+      "processedAt": "2026-10-03T10:28:21.472Z"
     }
   },
   "runs": [
@@ -8108,7 +8260,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-10-03T10:28:09.307Z",
+      "requests": 19,
+      "analyzed": 19,
+      "found": 19,
+      "notFound": 0,
+      "alreadyHadTrailer": 953,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-10-02T11:10:44.931Z"
+  "updatedAt": "2026-10-03T10:28:21.788Z"
 }
