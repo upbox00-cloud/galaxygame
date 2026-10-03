@@ -296,6 +296,72 @@
     "enriquecido": false
   },
   {
+    "id": "assassin-s-creed-chronicles-china-ps4",
+    "nome": "ASSASSIN'S CREED CHRONICLES: CHINA - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577753987,
+    "precoVendaEUR": 6.99,
+    "precoOriginalEUR": 10.99,
+    "trailer": "https://www.youtube.com/embed/2W8_-SaDWSE",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/569/569454df51319779ee25b9ab986ddd36.jpg",
+      "https://media.rawg.io/media/screenshots/801/801969642a499f6d7f547dd6a94a2106.jpg",
+      "https://media.rawg.io/media/screenshots/46d/46d001bcc86ca0d10727f4588555f510.jpg",
+      "https://media.rawg.io/media/screenshots/e0a/e0ab2a7f8b5ce90c72d790cb82ab8cfa.jpg",
+      "https://media.rawg.io/media/screenshots/cbe/cbefab25bbcfdf7667bed10b492eeb9b.jpg"
+    ],
+    "descricao": "Assassin’s Creed Chronicles: China is the part of the Chronicles series. It is the first installment out of three in total with the other games being dedicated to India and Russia. ###Gameplay The game is the two-dimensional platformer with the agile camera which can be tilted. Such titles are al...",
+    "imagemFallback": "https://media.rawg.io/media/games/c5a/c5a362394197a5aa0cb8371a62154c8b.jpg",
+    "released": "2015-04-21",
+    "rating": 3.12,
+    "ratings_count": 286,
+    "added": 1640,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/38a9dbfce0500ac32fa4092cf609e572.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin’s Creed Chronicles: China",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-china-ps4-midia-digital-m49hh/",
+    "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-chronicles-india-ps4",
+    "nome": "ASSASSIN'S CREED CHRONICLES: INDIA - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577751816,
+    "precoVendaEUR": 8.99,
+    "precoOriginalEUR": 10.99,
+    "trailer": "https://www.youtube.com/embed/Tqz6HxPunRw",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/270/2705efbd0c3ff98bf61589a4418e2b8d.jpg",
+      "https://media.rawg.io/media/screenshots/000/00042367dff2429b53975165cf2b2e2e.jpg",
+      "https://media.rawg.io/media/screenshots/3f5/3f54967f3adbe3a0db6646c404aeb4f4.jpg",
+      "https://media.rawg.io/media/screenshots/436/4369d4a34dcb425a1b7fd98bd73c598e.jpg",
+      "https://media.rawg.io/media/screenshots/e67/e67c61fe1b91edaa025f2a579281c232.jpg"
+    ],
+    "descricao": "Embody Arbaaz in his quest for retribution through a colourful depiction of 19th century Colonial India in 2.5D stealth gameplay. • Travel across an amazing 19th-century India and its legendary landmarks Discover an exquisite depiction of Colonial India thanks to a palette of vibrant colours. Zip...",
+    "imagemFallback": "https://media.rawg.io/media/games/e99/e9969ab76756fe041aaa72cdeb768649.jpg",
+    "released": "2016-01-12",
+    "rating": 3.15,
+    "ratings_count": 127,
+    "added": 843,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/05761d7cd3d824ac6da56e12eb7c8c6f.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin’s Creed Chronicles: India",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-india-ps4-midia-digital-19ddb/",
+    "enriquecido": true
+  },
+  {
     "id": "assassin-s-creed-chronicles-russia-ps4",
     "nome": "ASSASSIN'S CREED CHRONICLES: RUSSIA - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -327,6 +393,39 @@
     "steamGridMatchedName": "Assassin’s Creed Chronicles: Russia",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-russia-ps4-midia-digital-toxk4/",
+    "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-freedom-cry-ps4",
+    "nome": "ASSASSIN'S CREED FREEDOM CRY - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577772201,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 15.99,
+    "trailer": "https://www.youtube.com/embed/FLayHHZ0hLQ",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/a9a/a9a00af6d06d4b07dcb9d8f719eb4ea7.jpg",
+      "https://media.rawg.io/media/screenshots/76e/76eb154c90e6e393e4fea8c0e382ddfb.jpg",
+      "https://media.rawg.io/media/screenshots/9c4/9c499aeed548571cb2f9b1d73e67495c.jpg",
+      "https://media.rawg.io/media/screenshots/8c3/8c342dddd2d433edddd0806694f0d794.jpg",
+      "https://media.rawg.io/media/screenshots/d05/d0575a6fb767239823c14c818053c60b.jpg"
+    ],
+    "descricao": "Assassin’s Creed Freedom Cry is a standalone expansion for Assassin's Creed IV: Black Flag and set 12 years after its events. The game introduces a brand new character - a pirate called Adéwalé who joins the Order of Assassins in order to stop slavery in Haiti. He confronts the local government a...",
+    "imagemFallback": "https://media.rawg.io/media/games/d2f/d2f925d2c1518d45c45f91cc32afce68.jpg",
+    "released": "2014-02-18",
+    "rating": 3.08,
+    "ratings_count": 495,
+    "added": 2466,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/88c9dc3c86b55bce08d0800cd4f2ebb9.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed: Freedom Cry",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-freedom-cry-ps4-midia-digital-1fzfk/",
     "enriquecido": true
   },
   {
@@ -428,7 +527,7 @@
   },
   {
     "id": "assassin-s-creed-mirage-e-assassin-s-creed-valhalla-ps4",
-    "nome": "ASSASSIN'S CREED MIRAGE E ASSASSIN’S CREED VALHALLA - PS4 - MÍDIA DIGITAL",
+    "nome": "ASSASSIN'S CREED MIRAGE E ASSASSIN'S CREED VALHALLA - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577749557,
@@ -453,6 +552,32 @@
     "enriquecido": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 14
+  },
+  {
+    "id": "assassin-s-creed-mythology-pack-ps4",
+    "nome": "ASSASSIN'S CREED MYTHOLOGY PACK - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577756659,
+    "precoVendaEUR": 95.99,
+    "precoOriginalEUR": 117.99,
+    "trailer": "https://www.youtube.com/embed/tIqRcsuZxbg",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363096-d1263699b46ac6b21e17868259417148-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363096-d1263699b46ac6b21e17868259417148-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Rogue",
+    "steamGridMatchScore": 0.568,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-mythology-pack-ps4-midia-digital-1popp/",
+    "enriquecido": false
   },
   {
     "id": "assassin-s-creed-odyssey-ps4",
@@ -647,6 +772,66 @@
     "enriquecido": true
   },
   {
+    "id": "assassin-s-creed-unity-ps4",
+    "nome": "ASSASSIN'S CREED UNITY - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577770930,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 30.99,
+    "trailer": "https://www.youtube.com/embed/UL11MyWoP0U",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/bd3/bd3302a08d8c9ffbb73ffd4cd40714aa.jpg",
+      "https://media.rawg.io/media/screenshots/bd8/bd84c249c0629a21eb100e9f85741af4.jpg",
+      "https://media.rawg.io/media/screenshots/896/896a031eff2e03dc483e2c72c9709457.jpg",
+      "https://media.rawg.io/media/screenshots/8b1/8b189e10ce9c9276d052ee5cb04ff4b8.jpg",
+      "https://media.rawg.io/media/screenshots/5e0/5e076dd9935da9e829a2508ee1e64d18.jpg"
+    ],
+    "descricao": "The game takes place in Paris, during the Great French Revolution, from the capture of the Bastille in 1789 to the Thermidorian coup. Behind all action, there is an intrigue connected with the change of the Great Master of the Order of Templars. The game has a new assassin, Arno Victor Dorian. Th...",
+    "imagemFallback": "https://media.rawg.io/media/games/59f/59fc1c5de1d29cb9234741c97d250150.jpg",
+    "released": "2014-11-11",
+    "rating": 3.63,
+    "ratings_count": 1723,
+    "added": 7075,
+    "genres": [
+      "Action"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2947007280adf8859edffdaf48e6e558.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Unity",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-unity-ps4-midia-digital-17ely/",
+    "enriquecido": true
+  },
+  {
+    "id": "assassin-s-creed-valhalla-watch-dogs-legion-ps4",
+    "nome": "ASSASSIN'S CREED VALHALLA + WATCH DOGS: LEGION - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1577781493,
+    "precoVendaEUR": 69.99,
+    "precoOriginalEUR": 93.99,
+    "trailer": "https://www.youtube.com/embed/7YpxeHcyFTc",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363127-d6a60cd79bc528ee8717868297329542-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363127-d6a60cd79bc528ee8717868297329542-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Assassin's Creed Valhalla: Dawn of Ragnarök",
+    "steamGridMatchScore": 0.579,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/bundle-assassins-creed-valhalla-watch-dogs-legion-ps4-midia-digital-obc2x/",
+    "enriquecido": false,
+    "destaqueHome": true,
+    "prioridadeCuradoria": 14
+  },
+  {
     "id": "assassin-s-creed-valhalla-ps4",
     "nome": "ASSASSIN'S CREED VALHALLA - PS4 - MIDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -679,191 +864,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-valhalla-ps4-midia-digital-tj22b/",
     "enriquecido": true,
-    "destaqueHome": true,
-    "prioridadeCuradoria": 14
-  },
-  {
-    "id": "assassin-s-creed-chronicles-china-ps4",
-    "nome": "ASSASSIN’S CREED CHRONICLES: CHINA - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577753987,
-    "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 10.99,
-    "trailer": "https://www.youtube.com/embed/2W8_-SaDWSE",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/569/569454df51319779ee25b9ab986ddd36.jpg",
-      "https://media.rawg.io/media/screenshots/801/801969642a499f6d7f547dd6a94a2106.jpg",
-      "https://media.rawg.io/media/screenshots/46d/46d001bcc86ca0d10727f4588555f510.jpg",
-      "https://media.rawg.io/media/screenshots/e0a/e0ab2a7f8b5ce90c72d790cb82ab8cfa.jpg",
-      "https://media.rawg.io/media/screenshots/cbe/cbefab25bbcfdf7667bed10b492eeb9b.jpg"
-    ],
-    "descricao": "Assassin’s Creed Chronicles: China is the part of the Chronicles series. It is the first installment out of three in total with the other games being dedicated to India and Russia. ###Gameplay The game is the two-dimensional platformer with the agile camera which can be tilted. Such titles are al...",
-    "imagemFallback": "https://media.rawg.io/media/games/c5a/c5a362394197a5aa0cb8371a62154c8b.jpg",
-    "released": "2015-04-21",
-    "rating": 3.12,
-    "ratings_count": 286,
-    "added": 1640,
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/38a9dbfce0500ac32fa4092cf609e572.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin’s Creed Chronicles: China",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-china-ps4-midia-digital-m49hh/",
-    "enriquecido": true
-  },
-  {
-    "id": "assassin-s-creed-chronicles-india-ps4",
-    "nome": "ASSASSIN’S CREED CHRONICLES: INDIA - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577751816,
-    "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 10.99,
-    "trailer": "https://www.youtube.com/embed/Tqz6HxPunRw",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/270/2705efbd0c3ff98bf61589a4418e2b8d.jpg",
-      "https://media.rawg.io/media/screenshots/000/00042367dff2429b53975165cf2b2e2e.jpg",
-      "https://media.rawg.io/media/screenshots/3f5/3f54967f3adbe3a0db6646c404aeb4f4.jpg",
-      "https://media.rawg.io/media/screenshots/436/4369d4a34dcb425a1b7fd98bd73c598e.jpg",
-      "https://media.rawg.io/media/screenshots/e67/e67c61fe1b91edaa025f2a579281c232.jpg"
-    ],
-    "descricao": "Embody Arbaaz in his quest for retribution through a colourful depiction of 19th century Colonial India in 2.5D stealth gameplay. • Travel across an amazing 19th-century India and its legendary landmarks Discover an exquisite depiction of Colonial India thanks to a palette of vibrant colours. Zip...",
-    "imagemFallback": "https://media.rawg.io/media/games/e99/e9969ab76756fe041aaa72cdeb768649.jpg",
-    "released": "2016-01-12",
-    "rating": 3.15,
-    "ratings_count": 127,
-    "added": 843,
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/05761d7cd3d824ac6da56e12eb7c8c6f.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin’s Creed Chronicles: India",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-chronicles-india-ps4-midia-digital-19ddb/",
-    "enriquecido": true
-  },
-  {
-    "id": "assassin-s-creed-freedom-cry-ps4",
-    "nome": "ASSASSIN’S CREED FREEDOM CRY - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577772201,
-    "precoVendaEUR": 10.99,
-    "precoOriginalEUR": 15.99,
-    "trailer": "https://www.youtube.com/embed/FLayHHZ0hLQ",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/a9a/a9a00af6d06d4b07dcb9d8f719eb4ea7.jpg",
-      "https://media.rawg.io/media/screenshots/76e/76eb154c90e6e393e4fea8c0e382ddfb.jpg",
-      "https://media.rawg.io/media/screenshots/9c4/9c499aeed548571cb2f9b1d73e67495c.jpg",
-      "https://media.rawg.io/media/screenshots/8c3/8c342dddd2d433edddd0806694f0d794.jpg",
-      "https://media.rawg.io/media/screenshots/d05/d0575a6fb767239823c14c818053c60b.jpg"
-    ],
-    "descricao": "Assassin’s Creed Freedom Cry is a standalone expansion for Assassin's Creed IV: Black Flag and set 12 years after its events. The game introduces a brand new character - a pirate called Adéwalé who joins the Order of Assassins in order to stop slavery in Haiti. He confronts the local government a...",
-    "imagemFallback": "https://media.rawg.io/media/games/d2f/d2f925d2c1518d45c45f91cc32afce68.jpg",
-    "released": "2014-02-18",
-    "rating": 3.08,
-    "ratings_count": 495,
-    "added": 2466,
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/88c9dc3c86b55bce08d0800cd4f2ebb9.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed: Freedom Cry",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-freedom-cry-ps4-midia-digital-1fzfk/",
-    "enriquecido": true
-  },
-  {
-    "id": "assassin-s-creed-mythology-pack-ps4",
-    "nome": "ASSASSIN’S CREED MYTHOLOGY PACK - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577756659,
-    "precoVendaEUR": 95.99,
-    "precoOriginalEUR": 117.99,
-    "trailer": "https://www.youtube.com/embed/tIqRcsuZxbg",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363096-d1263699b46ac6b21e17868259417148-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363096-d1263699b46ac6b21e17868259417148-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Rogue",
-    "steamGridMatchScore": 0.568,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-mythology-pack-ps4-midia-digital-1popp/",
-    "enriquecido": false
-  },
-  {
-    "id": "assassin-s-creed-unity-ps4",
-    "nome": "ASSASSIN’S CREED UNITY - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577770930,
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 30.99,
-    "trailer": "https://www.youtube.com/embed/UL11MyWoP0U",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/bd3/bd3302a08d8c9ffbb73ffd4cd40714aa.jpg",
-      "https://media.rawg.io/media/screenshots/bd8/bd84c249c0629a21eb100e9f85741af4.jpg",
-      "https://media.rawg.io/media/screenshots/896/896a031eff2e03dc483e2c72c9709457.jpg",
-      "https://media.rawg.io/media/screenshots/8b1/8b189e10ce9c9276d052ee5cb04ff4b8.jpg",
-      "https://media.rawg.io/media/screenshots/5e0/5e076dd9935da9e829a2508ee1e64d18.jpg"
-    ],
-    "descricao": "The game takes place in Paris, during the Great French Revolution, from the capture of the Bastille in 1789 to the Thermidorian coup. Behind all action, there is an intrigue connected with the change of the Great Master of the Order of Templars. The game has a new assassin, Arno Victor Dorian. Th...",
-    "imagemFallback": "https://media.rawg.io/media/games/59f/59fc1c5de1d29cb9234741c97d250150.jpg",
-    "released": "2014-11-11",
-    "rating": 3.63,
-    "ratings_count": 1723,
-    "added": 7075,
-    "genres": [
-      "Action"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2947007280adf8859edffdaf48e6e558.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Unity",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/assassins-creed-unity-ps4-midia-digital-17ely/",
-    "enriquecido": true
-  },
-  {
-    "id": "assassin-s-creed-valhalla-watch-dogs-legion-ps4",
-    "nome": "ASSASSIN’S CREED VALHALLA + WATCH DOGS: LEGION - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1577781493,
-    "precoVendaEUR": 69.99,
-    "precoOriginalEUR": 93.99,
-    "trailer": "https://www.youtube.com/embed/7YpxeHcyFTc",
-    "screenshots": [
-      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363127-d6a60cd79bc528ee8717868297329542-1024-1024.webp"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363127-d6a60cd79bc528ee8717868297329542-1024-1024.webp",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Assassin's Creed Valhalla: Dawn of Ragnarök",
-    "steamGridMatchScore": 0.579,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/bundle-assassins-creed-valhalla-watch-dogs-legion-ps4-midia-digital-obc2x/",
-    "enriquecido": false,
     "destaqueHome": true,
     "prioridadeCuradoria": 14
   },
@@ -1929,7 +1929,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1558625969,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 31.99,
+    "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/65Yrv8Q2bco",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a02/a027c280854d5e2f5356f87665dd524a.jpg",
@@ -1961,7 +1961,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1486624941,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 48.99,
     "trailer": "https://www.youtube.com/embed/_uTDtbs2jZ4",
     "screenshots": [
@@ -2054,7 +2054,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1294810684,
     "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/9txkGBj_trg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2f2/2f2be7c95febbb9bef5a66f88baa3e65.jpeg",
@@ -2119,7 +2119,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1558196333,
     "precoVendaEUR": 26.99,
-    "precoOriginalEUR": 31.99,
+    "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/x3tedlWs1XY",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/c5c/c5c52956aaa535f92067f8dbb94ed792.jpg",
@@ -2152,7 +2152,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1486616267,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 31.99,
+    "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/Zxnx3W-HA18",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/718/7186c69c5bdd52a151e0db8d5f517305.jpg",
@@ -2183,7 +2183,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550107784,
-    "precoVendaEUR": 43.99,
+    "precoVendaEUR": 42.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/EeF3UTkCoxY",
     "screenshots": [
@@ -2979,7 +2979,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550286891,
-    "precoVendaEUR": 43.99,
+    "precoVendaEUR": 42.99,
     "precoOriginalEUR": 63.99,
     "trailer": "https://www.youtube.com/embed/5iw-naOFLTg",
     "screenshots": [
@@ -3031,7 +3031,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550284339,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 65.99,
     "trailer": "https://www.youtube.com/embed/U1qGQqOkZI8",
     "screenshots": [
@@ -3352,7 +3352,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1352631742,
-    "precoVendaEUR": 43.99,
+    "precoVendaEUR": 42.99,
     "precoOriginalEUR": 55.99,
     "trailer": "https://www.youtube.com/embed/7jk8prJA9nI",
     "screenshots": [
@@ -3848,7 +3848,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550575557,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 31.99,
+    "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/DRP62MGOrUo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/777/777ca79b63350a305a0cb0d8cae2fa37.jpg",
@@ -3975,7 +3975,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1588506332,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/M0oTJiy6j8g",
     "screenshots": [
@@ -4595,7 +4595,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550904783,
     "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/pBM2xyco_Kg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/f00/f006fd06ba88b650432fff17e6bb908d.jpg",
@@ -4628,7 +4628,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276658261,
     "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/TSi0iJYSQ24",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5f3/5f3dfab4e123fc5ad4f334673b7b01da.jpg",
@@ -4661,7 +4661,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276138962,
-    "precoVendaEUR": 43.99,
+    "precoVendaEUR": 42.99,
     "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/E3Huy2cdih0",
     "screenshots": [
@@ -5059,8 +5059,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550672067,
-    "precoVendaEUR": 43.99,
-    "precoOriginalEUR": 62.99,
+    "precoVendaEUR": 42.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/6eLHk2Eug78",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367305-c09180ec0e919f321d17884641848308-1024-1024.webp"
@@ -6197,7 +6197,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1391634920,
     "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/iqysmS4lxwQ",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-ebe05b08088d11e8c917661646280053-1024-1024.webp"
@@ -6284,7 +6284,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1351275274,
     "precoVendaEUR": 19.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/hfJ4Km46A-0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/55f/55fe715e129d5365b48b35b5fc8052be.jpg",
@@ -6351,7 +6351,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1334902305,
     "precoVendaEUR": 19.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/1tBUsXIkG1A",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/63b/63bd4904de4a4dcc58f86b6d75651631.jpg",
@@ -6410,7 +6410,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276601535,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 35.99,
     "trailer": "https://www.youtube.com/embed/QkkoHAzjnUs",
     "screenshots": [
@@ -6620,7 +6620,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1275909179,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/1O6Qstncpnc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/723/7230cc1be966c19d2470a19d277b31e9.jpg",
@@ -6785,7 +6785,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1448539930,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 31.99,
     "trailer": "https://www.youtube.com/embed/9hklKfEEsxc",
     "screenshots": [
@@ -7789,7 +7789,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1553779905,
     "precoVendaEUR": 14.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/dWXAxOKdQ6c",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d8f/d8f79607dcb2f8ad3704dfd5eef0ea52.jpg",
@@ -8131,7 +8131,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1553806048,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/v7eYGv9tgNI",
     "screenshots": [
@@ -8356,7 +8356,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1503833420,
-    "precoVendaEUR": 43.99,
+    "precoVendaEUR": 42.99,
     "precoOriginalEUR": 56.99,
     "trailer": "https://www.youtube.com/embed/c_YddLpfD5o",
     "screenshots": [
@@ -9260,7 +9260,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1276147103,
     "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/zwQ9RjfvJN0",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_5676-8f30548ead5c3d86b217594256240470-1024-1024.webp"
@@ -9612,8 +9612,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1555859822,
-    "precoVendaEUR": 24.99,
-    "precoOriginalEUR": 31.99,
+    "precoVendaEUR": 23.99,
+    "precoOriginalEUR": 30.99,
     "trailer": "https://www.youtube.com/embed/lcVISRmANIo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2f0/2f09215362700443943619bdbd89fc77.jpg",
@@ -9710,12 +9710,12 @@
   },
   {
     "id": "pacote-assassin-s-creed-valhalla-immortals-fenyx-rising-ps4",
-    "nome": "PACOTE ASSASSIN’S CREED VALHALLA + IMMORTALS FENYX RISING - PS4 - MÍDIA DIGITAL",
+    "nome": "PACOTE ASSASSIN'S CREED VALHALLA + IMMORTALS FENYX RISING - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1577773811,
     "precoVendaEUR": 66.99,
-    "precoOriginalEUR": 85.99,
+    "precoOriginalEUR": 84.99,
     "trailer": "https://www.youtube.com/embed/7bGiSDdrD0A",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000363109-1b0f6c2ab6990abd6c17868284927876-1024-1024.webp"
@@ -9846,7 +9846,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1553027510,
-    "precoVendaEUR": 43.99,
+    "precoVendaEUR": 42.99,
     "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/3VsA-_x8iV4",
     "screenshots": [
@@ -9899,7 +9899,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1550296229,
     "precoVendaEUR": 33.99,
-    "precoOriginalEUR": 101.99,
+    "precoOriginalEUR": 100.99,
     "trailer": null,
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000351261-0744de1a0fa8bab61f17825250764228-1024-1024.webp"
@@ -10824,7 +10824,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1432720463,
-    "precoVendaEUR": 43.99,
+    "precoVendaEUR": 42.99,
     "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/IJDIenuQepo",
     "screenshots": [
@@ -11584,7 +11584,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1557527721,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 25.99,
     "trailer": "https://www.youtube.com/embed/61qw4VRPB9o",
     "screenshots": [
@@ -11938,8 +11938,8 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1557541210,
-    "precoVendaEUR": 43.99,
-    "precoOriginalEUR": 62.99,
+    "precoVendaEUR": 42.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/lg591kVaGlc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/7b9/7b975a3e6ba26b9ae837359bfc7ec3fc.jpg",
@@ -12378,7 +12378,7 @@
     "plataforma": "PlayStation 4",
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1568844103,
-    "precoVendaEUR": 24.99,
+    "precoVendaEUR": 23.99,
     "precoOriginalEUR": 25.99,
     "trailer": "https://www.youtube.com/embed/c--3mqChY3U",
     "screenshots": [
@@ -12685,7 +12685,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1568851486,
     "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 61.99,
     "trailer": "https://www.youtube.com/embed/sjkpPqATrYY",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000359822-b67bd2b63850b834e717855214021978-1024-1024.webp"
@@ -18595,10 +18595,7 @@
     "steamGridMatchedName": "Tomb Raider I-III Remastered",
     "steamGridMatchScore": 0.824,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/tomb-raider-i-vi-remastered-ps4",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "unravel-two-ps4",
