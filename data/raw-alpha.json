@@ -14323,6 +14323,22 @@
       "varianteFornecedorId": 1555873020
     },
     {
+      "id": "phantom-blade-zero-ps5",
+      "nome": "PHANTOM BLADE ZERO - PS5 - MÍDIA DIGITAL",
+      "precoAtualBRL": 148.71,
+      "precoPixBRL": 148.71,
+      "precoSemPixBRL": 159.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 229.9,
+      "tipoMidia": "Primaria",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/phantom-blade-zero-ps5-midia-digital-1y2vx/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000368501-c6858a42afb4750e4517910540984198-1024-1024.webp",
+      "plataforma": "PlayStation 5",
+      "plataformaKey": "ps5",
+      "fornecedorProductId": "371821322",
+      "varianteFornecedorId": 1611506946
+    },
+    {
       "id": "phasmophobia-ps5",
       "nome": "PHASMOPHOBIA - PS5 - MÍDIA DIGITAL",
       "precoAtualBRL": 65.01,

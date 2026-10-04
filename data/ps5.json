@@ -3137,7 +3137,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1343006184,
     "precoVendaEUR": 31.99,
-    "precoOriginalEUR": 39.99,
+    "precoOriginalEUR": 40.99,
     "trailer": "https://www.youtube.com/embed/-qgOZDRDynw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/1e4/1e4dcb884c03242be7dab30fad77d7b2.jpg",
@@ -5908,7 +5908,7 @@
     "tipoMidia": "Primaria",
     "varianteFornecedorId": 1583299407,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 59.99,
+    "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/g_i846kDUfI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/941/941adb5a885c1022a9c878a47aaf4d3a.jpg",
@@ -12876,6 +12876,39 @@
     "steamGridMatchedName": "PAYDAY 3",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/payday-3-ps5-midia-digital-e2co6/",
+    "enriquecido": true
+  },
+  {
+    "id": "phantom-blade-zero-ps5",
+    "nome": "PHANTOM BLADE ZERO - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": 1611506946,
+    "precoVendaEUR": 38.99,
+    "precoOriginalEUR": 40.99,
+    "trailer": "https://www.youtube.com/embed/EZr1HXkEahs",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/908/9082f658383685fc50abb03a260c424c.jpg",
+      "https://media.rawg.io/media/screenshots/2f6/2f6a17ad1a8133fd19f3eb99dd634ca9.jpg",
+      "https://media.rawg.io/media/screenshots/186/186b4516cf7a774988604628294845ed.jpg",
+      "https://media.rawg.io/media/screenshots/2c4/2c4dcc8fe3fcfc9438a7bd99f5f39c7b.jpg",
+      "https://media.rawg.io/media/screenshots/cde/cde13fc895b2c74917bf3a551cdb2fee.jpg"
+    ],
+    "descricao": "Be the Dark Raider exiled by \"The Order\", embark on the path of vengeance, and uncover the darkest secrets of Wulin!",
+    "imagemFallback": "https://media.rawg.io/media/games/25f/25f536a977488f12ef8a6d013e50fda1.jpg",
+    "released": "2026-10-29",
+    "rating": 3.33,
+    "ratings_count": 6,
+    "added": 229,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/c2ca23c951caaa036189141224933bb8.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Phantom Blade Zero",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/phantom-blade-zero-ps5-midia-digital-1y2vx/",
     "enriquecido": true
   },
   {
@@ -20520,39 +20553,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/nba-2k27-ps5",
     "enriquecido": false
-  },
-  {
-    "id": "phantom-blade-zero-ps5",
-    "nome": "Phantom Blade Zero - PS5 Mídia Digital",
-    "plataforma": "PlayStation 5",
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": "43234675720290",
-    "precoVendaEUR": 43.99,
-    "precoOriginalEUR": 43.99,
-    "trailer": "https://www.youtube.com/embed/EZr1HXkEahs",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/908/9082f658383685fc50abb03a260c424c.jpg",
-      "https://media.rawg.io/media/screenshots/2f6/2f6a17ad1a8133fd19f3eb99dd634ca9.jpg",
-      "https://media.rawg.io/media/screenshots/186/186b4516cf7a774988604628294845ed.jpg",
-      "https://media.rawg.io/media/screenshots/2c4/2c4dcc8fe3fcfc9438a7bd99f5f39c7b.jpg",
-      "https://media.rawg.io/media/screenshots/cde/cde13fc895b2c74917bf3a551cdb2fee.jpg"
-    ],
-    "descricao": "Be the Dark Raider exiled by \"The Order\", embark on the path of vengeance, and uncover the darkest secrets of Wulin!",
-    "imagemFallback": "https://media.rawg.io/media/games/25f/25f536a977488f12ef8a6d013e50fda1.jpg",
-    "released": "2026-10-29",
-    "rating": 3.33,
-    "ratings_count": 6,
-    "added": 229,
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/c2ca23c951caaa036189141224933bb8.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Phantom Blade Zero",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/phantom-blade-zero-ps5",
-    "enriquecido": true
   },
   {
     "id": "prince-of-persia-the-lost-crown-ps5",

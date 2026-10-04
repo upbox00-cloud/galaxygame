@@ -99,10 +99,7 @@
     "steamGridMatchedName": "Age of Empires: Definitive Edition",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/jurassics-world-evolution-2-xbox-one-series-s-x-midia-digital-copia-ut1r0/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "age-of-empires-ii-definitive-edition-xbox-one",
@@ -258,10 +255,7 @@
     "steamGridMatchedName": "Amnesia: Collection",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/amnesia-collection-xbox-one-series-s-x-midia-digital-lqrap/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "amnesia-rebirht-xbox-one",
@@ -287,10 +281,7 @@
     "steamGridMatchedName": "Amnesia: Rebirth",
     "steamGridMatchScore": 0.653,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/amnesia-rebirht-xbox-one-series-s-x-midia-digital-1j78k/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "amnesia-the-bunker-xbox-one",
@@ -324,10 +315,7 @@
     "steamGridMatchedName": "Amnesia: The Bunker",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/amnesia-the-bunker-xbox-one-series-s-x-midia-digital-5dz47/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "among-us-xbox-one",
@@ -361,10 +349,7 @@
     "steamGridMatchedName": "Among Us",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/among-us-xbox-one-series-s-x-midia-digital-1ryds/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "ancestors-legacy-xbox-one",
@@ -1407,10 +1392,7 @@
     "steamGridMatchedName": "Axis Football 2026",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/axis-football-2026-xbox-one-series-s-x-midia-digital-1nf7p/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "axis-football-2027-xbox-one",
@@ -1436,10 +1418,7 @@
     "steamGridMatchedName": "Axis Football 2027",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/axis-football-2027-xbox-one-series-s-x-midia-digital-lf2rc/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "baldur-s-gate-and-baldur-s-gate-ii-enhanced-editions-xbox-one",
@@ -3130,7 +3109,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1608109403,
-    "precoVendaEUR": 3.99,
+    "precoVendaEUR": 7.99,
     "precoOriginalEUR": 8.99,
     "trailer": "https://www.youtube.com/embed/xI6uV47jKME",
     "screenshots": [
@@ -3992,10 +3971,7 @@
     "steamGridMatchedName": "Jurassic World Evolution",
     "steamGridMatchScore": 0.776,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/lego-jurassics-world-xbox-one-series-s-x-midia-digital-copia-146vn/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "jurassics-world-evolution-2-xbox-one",
@@ -4021,10 +3997,7 @@
     "steamGridMatchedName": "Jurassic World Evolution 2",
     "steamGridMatchScore": 0.818,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/jurassics-world-evolution-xbox-one-series-s-x-midia-digital-copia-i634w/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "lego-batman-3-beyond-gotham-xbox-one",
@@ -4117,10 +4090,7 @@
     "steamGridMatchedName": "LEGO Jurassic World",
     "steamGridMatchScore": 0.77,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/my-hero-ones-justice-2-xbox-one-series-s-x-midia-digital-copia-1k7qd/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "lego-marvel-super-heroes-xbox-one",
@@ -4362,7 +4332,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463294575,
-    "precoVendaEUR": 5.99,
+    "precoVendaEUR": 7.99,
     "precoOriginalEUR": 7.99,
     "trailer": "https://www.youtube.com/embed/hEJnMQG9ev8",
     "screenshots": [
@@ -5025,10 +4995,7 @@
     "steamGridMatchedName": "My Hero One's Justice",
     "steamGridMatchScore": 0.771,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/sonic-origins-xbox-one-series-s-x-midia-digital-copia-z6elq/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "my-hero-ones-justice-2-xbox-one",
@@ -5054,10 +5021,7 @@
     "steamGridMatchedName": "My Hero One's Justice 2",
     "steamGridMatchScore": 0.802,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/my-hero-ones-justice-xbox-one-series-s-x-midia-digital-copia-copia-14s0v/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "naruto-shippuden-ultimate-ninja-storm-4-xbox-one",
@@ -6667,10 +6631,7 @@
     "steamGridMatchedName": "Sonic Origins",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/sonic-colors-ultimate-xbox-one-series-s-x-midia-digital-copia-1utat/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "sonic-racing-crossworlds-xbox-one",
@@ -6737,10 +6698,7 @@
     "steamGridMatchedName": "South Park The Fractured But Whole",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/south-park-the-stick-of-truth-xbox-one-series-s-x-midia-digital-copia-1yeyy/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "south-park-the-stick-of-truth-xbox-one",
@@ -6773,10 +6731,7 @@
     "steamGridMatchedName": "South Park: The Stick of Truth",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/age-of-empires-definitive-edition-xbox-one-series-s-x-midia-digital-copia-aaedl/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "spongebob-squarepants-battle-for-bikini-bottom-xbox-one",
@@ -7983,10 +7938,7 @@
     "steamGridMatchedName": "Yakuza 3 Remastered",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/yakuza-kiwami-2-xbox-one-series-s-x-midia-digital-copia-1mhbk/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "yakuza-4-remastered-xbox-one",
@@ -8018,10 +7970,7 @@
     "steamGridMatchedName": "Yakuza 4 Remastered",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/yakuza-3-remastered-xbox-one-series-s-x-midia-digital-copia-ckubq/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "yakuza-5-remastered-xbox-one",
@@ -8052,10 +8001,7 @@
     "steamGridMatchedName": "Yakuza 5 Remastered",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/yakuza-4-remastered-xbox-one-series-s-x-midia-digital-copia-l30qv/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "yakuza-6-the-song-of-life-xbox-one",
@@ -8089,10 +8035,7 @@
     "steamGridMatchedName": "Yakuza 6: The Song of Life",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/yakuza-5-remastered-xbox-one-series-s-x-midia-digital-copia-qimw7/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "yakuza-kiwami-2-xbox-one",
@@ -8126,10 +8069,7 @@
     "steamGridMatchedName": "Yakuza Kiwami 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/among-us-xbox-one-series-s-x-midia-digital-copia-1fc3b/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "a-plague-tale-innocence-miidia-digital-xbox-one",
@@ -10890,38 +10830,6 @@
     "steamGridMatchScore": 0.3,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/mxgp3-xbox-one",
     "enriquecido": false
-  },
-  {
-    "id": "naruto-shippuden-ultimate-ninja-storm-4-road-to-boruto-xbox-one",
-    "nome": "Naruto Shippuden Ultimate Ninja Storm 4 Road To Boruto Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190192865378",
-    "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 7.99,
-    "trailer": "https://www.youtube.com/embed/briRubbkA60",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/7a3/7a388104564dd0e1660747a0322b3b2c.jpg",
-      "https://media.rawg.io/media/screenshots/d81/d8124fd2cddaa7a9ead100fa418408df.jpg",
-      "https://media.rawg.io/media/screenshots/797/7976d2130bb31d1913aebb60f5fb2d8c.jpg",
-      "https://media.rawg.io/media/screenshots/daa/daab21d8e0cf4418fcb1180445d413d7.jpg",
-      "https://media.rawg.io/media/screenshots/d32/d321455470244e539c7f41ffbc20ba13.jpg"
-    ],
-    "descricao": "NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4 Road to Boruto concludes the Ultimate Ninja Storm series and collects all of the DLC content packs for Storm 4 and previously exclusive pre-order bonuses! Not only will players get the Ultimate Ninja Storm 4 game and content packs, they will also get an...",
-    "imagemFallback": "https://media.rawg.io/media/games/fbd/fbda5b60245810158992eb1ea6ceee99.jpg",
-    "released": "2017-02-03",
-    "rating": 3.82,
-    "ratings_count": 11,
-    "added": 41,
-    "genres": [
-      "Fighting"
-    ],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Naruto Shippuden: Ultimate Ninja STORM 4 - Evolution",
-    "steamGridMatchScore": 0.662,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/naruto-shippuden-ultimate-ninja-storm-4-road-to-boruto-xbox-one",
-    "enriquecido": true
   },
   {
     "id": "naruto-shippuden-ultimate-ninja-storm-legacy-xbox-one",

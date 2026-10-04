@@ -9993,6 +9993,18 @@
     "candidatos": []
   },
   {
+    "id": "phantom-blade-zero-ps5",
+    "nome": "PHANTOM BLADE ZERO - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-02T10:08:00.149Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "phasmophobia-ps5",
     "nome": "PHASMOPHOBIA - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -12470,18 +12482,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-03T15:55:28.892Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "phantom-blade-zero-ps5",
-    "nome": "Phantom Blade Zero - PS5 Mídia Digital",
-    "plataforma": "PlayStation 5",
-    "plataformaKey": "ps5",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-10-02T10:08:00.149Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -16661,18 +16661,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-28T10:10:29.892Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "naruto-shippuden-ultimate-ninja-storm-4-road-to-boruto-xbox-one",
-    "nome": "Naruto Shippuden Ultimate Ninja Storm 4 Road To Boruto Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-28T10:10:32.162Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
