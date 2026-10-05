@@ -1266,8 +1266,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1609974311,
-    "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 42.99,
+    "precoVendaEUR": 43.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/m4x9AOiOgxo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/36a/36a591df4dcc4956fd6324fbfb8edb16.jpg",
@@ -1298,8 +1298,8 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1609984551,
-    "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 42.99,
+    "precoVendaEUR": 43.99,
+    "precoOriginalEUR": 43.99,
     "trailer": "https://www.youtube.com/embed/UNDtaNukaek",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/36a/36a591df4dcc4956fd6324fbfb8edb16.jpg",
@@ -1778,7 +1778,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561413649,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 43.99,
     "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/EVBJ4O-w3m4",
     "screenshots": [
@@ -1804,7 +1804,7 @@
     "plataforma": "Xbox One",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561244149,
-    "precoVendaEUR": 42.99,
+    "precoVendaEUR": 43.99,
     "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/fCImNIUkpak",
     "screenshots": [
@@ -10014,32 +10014,6 @@
     "enriquecido": true
   },
   {
-    "id": "just-cause-3-xxl-edition-xbox-one",
-    "nome": "Just Cause 3 XXL Edition – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190202892386",
-    "precoVendaEUR": 3.99,
-    "precoOriginalEUR": 3.99,
-    "trailer": "https://www.youtube.com/embed/ha-99ojJht4",
-    "screenshots": [
-      "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/JustCause3XXLEdition.jpg?v=1786234173"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/JustCause3XXLEdition.jpg?v=1786234173",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Just Cause 3",
-    "steamGridMatchScore": 0.75,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/just-cause-3-xxl-edition-xbox-one",
-    "enriquecido": false
-  },
-  {
     "id": "just-cause-4-reloaded-xbox-one",
     "nome": "Just Cause 4 Reloaded - Xbox One Mídia Digital",
     "plataforma": "Xbox One",
@@ -10445,32 +10419,6 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.lojatcagames.com.br/products/mafia-definitive-edition-xbox-one",
     "enriquecido": true
-  },
-  {
-    "id": "mafia-trilogia-xbox-one",
-    "nome": "Mafia Trilogia – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190158458978",
-    "precoVendaEUR": 9.99,
-    "precoOriginalEUR": 9.99,
-    "trailer": "https://www.youtube.com/embed/D3PHVzRSBh8",
-    "screenshots": [
-      "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/MafiaTrilogia.jpg?v=1786587367"
-    ],
-    "descricao": "",
-    "imagemFallback": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/MafiaTrilogia.jpg?v=1786587367",
-    "released": null,
-    "rating": 0,
-    "ratings_count": 0,
-    "added": 0,
-    "genres": [],
-    "capaSteamGridDB": null,
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Mafia III",
-    "steamGridMatchScore": 0.476,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/mafia-trilogia-xbox-one",
-    "enriquecido": false
   },
   {
     "id": "maneater-xbox-one",
