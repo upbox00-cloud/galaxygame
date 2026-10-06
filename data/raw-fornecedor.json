@@ -58,8 +58,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/ace-combattm-7-skies-unknown-ps4"
         }
       ]
@@ -2586,8 +2586,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 37.9,
-          "custoSemPixBRL": 39.9,
+          "custoPixBRL": 47.4,
+          "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/crash-bandicoot-n-sane-trilogy-ps4"
         }
       ]
@@ -11305,13 +11305,6 @@
           "custoPixBRL": 46.41,
           "custoSemPixBRL": 49.9,
           "url": "https://www.alphagames.com.br/produtos/super-bomberman-r-ps4-midia-digital-10t7f/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.lojatcagames.com.br/products/super-bomberman-r-ps4"
         }
       ]
     },
@@ -13595,11 +13588,11 @@
     {
       "id": "f1-24-ps4",
       "nome": "F1 24 - PS4 Mídia Digital",
-      "precoAtualBRL": 75.9,
-      "precoPixBRL": 75.9,
-      "precoSemPixBRL": 79.9,
+      "precoAtualBRL": 85.4,
+      "precoPixBRL": 85.4,
+      "precoSemPixBRL": 89.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 79.9,
+      "precoOriginalBRL": 89.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/f1-24-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/F12024.jpg?v=1786234216",
@@ -13613,8 +13606,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 75.9,
-          "custoSemPixBRL": 79.9,
+          "custoPixBRL": 85.4,
+          "custoSemPixBRL": 89.9,
           "url": "https://www.lojatcagames.com.br/products/f1-24-ps4"
         }
       ]
@@ -14405,11 +14398,11 @@
     {
       "id": "lego-batman-3-ps4",
       "nome": "Lego Batman 3 - PS4 Mídia Digital",
-      "precoAtualBRL": 28.4,
-      "precoPixBRL": 28.4,
-      "precoSemPixBRL": 29.9,
+      "precoAtualBRL": 37.9,
+      "precoPixBRL": 37.9,
+      "precoSemPixBRL": 39.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 29.9,
+      "precoOriginalBRL": 39.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/lego-batman-3-ps4",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/LegoBatman3_886e8fc6-da7b-4c2d-a0d0-eb4836ce3fb3.jpg?v=1786234089",
@@ -14423,8 +14416,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
+          "custoPixBRL": 37.9,
+          "custoSemPixBRL": 39.9,
           "url": "https://www.lojatcagames.com.br/products/lego-batman-3-ps4"
         }
       ]
@@ -27783,6 +27776,13 @@
           "custoPixBRL": 130.11,
           "custoSemPixBRL": 139.9,
           "url": "https://www.alphagames.com.br/produtos/rayman-legends-retold-ps5-midia-digital-1d9n9/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 113.9,
+          "custoSemPixBRL": 119.9,
+          "url": "https://www.lojatcagames.com.br/products/rayman-legends-retold-ps5"
         }
       ]
     },
@@ -32943,11 +32943,11 @@
     {
       "id": "f1-24-ps5",
       "nome": "F1 24 - PS5 Mídia Digital",
-      "precoAtualBRL": 75.9,
-      "precoPixBRL": 75.9,
-      "precoSemPixBRL": 79.9,
+      "precoAtualBRL": 56.9,
+      "precoPixBRL": 56.9,
+      "precoSemPixBRL": 59.9,
       "descontoPixAplicado": true,
-      "precoOriginalBRL": 79.9,
+      "precoOriginalBRL": 59.9,
       "tipoMidia": "Primaria",
       "linkFornecedor": "https://www.lojatcagames.com.br/products/f1-24-ps5",
       "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/F12024PS5.jpg?v=1786234215",
@@ -32961,8 +32961,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 75.9,
-          "custoSemPixBRL": 79.9,
+          "custoPixBRL": 56.9,
+          "custoSemPixBRL": 59.9,
           "url": "https://www.lojatcagames.com.br/products/f1-24-ps5"
         }
       ]
