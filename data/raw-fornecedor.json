@@ -16511,6 +16511,13 @@
           "custoPixBRL": 204.51,
           "custoSemPixBRL": 219.9,
           "url": "https://www.alphagames.com.br/produtos/ace-combat-8-wings-of-theve-ps5-midia-digital-18fsd/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 227.9,
+          "custoSemPixBRL": 239.9,
+          "url": "https://www.lojatcagames.com.br/products/ace-combat-8-wings-of-theve-ps5"
         }
       ]
     },
@@ -21344,9 +21351,9 @@
     {
       "id": "ea-sports-madden-nfl-27-ps5",
       "nome": "EA SPORTS MADDEN NFL 27 - PS5 - MÍDIA DIGITAL",
-      "precoAtualBRL": 176.61,
-      "precoPixBRL": 176.61,
-      "precoSemPixBRL": 189.9,
+      "precoAtualBRL": 148.71,
+      "precoPixBRL": 148.71,
+      "precoSemPixBRL": 159.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 349,
       "tipoMidia": "Primaria",
@@ -21360,8 +21367,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 176.61,
-          "custoSemPixBRL": 189.9,
+          "custoPixBRL": 148.71,
+          "custoSemPixBRL": 159.9,
           "url": "https://www.alphagames.com.br/produtos/ea-sports-madden-nfl-27-ps5-midia-digital-1rf05/"
         },
         {
@@ -30130,6 +30137,13 @@
           "custoPixBRL": 176.61,
           "custoSemPixBRL": 189.9,
           "url": "https://www.alphagames.com.br/produtos/star-wars-galactic-racer-ps5-midia-digital-1k962/"
+        },
+        {
+          "id": "tca",
+          "nome": "TCA Games",
+          "custoPixBRL": 189.9,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.lojatcagames.com.br/products/star-wars-galactic-racer-ps5"
         }
       ]
     },
@@ -49038,6 +49052,31 @@
           "custoPixBRL": 37.11,
           "custoSemPixBRL": 39.9,
           "url": "https://www.alphagames.com.br/produtos/gear-pf-war-reloaded-xbox-series-s-x-midia-digital-15rmb/"
+        }
+      ]
+    },
+    {
+      "id": "gears-of-war-e-day-xbox-series",
+      "nome": "GEARS OF WAR: E-DAY- XBOX SERIES S/X- MÍDIA DIGITAL",
+      "precoAtualBRL": 185.91,
+      "precoPixBRL": 185.91,
+      "precoSemPixBRL": 199.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 239.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/robocop-xbox-series-s-x-midia-digital-3p7sn/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/136516-a2d39c434522e546dc17914179712759-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "372738610",
+      "varianteFornecedorId": 1614364598,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 185.91,
+          "custoSemPixBRL": 199.9,
+          "url": "https://www.alphagames.com.br/produtos/robocop-xbox-series-s-x-midia-digital-3p7sn/"
         }
       ]
     },

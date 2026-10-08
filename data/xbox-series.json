@@ -2459,7 +2459,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1534684176,
-    "precoVendaEUR": 49.99,
+    "precoVendaEUR": 50.99,
     "precoOriginalEUR": 51.99,
     "trailer": "https://www.youtube.com/embed/jLbst85USN8",
     "screenshots": [
@@ -2862,7 +2862,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1475222029,
-    "precoVendaEUR": 49.99,
+    "precoVendaEUR": 50.99,
     "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/VWIw_f8e9Pg",
     "screenshots": [
@@ -3677,8 +3677,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463281391,
-    "precoVendaEUR": 59.99,
-    "precoOriginalEUR": 59.99,
+    "precoVendaEUR": 60.99,
+    "precoOriginalEUR": 60.99,
     "trailer": "https://www.youtube.com/embed/E3Huy2cdih0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/36f/36f941f72e2b2a41629f5fb3bd448688.jpg",
@@ -4152,8 +4152,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1608108595,
-    "precoVendaEUR": 49.99,
-    "precoOriginalEUR": 49.99,
+    "precoVendaEUR": 50.99,
+    "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/hzkit_4glmc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp"
@@ -4380,7 +4380,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1523035644,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 46.99,
     "precoOriginalEUR": 55.99,
     "trailer": "https://www.youtube.com/embed/oYhaW-Vr4wg",
     "screenshots": [
@@ -4438,6 +4438,40 @@
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/gear-pf-war-reloaded-xbox-series-s-x-midia-digital-15rmb/",
     "enriquecido": true
+  },
+  {
+    "id": "gears-of-war-e-day-xbox-series",
+    "nome": "GEARS OF WAR: E-DAY- XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1614364598,
+    "precoVendaEUR": 50.99,
+    "precoOriginalEUR": 50.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/2dd/2ddacaf4a439076f390beaca74707bcb.jpg",
+      "https://media.rawg.io/media/screenshots/9a2/9a2488797ed1b9722e2aa9c16d76f310.jpg",
+      "https://media.rawg.io/media/screenshots/cb8/cb88356feb27fba1102659e7a09c222a.jpg"
+    ],
+    "descricao": "The Story of E-Day Fourteen years before Gears of War, war heroes Marcus Fenix and Dom Santiago return home to face a new nightmare: the Locust Horde. These subterranean monsters, grotesque and relentless, erupt from below, laying siege on humanity itself. New Foundations Built from the ground up...",
+    "imagemFallback": "https://media.rawg.io/media/games/c85/c85991ad8164824715377e603a2d7693.jpg",
+    "released": "2026-10-06",
+    "rating": 3.5,
+    "ratings_count": 6,
+    "added": 94,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/8ea3be398039de26c9bf42a2791fcac3.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Gears of War: E-Day",
+    "steamGridMatchScore": 0.853,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/robocop-xbox-series-s-x-midia-digital-3p7sn/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "white_logo",
+    "steamGridNeedsReview": false
   },
   {
     "id": "gotham-knights-xbox-series",

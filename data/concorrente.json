@@ -18881,6 +18881,18 @@
     "candidatos": []
   },
   {
+    "id": "gears-of-war-e-day-xbox-series",
+    "nome": "GEARS OF WAR: E-DAY- XBOX SERIES S/X- MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-08T10:58:07.181Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "gotham-knights-xbox-series",
     "nome": "GOTHAM KNIGHTS - XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
