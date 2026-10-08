@@ -8008,6 +8008,14 @@
       "videoTitle": "Among Us: Hide N Seek Official Trailer | The Game Awards 2022",
       "channelTitle": "GameSpot",
       "processedAt": "2026-10-03T10:28:21.472Z"
+    },
+    "gears of war e day": {
+      "trailer": "https://www.youtube.com/embed/EC20gLfUHeA",
+      "status": "found",
+      "query": "gears of war e day Xbox trailer oficial",
+      "videoTitle": "Gears of War: E-Day | Official Announce Trailer (In-Engine) - Xbox Games Showcase 2024",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-08T12:06:19.640Z"
     }
   },
   "runs": [
@@ -8335,7 +8343,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-10-08T12:06:19.211Z",
+      "requests": 1,
+      "analyzed": 1,
+      "found": 1,
+      "notFound": 0,
+      "alreadyHadTrailer": 970,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-10-07T11:51:19.464Z"
+  "updatedAt": "2026-10-08T12:06:19.918Z"
 }
