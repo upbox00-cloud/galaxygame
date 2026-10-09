@@ -6,7 +6,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1524695012,
     "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/nTUoIyTMw0Q",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/09a/09a91ae875c2d3cc9b0d7aa73ea816bd.jpg",
@@ -100,13 +100,104 @@
     "prioridadeCuradoria": 32
   },
   {
+    "id": "aca-neogeo-the-king-of-fighters-2003-xbox-series",
+    "nome": "ACA NEOGEO THE KING OF FIGHTERS 2003 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1615355711,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2003-62d88ac61a6d1e752817915041766374-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2003-62d88ac61a6d1e752817915041766374-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.347,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-thrash-rally-xbox-one-series-s-x-midia-digital-copia-16jmf/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "aca-neogeo-thrash-rally-xbox-series",
+    "nome": "ACA NEOGEO THRASH RALLY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1615355334,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/c0f/c0f4f1fe3cb6be723e98cdcd8ee2d6c7.jpg",
+      "https://media.rawg.io/media/screenshots/51c/51ca60b9c43591ab02a10c22a95f168e.jpg",
+      "https://media.rawg.io/media/screenshots/e0d/e0da5da2ce0db0a0234225521f6e8144.jpg"
+    ],
+    "descricao": "“THRASH RALLY” is an original racing game released by SNK in 1991. Two game modes \"World Rally Championship Mode\" and \"Rally Mode\" have been featured. Travel through cities and the countryside as you make your way through the various courses. *Game sections requiring use of the connection jack ar...",
+    "imagemFallback": "https://media.rawg.io/media/screenshots/e0d/e0da5da2ce0db0a0234225521f6e8144.jpg",
+    "released": "2018-11-08",
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 1,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.414,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-top-hunter-roddy-cathy-xbox-one-series-s-x-midia-digital-copia-5le7o/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "aca-neogeo-top-hunter-roddy-e-cathy-xbox-series",
+    "nome": "ACA NEOGEO TOP HUNTER RODDY & CATHY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1615354819,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/652/6522557febd9cfc2aed6ffa3c93d0969.jpg",
+      "https://media.rawg.io/media/screenshots/b12/b122e8e3e4430a8691deeb260dce147a.jpg",
+      "https://media.rawg.io/media/screenshots/755/7550ce0e47337cd676711da6ebe4ef1a.jpg"
+    ],
+    "descricao": "TOP HUNTER RODDY & CATHY is a side-scrolling action game released by SNK in 1994. Using a 2-line system with front and back lines that can freely be switched between, jump, shoot, throw, and perform special attacks to defeat the space pirates who aim for total domination. This game offers simulta...",
+    "imagemFallback": "https://media.rawg.io/media/screenshots/755/7550ce0e47337cd676711da6ebe4ef1a.jpg",
+    "released": "2017-12-07",
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 6,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.343,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/age-of-wonders-planetfall-xbox-one-series-s-x-midia-digital-copia-hlec6/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
     "id": "ace-combat-7-skies-unknown-xbox-series",
     "nome": "ACE COMBAT 7: SKIES UNKNOWN - XBOX ONE & SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587681135,
     "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/KQCDj3emnHk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e18/e18619e819c7d54a3df317e259e7134f.jpg",
@@ -286,6 +377,70 @@
     "enriquecido": true
   },
   {
+    "id": "age-of-wonders-planetfall-xbox-series",
+    "nome": "AGE OF WONDERS: PLANETFALL - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1615354330,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/b52/b5205b8c2b1afb8bc94c4bd1d79745ff.jpg",
+      "https://media.rawg.io/media/screenshots/6b4/6b4c87049353a1f73915f33589a38ebe.jpg",
+      "https://media.rawg.io/media/screenshots/169/16911e02d44bcda96e79edc835cd7a11.jpg",
+      "https://media.rawg.io/media/screenshots/e7b/e7b67ad3eeb9d5bf4f79dfba6cd1d69e.jpg",
+      "https://media.rawg.io/media/screenshots/e05/e05bfcafee7307c4b61db227ade69e5c.jpg"
+    ],
+    "descricao": "Age of Wonders: Planetfall is the new strategy game from Triumph Studios, creators of the critically acclaimed Age of Wonders and Overlord series, bringing all the exciting tactical-turn based combat and in-depth 4X empire building of its predecessors to space in an all-new sci-fi setting. Emerge...",
+    "imagemFallback": "https://media.rawg.io/media/games/3a9/3a9566438d476090bc19b29b03b77692.jpg",
+    "released": "2019-08-05",
+    "rating": 3.45,
+    "ratings_count": 106,
+    "added": 1591,
+    "genres": [
+      "Strategy"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a893cd19c0b2f786cd3eeb2bf7a2ecb1.jpg",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Age of Wonders: Planetfall",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/airport-simulator-2019-xbox-one-series-s-x-midia-digital-copia-1rcxf/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "airport-simulator-2019-xbox-series",
+    "nome": "AIRPORT SIMULATOR 2019 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1615354017,
+    "precoVendaEUR": 15.99,
+    "precoOriginalEUR": 15.99,
+    "trailer": "",
+    "screenshots": [
+      "https://acdn-us.mitiendanube.com/stores/006/141/249/products/airport-simulator-2019-77a8921bef91e711b617915039285857-1024-1024.webp"
+    ],
+    "descricao": "",
+    "imagemFallback": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/airport-simulator-2019-77a8921bef91e711b617915039285857-1024-1024.webp",
+    "released": null,
+    "rating": 0,
+    "ratings_count": 0,
+    "added": 0,
+    "genres": [],
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Airport Simulator 2019",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/aliens-dark-descent-xbox-one-series-s-x-midia-digital-copia-7sk9a/",
+    "enriquecido": false,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
+  },
+  {
     "id": "alan-wake-2-xbox-series",
     "nome": "ALAN WAKE 2 - XBOX SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -381,6 +536,76 @@
     "steamGridMatchedName": "Alan Wake's American Nightmare",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/alan-wakes-american-nightmare-xbox-one-series-s-x-midia-digital-1uu7b/",
+    "enriquecido": true
+  },
+  {
+    "id": "aliens-dark-descent-xbox-series",
+    "nome": "ALIENS: DARK DESCENT - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1615353311,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
+    "trailer": "",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/330/33098a97531ce7b0121010678a233dc0.jpg",
+      "https://media.rawg.io/media/screenshots/c42/c42f511fcfa4f725a81fac9ec0e23062.jpg",
+      "https://media.rawg.io/media/screenshots/af9/af9c6409cf2119dceef197deb9e705b9.jpg",
+      "https://media.rawg.io/media/screenshots/d2e/d2e8e68626bebd4ab1dfef61a8bf0d50.jpg",
+      "https://media.rawg.io/media/screenshots/cab/cab564c6bee29becc25b2b5341f883f5.jpg"
+    ],
+    "descricao": "In Aliens: Dark Descent, command a squad of hardened Colonial Marines to stop a terrifying Xenomorph outbreak on Moon Lethe. Lead your soldiers in real-time combat against iconic Xenomorphs, rogue operatives from the insatiable Weyland-Yutani Corporation, and a host of horrifying creatures new to...",
+    "imagemFallback": "https://media.rawg.io/media/games/826/8260752e19cc614a56a0a682f050e548.jpg",
+    "released": "2023-06-19",
+    "rating": 3.82,
+    "ratings_count": 32,
+    "added": 253,
+    "genres": [
+      "Action",
+      "Strategy"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/93d36ccef08f96367b2fbba9bd1f6b79.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Aliens: Dark Descent",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/south-park-the-fractured-but-whole-xbox-one-series-s-x-midia-digital-copia-183ie/",
+    "enriquecido": true,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
+  },
+  {
+    "id": "aliens-fireteam-elite-xbox-series",
+    "nome": "ALIENS: FIRETEAM ELITE - XBOX SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "tipoMidia": "unica",
+    "varianteFornecedorId": 1615353563,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 14.99,
+    "trailer": "https://www.youtube.com/embed/bBjhTjTX52s",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/a95/a95b42c00c3832bb3c8edbfc0590440b.jpg",
+      "https://media.rawg.io/media/screenshots/f09/f0903a43a75b2d216a95b681ef207fec.jpg",
+      "https://media.rawg.io/media/screenshots/e69/e698606fae38aa3726b16cca6f710d94.jpg",
+      "https://media.rawg.io/media/screenshots/ea1/ea1ad9e49266a0d5cf7d84ef82aa8587.jpg",
+      "https://media.rawg.io/media/screenshots/f9f/f9fc6b9f130d5edc07d4bb615263cfa6.jpg"
+    ],
+    "descricao": "A mysterious distress call reroutes your Marine Assault Unit to LV-895 in the outer colonies, where deadly Xenomorph legions, hidden corporate secrets, and ancient alien ruins await your arrival. Set in the iconic Alien universe, Aliens: Fireteam is a cooperative third-person survival shooter tha...",
+    "imagemFallback": "https://media.rawg.io/media/games/bb8/bb8a1de04cf151b55bcb9b5a38ba9a0b.jpg",
+    "released": "2021-08-23",
+    "rating": 2.89,
+    "ratings_count": 104,
+    "added": 1124,
+    "genres": [
+      "Action",
+      "Shooter",
+      "RPG"
+    ],
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/467e2b770acfd44e128c0c9218584c48.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Aliens: Fireteam Elite",
+    "steamGridMatchScore": 1,
+    "linkFornecedor": "https://www.alphagames.com.br/produtos/aliens-dark-descent-xbox-one-series-s-x-midia-digital-copia-1jbvs/",
     "enriquecido": true
   },
   {
@@ -1052,7 +1277,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1595968747,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 87.99,
+    "precoOriginalEUR": 86.99,
     "trailer": "https://www.youtube.com/embed/rKjUAWlbTJk",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000367831-e9f2cdd13da0b624d717893265413854-1024-1024.webp"
@@ -1553,8 +1778,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1609974311,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 45.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/m4x9AOiOgxo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/36a/36a591df4dcc4956fd6324fbfb8edb16.jpg",
@@ -1585,8 +1810,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1609984551,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 45.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/UNDtaNukaek",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/36a/36a591df4dcc4956fd6324fbfb8edb16.jpg",
@@ -2249,8 +2474,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561413649,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 63.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/EVBJ4O-w3m4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/89211-52a969d967d6934c2317844039046605-1024-1024.webp"
@@ -2275,8 +2500,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561244149,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 63.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/fCImNIUkpak",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/88946-ce646401ab81ebf1da17843828831767-1024-1024.webp"
@@ -2459,8 +2684,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1534684176,
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 51.99,
+    "precoVendaEUR": 49.99,
+    "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/jLbst85USN8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/58404-ee99d5b85971ba866817801673731106-1024-1024.webp"
@@ -2557,7 +2782,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545677584,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/DtgoZFRvaSs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000350334-3172bc04329cf8dc4417818115300291-1024-1024.webp"
@@ -2693,8 +2918,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543024529,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 45.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/e1_eZyFM5-4",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/616/616d40205c7195eb56478ff6d746d3bb.jpg",
@@ -2862,7 +3087,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1475222029,
-    "precoVendaEUR": 50.99,
+    "precoVendaEUR": 49.99,
     "precoOriginalEUR": 53.99,
     "trailer": "https://www.youtube.com/embed/VWIw_f8e9Pg",
     "screenshots": [
@@ -3120,7 +3345,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468719121,
-    "precoVendaEUR": 18.99,
+    "precoVendaEUR": 17.99,
     "precoOriginalEUR": 18.99,
     "trailer": "https://www.youtube.com/embed/ctQl9wa3ydE",
     "screenshots": [
@@ -3298,8 +3523,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464572491,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/NdtmtuzICOI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d8d/d8d822cf4ff3adcd4c7787d9ef8d8546.jpg",
@@ -3677,8 +3902,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1463281391,
-    "precoVendaEUR": 60.99,
-    "precoOriginalEUR": 60.99,
+    "precoVendaEUR": 59.99,
+    "precoOriginalEUR": 59.99,
     "trailer": "https://www.youtube.com/embed/E3Huy2cdih0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/36f/36f941f72e2b2a41629f5fb3bd448688.jpg",
@@ -4126,8 +4351,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1604783645,
-    "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 35.99,
+    "precoVendaEUR": 34.99,
+    "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/gV5rIW1Qums",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/img_4826-92f3261757c750803917600408694274-1024-1024.webp"
@@ -4152,8 +4377,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1608108595,
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 49.99,
+    "precoOriginalEUR": 49.99,
     "trailer": "https://www.youtube.com/embed/hzkit_4glmc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/five-night-at-freddys-security-breach-cc69df73a229ecbc8a17907033924434-1024-1024.webp"
@@ -4380,7 +4605,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1523035644,
-    "precoVendaEUR": 46.99,
+    "precoVendaEUR": 45.99,
     "precoOriginalEUR": 55.99,
     "trailer": "https://www.youtube.com/embed/oYhaW-Vr4wg",
     "screenshots": [
@@ -4445,8 +4670,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1614364598,
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 49.99,
+    "precoOriginalEUR": 49.99,
     "trailer": "https://www.youtube.com/embed/EC20gLfUHeA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/2dd/2ddacaf4a439076f390beaca74707bcb.jpg",
@@ -4468,10 +4693,7 @@
     "steamGridMatchedName": "Gears of War: E-Day",
     "steamGridMatchScore": 0.853,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/robocop-xbox-series-s-x-midia-digital-3p7sn/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "white_logo",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "gotham-knights-xbox-series",
@@ -4621,8 +4843,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543660208,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/VcoT-VeH4Lc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349760-52dc11c3b87edca85217815476570666-1024-1024.webp"
@@ -4894,7 +5116,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544426738,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 46.99,
     "trailer": "https://www.youtube.com/embed/c080-rY2d-8",
     "screenshots": [
@@ -6704,7 +6926,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543664198,
     "precoVendaEUR": 52.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/LNq35HHUtNc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a34/a3444739430f1b440bbef6d493a62585.jpg",
@@ -7048,8 +7270,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1501636121,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 45.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/oncaa_fMsyw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ca1/ca18d0aae36eb9111d699e5fc301792c.jpg",
@@ -7112,8 +7334,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543662272,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/2_7BQ9hLGkk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/3f3/3f3de84c57189243164a050f7271fb01.jpg",
@@ -7807,8 +8029,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1607641455,
-    "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 35.99,
+    "precoVendaEUR": 34.99,
+    "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/D6c3JgpXY7A",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a7f/a7fb9ae44973963e019a2ba185da5b65.jpg",
@@ -8052,8 +8274,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464536445,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 45.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 44.99,
     "trailer": "https://www.youtube.com/embed/0NMoPvqaz10",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/8b2/8b243945a439d181d8736e785064e01d.jpg",
@@ -8219,8 +8441,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1607644077,
-    "precoVendaEUR": 35.99,
-    "precoOriginalEUR": 35.99,
+    "precoVendaEUR": 34.99,
+    "precoOriginalEUR": 34.99,
     "trailer": "https://www.youtube.com/embed/hcFSFjJ2b6o",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-16-8424110585379756ff17906383132472-1024-1024.webp"
@@ -8669,7 +8891,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544429255,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 46.99,
     "trailer": "https://www.youtube.com/embed/Ek3I6_9c58E",
     "screenshots": [
@@ -9580,7 +9802,7 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1544422102,
-    "precoVendaEUR": 45.99,
+    "precoVendaEUR": 44.99,
     "precoOriginalEUR": 55.99,
     "trailer": "https://www.youtube.com/embed/n6JxVxSHjqE",
     "screenshots": [
@@ -9786,8 +10008,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468678892,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/1R4MdobS1nI",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000267899-26d2595002f6bf964e17729098893397-1024-1024.webp"
@@ -10021,8 +10243,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1546262344,
-    "precoVendaEUR": 45.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 44.99,
+    "precoOriginalEUR": 49.99,
     "trailer": "https://www.youtube.com/embed/89e7yn7h1NU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000350864-3f0f176a221e69f85217818922200984-1024-1024.webp"
@@ -10203,40 +10425,6 @@
     "steamGridMatchedName": "Yakuza Kiwami 2",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/among-us-xbox-one-series-s-x-midia-digital-copia-1fc3b/",
-    "enriquecido": true
-  },
-  {
-    "id": "aliens-fireteam-elite-xbox-series",
-    "nome": "Aliens Fireteam Elite – Xbox Series Mídia Digital",
-    "plataforma": "Xbox Series X|S",
-    "tipoMidia": "unica",
-    "varianteFornecedorId": "43190217408610",
-    "precoVendaEUR": 10.99,
-    "precoOriginalEUR": 10.99,
-    "trailer": "https://www.youtube.com/embed/bBjhTjTX52s",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/a95/a95b42c00c3832bb3c8edbfc0590440b.jpg",
-      "https://media.rawg.io/media/screenshots/f09/f0903a43a75b2d216a95b681ef207fec.jpg",
-      "https://media.rawg.io/media/screenshots/e69/e698606fae38aa3726b16cca6f710d94.jpg",
-      "https://media.rawg.io/media/screenshots/ea1/ea1ad9e49266a0d5cf7d84ef82aa8587.jpg",
-      "https://media.rawg.io/media/screenshots/f9f/f9fc6b9f130d5edc07d4bb615263cfa6.jpg"
-    ],
-    "descricao": "A mysterious distress call reroutes your Marine Assault Unit to LV-895 in the outer colonies, where deadly Xenomorph legions, hidden corporate secrets, and ancient alien ruins await your arrival. Set in the iconic Alien universe, Aliens: Fireteam is a cooperative third-person survival shooter tha...",
-    "imagemFallback": "https://media.rawg.io/media/games/bb8/bb8a1de04cf151b55bcb9b5a38ba9a0b.jpg",
-    "released": "2021-08-23",
-    "rating": 2.89,
-    "ratings_count": 104,
-    "added": 1124,
-    "genres": [
-      "Action",
-      "Shooter",
-      "RPG"
-    ],
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/467e2b770acfd44e128c0c9218584c48.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "Aliens: Fireteam Elite",
-    "steamGridMatchScore": 1,
-    "linkFornecedor": "https://www.lojatcagames.com.br/products/aliens-fireteam-elite-xbox-series",
     "enriquecido": true
   },
   {
@@ -10641,8 +10829,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43190175105122",
-    "precoVendaEUR": 18.99,
-    "precoOriginalEUR": 18.99,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
     "trailer": "https://www.youtube.com/embed/2BFhjfqCcis",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a95/a95c031fe96063cc40ad377fd828d9ad.jpg"
@@ -10699,8 +10887,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43286610837602",
-    "precoVendaEUR": 51.99,
-    "precoOriginalEUR": 51.99,
+    "precoVendaEUR": 50.99,
+    "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/urQRwpe0D9Q",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Madden_27_Xbox.jpg?v=1788473356"

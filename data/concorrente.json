@@ -2137,6 +2137,18 @@
     "candidatos": []
   },
   {
+    "id": "l-a-noite-ps4",
+    "nome": "L.A NOITE - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "plataformaKey": "ps4",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:19.130Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "lego-batman-3-beyond-gotham-ps4",
     "nome": "LEGO BATMAN 3: BEYOND GOTHAM - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -4020,6 +4032,18 @@
     "nome": "THE CREW MOTORFEST - PS4 - MIDIA DIGITAL",
     "plataforma": "PlayStation 4",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "the-elden-scrolls-skyrim-v-ps4",
+    "nome": "THE ELDEN SCROLLS SKYRIM V - PS4 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 4",
+    "plataformaKey": "ps4",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:22.745Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -8621,6 +8645,18 @@
     "candidatos": []
   },
   {
+    "id": "gotham-knights-ps5",
+    "nome": "GOTHAM KNIGHTS - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-09-03T15:56:35.328Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "gran-turismo-7-ps5",
     "nome": "GRAN TURISMO 7 - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -8892,6 +8928,18 @@
     "nome": "KINGDOM COME: DELIVERANCE II - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "l-a-noire-ps5",
+    "nome": "L.A NOIRE - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:25.171Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -10230,6 +10278,18 @@
     "candidatos": []
   },
   {
+    "id": "rematch-ps5",
+    "nome": "REMATCH - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:27.281Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "rescue-e-build-bundle-firefighting-construction-ps5",
     "nome": "RESCUE & BUILD BUNDLE: FIREFIGHTING CONSTRUCTION - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -11285,6 +11345,34 @@
     "candidatos": []
   },
   {
+    "id": "the-elden-scrolls-skyrim-v-ps5",
+    "nome": "THE ELDEN SCROLLS SKYRIM V - PS5 - MÍDIA DIGITAL",
+    "plataforma": "PlayStation 5",
+    "plataformaKey": "ps5",
+    "sem_referencia": false,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:29.751Z",
+    "precoConcorrenteEUR": 27.49,
+    "nomeConcorrente": "<img width=\"971\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/88191.jpg\" alt=\"Choo Choo Charles PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/88191.jpg 971w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-324x500.jpg 324w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-777x1200.jpg 777w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-194x300.jpg 194w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-768x1186.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-49x75.jpg 49w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-480x742.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-800x1236.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-64x99.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:971px) 100vw, 971px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img width=\"971\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/88191.jpg\" alt=\"Choo Choo Charles PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/88191.jpg 971w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-324x500.jpg 324w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-777x1200.jpg 777w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-194x300.jpg 194w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-768x1186.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-49x75.jpg 49w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-480x742.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-800x1236.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/88191-64x99.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:971px) 100vw, 971px\"/>",
+        "precoConcorrenteEUR": 27.49,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img width=\"971\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/87592.jpg\" alt=\"BLEACH Rebirth of Souls PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/87592.jpg 971w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-324x500.jpg 324w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-777x1200.jpg 777w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-194x300.jpg 194w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-768x1186.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-49x75.jpg 49w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-480x742.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-800x1236.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/87592-64x99.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:971px) 100vw, 971px\"/>",
+        "precoConcorrenteEUR": 37.49,
+        "score": 3
+      },
+      {
+        "nomeConcorrente": "<img width=\"1081\" height=\"1500\" src=\"https://www.jogodigital.com/wp-content/uploads/2026/02/91818.jpg\" alt=\"Double Dragon: Revive - Deluxe Edition PS5\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2026/02/91818.jpg 1081w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-360x500.jpg 360w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-865x1200.jpg 865w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-216x300.jpg 216w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-768x1066.jpg 768w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-54x75.jpg 54w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-480x666.jpg 480w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-800x1110.jpg 800w, https://www.jogodigital.com/wp-content/uploads/2026/02/91818-64x89.jpg 64w\" sizes=\"(max-width:767px) 480px, (max-width:1081px) 100vw, 1081px\"/>",
+        "precoConcorrenteEUR": 47.49,
+        "score": 3
+      }
+    ]
+  },
+  {
     "id": "the-elder-scrolls-iv-oblivion-remastered-ps5",
     "nome": "THE ELDER SCROLLS IV : OBLIVION REMASTERED - PS5 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 5",
@@ -12190,18 +12278,6 @@
     "candidatos": []
   },
   {
-    "id": "gotham-knights-ps5",
-    "nome": "Gotham Knights – PS5 Mídia Digital",
-    "plataforma": "PlayStation 5",
-    "plataformaKey": "ps5",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-03T15:56:35.328Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
     "id": "grand-theft-auto-v-gta-5-ps5",
     "nome": "Grand Theft Auto V Gta 5 - PS5 Mídia Digital",
     "plataforma": "PlayStation 5",
@@ -12724,6 +12800,42 @@
     "candidatos": []
   },
   {
+    "id": "aca-neogeo-the-king-of-fighters-2003-xbox-one",
+    "nome": "ACA NEOGEO THE KING OF FIGHTERS 2003 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:32.241Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "aca-neogeo-thrash-rally-xbox-one",
+    "nome": "ACA NEOGEO THRASH RALLY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:34.425Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "aca-neogeo-top-hunter-roddy-e-cathy-xbox-one",
+    "nome": "ACA NEOGEO TOP HUNTER RODDY & CATHY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:36.995Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "ace-combat-7-skies-unknown-xbox-one",
     "nome": "ACE COMBAT 7: SKIES UNKNOWN - XBOX ONE & SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -12772,6 +12884,30 @@
     "candidatos": []
   },
   {
+    "id": "age-of-wonders-planetfall-xbox-one",
+    "nome": "AGE OF WONDERS: PLANETFALL - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:39.798Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "airport-simulator-2019-xbox-one",
+    "nome": "AIRPORT SIMULATOR 2019 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:42.463Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "alan-wake-remastered-xbox-one",
     "nome": "ALAN WAKE REMASTERED - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -12788,6 +12924,30 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-26T22:09:09.211Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "alien-isolation-xbox-one",
+    "nome": "ALIEN: ISOLATION - XBOX ONE - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:44.916Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "aliens-dark-descent-xbox-one",
+    "nome": "ALIENS: DARK DESCENT - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:47.129Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -17357,6 +17517,42 @@
     "candidatos": []
   },
   {
+    "id": "aca-neogeo-the-king-of-fighters-2003-xbox-series",
+    "nome": "ACA NEOGEO THE KING OF FIGHTERS 2003 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:49.134Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "aca-neogeo-thrash-rally-xbox-series",
+    "nome": "ACA NEOGEO THRASH RALLY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:51.809Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "aca-neogeo-top-hunter-roddy-e-cathy-xbox-series",
+    "nome": "ACA NEOGEO TOP HUNTER RODDY & CATHY - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:54.039Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "ace-combat-7-skies-unknown-xbox-series",
     "nome": "ACE COMBAT 7: SKIES UNKNOWN - XBOX ONE & SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17426,6 +17622,30 @@
     "candidatos": []
   },
   {
+    "id": "age-of-wonders-planetfall-xbox-series",
+    "nome": "AGE OF WONDERS: PLANETFALL - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:56.029Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "airport-simulator-2019-xbox-series",
+    "nome": "AIRPORT SIMULATOR 2019 - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T10:59:58.115Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "alan-wake-2-xbox-series",
     "nome": "ALAN WAKE 2 - XBOX SERIES S/X - MIDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
@@ -17451,6 +17671,30 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-29T10:13:33.602Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "aliens-dark-descent-xbox-series",
+    "nome": "ALIENS: DARK DESCENT - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-09T11:00:00.282Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "aliens-fireteam-elite-xbox-series",
+    "nome": "ALIENS: FIRETEAM ELITE - XBOX SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-01T10:36:24.014Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -20844,18 +21088,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-10-03T09:35:05.080Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "aliens-fireteam-elite-xbox-series",
-    "nome": "Aliens Fireteam Elite – Xbox Series Mídia Digital",
-    "plataforma": "Xbox Series X|S",
-    "plataformaKey": "xbox-series",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-10-01T10:36:24.014Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
