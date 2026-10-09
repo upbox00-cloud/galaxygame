@@ -8016,6 +8016,86 @@
       "videoTitle": "Gears of War: E-Day | Official Announce Trailer (In-Engine) - Xbox Games Showcase 2024",
       "channelTitle": "XBOX",
       "processedAt": "2026-10-08T12:06:19.640Z"
+    },
+    "the elden scrolls skyrim v": {
+      "trailer": "https://www.youtube.com/embed/JSRtYpNRoN0",
+      "status": "found",
+      "query": "the elden scrolls skyrim V PS5 trailer oficial",
+      "videoTitle": "The Elder Scrolls V: Skyrim - Official Trailer",
+      "channelTitle": "Bethesda Softworks",
+      "processedAt": "2026-10-09T11:58:11.713Z"
+    },
+    "aca neogeo thrash rally": {
+      "trailer": "https://www.youtube.com/embed/lCnDZNuiCus",
+      "status": "found",
+      "query": "aca neogeo thrash rally Xbox trailer oficial",
+      "videoTitle": "ACA NeoGeo: Over Top Gameplay Trailer",
+      "channelTitle": "Just One Last - Game Trailers",
+      "processedAt": "2026-10-09T11:58:12.260Z"
+    },
+    "aca neogeo top hunter roddy cathy": {
+      "trailer": "https://www.youtube.com/embed/TTLJULCY0UE",
+      "status": "found",
+      "query": "aca neogeo top hunter roddy cathy Xbox trailer oficial",
+      "videoTitle": "ACA NEOGEO TOP HUNTER RODDY & CATHY",
+      "channelTitle": "HAMSTER Corporation",
+      "processedAt": "2026-10-09T11:58:12.889Z"
+    },
+    "l a noite": {
+      "trailer": "https://www.youtube.com/embed/ZbPxNGh7dto",
+      "status": "found",
+      "query": "l a noite PlayStation trailer oficial",
+      "videoTitle": "L.A. Noire 4K Trailer",
+      "channelTitle": "Rockstar Games",
+      "processedAt": "2026-10-09T11:58:13.404Z"
+    },
+    "l a noire": {
+      "trailer": "https://www.youtube.com/embed/xk69qfTRIgY",
+      "status": "found",
+      "query": "l a noire PS5 trailer oficial",
+      "videoTitle": "L.A. Noire - Official Launch Trailer",
+      "channelTitle": "Rockstar Games",
+      "processedAt": "2026-10-09T11:58:13.968Z"
+    },
+    "rematch": {
+      "trailer": "https://www.youtube.com/embed/mo_RL_K891U",
+      "status": "found",
+      "query": "rematch PS5 trailer oficial",
+      "videoTitle": "Rematch - Reveal Trailer | PS5 Games",
+      "channelTitle": "PlayStation",
+      "processedAt": "2026-10-09T11:58:14.548Z"
+    },
+    "age of wonders planetfall": {
+      "trailer": "https://www.youtube.com/embed/fo-MjT1UNcA",
+      "status": "found",
+      "query": "age of wonders planetfall Xbox trailer oficial",
+      "videoTitle": "Age of Wonders: Planetfall - Release Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-09T11:58:15.085Z"
+    },
+    "airport simulator 2019": {
+      "trailer": "https://www.youtube.com/embed/O5mQaJliKtU",
+      "status": "found",
+      "query": "airport simulator 2019 Xbox trailer oficial",
+      "videoTitle": "Airport Simulator 2019 trailer",
+      "channelTitle": "trailer exclu",
+      "processedAt": "2026-10-09T11:58:15.869Z"
+    },
+    "aliens dark descent": {
+      "trailer": "https://www.youtube.com/embed/1RBHmsKl624",
+      "status": "found",
+      "query": "aliens dark descent Xbox trailer oficial",
+      "videoTitle": "Aliens: Dark Descent - Launch Trailer",
+      "channelTitle": "Focus Entertainment",
+      "processedAt": "2026-10-09T11:58:16.402Z"
+    },
+    "aca neogeo the king of fighters 2003": {
+      "trailer": "https://www.youtube.com/embed/sWnvz5u5ydA",
+      "status": "found",
+      "query": "aca neogeo the king of fighters 2003 Xbox trailer oficial",
+      "videoTitle": "ACA NEOGEO The King of Fighters 2003 (Switch) First Look on Nintendo Switch - Gameplay",
+      "channelTitle": "Nintendo Hall",
+      "processedAt": "2026-10-09T11:58:17.015Z"
     }
   },
   "runs": [
@@ -8358,7 +8438,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-10-09T11:58:11.270Z",
+      "requests": 10,
+      "analyzed": 10,
+      "found": 10,
+      "notFound": 0,
+      "alreadyHadTrailer": 971,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-10-08T12:06:19.918Z"
+  "updatedAt": "2026-10-09T11:58:17.303Z"
 }
