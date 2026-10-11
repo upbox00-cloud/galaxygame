@@ -6,7 +6,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1524695012,
     "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/nTUoIyTMw0Q",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/09a/09a91ae875c2d3cc9b0d7aa73ea816bd.jpg",
@@ -123,10 +123,7 @@
     "steamGridMatchedName": "A Plague Tale: Innocence",
     "steamGridMatchScore": 0.681,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-crossed-swords-xbox-one-series-s-x-midia-digital-copia-wqih6/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-crossed-swords-xbox-series",
@@ -156,10 +153,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.391,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-fatal-fury-2-xbox-one-series-s-x-midia-digital-copia-1vysr/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-fatal-fury-2-xbox-series",
@@ -189,10 +183,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
     "steamGridMatchScore": 0.495,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-fatal-fury-special-xbox-one-series-s-x-midia-digital-copia-qf3q8/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-fatal-fury-special-xbox-series",
@@ -218,10 +209,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.348,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-gururin-xbox-one-series-s-x-midia-digital-copia-1mqv6/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-gururin-xbox-series",
@@ -251,10 +239,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.433,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-magical-drop-iii-xbox-one-series-s-x-midia-digital-copia-1i7ln/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-magical-drop-iii-xbox-series",
@@ -284,10 +269,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.389,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-5-xbox-one-series-s-x-midia-digital-copia-1tktd/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-metal-slug-xbox-series",
@@ -317,10 +299,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.46,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-3-xbox-one-series-s-x-midia-digital-copia-pbt2j/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-metal-slug-2-xbox-series",
@@ -346,10 +325,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
     "steamGridMatchScore": 0.518,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-4-xbox-one-series-s-x-midia-digital-copia-ir8wy/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-metal-slug-3-xbox-series",
@@ -382,10 +358,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 3",
     "steamGridMatchScore": 0.518,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-2-xbox-one-series-s-x-midia-digital-copia-fgda0/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-metal-slug-4-xbox-series",
@@ -415,10 +388,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 4",
     "steamGridMatchScore": 0.518,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-money-puzzle-exchanger-xbox-one-series-s-x-midia-digital-copia-1brve/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-metal-slug-5-xbox-series",
@@ -446,10 +416,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 5",
     "steamGridMatchScore": 0.518,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-x-xbox-one-series-s-x-midia-digital-copia-psucx/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-metal-slug-x-xbox-series",
@@ -479,10 +446,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.423,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-xbox-one-series-s-x-midia-digital-copia-r1gmc/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-money-puzzle-exchanger-xbox-series",
@@ -513,10 +477,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.336,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-mutation-nation-xbox-one-series-s-x-midia-digital-copia-zkhoq/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-mutation-nation-xbox-series",
@@ -546,10 +507,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.46,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-pleasure-goal-5-on-5-min-soccer-xbox-one-series-s-x-midia-digital-copia-o5eeh/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-pleasure-goal-5-on-5-min-soccer-xbox-series",
@@ -575,10 +533,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 5",
     "steamGridMatchScore": 0.363,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-puzzle-bobble-xbox-one-series-s-x-midia-digital-copia-copia-19i4b/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-puzzle-bobble-copia-xbox-series",
@@ -604,10 +559,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.4,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-puzzle-bobble-2-xbox-one-series-s-x-midia-digital-copia-1y7sc/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-puzzle-bobble-2-xbox-series",
@@ -637,10 +589,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
     "steamGridMatchScore": 0.495,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-real-bout-fatal-fury-2-xbox-one-series-s-x-midia-digital-copia-npgkf/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-real-bout-fatal-fury-2-xbox-series",
@@ -670,10 +619,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
     "steamGridMatchScore": 0.442,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-real-bout-fatal-fury-special-xbox-one-series-s-x-midia-digital-copia-5c9lc/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-real-bout-fatal-fury-special-xbox-series",
@@ -699,10 +645,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.326,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-ii-xbox-one-series-s-x-midia-digital-copia-wisqi/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-ii-xbox-series",
@@ -732,10 +675,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.41,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-iii-xbox-one-series-s-x-midia-digital-copia-3pd5i/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-samurai-shodown-iii-xbox-series",
@@ -761,10 +701,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.4,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-iv-xbox-one-series-s-x-midia-digital-copia-c558t/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-iv-xbox-series",
@@ -790,10 +727,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.41,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-v-xbox-one-series-s-x-midia-digital-copia-1j78r/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-v-xbox-series",
@@ -823,10 +757,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.421,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-v-special-xbox-one-series-s-x-midia-digital-copia-hnzpw/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-samurai-shodown-v-special-xbox-series",
@@ -858,10 +789,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.372,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-spin-master-xbox-one-series-s-x-midia-digital-copia-8q306/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-spin-master-xbox-series",
@@ -893,10 +821,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.437,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-stakes-winner-xbox-one-series-s-x-midia-digital-copia-1fohw/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-stakes-winner-xbox-series",
@@ -929,10 +854,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.414,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-stakes-winner-2-xbox-one-series-s-x-midia-digital-copia-1m2kn/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-stakes-winner-2-xbox-series",
@@ -963,10 +885,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
     "steamGridMatchScore": 0.518,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-super-sidekicks-xbox-one-series-s-x-midia-digital-copia-6yolx/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-super-sidekicks-xbox-series",
@@ -996,10 +915,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.414,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1994-xbox-one-series-s-x-midia-digital-copia-1u6hg/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1994-xbox-series",
@@ -1025,10 +941,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.347,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1995-xbox-one-series-s-x-midia-digital-copia-1ygv0/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1995-xbox-series",
@@ -1054,10 +967,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.347,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1998-xbox-one-series-s-x-midia-digital-copia-be8m7/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1998-xbox-series",
@@ -1083,10 +993,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.347,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1999-xbox-one-series-s-x-midia-digital-copia-12f68/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1999-xbox-series",
@@ -1112,10 +1019,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.347,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2000-xbox-one-series-s-x-midia-digital-copia-16wzp/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2000-xbox-series",
@@ -1141,10 +1045,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
     "steamGridMatchScore": 0.347,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2001-xbox-one-series-s-x-midia-digital-copia-bgxsk/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2001-xbox-series",
@@ -1170,10 +1071,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
     "steamGridMatchScore": 0.347,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2002-xbox-one-series-s-x-midia-digital-copia-kljrq/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2002-xbox-series",
@@ -1199,10 +1097,7 @@
     "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
     "steamGridMatchScore": 0.347,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2003-xbox-one-series-s-x-midia-digital-copia-xi2n1/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2003-xbox-series",
@@ -1293,7 +1188,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1587681135,
     "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/KQCDj3emnHk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e18/e18619e819c7d54a3df317e259e7134f.jpg",
@@ -3562,7 +3457,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561413649,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/EVBJ4O-w3m4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/89211-52a969d967d6934c2317844039046605-1024-1024.webp"
@@ -3588,7 +3483,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1561244149,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/fCImNIUkpak",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/88946-ce646401ab81ebf1da17843828831767-1024-1024.webp"
@@ -3869,7 +3764,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1545677584,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/DtgoZFRvaSs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000350334-3172bc04329cf8dc4417818115300291-1024-1024.webp"
@@ -4393,10 +4288,7 @@
     "steamGridMatchedName": "Dead Island",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/aa-plage-tale-innocence-xbox-one-series-s-x-midia-digital-copia-16vcw/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "dead-island-2-xbox-series",
@@ -4647,8 +4539,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1464572491,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/NdtmtuzICOI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d8d/d8d822cf4ff3adcd4c7787d9ef8d8546.jpg",
@@ -5967,8 +5859,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543660208,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/VcoT-VeH4Lc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000349760-52dc11c3b87edca85217815476570666-1024-1024.webp"
@@ -8050,7 +7942,7 @@
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543664198,
     "precoVendaEUR": 52.99,
-    "precoOriginalEUR": 63.99,
+    "precoOriginalEUR": 62.99,
     "trailer": "https://www.youtube.com/embed/LNq35HHUtNc",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a34/a3444739430f1b440bbef6d493a62585.jpg",
@@ -8134,10 +8026,7 @@
     "steamGridMatchedName": "Outlast: Whistleblower",
     "steamGridMatchScore": 0.341,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-fall-part-2-unbound-xbox-one-series-s-x-midia-digital-copia-1og0z/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "overcooked-1-2-xbox-series",
@@ -8487,8 +8376,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1543662272,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/2_7BQ9hLGkk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/3f3/3f3de84c57189243164a050f7271fb01.jpg",
@@ -10610,10 +10499,7 @@
     "steamGridMatchedName": "The Fall",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/dead-island-xbox-one-series-s-x-midia-digital-copia-j2caf/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "the-fall-part-2-unbound-xbox-series",
@@ -10647,10 +10533,7 @@
     "steamGridMatchedName": "The Fall Part 2: Unbound",
     "steamGridMatchScore": 1,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/the-fall-xbox-one-series-s-x-midia-digital-copia-bidio/",
-    "enriquecido": true,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false
+    "enriquecido": true
   },
   {
     "id": "the-first-berserker-xbox-series",
@@ -11227,8 +11110,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": 1468678892,
-    "precoVendaEUR": 40.99,
-    "precoOriginalEUR": 40.99,
+    "precoVendaEUR": 39.99,
+    "precoOriginalEUR": 39.99,
     "trailer": "https://www.youtube.com/embed/1R4MdobS1nI",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/1000267899-26d2595002f6bf964e17729098893397-1024-1024.webp"
@@ -11395,10 +11278,7 @@
     "steamGridMatchedName": "Wolfenstein: The Old Blood ",
     "steamGridMatchScore": 0.637,
     "linkFornecedor": "https://www.alphagames.com.br/produtos/outlast-bundle-of-trror-xbox-one-series-s-x-midia-digital-copia-18qit/",
-    "enriquecido": false,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": null,
-    "steamGridNeedsReview": false
+    "enriquecido": false
   },
   {
     "id": "world-war-z-xbox-series",
@@ -12135,8 +12015,8 @@
     "plataforma": "Xbox Series X|S",
     "tipoMidia": "unica",
     "varianteFornecedorId": "43286610837602",
-    "precoVendaEUR": 51.99,
-    "precoOriginalEUR": 51.99,
+    "precoVendaEUR": 50.99,
+    "precoOriginalEUR": 50.99,
     "trailer": "https://www.youtube.com/embed/urQRwpe0D9Q",
     "screenshots": [
       "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Madden_27_Xbox.jpg?v=1788473356"

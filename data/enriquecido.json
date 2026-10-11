@@ -1018,7 +1018,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 59.99,
-    "precoOriginalEUR": 86.99,
+    "precoOriginalEUR": 87.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Mirage",
@@ -2316,7 +2316,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Battlefield Bad Company 2 Beta",
@@ -2372,7 +2372,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2720a5a68d93c81033704613e28e1a5f.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Battlefield 2042",
@@ -2635,7 +2635,7 @@
     "rawgMatchedName": "BLEACH Rebirth of Souls",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 55.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6c2aafa3d64a44de1d65dad4a29cd625.png",
     "steamGridMatchValidated": true,
@@ -2842,7 +2842,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 49.99,
-    "precoOriginalEUR": 94.99,
+    "precoOriginalEUR": 95.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Bob Wants to Go Home",
@@ -3419,7 +3419,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 9.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/69c1b055b72973acb3d4e3b75b33deb8.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Bud Spencer & Terence Hill - Slaps And Beans",
@@ -3701,7 +3701,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 50.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -3820,7 +3820,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 20.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ccd427e9a45f148777fe91e6850bf8eb.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Black Ops 6",
@@ -3918,9 +3918,9 @@
   {
     "id": "call-of-duty-black-ops-cold-war-ps4",
     "nome": "CALL OF DUTY: BLACK OPS COLD WAR - PS4 - MÍDIA DIGITAL",
-    "precoAtualBRL": 37.11,
-    "precoPixBRL": 37.11,
-    "precoSemPixBRL": 39.9,
+    "precoAtualBRL": 167.31,
+    "precoPixBRL": 167.31,
+    "precoSemPixBRL": 179.9,
     "descontoPixAplicado": true,
     "precoOriginalBRL": 319.9,
     "tipoMidia": "Primaria",
@@ -3968,8 +3968,8 @@
       {
         "id": "alpha",
         "nome": "Alpha Games",
-        "custoPixBRL": 37.11,
-        "custoSemPixBRL": 39.9,
+        "custoPixBRL": 167.31,
+        "custoSemPixBRL": 179.9,
         "url": "https://www.alphagames.com.br/produtos/call-of-duty-cold-war-ps4-midia-digital-1ibsx/"
       },
       {
@@ -4441,7 +4441,7 @@
     "rawgMatchedName": "Call of Duty: Modern Warfare Remastered",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 40.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a3116fcb0ff78581d441a3de68287e73.png",
     "steamGridMatchValidated": true,
@@ -4499,7 +4499,7 @@
     "rawgMatchedName": "Call of Duty: Vanguard",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6733a6cfa952e637e886d8041fba79ce.jpg",
     "steamGridMatchValidated": true,
@@ -5261,7 +5261,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 48.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -6079,7 +6079,7 @@
     "rawgMatchedName": "Dark Souls II: Scholar of the First Sin",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/221fec1d54a07a65c1ff500bcf1bc062.png",
     "steamGridMatchValidated": true,
@@ -6146,7 +6146,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/9085f5ef67f2f7f0f38e869ffb5016a1.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dark Souls III",
@@ -6790,7 +6790,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles",
@@ -6846,7 +6846,7 @@
     "rawgMatchScore": 0.681,
     "enriquecido": true,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ba479c5eecefbb0ebf7113501e3e632f.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
@@ -8479,7 +8479,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 24.99,
+    "precoOriginalEUR": 25.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dying Light",
@@ -8842,7 +8842,7 @@
     "rawgMatchedName": "Elden Ring Nightreign",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a3284b3b073bc55151be33829602250a.png",
     "steamGridMatchValidated": true,
@@ -8906,7 +8906,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 6.99,
-    "precoOriginalEUR": 9.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Escape the Backrooms Bodycam",
@@ -11437,7 +11437,7 @@
     "rawgMatchedName": "Five Nights at Freddy's: Security Breach",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 39.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/396afab2ed71d765fa869274794530f3.png",
     "steamGridMatchValidated": true,
@@ -11668,72 +11668,6 @@
         "custoPixBRL": 46.41,
         "custoSemPixBRL": 49.9,
         "url": "https://www.alphagames.com.br/produtos/god-of-war-4-2018-ps4-midia-digital-17wp1/"
-      }
-    ]
-  },
-  {
-    "id": "god-of-war-iii-remastered-ps4",
-    "nome": "GOD OF WAR III REMASTERED - PS4 - MÍDIA DIGITAL",
-    "precoAtualBRL": 51.06,
-    "precoOriginalBRL": 99.9,
-    "linkFornecedor": "https://www.alphagames.com.br/produtos/god-of-war-iii-remastered-ps4-midia-digital-1onbi/",
-    "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-ec808b91653cf51a0117616826156371-1024-1024.webp",
-    "plataforma": "PlayStation 4",
-    "plataformaKey": "ps4",
-    "fornecedorProductId": "303644387",
-    "rawgId": 3265,
-    "rawgSlug": "god-of-war-iii-remastered",
-    "trailer": "https://www.youtube.com/embed/WiVk9EKdjq4",
-    "screenshots": [
-      "https://media.rawg.io/media/screenshots/f5c/f5c350154ffae3f3db693bf3229f5c0d.jpg",
-      "https://media.rawg.io/media/screenshots/12d/12df62aed1c53582482ad273595d33b3.jpg",
-      "https://media.rawg.io/media/screenshots/a89/a89d3ce8afcbc70ad7b1bbd8256970e7.jpg",
-      "https://media.rawg.io/media/screenshots/0cc/0cc16490edc983d6157676710e45a867.jpg",
-      "https://media.rawg.io/media/screenshots/90d/90d11d5ed2e77f1d6799ac53903fa919.jpg"
-    ],
-    "descricao": "The game is the fifth installment in the God of War series, and the sequel to 2007's God of War II. The action takes place in ancient Greece, the characters - the gods of Olympus and other characters of ancient Greek mythology. The main character is God of War Kratos. We meet him after the betray...",
-    "imagemFallback": "https://media.rawg.io/media/games/4b6/4b67558bf04c7211aabeff179271bdd8.jpg",
-    "released": "2015-07-14",
-    "rating": 4.12,
-    "ratings_count": 1051,
-    "added": 4218,
-    "genres": [
-      "Action",
-      "Adventure"
-    ],
-    "rawgMatchValidated": true,
-    "rawgMatchVersion": 3,
-    "rawgMatchedName": "God of War III Remastered",
-    "rawgMatchScore": 1,
-    "enriquecido": true,
-    "precoVendaEUR": 10.99,
-    "precoOriginalEUR": 18.99,
-    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/bc6a17604012da6895c1bacd28cdb9fa.png",
-    "steamGridMatchValidated": true,
-    "steamGridMatchedName": "God of War III Remastered",
-    "steamGridMatchScore": 1,
-    "tipoMidia": "Primaria",
-    "varianteFornecedorId": 1351255260,
-    "steamGridGridScore": 0,
-    "steamGridGridStyle": "alternate",
-    "steamGridNeedsReview": false,
-    "precoPixBRL": 51.06,
-    "precoSemPixBRL": 54.9,
-    "descontoPixAplicado": true,
-    "fornecedores": [
-      {
-        "id": "alpha",
-        "nome": "Alpha Games",
-        "custoPixBRL": 51.06,
-        "custoSemPixBRL": 54.9,
-        "url": "https://www.alphagames.com.br/produtos/god-of-war-iii-remastered-ps4-midia-digital-1onbi/"
-      },
-      {
-        "id": "tca",
-        "nome": "TCA Games",
-        "custoPixBRL": 37.9,
-        "custoSemPixBRL": 39.9,
-        "url": "https://www.lojatcagames.com.br/products/god-of-war-iii-remastered-ps4"
       }
     ]
   },
@@ -12235,7 +12169,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Hitman HD Trilogy",
@@ -13867,7 +13801,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 5.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "LEGO Universe",
@@ -14444,7 +14378,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 25.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/48275392f5b7db75dbd692d35e92689c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Lies of P",
@@ -17107,7 +17041,7 @@
     "rawgMatchedName": "Naruto Shippuden Ultimate Ninja Storm Legacy",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 53.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d85ba78b3b3fc179814f82a9f3119cda.png",
     "steamGridMatchValidated": true,
@@ -17344,7 +17278,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 64.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/635aa5a4e9c094eaca1e598c0e970577.png",
     "steamGridMatchValidated": true,
@@ -17400,7 +17334,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 48.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/f18403b352e777fe53f70caec9993a88.png",
     "steamGridMatchValidated": true,
@@ -17550,7 +17484,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Need for Speed",
@@ -18503,7 +18437,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -19854,7 +19788,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 9.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/39e1dd25e194367c68f7d040750f184b.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil 3: Nemesis",
@@ -20445,7 +20379,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 9.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/fe83ef7a4229f78dc8e6e3e5067c13e3.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil: Director's Cut",
@@ -20553,7 +20487,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil: Revelations",
@@ -20951,7 +20885,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Sackboy: A Big Adventure",
@@ -21382,7 +21316,7 @@
     "rawgMatchedName": "Shadow of the Tomb Raider: Definitive Edition",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -21927,7 +21861,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 106.99,
+    "precoVendaEUR": 107.99,
     "precoOriginalEUR": 116.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -24315,7 +24249,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 46.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e83f00ba7b3923cc6bda2a1e0aaf32d0.png",
     "steamGridMatchValidated": true,
@@ -26598,8 +26532,8 @@
     "rawgMatchedName": "Tony Hawk's Pro Skater 3 + 4",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 49.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 50.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/954a2ad435f6687e8aa4bafb78a96fe1.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Tony Hawk's Pro Skater 3 + 4",
@@ -27454,7 +27388,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Watch Dogs 2",
@@ -28565,8 +28499,8 @@
     "rawgMatchedName": "Devil May Cry 5",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/84bac0d19371a626d1ec02e402b1496c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Devil May Cry 5",
@@ -28835,8 +28769,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 51.99,
+    "precoOriginalEUR": 51.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "eFootball PES 2021",
@@ -28885,8 +28819,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 51.99,
+    "precoOriginalEUR": 51.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "eFootball PES 2020",
@@ -29799,6 +29733,67 @@
     "steamGridMatchScore": 1
   },
   {
+    "id": "god-of-war-iii-remastered-ps4",
+    "nome": "God Of War III - Remastered - PS4 - Mídia Digital",
+    "precoAtualBRL": 37.9,
+    "precoOriginalBRL": 39.9,
+    "linkFornecedor": "https://www.lojatcagames.com.br/products/god-of-war-iii-remastered-ps4",
+    "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/God-of-War-III-Remastered.jpg?v=1786234111",
+    "plataforma": "PlayStation 4",
+    "plataformaKey": "ps4",
+    "fornecedorProductId": "7762838323298",
+    "rawgId": 3265,
+    "rawgSlug": "god-of-war-iii-remastered",
+    "trailer": "https://www.youtube.com/embed/WiVk9EKdjq4",
+    "screenshots": [
+      "https://media.rawg.io/media/screenshots/f5c/f5c350154ffae3f3db693bf3229f5c0d.jpg",
+      "https://media.rawg.io/media/screenshots/12d/12df62aed1c53582482ad273595d33b3.jpg",
+      "https://media.rawg.io/media/screenshots/a89/a89d3ce8afcbc70ad7b1bbd8256970e7.jpg",
+      "https://media.rawg.io/media/screenshots/0cc/0cc16490edc983d6157676710e45a867.jpg",
+      "https://media.rawg.io/media/screenshots/90d/90d11d5ed2e77f1d6799ac53903fa919.jpg"
+    ],
+    "descricao": "The game is the fifth installment in the God of War series, and the sequel to 2007's God of War II. The action takes place in ancient Greece, the characters - the gods of Olympus and other characters of ancient Greek mythology. The main character is God of War Kratos. We meet him after the betray...",
+    "imagemFallback": "https://media.rawg.io/media/games/4b6/4b67558bf04c7211aabeff179271bdd8.jpg",
+    "released": "2015-07-14",
+    "rating": 4.12,
+    "ratings_count": 1051,
+    "added": 4218,
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "rawgMatchValidated": true,
+    "rawgMatchVersion": 3,
+    "rawgMatchedName": "God of War III Remastered",
+    "rawgMatchScore": 1,
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 18.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/bc6a17604012da6895c1bacd28cdb9fa.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "God of War III Remastered",
+    "steamGridMatchScore": 1,
+    "tipoMidia": "Primaria",
+    "varianteFornecedorId": "43190190276706",
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false,
+    "precoPixBRL": 37.9,
+    "precoSemPixBRL": 39.9,
+    "descontoPixAplicado": true,
+    "fornecedores": [
+      {
+        "id": "tca",
+        "nome": "TCA Games",
+        "custoPixBRL": 37.9,
+        "custoSemPixBRL": 39.9,
+        "url": "https://www.lojatcagames.com.br/products/god-of-war-iii-remastered-ps4"
+      }
+    ],
+    "fornecedorId": "tca",
+    "fornecedorNome": "TCA Games"
+  },
+  {
     "id": "gran-turismo-sport-ps4",
     "nome": "Gran Turismo Sport - PS4 Mídia Digital",
     "precoAtualBRL": 47.4,
@@ -29957,8 +29952,8 @@
     "rawgMatchedName": "GRID Legends",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/21b222c066cc9f28522ebced1b810c42.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "GRID Legends",
@@ -30733,8 +30728,8 @@
     "rawgMatchedName": "Just Dance 2021",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/5c19011af2d3bb47009a4e10a31bcba7.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Just Dance 2021",
@@ -34737,8 +34732,8 @@
     "rawgMatchedName": "World War Z (2019)",
     "rawgMatchScore": 0.713,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/4b0732dd2e072509479e21645ba653b3.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "World War Z",
@@ -35545,8 +35540,8 @@
     "rawgMatchedName": "Alan Wake 2",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 49.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 50.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a7147fd59ab64d16e49e819733ad2187.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Alan Wake 2",
@@ -35908,7 +35903,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "ARK BOX Unlimited",
@@ -36607,7 +36602,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 59.99,
-    "precoOriginalEUR": 86.99,
+    "precoOriginalEUR": 87.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Mirage",
@@ -37365,7 +37360,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 30.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a350d0242847ce6bf914261c6e2712c1.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Astro Bot",
@@ -37992,7 +37987,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Battlefield Bad Company 2 Beta",
@@ -38048,7 +38043,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 12.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2720a5a68d93c81033704613e28e1a5f.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Battlefield 2042",
@@ -38430,7 +38425,7 @@
     "rawgMatchedName": "BLEACH Rebirth of Souls",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 55.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6c2aafa3d64a44de1d65dad4a29cd625.png",
     "steamGridMatchValidated": true,
@@ -38637,7 +38632,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 49.99,
-    "precoOriginalEUR": 94.99,
+    "precoOriginalEUR": 95.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Bob Wants to Go Home",
@@ -39139,7 +39134,7 @@
     "rawgMatchedName": "Borderlands: The Handsome Collection",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 37.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/9bebe03cef56a08e38f082c57b2ba8c0.jpg",
     "steamGridMatchValidated": true,
@@ -39254,7 +39249,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 9.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/69c1b055b72973acb3d4e3b75b33deb8.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Bud Spencer & Terence Hill - Slaps And Beans",
@@ -39580,7 +39575,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 50.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -39699,7 +39694,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 30.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ccd427e9a45f148777fe91e6850bf8eb.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Black Ops 6",
@@ -39790,9 +39785,9 @@
   {
     "id": "call-of-duty-black-ops-cold-war-ps5",
     "nome": "CALL OF DUTY: BLACK OPS COLD WAR - PS5 - MIDIA DIGITAL",
-    "precoAtualBRL": 37.11,
-    "precoPixBRL": 37.11,
-    "precoSemPixBRL": 39.9,
+    "precoAtualBRL": 74.31,
+    "precoPixBRL": 74.31,
+    "precoSemPixBRL": 79.9,
     "descontoPixAplicado": true,
     "precoOriginalBRL": 319.9,
     "tipoMidia": "Primaria",
@@ -39840,8 +39835,8 @@
       {
         "id": "alpha",
         "nome": "Alpha Games",
-        "custoPixBRL": 37.11,
-        "custoSemPixBRL": 39.9,
+        "custoPixBRL": 74.31,
+        "custoSemPixBRL": 79.9,
         "url": "https://www.alphagames.com.br/produtos/call-of-duty-cold-war-ps5-midia-digital-nqv82/"
       },
       {
@@ -40369,7 +40364,7 @@
     "rawgMatchedName": "Call of Duty: Modern Warfare Remastered",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 40.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a3116fcb0ff78581d441a3de68287e73.png",
     "steamGridMatchValidated": true,
@@ -40427,7 +40422,7 @@
     "rawgMatchedName": "Call of Duty: Vanguard",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 59.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6733a6cfa952e637e886d8041fba79ce.jpg",
     "steamGridMatchValidated": true,
@@ -40533,7 +40528,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Captain Tsubasa: New Kick Off",
@@ -41310,7 +41305,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 48.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -42359,7 +42354,7 @@
     "rawgMatchedName": "Dark Souls II: Scholar of the First Sin",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/221fec1d54a07a65c1ff500bcf1bc062.png",
     "steamGridMatchValidated": true,
@@ -42419,7 +42414,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/9085f5ef67f2f7f0f38e869ffb5016a1.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dark Souls III",
@@ -42472,7 +42467,7 @@
     "rawgMatchedName": "Dark Souls: Remastered",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/fa09649961c5c38096ee815c1084b2f0.png",
     "steamGridMatchValidated": true,
@@ -43047,7 +43042,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 10.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/26203c6ab63ff66fef12bbc3b8dad1c0.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dead Space",
@@ -43166,7 +43161,7 @@
     "rawgMatchedName": "Death Stranding 2: On The Beach",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 74.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/67f798cfaafbe1e92daca478934c1ee4.png",
     "steamGridMatchValidated": true,
@@ -43239,7 +43234,7 @@
     "rawgMatchedName": "Death Stranding Director's Cut",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 46.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/34042c360d640bc6a90e04a4a329c906.png",
     "steamGridMatchValidated": true,
@@ -43286,7 +43281,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles",
@@ -43342,7 +43337,7 @@
     "rawgMatchScore": 0.681,
     "enriquecido": true,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/ba479c5eecefbb0ebf7113501e3e632f.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2",
@@ -45327,7 +45322,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 8.99,
-    "precoOriginalEUR": 24.99,
+    "precoOriginalEUR": 25.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dying Light",
@@ -45499,7 +45494,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 74.99,
-    "precoOriginalEUR": 94.99,
+    "precoOriginalEUR": 95.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dying Light: The Beast",
@@ -46246,7 +46241,7 @@
     "rawgMatchedName": "Elden Ring Nightreign",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a3284b3b073bc55151be33829602250a.png",
     "steamGridMatchValidated": true,
@@ -49194,7 +49189,7 @@
     "rawgMatchedName": "Five Nights at Freddy's: Help Wanted 2",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 39.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/05926edd6a806c0d2c103540025a2ce5.png",
     "steamGridMatchValidated": true,
@@ -49410,7 +49405,7 @@
     "rawgMatchedName": "Five Nights at Freddy's: Secret of the Mimic",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/15de5e2e3d562c052948247c4e598b89.jpg",
     "steamGridMatchValidated": true,
@@ -50715,7 +50710,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -50775,7 +50770,7 @@
     "rawgMatchedName": "Halo Campaign Evolved",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 46.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/9e00a3de909a5e4ada9324bc7aa1fea2.png",
     "steamGridMatchValidated": true,
@@ -51076,7 +51071,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Hitman HD Trilogy",
@@ -51412,7 +51407,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d802d82c922573e0fd406dae0ca01006.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Horizon VR: Call of the Mountain",
@@ -53083,7 +53078,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "LEGO Universe",
@@ -53653,7 +53648,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 25.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/48275392f5b7db75dbd692d35e92689c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Lies of P",
@@ -54763,7 +54758,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/714a8a77af865a55fdd1872ee975b056.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Marvel Tōkon: Fighting Souls",
@@ -57043,7 +57038,7 @@
     "rawgMatchedName": "Naruto Shippuden Ultimate Ninja Storm Legacy",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 53.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d85ba78b3b3fc179814f82a9f3119cda.png",
     "steamGridMatchValidated": true,
@@ -57273,7 +57268,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 64.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/635aa5a4e9c094eaca1e598c0e970577.png",
     "steamGridMatchValidated": true,
@@ -57486,7 +57481,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Need for Speed",
@@ -57711,7 +57706,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/8777af7a31c351b56fe6748d1c9cae62.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Need for Speed: Unbound",
@@ -58009,7 +58004,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a3962c0ca7ca8033daaa9fac886e90b8.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Onimusha: Way of the Sword",
@@ -58646,7 +58641,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -58997,7 +58992,7 @@
     "rawgMatchedName": "Phantom Blade Zero",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/c2ca23c951caaa036189141224933bb8.png",
     "steamGridMatchValidated": true,
@@ -60647,7 +60642,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 9.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/39e1dd25e194367c68f7d040750f184b.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil 3: Nemesis",
@@ -61168,7 +61163,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 9.99,
+    "precoOriginalEUR": 10.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/fe83ef7a4229f78dc8e6e3e5067c13e3.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil: Director's Cut",
@@ -61276,7 +61271,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil: Revelations",
@@ -61333,8 +61328,8 @@
     "rawgMatchedName": "Resident Evil 9: Requiem",
     "rawgMatchScore": 0.848,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 62.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/956adefb0eb473d0cd054107659ab6fd.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Resident Evil Requiem",
@@ -61916,7 +61911,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 23.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Sackboy: A Big Adventure",
@@ -61997,7 +61992,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/6518ad0c59b7e9c7f81c9ac142a1a0e0.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Saints Row",
@@ -62523,7 +62518,7 @@
     "rawgMatchedName": "Shadow of the Tomb Raider: Definitive Edition",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -63311,7 +63306,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 106.99,
+    "precoVendaEUR": 107.99,
     "precoOriginalEUR": 116.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -64493,7 +64488,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 7.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/08c38940fb115f00f5d0dac46e4ac639.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Star Wars Jedi: Survivor",
@@ -65459,7 +65454,7 @@
     "rawgMatchedName": "Starfield",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 46.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a5da7635c3838897d47e0f4e30e7c556.jpg",
     "steamGridMatchValidated": true,
@@ -66027,7 +66022,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 46.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/e83f00ba7b3923cc6bda2a1e0aaf32d0.png",
     "steamGridMatchValidated": true,
@@ -66952,8 +66947,8 @@
     "rawgMatchedName": "The Elder Scrolls IV: Oblivion Remastered",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 49.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 50.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/58cb7cce31a29f34ba4d5972d5a3da35.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "The Elder Scrolls IV: Oblivion Remastered",
@@ -68560,7 +68555,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/2437ae37be2104e7f4c1e0d468d2f588.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Tomb Raider: Legacy of Atlantis",
@@ -68792,8 +68787,8 @@
     "rawgMatchedName": "Tony Hawk's Pro Skater 3 + 4",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 49.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 50.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/954a2ad435f6687e8aa4bafb78a96fe1.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Tony Hawk's Pro Skater 3 + 4",
@@ -69080,7 +69075,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
+    "precoVendaEUR": 35.99,
     "precoOriginalEUR": 42.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -69626,7 +69621,7 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 64.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
@@ -70004,7 +69999,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Watch Dogs 2",
@@ -70282,7 +70277,7 @@
     "rawgMatchedName": "Wuchang: Fallen Feathers",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
+    "precoVendaEUR": 40.99,
     "precoOriginalEUR": 52.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/316652f60bd4f517d5d91047c40c3428.png",
     "steamGridMatchValidated": true,
@@ -72100,8 +72095,8 @@
     "rawgMatchedName": "Hot Wheels Monster Trucks: Stunt Mayhem",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/dba13b04618b1d303b5bb88f98afa626.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Hot Wheels Monster Trucks: Stunt Mayhem",
@@ -72398,8 +72393,8 @@
     "rawgMatchedName": "Just Dance 2021",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/5c19011af2d3bb47009a4e10a31bcba7.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Just Dance 2021",
@@ -73128,8 +73123,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 51.99,
+    "precoOriginalEUR": 51.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/41f111384c98a213f4b187cf3e952245.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "NBA 2K27",
@@ -73891,8 +73886,8 @@
     "rawgMatchedName": "The Witcher 3 Wild Hunt - Complete Edition",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "The Witcher 3: Wild Hunt",
@@ -74250,8 +74245,8 @@
     "rawgMatchedName": "WWE 2K24",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/90951a7d742e2ec81dd6008318ff0986.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "WWE 2K24",
@@ -74349,7 +74344,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-crossed-swords-xbox-one-series-s-x-midia-digital-copia-wqih6/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/H4FOb16Nenk",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/a-plage-tale-innocence-005e297e45716e0de417915829879851-1024-1024.webp"
     ],
@@ -74363,7 +74358,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "A Plague Tale: Innocence",
+    "steamGridMatchScore": 0.681,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-crossed-swords-xbox-one",
@@ -74391,7 +74395,7 @@
     ],
     "rawgId": 59376,
     "rawgSlug": "aca-neogeo-crossed-swords",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/elAlFej64Tw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/6e9/6e9cc78bac11b7a9c4c6602a4ab7885d.jpg",
       "https://media.rawg.io/media/screenshots/5db/5db6337cc7d64ba1e501a5d41e31f88a.jpg",
@@ -74410,7 +74414,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO CROSSED SWORDS",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.391,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-fatal-fury-2-xbox-one",
@@ -74438,7 +74451,7 @@
     ],
     "rawgId": 22502,
     "rawgSlug": "aca-neogeo-fatal-fury-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/RDBUxIUlkwg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/4d6/4d6c279d7628a2fb61d9b2b73b9774f9.jpg",
       "https://media.rawg.io/media/screenshots/35e/35ebca8ba64d5ca98c8ed1910b9d6f62.jpg",
@@ -74457,7 +74470,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO FATAL FURY 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.495,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-fatal-fury-special-xbox-one",
@@ -74483,7 +74505,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-gururin-xbox-one-series-s-x-midia-digital-copia-1mqv6/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/CDP0BM523p8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-fatal-fury-special-b20556597a63c19ab817915828572114-1024-1024.webp"
     ],
@@ -74497,7 +74519,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.348,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-gururin-xbox-one",
@@ -74525,7 +74556,7 @@
     ],
     "rawgId": 58191,
     "rawgSlug": "aca-neogeo-gururin",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/ybMtAG99VW0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9db/9db478f69ed7f583be4784f177db733b_FIiWnba.jpg",
       "https://media.rawg.io/media/screenshots/d0e/d0ed2bc5791d73cd240a30f3a5ebfdab.jpg",
@@ -74544,7 +74575,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO Gururin",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.433,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-magical-drop-iii-xbox-one",
@@ -74572,7 +74612,7 @@
     ],
     "rawgId": 52197,
     "rawgSlug": "aca-neogeo-magical-drop-iii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/uB9bHLErcbQ",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ddd/ddd3a7bcfdb12325b9d27603110c7630.jpg",
       "https://media.rawg.io/media/screenshots/d06/d064a2e9034fe9a19e06cc734e9ab19e.jpg",
@@ -74591,7 +74631,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO MAGICAL DROP III",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.389,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-xbox-one",
@@ -74619,7 +74668,7 @@
     ],
     "rawgId": 778,
     "rawgSlug": "aca-neogeo-metal-slug",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/AI0m2dzAaWw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/0a5/0a5798467207f30b24958a04dc18a358.jpg",
       "https://media.rawg.io/media/screenshots/bd5/bd557eae44f71db27a66a12189ebd6ea.jpg",
@@ -74638,7 +74687,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.46,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-2-xbox-one",
@@ -74664,7 +74722,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-4-xbox-one-series-s-x-midia-digital-copia-ir8wy/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3bSg_yF78Uc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-metal-slug-2-ce61e2f20057eb596a17915823747745-1024-1024.webp"
     ],
@@ -74678,7 +74736,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-3-xbox-one",
@@ -74706,7 +74773,7 @@
     ],
     "rawgId": 27897,
     "rawgSlug": "aca-neogeo-metal-slug-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/AI0m2dzAaWw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d93/d93bd73b28b822b6f5a2e8dc0e5ddac1.jpg",
       "https://media.rawg.io/media/screenshots/d50/d504bf3a79a25299b41e34e56db4d8d7.jpg",
@@ -74728,7 +74795,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG 3",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 3",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-4-xbox-one",
@@ -74756,7 +74832,7 @@
     ],
     "rawgId": 59296,
     "rawgSlug": "aca-neogeo-metal-slug-4",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Y5w1uDq9-98",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e4e/e4e8dadde27e32603c5d7404773432fb_PaZ5HTU.jpg",
       "https://media.rawg.io/media/screenshots/542/542e03de3fde2a75bc8b86ce8e1f050e_Fdszc32.jpg",
@@ -74775,7 +74851,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG 4",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 4",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-5-xbox-one",
@@ -74803,7 +74888,7 @@
     ],
     "rawgId": 276031,
     "rawgSlug": "aca-neogeo-metal-slug-5",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/0TiOShwwZJM",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/163/1633d11ce89100e4ca298d0334d5f4d5.jpg",
       "https://media.rawg.io/media/screenshots/4bb/4bb7aa22e0110e40e61f8a661bb7a3e1.jpg",
@@ -74820,7 +74905,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG 5",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 5",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-x-xbox-one",
@@ -74848,7 +74942,7 @@
     ],
     "rawgId": 47350,
     "rawgSlug": "aca-neogeo-metal-slug-x",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3H17sUae1aU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/cd6/cd6b45189185a735c4e0eec4c8244487.jpg",
       "https://media.rawg.io/media/screenshots/d81/d81ec7e2fb5412f7ce9249232ee1e5ba.jpg",
@@ -74867,7 +74961,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG X",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.423,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-money-puzzle-exchanger-xbox-one",
@@ -74895,7 +74998,7 @@
     ],
     "rawgId": 58992,
     "rawgSlug": "aca-neogeo-money-puzzle-exchanger",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/g_hRKgyNcaw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a0a/a0ade4547f818047b2bba172e6b18f03_RVhEK3T.jpg",
       "https://media.rawg.io/media/screenshots/b20/b20b36e1f99bea30b8cb4d0b4ec723a9_pjCDvHS.jpg",
@@ -74915,7 +75018,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO Money Puzzle Exchanger",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.336,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-mutation-nation-xbox-one",
@@ -74943,7 +75055,7 @@
     ],
     "rawgId": 49311,
     "rawgSlug": "aca-neogeo-mutation-nation",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/4TENaAsJVJA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/572/572a3e4cc221d54342c702a5d55323b7.jpg",
       "https://media.rawg.io/media/screenshots/f6f/f6f36bc4d1cfbdf589699cccfaf4a3ed_YP8hNsv.jpg",
@@ -74962,7 +75074,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO MUTATION NATION",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.46,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-pleasure-goal-5-on-5-min-soccer-xbox-one",
@@ -74988,7 +75109,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-puzzle-bobble-xbox-one-series-s-x-midia-digital-copia-copia-19i4b/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/h01qudIeoLU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-pleasure-goal-5-on-5-min-soccer-d668b30d191545932017915752259884-1024-1024.webp"
     ],
@@ -75002,7 +75123,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 5",
+    "steamGridMatchScore": 0.363,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-puzzle-bobble-copia-xbox-one",
@@ -75028,7 +75158,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-puzzle-bobble-2-xbox-one-series-s-x-midia-digital-copia-1y7sc/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/G9qAJIpXYDs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-puzzle-bobble-576fbaa6ccfba8e00117915751586667-1024-1024.webp"
     ],
@@ -75042,7 +75172,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.4,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-puzzle-bobble-2-xbox-one",
@@ -75070,7 +75209,7 @@
     ],
     "rawgId": 290977,
     "rawgSlug": "aca-neogeo-puzzle-bobble-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/616cBb5Ov1g",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/dc6/dc6d970c6ac8894277c6e7686cd83424.jpg",
       "https://media.rawg.io/media/screenshots/3f2/3f277045b23a8cc886038bc21bffa000.jpg",
@@ -75089,7 +75228,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO PUZZLE BOBBLE 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.495,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-real-bout-fatal-fury-2-xbox-one",
@@ -75117,7 +75265,7 @@
     ],
     "rawgId": 52301,
     "rawgSlug": "aca-neogeo-real-bout-fatal-fury-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/1IDoc63olf4",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/3a7/3a78a956ab42c759e799c4c240691459_7zDk7nS.jpg",
       "https://media.rawg.io/media/screenshots/4bd/4bdf85ac487d1f14301eb5393cc6585b_5VHYuzD.jpg",
@@ -75136,7 +75284,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO REAL BOUT FATAL FURY 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.442,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-real-bout-fatal-fury-special-xbox-one",
@@ -75162,7 +75319,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-ii-xbox-one-series-s-x-midia-digital-copia-wisqi/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/DIYRTgAriz4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-real-bout-fatal-fury-special-b3a5c2bd645914fbf017915749902351-1024-1024.webp"
     ],
@@ -75176,7 +75333,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.326,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-ii-xbox-one",
@@ -75204,7 +75370,7 @@
     ],
     "rawgId": 46894,
     "rawgSlug": "aca-neogeo-samurai-shodown-ii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/iRmiUdbl79A",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/601/601840652e247c88c145f970c4d61495_bMoBETh.jpg",
       "https://media.rawg.io/media/screenshots/ca6/ca62dbdf7d31b1a2dcbed777b1e7202c_PH0apyp.jpg",
@@ -75223,7 +75389,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SAMURAI SHODOWN II",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.41,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-iii-xbox-one",
@@ -75249,7 +75424,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-iv-xbox-one-series-s-x-midia-digital-copia-c558t/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/9E4E8uwVYrU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-samurai-shodown-iii-ebf96c89520f0a8e3c17915748722707-1024-1024.webp"
     ],
@@ -75263,7 +75438,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.4,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-iv-xbox-one",
@@ -75289,7 +75473,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-v-xbox-one-series-s-x-midia-digital-copia-1j78r/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/oxyBMq4OJY8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-samurai-shodown-iv-8d7d824bf44f08c44017915748034483-1024-1024.webp"
     ],
@@ -75303,7 +75487,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.41,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-v-xbox-one",
@@ -75331,7 +75524,7 @@
     ],
     "rawgId": 59003,
     "rawgSlug": "aca-neogeo-samurai-shodown-v",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/OT-KVPoVtOk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9e2/9e2d8799bf662ec48b457fd9c7e95c04_TuyLXa1.jpg",
       "https://media.rawg.io/media/screenshots/fee/feea1d4c9b03a914da5aca258ac45b4b.jpg",
@@ -75350,7 +75543,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SAMURAI SHODOWN V",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.421,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-v-special-xbox-one",
@@ -75378,7 +75580,7 @@
     ],
     "rawgId": 310859,
     "rawgSlug": "aca-neogeo-samurai-shodown-v-special",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/xeWXk4350fo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d8b/d8b4f72747798d9372a5735d765a7f35.jpg",
       "https://media.rawg.io/media/screenshots/2f8/2f8ecebc2a2f093af82e82cb22d259a6.jpg",
@@ -75399,7 +75601,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SAMURAI SHODOWN V SPECIAL",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.372,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-spin-master-xbox-one",
@@ -75427,7 +75638,7 @@
     ],
     "rawgId": 46644,
     "rawgSlug": "aca-neogeo-spin-master",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/O_wj1YNsS0A",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/85f/85f60f6e00a004f8cc4a6495d1a8edd9.jpg",
       "https://media.rawg.io/media/screenshots/fab/fab7bf357acac493741f0ebb3e2c892b.jpg",
@@ -75448,7 +75659,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SPIN MASTER",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.437,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-stakes-winner-xbox-one",
@@ -75476,7 +75696,7 @@
     ],
     "rawgId": 58283,
     "rawgSlug": "aca-neogeo-stakes-winner",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/HDTFiglFVw0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/f35/f35f3e8965ad886a372f8ab7e9a2897b.jpg",
       "https://media.rawg.io/media/screenshots/db3/db36d907d502b1f8ff71291ef250b55e.jpg",
@@ -75498,7 +75718,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO STAKES WINNER",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.414,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-stakes-winner-2-xbox-one",
@@ -75526,7 +75755,7 @@
     ],
     "rawgId": 265339,
     "rawgSlug": "aca-neogeo-stakes-winner-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dvT9mRMqElI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/890/890edc55877178281c998dd193cd30bd.jpg",
       "https://media.rawg.io/media/screenshots/639/639c667a36c39f1ac9bbad10b3370a84.jpg",
@@ -75546,7 +75775,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO STAKES WINNER 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-super-sidekicks-xbox-one",
@@ -75574,7 +75812,7 @@
     ],
     "rawgId": 45010,
     "rawgSlug": "aca-neogeo-super-sidekicks",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Ia64LMJHSZU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5ed/5eddb206b906c01e2f828af3d8e751bb_xlgrC5B.jpg",
       "https://media.rawg.io/media/screenshots/d5c/d5cf2f0ea95c17cbdbe1493a434f16fe_ZflVLsp.jpg",
@@ -75593,7 +75831,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SUPER SIDEKICKS",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.414,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1994-xbox-one",
@@ -75619,7 +75866,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1995-xbox-one-series-s-x-midia-digital-copia-1ygv0/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dKuS3ulAm88",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-94-e0f96585e891abae8017915741958198-1024-1024.webp"
     ],
@@ -75633,7 +75880,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1995-xbox-one",
@@ -75659,7 +75915,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1998-xbox-one-series-s-x-midia-digital-copia-be8m7/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dKuS3ulAm88",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-95-a0c014eea05ba3350c17915741665498-1024-1024.webp"
     ],
@@ -75673,7 +75929,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1996-xbox-one",
@@ -75699,7 +75964,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1998-xbox-one-series-s-x-midia-digital-copia-1n0g9/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dKuS3ulAm88",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-96-63fd968131a2f43a3117915740549824-1024-1024.webp"
     ],
@@ -75713,7 +75978,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1998-xbox-one",
@@ -75739,7 +76013,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1999-xbox-one-series-s-x-midia-digital-copia-12f68/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/HZzols3GeA8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-98-b4563d9a296d6c97a117915739794064-1024-1024.webp"
     ],
@@ -75753,7 +76027,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1999-xbox-one",
@@ -75779,7 +76062,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2000-xbox-one-series-s-x-midia-digital-copia-16wzp/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/wModnfx_oa4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-99-2a80f2b615f0dfabfa17915739263721-1024-1024.webp"
     ],
@@ -75793,7 +76076,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2000-xbox-one",
@@ -75819,7 +76111,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2001-xbox-one-series-s-x-midia-digital-copia-bgxsk/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dHP9Vx1Q7uc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2000-f8709bf4de94b9bb5117915738787013-1024-1024.webp"
     ],
@@ -75833,7 +76125,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2001-xbox-one",
@@ -75859,7 +76160,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2002-xbox-one-series-s-x-midia-digital-copia-kljrq/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3IqTWvfNwaU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2001-b24cabd1bc834e8fc217915738153111-1024-1024.webp"
     ],
@@ -75873,7 +76174,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2002-xbox-one",
@@ -75899,7 +76209,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2003-xbox-one-series-s-x-midia-digital-copia-xi2n1/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dknNIcU02eA",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2002-114203e663208e24c517915737607713-1024-1024.webp"
     ],
@@ -75913,7 +76223,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2003-xbox-one",
@@ -76124,7 +76443,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/b6582fed3f0ae38131d466b3f286d1a4.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Ace Combat 7: Skies Unknown",
@@ -77620,7 +77939,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 86.99,
+    "precoOriginalEUR": 87.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Mirage",
@@ -79493,7 +79812,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Black Ops - OSX",
@@ -79542,7 +79861,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Black Ops - OSX",
@@ -79723,7 +80042,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 49.99,
-    "precoOriginalEUR": 49.99,
+    "precoOriginalEUR": 50.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/356fbae86c950ea2b34d2e6e31814f71.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Black Ops 7",
@@ -80913,7 +81232,7 @@
     ],
     "rawgId": 28492,
     "rawgSlug": "dead-island",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/lZqrG1bdGtg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/486/486a42d5b4a456ff7043671ca0e1d146.jpg",
       "https://media.rawg.io/media/screenshots/606/606d1f6b854b9edab64df1b43e456663.jpg",
@@ -80936,7 +81255,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Dead Island",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/f7884361e9e5dea725fd37eb0d320d7e.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Dead Island",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "dead-island-2-xbox-one",
@@ -83937,7 +84265,7 @@
     "rawgMatchedName": "LEGO Marvel Super Heroes 2",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 7.99,
+    "precoVendaEUR": 5.99,
     "precoOriginalEUR": 11.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/5229464af08891a6c53a941d40779d1c.jpg",
     "steamGridMatchValidated": true,
@@ -86361,7 +86689,7 @@
         "url": "https://www.alphagames.com.br/produtos/the-fall-part-2-unbound-xbox-one-series-s-x-midia-digital-copia-1og0z/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Dx-DT8wUY80",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-3-5cd177534b8ef250fd17915841983528-1024-1024.webp"
     ],
@@ -86375,7 +86703,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 15.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Outlast: Whistleblower",
+    "steamGridMatchScore": 0.341,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "overcooked-1-2-xbox-one",
@@ -88373,8 +88710,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
-    "precoOriginalEUR": 34.99,
+    "precoVendaEUR": 35.99,
+    "precoOriginalEUR": 35.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "SnowRunner",
@@ -89787,7 +90124,7 @@
         "url": "https://www.alphagames.com.br/produtos/dead-island-xbox-one-series-s-x-midia-digital-copia-j2caf/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/qMI7ZG4Vz7Y",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-1-e31cfd6b218714193d17915838070550-1024-1024.webp"
     ],
@@ -89801,7 +90138,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cd2641acda3609cf9eeb2ca8b8fd50a7.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Fall",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-fall-part-2-unbound-xbox-one",
@@ -89829,7 +90175,7 @@
     ],
     "rawgId": 22105,
     "rawgSlug": "the-fall-part-2-unbound",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/TzPnKOuE3F0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5db/5db2e95f95be233c540ed7207a5835eb.jpg",
       "https://media.rawg.io/media/screenshots/f36/f36fb10174e518c17dbd76a2ce53155c.jpg",
@@ -89852,7 +90198,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "The Fall Part 2: Unbound",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d5cf030150efe2c3617bc8fd6c355230.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Fall Part 2: Unbound",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-king-of-fighters-95-xbox-one",
@@ -91007,7 +91362,7 @@
         "url": "https://www.alphagames.com.br/produtos/outlast-bundle-of-trror-xbox-one-series-s-x-midia-digital-copia-18qit/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Viv8e9_-kHo",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-4-91936272a75795f87217915845697701-1024-1024.webp"
     ],
@@ -91021,7 +91376,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Wolfenstein: The Old Blood ",
+    "steamGridMatchScore": 0.637,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "world-war-z-xbox-one",
@@ -94434,8 +94798,8 @@
     "rawgMatchedName": "Grand Theft Auto: The Trilogy",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/acea00eb3deb3a03c90fa91ef5aae390.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Grand Theft Auto: The Trilogy - The Definitive Edition",
@@ -99456,7 +99820,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 42.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/9cd0f2a7c17876d6721916f09bce496c.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "007 First Light",
@@ -99623,7 +99987,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-crossed-swords-xbox-one-series-s-x-midia-digital-copia-wqih6/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/H4FOb16Nenk",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/a-plage-tale-innocence-005e297e45716e0de417915829879851-1024-1024.webp"
     ],
@@ -99637,7 +100001,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "A Plague Tale: Innocence",
+    "steamGridMatchScore": 0.681,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-crossed-swords-xbox-series",
@@ -99665,7 +100038,7 @@
     ],
     "rawgId": 59376,
     "rawgSlug": "aca-neogeo-crossed-swords",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/elAlFej64Tw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/6e9/6e9cc78bac11b7a9c4c6602a4ab7885d.jpg",
       "https://media.rawg.io/media/screenshots/5db/5db6337cc7d64ba1e501a5d41e31f88a.jpg",
@@ -99684,7 +100057,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO CROSSED SWORDS",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.391,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-fatal-fury-2-xbox-series",
@@ -99712,7 +100094,7 @@
     ],
     "rawgId": 22502,
     "rawgSlug": "aca-neogeo-fatal-fury-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/RDBUxIUlkwg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/4d6/4d6c279d7628a2fb61d9b2b73b9774f9.jpg",
       "https://media.rawg.io/media/screenshots/35e/35ebca8ba64d5ca98c8ed1910b9d6f62.jpg",
@@ -99731,7 +100113,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO FATAL FURY 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.495,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-fatal-fury-special-xbox-series",
@@ -99757,7 +100148,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-gururin-xbox-one-series-s-x-midia-digital-copia-1mqv6/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/CDP0BM523p8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-fatal-fury-special-b20556597a63c19ab817915828572114-1024-1024.webp"
     ],
@@ -99771,7 +100162,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.348,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-gururin-xbox-series",
@@ -99799,7 +100199,7 @@
     ],
     "rawgId": 58191,
     "rawgSlug": "aca-neogeo-gururin",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/ybMtAG99VW0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9db/9db478f69ed7f583be4784f177db733b_FIiWnba.jpg",
       "https://media.rawg.io/media/screenshots/d0e/d0ed2bc5791d73cd240a30f3a5ebfdab.jpg",
@@ -99818,7 +100218,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO Gururin",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.433,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-magical-drop-iii-xbox-series",
@@ -99846,7 +100255,7 @@
     ],
     "rawgId": 52197,
     "rawgSlug": "aca-neogeo-magical-drop-iii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/uB9bHLErcbQ",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/ddd/ddd3a7bcfdb12325b9d27603110c7630.jpg",
       "https://media.rawg.io/media/screenshots/d06/d064a2e9034fe9a19e06cc734e9ab19e.jpg",
@@ -99865,7 +100274,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO MAGICAL DROP III",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.389,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-xbox-series",
@@ -99893,7 +100311,7 @@
     ],
     "rawgId": 778,
     "rawgSlug": "aca-neogeo-metal-slug",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/AI0m2dzAaWw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/0a5/0a5798467207f30b24958a04dc18a358.jpg",
       "https://media.rawg.io/media/screenshots/bd5/bd557eae44f71db27a66a12189ebd6ea.jpg",
@@ -99912,7 +100330,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.46,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-2-xbox-series",
@@ -99938,7 +100365,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-metal-slug-4-xbox-one-series-s-x-midia-digital-copia-ir8wy/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3bSg_yF78Uc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-metal-slug-2-ce61e2f20057eb596a17915823747745-1024-1024.webp"
     ],
@@ -99952,7 +100379,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-3-xbox-series",
@@ -99980,7 +100416,7 @@
     ],
     "rawgId": 27897,
     "rawgSlug": "aca-neogeo-metal-slug-3",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/AI0m2dzAaWw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d93/d93bd73b28b822b6f5a2e8dc0e5ddac1.jpg",
       "https://media.rawg.io/media/screenshots/d50/d504bf3a79a25299b41e34e56db4d8d7.jpg",
@@ -100002,7 +100438,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG 3",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 3",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-4-xbox-series",
@@ -100030,7 +100475,7 @@
     ],
     "rawgId": 59296,
     "rawgSlug": "aca-neogeo-metal-slug-4",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Y5w1uDq9-98",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/e4e/e4e8dadde27e32603c5d7404773432fb_PaZ5HTU.jpg",
       "https://media.rawg.io/media/screenshots/542/542e03de3fde2a75bc8b86ce8e1f050e_Fdszc32.jpg",
@@ -100049,7 +100494,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG 4",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 4",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-5-xbox-series",
@@ -100077,7 +100531,7 @@
     ],
     "rawgId": 276031,
     "rawgSlug": "aca-neogeo-metal-slug-5",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/0TiOShwwZJM",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/163/1633d11ce89100e4ca298d0334d5f4d5.jpg",
       "https://media.rawg.io/media/screenshots/4bb/4bb7aa22e0110e40e61f8a661bb7a3e1.jpg",
@@ -100094,7 +100548,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG 5",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 5",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-metal-slug-x-xbox-series",
@@ -100122,7 +100585,7 @@
     ],
     "rawgId": 47350,
     "rawgSlug": "aca-neogeo-metal-slug-x",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3H17sUae1aU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/cd6/cd6b45189185a735c4e0eec4c8244487.jpg",
       "https://media.rawg.io/media/screenshots/d81/d81ec7e2fb5412f7ce9249232ee1e5ba.jpg",
@@ -100141,7 +100604,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO METAL SLUG X",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.423,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-money-puzzle-exchanger-xbox-series",
@@ -100169,7 +100641,7 @@
     ],
     "rawgId": 58992,
     "rawgSlug": "aca-neogeo-money-puzzle-exchanger",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/g_hRKgyNcaw",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/a0a/a0ade4547f818047b2bba172e6b18f03_RVhEK3T.jpg",
       "https://media.rawg.io/media/screenshots/b20/b20b36e1f99bea30b8cb4d0b4ec723a9_pjCDvHS.jpg",
@@ -100189,7 +100661,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO Money Puzzle Exchanger",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.336,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-mutation-nation-xbox-series",
@@ -100217,7 +100698,7 @@
     ],
     "rawgId": 49311,
     "rawgSlug": "aca-neogeo-mutation-nation",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/4TENaAsJVJA",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/572/572a3e4cc221d54342c702a5d55323b7.jpg",
       "https://media.rawg.io/media/screenshots/f6f/f6f36bc4d1cfbdf589699cccfaf4a3ed_YP8hNsv.jpg",
@@ -100236,7 +100717,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO MUTATION NATION",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.46,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-pleasure-goal-5-on-5-min-soccer-xbox-series",
@@ -100262,7 +100752,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-puzzle-bobble-xbox-one-series-s-x-midia-digital-copia-copia-19i4b/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/h01qudIeoLU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-pleasure-goal-5-on-5-min-soccer-d668b30d191545932017915752259884-1024-1024.webp"
     ],
@@ -100276,7 +100766,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 5",
+    "steamGridMatchScore": 0.363,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-puzzle-bobble-copia-xbox-series",
@@ -100302,7 +100801,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-puzzle-bobble-2-xbox-one-series-s-x-midia-digital-copia-1y7sc/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/G9qAJIpXYDs",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-puzzle-bobble-576fbaa6ccfba8e00117915751586667-1024-1024.webp"
     ],
@@ -100316,7 +100815,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.4,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-puzzle-bobble-2-xbox-series",
@@ -100344,7 +100852,7 @@
     ],
     "rawgId": 290977,
     "rawgSlug": "aca-neogeo-puzzle-bobble-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/616cBb5Ov1g",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/dc6/dc6d970c6ac8894277c6e7686cd83424.jpg",
       "https://media.rawg.io/media/screenshots/3f2/3f277045b23a8cc886038bc21bffa000.jpg",
@@ -100363,7 +100871,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO PUZZLE BOBBLE 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 10.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.495,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-real-bout-fatal-fury-2-xbox-series",
@@ -100391,7 +100908,7 @@
     ],
     "rawgId": 52301,
     "rawgSlug": "aca-neogeo-real-bout-fatal-fury-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/1IDoc63olf4",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/3a7/3a78a956ab42c759e799c4c240691459_7zDk7nS.jpg",
       "https://media.rawg.io/media/screenshots/4bd/4bdf85ac487d1f14301eb5393cc6585b_5VHYuzD.jpg",
@@ -100410,7 +100927,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO REAL BOUT FATAL FURY 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.442,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-real-bout-fatal-fury-special-xbox-series",
@@ -100436,7 +100962,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-ii-xbox-one-series-s-x-midia-digital-copia-wisqi/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/DIYRTgAriz4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-real-bout-fatal-fury-special-b3a5c2bd645914fbf017915749902351-1024-1024.webp"
     ],
@@ -100450,7 +100976,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.326,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-ii-xbox-series",
@@ -100478,7 +101013,7 @@
     ],
     "rawgId": 46894,
     "rawgSlug": "aca-neogeo-samurai-shodown-ii",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/iRmiUdbl79A",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/601/601840652e247c88c145f970c4d61495_bMoBETh.jpg",
       "https://media.rawg.io/media/screenshots/ca6/ca62dbdf7d31b1a2dcbed777b1e7202c_PH0apyp.jpg",
@@ -100497,7 +101032,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SAMURAI SHODOWN II",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.41,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-iii-xbox-series",
@@ -100523,7 +101067,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-iv-xbox-one-series-s-x-midia-digital-copia-c558t/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/9E4E8uwVYrU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-samurai-shodown-iii-ebf96c89520f0a8e3c17915748722707-1024-1024.webp"
     ],
@@ -100537,7 +101081,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.4,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-iv-xbox-series",
@@ -100563,7 +101116,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-samurai-shodown-v-xbox-one-series-s-x-midia-digital-copia-1j78r/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/oxyBMq4OJY8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-samurai-shodown-iv-8d7d824bf44f08c44017915748034483-1024-1024.webp"
     ],
@@ -100577,7 +101130,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.41,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-v-xbox-series",
@@ -100605,7 +101167,7 @@
     ],
     "rawgId": 59003,
     "rawgSlug": "aca-neogeo-samurai-shodown-v",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/OT-KVPoVtOk",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/9e2/9e2d8799bf662ec48b457fd9c7e95c04_TuyLXa1.jpg",
       "https://media.rawg.io/media/screenshots/fee/feea1d4c9b03a914da5aca258ac45b4b.jpg",
@@ -100624,7 +101186,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SAMURAI SHODOWN V",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.421,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-samurai-shodown-v-special-xbox-series",
@@ -100652,7 +101223,7 @@
     ],
     "rawgId": 310859,
     "rawgSlug": "aca-neogeo-samurai-shodown-v-special",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/xeWXk4350fo",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/d8b/d8b4f72747798d9372a5735d765a7f35.jpg",
       "https://media.rawg.io/media/screenshots/2f8/2f8ecebc2a2f093af82e82cb22d259a6.jpg",
@@ -100673,7 +101244,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SAMURAI SHODOWN V SPECIAL",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.372,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-spin-master-xbox-series",
@@ -100701,7 +101281,7 @@
     ],
     "rawgId": 46644,
     "rawgSlug": "aca-neogeo-spin-master",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/O_wj1YNsS0A",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/85f/85f60f6e00a004f8cc4a6495d1a8edd9.jpg",
       "https://media.rawg.io/media/screenshots/fab/fab7bf357acac493741f0ebb3e2c892b.jpg",
@@ -100722,7 +101302,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SPIN MASTER",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.437,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-stakes-winner-xbox-series",
@@ -100750,7 +101339,7 @@
     ],
     "rawgId": 58283,
     "rawgSlug": "aca-neogeo-stakes-winner",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/HDTFiglFVw0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/f35/f35f3e8965ad886a372f8ab7e9a2897b.jpg",
       "https://media.rawg.io/media/screenshots/db3/db36d907d502b1f8ff71291ef250b55e.jpg",
@@ -100772,7 +101361,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO STAKES WINNER",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.414,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-stakes-winner-2-xbox-series",
@@ -100800,7 +101398,7 @@
     ],
     "rawgId": 265339,
     "rawgSlug": "aca-neogeo-stakes-winner-2",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dvT9mRMqElI",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/890/890edc55877178281c998dd193cd30bd.jpg",
       "https://media.rawg.io/media/screenshots/639/639c667a36c39f1ac9bbad10b3370a84.jpg",
@@ -100820,7 +101418,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO STAKES WINNER 2",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 20.99,
+    "precoOriginalEUR": 20.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.518,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-super-sidekicks-xbox-series",
@@ -100848,7 +101455,7 @@
     ],
     "rawgId": 45010,
     "rawgSlug": "aca-neogeo-super-sidekicks",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Ia64LMJHSZU",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5ed/5eddb206b906c01e2f828af3d8e751bb_xlgrC5B.jpg",
       "https://media.rawg.io/media/screenshots/d5c/d5cf2f0ea95c17cbdbe1493a434f16fe_ZflVLsp.jpg",
@@ -100867,7 +101474,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "ACA NEOGEO SUPER SIDEKICKS",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 17.99,
+    "precoOriginalEUR": 17.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.414,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1994-xbox-series",
@@ -100893,7 +101509,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1995-xbox-one-series-s-x-midia-digital-copia-1ygv0/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dKuS3ulAm88",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-94-e0f96585e891abae8017915741958198-1024-1024.webp"
     ],
@@ -100907,7 +101523,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1995-xbox-series",
@@ -100933,7 +101558,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1998-xbox-one-series-s-x-midia-digital-copia-be8m7/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dKuS3ulAm88",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-95-a0c014eea05ba3350c17915741665498-1024-1024.webp"
     ],
@@ -100947,7 +101572,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1998-xbox-series",
@@ -100973,7 +101607,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-1999-xbox-one-series-s-x-midia-digital-copia-12f68/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/HZzols3GeA8",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-98-b4563d9a296d6c97a117915739794064-1024-1024.webp"
     ],
@@ -100987,7 +101621,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 12.99,
+    "precoOriginalEUR": 12.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-1999-xbox-series",
@@ -101013,7 +101656,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2000-xbox-one-series-s-x-midia-digital-copia-16wzp/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/wModnfx_oa4",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-99-2a80f2b615f0dfabfa17915739263721-1024-1024.webp"
     ],
@@ -101027,7 +101670,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2000-xbox-series",
@@ -101053,7 +101705,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2001-xbox-one-series-s-x-midia-digital-copia-bgxsk/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dHP9Vx1Q7uc",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2000-f8709bf4de94b9bb5117915738787013-1024-1024.webp"
     ],
@@ -101067,7 +101719,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2001-xbox-series",
@@ -101093,7 +101754,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2002-xbox-one-series-s-x-midia-digital-copia-kljrq/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/3IqTWvfNwaU",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2001-b24cabd1bc834e8fc217915738153111-1024-1024.webp"
     ],
@@ -101107,7 +101768,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 1",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2002-xbox-series",
@@ -101133,7 +101803,7 @@
         "url": "https://www.alphagames.com.br/produtos/aca-neogeo-the-king-of-fighters-2003-xbox-one-series-s-x-midia-digital-copia-xi2n1/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/dknNIcU02eA",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/aca-neogeo-the-king-of-fighters-2002-114203e663208e24c517915737607713-1024-1024.webp"
     ],
@@ -101147,7 +101817,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "ACA NEOGEO Selection Vol. 2",
+    "steamGridMatchScore": 0.347,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "aca-neogeo-the-king-of-fighters-2003-xbox-series",
@@ -101358,7 +102037,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 22.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/b6582fed3f0ae38131d466b3f286d1a4.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Ace Combat 7: Skies Unknown",
@@ -103234,7 +103913,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 86.99,
+    "precoOriginalEUR": 87.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Assassin's Creed Mirage",
@@ -105357,7 +106036,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Black Ops - OSX",
@@ -105406,7 +106085,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Call of Duty: Black Ops - OSX",
@@ -105927,7 +106606,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 47.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Captain Tsubasa: New Kick Off",
@@ -106840,7 +107519,7 @@
     ],
     "rawgId": 28492,
     "rawgSlug": "dead-island",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/lZqrG1bdGtg",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/486/486a42d5b4a456ff7043671ca0e1d146.jpg",
       "https://media.rawg.io/media/screenshots/606/606d1f6b854b9edab64df1b43e456663.jpg",
@@ -106863,7 +107542,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "Dead Island",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 7.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/f7884361e9e5dea725fd37eb0d320d7e.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Dead Island",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "dead-island-2-xbox-series",
@@ -107018,7 +107706,7 @@
     "rawgMatchedName": "Dead Space",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
+    "precoVendaEUR": 18.99,
     "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/26203c6ab63ff66fef12bbc3b8dad1c0.png",
     "steamGridMatchValidated": true,
@@ -107359,8 +108047,8 @@
     "rawgMatchedName": "Dragon Age: The Veilguard",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 39.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 40.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/3b54a98867984c72934f886da10677c2.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Dragon Age: The Veilguard",
@@ -108871,8 +109559,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
-    "precoOriginalEUR": 34.99,
+    "precoVendaEUR": 35.99,
+    "precoOriginalEUR": 35.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/818efb7d312c7baa2a0af45c3c959837.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Final Fantasy XVI",
@@ -109766,8 +110454,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 39.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 40.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "The Halloween Incident",
@@ -113607,7 +114295,7 @@
     "rawgMatchScore": 1,
     "enriquecido": true,
     "precoVendaEUR": 52.99,
-    "precoOriginalEUR": 62.99,
+    "precoOriginalEUR": 63.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/a3962c0ca7ca8033daaa9fac886e90b8.jpg",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Onimusha: Way of the Sword",
@@ -113714,7 +114402,7 @@
         "url": "https://www.alphagames.com.br/produtos/the-fall-part-2-unbound-xbox-one-series-s-x-midia-digital-copia-1og0z/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Dx-DT8wUY80",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-3-5cd177534b8ef250fd17915841983528-1024-1024.webp"
     ],
@@ -113728,7 +114416,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 15.99,
+    "precoOriginalEUR": 16.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Outlast: Whistleblower",
+    "steamGridMatchScore": 0.341,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "overcooked-1-2-xbox-series",
@@ -114386,8 +115083,8 @@
     "rawgMatchedName": "Rayman Legends Retold",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 39.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 40.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Rayman Legends",
@@ -115649,8 +116346,8 @@
     "rawgMatchedName": "Rust Console Edition",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 34.99,
-    "precoOriginalEUR": 34.99,
+    "precoVendaEUR": 35.99,
+    "precoOriginalEUR": 35.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Rust and Resolve",
@@ -116375,8 +117072,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 34.99,
-    "precoOriginalEUR": 34.99,
+    "precoVendaEUR": 35.99,
+    "precoOriginalEUR": 35.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "SnowRunner",
@@ -118154,7 +118851,7 @@
         "url": "https://www.alphagames.com.br/produtos/dead-island-xbox-one-series-s-x-midia-digital-copia-j2caf/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/qMI7ZG4Vz7Y",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-1-e31cfd6b218714193d17915838070550-1024-1024.webp"
     ],
@@ -118168,7 +118865,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/cd2641acda3609cf9eeb2ca8b8fd50a7.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Fall",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-fall-part-2-unbound-xbox-series",
@@ -118196,7 +118902,7 @@
     ],
     "rawgId": 22105,
     "rawgSlug": "the-fall-part-2-unbound",
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/TzPnKOuE3F0",
     "screenshots": [
       "https://media.rawg.io/media/screenshots/5db/5db2e95f95be233c540ed7207a5835eb.jpg",
       "https://media.rawg.io/media/screenshots/f36/f36fb10174e518c17dbd76a2ce53155c.jpg",
@@ -118219,7 +118925,16 @@
     "rawgMatchVersion": 3,
     "rawgMatchedName": "The Fall Part 2: Unbound",
     "rawgMatchScore": 1,
-    "enriquecido": true
+    "enriquecido": true,
+    "precoVendaEUR": 7.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/d5cf030150efe2c3617bc8fd6c355230.png",
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "The Fall Part 2: Unbound",
+    "steamGridMatchScore": 1,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": "alternate",
+    "steamGridNeedsReview": false
   },
   {
     "id": "the-first-berserker-xbox-series",
@@ -119277,8 +119992,8 @@
     "rawgMatchedName": "UFC 5",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 39.99,
-    "precoOriginalEUR": 39.99,
+    "precoVendaEUR": 40.99,
+    "precoOriginalEUR": 40.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/087bcc9dd080e2e67dfaa62b139fbcac.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "UFC 5",
@@ -119544,7 +120259,7 @@
         "url": "https://www.alphagames.com.br/produtos/outlast-bundle-of-trror-xbox-one-series-s-x-midia-digital-copia-18qit/"
       }
     ],
-    "trailer": "",
+    "trailer": "https://www.youtube.com/embed/Viv8e9_-kHo",
     "screenshots": [
       "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-4-91936272a75795f87217915845697701-1024-1024.webp"
     ],
@@ -119558,7 +120273,16 @@
     "rawgMatchValidated": true,
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
-    "enriquecido": false
+    "enriquecido": false,
+    "precoVendaEUR": 5.99,
+    "precoOriginalEUR": 9.99,
+    "capaSteamGridDB": null,
+    "steamGridMatchValidated": true,
+    "steamGridMatchedName": "Wolfenstein: The Old Blood ",
+    "steamGridMatchScore": 0.637,
+    "steamGridGridScore": 0,
+    "steamGridGridStyle": null,
+    "steamGridNeedsReview": false
   },
   {
     "id": "world-war-z-xbox-series",
@@ -119743,7 +120467,7 @@
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
     "precoVendaEUR": 44.99,
-    "precoOriginalEUR": 49.99,
+    "precoOriginalEUR": 50.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/7e5011b57775bda577ba11e387e88ad7.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "WWE 2K26",
@@ -120799,8 +121523,8 @@
     "rawgMatchedName": "Grand Theft Auto: The Trilogy",
     "rawgMatchScore": 1,
     "enriquecido": true,
-    "precoVendaEUR": 17.99,
-    "precoOriginalEUR": 17.99,
+    "precoVendaEUR": 18.99,
+    "precoOriginalEUR": 18.99,
     "capaSteamGridDB": "https://cdn2.steamgriddb.com/grid/acea00eb3deb3a03c90fa91ef5aae390.png",
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Grand Theft Auto: The Trilogy - The Definitive Edition",
@@ -120902,8 +121626,8 @@
     "rawgMatchVersion": 3,
     "rawgMatchReason": "nome RAWG divergente",
     "enriquecido": false,
-    "precoVendaEUR": 50.99,
-    "precoOriginalEUR": 50.99,
+    "precoVendaEUR": 51.99,
+    "precoOriginalEUR": 51.99,
     "capaSteamGridDB": null,
     "steamGridMatchValidated": true,
     "steamGridMatchedName": "Madden NFL 97",

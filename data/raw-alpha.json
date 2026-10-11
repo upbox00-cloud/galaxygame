@@ -1059,9 +1059,9 @@
     {
       "id": "call-of-duty-black-ops-cold-war-ps4",
       "nome": "CALL OF DUTY: BLACK OPS COLD WAR - PS4 - MÍDIA DIGITAL",
-      "precoAtualBRL": 37.11,
-      "precoPixBRL": 37.11,
-      "precoSemPixBRL": 39.9,
+      "precoAtualBRL": 167.31,
+      "precoPixBRL": 167.31,
+      "precoSemPixBRL": 179.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 319.9,
       "tipoMidia": "Primaria",
@@ -3247,22 +3247,6 @@
       "plataformaKey": "ps4",
       "fornecedorProductId": "267905171",
       "varianteFornecedorId": 1276142112
-    },
-    {
-      "id": "god-of-war-iii-remastered-ps4",
-      "nome": "GOD OF WAR III REMASTERED - PS4 - MÍDIA DIGITAL",
-      "precoAtualBRL": 51.06,
-      "precoPixBRL": 51.06,
-      "precoSemPixBRL": 54.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 99.9,
-      "tipoMidia": "Primaria",
-      "linkFornecedor": "https://www.alphagames.com.br/produtos/god-of-war-iii-remastered-ps4-midia-digital-1onbi/",
-      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-ec808b91653cf51a0117616826156371-1024-1024.webp",
-      "plataforma": "PlayStation 4",
-      "plataformaKey": "ps4",
-      "fornecedorProductId": "303644387",
-      "varianteFornecedorId": 1351255260
     },
     {
       "id": "god-of-war-ragnarok-ps4",
@@ -8997,9 +8981,9 @@
     {
       "id": "call-of-duty-black-ops-cold-war-ps5",
       "nome": "CALL OF DUTY: BLACK OPS COLD WAR - PS5 - MIDIA DIGITAL",
-      "precoAtualBRL": 37.11,
-      "precoPixBRL": 37.11,
-      "precoSemPixBRL": 39.9,
+      "precoAtualBRL": 74.31,
+      "precoPixBRL": 74.31,
+      "precoSemPixBRL": 79.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 319.9,
       "tipoMidia": "Primaria",

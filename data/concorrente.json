@@ -1920,31 +1920,6 @@
     "candidatos": []
   },
   {
-    "id": "god-of-war-iii-remastered-ps4",
-    "nome": "GOD OF WAR III REMASTERED - PS4 - MÍDIA DIGITAL",
-    "plataforma": "PlayStation 4",
-    "sem_referencia": false,
-    "precoConcorrenteEUR": 4.99,
-    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-    "candidatos": [
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 4.99,
-        "score": 4
-      },
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"435\" height=\"435\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo.png\" alt=\"Assassin&#039;s Creed Syndicate PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo.png 435w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 435px, 435px\"/>",
-        "precoConcorrenteEUR": 12.99,
-        "score": 4
-      },
-      {
-        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png\" alt=\"Until Dawn  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
-        "precoConcorrenteEUR": 12.99,
-        "score": 4
-      }
-    ]
-  },
-  {
     "id": "god-of-war-ragnarok-ps4",
     "nome": "GOD OF WAR RAGNAROK - PS4 - MÍDIA DIGITAL",
     "plataforma": "PlayStation 4",
@@ -4955,6 +4930,31 @@
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
+  },
+  {
+    "id": "god-of-war-iii-remastered-ps4",
+    "nome": "God Of War III - Remastered - PS4 - Mídia Digital",
+    "plataforma": "PlayStation 4",
+    "sem_referencia": false,
+    "precoConcorrenteEUR": 4.99,
+    "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+    "candidatos": [
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png\" alt=\"Uncharted: The Nathan Drake Collection  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2015/10/uncharted-the-nathan-drake-collection-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 4.99,
+        "score": 4
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"435\" height=\"435\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo.png\" alt=\"Assassin&#039;s Creed Syndicate PREMIUM | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo.png 435w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/04/assassins-creed-syndicate-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 435px, 435px\"/>",
+        "precoConcorrenteEUR": 12.99,
+        "score": 4
+      },
+      {
+        "nomeConcorrente": "<img loading=\"lazy\" width=\"450\" height=\"450\" src=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png\" alt=\"Until Dawn  Low Cost | PS4\" decoding=\"async\" srcset=\"https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo.png 450w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-400x400.png 400w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-300x300.png 300w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-64x64.png 64w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-150x150.png 150w, https://www.jogodigital.com/wp-content/uploads/2016/03/until-dawn-ps4-catalogo-75x75.png 75w\" sizes=\"(max-width:767px) 450px, 450px\"/>",
+        "precoConcorrenteEUR": 12.99,
+        "score": 4
+      }
+    ]
   },
   {
     "id": "gran-turismo-sport-ps4",
@@ -21956,9 +21956,11 @@
     "plataforma": "Xbox Series X|S",
     "plataformaKey": "xbox-series",
     "sem_referencia": true,
-    "pendente": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-11T10:22:43.977Z",
     "precoConcorrenteEUR": 0,
-    "nomeConcorrente": ""
+    "nomeConcorrente": "",
+    "candidatos": []
   },
   {
     "id": "world-war-z-xbox-series",
