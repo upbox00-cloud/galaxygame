@@ -5420,9 +5420,9 @@
     {
       "id": "ghost-of-tsushima-director-version-s-ps4",
       "nome": "GHOST OF TSUSHIMA DIRECTOR VERSION'S - PS4 - MÍDIA DIGITAL",
-      "precoAtualBRL": 139.41,
-      "precoPixBRL": 139.41,
-      "precoSemPixBRL": 149.9,
+      "precoAtualBRL": 176.61,
+      "precoPixBRL": 176.61,
+      "precoSemPixBRL": 189.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 349.9,
       "tipoMidia": "Primaria",
@@ -5436,8 +5436,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 139.41,
-          "custoSemPixBRL": 149.9,
+          "custoPixBRL": 176.61,
+          "custoSemPixBRL": 189.9,
           "url": "https://www.alphagames.com.br/produtos/ghost-of-tsushima-director-versions-ps4-midia-digital-9ukxq/"
         }
       ]
@@ -7196,9 +7196,9 @@
     {
       "id": "marvel-s-spider-man-ps4",
       "nome": "MARVEL'S SPIDER-MAN - PS4 - MÍDIA DIGITAL",
-      "precoAtualBRL": 27.81,
-      "precoPixBRL": 27.81,
-      "precoSemPixBRL": 29.9,
+      "precoAtualBRL": 32.46,
+      "precoPixBRL": 32.46,
+      "precoSemPixBRL": 34.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 199.9,
       "tipoMidia": "Primaria",
@@ -7212,8 +7212,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 27.81,
-          "custoSemPixBRL": 29.9,
+          "custoPixBRL": 32.46,
+          "custoSemPixBRL": 34.9,
           "url": "https://www.alphagames.com.br/produtos/marvels-spider-man-ps4-midia-digital-15jfs/"
         }
       ]
@@ -23220,9 +23220,9 @@
     {
       "id": "ghost-of-tsushima-director-version-s-ps5",
       "nome": "GHOST OF TSUSHIMA DIRECTOR VERSION'S - PS5 - MÍDIA DIGITAL",
-      "precoAtualBRL": 139.41,
-      "precoPixBRL": 139.41,
-      "precoSemPixBRL": 149.9,
+      "precoAtualBRL": 176.61,
+      "precoPixBRL": 176.61,
+      "precoSemPixBRL": 189.9,
       "descontoPixAplicado": true,
       "precoOriginalBRL": 349.9,
       "tipoMidia": "Primaria",
@@ -23236,8 +23236,8 @@
         {
           "id": "alpha",
           "nome": "Alpha Games",
-          "custoPixBRL": 139.41,
-          "custoSemPixBRL": 149.9,
+          "custoPixBRL": 176.61,
+          "custoSemPixBRL": 189.9,
           "url": "https://www.alphagames.com.br/produtos/ghost-of-tsushima-director-versions-ps5-midia-digital-wqfpm/"
         }
       ]
@@ -39240,8 +39240,8 @@
         {
           "id": "tca",
           "nome": "TCA Games",
-          "custoPixBRL": 18.9,
-          "custoSemPixBRL": 19.9,
+          "custoPixBRL": 28.4,
+          "custoSemPixBRL": 29.9,
           "url": "https://www.lojatcagames.com.br/products/lego-marvel-super-heroes-2-xbox-one"
         }
       ]
@@ -41236,6 +41236,31 @@
           "custoPixBRL": 28.4,
           "custoSemPixBRL": 29.9,
           "url": "https://www.lojatcagames.com.br/products/shadow-of-the-tomb-raider-xbox-one"
+        }
+      ]
+    },
+    {
+      "id": "shape-up-xbox-one",
+      "nome": "SHAPE UP - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/wolfenstien-teh-old-blood-xbox-one-series-s-x-midia-digital-copia-1dxc9/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-5b787bd0be07a6ceeb17918516844714-1024-1024.webp",
+      "plataforma": "Xbox One",
+      "plataformaKey": "xbox-one",
+      "fornecedorProductId": "373788694",
+      "varianteFornecedorId": 1617605708,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/wolfenstien-teh-old-blood-xbox-one-series-s-x-midia-digital-copia-1dxc9/"
         }
       ]
     },
@@ -43685,33 +43710,6 @@
           "custoPixBRL": 47.4,
           "custoSemPixBRL": 49.9,
           "url": "https://www.lojatcagames.com.br/products/devil-may-cry-hd-collection-4se-bundle-xbox-one"
-        }
-      ]
-    },
-    {
-      "id": "diablo-iii-eternal-collection-xbox-one",
-      "nome": "Diablo III Eternal Collection – Xbox One Mídia Digital",
-      "precoAtualBRL": 18.9,
-      "precoPixBRL": 18.9,
-      "precoSemPixBRL": 19.9,
-      "descontoPixAplicado": true,
-      "precoOriginalBRL": 19.9,
-      "tipoMidia": "unica",
-      "linkFornecedor": "https://www.lojatcagames.com.br/products/diablo-iii-eternal-collection-xbox-one",
-      "imagemPrincipal": "https://cdn.shopify.com/s/files/1/0683/7891/9010/files/Capa.png?v=1786234012",
-      "plataforma": "Xbox One",
-      "plataformaKey": "xbox-one",
-      "fornecedorProductId": "7762834456674",
-      "varianteFornecedorId": "43190180216930",
-      "fornecedorId": "tca",
-      "fornecedorNome": "TCA Games",
-      "fornecedores": [
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 18.9,
-          "custoSemPixBRL": 19.9,
-          "url": "https://www.lojatcagames.com.br/products/diablo-iii-eternal-collection-xbox-one"
         }
       ]
     },
@@ -50467,13 +50465,6 @@
           "custoPixBRL": 92.91,
           "custoSemPixBRL": 99.9,
           "url": "https://www.alphagames.com.br/produtos/diablo-iv-xbox-one-series-s-x-midia-digital-19m3j/"
-        },
-        {
-          "id": "tca",
-          "nome": "TCA Games",
-          "custoPixBRL": 28.4,
-          "custoSemPixBRL": 29.9,
-          "url": "https://www.lojatcagames.com.br/products/diablo-iv-xbox-series"
         }
       ]
     },
@@ -54532,6 +54523,31 @@
           "custoPixBRL": 18.51,
           "custoSemPixBRL": 19.9,
           "url": "https://www.alphagames.com.br/produtos/shadow-of-the-tomb-raider-xbox-one-xbox-series-s-x-midia-digital-t0z8r/"
+        }
+      ]
+    },
+    {
+      "id": "shape-up-xbox-series",
+      "nome": "SHAPE UP - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+      "precoAtualBRL": 27.81,
+      "precoPixBRL": 27.81,
+      "precoSemPixBRL": 29.9,
+      "descontoPixAplicado": true,
+      "precoOriginalBRL": 49.9,
+      "tipoMidia": "unica",
+      "linkFornecedor": "https://www.alphagames.com.br/produtos/wolfenstien-teh-old-blood-xbox-one-series-s-x-midia-digital-copia-1dxc9/",
+      "imagemPrincipal": "https://acdn-us.mitiendanube.com/stores/006/141/249/products/design-sem-nome-5b787bd0be07a6ceeb17918516844714-1024-1024.webp",
+      "plataforma": "Xbox Series X|S",
+      "plataformaKey": "xbox-series",
+      "fornecedorProductId": "373788694",
+      "varianteFornecedorId": 1617605708,
+      "fornecedores": [
+        {
+          "id": "alpha",
+          "nome": "Alpha Games",
+          "custoPixBRL": 27.81,
+          "custoSemPixBRL": 29.9,
+          "url": "https://www.alphagames.com.br/produtos/wolfenstien-teh-old-blood-xbox-one-series-s-x-midia-digital-copia-1dxc9/"
         }
       ]
     },

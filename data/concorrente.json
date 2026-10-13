@@ -15564,6 +15564,18 @@
     "candidatos": []
   },
   {
+    "id": "shape-up-xbox-one",
+    "nome": "SHAPE UP - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox One",
+    "plataformaKey": "xbox-one",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-13T10:59:36.201Z",
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
     "id": "sniper-elite-3-xbox-one",
     "nome": "SNIPER ELITE 3 - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox One",
@@ -16617,18 +16629,6 @@
     "sem_referencia": true,
     "pendente": false,
     "consultadoEm": "2026-09-27T09:34:46.978Z",
-    "precoConcorrenteEUR": 0,
-    "nomeConcorrente": "",
-    "candidatos": []
-  },
-  {
-    "id": "diablo-iii-eternal-collection-xbox-one",
-    "nome": "Diablo III Eternal Collection – Xbox One Mídia Digital",
-    "plataforma": "Xbox One",
-    "plataformaKey": "xbox-one",
-    "sem_referencia": true,
-    "pendente": false,
-    "consultadoEm": "2026-09-27T09:34:49.228Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
@@ -21283,6 +21283,18 @@
     "nome": "SHADOW OF THE TOMB RAIDER - XBOX ONE & XBOX SERIES S/X- MÍDIA DIGITAL",
     "plataforma": "Xbox Series X|S",
     "sem_referencia": true,
+    "precoConcorrenteEUR": 0,
+    "nomeConcorrente": "",
+    "candidatos": []
+  },
+  {
+    "id": "shape-up-xbox-series",
+    "nome": "SHAPE UP - XBOX ONE & SERIES S/X - MÍDIA DIGITAL",
+    "plataforma": "Xbox Series X|S",
+    "plataformaKey": "xbox-series",
+    "sem_referencia": true,
+    "pendente": false,
+    "consultadoEm": "2026-10-13T10:59:39.860Z",
     "precoConcorrenteEUR": 0,
     "nomeConcorrente": "",
     "candidatos": []
