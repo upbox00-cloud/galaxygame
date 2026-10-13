@@ -8424,6 +8424,14 @@
       "videoTitle": "Wolfenstein: The Old Blood - Launch Trailer",
       "channelTitle": "GameSpot",
       "processedAt": "2026-10-10T11:15:17.459Z"
+    },
+    "shape up": {
+      "trailer": "https://www.youtube.com/embed/-e1Eo6_u9Zg",
+      "status": "found",
+      "query": "shape up Xbox trailer oficial",
+      "videoTitle": "Shape Up Launch Trailer",
+      "channelTitle": "XBOX",
+      "processedAt": "2026-10-13T12:47:07.667Z"
     }
   },
   "runs": [
@@ -8826,7 +8834,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-10-13T12:47:07.105Z",
+      "requests": 1,
+      "analyzed": 1,
+      "found": 1,
+      "notFound": 0,
+      "alreadyHadTrailer": 1022,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-10-12T13:16:35.624Z"
+  "updatedAt": "2026-10-13T12:47:07.945Z"
 }
