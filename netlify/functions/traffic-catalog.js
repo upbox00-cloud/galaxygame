@@ -1,6 +1,6 @@
 const crypto = require('node:crypto');
 const { connectLambda } = require('@netlify/blobs');
-const { readPriceOverrides, applyPriceOverrides } = require('./_price-overrides');
+const { readPriceOverrides, applyPriceOverrides, validateStoredDocument } = require('./_price-overrides');
 const { buildSnapshot } = require('./_traffic-catalog');
 // Static imports ensure esbuild includes both documents in the function bundle.
 const publicCatalog = require('../../data/catalog-lite.json');
@@ -56,6 +56,7 @@ function createHandler({
       const [catalog, availability, overrides] = await Promise.all([
         loadCatalog(), loadAvailability(), readOverrides({ strict: true })
       ]);
+      validateStoredDocument(overrides);
       return response(200, buildSnapshot(applyPriceOverrides(catalog, overrides), availability, now()));
     } catch {
       // Never log tokens, price storage internals, or private catalog metadata.

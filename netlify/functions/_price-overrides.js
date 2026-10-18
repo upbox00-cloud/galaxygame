@@ -28,9 +28,23 @@ function normalizeDocument(value) {
   return { version: 1, prices };
 }
 
+function validateStoredDocument(value) {
+  // Missing Blob means no overrides. Legacy documents without a version remain valid.
+  if (value === null || value === undefined) return;
+  if (typeof value !== "object" || Array.isArray(value) ||
+      (value.version !== undefined && value.version !== 1) ||
+      !value.prices || typeof value.prices !== "object" || Array.isArray(value.prices))
+    throw new Error("invalid_price_overrides");
+  for (const [id, entry] of Object.entries(value.prices)) {
+    if (!id.trim() || id.length > 180 || !entry || typeof entry !== "object" || Array.isArray(entry) || normalizePrice(entry.precoVendaEUR) === null)
+      throw new Error("invalid_price_overrides");
+  }
+}
+
 async function readPriceOverrides({ strict = false } = {}) {
   try {
     const stored = await storeFactory().get(STORE_KEY, { type: "json" });
+    if (strict) validateStoredDocument(stored);
     return normalizeDocument(stored);
   } catch (error) {
     if (strict) throw error;
@@ -83,6 +97,7 @@ module.exports = {
   MIN_PRICE_EUR,
   MAX_PRICE_EUR,
   readPriceOverrides,
+  validateStoredDocument,
   setPriceOverride,
   removePriceOverride,
   applyPriceOverrides,

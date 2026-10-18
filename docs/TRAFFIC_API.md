@@ -1,5 +1,9 @@
 # Private Galaxy Traffic catalog
 
+## Current local validation
+
+Store suite133/133, private API15/15 and cross-project HTTP8/8 pass. Two stale checkout expectations were corrected against independent catalog data, without changing products/prices or checkout behavior. Strict price reads now validate stored document shape/version/entries before normalization; malformed overrides fail503 rather than silently falling back. Missing storage and legacy versionless valid documents remain supported; non-strict checkout reads are unchanged. The API also validates injected loaders. Full evidence: Galaxy Traffic AI `docs/CHECKOUT_VALIDATION.md`. Production endpoint still returned404 during verification; deployment remains separately authorized.
+
 Implementation only. No deployment, production credential, live inventory verification, payment/order modification, or production Blob access is implied by local tests.
 
 `GET https://galaxygame.pt/.netlify/functions/traffic-catalog` requires `Authorization: Bearer <restricted service token>`. Configure **only** `GALAXY_TRAFFIC_READ_TOKEN`, a unique random token of at least 32 characters with no whitespace, in the function environment through the authorized Netlify account. Do not reuse admin credentials. Never put the token in URLs, source, logs, command history, screenshots, or documentation. Rotate the environment value and restart/redeploy the function to revoke the previous token; application code reads the environment each request.

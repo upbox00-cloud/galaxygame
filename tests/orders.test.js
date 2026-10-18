@@ -291,10 +291,27 @@ test("extrai produtos compactos guardados nos metadados Stripe", () => {
 });
 
 test("checkout conhece o catálogo e os destaques manuais", async () => {
-  const catalog = await checkout._test.loadCatalog();
-  assert.equal(catalog.get("gta-vi-ps5").precoVendaEUR, 57.99);
-  assert.ok(catalog.get("the-witcher-3-wild-hunt-ps5"));
-  assert.equal(catalog.get("ea-sports-fc-26-ps5").fornecedorSelecionado, "TCA Games");
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/catalog-lite.json"), "utf8"));
+  const commercial = JSON.parse(fs.readFileSync(path.join(__dirname, "../netlify/functions/_data/catalogo-comercial.json"), "utf8"));
+  const byId = new Map(commercial.map(product => [product.id, product]));
+  assert.ok(source.length > 0, "O catálogo de origem precisa ter produtos");
+  priceOverrides._test.setStoreFactory(() => ({ async get() { return null; } }));
+  try {
+    const catalog = await checkout._test.loadCatalog();
+    const specialIds = new Set(["gta-vi-ps5", "gta-vi-xbox-series"]);
+    assert.equal(catalog.size, new Set([...source.map(product => product.id), ...specialIds]).size);
+    for (const product of source) {
+      const actual = catalog.get(product.id);
+      assert.ok(actual, `Produto da origem ausente no checkout: ${product.id}`);
+      if (!specialIds.has(product.id)) {
+        assert.equal(actual.precoVendaEUR, product.precoVendaEUR, `Preço diverge da origem: ${product.id}`);
+        assert.equal(actual.nome, product.nome);
+        assert.equal(actual.fornecedorSelecionado, byId.get(product.id)?.fornecedorSelecionado);
+      }
+    }
+    assert.equal(catalog.get("gta-vi-ps5").precoVendaEUR, 57.99);
+    assert.equal(catalog.get("gta-vi-xbox-series").precoVendaEUR, 69.99);
+  } finally { priceOverrides._test.resetStoreFactory(); }
 });
 
 test("checkout de convidado deixa o Stripe recolher o email", async () => {
@@ -487,6 +504,10 @@ test("checkout Stripe usa override manual como preco efetivo no servidor", async
 });
 
 test("checkout Stripe usa preco do catalogo quando nao existe override manual", async () => {
+  const source = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/catalog-lite.json"), "utf8"));
+  const product = source.find(item => item.id === "ea-sports-fc-27-ps5");
+  assert.ok(product, "O produto de teste deve existir no catálogo atual");
+  assert.ok(Number.isFinite(product.precoVendaEUR) && product.precoVendaEUR > 0);
   const previousSecret = process.env.STRIPE_SECRET_KEY;
   const originalFetch = global.fetch;
   let stripeParams;
@@ -505,13 +526,13 @@ test("checkout Stripe usa preco do catalogo quando nao existe override manual", 
   try {
     const response = await checkout.handler({
       httpMethod: "POST",
-      body: JSON.stringify({ items: [{ id: "ea-sports-fc-27-ps5" }] })
+      body: JSON.stringify({ items: [{ id: product.id, precoVendaEUR: 0.01 }], checkoutValue: 0.01 })
     }, {});
     const result = JSON.parse(response.body);
 
     assert.equal(response.statusCode, 200);
-    assert.equal(result.checkoutValue, 60.99);
-    assert.equal(stripeParams.get("line_items[0][price_data][unit_amount]"), "6099");
+    assert.equal(result.checkoutValue, product.precoVendaEUR);
+    assert.equal(stripeParams.get("line_items[0][price_data][unit_amount]"), String(Math.round(product.precoVendaEUR * 100)));
   } finally {
     priceOverrides._test.resetStoreFactory();
     global.fetch = originalFetch;

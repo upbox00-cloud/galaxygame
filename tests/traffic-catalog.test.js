@@ -144,6 +144,7 @@ test('promotion timestamps normalize offsets to canonical ISO UTC datetimes', as
 test('source failures and invalid or oversized snapshots fail closed without leaking error internals', async () => {
   for (const options of [
     { readOverrides: async () => { throw new Error('secret storage detail'); } },
+    { readOverrides: async () => ({ prices: { 'fixture-ps5': { precoVendaEUR: 'invalid' } } }) },
     { loadCatalog: () => { throw new Error('secret path'); } },
     { loadAvailability: () => { throw new Error('private metadata'); } },
     { loadCatalog: () => [product, product] },
@@ -172,6 +173,10 @@ test('actual source and existing price override helper: isolated Blob transport,
     assert.equal(body.products.find((p) => p.externalId === source[0].id).price, 3195);
     assert.ok(body.products.every((p) => p.available === false && !p.promotion));
     assert.ok(!response.body.includes('updatedBy'));
+    prices._test.setStoreFactory(() => ({ async get() { return { version: 1, prices: { [source[0].id]: { precoVendaEUR: 'invalid' } } }; } }));
+    const corrupted = await handler(event());
+    assert.equal(corrupted.statusCode, 503);
+    assert.deepEqual(JSON.parse(corrupted.body), { error: 'catalog_unavailable' });
     prices._test.setStoreFactory(() => ({ async get() { throw new Error('Blob private failure'); } }));
     assert.equal((await handler(event())).statusCode, 503);
   } finally {

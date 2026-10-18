@@ -5,6 +5,22 @@ const priceOverrides = require("../netlify/functions/_price-overrides");
 const adminCatalog = require("../netlify/functions/admin-catalogo");
 const publicCatalog = require("../data/catalog-lite.json");
 
+test("strict price reads reject corrupt documents without changing legacy non-strict behavior", async () => {
+  const invalid = [false, [], {}, { version: 2, prices: {} }, { version: 1, prices: [] },
+    { prices: { game: { precoVendaEUR: "invalid" } } }, { prices: { game: { precoVendaEUR: 1000 } } }];
+  try {
+    for (const document of invalid) {
+      priceOverrides._test.setStoreFactory(() => ({ async get() { return document; } }));
+      await assert.rejects(() => priceOverrides.readPriceOverrides({ strict: true }), /invalid_price_overrides/);
+      assert.deepEqual(await priceOverrides.readPriceOverrides(), priceOverrides._test.normalizeDocument(document));
+    }
+    for (const document of [null, { prices: {} }, { version: 1, prices: { game: { precoVendaEUR: "29,95" } } }]) {
+      priceOverrides._test.setStoreFactory(() => ({ async get() { return document; } }));
+      assert.deepEqual(await priceOverrides.readPriceOverrides({ strict: true }), priceOverrides._test.normalizeDocument(document));
+    }
+  } finally { priceOverrides._test.resetStoreFactory(); }
+});
+
 function memoryStore() {
   const values = new Map();
   return {
