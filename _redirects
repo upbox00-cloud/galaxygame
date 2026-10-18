@@ -8,9 +8,11 @@
 /.git/* /404.html 404
 /.vscode/* /404.html 404
 /.agents/* /404.html 404
-/data/raw-fornecedor.json /404.html 404
-/data/concorrente.json /404.html 404
-/data/enriquecido.json /404.html 404
+/data/raw-alpha.json /404.html 404!
+/data/raw-tca.json /404.html 404!
+/data/raw-fornecedor.json /404.html 404!
+/data/concorrente.json /404.html 404!
+/data/enriquecido.json /404.html 404!
 /data/imagens-para-revisar.json /404.html 404
 /data/trailers-para-revisar.json /404.html 404
 /data/youtube-progresso.json /404.html 404

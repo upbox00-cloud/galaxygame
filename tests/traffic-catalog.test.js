@@ -3,6 +3,27 @@ const assert = require('node:assert/strict');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
 
+test('commercial source URLs override existing static files with exact forced 404 routes', async () => {
+  const { parseAllRedirects } = await import('@netlify/redirect-parser');
+  const { redirects, errors } = await parseAllRedirects({
+    redirectsFiles: [path.resolve(__dirname, '../_redirects')],
+    netlifyConfigPath: path.resolve(__dirname, '../netlify.toml')
+  });
+  assert.deepEqual(errors, []);
+  for (const from of ['/data/raw-alpha.json', '/data/raw-tca.json', '/data/raw-fornecedor.json', '/data/concorrente.json', '/data/enriquecido.json']) {
+    const route = redirects.find((rule) => rule.from === from);
+    assert.ok(route, from + ' must have an exact private route');
+    assert.deepEqual({ to: route.to, status: route.status, force: route.force },
+      { to: '/404.html', status: 404, force: true }, from);
+  }
+  // Auth scripts rely on static file shadowing of the broad scripts rule.
+  for (const url of ['/scripts/auth.js', '/scripts/auth-loader.js', '/scripts/recovery-token.js', '/scripts/identity-modern.js']) {
+    assert.ok(require('node:fs').existsSync(path.resolve(__dirname, '..', url.slice(1))));
+    const applicable = redirects.filter((rule) => rule.from === url || rule.from === '/scripts/*');
+    assert.ok(applicable.every((rule) => !(rule.force && rule.status === 404)), url);
+  }
+});
+
 const token = 'fixture-only-token-with-at-least-32-characters';
 const now = Date.parse('2026-10-18T12:00:00Z');
 const product = { id: 'fixture-ps5', nome: 'Fixture Game', plataforma: 'PlayStation 5', precoVendaEUR: 12.99, precoOriginalEUR: 30, imagemFallback: '/assets/fixture.webp', supplierCost: 1, email: 'private@example.invalid' };
