@@ -34,7 +34,10 @@
     "atualizar:catalogo": "npm run scrape:all && npm run enrich:steamgriddb && npm run curadoria && npm run catalogo:lite",
     "agendar:catalogo": "powershell -ExecutionPolicy Bypass -File scripts/agendar-atualizacao-catalogo.ps1",
     "agendar:youtube": "powershell -ExecutionPolicy Bypass -File scripts/agendar-youtube-diario.ps1",
-    "scrape:all": "npm run scrape:fornecedores && npm run enrich:rawg && npm run scrape:concorrente && npm run gerar:precos"
+    "scrape:all": "npm run scrape:fornecedores && npm run enrich:rawg && npm run scrape:concorrente && npm run gerar:precos",
+    "test:traffic-api": "node --test tests/traffic-catalog.test.js",
+    "check:traffic-api": "node scripts/check-traffic-api.js",
+    "build:traffic-api": "node scripts/build-traffic-api.js"
   },
   "dependencies": {
     "@google/genai": "^2.15.0",
