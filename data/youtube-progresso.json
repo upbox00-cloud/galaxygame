@@ -8999,7 +8999,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-10-24T09:37:19.335Z",
+      "requests": 0,
+      "analyzed": 0,
+      "found": 0,
+      "notFound": 0,
+      "alreadyHadTrailer": 1022,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-10-23T10:12:09.244Z"
+  "updatedAt": "2026-10-24T09:37:19.376Z"
 }
