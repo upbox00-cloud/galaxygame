@@ -9029,7 +9029,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-10-26T11:14:58.176Z",
+      "requests": 0,
+      "analyzed": 0,
+      "found": 0,
+      "notFound": 0,
+      "alreadyHadTrailer": 1022,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-10-25T09:54:28.383Z"
+  "updatedAt": "2026-10-26T11:14:58.218Z"
 }
