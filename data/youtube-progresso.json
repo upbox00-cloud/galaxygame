@@ -9149,7 +9149,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-11-03T12:52:22.749Z",
+      "requests": 0,
+      "analyzed": 0,
+      "found": 0,
+      "notFound": 0,
+      "alreadyHadTrailer": 1022,
+      "cooldownSkipped": 1,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-11-02T13:38:25.218Z"
+  "updatedAt": "2026-11-03T12:52:22.780Z"
 }
