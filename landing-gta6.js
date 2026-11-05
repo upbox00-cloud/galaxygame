@@ -88,13 +88,14 @@
 
   function template(product) {
     var withBars = landingVersion() >= 4 && !isLiteDevice();
+    var mobileImgs = isMobileProfile(); // mobile: a 1.ª imagem da galeria (fora do ecrã) deixa de competir com o hero
     var price = formatEUR(product.precoVendaEUR);
     var release = product.released ? formatDate(product.released) : "";
     var confirmed = cfg.offerConfirmed !== false;
     var primaryLabel = confirmed ? "Ver disponibilidade" : "Consultar disponibilidade";
     var releaseLine = release ? "Lançamento previsto: " + release : "Data de lançamento a confirmar";
     var gallery = IMG.gallery.map(function (g, i) {
-      return '<img src="' + g.src + '" alt="' + g.alt + '" ' + (i === 0 ? 'class="on" fetchpriority="low"' : 'loading="lazy"') + ' decoding="async" width="1600" height="900">';
+      return '<img src="' + g.src + '" alt="' + g.alt + '" ' + (i === 0 ? (mobileImgs ? 'class="on" loading="lazy"' : 'class="on" fetchpriority="low"') : 'loading="lazy"') + ' decoding="async" width="1600" height="900">';
     }).join("");
     var thumbs = IMG.gallery.map(function (g, i) {
       return '<button class="g6-thumb" type="button" data-g6-thumb="' + i + '" aria-label="Ver imagem ' + (i + 1) + ' de ' + IMG.gallery.length + '"' + (i === 0 ? ' aria-current="true"' : "") + '><img src="' + g.src + '" alt="" loading="lazy" decoding="async" width="320" height="180"></button>';
@@ -110,7 +111,10 @@
       '<div class="g6-progress" aria-hidden="true"><span></span></div>' +
 
       '<section class="g6-hero" id="g6-top" aria-labelledby="g6-title">' +
-        '<div class="g6-hero-media" data-g6-parallax aria-hidden="true"><img src="' + IMG.hero.src + '" alt="" fetchpriority="high" decoding="async" width="1800" height="1125"></div>' +
+        '<div class="g6-hero-media" data-g6-parallax aria-hidden="true"><picture>' +
+            // mobile: recorte vertical dos personagens (2300x3200 da arte 5120x3200 do repositório), 3 densidades
+            '<source media="(max-width: 767px)" type="image/webp" sizes="100vw" srcset="assets/gta-vi-hero-m-390.webp 390w, assets/gta-vi-hero-m-780.webp 780w, assets/gta-vi-hero-m-1170.webp 1170w">' +
+            '<img src="' + IMG.hero.src + '" alt="" fetchpriority="high" decoding="async" width="1800" height="1125"></picture></div>' +
         '<div class="g6-hero-inner">' +
           '<span class="g6-tag"><i></i>Pré-lançamento digital · PS5</span>' +
           '<h1 class="g6-title" id="g6-title" data-g6-title>GTA VI</h1>' +

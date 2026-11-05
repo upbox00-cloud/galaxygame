@@ -137,3 +137,23 @@ html.g6-vt .g6-bars { display: none !important; }
   body.landing-gta6-on .sales-chat { bottom: calc(14px + env(safe-area-inset-bottom)); right: max(12px, env(safe-area-inset-right)); }
 }
 body.g6-chat-away .sales-chat-toggle { opacity: 0; transform: translateY(12px) scale(.9); visibility: hidden; pointer-events: none; transition: opacity .25s ease, transform .25s ease, visibility 0s .25s; }
+
+/* =====================================================================
+   HERO MOBILE PREMIUM (só .g6-mobile; desktop intocado)
+   Recorte vertical nítido dos personagens na metade de cima; a metade de baixo é fundo escuro para o texto.
+   Sem rosa/blur por cima da arte, sem sol listrado nem camadas que competem com os personagens.
+   ===================================================================== */
+.g6-hero-media picture { display: contents; }
+.gta6-landing.g6-mobile .g6-hero > .g6-hero-media { inset: 0 0 auto 0; height: min(66vh, 640px); height: min(66svh, 640px); }
+.gta6-landing.g6-mobile .g6-hero > .g6-hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 8%; }
+.gta6-landing.g6-mobile .g6-hero::before { background:
+  linear-gradient(180deg, rgba(7, 2, 13, .55) 0, rgba(7, 2, 13, 0) 20%),
+  linear-gradient(0deg, #07020d 0, #07020d 30%, rgba(7, 2, 13, .88) 40%, rgba(7, 2, 13, .45) 52%, rgba(7, 2, 13, 0) 66%); }
+.gta6-landing.g6-mobile .g6-hero .g6-fx,
+.gta6-landing.g6-mobile .g6-hero .g6-sun3,
+.gta6-landing.g6-mobile .g6-hero .g6-l-far,
+.gta6-landing.g6-mobile .g6-hero .g6-l-mid { display: none; }
+.gta6-landing.g6-mobile .g6-hero .g6-haze { opacity: .3; animation: none; }
+.gta6-landing.g6-mobile .g6-hero .g6-l-fg { height: clamp(56px, 14vw, 84px); }
+.gta6-landing.g6-mobile .g6-hero .g6-title { filter: drop-shadow(0 3px 10px rgba(7, 2, 13, .75)); }
+.gta6-landing.g6-mobile .g6-hero .g6-sub { text-shadow: 0 2px 12px rgba(7, 2, 13, .9); }
