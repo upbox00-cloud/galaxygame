@@ -40,7 +40,20 @@
     }
 
     /* ---- Scroll narrativo (sem scroll-jacking; estados finais = estados normais; nada fica escondido) ---- */
-    gctx = gsap.context(function () {
+    var mobile = !!ctx.mobile;
+
+    /* Mobile: o Chat IA sai da frente dos botões de compra enquanto estes estão no ecrã */
+    if (mobile && "IntersectionObserver" in window) {
+      var seen = new Set();
+      var cio = new IntersectionObserver(function (en) {
+        en.forEach(function (e) { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+        document.body.classList.toggle("g6-chat-away", seen.size > 0);
+      }, { rootMargin: "0px" });
+      root.querySelectorAll(".g6-pricebox .g6-actions, .g6-final .g6-actions").forEach(function (a) { cio.observe(a); });
+      cleanup.push(function () { cio.disconnect(); document.body.classList.remove("g6-chat-away"); });
+    }
+
+    if (!mobile) gctx = gsap.context(function () {
       var scrub = function (trigger, start, end, q) { return { trigger: trigger, start: start, end: end, scrub: q === undefined ? 0.6 : q }; };
 
       /* 1) Entrada em Vice City: sol que sobe, skyline em perspetiva, horizontes a velocidades diferentes */

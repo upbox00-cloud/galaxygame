@@ -76,6 +76,16 @@
     return !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
   }
 
+  // Perfil mobile (<= 767 px ou ecrã tátil pequeno): scroll nativo, sem Lenis, sem Three.js, sem scrubs pesados.
+  // ?profile=mobile|desktop força o perfil (testes).
+  function isMobileProfile() {
+    var p = params().get("profile");
+    if (p === "mobile") return true;
+    if (p === "desktop") return false;
+    var mm = function (s) { return !!(window.matchMedia && window.matchMedia(s).matches); };
+    return mm("(max-width: 767px)") || (mm("(pointer: coarse)") && Math.min(screen.width || 9999, screen.height || 9999) <= 767);
+  }
+
   function template(product) {
     var withBars = landingVersion() >= 4 && !isLiteDevice();
     var price = formatEUR(product.precoVendaEUR);
@@ -309,12 +319,14 @@
     });
   }
 
-  function animate(root, lite) {
+  function animate(root, lite, mobile) {
     var gsap = window.gsap, ScrollTrigger = window.ScrollTrigger;
     gsap.registerPlugin(ScrollTrigger);
+    // a barra do Safari a subir/descer não pode forçar recálculos nem saltos
+    if (mobile) ScrollTrigger.config({ ignoreMobileResize: true });
     var lenis = null;
 
-    if (!lite && window.Lenis) {
+    if (!lite && !mobile && window.Lenis) {
       lenis = new window.Lenis({ lerp: 0.1, smoothWheel: true });
       lenis.on("scroll", ScrollTrigger.update);
       gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
@@ -343,7 +355,7 @@
     // Hero: a entrada cinematográfica (imagem, tag, título, subtítulo, preço, CTAs) é feita em CSS
     // desde a 1.ª pintura (landing-gta6.css), sem depender do GSAP: o conteúdo nunca espera pelas bibliotecas.
 
-    if (!lite) {
+    if (!lite && !mobile) {
       root.querySelectorAll("[data-g6-parallax]").forEach(function (el) {
         gsap.to(el, { yPercent: 8, ease: "none", scrollTrigger: { trigger: el.parentElement, start: "top bottom", end: "bottom top", scrub: true } });
       });
@@ -356,7 +368,7 @@
     ScrollTrigger.batch(root.querySelectorAll("[data-g6-reveal]"), {
       start: "top 88%", once: true,
       onEnter: function (batch) {
-        gsap.fromTo(batch, { y: lite ? 0 : 36, opacity: 0 }, { y: 0, opacity: 1, duration: lite ? 0.3 : 0.9, ease: "power3.out", stagger: 0.12, overwrite: "auto", clearProps: "transform,opacity" });
+        gsap.fromTo(batch, { y: lite ? 0 : mobile ? 18 : 36, opacity: 0 }, { y: 0, opacity: 1, duration: lite ? 0.3 : mobile ? 0.55 : 0.9, ease: "power3.out", stagger: mobile ? 0.07 : 0.12, overwrite: "auto", clearProps: "transform,opacity" });
       }
     });
     // evita flash: oculta o que ainda não entrou (só depois de o gsap estar pronto)
@@ -418,11 +430,12 @@
     if (!main) return;
 
     var lite = isLiteDevice();
+    var mobile = isMobileProfile();
     var ver = landingVersion();
     var root = document.createElement("div");
     var vclasses = "";
     if (!lite) for (var vi = 2; vi <= ver; vi++) { vclasses += " g6-v" + vi; ensureCss(vi); }
-    root.className = "gta6-landing" + (lite ? " g6-lite" : "") + vclasses;
+    root.className = "gta6-landing" + (lite ? " g6-lite" : "") + (mobile ? " g6-mobile" : "") + vclasses;
     try {
       root.innerHTML = template(product);
       root.__g6state = { price: formatEUR(product.precoVendaEUR), release: product.released ? "Lançamento previsto: " + formatDate(product.released) : "Data de lançamento a confirmar" };
@@ -440,14 +453,14 @@
 
     var chain = Promise.resolve();
     VENDOR.forEach(function (src) {
-      if (lite && /lenis/.test(src)) return;
+      if ((lite || mobile) && /lenis/.test(src)) return;
       chain = chain.then(function () { return loadScript(src); });
     });
     chain.then(function () {
-      var lenis = animate(root, lite);
+      var lenis = animate(root, lite, mobile);
       if (!lite && landingVersion() >= 2) {
         var ver = landingVersion();
-        var ctx = { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis, v3: ver >= 3 };
+        var ctx = { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis, v3: ver >= 3, mobile: mobile };
         return loadScript("landing-gta6-v2.js?v=20261105-22").then(function () {
           window.GalaxyLandingGta6V2.enhance(root, ctx);
           if (ver < 3) return null;

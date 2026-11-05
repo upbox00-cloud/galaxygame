@@ -33,9 +33,9 @@ html.g6-vt .g6-bars { display: none !important; }
 .gta6-landing.g6-v6 .g6-stage img.on {
   opacity: 1; z-index: 2; clip-path: none; filter: none;
   transform: translate3d(calc(var(--px, 0) * -16px + var(--drag, 0px)), calc(var(--py, 0) * -10px), 0) rotateY(calc(var(--px, 0) * 1.6deg)) scale(calc(1.02 + var(--zoom, 0)));
-  animation: g6-drift 14s ease-in-out infinite alternate;
+  animation: g6-camdrift 14s ease-in-out infinite alternate;
 }
-@keyframes g6-drift { from { scale: 1; translate: 0 0; } to { scale: 1.045; translate: -.7% -.5%; } }
+@keyframes g6-camdrift { from { scale: 1; translate: 0 0; } to { scale: 1.045; translate: -.7% -.5%; } }
 .gta6-landing.g6-v6 .g6-stage.g6-still img.on { animation-play-state: paused; }
 .gta6-landing.g6-v6 .g6-stage.dragging img { transition: none; }
 .gta6-landing.g6-v6 .g6-stage.dragging img.on { scale: .985; }
@@ -84,3 +84,56 @@ html.g6-vt .g6-bars { display: none !important; }
   .gta6-landing.g6-v6 .g6-stage img { transform: translate3d(calc(var(--dir) * 4%), 0, -220px) rotateY(calc(var(--dir) * -5deg)) scale(1.04); }
   .gta6-landing.g6-v6 .g6-stage img.leaving { transform: translate3d(calc(var(--dir) * -5%), 0, -300px) rotateY(calc(var(--dir) * 7deg)) scale(1.06); }
 }
+
+/* =====================================================================
+   PERFIL MOBILE (.g6-mobile, definido por landing-gta6.js: <= 767 px ou ecrã tátil pequeno)
+   Mantém a identidade (hero, camadas, barras, máscaras, brilho) sem as partes caras no iOS:
+   sem blur/blend animados, sem 3D na galeria, sem luz fixa de ecrã inteiro, sem animações contínuas.
+   ===================================================================== */
+/* Fundo 2D estático (os círculos desfocados + mix-blend animados custavam CPU/GPU sem ganho visual) */
+.gta6-landing.g6-mobile .g6-fx2d i { filter: none; mix-blend-mode: normal; animation: none; opacity: 1; }
+.gta6-landing.g6-mobile .g6-fx2d i:nth-child(1) { background: radial-gradient(closest-side, rgba(255, 46, 147, .42), transparent); }
+.gta6-landing.g6-mobile .g6-fx2d i:nth-child(2) { background: radial-gradient(closest-side, rgba(255, 138, 61, .34), transparent); }
+.gta6-landing.g6-mobile .g6-fx2d i:nth-child(3) { background: radial-gradient(closest-side, rgba(122, 44, 255, .4), transparent); }
+.gta6-landing.g6-mobile .g6-sun3 { mix-blend-mode: normal; will-change: auto; }
+.gta6-landing.g6-mobile .g6-hero::after { display: none; }
+.gta6-landing.g6-mobile .g6-light { display: none; }
+.gta6-landing.g6-mobile .g6-tag { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(18, 3, 31, .72); }
+.gta6-landing.g6-mobile .g6-btn-ghost { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(255, 255, 255, .13); }
+.gta6-landing.g6-mobile .g6-title { filter: drop-shadow(0 4px 0 rgba(59, 10, 94, .5)); }
+@media (prefers-reduced-motion: no-preference) {
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-title { animation: g6-in-title-m .8s .05s cubic-bezier(.2, .7, .2, 1) backwards; }
+}
+@keyframes g6-in-title-m { from { opacity: 0; transform: translateY(28px); } }
+
+/* Hero adaptado ao Safari: svh (estável com a barra), safe-area e botões com área de toque */
+.gta6-landing.g6-mobile .g6-hero { min-height: 100svh; padding-bottom: calc(84px + env(safe-area-inset-bottom)); padding-inline: max(16px, env(safe-area-inset-left)) max(16px, env(safe-area-inset-right)); }
+.gta6-landing.g6-mobile .g6-btn { min-height: 52px; }
+
+/* Ritmo vertical: sem os vazios de 150-200 px entre capítulos */
+.gta6-landing.g6-mobile .g6-section { padding-block: clamp(40px, 11vw, 64px); }
+.gta6-landing.g6-mobile .g6-pricebox { padding-block: clamp(44px, 12vw, 68px); }
+.gta6-landing.g6-mobile .g6-divider { height: clamp(32px, 9vw, 56px); }
+.gta6-landing.g6-mobile .g6-final { min-height: 60svh; padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+.gta6-landing.g6-mobile .g6-vice .g6-sun { opacity: .28; }
+.gta6-landing.g6-mobile .g6-h2 { overflow-wrap: anywhere; hyphens: manual; }
+
+/* Galeria no mobile: fusão suave + escala (sem perspetiva 3D nem camadas por imagem); swipe horizontal, scroll vertical livre */
+.gta6-landing.g6-mobile.g6-v6 .g6-stage { perspective: none; rotate: none; touch-action: pan-y; box-shadow: 0 14px 32px -18px rgba(255, 46, 147, .5); }
+.g6-mobile.g6-v6 .g6-gallery .g6-wrap { perspective: none; }
+.gta6-landing.g6-mobile.g6-v6 .g6-stage img { inset: 0; width: 100%; height: 100%; transform: scale(1.06); filter: none; transition: opacity .7s ease, transform 1.1s cubic-bezier(.16, 1, .3, 1); }
+.gta6-landing.g6-mobile.g6-v6 .g6-stage img.leaving { filter: none; transform: scale(1.1); }
+.gta6-landing.g6-mobile.g6-v6 .g6-stage img.on { transform: translate3d(var(--drag, 0px), 0, 0) scale(1.02); animation: none; transition: opacity .7s ease, transform .5s cubic-bezier(.16, 1, .3, 1); }
+.gta6-landing.g6-mobile.g6-v6 .g6-nav-btn { width: 44px; height: 44px; }
+
+/* Sombras e brilhos mais leves */
+.gta6-landing.g6-mobile .g6-btn-primary { box-shadow: 0 6px 18px rgba(255, 46, 147, .35); }
+.gta6-landing.g6-mobile .g6-plat.is-active { box-shadow: 0 10px 26px -14px rgba(255, 46, 147, .6), inset 0 0 0 1px rgba(255, 46, 147, .35); }
+.gta6-landing.g6-mobile .g6-pricebox::after { display: none; }
+.g6-mobile .g6-buyleft { translate: none; }
+
+/* Chat IA: respeita a safe-area e sai da frente dos botões de compra enquanto estes estão visíveis */
+@media (max-width: 767px) {
+  body.landing-gta6-on .sales-chat { bottom: calc(14px + env(safe-area-inset-bottom)); right: max(12px, env(safe-area-inset-right)); }
+}
+body.g6-chat-away .sales-chat-toggle { opacity: 0; transform: translateY(12px) scale(.9); visibility: hidden; pointer-events: none; transition: opacity .25s ease, transform .25s ease, visibility 0s .25s; }

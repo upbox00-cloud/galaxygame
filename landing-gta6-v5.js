@@ -95,27 +95,28 @@
     gctx = gsap.context(function () {
       /* Hero: empurrão lento de câmara depois da entrada (uma só vez) */
       var heroImg = root.querySelector(".g6-hero-media img");
-      if (heroImg) gsap.to(heroImg, { scale: 1.07, duration: 16, ease: "none", delay: 2.2 });
+      if (heroImg && !ctx.mobile) gsap.to(heroImg, { scale: 1.07, duration: 16, ease: "none", delay: 2.2 });
 
       /* Experiência: linha que se desenha ao longo dos passos */
       var steps = root.querySelector(".g6-steps");
-      if (steps) gsap.fromTo(steps, { "--line": 0 }, { "--line": 1, ease: "none", scrollTrigger: { trigger: steps, start: "top 80%", end: "bottom 55%", scrub: 0.5 } });
+      if (steps && !ctx.mobile) gsap.fromTo(steps, { "--line": 0 }, { "--line": 1, ease: "none", scrollTrigger: { trigger: steps, start: "top 80%", end: "bottom 55%", scrub: 0.5 } });
 
       /* Galeria: zoom cinematográfico controlado pelo scroll */
       var stage = root.querySelector(".g6-stage");
-      if (stage) {
+      if (stage && !ctx.mobile) {
         ScrollTrigger.create({ trigger: stage, start: "top bottom", end: "bottom top", scrub: true,
           onUpdate: function (s) { stage.style.setProperty("--zoom", (s.progress * 0.07).toFixed(4)); } });
       }
 
       /* Plataformas: cartões entram com revelação de arte */
-      artEls.forEach(function (a, i) {
+      if (ctx.mobile) artEls.forEach(function (a) { a.style.clipPath = "none"; });
+      else artEls.forEach(function (a, i) {
         gsap.fromTo(a, { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 0% 0)", duration: 1.1, ease: "power4.out", delay: i * 0.12,
           scrollTrigger: { trigger: a, start: "top 90%", once: true } });
       });
 
       /* Final: a imagem cresce e revela o capítulo (máscara + escala sincronizadas) */
-      if (finalSec) {
+      if (finalSec && !ctx.mobile) {
         var media = finalSec.querySelector(".g6-hero-media");
         var fimg = finalSec.querySelector(".g6-hero-media img");
         if (media) gsap.fromTo(media, { clipPath: "inset(14% 8% 14% 8% round 28px)" }, { clipPath: "inset(0% 0% 0% 0% round 0px)", ease: "none",

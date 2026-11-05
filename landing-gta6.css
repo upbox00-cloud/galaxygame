@@ -175,6 +175,6 @@ html.g6-early body .mobile-buy-bar { display: none !important; }
 .g6-bars i { position: absolute; left: 0; right: 0; height: 14vh; background: #07020d; will-change: transform; animation: g6-bar .8s .05s cubic-bezier(.7, 0, .3, 1) forwards; }
 .g6-bars i:first-child { top: 0; transform-origin: 50% 0; }
 .g6-bars i:last-child { bottom: 0; transform-origin: 50% 100%; }
-@keyframes g6-bar { to { transform: scaleY(0); } }
+@keyframes g6-bar { to { transform: scaleY(0); visibility: hidden; } }
 @media (max-width: 820px) { .g6-bars i { height: 9vh; } }
 @media (prefers-reduced-motion: reduce) { .g6-bars { display: none; } }

@@ -135,10 +135,15 @@
       gsap.from(sun, { yPercent: 40, opacity: 0, duration: 2.4, ease: "power3.out", delay: 0.1 });
 
       var st = { trigger: hero, start: "top top", end: "bottom top", scrub: true };
-      gsap.to(fg, { scale: 1.45, yPercent: 8, transformOrigin: "50% 100%", ease: "none", scrollTrigger: st });
-      gsap.to(mid, { scale: 1.22, transformOrigin: "50% 100%", ease: "none", scrollTrigger: st });
-      gsap.to(far, { scale: 1.1, transformOrigin: "50% 100%", ease: "none", scrollTrigger: st });
-      gsap.to(sun, { yPercent: -18, scale: 1.12, ease: "none", scrollTrigger: st });
+      if (!ctx.mobile) {
+        gsap.to(fg, { scale: 1.45, yPercent: 8, transformOrigin: "50% 100%", ease: "none", scrollTrigger: st });
+        gsap.to(mid, { scale: 1.22, transformOrigin: "50% 100%", ease: "none", scrollTrigger: st });
+        gsap.to(far, { scale: 1.1, transformOrigin: "50% 100%", ease: "none", scrollTrigger: st });
+        gsap.to(sun, { yPercent: -18, scale: 1.12, ease: "none", scrollTrigger: st });
+      } else {
+        // mobile: só o primeiro plano se afasta ligeiramente (transform apenas)
+        gsap.to(fg, { yPercent: 10, ease: "none", scrollTrigger: st });
+      }
 
       if (fine) {
         var q = [[far, 6], [mid, 14], [fg, 30], [sun, -4]].map(function (p) {
@@ -162,20 +167,20 @@
         "g6-faq": ["rgba(122,44,255,.20)", "rgba(25,181,214,.14)", "75%", "20%"],
         "g6-final": ["rgba(255,138,61,.32)", "rgba(255,46,147,.26)", "50%", "30%"]
       };
-      gsap.set(light, { "--lc1": "rgba(255,46,147,0.0)", "--lc2": "rgba(255,138,61,0.0)", "--lx": "50%", "--ly": "20%" });
+      if (!ctx.mobile) gsap.set(light, { "--lc1": "rgba(255,46,147,0.0)", "--lc2": "rgba(255,138,61,0.0)", "--lx": "50%", "--ly": "20%" });
       function grade(key) {
         var p = PAL[key]; if (!p) return;
         gsap.to(light, { "--lc1": p[0], "--lc2": p[1], "--lx": p[2], "--ly": p[3], duration: 1.4, ease: "power2.inOut", overwrite: "auto" });
       }
-      Object.keys(PAL).forEach(function (key) {
+      if (!ctx.mobile) Object.keys(PAL).forEach(function (key) {
         var sec = root.querySelector("." + key);
         if (!sec) return;
         ScrollTrigger.create({ trigger: sec, start: "top 55%", end: "bottom 45%", onEnter: function () { grade(key); }, onEnterBack: function () { grade(key); } });
       });
-      ScrollTrigger.create({ trigger: hero, start: "top top", end: "bottom 60%", onEnterBack: function () { gsap.to(light, { "--lc1": "rgba(255,46,147,0)", "--lc2": "rgba(255,138,61,0)", duration: 1, overwrite: "auto" }); } });
+      if (!ctx.mobile) ScrollTrigger.create({ trigger: hero, start: "top top", end: "bottom 60%", onEnterBack: function () { gsap.to(light, { "--lc1": "rgba(255,46,147,0)", "--lc2": "rgba(255,138,61,0)", duration: 1, overwrite: "auto" }); } });
 
       /* --- Figura com máscara + zoom controlado pelo scroll --- */
-      if (fig) {
+      if (fig && !ctx.mobile) {
         var img = fig.querySelector("img");
         gsap.fromTo(fig, { clipPath: "inset(22% 22% 22% 22% round 26px)" },
           { clipPath: "inset(0% 0% 0% 0% round 26px)", ease: "none", scrollTrigger: { trigger: fig, start: "top 92%", end: "top 38%", scrub: 0.6 } });
@@ -186,10 +191,12 @@
       var left = root.querySelector(".g6-buyleft"), price = root.querySelector(".g6-pricebox .g6-bigprice"), facts = root.querySelectorAll(".g6-facts li"), cta = root.querySelector(".g6-pricebox .g6-actions");
       if (left && price) {
         var tl = gsap.timeline({ paused: true, defaults: { ease: "power3.out" } });
-        tl.from(left, { rotationY: -28, x: -80, opacity: 0, duration: 1.2, transformPerspective: 1000, clearProps: "transform,opacity" }, 0)
+        if (ctx.mobile) tl.from([left, right0(root)], { y: 22, opacity: 0, duration: 0.6, stagger: 0.08, clearProps: "transform,opacity" }, 0);
+        else tl.from(left, { rotationY: -28, x: -80, opacity: 0, duration: 1.2, transformPerspective: 1000, clearProps: "transform,opacity" }, 0)
           .fromTo(price, { clipPath: "inset(0 0 100% 0)", y: 50, scale: 1.08 }, { clipPath: "inset(-5% 0 -15% 0)", y: 0, scale: 1, duration: 1.1, clearProps: "clipPath" }, 0.25)
           .from(facts, { y: 20, opacity: 0, duration: 0.6, stagger: 0.1, clearProps: "transform,opacity" }, 0.7)
           .from(cta, { y: 24, opacity: 0, duration: 0.7, clearProps: "transform,opacity" }, 0.95);
+        if (ctx.mobile) tl.timeScale(1);
         ScrollTrigger.create({ trigger: left, start: "top 85%", once: true, onEnter: function () { tl.play(); } });
       }
     }, root);
@@ -230,6 +237,8 @@
     root.__g6v3 = { dispose: dispose };
     return root.__g6v3;
   }
+
+  function right0(root) { return root.querySelector(".g6-buyright") || root.querySelector(".g6-pricebox .g6-bigprice"); }
 
   /* ---------- Compra: recomposição do bloco existente (preserva botões e listeners) ---------- */
   function buildBuy(root, cleanup) {

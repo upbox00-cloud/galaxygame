@@ -213,6 +213,7 @@
   function enhance(root, ctx) {
     var gsap = ctx.gsap, ScrollTrigger = ctx.ScrollTrigger;
     var mobile = (window.matchMedia && window.matchMedia("(max-width: 820px), (pointer: coarse)").matches);
+    var lean = !!ctx.mobile; // perfil mobile: sem Three.js, sem filtros animados, sem scrubs pesados
     var forceGL = qs("gl") === "force";
     var fine = window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     var cleanup = [];
@@ -234,7 +235,7 @@
     function show2D() { root.classList.add("g6-v2-2d"); }
 
     // 3D (opcional)
-    var wantGL = !forceGL ? (hasWebGL() && !(navigator.deviceMemory && navigator.deviceMemory < 4)) : hasWebGL();
+    var wantGL = lean ? false : (!forceGL ? (hasWebGL() && !(navigator.deviceMemory && navigator.deviceMemory < 4)) : hasWebGL());
     var glReady = Promise.resolve();
     if (wantGL) {
       glReady = loadScript(THREE_SRC).then(function () {
@@ -258,22 +259,30 @@
         trigger: hero, start: "top top", end: "bottom top", scrub: true,
         onUpdate: function (self) { if (scene) scene.state.prog = self.progress; }
       });
-      gsap.to(root.querySelector(".g6-hero-inner"), { y: -70, opacity: 0.15, filter: "blur(6px)", ease: "none",
-        scrollTrigger: { trigger: hero, start: "top top", end: "bottom 30%", scrub: true } });
-      gsap.to(root.querySelector(".g6-hero .g6-hero-media"), { scale: 1.14, ease: "none",
-        scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: true } });
-      gsap.to(fx, { opacity: 0, ease: "none",
-        scrollTrigger: { trigger: hero, start: "40% top", end: "bottom top", scrub: true } });
+      if (!lean) {
+        gsap.to(root.querySelector(".g6-hero-inner"), { y: -70, opacity: 0.15, filter: "blur(6px)", ease: "none",
+          scrollTrigger: { trigger: hero, start: "top top", end: "bottom 30%", scrub: true } });
+        gsap.to(root.querySelector(".g6-hero .g6-hero-media"), { scale: 1.14, ease: "none",
+          scrollTrigger: { trigger: hero, start: "top top", end: "bottom top", scrub: true } });
+        gsap.to(fx, { opacity: 0, ease: "none",
+          scrollTrigger: { trigger: hero, start: "40% top", end: "bottom top", scrub: true } });
+      }
 
       // Títulos com máscara (uma vez, ao entrar)
       root.querySelectorAll(".g6-h2").forEach(function (h) {
+        if (lean) {
+          // sem blur animado no mobile: só máscara, uma vez
+          gsap.fromTo(h, { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 -12% 0)", duration: 0.7, ease: "power3.out", clearProps: "clipPath",
+            scrollTrigger: { trigger: h, start: "top 90%", once: true } });
+          return;
+        }
         gsap.fromTo(h, { clipPath: "inset(0 0 100% 0)", filter: "blur(10px)" },
           { clipPath: "inset(0 0 -12% 0)", filter: "blur(0px)", duration: 1.1, ease: "power4.out", clearProps: "clipPath,filter",
             scrollTrigger: { trigger: h, start: "top 86%", once: true } });
       });
 
       // Grelhas de cards: entrada em profundidade sincronizada com o scroll (contentores, não os cards: o tilt fica livre)
-      root.querySelectorAll(".g6-stats, .g6-plat-grid, .g6-steps").forEach(function (grid) {
+      if (!lean) root.querySelectorAll(".g6-stats, .g6-plat-grid, .g6-steps").forEach(function (grid) {
         gsap.fromTo(grid, { rotationX: 20, z: -140, transformOrigin: "50% 100%", transformPerspective: 900 },
           { rotationX: 0, z: 0, ease: "none", scrollTrigger: { trigger: grid, start: "top 98%", end: "top 55%", scrub: 0.6 } });
       });
@@ -286,13 +295,13 @@
         stage.parentNode.insertBefore(wrap, stage);
         wrap.appendChild(stage);
         cleanup.push(function () { if (wrap.parentNode) { wrap.parentNode.insertBefore(stage, wrap); wrap.parentNode.removeChild(wrap); } });
-        gsap.fromTo(wrap, { scale: 0.86, rotationX: 8, transformPerspective: 1100 },
+        if (!lean) gsap.fromTo(wrap, { scale: 0.86, rotationX: 8, transformPerspective: 1100 },
           { scale: 1, rotationX: 0, ease: "none", scrollTrigger: { trigger: wrap, start: "top 95%", end: "top 40%", scrub: 0.6 } });
         bindGalleryDepth(stage, fine, cleanup);
       }
 
       // Cartão de produto 3D na área de compra
-      buildBuyCard(root, gsap, fine, cleanup);
+      buildBuyCard(root, gsap, fine, cleanup, lean);
 
       // Luz dinâmica nos botões
       if (fine) {
@@ -350,7 +359,7 @@
     cleanup.push(function () { stage.removeEventListener("pointerdown", down); stage.removeEventListener("pointerup", up); });
   }
 
-  function buildBuyCard(root, gsap, fine, cleanup) {
+  function buildBuyCard(root, gsap, fine, cleanup, lean) {
     var box = root.querySelector(".g6-pricebox .g6-wrap");
     var price = root.querySelector(".g6-pricebox .g6-bigprice");
     if (!box || !price || root.querySelector(".g6-buycard")) return;
@@ -365,7 +374,9 @@
     box.insertBefore(holder, price);
     var card = holder.firstChild;
     cleanup.push(function () { if (holder.parentNode) holder.parentNode.removeChild(holder); });
-    gsap.from(holder, { y: 60, scale: 0.9, opacity: 0, filter: "blur(10px)", duration: 1.1, ease: "power3.out", clearProps: "filter,opacity,transform",
+    if (lean) gsap.from(holder, { y: 24, opacity: 0, duration: 0.6, ease: "power3.out", clearProps: "opacity,transform",
+      scrollTrigger: { trigger: holder, start: "top 92%", once: true } });
+    else gsap.from(holder, { y: 60, scale: 0.9, opacity: 0, filter: "blur(10px)", duration: 1.1, ease: "power3.out", clearProps: "filter,opacity,transform",
       scrollTrigger: { trigger: holder, start: "top 88%", once: true } });
     if (!fine) return;
     var mv = function (e) {
