@@ -28,7 +28,7 @@
     return params().get("landing") !== "0";
   }
 
-  // 5 = V5 (polimento); 4 = V4 (direção de arte); 3 = V3 (Vice City); 2 = V2 (3D + scroll cinematográfico); 1 = V1. URL: ?landing=v1 | v2 | v3
+  // 6 = V6 (interações premium); 5 = V5 (polimento); 4 = V4 (direção de arte); 3 = V3 (Vice City); 2 = V2 (3D + scroll cinematográfico); 1 = V1. URL: ?landing=v1 | v2 | v3
   function landingVersion() {
     var q = params().get("landing");
     if (q === "v1") return 1;
@@ -36,8 +36,9 @@
     if (q === "v3") return 3;
     if (q === "v4") return 4;
     if (q === "v5") return 5;
+    if (q === "v6") return 6;
     var n = Number(cfg.version);
-    return n >= 5 ? 5 : n >= 4 ? 4 : n >= 3 ? 3 : n >= 2 ? 2 : 1;
+    return n >= 6 ? 6 : n >= 5 ? 5 : n >= 4 ? 4 : n >= 3 ? 3 : n >= 2 ? 2 : 1;
   }
 
   function formatEUR(value) {
@@ -380,7 +381,7 @@
     return lenis;
   }
 
-  var CSSV = "20261105-21";
+  var CSSV = "20261105-22";
   function ensureCss(n) {
     if (document.querySelector('link[data-g6css="v' + n + '"]')) return;
     var l = document.createElement("link");
@@ -390,7 +391,7 @@
 
   // Volta ao visual V1 (estático, completo e funcional) se a cadeia de efeitos falhar.
   function degrade(root) {
-    for (var n = 2; n <= 5; n++) {
+    for (var n = 2; n <= 6; n++) {
       var inst = root["__g6v" + n];
       if (inst && inst.dispose) { try { inst.dispose(); } catch (e) { /* ignora */ } }
       root.classList.remove("g6-v" + n);
@@ -447,16 +448,20 @@
       if (!lite && landingVersion() >= 2) {
         var ver = landingVersion();
         var ctx = { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis, v3: ver >= 3 };
-        return loadScript("landing-gta6-v2.js?v=20261105-21").then(function () {
+        return loadScript("landing-gta6-v2.js?v=20261105-22").then(function () {
           window.GalaxyLandingGta6V2.enhance(root, ctx);
           if (ver < 3) return null;
-          return loadScript("landing-gta6-v3.js?v=20261105-21").then(function () {
+          return loadScript("landing-gta6-v3.js?v=20261105-22").then(function () {
             window.GalaxyLandingGta6V3.enhance(root, ctx);
             if (ver < 4) return null;
-            return loadScript("landing-gta6-v4.js?v=20261105-21").then(function () {
+            return loadScript("landing-gta6-v4.js?v=20261105-22").then(function () {
               window.GalaxyLandingGta6V4.enhance(root, ctx);
               if (ver < 5) return null;
-              return loadScript("landing-gta6-v5.js?v=20261105-21").then(function () { window.GalaxyLandingGta6V5.enhance(root, ctx); });
+              return loadScript("landing-gta6-v5.js?v=20261105-22").then(function () {
+                window.GalaxyLandingGta6V5.enhance(root, ctx);
+                if (ver < 6) return null;
+                return loadScript("landing-gta6-v6.js?v=20261105-22").then(function () { window.GalaxyLandingGta6V6.enhance(root, ctx); });
+              });
             });
           });
         });

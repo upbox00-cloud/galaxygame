@@ -1,0 +1,86 @@
+/* Landing GTA VI — V6 (experiência interativa). Só atua com .gta6-landing.g6-v6. Sobrepõe a V5.
+   Regras: transform/opacity/propriedades individuais (translate/rotate/scale); sem will-change permanente. */
+
+/* ===== 1. Transição catálogo -> landing (documento de destino) ===== */
+/* o opt-in (@view-transition) é injetado como <style> inline por landing-gta6.early.js */
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .5s; }
+::view-transition-group(gta6-hero) { animation-duration: 1s; animation-timing-function: cubic-bezier(.16, 1, .3, 1); }
+::view-transition-old(gta6-hero), ::view-transition-new(gta6-hero) { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: normal; animation-duration: 1s; animation-fill-mode: both; }
+::view-transition-old(gta6-hero) { animation-name: g6-vt-out; }
+::view-transition-new(gta6-hero) { animation-name: g6-vt-in; }
+/* a capa do catálogo fica opaca por baixo: nunca há um instante escuro/vazio entre as duas imagens */
+@keyframes g6-vt-out { from { filter: brightness(1) saturate(1); } to { filter: brightness(1.45) saturate(1.25); } }
+@keyframes g6-vt-in { 0% { opacity: 0; filter: brightness(1.7) saturate(1.2); } 25% { opacity: 0; } 100% { opacity: 1; filter: none; } }
+/* durante a transição o hero não tem entrada própria (evita um segundo flash) */
+html.g6-vt .g6-hero-media img { animation: none !important; }
+html.g6-vt .g6-bars { display: none !important; }
+
+/* ===== 2. Galeria 3D em profundidade (CSS 3D, sem WebGL) ===== */
+.gta6-landing.g6-v6 .g6-stage { --dir: 1; perspective: 1500px; perspective-origin: 50% 42%; overflow: hidden; isolation: isolate;
+  box-shadow: 0 40px 100px -40px rgba(255, 46, 147, calc(.38 + var(--glow, 0) * .35)); }
+.gta6-landing.g6-v6 .g6-stage img {
+  inset: -4%; width: 108%; height: 108%; clip-path: none; opacity: 0; z-index: 0;
+  transform: translate3d(calc(var(--dir) * 5%), 0, -340px) rotateY(calc(var(--dir) * -7deg)) scale(1.04);
+  filter: brightness(.65) saturate(.9);
+  transition: opacity .9s ease, transform 1.6s cubic-bezier(.16, 1, .3, 1), filter 1.2s ease;
+}
+/* a imagem que sai afasta-se em profundidade e fica opaca até a nova estar totalmente visível */
+.gta6-landing.g6-v6 .g6-stage img.leaving {
+  opacity: 1; z-index: 1; clip-path: none; filter: brightness(.4) saturate(.8);
+  transform: translate3d(calc(var(--dir) * -6%), 0, -460px) rotateY(calc(var(--dir) * 9deg)) scale(1.08);
+}
+/* a nova aproxima-se, com leve movimento de câmara (cursor + arrasto) */
+.gta6-landing.g6-v6 .g6-stage img.on {
+  opacity: 1; z-index: 2; clip-path: none; filter: none;
+  transform: translate3d(calc(var(--px, 0) * -16px + var(--drag, 0px)), calc(var(--py, 0) * -10px), 0) rotateY(calc(var(--px, 0) * 1.6deg)) scale(calc(1.02 + var(--zoom, 0)));
+  animation: g6-drift 14s ease-in-out infinite alternate;
+}
+@keyframes g6-drift { from { scale: 1; translate: 0 0; } to { scale: 1.045; translate: -.7% -.5%; } }
+.gta6-landing.g6-v6 .g6-stage.g6-still img.on { animation-play-state: paused; }
+.gta6-landing.g6-v6 .g6-stage.dragging img { transition: none; }
+.gta6-landing.g6-v6 .g6-stage.dragging img.on { scale: .985; }
+.gta6-landing.g6-v6 .g6-stage img.on { transition: opacity .9s ease, transform 1.6s cubic-bezier(.16, 1, .3, 1), filter 1.2s ease, scale .5s ease; }
+/* reflexo discreto: faixa de luz que atravessa a imagem na troca */
+.g6-v6 .g6-stage::before { content: ""; position: absolute; inset: -20% -40%; z-index: 3; pointer-events: none; opacity: 0;
+  background: linear-gradient(105deg, transparent 42%, rgba(255, 255, 255, .17) 50%, transparent 58%); }
+.g6-v6 .g6-stage.g6-sheen::before { animation: g6-sheen 1.3s ease-out; }
+@keyframes g6-sheen { 0% { opacity: 0; transform: translateX(calc(var(--dir) * -55%)); } 30% { opacity: 1; } 100% { opacity: 0; transform: translateX(calc(var(--dir) * 55%)); } }
+/* inclinação de entrada controlada pelo scroll (propriedade individual: não colide com os transforms do GSAP) */
+.g6-v6 .g6-gallery .g6-wrap { perspective: 1600px; }
+.g6-v6 .g6-stage { rotate: 1 0 0 calc(var(--tilt, 0) * 1deg); transform-origin: 50% 100%; }
+/* miniaturas: estado ativo inequívoco */
+.g6-v6 .g6-thumb { position: relative; transition: opacity .3s, border-color .3s, transform .4s cubic-bezier(.2, .7, .2, 1), box-shadow .4s, filter .3s; }
+.g6-v6 .g6-thumb::after { content: ""; position: absolute; left: 10%; right: 10%; bottom: 0; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--g6-pink), var(--g6-orange)); transform: scaleX(0); transform-origin: 0 50%; transition: transform .5s cubic-bezier(.2, .7, .2, 1); }
+.g6-v6 .g6-thumb[aria-current="true"]::after { transform: scaleX(1); }
+
+/* ===== 3. Scroll narrativo ===== */
+.g6-v6 .g6-divider { translate: 0 var(--dy, 0px); }
+.g6-v6 .g6-buyleft { translate: 0 var(--by, 0px); }
+.g6-v6 .g6-pricebox::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0; opacity: calc(var(--bloom, 0) * .9);
+  background: radial-gradient(60% 55% at 50% 45%, rgba(255, 46, 147, .22), rgba(255, 138, 61, .1) 55%, transparent 75%); }
+.g6-v6 .g6-pricebox > .g6-wrap { position: relative; z-index: 1; }
+.g6-v6 .g6-bigprice.g6-glint { animation: g6-glint 1.4s ease-out 1; }
+@keyframes g6-glint { 0% { filter: drop-shadow(0 0 0 rgba(255, 138, 61, 0)); } 35% { filter: drop-shadow(0 0 26px rgba(255, 138, 61, .75)); } 100% { filter: drop-shadow(0 0 0 rgba(255, 138, 61, 0)); } }
+
+/* ===== 4. Microinterações (refinam, não duplicam V2/V4/V5) ===== */
+.g6-v6 .g6-btn-primary { background-size: 190% 100%; background-position: 0 50%; transition: transform .3s cubic-bezier(.2, .7, .2, 1), box-shadow .3s ease, background-position .7s cubic-bezier(.2, .7, .2, 1); }
+.g6-v6 .g6-btn-primary:hover, .g6-v6 .g6-btn-primary:focus-visible { background-position: 100% 50%; }
+.g6-v6 .g6-btn:active { transform: translate(var(--mx), var(--my)) scale(.97); transition-duration: .08s; }
+.g6-v6 .g6-btn:focus-visible, .g6-v6 .g6-nav-btn:focus-visible, .g6-v6 .g6-thumb:focus-visible, .g6-v6 summary:focus-visible, .g6-v6 .g6-plat-cta:focus-visible {
+  outline: 2px solid #fff; outline-offset: 3px; box-shadow: 0 0 0 7px rgba(25, 181, 214, .38); }
+.g6-v6 .g6-plat .g6-plat-art { transition: opacity .6s ease, transform 1.2s cubic-bezier(.16, 1, .3, 1), filter .6s ease; }
+.g6-v6 .g6-plat:not(.is-active) .g6-plat-art { filter: saturate(.65) brightness(.85); }
+.g6-v6 .g6-plat:hover .g6-plat-art, .g6-v6 .g6-plat:focus-within .g6-plat-art { filter: none; }
+.g6-v6 .g6-plat { transition: border-color .4s ease, box-shadow .5s ease, background .4s ease, translate .5s cubic-bezier(.2, .7, .2, 1); }
+.g6-v6 .g6-plat:hover { translate: 0 -4px; }
+.g6-v6 .g6-plat-cta::after { display: inline-block; transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.g6-v6 .g6-plat-cta:hover::after, .g6-v6 .g6-plat-cta:focus-visible::after { transform: translateX(5px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .gta6-landing.g6-v6 .g6-stage img.on { animation: none; }
+  .g6-v6 .g6-stage::before { display: none; }
+}
+@media (max-width: 700px) {
+  .gta6-landing.g6-v6 .g6-stage img { transform: translate3d(calc(var(--dir) * 4%), 0, -220px) rotateY(calc(var(--dir) * -5deg)) scale(1.04); }
+  .gta6-landing.g6-v6 .g6-stage img.leaving { transform: translate3d(calc(var(--dir) * -5%), 0, -300px) rotateY(calc(var(--dir) * 7deg)) scale(1.06); }
+}

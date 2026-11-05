@@ -221,7 +221,7 @@
 
     root.classList.add("g6-v2");
     var css = document.querySelector('link[data-g6css="v2"]');
-    if (!css) { css = document.createElement("link"); css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-21"; css.setAttribute("data-g6css", "v2"); document.head.appendChild(css); }
+    if (!css) { css = document.createElement("link"); css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-22"; css.setAttribute("data-g6css", "v2"); document.head.appendChild(css); }
     cleanup.push(function () { if (css.parentNode) css.parentNode.removeChild(css); });
     var hero0 = root.querySelector(".g6-hero");
     var fx = document.createElement("div");
