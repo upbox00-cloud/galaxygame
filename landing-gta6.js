@@ -28,12 +28,14 @@
     return params().get("landing") !== "0";
   }
 
-  // 2 = V2 (3D + scroll cinematográfico); 1 = V1. URL: ?landing=v1 | ?landing=v2
+  // 3 = V3 (Vice City); 2 = V2 (3D + scroll cinematográfico); 1 = V1. URL: ?landing=v1 | v2 | v3
   function landingVersion() {
     var q = params().get("landing");
     if (q === "v1") return 1;
     if (q === "v2") return 2;
-    return Number(cfg.version) >= 2 ? 2 : 1;
+    if (q === "v3") return 3;
+    var n = Number(cfg.version);
+    return n >= 3 ? 3 : n >= 2 ? 2 : 1;
   }
 
   function formatEUR(value) {
@@ -364,8 +366,12 @@
     chain.then(function () {
       var lenis = animate(root, lite);
       if (!lite && landingVersion() >= 2) {
-        return loadScript("landing-gta6-v2.js?v=20261105-6").then(function () {
-          window.GalaxyLandingGta6V2.enhance(root, { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis });
+        var ver = landingVersion();
+        var ctx = { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis, v3: ver >= 3 };
+        return loadScript("landing-gta6-v2.js?v=20261105-12").then(function () {
+          window.GalaxyLandingGta6V2.enhance(root, ctx);
+          if (ver < 3) return null;
+          return loadScript("landing-gta6-v3.js?v=20261105-12").then(function () { window.GalaxyLandingGta6V3.enhance(root, ctx); });
         });
       }
     }).catch(function (err) {

@@ -68,17 +68,20 @@
 
     var PINK = 0xff2e93, ORANGE = 0xff8a3d, PURPLE = 0x7a2cff, CYAN = 0x19b5d6;
 
-    // Grelha neon (chão), move-se em direção à câmara
-    var cell = 2, divisions = mobile ? 30 : 44, size = cell * divisions;
-    var grid = new THREE.GridHelper(size, divisions, PINK, PURPLE);
-    grid.material.transparent = true; grid.material.opacity = 0.36;
-    grid.position.set(0, -2.4, -size / 2 + 8);
-    scene.add(grid); track(grid.geometry); track(grid.material);
+    var v3 = !!opts.v3;
+    // Grelha neon (chão), move-se em direção à câmara (só V2; a V3 usa camadas SVG)
+    var cell = 2, divisions = mobile ? 30 : 44, size = cell * divisions, grid = null;
+    if (!v3) {
+      grid = new THREE.GridHelper(size, divisions, PINK, PURPLE);
+      grid.material.transparent = true; grid.material.opacity = 0.36;
+      grid.position.set(0, -2.4, -size / 2 + 8);
+      scene.add(grid); track(grid.geometry); track(grid.material);
+    }
 
     // Partículas
-    var count = mobile ? 320 : 900;
+    var count = v3 ? (mobile ? 180 : 420) : (mobile ? 320 : 900);
     var pos = new Float32Array(count * 3), col = new Float32Array(count * 3);
-    var palette = [new THREE.Color(PINK), new THREE.Color(ORANGE), new THREE.Color(PURPLE), new THREE.Color(CYAN)];
+    var palette = v3 ? [new THREE.Color(ORANGE), new THREE.Color(ORANGE), new THREE.Color(PINK), new THREE.Color(0xffd08a), new THREE.Color(CYAN)] : [new THREE.Color(PINK), new THREE.Color(ORANGE), new THREE.Color(PURPLE), new THREE.Color(CYAN)];
     for (var i = 0; i < count; i++) {
       pos[i * 3] = (Math.random() - 0.5) * 40;
       pos[i * 3 + 1] = Math.random() * 14 - 3;
@@ -90,7 +93,7 @@
     pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
     pGeo.setAttribute("color", new THREE.BufferAttribute(col, 3));
     var glowTex = track(glowTexture(THREE));
-    var pMat = track(new THREE.PointsMaterial({ size: mobile ? 0.28 : 0.22, map: glowTex, vertexColors: true, transparent: true, opacity: 0.9, depthWrite: false, blending: THREE.AdditiveBlending }));
+    var pMat = track(new THREE.PointsMaterial({ size: v3 ? (mobile ? 0.2 : 0.15) : (mobile ? 0.28 : 0.22), map: glowTex, vertexColors: true, transparent: true, opacity: 0.9, depthWrite: false, blending: THREE.AdditiveBlending }));
     var points = new THREE.Points(pGeo, pMat);
     scene.add(points);
 
@@ -104,9 +107,11 @@
       mesh.userData = { y0: y, speed: speed, ph: Math.random() * 6 };
       scene.add(mesh); shapes.push(mesh);
     }
-    addShape(new THREE.IcosahedronGeometry(1.6, 0), PINK, -8, 4.2, -14, 0.35);
-    addShape(new THREE.TorusGeometry(1.8, 0.05, 8, 64), ORANGE, 9, 5.2, -20, 0.25);
-    if (!mobile) addShape(new THREE.OctahedronGeometry(1.1, 0), CYAN, 5.5, 1.8, -9, 0.5);
+    if (!v3) {
+      addShape(new THREE.IcosahedronGeometry(1.6, 0), PINK, -8, 4.2, -14, 0.35);
+      addShape(new THREE.TorusGeometry(1.8, 0.05, 8, 64), ORANGE, 9, 5.2, -20, 0.25);
+      if (!mobile) addShape(new THREE.OctahedronGeometry(1.1, 0), CYAN, 5.5, 1.8, -9, 0.5);
+    }
 
     // Brilhos atmosféricos (sprites aditivos)
     function addGlow(color, x, y, z, s, o) {
@@ -116,6 +121,7 @@
     addGlow(PINK, 8, 5, -30, 38, 0.32);
     addGlow(ORANGE, -12, 0, -26, 30, 0.26);
     addGlow(PURPLE, 0, 8, -40, 52, 0.3);
+    if (v3) addGlow(ORANGE, 0, 1, -36, 64, 0.34); // halo do pôr do sol
 
     var st = { intro: 7, prog: 0, mx: 0, my: 0, tmx: 0, tmy: 0 };
     var running = false, raf = 0, last = 0, frames = 0, acc = 0, disposed = false, onDegrade = opts.onDegrade;
@@ -157,7 +163,12 @@
       camera.lookAt(st.mx * 0.4, 0.6, -20);
 
       // chão infinito
-      grid.position.z = (-size / 2 + 8) + ((t * 3.2) % cell);
+      if (grid) grid.position.z = (-size / 2 + 8) + ((t * 3.2) % cell);
+      if (v3) { // brasas a subir devagar
+        var pa = pGeo.attributes.position.array;
+        for (var q = 0; q < count; q++) { var yy = pa[q * 3 + 1] + dt * (0.18 + (q % 5) * 0.05); pa[q * 3 + 1] = yy > 11 ? -3 : yy; }
+        pGeo.attributes.position.needsUpdate = true;
+      }
       points.rotation.y = t * 0.012 + st.mx * 0.08;
       points.rotation.x = st.my * 0.04;
       points.position.y = Math.sin(t * 0.25) * 0.3;
@@ -210,7 +221,7 @@
 
     root.classList.add("g6-v2");
     var css = document.createElement("link");
-    css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-6";
+    css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-12";
     document.head.appendChild(css);
     cleanup.push(function () { if (css.parentNode) css.parentNode.removeChild(css); });
     var hero0 = root.querySelector(".g6-hero");
@@ -229,7 +240,7 @@
     if (wantGL) {
       glReady = loadScript(THREE_SRC).then(function () {
         scene = createScene(root, window.THREE, {
-          mobile: mobile, adaptive: !forceGL,
+          mobile: mobile, adaptive: !forceGL, v3: !!ctx.v3,
           onDegrade: function () { scene = null; root.classList.remove("g6-v2-gl"); show2D(); }
         });
         root.classList.add("g6-v2-gl");
