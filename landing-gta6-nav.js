@@ -6,7 +6,7 @@
  */
 (function () {
   "use strict";
-  if (!("PageRevealEvent" in window)) return;
+  var hasVT = "PageRevealEvent" in window; // sem isto, usa-se a alternativa (capa que expande) em landing-gta6.early.js
   if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
   // só com a landing ativa e na versão 6 (rollback por config: version 5 ou menos => sem transição, sem efeitos)
@@ -18,9 +18,11 @@
 
   function clear() { if (marked) { marked.style.viewTransitionName = ""; marked = null; } }
 
-  var st = document.createElement("style");
-  st.textContent = "@view-transition { navigation: auto; }";
-  document.head.appendChild(st);
+  if (hasVT) {
+    var st = document.createElement("style");
+    st.textContent = "@view-transition { navigation: auto; }";
+    document.head.appendChild(st);
+  }
 
   document.addEventListener("click", function (e) {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
@@ -29,8 +31,12 @@
     var img = a.querySelector("img");
     if (!img) return;
     clear();
-    img.style.viewTransitionName = "gta6-hero";
-    marked = img;
+    if (hasVT) { img.style.viewTransitionName = "gta6-hero"; marked = img; }
+    // para a alternativa em navegadores sem View Transitions: posição e imagem da capa
+    try {
+      var r = img.getBoundingClientRect(), cs = getComputedStyle(img.parentNode);
+      sessionStorage.setItem("g6nav", JSON.stringify({ t: Date.now(), src: img.currentSrc || img.src, x: Math.round(r.left), y: Math.round(r.top), w: Math.round(r.width), h: Math.round(r.height), r: parseFloat(cs.borderTopLeftRadius) || 0 }));
+    } catch (x) { /* ignora */ }
   }, true);
 
   // Qualquer outra saída desta página não anima.

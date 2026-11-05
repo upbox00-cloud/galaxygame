@@ -38,8 +38,41 @@
 
   // Transição catálogo -> landing (View Transitions entre documentos, só Chromium/Safari recentes).
   // O elemento partilhado é o hero inteiro; sem suporte ou com lite/reduced-motion não há transição e a navegação é normal.
+  // Alternativa para navegadores sem View Transitions entre documentos (Chrome/Firefox no iOS, Safari < 18.2, Firefox):
+  // a capa clicada no catálogo (guardada por landing-gta6-nav.js) expande por cima da landing e dissolve-se.
+  // Corre na página nova, depois da navegação: nunca atrasa nem bloqueia a abertura.
+  var navData = null;
+  try {
+    var raw = sessionStorage.getItem("g6nav"); sessionStorage.removeItem("g6nav");
+    var nd = raw && JSON.parse(raw);
+    if (nd && Date.now() - nd.t < 10000 && nd.src) navData = nd;
+  } catch (x) { /* sem sessionStorage: sem transição */ }
+  function playFallback(d) {
+    if (!d || !de.animate) return;
+    var vw = de.clientWidth, vh = window.innerHeight;
+    var ov = document.createElement("div");
+    ov.setAttribute("aria-hidden", "true");
+    ov.style.cssText = "position:fixed;inset:0;z-index:2147483000;background:#07020d;pointer-events:none;overflow:hidden";
+    var im = document.createElement("img");
+    im.alt = ""; im.src = d.src; im.decoding = "async";
+    im.style.cssText = "position:absolute;object-fit:cover;max-width:none;left:" + d.x + "px;top:" + d.y + "px;width:" + d.w + "px;height:" + d.h + "px;border-radius:" + (d.r || 0) + "px";
+    ov.appendChild(im); de.appendChild(ov);
+    var done = function () { if (ov.parentNode) ov.parentNode.removeChild(ov); };
+    setTimeout(done, 2600); // rede de segurança
+    try {
+      var ease = "cubic-bezier(.16,1,.3,1)";
+      im.animate([{ left: d.x + "px", top: d.y + "px", width: d.w + "px", height: d.h + "px", borderRadius: (d.r || 0) + "px", filter: "brightness(1)" },
+                  { left: "0px", top: "0px", width: vw + "px", height: vh + "px", borderRadius: "0px", filter: "brightness(1.25)" }],
+                 { duration: 850, easing: ease, fill: "forwards" });
+      var fade = ov.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 550, delay: 500, easing: "ease-out", fill: "forwards" });
+      fade.onfinish = done;
+    } catch (x) { done(); }
+  }
+  if (!lite && ver >= 6 && !("PageRevealEvent" in window)) playFallback(navData);
+
   window.addEventListener("pagereveal", function (e) {
-    var vt = e.viewTransition; if (!vt) return;
+    var vt = e.viewTransition;
+    if (!vt) { if (!lite && ver >= 6) playFallback(navData); return; }
     ["ready", "updateCallbackDone", "finished"].forEach(function (k) { if (vt[k] && vt[k].catch) vt[k].catch(function () { /* transição cancelada: a página fica normal */ }); });
     var hero = document.querySelector(".gta6-landing .g6-hero");
     if (lite || ver < 6 || !hero) { try { vt.skipTransition(); } catch (x) { /* ignora */ } return; }
