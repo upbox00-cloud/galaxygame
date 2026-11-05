@@ -76,9 +76,8 @@
     var cleanup = [], gctx;
 
     root.classList.add("g6-v3");
-    var css = document.createElement("link");
-    css.rel = "stylesheet"; css.href = "landing-gta6-v3.css?v=20261105-20";
-    document.head.appendChild(css);
+    var css = document.querySelector('link[data-g6css="v3"]');
+    if (!css) { css = document.createElement("link"); css.rel = "stylesheet"; css.href = "landing-gta6-v3.css?v=20261105-21"; css.setAttribute("data-g6css", "v3"); document.head.appendChild(css); }
     cleanup.push(function () { if (css.parentNode) css.parentNode.removeChild(css); });
 
     var hero = root.querySelector(".g6-hero");

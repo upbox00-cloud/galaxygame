@@ -11,18 +11,21 @@
     var cleanup = [], gctx;
 
     root.classList.add("g6-v4");
-    var css = document.createElement("link");
-    css.rel = "stylesheet"; css.href = "landing-gta6-v4.css?v=20261105-20";
-    document.head.appendChild(css);
+    var css = document.querySelector('link[data-g6css="v4"]');
+    if (!css) { css = document.createElement("link"); css.rel = "stylesheet"; css.href = "landing-gta6-v4.css?v=20261105-21"; css.setAttribute("data-g6css", "v4"); document.head.appendChild(css); }
     cleanup.push(function () { if (css.parentNode) css.parentNode.removeChild(css); });
 
     var hero = root.querySelector(".g6-hero");
 
     /* Barras de cinema que se retraem na abertura (entrada coordenada com o título) */
-    var bars = document.createElement("div");
-    bars.className = "g6-bars"; bars.setAttribute("aria-hidden", "true");
-    bars.innerHTML = "<i></i><i></i>";
-    hero.appendChild(bars);
+    // (as barras já vêm no HTML da landing e retraem-se por CSS; só se criam aqui se faltarem)
+    var bars = hero.querySelector(".g6-bars");
+    if (!bars) {
+      bars = document.createElement("div");
+      bars.className = "g6-bars"; bars.setAttribute("aria-hidden", "true");
+      bars.innerHTML = "<i></i><i></i>";
+      hero.appendChild(bars);
+    }
     cleanup.push(function () { if (bars.parentNode) bars.parentNode.removeChild(bars); });
 
     /* Galeria: contador, pré-carregamento (evita transições "partidas" por imagem a meio de carregar) */
@@ -50,11 +53,6 @@
         io.observe(stage);
       }
     }
-
-    gctx = gsap.context(function () {
-      var tl = gsap.timeline({ defaults: { ease: "power4.inOut" } });
-      tl.fromTo(bars.children, { scaleY: 1 }, { scaleY: 0, duration: 1.5, stagger: 0, delay: 0.1 }, 0);
-    }, root);
 
     var rf = function () { ScrollTrigger.refresh(); };
     var t1 = setTimeout(rf, 700), t2 = setTimeout(rf, 2200);

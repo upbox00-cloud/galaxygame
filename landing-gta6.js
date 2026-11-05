@@ -76,6 +76,7 @@
   }
 
   function template(product) {
+    var withBars = landingVersion() >= 4 && !isLiteDevice();
     var price = formatEUR(product.precoVendaEUR);
     var release = product.released ? formatDate(product.released) : "";
     var confirmed = cfg.offerConfirmed !== false;
@@ -111,6 +112,7 @@
             '</div>' +
           '</div>' +
         '</div>' +
+        (withBars ? '<div class="g6-bars" aria-hidden="true"><i></i><i></i></div>' : '') +
         '<span class="g6-scroll" aria-hidden="true"></span>' +
       '</section>' +
 
@@ -219,19 +221,46 @@
     return out;
   }
 
+  // Os CTAs delegam nos botões clássicos. A landing aparece antes de produto.js os ligar: um clique
+  // muito cedo fica em fila e é executado assim que a página termina de carregar (ou ao fim de 6 s).
   function bindActions(root) {
+    function delegate(sel) {
+      var classic = document.querySelector(sel);
+      if (root.__g6ready) { if (classic) classic.click(); return; }
+      root.__g6pending = sel;
+    }
     root.querySelectorAll("[data-g6-buy]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var classic = document.querySelector(".buy-button");
-        if (classic) classic.click();
-      });
+      btn.addEventListener("click", function () { delegate(".buy-button"); });
     });
     root.querySelectorAll("[data-g6-cart]").forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var classic = document.querySelector(".cart-add-button");
-        if (classic) classic.click();
-      });
+      btn.addEventListener("click", function () { delegate(".cart-add-button"); });
     });
+  }
+
+  function markReady(root) {
+    if (root.__g6ready) return;
+    root.__g6ready = true;
+    var p = root.__g6pending; root.__g6pending = null;
+    if (p) { var c = document.querySelector(p); if (c) c.click(); }
+  }
+
+  function replaceText(root, from, to) {
+    if (!from || from === to) return;
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), n, list = [];
+    while ((n = w.nextNode())) if (n.nodeValue.indexOf(from) >= 0) list.push(n);
+    list.forEach(function (t) { t.nodeValue = t.nodeValue.split(from).join(to); });
+  }
+
+  // Dados reais do catálogo chegam depois da landing já estar visível: só corrige o que mudou.
+  function update(root, product) {
+    var st = root.__g6state;
+    if (st && product) {
+      var np = formatEUR(product.precoVendaEUR);
+      var nr = product.released ? "Lançamento previsto: " + formatDate(product.released) : "Data de lançamento a confirmar";
+      replaceText(root, st.price, np); st.price = np;
+      replaceText(root, st.release, nr); st.release = nr;
+    }
+    markReady(root);
   }
 
   function bindGallery(root, lite) {
@@ -310,16 +339,8 @@
       scrollTrigger: { trigger: document.documentElement, start: "top top", end: "bottom bottom", scrub: 0.2 }
     });
 
-    // Hero: entrada cinematográfica
-    var words = splitWords(root.querySelector("[data-g6-words]"));
-    var v2 = landingVersion() >= 2 && !lite;
-    var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-    tl.from(root.querySelector(".g6-hero-media img"), { scale: 1.18, opacity: 0, duration: 1.8 }, 0)
-      .from(root.querySelector(".g6-tag"), { y: 20, opacity: 0, duration: 0.7 }, 0.3);
-    // na V2 o título é animado por landing-gta6-v2.js (máscara + blur)
-    if (!v2) tl.from(root.querySelector("[data-g6-title]"), { y: 60, opacity: 0, scale: 0.94, letterSpacing: "0.08em", duration: 1.3 }, 0.45);
-    tl.from(words, { y: 28, opacity: 0, duration: 0.7, stagger: 0.12 }, 1.0)
-      .from(root.querySelectorAll(".g6-hero [data-g6-fade]"), { y: 24, opacity: 0, duration: 0.7, stagger: 0.12 }, 1.4);
+    // Hero: a entrada cinematográfica (imagem, tag, título, subtítulo, preço, CTAs) é feita em CSS
+    // desde a 1.ª pintura (landing-gta6.css), sem depender do GSAP: o conteúdo nunca espera pelas bibliotecas.
 
     if (!lite) {
       root.querySelectorAll("[data-g6-parallax]").forEach(function (el) {
@@ -338,27 +359,79 @@
       }
     });
     // evita flash: oculta o que ainda não entrou (só depois de o gsap estar pronto)
-    gsap.set(root.querySelectorAll("[data-g6-reveal]"), { opacity: 0 });
+    var reveals = root.querySelectorAll("[data-g6-reveal]");
+    gsap.set(reveals, { opacity: 0 });
+    // Rede de segurança: nenhum conteúdo pode ficar invisível dependendo só do ScrollTrigger
+    // (scroll muito rápido, captura de página inteira, refresh falhado). Visível no ecrã e ainda a 0 => revela.
+    if ("IntersectionObserver" in window) {
+      var rio = new IntersectionObserver(function (en) {
+        en.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          rio.unobserve(e.target);
+          setTimeout(function () {
+            if (parseFloat(getComputedStyle(e.target).opacity) < 0.05) gsap.to(e.target, { opacity: 1, y: 0, duration: 0.4, overwrite: "auto", clearProps: "transform,opacity" });
+          }, 1800);
+        });
+      }, { threshold: 0.01 });
+      reveals.forEach(function (el) { rio.observe(el); });
+    }
 
     window.addEventListener("load", function () { ScrollTrigger.refresh(); }, { once: true });
     return lenis;
   }
 
+  var CSSV = "20261105-21";
+  function ensureCss(n) {
+    if (document.querySelector('link[data-g6css="v' + n + '"]')) return;
+    var l = document.createElement("link");
+    l.rel = "stylesheet"; l.href = "landing-gta6-v" + n + ".css?v=" + CSSV; l.setAttribute("data-g6css", "v" + n);
+    document.head.appendChild(l);
+  }
+
+  // Volta ao visual V1 (estático, completo e funcional) se a cadeia de efeitos falhar.
+  function degrade(root) {
+    for (var n = 2; n <= 5; n++) {
+      var inst = root["__g6v" + n];
+      if (inst && inst.dispose) { try { inst.dispose(); } catch (e) { /* ignora */ } }
+      root.classList.remove("g6-v" + n);
+      var l = document.querySelector('link[data-g6css="v' + n + '"]');
+      if (l && l.parentNode) l.parentNode.removeChild(l);
+    }
+    var bars = root.querySelector(".g6-bars");
+    if (bars && bars.parentNode) bars.parentNode.removeChild(bars);
+  }
+
+  // Falha ao montar: nunca deixar a página vazia nem dois layouts. Mostra o layout clássico.
+  function abort(root, err) {
+    console.error("[landing-gta6] montagem falhou, a usar o layout clássico:", err);
+    if (root && root.parentNode) root.parentNode.removeChild(root);
+    document.body.classList.remove("landing-gta6-on");
+    document.documentElement.classList.remove("g6-early");
+  }
+
   function mount(product) {
     if (!isEnabledFor(product)) return;
+    var existing = document.querySelector(".gta6-landing");
+    if (existing) { update(existing, product); return; }
     var main = document.querySelector("main");
-    if (!main || document.querySelector(".gta6-landing")) return;
+    if (!main) return;
 
     var lite = isLiteDevice();
+    var ver = landingVersion();
     var root = document.createElement("div");
-    root.className = "gta6-landing" + (lite ? " g6-lite" : "");
-    root.innerHTML = template(product);
-    main.insertBefore(root, main.firstChild);
-    document.body.classList.add("landing-gta6-on");
-
-    bindActions(root);
-    bindGallery(root, lite);
-    if (!lite) bindPointerFx(root);
+    var vclasses = "";
+    if (!lite) for (var vi = 2; vi <= ver; vi++) { vclasses += " g6-v" + vi; ensureCss(vi); }
+    root.className = "gta6-landing" + (lite ? " g6-lite" : "") + vclasses;
+    try {
+      root.innerHTML = template(product);
+      root.__g6state = { price: formatEUR(product.precoVendaEUR), release: product.released ? "Lançamento previsto: " + formatDate(product.released) : "Data de lançamento a confirmar" };
+      main.insertBefore(root, main.firstChild);
+      document.body.classList.add("landing-gta6-on");
+      bindActions(root);
+      bindGallery(root, lite);
+      if (!lite) bindPointerFx(root);
+    } catch (err) { abort(root, err); return; }
+    setTimeout(function () { markReady(root); }, 6000);
 
     // prefers-reduced-motion: sem GSAP nem animações. O CSS global do site força transition-duration:1ms
     // e, em teste, o GSAP deixava o título em opacity 0; assim o conteúdo fica sempre visível e estático.
@@ -374,16 +447,16 @@
       if (!lite && landingVersion() >= 2) {
         var ver = landingVersion();
         var ctx = { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis, v3: ver >= 3 };
-        return loadScript("landing-gta6-v2.js?v=20261105-20").then(function () {
+        return loadScript("landing-gta6-v2.js?v=20261105-21").then(function () {
           window.GalaxyLandingGta6V2.enhance(root, ctx);
           if (ver < 3) return null;
-          return loadScript("landing-gta6-v3.js?v=20261105-20").then(function () {
+          return loadScript("landing-gta6-v3.js?v=20261105-21").then(function () {
             window.GalaxyLandingGta6V3.enhance(root, ctx);
             if (ver < 4) return null;
-            return loadScript("landing-gta6-v4.js?v=20261105-20").then(function () {
+            return loadScript("landing-gta6-v4.js?v=20261105-21").then(function () {
               window.GalaxyLandingGta6V4.enhance(root, ctx);
               if (ver < 5) return null;
-              return loadScript("landing-gta6-v5.js?v=20261105-20").then(function () { window.GalaxyLandingGta6V5.enhance(root, ctx); });
+              return loadScript("landing-gta6-v5.js?v=20261105-21").then(function () { window.GalaxyLandingGta6V5.enhance(root, ctx); });
             });
           });
         });
@@ -391,8 +464,21 @@
     }).catch(function (err) {
       // sem animações: conteúdo continua visível e funcional
       console.warn("[landing-gta6] animações desativadas:", err.message);
+      degrade(root);
     });
   }
 
+  // Arranque imediato: a landing é montada logo que o <main> existe, sem esperar pelo catálogo nem por outros scripts.
+  // Usa os valores de reserva da config; produto.js chama mount(produto) depois com os dados reais (update).
+  function autoMount() {
+    if (!cfg.enabled) return;
+    var id = params().get("id") || "gta-vi-ps5";
+    if (id !== cfg.productId) return;
+    var stub = { id: cfg.productId, precoVendaEUR: cfg.fallbackPriceEUR, released: cfg.fallbackReleased || "" };
+    try { mount(stub); } catch (err) { abort(document.querySelector(".gta6-landing"), err); }
+  }
+
   window.GalaxyLandingGta6 = { mount: mount };
+  if (document.querySelector("main")) autoMount();
+  else document.addEventListener("DOMContentLoaded", autoMount, { once: true });
 })();

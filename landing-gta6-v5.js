@@ -25,9 +25,8 @@
     var cleanup = [], gctx;
 
     root.classList.add("g6-v5");
-    var css = document.createElement("link");
-    css.rel = "stylesheet"; css.href = "landing-gta6-v5.css?v=20261105-20";
-    document.head.appendChild(css);
+    var css = document.querySelector('link[data-g6css="v5"]');
+    if (!css) { css = document.createElement("link"); css.rel = "stylesheet"; css.href = "landing-gta6-v5.css?v=20261105-21"; css.setAttribute("data-g6css", "v5"); document.head.appendChild(css); }
     cleanup.push(function () { if (css.parentNode) css.parentNode.removeChild(css); });
 
     function goTo(sel) {
@@ -97,8 +96,6 @@
       /* Hero: empurrão lento de câmara depois da entrada (uma só vez) */
       var heroImg = root.querySelector(".g6-hero-media img");
       if (heroImg) gsap.to(heroImg, { scale: 1.07, duration: 16, ease: "none", delay: 2.2 });
-      var bars = root.querySelectorAll(".g6-bars i");
-      if (bars.length) gsap.fromTo(bars, { scaleY: 1 }, { scaleY: 0, duration: 1.0, ease: "power4.inOut", delay: 0.05, overwrite: true });
 
       /* Experiência: linha que se desenha ao longo dos passos */
       var steps = root.querySelector(".g6-steps");

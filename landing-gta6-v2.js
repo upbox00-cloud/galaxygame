@@ -220,9 +220,8 @@
     var gctx;
 
     root.classList.add("g6-v2");
-    var css = document.createElement("link");
-    css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-20";
-    document.head.appendChild(css);
+    var css = document.querySelector('link[data-g6css="v2"]');
+    if (!css) { css = document.createElement("link"); css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-21"; css.setAttribute("data-g6css", "v2"); document.head.appendChild(css); }
     cleanup.push(function () { if (css.parentNode) css.parentNode.removeChild(css); });
     var hero0 = root.querySelector(".g6-hero");
     var fx = document.createElement("div");
@@ -253,9 +252,7 @@
       var hero = root.querySelector(".g6-hero");
 
       // Hero: título em máscara + brilho; avanço de câmara com o scroll
-      var title = root.querySelector("[data-g6-title]");
-      gsap.fromTo(title, { clipPath: "inset(0 0 100% 0)", y: 70, scale: 1.12, filter: "blur(14px)" },
-        { clipPath: "inset(0 0 -10% 0)", y: 0, scale: 1, filter: "blur(0px)", duration: 1.6, ease: "power4.out", delay: 0.5, clearProps: "clipPath,filter" });
+      // (a entrada do título é feita em CSS desde a 1.ª pintura — ver landing-gta6.css)
 
       ScrollTrigger.create({
         trigger: hero, start: "top top", end: "bottom top", scrub: true,

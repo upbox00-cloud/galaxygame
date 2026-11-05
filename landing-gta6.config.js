@@ -17,6 +17,7 @@
 window.GALAXY_LANDING_GTA6 = {
   enabled: true,
   version: 5,
+  fallbackReleased: "2026-11-19", // espelha produto.js (fallbackProducts); a landing aparece já, antes do catálogo carregar
   productId: "gta-vi-ps5",
   offerConfirmed: true,
   fallbackPriceEUR: 57.99
