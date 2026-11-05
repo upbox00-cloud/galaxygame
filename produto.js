@@ -973,6 +973,7 @@ async function initProductPage() {
   runProductStep("renderRelated", () => renderRelated(products, product));
   runProductStep("bindProductActions", () => bindProductActions(product));
   runProductStep("bindLightbox", () => bindLightbox());
+  runProductStep("landingGta6", () => window.GalaxyLandingGta6?.mount(product));
   document.body.classList.remove("product-loading");
 }
 
