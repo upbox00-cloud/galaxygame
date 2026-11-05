@@ -68,7 +68,8 @@
     var nav = navigator;
     if (nav.connection && (nav.connection.saveData || /(^|-)2g$/.test(nav.connection.effectiveType || ""))) return true;
     if (nav.deviceMemory && nav.deviceMemory <= 2) return true;
-    if (nav.hardwareConcurrency && nav.hardwareConcurrency <= 2) return true;
+    // poucos núcleos só conta quando o navegador também expõe deviceMemory (Chromium): o Safari/iOS limita este valor e forçava o modo lite
+    if (nav.deviceMemory && nav.hardwareConcurrency && nav.hardwareConcurrency <= 2) return true;
     return false;
   }
 
@@ -439,7 +440,10 @@
     var root = document.createElement("div");
     var vclasses = "";
     if (!lite) for (var vi = 2; vi <= ver; vi++) { vclasses += " g6-v" + vi; ensureCss(vi); }
-    root.className = "gta6-landing" + (lite ? " g6-lite" : "") + (mobile ? " g6-mobile" : "") + vclasses;
+    var revisit = false;
+    try { var nv = performance.getEntriesByType("navigation")[0]; revisit = !!nv && nv.type === "back_forward"; } catch (e) { /* ignora */ }
+    // voltar atrás: a entrada do hero não repete (mobile)
+    root.className = "gta6-landing" + (lite ? " g6-lite" : "") + (mobile ? " g6-mobile" : "") + (mobile && revisit ? " g6-revisit" : "") + vclasses;
     try {
       root.innerHTML = template(product);
       root.__g6state = { price: formatEUR(product.precoVendaEUR), release: product.released ? "Lançamento previsto: " + formatDate(product.released) : "Data de lançamento a confirmar" };

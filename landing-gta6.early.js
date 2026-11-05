@@ -21,7 +21,7 @@
   var nav = navigator;
   var lite = mode === "lite" || mm("(prefers-reduced-motion: reduce)") ||
     !!(nav.connection && (nav.connection.saveData || /(^|-)2g$/.test(nav.connection.effectiveType || ""))) ||
-    !!(nav.deviceMemory && nav.deviceMemory <= 2) || !!(nav.hardwareConcurrency && nav.hardwareConcurrency <= 2);
+    !!(nav.deviceMemory && nav.deviceMemory <= 2) || !!(nav.deviceMemory && nav.hardwareConcurrency && nav.hardwareConcurrency <= 2);
   var n = Number(cfg.version);
   var ver = mode === "v1" ? 1 : mode === "v2" ? 2 : mode === "v3" ? 3 : mode === "v4" ? 4 : mode === "v5" ? 5 : mode === "v6" ? 6 : (n >= 6 ? 6 : n >= 5 ? 5 : n >= 4 ? 4 : n >= 3 ? 3 : n >= 2 ? 2 : 1);
 

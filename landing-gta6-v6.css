@@ -157,3 +157,61 @@ body.g6-chat-away .sales-chat-toggle { opacity: 0; transform: translateY(12px) s
 .gta6-landing.g6-mobile .g6-hero .g6-l-fg { height: clamp(56px, 14vw, 84px); }
 .gta6-landing.g6-mobile .g6-hero .g6-title { filter: drop-shadow(0 3px 10px rgba(7, 2, 13, .75)); }
 .gta6-landing.g6-mobile .g6-hero .g6-sub { text-shadow: 0 2px 12px rgba(7, 2, 13, .9); }
+
+/* =====================================================================
+   MOVIMENTO MOBILE (.g6-mobile): tudo em transform/opacity/clip-path, uma só vez, sem blur nem blend animados.
+   Só corre com preferência de movimento normal; o conteúdo existe sempre no HTML (sem JS/animação fica visível).
+   ===================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  /* ---- HERO: imagem entra com zoom curto, câmara muito lenta (1 vez), título em máscara, preço e CTAs logo a seguir ---- */
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero > .g6-hero-media { transform-origin: 55% 30%; animation: g6m-cam 7s cubic-bezier(.2, .5, .3, 1) .2s 1 both; }
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero > .g6-hero-media img { animation: g6m-img 1.1s cubic-bezier(.16, 1, .3, 1) backwards; }
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero .g6-tag { animation: g6-in-up .5s .05s cubic-bezier(.2, .7, .2, 1) backwards; }
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero .g6-title { animation: g6m-title .85s .08s cubic-bezier(.2, .7, .2, 1) backwards; }
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero .g6-sub { animation: g6-in-up .5s .24s cubic-bezier(.2, .7, .2, 1) backwards; }
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero [data-g6-fade] { animation: g6-in-up .5s .3s cubic-bezier(.2, .7, .2, 1) backwards; }
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero [data-g6-fade] + [data-g6-fade] { animation-delay: .38s; }
+  /* luz quente que atravessa o cenário (1 passagem e pára; nada por cima dos rostos que escureça ou desfoque) */
+  .gta6-landing.g6-mobile:not(.g6-lite) .g6-hero::after { display: block; content: ""; position: absolute; inset: 0 0 34% 0; z-index: -1; pointer-events: none; mix-blend-mode: normal; opacity: 0; background: radial-gradient(55% 42% at 70% 30%, rgba(255, 176, 96, .2), transparent 70%); animation: g6m-light 7s ease-in-out .9s 1 both; }
+  /* voltar atrás: sem repetir a entrada */
+  .gta6-landing.g6-mobile.g6-revisit .g6-hero > .g6-hero-media, .gta6-landing.g6-mobile.g6-revisit .g6-hero > .g6-hero-media img, .gta6-landing.g6-mobile.g6-revisit .g6-hero::after,
+  .gta6-landing.g6-mobile.g6-revisit .g6-hero .g6-tag, .gta6-landing.g6-mobile.g6-revisit .g6-hero .g6-title, .gta6-landing.g6-mobile.g6-revisit .g6-hero .g6-sub,
+  .gta6-landing.g6-mobile.g6-revisit .g6-hero [data-g6-fade], .gta6-landing.g6-mobile.g6-revisit .g6-bars i { animation: none !important; }
+
+  /* ---- Entradas por scroll (uma vez; ativadas por IntersectionObserver em landing-gta6-v6.js) ---- */
+  .g6m-on .g6-mask { transition: opacity .8s ease, transform 1s cubic-bezier(.16, 1, .3, 1); }
+  .g6m-on .g6-mask img { transition: transform 1.4s cubic-bezier(.16, 1, .3, 1); }
+  .g6m-on .g6-mask.g6m-pre:not(.is-in) { opacity: 0; transform: translateY(30px) scale(.95); }
+  .g6m-on .g6-mask.g6m-pre:not(.is-in) img { transform: scale(1.14); }
+  .g6m-on .g6-bigprice.g6m-pre:not(.is-in) { clip-path: inset(0 0 100% 0); }
+  .g6m-on .g6-bigprice { transition: clip-path .8s cubic-bezier(.2, .7, .2, 1); clip-path: inset(-10% -4% -20% -4%); }
+  .g6m-on .g6-buycard::after { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: 0; background: linear-gradient(110deg, transparent 40%, rgba(255, 255, 255, .22) 50%, transparent 60%); transform: translateX(-110%); }
+  .g6m-on .g6-buycard.is-in::after { animation: g6m-shine 1.3s ease-out .35s 1 both; }
+  .g6m-on .g6-buycard.g6m-pre:not(.is-in) { opacity: 0; transform: translateY(26px) scale(.96); }
+  .g6m-on .g6-buycard { transition: opacity .7s ease, transform .9s cubic-bezier(.16, 1, .3, 1); }
+  body.landing-gta6-on .site-footer { transition: opacity .8s ease, transform .9s cubic-bezier(.16, 1, .3, 1); }
+  body.landing-gta6-on .site-footer.g6m-pre:not(.is-in) { opacity: 0; transform: translateY(20px); }
+}
+@keyframes g6m-cam { to { transform: scale(1.05); } }
+@keyframes g6m-img { from { opacity: 0; transform: scale(1.1); } }
+@keyframes g6m-title { from { opacity: 0; clip-path: inset(0 0 100% 0); transform: translateY(26px); } 45% { opacity: 1; } to { clip-path: inset(0 0 -12% 0); } }
+@keyframes g6m-light { 0% { opacity: 0; transform: translate3d(-14%, 0, 0); } 50% { opacity: 1; transform: translate3d(10%, -3%, 0); } 100% { opacity: 0; transform: translate3d(-14%, 0, 0); } }
+@keyframes g6m-shine { 0% { opacity: 0; transform: translateX(-110%); } 25% { opacity: 1; } 100% { opacity: 0; transform: translateX(110%); } }
+
+/* ---- Toque: estado premido imediato (iOS/Android), sem hover ---- */
+.gta6-landing.g6-mobile .g6-btn, .gta6-landing.g6-mobile .g6-plat, .gta6-landing.g6-mobile .g6-thumb, .gta6-landing.g6-mobile .g6-nav-btn, .gta6-landing.g6-mobile .g6-faq summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+.gta6-landing.g6-mobile .g6-btn.is-pressed { transform: scale(.96); transition-duration: .08s; }
+.gta6-landing.g6-mobile .g6-btn-primary.is-pressed { box-shadow: 0 2px 10px rgba(255, 46, 147, .55); background-position: 100% 50%; }
+.gta6-landing.g6-mobile .g6-plat.is-pressed { transform: scale(.985); border-color: rgba(255, 255, 255, .55); }
+.gta6-landing.g6-mobile .g6-thumb.is-pressed { transform: scale(.94); }
+.gta6-landing.g6-mobile .g6-nav-btn.is-pressed { transform: scale(.9); }
+.gta6-landing.g6-mobile .g6-faq summary.is-pressed { background: rgba(255, 255, 255, .06); }
+.gta6-landing.g6-mobile .g6-plat { transition: transform .3s cubic-bezier(.2, .7, .2, 1), border-color .3s, box-shadow .4s, background .3s; }
+.gta6-landing.g6-mobile .g6-plat.is-pulse { animation: g6m-pulse .7s ease-out 1; }
+@keyframes g6m-pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 46, 147, .55); } 100% { box-shadow: 0 0 0 16px rgba(255, 46, 147, 0); } }
+.gta6-landing.g6-mobile .g6-faq details { overflow: clip; }
+
+/* ---- Galeria mobile: profundidade em 2D (escala + deslocamento), só transform/opacity ---- */
+.gta6-landing.g6-mobile.g6-v6 .g6-stage img { transform: translate3d(calc(var(--dir) * 6%), 0, 0) scale(.92); transition: opacity .6s ease, transform 1s cubic-bezier(.16, 1, .3, 1); }
+.gta6-landing.g6-mobile.g6-v6 .g6-stage img.leaving { transform: translate3d(calc(var(--dir) * -4%), 0, 0) scale(1.12); }
+.gta6-landing.g6-mobile.g6-v6 .g6-stage img.on { transform: translate3d(var(--drag, 0px), 0, 0) scale(1.02); }

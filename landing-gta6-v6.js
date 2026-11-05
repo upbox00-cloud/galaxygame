@@ -53,6 +53,8 @@
       cleanup.push(function () { cio.disconnect(); document.body.classList.remove("g6-chat-away"); });
     }
 
+    if (mobile) mobileMotion();
+
     if (!mobile) gctx = gsap.context(function () {
       var scrub = function (trigger, start, end, q) { return { trigger: trigger, start: start, end: end, scrub: q === undefined ? 0.6 : q }; };
 
@@ -90,6 +92,78 @@
     var rf = function () { ScrollTrigger.refresh(); };
     var t1 = setTimeout(rf, 900), t2 = setTimeout(rf, 2600);
     cleanup.push(function () { clearTimeout(t1); clearTimeout(t2); });
+
+    /* ---------- Movimento mobile: leve, em uníssono com o toque ---------- */
+    function mobileMotion() {
+      root.classList.add("g6m-on");
+      cleanup.push(function () { root.classList.remove("g6m-on"); });
+
+      // 1) Estado "premido" imediato por pointerdown (iOS/Android; não usa :active nem listeners de touch)
+      var PRESS = ".g6-btn, .g6-plat, .g6-thumb, .g6-nav-btn, .g6-faq summary";
+      var clearPress = function () { root.querySelectorAll(".is-pressed").forEach(function (n) { n.classList.remove("is-pressed"); }); };
+      var down = function (e) { var t = e.target.closest && e.target.closest(PRESS); if (t) t.classList.add("is-pressed"); };
+      root.addEventListener("pointerdown", down, { passive: true });
+      ["pointerup", "pointercancel"].forEach(function (ev) { root.addEventListener(ev, clearPress, { passive: true }); });
+      // seleção de plataforma: pulso no cartão ativo (PS5); o Xbox navega para a sua página
+      var tap = function (e) {
+        var c = e.target.closest && e.target.closest(".g6-plat.is-active");
+        if (c) { c.classList.remove("is-pulse"); void c.offsetWidth; c.classList.add("is-pulse"); }
+      };
+      root.addEventListener("click", tap);
+      cleanup.push(function () { root.removeEventListener("pointerdown", down); root.removeEventListener("click", tap); ["pointerup", "pointercancel"].forEach(function (ev) { root.removeEventListener(ev, clearPress); }); });
+
+      // 2) Entradas únicas por IntersectionObserver (só o que ainda está abaixo do ecrã fica "pre"; rede de segurança a 8 s)
+      var targets = [];
+      [".g6-mask", ".g6-pricebox .g6-bigprice", ".g6-buycard"].forEach(function (sel) { var n = root.querySelector(sel); if (n) targets.push(n); });
+      var foot = document.querySelector(".site-footer"); if (foot) targets.push(foot);
+      if ("IntersectionObserver" in window && targets.length) {
+        var vh = window.innerHeight, pending = [];
+        targets.forEach(function (n) { if (n.getBoundingClientRect().top > vh * 0.92) { n.classList.add("g6m-pre"); pending.push(n); } });
+        var rio = new IntersectionObserver(function (en) {
+          en.forEach(function (e) {
+            if (!e.isIntersecting) return;
+            var o = e.target, n = o.__g6t || o; rio.unobserve(o); n.classList.add("is-in");
+            if (n.classList.contains("g6-bigprice")) setTimeout(function () { n.classList.add("g6-glint"); }, 650);
+          });
+        }, { threshold: 0.12 });
+        // o IntersectionObserver ignora um alvo totalmente cortado pelo seu próprio clip-path: o preço é observado pelo pai
+        pending.forEach(function (n) { var o = n.classList.contains("g6-bigprice") ? n.parentNode : n; o.__g6t = n; rio.observe(o); });
+        var safe = setTimeout(function () { pending.forEach(function (n) { n.classList.add("is-in"); }); }, 8000);
+        cleanup.push(function () { rio.disconnect(); clearTimeout(safe); targets.forEach(function (n) { n.classList.remove("g6m-pre", "is-in"); }); });
+      }
+
+      // 3) Miniaturas: a ativa fica centrada ao trocar de imagem
+      var strip = root.querySelector(".g6-thumbs");
+      if (strip && imgs.length) {
+        var center = function () {
+          var t = strip.querySelector('[aria-current="true"]'); if (!t) return;
+          strip.scrollTo({ left: Math.max(0, t.offsetLeft - (strip.clientWidth - t.clientWidth) / 2), behavior: "smooth" });
+        };
+        var mo2 = new MutationObserver(center);
+        strip.querySelectorAll(".g6-thumb").forEach(function (t) { mo2.observe(t, { attributes: true, attributeFilter: ["aria-current"] }); });
+        cleanup.push(function () { mo2.disconnect(); });
+      }
+
+      // 4) FAQ: abrir/fechar com altura animada (WAAPI), sem saltos; teclado e leitores de ecrã continuam a usar <details>
+      root.querySelectorAll(".g6-faq details").forEach(function (d) {
+        var s = d.querySelector("summary"); if (!s || !d.animate) return;
+        var h = function (e) {
+          e.preventDefault();
+          if (d.__a) { d.__a.cancel(); d.__a = null; }
+          var cs = getComputedStyle(d);
+          var collapsed = s.offsetHeight + parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom) + parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth);
+          var from = d.offsetHeight, opening = !d.open, to;
+          d.style.overflow = "hidden";
+          if (opening) { d.open = true; to = d.scrollHeight + parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth); from = Math.min(from, to); }
+          else to = collapsed;
+          var a = d.__a = d.animate([{ height: from + "px" }, { height: to + "px" }], { duration: 320, easing: "cubic-bezier(.2,.7,.2,1)" });
+          a.onfinish = function () { d.__a = null; d.style.overflow = ""; if (!opening) d.open = false; };
+          a.oncancel = function () { d.style.overflow = ""; };
+        };
+        s.addEventListener("click", h);
+        cleanup.push(function () { s.removeEventListener("click", h); });
+      });
+    }
 
     function dispose() {
       if (mo) mo.disconnect();
