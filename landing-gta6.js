@@ -28,6 +28,14 @@
     return params().get("landing") !== "0";
   }
 
+  // 2 = V2 (3D + scroll cinematográfico); 1 = V1. URL: ?landing=v1 | ?landing=v2
+  function landingVersion() {
+    var q = params().get("landing");
+    if (q === "v1") return 1;
+    if (q === "v2") return 2;
+    return Number(cfg.version) >= 2 ? 2 : 1;
+  }
+
   function formatEUR(value) {
     var n = Number(value);
     if (!isFinite(n) || n <= 0) n = cfg.fallbackPriceEUR;
@@ -300,11 +308,13 @@
 
     // Hero: entrada cinematográfica
     var words = splitWords(root.querySelector("[data-g6-words]"));
+    var v2 = landingVersion() >= 2 && !lite;
     var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
     tl.from(root.querySelector(".g6-hero-media img"), { scale: 1.18, opacity: 0, duration: 1.8 }, 0)
-      .from(root.querySelector(".g6-tag"), { y: 20, opacity: 0, duration: 0.7 }, 0.3)
-      .from(root.querySelector("[data-g6-title]"), { y: 60, opacity: 0, scale: 0.94, letterSpacing: "0.08em", duration: 1.3 }, 0.45)
-      .from(words, { y: 28, opacity: 0, duration: 0.7, stagger: 0.12 }, 1.0)
+      .from(root.querySelector(".g6-tag"), { y: 20, opacity: 0, duration: 0.7 }, 0.3);
+    // na V2 o título é animado por landing-gta6-v2.js (máscara + blur)
+    if (!v2) tl.from(root.querySelector("[data-g6-title]"), { y: 60, opacity: 0, scale: 0.94, letterSpacing: "0.08em", duration: 1.3 }, 0.45);
+    tl.from(words, { y: 28, opacity: 0, duration: 0.7, stagger: 0.12 }, 1.0)
       .from(root.querySelectorAll(".g6-hero [data-g6-fade]"), { y: 24, opacity: 0, duration: 0.7, stagger: 0.12 }, 1.4);
 
     if (!lite) {
@@ -320,13 +330,14 @@
     ScrollTrigger.batch(root.querySelectorAll("[data-g6-reveal]"), {
       start: "top 88%", once: true,
       onEnter: function (batch) {
-        gsap.fromTo(batch, { y: lite ? 0 : 36, opacity: 0 }, { y: 0, opacity: 1, duration: lite ? 0.3 : 0.9, ease: "power3.out", stagger: 0.12, overwrite: true, clearProps: "transform,opacity" });
+        gsap.fromTo(batch, { y: lite ? 0 : 36, opacity: 0 }, { y: 0, opacity: 1, duration: lite ? 0.3 : 0.9, ease: "power3.out", stagger: 0.12, overwrite: "auto", clearProps: "transform,opacity" });
       }
     });
     // evita flash: oculta o que ainda não entrou (só depois de o gsap estar pronto)
     gsap.set(root.querySelectorAll("[data-g6-reveal]"), { opacity: 0 });
 
     window.addEventListener("load", function () { ScrollTrigger.refresh(); }, { once: true });
+    return lenis;
   }
 
   function mount(product) {
@@ -350,7 +361,14 @@
       if (lite && /lenis/.test(src)) return;
       chain = chain.then(function () { return loadScript(src); });
     });
-    chain.then(function () { animate(root, lite); }).catch(function (err) {
+    chain.then(function () {
+      var lenis = animate(root, lite);
+      if (!lite && landingVersion() >= 2) {
+        return loadScript("landing-gta6-v2.js?v=20261105-6").then(function () {
+          window.GalaxyLandingGta6V2.enhance(root, { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis });
+        });
+      }
+    }).catch(function (err) {
       // sem animações: conteúdo continua visível e funcional
       console.warn("[landing-gta6] animações desativadas:", err.message);
     });

@@ -3,8 +3,11 @@
  *
  * Desativar (restaura o layout clássico, sem apagar código):
  *   enabled: false
+ * version: 2 -> V2 (3D + scroll cinematográfico); 1 -> V1 (sem Three.js).
  * Testes rápidos sem editar este ficheiro:
  *   produto.html?id=gta-vi-ps5&landing=0   -> força layout clássico
+ *   produto.html?id=gta-vi-ps5&landing=v1   -> força V1
+ *   produto.html?id=gta-vi-ps5&landing=v2   -> força V2
  *   produto.html?id=gta-vi-ps5&landing=lite -> força versão leve (sem Lenis/tilt/parallax)
  *
  * offerConfirmed: true  -> CTAs acionam o checkout existente (criar-checkout valida o preço no servidor).
@@ -13,6 +16,7 @@
  */
 window.GALAXY_LANDING_GTA6 = {
   enabled: true,
+  version: 2,
   productId: "gta-vi-ps5",
   offerConfirmed: true,
   fallbackPriceEUR: 57.99
