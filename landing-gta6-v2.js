@@ -221,7 +221,7 @@
 
     root.classList.add("g6-v2");
     var css = document.createElement("link");
-    css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-12";
+    css.rel = "stylesheet"; css.href = "landing-gta6-v2.css?v=20261105-17";
     document.head.appendChild(css);
     cleanup.push(function () { if (css.parentNode) css.parentNode.removeChild(css); });
     var hero0 = root.querySelector(".g6-hero");

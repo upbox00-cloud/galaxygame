@@ -28,14 +28,15 @@
     return params().get("landing") !== "0";
   }
 
-  // 3 = V3 (Vice City); 2 = V2 (3D + scroll cinematográfico); 1 = V1. URL: ?landing=v1 | v2 | v3
+  // 4 = V4 (direção de arte); 3 = V3 (Vice City); 2 = V2 (3D + scroll cinematográfico); 1 = V1. URL: ?landing=v1 | v2 | v3
   function landingVersion() {
     var q = params().get("landing");
     if (q === "v1") return 1;
     if (q === "v2") return 2;
     if (q === "v3") return 3;
+    if (q === "v4") return 4;
     var n = Number(cfg.version);
-    return n >= 3 ? 3 : n >= 2 ? 2 : 1;
+    return n >= 4 ? 4 : n >= 3 ? 3 : n >= 2 ? 2 : 1;
   }
 
   function formatEUR(value) {
@@ -358,6 +359,10 @@
     bindGallery(root, lite);
     if (!lite) bindPointerFx(root);
 
+    // prefers-reduced-motion: sem GSAP nem animações. O CSS global do site força transition-duration:1ms
+    // e, em teste, o GSAP deixava o título em opacity 0; assim o conteúdo fica sempre visível e estático.
+    if (reducedMotion()) return;
+
     var chain = Promise.resolve();
     VENDOR.forEach(function (src) {
       if (lite && /lenis/.test(src)) return;
@@ -368,10 +373,14 @@
       if (!lite && landingVersion() >= 2) {
         var ver = landingVersion();
         var ctx = { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis, v3: ver >= 3 };
-        return loadScript("landing-gta6-v2.js?v=20261105-12").then(function () {
+        return loadScript("landing-gta6-v2.js?v=20261105-17").then(function () {
           window.GalaxyLandingGta6V2.enhance(root, ctx);
           if (ver < 3) return null;
-          return loadScript("landing-gta6-v3.js?v=20261105-12").then(function () { window.GalaxyLandingGta6V3.enhance(root, ctx); });
+          return loadScript("landing-gta6-v3.js?v=20261105-17").then(function () {
+            window.GalaxyLandingGta6V3.enhance(root, ctx);
+            if (ver < 4) return null;
+            return loadScript("landing-gta6-v4.js?v=20261105-17").then(function () { window.GalaxyLandingGta6V4.enhance(root, ctx); });
+          });
         });
       }
     }).catch(function (err) {
