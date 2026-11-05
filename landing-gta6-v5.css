@@ -1,0 +1,84 @@
+/* Landing GTA VI — V5 (polimento). Só atua com .gta6-landing.g6-v5. Sobrepõe a V4. */
+
+/* ---- Ritmo: menos vazio entre capítulos, hierarquia de títulos ---- */
+.g6-v5 .g6-section { padding-block: clamp(56px, 8vw, 112px); }
+.g6-v5 .g6-platforms .g6-h2, .g6-v5 .g6-exp .g6-h2, .g6-v5 .g6-faq .g6-h2 { font-size: clamp(1.9rem, 4.6vw, 3.6rem); }
+.g6-v5 .g6-final { min-height: 72svh; padding-bottom: clamp(96px, 12vw, 160px); }
+
+/* ---- Plataformas interativas ---- */
+.g6-v5 .g6-plat-grid { gap: 22px; margin-top: 26px; }
+.g6-v5 .g6-plat { padding: 0 0 24px; overflow: hidden; display: flex; flex-direction: column; border-radius: 22px; transition: border-color .35s ease, box-shadow .45s ease, background .35s ease; }
+.g6-v5 .g6-plat > :not(.g6-plat-art) { margin-inline: 24px; }
+.g6-v5 .g6-plat-art { height: clamp(110px, 14vw, 170px); margin: 0 0 18px; background-size: cover; background-position: center 40%; opacity: 0; transition: opacity .6s ease, transform 1.2s cubic-bezier(.16, 1, .3, 1); transform: scale(1.08);
+  -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%); mask-image: linear-gradient(180deg, #000 55%, transparent 100%); }
+.g6-v5 .g6-plat-art.ready { opacity: .9; }
+.g6-v5 .g6-plat:hover .g6-plat-art { transform: scale(1.14); }
+.g6-v5 .g6-plat::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1; opacity: 0; transition: opacity .35s ease;
+  background: radial-gradient(260px circle at var(--lx, 50%) var(--ly, 30%), rgba(255,138,61,.22), transparent 65%); }
+.g6-v5 .g6-plat:hover::before, .g6-v5 .g6-plat:focus-within::before { opacity: 1; }
+.g6-v5 .g6-plat > * { position: relative; z-index: 2; }
+.g6-v5 .g6-plat > .g6-plat-art { z-index: 0; }
+.g6-v5 .g6-plat strong { font-size: 1.6rem; margin-bottom: 4px; }
+.g6-v5 .g6-plat-meta { margin-top: 10px !important; margin-bottom: 0; font-size: .92rem; color: var(--g6-muted); }
+.g6-v5 .g6-plat-meta b { color: #fff; font-size: 1.05rem; }
+.g6-v5 .g6-plat.is-active { border-color: rgba(255,46,147,.75); box-shadow: 0 24px 70px -26px rgba(255,46,147,.7), inset 0 0 0 1px rgba(255,46,147,.35); background: linear-gradient(145deg, rgba(255,46,147,.14), rgba(255,255,255,.03)); }
+.g6-v5 .g6-plat .g6-badge { align-self: flex-start; }
+.g6-v5 .g6-plat-cta { align-self: flex-start; margin-top: 14px !important; padding: 10px 18px; border-radius: 999px; font-weight: 800; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; text-decoration: none;
+  background: linear-gradient(100deg, var(--g6-pink), var(--g6-orange)); color: #fff; transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s; }
+.g6-v5 .g6-plat-cta::after { content: " \2192"; }
+.g6-v5 .g6-plat-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,46,147,.5); }
+.g6-v5 .g6-plat-cta:focus-visible { outline: 3px solid var(--g6-ocean); outline-offset: 3px; }
+/* O cartão Xbox inteiro é um único link (acessível: um só alvo, o texto existente) */
+.g6-v5 .g6-plat a.g6-badge.alt::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+.g6-v5 .g6-plat:has(a.g6-badge.alt):hover { border-color: rgba(25,181,214,.7); box-shadow: 0 22px 60px -28px rgba(25,181,214,.6); }
+.g6-v5 .g6-note { margin-top: 14px; }
+
+/* ---- Experiência: linha que liga os passos ---- */
+.g6-v5 .g6-steps { position: relative; --line: 0; }
+@media (min-width: 760px) {
+  .g6-v5 .g6-steps::before { content: ""; position: absolute; left: 6%; right: 6%; top: 52px; height: 2px; z-index: 0; border-radius: 2px; transform-origin: 0 50%; transform: scaleX(var(--line));
+    background: linear-gradient(90deg, var(--g6-pink), var(--g6-orange), var(--g6-ocean)); box-shadow: 0 0 14px rgba(255,46,147,.6); }
+  .g6-v5 .g6-step { position: relative; z-index: 1; }
+}
+
+/* ---- Galeria: presença e estado ativo ---- */
+.g6-v5 .g6-gallery .g6-wrap { width: min(1320px, 100%); }
+.gta6-landing.g6-v5 .g6-stage { aspect-ratio: 16 / 8.6; box-shadow: 0 40px 100px -40px rgba(255,46,147,.55); }
+.gta6-landing.g6-v5 .g6-stage img.on { transform: translate3d(calc(var(--px, 0) * -14px + var(--drag, 0px)), calc(var(--py, 0) * -10px), 0) scale(calc(1.02 + var(--zoom, 0))); }
+.g6-v5 .g6-thumbs { gap: 12px; padding: 8px 4px 10px; }
+.g6-v5 .g6-thumb { opacity: .45; transform: none; border-radius: 12px; filter: saturate(.8); }
+.g6-v5 .g6-thumb[aria-current="true"] { opacity: 1; filter: none; transform: translateY(-4px) scale(1.04); border-color: var(--g6-pink); box-shadow: 0 10px 30px -8px rgba(255,46,147,.7); }
+.g6-v5 .g6-thumb:hover { opacity: .9; }
+@media (max-width: 700px) { .gta6-landing.g6-v5 .g6-stage { aspect-ratio: 4 / 3; } }
+
+/* ---- FAQ: cartões de vidro, animação de abertura ---- */
+.g6-v5 .g6-faq details { background: rgba(255,255,255,.045); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; margin: 0 0 10px; padding: 0 20px;
+  transition: border-color .3s ease, background .3s ease, box-shadow .3s ease; }
+.g6-v5 .g6-faq details:hover { border-color: rgba(255,138,61,.45); }
+.g6-v5 .g6-faq details[open] { border-color: rgba(255,46,147,.55); background: rgba(255,46,147,.075); box-shadow: 0 16px 44px -24px rgba(255,46,147,.55); }
+.g6-v5 .g6-faq summary { background: transparent; padding: 18px 40px 18px 0; font-size: 1.02rem; }
+.g6-v5 .g6-faq details p { animation: g6-faq .5s cubic-bezier(.2, .7, .2, 1) both; }
+@keyframes g6-faq { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+/* ---- Final + rodapé ---- */
+.g6-v5 .g6-final-divider { position: absolute; left: 0; right: 0; bottom: -1px; height: clamp(50px, 8vw, 120px); z-index: 3; pointer-events: none; }
+.g6-v5 .g6-final-divider svg { width: 100%; height: 100%; display: block; }
+.g6-v5 .g6-final .g6-wrap { position: relative; z-index: 2; }
+
+/* ---- Chat IA: ícone discreto, expande ao passar o rato / foco (landing ativa) ---- */
+body.landing-gta6-on .sales-chat-toggle { min-height: 56px; width: 56px; padding: 8px; justify-content: center; gap: 0;
+  transition: width .35s cubic-bezier(.2, .7, .2, 1), padding .35s ease, transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+body.landing-gta6-on .sales-chat-toggle b { max-width: 0; opacity: 0; overflow: hidden; white-space: nowrap; transition: max-width .35s ease, opacity .25s ease, margin .35s ease; }
+@media (hover: hover) and (min-width: 821px) {
+  body.landing-gta6-on .sales-chat-toggle:hover, body.landing-gta6-on .sales-chat-toggle:focus-visible { width: 210px; padding: 7px 18px 7px 8px; justify-content: flex-start; gap: 10px; }
+  body.landing-gta6-on .sales-chat-toggle:hover b, body.landing-gta6-on .sales-chat-toggle:focus-visible b { max-width: 150px; opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .g6-v5 .g6-faq details p, .g6-v5 .g6-plat-art, body.landing-gta6-on .sales-chat-toggle, body.landing-gta6-on .sales-chat-toggle b { animation: none; transition: none; }
+}
+
+/* A luz sticky (V3) não pode sair do bloco da landing e pintar o rodapé; o rodapé encosta ao horizonte final */
+.gta6-landing.g6-v5 { overflow: clip; }
+body.landing-gta6-on .site-footer { margin-top: 0; }
+@media (max-width: 700px) { .g6-v5 .g6-plat-art { height: 96px; margin-bottom: 14px; } .g6-v5 .g6-plat { padding-bottom: 20px; } }

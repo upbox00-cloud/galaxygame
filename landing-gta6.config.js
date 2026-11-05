@@ -3,7 +3,7 @@
  *
  * Desativar (restaura o layout clássico, sem apagar código):
  *   enabled: false
- * version: 4 -> V4 (direção de arte); 3 -> V3 (Vice City); 2 -> V2 (3D + scroll); 1 -> V1 (sem Three.js).
+ * version: 5 -> V5 (polimento); 4 -> V4 (direção de arte); 3 -> V3 (Vice City); 2 -> V2 (3D + scroll); 1 -> V1 (sem Three.js).
  * Testes rápidos sem editar este ficheiro:
  *   produto.html?id=gta-vi-ps5&landing=0   -> força layout clássico
  *   produto.html?id=gta-vi-ps5&landing=v1   -> força V1
@@ -16,7 +16,7 @@
  */
 window.GALAXY_LANDING_GTA6 = {
   enabled: true,
-  version: 4,
+  version: 5,
   productId: "gta-vi-ps5",
   offerConfirmed: true,
   fallbackPriceEUR: 57.99
