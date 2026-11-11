@@ -1,6 +1,7 @@
 const publicCatalog = require("../../data/catalog-lite.json");
 const commercialCatalog = require("./_data/catalogo-comercial.json");
 const { readPriceOverrides, applyPriceOverrides } = require("./_price-overrides");
+const { readSoldOut, applySoldOut } = require("./_sold-out");
 
 function normalize(value) {
   return String(value || "")
@@ -31,7 +32,8 @@ function productsWithCommercialData() {
 }
 
 async function productsWithCurrentPrices() {
-  return applyPriceOverrides(productsWithCommercialData(), await readPriceOverrides());
+  // inclui o estado "esgotado" (usado pelo painel de admin)
+  return applySoldOut(applyPriceOverrides(productsWithCommercialData(), await readPriceOverrides()), await readSoldOut());
 }
 
 async function publicProducts() {

@@ -17,6 +17,7 @@
   const state = {
     orders: [],
     catalog: [],
+    special: [],
     filter: savedUi.filter || "pending",
     query: savedUi.query || "",
     catalogQuery: savedUi.catalogQuery || "",
@@ -621,20 +622,49 @@
 
   function renderCatalog() {
     const query = state.catalogQuery.toLowerCase().trim();
-    const products = state.catalog.filter((product) => !query || [product.nome, product.plataforma, ...(product.genres || [])].join(" ").toLowerCase().includes(query)).slice(0, 30);
+    const matches = (product) => !query || [product.nome, product.plataforma, ...(product.genres || [])].join(" ").toLowerCase().includes(query);
+    // jogos fora do catálogo público (GTA VI) vêm primeiro e só têm o botão de esgotado
+    const products = [...state.special.filter(matches), ...state.catalog.filter(matches).slice(0, 30)];
     const container = document.querySelector("[data-admin-catalog-list]");
     if (!container) return;
     container.innerHTML = products.length ? products.map((product) => `
-      <article class="admin-catalog-item${product.naoFoiPossivelIgualarConcorrente ? " admin-catalog-warning" : ""}">
+      <article class="admin-catalog-item${product.naoFoiPossivelIgualarConcorrente ? " admin-catalog-warning" : ""}${product.esgotado ? " admin-catalog-soldout" : ""}">
         <img src="${escapeHtml(productImage(product))}" alt="" loading="lazy" />
-        <div class="admin-catalog-copy"><a href="produto.html?id=${encodeURIComponent(product.id)}" target="_blank" rel="noopener"><strong title="${escapeHtml(product.nome)}">${escapeHtml(product.nome)}</strong></a><small>${escapeHtml(product.plataforma)} · ${(product.genres || []).slice(0, 2).map(escapeHtml).join(", ") || "Sem género"}</small><small>${escapeHtml(product.fornecedorSelecionado || "Fornecedor não definido")} · custo Pix ${escapeHtml(formatBRL(product.custoFornecedorBRL))}</small>${product.naoFoiPossivelIgualarConcorrente ? '<mark>Não foi possível igualar o concorrente</mark>' : ""}</div>
-        <form class="admin-catalog-price" data-admin-price-form data-product-id="${escapeHtml(product.id)}">
+        <div class="admin-catalog-copy"><a href="produto.html?id=${encodeURIComponent(product.id)}" target="_blank" rel="noopener"><strong title="${escapeHtml(product.nome)}">${escapeHtml(product.nome)}</strong></a><small>${escapeHtml(product.plataforma)} · ${(product.genres || []).slice(0, 2).map(escapeHtml).join(", ") || "Sem género"}</small><small>${escapeHtml(product.fornecedorSelecionado || "Fornecedor não definido")} · custo Pix ${escapeHtml(formatBRL(product.custoFornecedorBRL))}</small>${product.naoFoiPossivelIgualarConcorrente ? '<mark>Não foi possível igualar o concorrente</mark>' : ""}${product.esgotado ? '<mark class="admin-soldout-badge">Esgotado na loja</mark>' : ""}</div>
+        ${product.soEsgotado ? `<div class="admin-catalog-price"><small>Preço gerido noutro sítio</small><span class="admin-price-actions">${soldOutButton(product)}</span></div>` : `<form class="admin-catalog-price" data-admin-price-form data-product-id="${escapeHtml(product.id)}">
           <label><span>Preço final</span><span class="admin-price-input"><b>€</b><input type="number" name="precoVendaEUR" min="0.99" max="999.99" step="0.01" value="${Number(product.precoVendaEUR || 0).toFixed(2)}" required /></span></label>
           <small>${escapeHtml(estimatedMargin(product))}${product.precoManual ? " · Preço manual" : " · Preço automático"}</small>
           <span class="admin-price-actions"><button type="submit">Guardar</button>${product.precoManual ? '<button type="button" data-admin-price-reset>Repor</button>' : ""}</span>
+          <span class="admin-price-actions">${soldOutButton(product)}</span>
           ${product.linkFornecedorSelecionado ? `<a href="${escapeHtml(product.linkFornecedorSelecionado)}" target="_blank" rel="noopener">Fornecedor</a>` : ""}
-        </form>
+        </form>`}
       </article>`).join("") : '<div class="admin-empty">Nenhum produto encontrado.</div>';
+  }
+
+  function soldOutButton(product) {
+    const soldOut = Boolean(product.esgotado);
+    return `<button type="button" class="admin-soldout-button${soldOut ? " is-soldout" : ""}" data-admin-soldout data-product-id="${escapeHtml(product.id)}" data-soldout="${soldOut ? "1" : "0"}" aria-pressed="${soldOut}">${soldOut ? "Voltar a vender" : "Marcar esgotado"}</button>`;
+  }
+
+  async function toggleSoldOut(button) {
+    const id = button.dataset.productId;
+    const next = button.dataset.soldout !== "1";
+    button.disabled = true;
+    try {
+      const data = await apiRequest("/.netlify/functions/admin-catalogo", {
+        method: "POST",
+        body: JSON.stringify({ id, esgotado: next })
+      });
+      const list = state.special.some((product) => product.id === id) ? state.special : state.catalog;
+      const index = list.findIndex((product) => product.id === id);
+      if (index >= 0) list[index] = { ...list[index], ...data.produto, esgotado: next ? true : undefined };
+      renderCatalog();
+      setNotice(next ? "Jogo marcado como esgotado: já aparece assim na loja e a compra está bloqueada." : "Jogo disponível outra vez na loja.", "success");
+    } catch (error) {
+      if (["login_required", "admin_required"].includes(error.code)) return;
+      button.disabled = false;
+      setNotice("Não foi possível alterar o estado do jogo. Tenta novamente.", "error");
+    }
   }
 
   async function saveCatalogPrice(form, reset = false) {
@@ -717,6 +747,7 @@
     try {
       const data = await apiRequest("/.netlify/functions/admin-catalogo");
       state.catalog = data.produtos || [];
+      state.special = data.especiais || [];
       updateCatalogSummary();
       renderCatalog();
     } catch (error) {
@@ -870,6 +901,8 @@
     saveCatalogPrice(form);
   });
   document.querySelector("[data-admin-catalog-list]")?.addEventListener("click", (event) => {
+    const soldOutToggle = event.target.closest("[data-admin-soldout]");
+    if (soldOutToggle) { toggleSoldOut(soldOutToggle); return; }
     const reset = event.target.closest("[data-admin-price-reset]");
     if (!reset) return;
     const form = reset.closest("[data-admin-price-form]");

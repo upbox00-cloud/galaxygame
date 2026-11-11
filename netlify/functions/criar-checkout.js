@@ -4,6 +4,7 @@ const { connectLambda } = require("@netlify/blobs");
 const { json, getUserEmail, getUserName, sendOperationalAlert } = require("./_orders");
 const commercialCatalog = require("./_data/catalogo-comercial.json");
 const { readPriceOverrides, applyPriceOverrides } = require("./_price-overrides");
+const { readSoldOut, applySoldOut } = require("./_sold-out");
 
 const SPECIAL_PRODUCTS = [
   {
@@ -30,7 +31,8 @@ async function loadCatalog() {
     baseCatalog = [...products, ...SPECIAL_PRODUCTS].map((product) =>
       ({ ...(commercialById.get(product.id) || {}), ...product }));
   }
-  const currentProducts = applyPriceOverrides(baseCatalog, await readPriceOverrides());
+  const [overrides, soldOut] = await Promise.all([readPriceOverrides(), readSoldOut()]);
+  const currentProducts = applySoldOut(applyPriceOverrides(baseCatalog, overrides), soldOut);
   return new Map(currentProducts.map((product) => [
     product.id,
     product
@@ -228,6 +230,11 @@ exports.handler = async (event, context) => {
     const products = ids.map((id) => catalog.get(id));
     if (products.some((product) => !product || Number(product.precoVendaEUR) <= 0)) {
       return json(400, { error: "invalid_product" });
+    }
+    // jogos marcados como esgotados no painel não podem ser comprados (nem por link direto nem pelo carrinho)
+    const soldOutProducts = products.filter((product) => product.esgotado);
+    if (soldOutProducts.length) {
+      return json(409, { error: "sold_out", productIds: soldOutProducts.map((product) => product.id) });
     }
     const session = await createStripeCheckout(products, {
       email,

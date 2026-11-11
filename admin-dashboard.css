@@ -827,3 +827,10 @@
   .admin-recovery-email { white-space: normal; }
   .admin-recovery button { width: 100%; }
 }
+
+/* Estado "esgotado" no catálogo do painel */
+.admin-catalog-soldout img { filter: grayscale(.85); opacity: .7; }
+.admin-catalog-copy mark.admin-soldout-badge { background: #fde8e8; color: #b42318; margin-left: 6px; }
+.admin-price-actions button.admin-soldout-button { background: #fde8e8; color: #b42318; }
+.admin-price-actions button.admin-soldout-button.is-soldout { background: #1f7a3d; color: #fff; }
+.admin-price-actions button.admin-soldout-button:focus-visible { outline: 2px solid #6a3e94; outline-offset: 2px; }

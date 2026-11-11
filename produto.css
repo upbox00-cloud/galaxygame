@@ -1190,3 +1190,7 @@
     max-height: 40vh;
   }
 }
+
+/* Jogo esgotado (painel de admin) */
+.soldout-note { margin: 0 0 12px; border-radius: 6px; background: rgba(180, 35, 24, .16); border: 1px solid rgba(255, 120, 110, .5); color: #ffb4ae; padding: 10px 12px; font-weight: 800; text-align: center; }
+.product-soldout .buy-button:disabled, .product-soldout .cart-add-button:disabled, .product-soldout .edition-buy-button:disabled { cursor: not-allowed; opacity: .6; }

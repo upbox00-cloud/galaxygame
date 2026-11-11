@@ -312,11 +312,11 @@ function createCatalogCard(product) {
   const trailer = validCatalogTrailer(product.trailer) ? product.trailer : "";
 
   return `
-    <a class="game-card catalog-card" href="produto.html?id=${encodeURIComponent(product.id)}" data-platforms="${escapeCatalogHtml(platform)}" ${trailer ? `data-trailer="${escapeCatalogHtml(trailer)}"` : ""}>
+    <a class="game-card catalog-card${product.esgotado ? " is-soldout" : ""}" href="produto.html?id=${encodeURIComponent(product.id)}" data-platforms="${escapeCatalogHtml(platform)}" ${trailer ? `data-trailer="${escapeCatalogHtml(trailer)}"` : ""}>
       <div class="cover catalog-cover ${isSupplierCatalogImage(product, image) ? "supplier-cover-clean" : ""}">
         <img class="cover-art" src="${escapeCatalogHtml(optimizedCatalogImage(image))}" data-original-source="${escapeCatalogHtml(image)}"
           width="440" height="660" alt="Capa de ${escapeCatalogHtml(name)}" loading="lazy" decoding="async" fetchpriority="low" />
-        <span class="tag">${escapeCatalogHtml(discountPercent(product))}</span>
+        ${product.esgotado ? '<span class="tag soldout-tag">Esgotado</span>' : `<span class="tag">${escapeCatalogHtml(discountPercent(product))}</span>`}
         ${platformBadgeHtml(product)}
         ${preorderCountdownHtml(product)}
       </div>
@@ -421,6 +421,18 @@ async function loadCatalogs() {
       catalogState.productsByPlatform[platformKey].unshift({ ...manualProduct });
     }
   });
+
+  // jogos marcados como esgotados no painel de admin (falha silenciosa: a loja continua normal)
+  const soldOutIds = await (window.__galaxySoldOutPromise ||= fetch("/.netlify/functions/esgotados", { cache: "no-store" })
+    .then((response) => response.ok ? response.json() : { ids: [] })
+    .then((data) => new Set(Array.isArray(data.ids) ? data.ids : []))
+    .catch(() => new Set()));
+  if (soldOutIds.size) {
+    Object.keys(catalogState.productsByPlatform).forEach((platformKey) => {
+      catalogState.productsByPlatform[platformKey] = catalogState.productsByPlatform[platformKey]
+        .map((product) => soldOutIds.has(product.id) ? { ...product, esgotado: true } : product);
+    });
+  }
 }
 
 function productGenres(product) {

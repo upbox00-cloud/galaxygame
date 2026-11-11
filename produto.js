@@ -251,6 +251,10 @@ function productReleaseTime(product) {
 }
 
 function addToCart(product) {
+  if (product?.esgotado) {
+    showToast("Este jogo está esgotado de momento.", 4200);
+    return;
+  }
   const productName = cleanProductTitle(product.nome);
   const added = window.ConsoleCart?.add({
     id: product.id,
@@ -286,6 +290,10 @@ function buyNowButtons() {
 }
 
 async function buyNow(product) {
+  if (product?.esgotado) {
+    showToast("Este jogo está esgotado de momento.", 4200);
+    return;
+  }
   const productId = String(product?.id || "").trim();
   if (!productId) {
     showToast("Nao foi possivel identificar este jogo. Atualiza a pagina e tenta novamente.", 4200);
@@ -329,7 +337,9 @@ async function buyNow(product) {
     window.location.assign(data.checkoutUrl);
   } catch (error) {
     console.error("[buy-now]", { message: error.message });
-    showToast("Nao foi possivel abrir o pagamento. Tenta novamente dentro de instantes.", 4800);
+    showToast(error.message === "sold_out"
+      ? "Este jogo acabou de ficar esgotado."
+      : "Nao foi possivel abrir o pagamento. Tenta novamente dentro de instantes.", 4800);
     buttons.forEach((button) => {
       button.disabled = false;
       button.textContent = button.dataset.checkoutLabel || "Comprar agora";
@@ -957,10 +967,37 @@ function runProductStep(name, fn) {
   }
 }
 
+// Jogos marcados como esgotados no painel de admin (falha silenciosa: a loja continua normal).
+function loadSoldOutIds() {
+  return fetch("/.netlify/functions/esgotados", { cache: "no-store" })
+    .then((response) => response.ok ? response.json() : { ids: [] })
+    .then((data) => new Set(Array.isArray(data.ids) ? data.ids : []))
+    .catch(() => new Set());
+}
+
+function applySoldOutState(product) {
+  if (!product?.esgotado) return;
+  document.body.classList.add("product-soldout");
+  document.querySelectorAll(".buy-button, .edition-buy-button, [data-mobile-buy-button], .cart-add-button").forEach((button) => {
+    button.disabled = true;
+    button.setAttribute("aria-disabled", "true");
+    button.textContent = "Esgotado";
+  });
+  const anchor = document.querySelector(".buy-button");
+  if (anchor && !document.querySelector(".soldout-note")) {
+    const note = document.createElement("p");
+    note.className = "soldout-note";
+    note.setAttribute("role", "status");
+    note.textContent = "Este jogo está esgotado de momento.";
+    anchor.parentNode.insertBefore(note, anchor);
+  }
+}
+
 async function initProductPage() {
-  const products = await loadCatalogs();
+  const [products, soldOutIds] = await Promise.all([loadCatalogs(), loadSoldOutIds()]);
   const productId = getProductId();
-  const product = products.find((item) => item.id === productId) || products[0] || fallbackProducts[0];
+  const found = products.find((item) => item.id === productId) || products[0] || fallbackProducts[0];
+  const product = soldOutIds.has(found.id) ? { ...found, esgotado: true } : found;
 
   // Cada passo corre isolado: se um render falhar (ex: dados de um produto
   // específico com formato inesperado), os botões de compra continuam a
@@ -971,6 +1008,7 @@ async function initProductPage() {
   runProductStep("renderVisuals", () => renderVisuals(product));
   runProductStep("renderDetails", () => renderDetails(product));
   runProductStep("renderRelated", () => renderRelated(products, product));
+  runProductStep("soldOut", () => applySoldOutState(product));
   runProductStep("bindProductActions", () => bindProductActions(product));
   runProductStep("bindLightbox", () => bindLightbox());
   runProductStep("landingGta6", () => window.GalaxyLandingGta6?.mount(product));

@@ -25,7 +25,7 @@
   var n = Number(cfg.version);
   var ver = mode === "v1" ? 1 : mode === "v2" ? 2 : mode === "v3" ? 3 : mode === "v4" ? 4 : mode === "v5" ? 5 : mode === "v6" ? 6 : (n >= 6 ? 6 : n >= 5 ? 5 : n >= 4 ? 4 : n >= 3 ? 3 : n >= 2 ? 2 : 1);
 
-  var V = "20261105-22";
+  var V = "20261105-23";
   // preload só da imagem que vai ser usada: desktop (>=768) ou o recorte mobile por densidade
   var html = '<link rel="preload" as="image" href="assets/gta-vi-visual-beach-5k.webp" fetchpriority="high" media="(min-width: 768px)">' +
     '<link rel="preload" as="image" href="assets/gta-vi-hero-m-780.webp" imagesrcset="assets/gta-vi-hero-m-390.webp 390w, assets/gta-vi-hero-m-780.webp 780w, assets/gta-vi-hero-m-1170.webp 1170w" imagesizes="100vw" fetchpriority="high" media="(max-width: 767px)">';

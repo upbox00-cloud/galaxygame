@@ -267,8 +267,24 @@
     list.forEach(function (t) { t.nodeValue = t.nodeValue.split(from).join(to); });
   }
 
+  // Jogo esgotado (painel de admin): botões de compra desativados e aviso visível
+  function markSoldOut(root) {
+    if (root.classList.contains("g6-soldout")) return;
+    root.classList.add("g6-soldout");
+    root.querySelectorAll("[data-g6-buy], [data-g6-cart]").forEach(function (b) {
+      b.disabled = true; b.setAttribute("aria-disabled", "true"); b.textContent = "Esgotado";
+    });
+    root.querySelectorAll(".g6-pricebox .g6-actions, .g6-final .g6-actions").forEach(function (a) {
+      var p = document.createElement("p");
+      p.className = "g6-soldout-note"; p.setAttribute("role", "status");
+      p.textContent = "Este jogo está esgotado de momento.";
+      a.parentNode.insertBefore(p, a);
+    });
+  }
+
   // Dados reais do catálogo chegam depois da landing já estar visível: só corrige o que mudou.
   function update(root, product) {
+    if (product && product.esgotado) markSoldOut(root);
     var st = root.__g6state;
     if (st && product) {
       var np = formatEUR(product.precoVendaEUR);
@@ -398,7 +414,7 @@
     return lenis;
   }
 
-  var CSSV = "20261105-22";
+  var CSSV = "20261105-23";
   function ensureCss(n) {
     if (document.querySelector('link[data-g6css="v' + n + '"]')) return;
     var l = document.createElement("link");
@@ -469,19 +485,19 @@
       if (!lite && landingVersion() >= 2) {
         var ver = landingVersion();
         var ctx = { gsap: window.gsap, ScrollTrigger: window.ScrollTrigger, lenis: lenis, v3: ver >= 3, mobile: mobile };
-        return loadScript("landing-gta6-v2.js?v=20261105-22").then(function () {
+        return loadScript("landing-gta6-v2.js?v=20261105-23").then(function () {
           window.GalaxyLandingGta6V2.enhance(root, ctx);
           if (ver < 3) return null;
-          return loadScript("landing-gta6-v3.js?v=20261105-22").then(function () {
+          return loadScript("landing-gta6-v3.js?v=20261105-23").then(function () {
             window.GalaxyLandingGta6V3.enhance(root, ctx);
             if (ver < 4) return null;
-            return loadScript("landing-gta6-v4.js?v=20261105-22").then(function () {
+            return loadScript("landing-gta6-v4.js?v=20261105-23").then(function () {
               window.GalaxyLandingGta6V4.enhance(root, ctx);
               if (ver < 5) return null;
-              return loadScript("landing-gta6-v5.js?v=20261105-22").then(function () {
+              return loadScript("landing-gta6-v5.js?v=20261105-23").then(function () {
                 window.GalaxyLandingGta6V5.enhance(root, ctx);
                 if (ver < 6) return null;
-                return loadScript("landing-gta6-v6.js?v=20261105-22").then(function () { window.GalaxyLandingGta6V6.enhance(root, ctx); });
+                return loadScript("landing-gta6-v6.js?v=20261105-23").then(function () { window.GalaxyLandingGta6V6.enhance(root, ctx); });
               });
             });
           });

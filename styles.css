@@ -6868,3 +6868,8 @@ details p {
     width: 100%;
   }
 }
+
+/* Jogo esgotado (painel de admin) */
+.catalog-card.is-soldout .cover img { filter: grayscale(.85) brightness(.7); }
+.cover .tag.soldout-tag { background: #b42318; color: #fff; }
+.catalog-card.is-soldout .game-price { opacity: .6; }

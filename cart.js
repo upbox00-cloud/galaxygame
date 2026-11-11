@@ -236,7 +236,9 @@
         button.textContent = "Continuar para pagamento";
         if (notice) {
           notice.hidden = false;
-          notice.innerHTML = "<strong>Não foi possível abrir o pagamento</strong><p>Tenta novamente dentro de instantes ou contacta gamegalaxy26@gmail.com.</p>";
+          notice.innerHTML = error.message === "sold_out"
+            ? "<strong>Um dos jogos do carrinho está esgotado</strong><p>Remove-o do carrinho para continuar com os restantes.</p>"
+            : "<strong>Não foi possível abrir o pagamento</strong><p>Tenta novamente dentro de instantes ou contacta gamegalaxy26@gmail.com.</p>";
           notice.scrollIntoView({ behavior: "smooth", block: "nearest" });
         }
       }
