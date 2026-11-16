@@ -1293,9 +1293,9 @@
       "trailer": null,
       "status": "not-found",
       "query": "pacote triplo crash spyro PS5 trailer oficial",
-      "attempts": 3,
-      "processedAt": "2026-10-19T10:54:36.199Z",
-      "nextRetryAt": "2026-11-16T10:54:36.199Z"
+      "attempts": 4,
+      "processedAt": "2026-11-16T13:47:00.021Z",
+      "nextRetryAt": "2026-12-16T13:47:00.021Z"
     },
     "bob esponja titas da mare": {
       "trailer": "https://www.youtube.com/embed/wcDpp_9G6V0",
@@ -9344,7 +9344,22 @@
       "networkErrors": 0,
       "validationCalls": 0,
       "invalidEmbeds": 0
+    },
+    {
+      "date": "2026-11-16T13:46:59.559Z",
+      "requests": 1,
+      "analyzed": 1,
+      "found": 0,
+      "notFound": 1,
+      "alreadyHadTrailer": 1022,
+      "cooldownSkipped": 0,
+      "remainingWithoutTrailer": 1,
+      "rateLimited": false,
+      "interruptionReason": "concluido",
+      "networkErrors": 0,
+      "validationCalls": 0,
+      "invalidEmbeds": 0
     }
   ],
-  "updatedAt": "2026-11-15T12:50:09.269Z"
+  "updatedAt": "2026-11-16T13:47:00.301Z"
 }
